@@ -163,6 +163,8 @@ const ResultsPreview = () => {
 
     try {
       const lowestDim = getLowestDimension(scores);
+
+      // Save results to DB
       const { data, error } = await supabase
         .from("selfcheck_results")
         .insert({
@@ -181,6 +183,12 @@ const ResultsPreview = () => {
 
       setResultId(data.id);
       setSubmitted(true);
+
+      // Subscribe to KIT (fire-and-forget — don't block the user flow)
+      supabase.functions.invoke("subscribe-kit", {
+        body: { email, lowest_dimension: lowestDim },
+      }).catch((err) => console.warn("KIT subscribe failed:", err));
+
     } catch (err) {
       console.error("Error saving results:", err);
     } finally {
