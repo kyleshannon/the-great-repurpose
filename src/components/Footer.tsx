@@ -1,0 +1,65 @@
+import { Link } from "react-router-dom";
+
+export function Footer() {
+  return (
+    <footer className="bg-navy constellation-bg">
+      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+        {/* Left — Wordmark */}
+        <div>
+          <p className="font-serif text-cream text-xl mb-2">The Great Repurpose</p>
+          <p className="text-cream/60 text-xs uppercase tracking-widest font-sans mb-1">Your Signal in the Noise</p>
+          <p className="text-cream/40 text-sm font-sans">By Kyle Shannon</p>
+        </div>
+
+        {/* Center — Nav */}
+        <div>
+          <p className="text-cream/40 text-xs uppercase tracking-widest font-sans mb-4">Navigate</p>
+          <div className="flex flex-col gap-2">
+            {[
+              { to: "/", label: "The Signal" },
+              { to: "/phases", label: "The Five Phases" },
+              { to: "/about", label: "About" },
+              { to: "/selfcheck", label: "Take the Self-Check" },
+            ].map(({ to, label }) => (
+              <Link key={to} to={to} className="text-cream/70 hover:text-coral text-sm font-sans transition-colors">
+                {label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Right — Community */}
+        <div>
+          <p className="text-cream/40 text-xs uppercase tracking-widest font-sans mb-4">Community</p>
+          <div className="flex flex-col gap-2">
+            {[
+              { href: "https://thesalon.ai", label: "thesalon.ai" },
+              { href: "https://thesalon.ai", label: "The AI Readiness Project Podcast" },
+              { href: "https://thesalon.ai", label: "Friday Office Hours" },
+            ].map(({ href, label }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cream/70 hover:text-coral text-sm font-sans transition-colors"
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-cream/10 px-6 py-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+          <p className="text-cream/50 text-sm font-serif italic">
+            "The future of AI is still up for grabs — join us."
+          </p>
+          <p className="text-cream/30 text-xs font-sans">© 2025 The Great Repurpose</p>
+        </div>
+      </div>
+    </footer>
+  );
+}

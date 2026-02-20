@@ -57,6 +57,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Brand palette
+        navy: "hsl(var(--navy))",
+        cream: "hsl(var(--cream))",
+        coral: "hsl(var(--coral))",
+        mint: "hsl(var(--mint))",
+        periwinkle: "hsl(var(--periwinkle))",
+        "amber-brand": "hsl(var(--amber))",
+      },
+      fontFamily: {
+        serif: ["Georgia", "Times New Roman", "serif"],
+        sans: ["Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,25 +76,22 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "pulse-coral": {
+          "0%, 100%": { boxShadow: "0 0 15px hsl(var(--coral) / 0.3), 0 0 30px hsl(var(--coral) / 0.15)" },
+          "50%": { boxShadow: "0 0 25px hsl(var(--coral) / 0.5), 0 0 50px hsl(var(--coral) / 0.25)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-coral": "pulse-coral 3s ease-in-out infinite",
       },
     },
   },
