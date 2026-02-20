@@ -265,68 +265,63 @@ const ResultsPreview = () => {
     <div className="min-h-screen bg-navy text-cream">
       <Navigation />
 
-      {/* ── Radar chart + Strongest ── */}
-      <section className="bg-navy constellation-bg pt-28 pb-16 px-6">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">Your shape, right now</p>
-          <h1 className="font-serif text-cream text-3xl md:text-4xl mb-10">
-            Your signal is starting to come through.
-          </h1>
-
-          <ResponsiveContainer width="100%" height={340}>
-            <RadarChart data={chartData}>
-              <PolarGrid stroke="hsl(30 33% 91% / 0.15)" />
-              <PolarAngleAxis
-                dataKey="subject"
-                tick={{ fill: "hsl(30 33% 91% / 0.7)", fontSize: 12, fontFamily: "Inter" }}
-              />
-              <Radar
-                name="Your Signal"
-                dataKey="value"
-                stroke="hsl(21 89% 54%)"
-                fill="hsl(21 89% 54%)"
-                fillOpacity={0.25}
-                strokeWidth={2}
-              />
-            </RadarChart>
-          </ResponsiveContainer>
-
-          <p className="font-sans text-cream/60 text-sm mt-4 mb-2">
-            Your strongest signal right now:
-          </p>
-          <p className="font-serif text-coral text-2xl font-bold">
-            {dimensionMeta[strongest].label}
-          </p>
-          <p className="font-sans text-cream/60 text-base italic mt-2">
-            {dimensionMeta[strongest].phase}
-          </p>
-        </div>
-      </section>
-
-      {/* ── Auth gate / Full results ── */}
       {!submitted ? (
-        <section className="bg-cream py-16 px-6">
-          <div className="max-w-2xl mx-auto">
-            {/* Blurred preview of results */}
-            <div className="relative mb-12">
-              <div className="blur-sm opacity-40 pointer-events-none select-none space-y-4">
-                {(Object.keys(dimensionMeta) as DimensionKey[]).map((dim) => (
-                  <div key={dim} className="bg-navy/10 border border-navy/20 rounded-lg p-6">
-                    <p className="font-sans text-navy text-xs uppercase tracking-widest mb-2">{dimensionMeta[dim].label}</p>
-                    <p className="font-sans text-navy/70 text-sm">
-                      {dimensionMeta[dim].descriptions.mid}
-                    </p>
-                  </div>
-                ))}
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-cream" />
-            </div>
-
-            {/* Email gate card */}
+        /* ── Email gate (shown first, before radar) ── */
+        <section className="bg-navy constellation-bg min-h-screen flex items-center justify-center px-6 pt-24 pb-16">
+          <div className="max-w-2xl mx-auto w-full text-center">
+            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">The Self-Check</p>
+            <h1 className="font-serif text-cream text-3xl md:text-4xl mb-4">
+              Your results are ready.
+            </h1>
+            <p className="font-sans text-cream/60 text-base mb-10 max-w-md mx-auto">
+              Enter your email to see your personal profile — a radar chart of your signal across five dimensions, plus your personalized next step.
+            </p>
             <EmailGate onSuccess={handleEmailSuccess} />
           </div>
         </section>
       ) : (
+        <>
+          {/* ── Radar chart + Strongest ── */}
+          <section className="bg-navy constellation-bg pt-28 pb-16 px-6">
+            <div className="max-w-2xl mx-auto text-center">
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">Your shape, right now</p>
+              <h1 className="font-serif text-cream text-3xl md:text-4xl mb-10">
+                Your signal is starting to come through.
+              </h1>
+
+              <ResponsiveContainer width="100%" height={340}>
+                <RadarChart data={chartData}>
+                  <PolarGrid stroke="hsl(30 33% 91% / 0.15)" />
+                  <PolarAngleAxis
+                    dataKey="subject"
+                    tick={{ fill: "hsl(30 33% 91% / 0.7)", fontSize: 12, fontFamily: "Inter" }}
+                  />
+                  <Radar
+                    name="Your Signal"
+                    dataKey="value"
+                    stroke="hsl(21 89% 54%)"
+                    fill="hsl(21 89% 54%)"
+                    fillOpacity={0.25}
+                    strokeWidth={2}
+                  />
+                </RadarChart>
+              </ResponsiveContainer>
+
+              <p className="font-sans text-cream/60 text-sm mt-4 mb-2">
+                Your strongest signal right now:
+              </p>
+              <p className="font-serif text-coral text-2xl font-bold">
+                {dimensionMeta[strongest].label}
+              </p>
+              <p className="font-sans text-cream/60 text-base italic mt-2">
+                {dimensionMeta[strongest].phase}
+              </p>
+            </div>
+          </section>
+        </>
+      )}
+
+      {submitted && (
         <>
           {/* ── Full Results ── */}
 
