@@ -2,95 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* The Great Repurpose Design System */
+    --background: 240 14% 20%;        /* Deep navy #2A2C3B */
+    --foreground: 30 33% 91%;         /* Rich cream #EFE6DC */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 240 14% 23%;
+    --card-foreground: 30 33% 91%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 14% 20%;
+    --popover-foreground: 30 33% 91%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 21 89% 54%;            /* Coral-orange #F26522 */
+    --primary-foreground: 30 33% 91%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 14% 28%;
+    --secondary-foreground: 30 33% 91%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 14% 28%;
+    --muted-foreground: 30 20% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 21 89% 54%;
+    --accent-foreground: 30 33% 91%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 30 33% 91%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 240 14% 32%;
+    --input: 240 14% 28%;
+    --ring: 21 89% 54%;
+
+    --radius: 0.375rem;
+
+    /* Brand tokens */
+    --navy: 240 14% 20%;              /* #2A2C3B */
+    --cream: 30 33% 91%;             /* #EFE6DC */
+    --coral: 21 89% 54%;             /* #F26522 */
+    --mint: 155 26% 60%;             /* #82B29D */
+    --periwinkle: 207 79% 87%;       /* #C1DFF6 */
+    --amber: 49 78% 60%;             /* #E8C547 */
+
+    /* Sidebar */
+    --sidebar-background: 240 14% 18%;
+    --sidebar-foreground: 30 33% 91%;
+    --sidebar-primary: 21 89% 54%;
+    --sidebar-primary-foreground: 30 33% 91%;
+    --sidebar-accent: 240 14% 25%;
+    --sidebar-accent-foreground: 30 33% 91%;
+    --sidebar-border: 240 14% 28%;
+    --sidebar-ring: 21 89% 54%;
+  }
+
+  .light {
+    --background: 30 33% 91%;
+    --foreground: 240 14% 20%;
+    --card: 30 33% 95%;
+    --card-foreground: 240 14% 20%;
+    --popover: 30 33% 91%;
+    --popover-foreground: 240 14% 20%;
+    --primary: 21 89% 54%;
+    --primary-foreground: 30 33% 95%;
+    --secondary: 30 20% 85%;
+    --secondary-foreground: 240 14% 20%;
+    --muted: 30 20% 85%;
+    --muted-foreground: 240 14% 45%;
+    --accent: 30 20% 85%;
+    --accent-foreground: 240 14% 20%;
+    --border: 30 20% 80%;
+    --input: 30 20% 80%;
+    --ring: 21 89% 54%;
   }
 }
 
@@ -101,5 +84,112 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.2;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-navy {
+    color: hsl(var(--navy));
+  }
+
+  .bg-navy {
+    background-color: hsl(var(--navy));
+  }
+
+  .text-cream {
+    color: hsl(var(--cream));
+  }
+
+  .bg-cream {
+    background-color: hsl(var(--cream));
+  }
+
+  .text-coral {
+    color: hsl(var(--coral));
+  }
+
+  .bg-coral {
+    background-color: hsl(var(--coral));
+  }
+
+  .text-mint {
+    color: hsl(var(--mint));
+  }
+
+  .text-periwinkle {
+    color: hsl(var(--periwinkle));
+  }
+
+  .text-amber-brand {
+    color: hsl(var(--amber));
+  }
+
+  .border-coral {
+    border-color: hsl(var(--coral));
+  }
+
+  .border-mint {
+    border-color: hsl(var(--mint));
+  }
+
+  .border-periwinkle {
+    border-color: hsl(var(--periwinkle));
+  }
+
+  .border-amber-brand {
+    border-color: hsl(var(--amber));
+  }
+
+  .glow-coral {
+    box-shadow: 0 0 20px hsl(var(--coral) / 0.4), 0 0 40px hsl(var(--coral) / 0.2);
+  }
+
+  .glow-coral-sm {
+    box-shadow: 0 0 10px hsl(var(--coral) / 0.3);
+  }
+
+  .pulse-coral {
+    animation: pulse-coral 3s ease-in-out infinite;
+  }
+
+  .constellation-bg {
+    background-image: radial-gradient(circle, hsl(var(--cream) / 0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .section-fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
+  .section-fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-coral {
+  0%, 100% {
+    box-shadow: 0 0 15px hsl(var(--coral) / 0.3), 0 0 30px hsl(var(--coral) / 0.15);
+  }
+  50% {
+    box-shadow: 0 0 25px hsl(var(--coral) / 0.5), 0 0 50px hsl(var(--coral) / 0.25);
   }
 }
