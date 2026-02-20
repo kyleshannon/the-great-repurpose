@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import {
@@ -129,126 +129,43 @@ const salonRouting: Record<DimensionKey, { body: string; links: { label: string;
   },
 };
 
-// ── Auth gate component ──────────────────────────────────────────────────────
+// ── Email gate component ─────────────────────────────────────────────────────
 
-type AuthMode = "signup" | "signin";
-
-function AuthGate({ onSuccess }: { onSuccess: (email: string) => void }) {
-  const [mode, setMode] = useState<AuthMode>("signup");
+function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [checkEmail, setCheckEmail] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError(null);
     setSubmitting(true);
-
-    try {
-      if (mode === "signup") {
-        const { error: signUpError } = await supabase.auth.signUp({
-          email: email.trim().toLowerCase(),
-          password,
-          options: { emailRedirectTo: window.location.href },
-        });
-        if (signUpError) {
-          // If user already exists, switch to sign in
-          if (signUpError.message.toLowerCase().includes("already")) {
-            setMode("signin");
-            setError("You already have an account — sign in below.");
-          } else {
-            throw signUpError;
-          }
-        } else {
-          setCheckEmail(true);
-        }
-      } else {
-        const { error: signInError } = await supabase.auth.signInWithPassword({
-          email: email.trim().toLowerCase(),
-          password,
-        });
-        if (signInError) throw signInError;
-        onSuccess(email.trim().toLowerCase());
-      }
-    } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
-    } finally {
-      setSubmitting(false);
-    }
+    onSuccess(email.trim().toLowerCase());
   };
-
-  if (checkEmail) {
-    return (
-      <div className="bg-navy border border-coral/20 rounded-xl p-8 text-center">
-        <div className="text-4xl mb-4">✉️</div>
-        <h2 className="font-serif text-cream text-2xl mb-3">Check your email.</h2>
-        <p className="font-sans text-cream/60 text-base max-w-md mx-auto">
-          We sent a confirmation link to <span className="text-cream">{email}</span>. Click it to verify your account and unlock your full results.
-        </p>
-        <button
-          onClick={() => setCheckEmail(false)}
-          className="mt-6 text-cream/40 text-sm font-sans hover:text-cream/70 transition-colors"
-        >
-          ← Back
-        </button>
-      </div>
-    );
-  }
 
   return (
     <div className="bg-navy border border-coral/20 rounded-xl p-8 text-center">
-      <h2 className="font-serif text-cream text-2xl mb-3">
-        {mode === "signup" ? "Your full results are ready." : "Welcome back."}
-      </h2>
+      <h2 className="font-serif text-cream text-2xl mb-3">Your full results are ready.</h2>
       <p className="font-sans text-cream/60 text-base mb-8 max-w-md mx-auto">
-        {mode === "signup"
-          ? "Create a free account to unlock your complete profile — a dimension-by-dimension breakdown and your personalized next step."
-          : "Sign in to unlock your full results."}
+        Enter your email to unlock your complete profile — including a dimension-by-dimension breakdown and your personalized next step.
       </p>
-
-      <form onSubmit={handleSubmit} className="space-y-3 max-w-sm mx-auto text-left">
+      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <input
           type="email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
-          className="w-full bg-navy border border-cream/20 text-cream placeholder:text-cream/30 rounded-lg px-4 py-3 font-sans text-base focus:outline-none focus:border-coral transition-colors"
+          className="flex-1 bg-navy border border-cream/20 text-cream placeholder:text-cream/30 rounded-lg px-4 py-3 font-sans text-base focus:outline-none focus:border-coral transition-colors"
         />
-        <input
-          type="password"
-          required
-          minLength={6}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder={mode === "signup" ? "Create a password (min 6 chars)" : "Your password"}
-          className="w-full bg-navy border border-cream/20 text-cream placeholder:text-cream/30 rounded-lg px-4 py-3 font-sans text-base focus:outline-none focus:border-coral transition-colors"
-        />
-        {error && (
-          <p className="text-coral text-sm font-sans">{error}</p>
-        )}
         <button
           type="submit"
           disabled={submitting}
-          className="w-full bg-coral text-cream font-sans font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-60"
+          className="bg-coral text-cream font-sans font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
         >
-          {submitting
-            ? mode === "signup" ? "Creating account..." : "Signing in..."
-            : mode === "signup" ? "Create Account & See Results →" : "Sign In & See Results →"}
+          {submitting ? "Saving..." : "Send My Results →"}
         </button>
       </form>
-
-      <button
-        onClick={() => { setMode(mode === "signup" ? "signin" : "signup"); setError(null); }}
-        className="mt-5 text-cream/40 text-sm font-sans hover:text-cream/70 transition-colors"
-      >
-        {mode === "signup" ? "Already have an account? Sign in" : "Don't have an account? Sign up"}
-      </button>
-
       <p className="text-cream/30 text-xs mt-4 font-sans">
-        No spam. Ever. We'll occasionally share things from The Great Repurpose and the AI Salon that are actually worth your time.
+        No spam. Ever. Your results are yours. We'll occasionally share things from The Great Repurpose and the AI Salon that are actually worth your time.
       </p>
     </div>
   );
@@ -261,7 +178,6 @@ const ResultsPreview = () => {
   const [submitted, setSubmitted] = useState(false);
   const [resultId, setResultId] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
-  const [userEmail, setUserEmail] = useState<string | null>(null);
 
   const scores: Record<DimensionKey, number> = {
     identity: parseFloat(searchParams.get("identity") || "5"),
@@ -282,27 +198,8 @@ const ResultsPreview = () => {
     { subject: "Creative Action", value: scores.creative_action, fullMark: 10 },
   ];
 
-  // Check if user is already logged in on mount
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session?.user?.email) {
-        handleAuthSuccess(session.user.email);
-      }
-    });
-
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      if (session?.user?.email && !submitted) {
-        handleAuthSuccess(session.user.email);
-      }
-    });
-
-    return () => subscription.unsubscribe();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const handleAuthSuccess = async (email: string) => {
+  const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
-    setUserEmail(email);
 
     const lowestDim = getLowestDimension(scores);
 
@@ -425,8 +322,8 @@ const ResultsPreview = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-cream" />
             </div>
 
-            {/* Auth gate card */}
-            <AuthGate onSuccess={handleAuthSuccess} />
+            {/* Email gate card */}
+            <EmailGate onSuccess={handleEmailSuccess} />
           </div>
         </section>
       ) : (
