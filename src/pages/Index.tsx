@@ -188,12 +188,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── Section 4: The Five Phases ── */}
+      {/* ── Section 4: The Five Stages ── */}
       <section className="bg-cream py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-3xl md:text-4xl text-center mb-4">
-              The Great Repurpose: Five phases of finding your way through
+              The Great Repurpose: Five stages of finding your way through
             </h2>
             <p className="font-sans text-navy/70 text-center text-lg mb-16 max-w-2xl mx-auto">
               This isn't a program. It's not a course. It's a map of the territory people actually cross when the work that defined them changes. It doesn't happen in order. It isn't clean. But every person navigating this transition is somewhere on this map — and knowing where you are is the first step toward moving.
@@ -303,7 +303,7 @@ const Index = () => {
               7 questions. No grades. No judgment. Just a mirror.
             </p>
             <p className="font-sans text-navy/70 text-lg mb-14 max-w-xl mx-auto">
-              The Self-Check measures where you are across all five phases of The Great Repurpose. Not a single score — a shape. Your strengths and your gaps. Where you've already done the work and where you're still stuck.
+              The Self-Check measures where you are across all five stages of The Great Repurpose. Not a single score — a shape. Your strengths and your gaps. Where you've already done the work and where you're still stuck.
             </p>
             <p className="font-sans text-navy/60 text-base mb-14 max-w-xl mx-auto">
               You'll see your profile and get specific, personalized recommendations for what to do next — not generic advice, but the exact entry point that matches where you are right now.

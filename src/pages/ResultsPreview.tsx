@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useSearchParams, useParams, useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import {
@@ -10,18 +10,20 @@ import {
 } from "recharts";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
 
 const dimensionMeta: Record<DimensionKey, {
   label: string;
-  phase: string;
+  stage: string;
   color: string;
   descriptions: { low: string; mid: string; high: string };
 }> = {
   identity: {
     label: "Identity",
-    phase: "Phase 1 — Disorientation",
+    stage: "Stage 1 — Disorientation",
     color: "hsl(145 25% 50%)",
     descriptions: {
       low: "Right now, your sense of self and your work are deeply intertwined — which means the disruption of one feels like the disruption of both. That's not a flaw; it's a sign of how fully you've committed to your work. The invitation here is to begin, slowly, to locate yourself somewhere that AI cannot reach.",
@@ -31,7 +33,7 @@ const dimensionMeta: Record<DimensionKey, {
   },
   value: {
     label: "Value Clarity",
-    phase: "Phase 3 — Excavation",
+    stage: "Stage 3 — Excavation",
     color: "hsl(155 20% 55%)",
     descriptions: {
       low: "Right now, you're finding it hard to name what you uniquely bring — and that's one of the most honest and human places to be in this moment. The parts of your work that felt most distinctively yours may be the ones most visibly affected by AI. That's not evidence that you have nothing to offer. It's an invitation to look deeper.",
@@ -41,17 +43,17 @@ const dimensionMeta: Record<DimensionKey, {
   },
   purpose: {
     label: "Purpose",
-    phase: "Phase 4 — Reorientation",
+    stage: "Stage 4 — Reorientation",
     color: "hsl(145 15% 70%)",
     descriptions: {
       low: "Direction is the hardest thing to rebuild from the outside in. If you're feeling unmoored about what you're building toward, you're not lost — you're in the part of the terrain that requires a different kind of navigation. Slower. More internal. Less certain.",
       mid: "You have some sense of direction, but it's not yet fully motivating. That's the middle of the map — enough to keep moving, not yet enough to feel pulled. The work is finding what genuinely energizes you and letting that be the compass.",
-      high: "You have a clear and motivating sense of where you're headed. That's not something everyone has right now — and it's worth protecting. The challenge in this phase is staying connected to that direction as the landscape continues to shift.",
+      high: "You have a clear and motivating sense of where you're headed. That's not something everyone has right now — and it's worth protecting. The challenge in this stage is staying connected to that direction as the landscape continues to shift.",
     },
   },
   ai_relationship: {
     label: "AI Relationship",
-    phase: "Phase 2 — Reckoning",
+    stage: "Stage 2 — Reckoning",
     color: "hsl(45 40% 55%)",
     descriptions: {
       low: "The best cure for anxiety about AI tools is actually using them — in a low-stakes, high-trust environment with other humans who are figuring it out too. Avoidance tends to amplify the fear. The AI Learning Lab is built exactly for this moment.",
@@ -61,7 +63,7 @@ const dimensionMeta: Record<DimensionKey, {
   },
   creative_action: {
     label: "Creative Action",
-    phase: "Phase 5 — Authorship",
+    stage: "Stage 5 — Authorship",
     color: "hsl(145 25% 50%)",
     descriptions: {
       low: "You have signal. You're just not yet making it visible — to yourself or to others. The move from consuming to creating is one of the most important transitions in The Great Repurpose. It doesn't require perfection. It requires showing up.",
@@ -131,7 +133,7 @@ const salonRouting: Record<DimensionKey, { body: string; links: { label: string;
 
 const dimensionOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];
 
-// ── Score teaser card (shown pre-email) ──────────────────────────────────────
+// ── Score teaser card (shown pre-email — overall only, no per-dimension) ─────
 
 function ScoreTeaser({ scores }: { scores: Record<DimensionKey, number> }) {
   const strongest = getStrongestDimension(scores);
@@ -148,20 +150,6 @@ function ScoreTeaser({ scores }: { scores: Record<DimensionKey, number> }) {
           {overall.toFixed(1)}
         </p>
         <p className="font-sans text-cream/40 text-sm mt-1">out of 10</p>
-      </div>
-
-      {/* Per-dimension scores */}
-      <div className="grid grid-cols-5 gap-3 mb-8">
-        {dimensionOrder.map((dim) => (
-          <div key={dim} className="text-center">
-            <p className="font-serif text-cream text-2xl font-bold mb-1">
-              {scores[dim].toFixed(1)}
-            </p>
-            <p className="font-sans text-cream/40 text-[10px] uppercase tracking-wider leading-tight">
-              {dimensionMeta[dim].label}
-            </p>
-          </div>
-        ))}
       </div>
 
       {/* Teaser paragraph with fade */}
@@ -234,23 +222,64 @@ function buildShareSummary(scores: Record<DimensionKey, number>, selfCheckUrl: s
   return `I just took The Great Repurpose Self-Check — a free assessment for anyone navigating the AI transition.\n\nMy signal score: ${overall}/10\nStrongest dimension: ${dimensionMeta[strongest].label}\n\nCurious about your own shape? Take the free assessment → ${selfCheckUrl}`;
 }
 
+// ── PDF Generator ────────────────────────────────────────────────────────────
+
+async function generatePDF(
+  reportRef: HTMLDivElement,
+  scores: Record<DimensionKey, number>,
+) {
+  // Capture the report section as an image
+  const canvas = await html2canvas(reportRef, {
+    backgroundColor: "#1a1c1e",
+    scale: 2,
+    useCORS: true,
+    logging: false,
+  });
+
+  const imgData = canvas.toDataURL("image/png");
+  const imgWidth = 210; // A4 width in mm
+  const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+  const pdf = new jsPDF("p", "mm", "a4");
+  const pageHeight = 297; // A4 height in mm
+
+  let heightLeft = imgHeight;
+  let position = 0;
+
+  // First page
+  pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+  heightLeft -= pageHeight;
+
+  // Additional pages if content overflows
+  while (heightLeft > 0) {
+    position = heightLeft - imgHeight;
+    pdf.addPage();
+    pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+    heightLeft -= pageHeight;
+  }
+
+  const overall = (Object.values(scores).reduce((a, b) => a + b, 0) / 5).toFixed(1);
+  pdf.save(`great-repurpose-results-${overall}.pdf`);
+}
+
 // ── Main component ───────────────────────────────────────────────────────────
 
 const ResultsPreview = () => {
   const [searchParams] = useSearchParams();
   const { id: routeId } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const reportRef = useRef<HTMLDivElement>(null);
 
   const [submitted, setSubmitted] = useState(false);
   const [copied, setCopied] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [generating, setGenerating] = useState(false);
   const [scores, setScores] = useState<Record<DimensionKey, number> | null>(null);
   const [resultId, setResultId] = useState<string | null>(routeId || null);
 
   // If we have a route ID, load saved results from DB
   useEffect(() => {
     if (!routeId) {
-      // Preview mode — scores come from search params
       setScores({
         identity: parseFloat(searchParams.get("identity") || "5"),
         value: parseFloat(searchParams.get("value") || "5"),
@@ -261,7 +290,6 @@ const ResultsPreview = () => {
       return;
     }
 
-    // Saved result — load from DB and show full results
     setLoading(true);
     supabase
       .from("selfcheck_results")
@@ -296,6 +324,7 @@ const ResultsPreview = () => {
 
   const strongest = getStrongestDimension(scores);
   const lowest = getLowestDimension(scores);
+  const overall = Object.values(scores).reduce((a, b) => a + b, 0) / 5;
 
   const chartData = [
     { subject: "Identity", value: scores.identity, fullMark: 10 },
@@ -332,7 +361,6 @@ const ResultsPreview = () => {
 
       if (!error && data) {
         setResultId(data.id);
-        // Navigate to the permanent URL
         navigate(`/results/${data.id}`, { replace: true });
       }
 
@@ -362,12 +390,22 @@ const ResultsPreview = () => {
   };
 
   const handleShareX = () => {
-    const overall = (Object.values(scores).reduce((a, b) => a + b, 0) / 5).toFixed(1);
     const text = encodeURIComponent(
-      `I scored ${overall}/10 on The Great Repurpose Self-Check. My strongest signal: ${dimensionMeta[strongest].label}.\n\nCurious about your own shape? Take the free assessment →`
+      `I scored ${overall.toFixed(1)}/10 on The Great Repurpose Self-Check. My strongest signal: ${dimensionMeta[strongest].label}.\n\nCurious about your own shape? Take the free assessment →`
     );
     const url = encodeURIComponent(selfCheckUrl);
     window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
+  };
+
+  const handleDownloadPDF = async () => {
+    if (!reportRef.current) return;
+    setGenerating(true);
+    try {
+      await generatePDF(reportRef.current, scores);
+    } catch (err) {
+      console.error("PDF generation failed:", err);
+    }
+    setGenerating(false);
   };
 
   return (
@@ -376,7 +414,7 @@ const ResultsPreview = () => {
       <main id="main-content">
 
       {!submitted ? (
-        /* ── Pre-email: scores teaser + email gate ── */
+        /* ── Pre-email: overall score teaser + email gate ── */
         <section className="bg-navy min-h-screen flex items-center justify-center px-6 pt-24 pb-16">
           <div className="max-w-2xl mx-auto w-full">
             <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">
@@ -392,6 +430,9 @@ const ResultsPreview = () => {
         </section>
       ) : (
         <>
+          {/* ── PDF-capturable report section ── */}
+          <div ref={reportRef}>
+
           {/* ── Radar chart + Strongest ── */}
           <section className="bg-navy pt-28 pb-16 px-6">
             <div className="max-w-2xl mx-auto text-center">
@@ -418,42 +459,41 @@ const ResultsPreview = () => {
                 </RadarChart>
               </ResponsiveContainer>
 
-              <p className="font-sans text-cream/60 text-sm mt-4 mb-2">
+              {/* Overall + strongest */}
+              <p className="font-serif text-coral text-5xl font-bold mt-6 mb-1">{overall.toFixed(1)}</p>
+              <p className="font-sans text-cream/40 text-sm mb-4">overall signal</p>
+
+              <p className="font-sans text-cream/60 text-sm mb-2">
                 Your strongest signal right now:
               </p>
               <p className="font-serif text-coral text-2xl font-bold">
                 {dimensionMeta[strongest].label}
               </p>
               <p className="font-sans text-cream/60 text-base italic mt-2">
-                {dimensionMeta[strongest].phase}
+                {dimensionMeta[strongest].stage}
               </p>
             </div>
           </section>
-        </>
-      )}
 
-      {submitted && (
-        <>
-          {/* ── Dimension breakdown with scores ── */}
-          <section className="py-16 px-6">
-            <div className="max-w-3xl mx-auto space-y-2">
+          {/* ── Dimension breakdown — consistent navy bg ── */}
+          <section className="bg-navy py-16 px-6">
+            <div className="max-w-3xl mx-auto space-y-4">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">Dimension by Dimension</p>
-              {dimensionOrder.map((dim, i) => {
+              {dimensionOrder.map((dim) => {
                 const score = scores[dim];
                 const tier = getScoreTier(score);
-                const isNavy = i % 2 === 0;
                 return (
-                  <div key={dim} className={`${isNavy ? "bg-navy" : "bg-cream"} rounded-lg p-8`}>
+                  <div key={dim} className="border border-cream/10 rounded-lg p-8 bg-cream/[0.03]">
                     <div className="flex items-center justify-between mb-4">
                       <div>
                         <p className="font-sans text-xs uppercase tracking-widest text-coral font-medium mb-1">
                           {dimensionMeta[dim].label}
                         </p>
-                        <p className={`font-sans text-xs ${isNavy ? "text-cream/40" : "text-navy/40"}`}>
-                          {dimensionMeta[dim].phase}
+                        <p className="font-sans text-xs text-cream/40">
+                          {dimensionMeta[dim].stage}
                         </p>
                       </div>
-                      <p className={`font-serif text-3xl font-bold ${isNavy ? "text-cream" : "text-navy"}`}>
+                      <p className="font-serif text-3xl font-bold text-cream">
                         {score.toFixed(1)}
                       </p>
                     </div>
@@ -467,7 +507,7 @@ const ResultsPreview = () => {
                         }}
                       />
                     </div>
-                    <p className={`font-sans text-base leading-relaxed ${isNavy ? "text-cream/70" : "text-navy/70"}`}>
+                    <p className="font-sans text-base leading-relaxed text-cream/70">
                       {dimensionMeta[dim].descriptions[tier]}
                     </p>
                   </div>
@@ -513,6 +553,8 @@ const ResultsPreview = () => {
             </div>
           </section>
 
+          </div>{/* end reportRef */}
+
           {/* Secondary recommendations */}
           <section className="bg-cream py-16 px-6">
             <div className="max-w-3xl mx-auto">
@@ -538,7 +580,7 @@ const ResultsPreview = () => {
             </div>
           </section>
 
-          {/* Share */}
+          {/* Share + Download */}
           <section className="bg-navy py-16 px-6">
             <div className="max-w-xl mx-auto text-center">
               <h2 className="font-serif text-cream text-2xl mb-3">Share your shape.</h2>
@@ -546,6 +588,13 @@ const ResultsPreview = () => {
                 Your link goes to your full results. Social shares invite others to take the free assessment.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
+                <button
+                  onClick={handleDownloadPDF}
+                  disabled={generating}
+                  className="bg-coral text-cream font-sans text-sm font-medium px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
+                >
+                  {generating ? "Generating…" : "Download PDF Report"}
+                </button>
                 {resultUrl && (
                   <button
                     onClick={handleCopyLink}

@@ -19,7 +19,7 @@ export function Footer() {
           <div className="flex flex-col gap-2">
             {[
               { to: "/", label: "Home" },
-              { to: "/phases", label: "The Five Phases" },
+              { to: "/phases", label: "The Five Stages" },
               { to: "/about", label: "About" },
               { to: "/selfcheck", label: "Take the Self-Check" },
             ].map(({ to, label }) => (
