@@ -111,12 +111,6 @@ const Index = () => {
             <p className="text-cream/50 text-sm font-sans mb-6">
               Discover where you are — and what you're building toward.
             </p>
-            <p className="font-sans text-cream/70 text-base mx-auto leading-relaxed">
-              We didn't ask for this.<br />
-              We can't escape it.<br />
-              The only way forward is through…<br />
-              and you're not alone.
-            </p>
           </ScrollFadeUp>
           </div>
         </div>
