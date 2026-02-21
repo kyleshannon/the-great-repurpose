@@ -1,36 +1,33 @@
 
-
-# Update Community Links Across the Site
+# Add Intro Paragraph Before the Self-Check CTA
 
 ## What Changes
 
-Replace all placeholder `https://thesalon.ai` URLs with the correct destinations:
+Add an introductory paragraph in the hero CTA area (lines 83-95) that briefly explains what The Great Repurpose is and what the Self-Check does, placed between the hero image and the "Take the Self-Check" button.
 
-| Link | New URL |
-|------|---------|
-| Free Community | `https://community.thesalon.ai` |
-| Office Hours / Meet & Greet | `https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet` |
-| AI Readiness Project Podcast | `http://aireadinessproject.com/` |
+## Content
 
-## Files to Update
+The intro will cover two things:
+1. **The Great Repurpose** -- a one-sentence framing of what it is (a diagnosis of the meaning crisis caused by AI disruption, not a course or a certificate)
+2. **The Self-Check** -- what the user is about to take (7 scenario-based questions that map where you are across 5 stages of navigating this transition)
 
-### 1. `src/components/Footer.tsx`
-- "thesalon.ai" link -> `https://community.thesalon.ai`
-- "The AI Readiness Project Podcast" -> `http://aireadinessproject.com/`
-- "Office Hours: Fridays" -> `https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet`
+## File to Update
 
-### 2. `src/pages/ResultsPreview.tsx`
-Update all dimension recommendation links:
-- Every "Friday Office Hours" link -> Office Hours URL
-- Every "Free Community" link -> `https://community.thesalon.ai`
-- "AI Readiness Project Podcast" in the bottom CTA grid -> `http://aireadinessproject.com/`
-- Other links (Learn Out Loud, AI Learning Lab, Mastermind Practice Lab) will keep `https://thesalon.ai` since no specific URL was provided for those
+### `src/pages/Index.tsx` (lines 83-95)
 
-### 3. `src/pages/About.tsx`
-- The "Visit thesalon.ai" CTA keeps its current URL (it points to the main site, not the community)
+Currently the CTA section jumps straight to the button. We'll insert a short block of copy above it:
 
-### 4. `src/pages/Index.tsx`
-- The inline "AI Salon" link keeps `https://thesalon.ai` (main site reference)
+```
+The Great Repurpose is a map for the invisible crisis no one is naming:
+what happens to your sense of meaning when the work that defined you
+changes faster than you can adapt.
 
-No structural or design changes -- just URL corrections.
+The Self-Check is where you start. Seven scenario-based questions that
+reveal where you are across five stages of this transition -- your
+strengths, your gaps, and the specific next step that matches where
+you are right now.
+```
 
+This will be styled as centered body text (`font-sans text-cream/70 text-base`) with a max-width constraint, sitting inside the existing `ScrollFadeUp` wrapper above the button.
+
+No other files change. No structural or routing changes.
