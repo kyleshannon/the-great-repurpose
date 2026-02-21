@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useSearchParams, useParams, useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import {
   RadarChart,
@@ -226,21 +226,73 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
   );
 }
 
+// ── Helper: build share text from scores ─────────────────────────────────────
+
+function buildShareSummary(scores: Record<DimensionKey, number>, selfCheckUrl: string) {
+  const overall = (Object.values(scores).reduce((a, b) => a + b, 0) / 5).toFixed(1);
+  const strongest = getStrongestDimension(scores);
+  return `I just took The Great Repurpose Self-Check — a free assessment for anyone navigating the AI transition.\n\nMy signal score: ${overall}/10\nStrongest dimension: ${dimensionMeta[strongest].label}\n\nCurious about your own shape? Take the free assessment → ${selfCheckUrl}`;
+}
+
 // ── Main component ───────────────────────────────────────────────────────────
 
 const ResultsPreview = () => {
   const [searchParams] = useSearchParams();
-  const [submitted, setSubmitted] = useState(false);
-  const [resultId, setResultId] = useState<string | null>(null);
-  const [copied, setCopied] = useState(false);
+  const { id: routeId } = useParams<{ id: string }>();
+  const navigate = useNavigate();
 
-  const scores: Record<DimensionKey, number> = {
-    identity: parseFloat(searchParams.get("identity") || "5"),
-    value: parseFloat(searchParams.get("value") || "5"),
-    purpose: parseFloat(searchParams.get("purpose") || "5"),
-    ai_relationship: parseFloat(searchParams.get("ai_relationship") || "5"),
-    creative_action: parseFloat(searchParams.get("creative_action") || "5"),
-  };
+  const [submitted, setSubmitted] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [scores, setScores] = useState<Record<DimensionKey, number> | null>(null);
+  const [resultId, setResultId] = useState<string | null>(routeId || null);
+
+  // If we have a route ID, load saved results from DB
+  useEffect(() => {
+    if (!routeId) {
+      // Preview mode — scores come from search params
+      setScores({
+        identity: parseFloat(searchParams.get("identity") || "5"),
+        value: parseFloat(searchParams.get("value") || "5"),
+        purpose: parseFloat(searchParams.get("purpose") || "5"),
+        ai_relationship: parseFloat(searchParams.get("ai_relationship") || "5"),
+        creative_action: parseFloat(searchParams.get("creative_action") || "5"),
+      });
+      return;
+    }
+
+    // Saved result — load from DB and show full results
+    setLoading(true);
+    supabase
+      .from("selfcheck_results")
+      .select("*")
+      .eq("id", routeId)
+      .single()
+      .then(({ data, error }) => {
+        if (error || !data) {
+          navigate("/selfcheck", { replace: true });
+          return;
+        }
+        setScores({
+          identity: data.identity_score,
+          value: data.value_score,
+          purpose: data.purpose_score,
+          ai_relationship: data.ai_relationship_score,
+          creative_action: data.creative_action_score,
+        });
+        setSubmitted(true);
+        setResultId(data.id);
+        setLoading(false);
+      });
+  }, [routeId]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  if (loading || !scores) {
+    return (
+      <div className="min-h-screen bg-navy text-cream flex items-center justify-center">
+        <p className="font-sans text-cream/50">Loading your results…</p>
+      </div>
+    );
+  }
 
   const strongest = getStrongestDimension(scores);
   const lowest = getLowestDimension(scores);
@@ -252,6 +304,11 @@ const ResultsPreview = () => {
     { subject: "AI Relationship", value: scores.ai_relationship, fullMark: 10 },
     { subject: "Creative Action", value: scores.creative_action, fullMark: 10 },
   ];
+
+  const selfCheckUrl = `${window.location.origin}/selfcheck`;
+  const resultUrl = resultId
+    ? `${window.location.origin}/results/${resultId}`
+    : null;
 
   const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
@@ -275,6 +332,8 @@ const ResultsPreview = () => {
 
       if (!error && data) {
         setResultId(data.id);
+        // Navigate to the permanent URL
+        navigate(`/results/${data.id}`, { replace: true });
       }
 
       supabase.functions.invoke("subscribe-kit", {
@@ -288,10 +347,6 @@ const ResultsPreview = () => {
     setSubmitted(true);
   };
 
-  const resultUrl = resultId
-    ? `${window.location.origin}/results/${resultId}`
-    : null;
-
   const handleCopyLink = () => {
     if (resultUrl) {
       navigator.clipboard.writeText(resultUrl);
@@ -302,15 +357,16 @@ const ResultsPreview = () => {
 
   const handleShareLinkedIn = () => {
     const url = encodeURIComponent(resultUrl || window.location.href);
-    const text = encodeURIComponent(
-      `I took the Great Repurpose Self-Check and this is my shape right now. — "Your Signal in the Noise"`
-    );
+    const text = encodeURIComponent(buildShareSummary(scores, selfCheckUrl));
     window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&summary=${text}`, "_blank");
   };
 
   const handleShareX = () => {
-    const url = encodeURIComponent(resultUrl || window.location.href);
-    const text = encodeURIComponent(`My signal, right now. — The Great Repurpose`);
+    const overall = (Object.values(scores).reduce((a, b) => a + b, 0) / 5).toFixed(1);
+    const text = encodeURIComponent(
+      `I scored ${overall}/10 on The Great Repurpose Self-Check. My strongest signal: ${dimensionMeta[strongest].label}.\n\nCurious about your own shape? Take the free assessment →`
+    );
+    const url = encodeURIComponent(selfCheckUrl);
     window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
   };
 
@@ -485,7 +541,10 @@ const ResultsPreview = () => {
           {/* Share */}
           <section className="bg-navy py-16 px-6">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-serif text-cream text-2xl mb-8">Share your shape.</h2>
+              <h2 className="font-serif text-cream text-2xl mb-3">Share your shape.</h2>
+              <p className="font-sans text-cream/50 text-sm mb-8">
+                Your link goes to your full results. Social shares invite others to take the free assessment.
+              </p>
               <div className="flex flex-wrap justify-center gap-4">
                 {resultUrl && (
                   <button
