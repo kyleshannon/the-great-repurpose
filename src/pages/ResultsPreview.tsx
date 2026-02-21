@@ -389,19 +389,16 @@ const ResultsPreview = () => {
         /* ── Pre-email: Archetype teaser + radar + blurred preview + email gate ── */
         <section className="bg-navy min-h-screen flex items-center justify-center px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-16">
           <div className="max-w-2xl mx-auto w-full">
-            {/* Archetype name */}
+            {/* Type name */}
             <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3 text-center">
-              You are
+              Based on your answers, you are
             </p>
-            <h1 className="font-serif text-cream text-4xl md:text-5xl text-center mb-2">
+            <h1 className="font-serif text-cream text-4xl md:text-5xl text-center mb-10">
               {archetype.name}
             </h1>
-            <p className="font-serif text-cream/60 text-lg italic text-center mb-10">
-              {archetype.tagline}
-            </p>
 
             {/* Radar chart */}
-            <div className="mb-10">
+            <div className="mb-2">
               <ResponsiveContainer width="100%" height={260}>
                 <RadarChart data={chartData}>
                   <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
@@ -419,22 +416,24 @@ const ResultsPreview = () => {
                   />
                 </RadarChart>
               </ResponsiveContainer>
+              <p className="text-cream/40 text-xs text-center font-sans">Your shape across the five dimensions</p>
             </div>
 
-            {/* Blurred interpretation preview */}
-            <div className="relative mb-10">
-              <div className="blur-sm select-none pointer-events-none">
-                <p className="font-sans text-cream/70 text-base leading-relaxed">
-                  {archetype.description} {archetype.vulnerability} The work ahead is clear, and the next step is specific to your shape. Your interpretation will reveal the relationship between your dimensions and what it means for your path forward...
+            {/* Tagline teaser with fade */}
+            <div className="relative mb-10 mt-8">
+              <p className="font-serif text-cream/80 text-lg text-center leading-relaxed">
+                As {archetype.name}, you're building toward…
+              </p>
+              <div className="relative mt-2 overflow-hidden" style={{ maxHeight: "3.5em" }}>
+                <p className="font-sans text-cream/70 text-base leading-relaxed text-center">
+                  {archetype.tagline.replace("You're building toward ", "")} {archetype.description}
                 </p>
-              </div>
-              <div
-                className="absolute inset-0 flex items-center justify-center"
-                style={{
-                  background: "linear-gradient(to bottom, transparent 0%, hsl(70 10% 10% / 0.8) 40%, hsl(70 10% 10%) 100%)",
-                }}
-              >
-                <p className="font-sans text-cream/60 text-sm">Enter your email to read your full interpretation</p>
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background: "linear-gradient(to bottom, transparent 0%, hsl(70 10% 10%) 80%)",
+                  }}
+                />
               </div>
             </div>
 

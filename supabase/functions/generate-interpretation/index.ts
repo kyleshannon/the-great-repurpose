@@ -29,7 +29,7 @@ serve(async (req) => {
 
 You are warm, perceptive, and direct — like a paragraph from a friend who happens to be a therapist. You see patterns. You name things people feel but haven't articulated.
 
-THEIR ARCHETYPE: "${archetype.name}"
+THEIR TGR TYPE: "${archetype.name}"
 TAGLINE: "${archetype.tagline}"
 DESCRIPTION: ${archetype.description}
 VULNERABILITY: ${archetype.vulnerability}
@@ -66,7 +66,7 @@ Write in second person ("you"). Keep sentences varied — some short, some flowi
         model: 'google/gemini-3-flash-preview',
         messages: [
           { role: 'system', content: systemPrompt },
-          { role: 'user', content: `Write my personalized interpretation based on my scores and archetype. Remember: flowing prose, no headers, no bullets.` },
+          { role: 'user', content: `Write my personalized interpretation based on my scores and TGR Type. Remember: flowing prose, no headers, no bullets.` },
         ],
         stream: true,
       }),

@@ -200,7 +200,7 @@ const SelfCheck = () => {
               : "bg-cream/10 text-cream/20 cursor-not-allowed"
           }`}
         >
-          {currentQ === questions.length - 1 ? "See my results →" : "Next →"}
+          {currentQ === questions.length - 1 ? "Find Your TGR Type →" : "Next →"}
         </button>
       </div>
     </main>
