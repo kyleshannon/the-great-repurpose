@@ -92,7 +92,7 @@ const Phases = () => {
       {/* Stage sections */}
       {stages.map((stage) => (
         <section key={stage.number} className={`${stage.bg} py-20 px-6`}>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <ScrollFadeUp>
               <div className="flex items-center gap-4 mb-6">
                 <span className={`font-sans text-xs uppercase tracking-widest font-medium ${stage.accent}`}>

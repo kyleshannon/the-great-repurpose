@@ -59,31 +59,32 @@ const Index = () => {
 
       {/* ── Section 1: Hero ── */}
       <section className="relative bg-navy">
-        {/* Hero image with text overlay */}
+        {/* Hero image */}
         <div className="relative w-full pt-16 max-h-[70vh] overflow-hidden">
           <img
             src="/images/hero.png"
             alt="People standing together, facing forward"
             className="w-full h-auto block object-cover object-top"
           />
-          {/* Dark gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent" />
-          {/* Text overlay */}
-          <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 md:pb-14">
-            <div className="max-w-3xl mx-auto">
-              <h1 className="font-sans font-bold text-cream text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-1">
-                The Great Repurpose
-              </h1>
-              <p className="font-sans font-medium text-cream/80 text-2xl md:text-3xl lg:text-4xl">
-                Finding Meaning in the Face of Unprecedented Change
-              </p>
-            </div>
+          {/* Gradient fade to navy at bottom */}
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-navy to-transparent" />
+        </div>
+
+        {/* Title block below image */}
+        <div className="bg-navy px-6 pb-6">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="font-sans font-bold text-cream text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-1">
+              The Great Repurpose
+            </h1>
+            <p className="font-sans font-medium text-cream/80 text-2xl md:text-3xl lg:text-4xl">
+              Finding Meaning in the Face of Unprecedented Change
+            </p>
           </div>
         </div>
 
-        {/* CTA below image */}
+        {/* CTA below title */}
         <div className="bg-navy px-6 py-8 md:py-10 text-center">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <p className="font-sans text-cream/70 text-base mx-auto mb-6 leading-relaxed">
               The Great Repurpose is a map for the invisible crisis no one is naming: what happens to your sense of meaning when the work that defined you changes faster than you can adapt.
@@ -107,7 +108,7 @@ const Index = () => {
 
       {/* ── Section 2: Name the Crisis ── */}
       <section className="bg-cream py-16 md:py-24 px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-3xl md:text-4xl mb-10">
               The headlines say "AI is taking jobs." That's the easy version.
@@ -155,7 +156,7 @@ const Index = () => {
 
       {/* ── Section 3: Three Faces of Disruption ── */}
       <section className="bg-navy constellation-bg py-16 md:py-24 px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-cream text-3xl md:text-4xl text-center mb-16">
               Three faces of the same disruption
@@ -200,7 +201,7 @@ const Index = () => {
 
       {/* ── Section 4: The Five Stages ── */}
       <section className="bg-cream py-16 md:py-24 px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-3xl md:text-4xl text-center mb-4">
               The Great Repurpose: Five stages of finding your way through
@@ -247,7 +248,7 @@ const Index = () => {
 
       {/* ── Section 5: This Isn't About Skills ── */}
       <section className="bg-navy constellation-bg py-16 md:py-24 px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-cream text-3xl md:text-4xl leading-tight mb-10">
               Everyone else is selling you a course. We're naming what's actually happening.
@@ -304,7 +305,7 @@ const Index = () => {
 
       {/* ── Section 6: Self-Check Promo ── */}
       <section className="bg-cream py-16 md:py-24 px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-3xl md:text-4xl mb-4">
               The Great Repurpose Self-Check

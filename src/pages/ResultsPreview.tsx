@@ -526,7 +526,7 @@ const ResultsPreview = () => {
 
           {/* ── Dimension breakdown (collapsible) ── */}
           <section className="bg-navy py-16 px-6">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">
                 Dimension by Dimension
               </p>
@@ -584,7 +584,7 @@ const ResultsPreview = () => {
 
           {/* Secondary recommendations */}
           <section className="bg-cream py-16 px-6">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-8 text-center">Also worth exploring</p>
               <div className="space-y-4">
                 {[
