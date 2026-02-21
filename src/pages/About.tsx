@@ -1,16 +1,15 @@
-import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 
 const pillars = [
   {
-    name: "Friday Office Hours",
+    name: "Office Hours every Friday",
     desc: "Weekly live sessions where real questions get real answers. Not a lecture. A conversation.",
   },
   {
     name: "AI Learning Lab",
-    desc: "Hands-on exploration of AI tools in a low-stakes, high-trust environment. You can be a beginner here.",
+    desc: "Five nights a week. Hands-on exploration of AI tools in a low-stakes, high-trust environment.",
   },
   {
     name: "The AI Readiness Project Podcast",
@@ -18,7 +17,7 @@ const pillars = [
   },
   {
     name: "Mastermind Practice Lab",
-    desc: "Small-group accountability and practice for people building new directions. For the Reorientation and Authorship phases.",
+    desc: "For members ready to go deeper. Small-group accountability and practice for people building new directions.",
   },
 ];
 
@@ -32,7 +31,7 @@ const About = () => {
         <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
             <h1 className="font-serif text-cream text-3xl md:text-5xl leading-tight">
-              "The Great Repurpose didn't start as a concept. It started as a conversation."
+              About The Great Repurpose
             </h1>
           </ScrollFadeUp>
         </div>
@@ -40,22 +39,27 @@ const About = () => {
 
       {/* ── Origin story ── */}
       <section className="bg-cream py-20 px-6">
-        <div className="max-w-3xl mx-auto font-sans text-navy/80 text-lg leading-relaxed space-y-6">
+        <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
-            <p>
-              Kyle Shannon has spent his career at the intersection of creativity, technology, and human meaning. He co-founded one of the first digital agencies in the 1990s — back when "putting your business on the internet" was a radical act. He's a Grammy-winning lyricist. He's built communities, led companies, and spent decades helping people navigate the space between what they're good at and what they're for.
-            </p>
+            <h2 className="font-serif text-navy text-2xl md:text-3xl mb-8">The Origin</h2>
           </ScrollFadeUp>
-          <ScrollFadeUp delay={100}>
-            <p>
-              When AI began accelerating in late 2022, Kyle co-founded the AI Salon — a community for people who wanted to think seriously about what this moment means, not just what it can do. He's been in weekly conversation with hundreds of people navigating the disruption ever since.
-            </p>
-          </ScrollFadeUp>
-          <ScrollFadeUp delay={150}>
-            <p>
-              The Great Repurpose emerged from those conversations. The same questions kept surfacing — not "how do I use AI?" but "who am I now that AI can do what I do?" The framework didn't come from research. It came from listening.
-            </p>
-          </ScrollFadeUp>
+          <div className="font-sans text-navy/80 text-lg leading-relaxed space-y-6">
+            <ScrollFadeUp>
+              <p>
+                The Great Repurpose began with a question Kyle Shannon couldn't stop asking: if AI is disrupting the relationship between people and the work that gives them meaning, why is everyone treating it like a training problem?
+              </p>
+            </ScrollFadeUp>
+            <ScrollFadeUp delay={100}>
+              <p>
+                Kyle is the co-founder and president of the AI Salon, a values-driven community that's been exploring the intersection of generative AI and human potential since December 7, 2022 — five days after ChatGPT launched. A Grammy award-winning lyricist, a co-founder of one of the first digital agencies in the '90s, and someone who's spent decades at the intersection of new technology and creative expression, Kyle saw something in the AI transition that the bootcamps and the influencers were missing: the crisis wasn't about skills. It was about meaning.
+              </p>
+            </ScrollFadeUp>
+            <ScrollFadeUp delay={150}>
+              <p>
+                The Great Repurpose is the framework that emerged — a way of understanding what's actually happening to people when AI changes their relationship with work, and a map of the five phases they cross on the way to something new.
+              </p>
+            </ScrollFadeUp>
+          </div>
         </div>
       </section>
 
@@ -64,11 +68,11 @@ const About = () => {
         <div className="max-w-5xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-cream text-3xl md:text-4xl mb-4 leading-tight">
-              "The Great Repurpose is the diagnosis.<br />
-              The AI Salon is the treatment."
+              The Great Repurpose is the diagnosis.<br />
+              The AI Salon is the treatment.
             </h2>
             <p className="font-sans text-cream/70 text-lg leading-relaxed mb-14 max-w-2xl">
-              The AI Salon is a community for people who want to navigate the AI moment without losing themselves in it. Founded in December 2022, it's where practitioners, leaders, creators, and thinkers come together — not to become AI experts, but to figure out what AI means for them specifically.
+              The AI Salon is a community of artists, builders, educators, and policy thinkers exploring the potential of generative AI — with optimism, humility, and a shared belief that the future of AI should be co-created by the many, not the few. It operates on the Cycle of AI Readiness: Play First → Create Excellence → Generously Lead.
             </p>
           </ScrollFadeUp>
 
@@ -85,6 +89,9 @@ const About = () => {
           </div>
 
           <ScrollFadeUp delay={320}>
+            <p className="font-sans text-cream/70 text-lg mb-8 max-w-2xl">
+              If The Great Repurpose Self-Check showed you where you are, the AI Salon is where you go next.
+            </p>
             <div className="text-center">
               <a
                 href="https://thesalon.ai"
@@ -92,7 +99,7 @@ const About = () => {
                 rel="noopener noreferrer"
                 className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity"
               >
-                Join the AI Salon →
+                Visit thesalon.ai →
               </a>
             </div>
           </ScrollFadeUp>
