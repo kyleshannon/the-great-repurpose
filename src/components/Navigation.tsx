@@ -18,7 +18,6 @@ export function Navigation() {
   }, [location]);
 
   const navLinks = [
-    { to: "/", label: "The Signal" },
     { to: "/phases", label: "The Five Stages" },
     { to: "/about", label: "About" },
   ];
