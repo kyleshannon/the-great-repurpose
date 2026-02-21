@@ -61,6 +61,8 @@ export default {
         navy: "hsl(var(--navy))",
         cream: "hsl(var(--cream))",
         coral: "hsl(var(--coral))",
+        sage: "hsl(var(--sage))",
+        "sage-light": "hsl(var(--sage-light))",
         mint: "hsl(var(--mint))",
         periwinkle: "hsl(var(--periwinkle))",
         "amber-brand": "hsl(var(--amber))",
@@ -84,8 +86,8 @@ export default {
           to: { height: "0" },
         },
         "pulse-coral": {
-          "0%, 100%": { boxShadow: "0 0 15px hsl(var(--coral) / 0.3), 0 0 30px hsl(var(--coral) / 0.15)" },
-          "50%": { boxShadow: "0 0 25px hsl(var(--coral) / 0.5), 0 0 50px hsl(var(--coral) / 0.25)" },
+          "0%, 100%": { boxShadow: "0 0 15px hsl(var(--sage) / 0.2), 0 0 30px hsl(var(--sage) / 0.1)" },
+          "50%": { boxShadow: "0 0 25px hsl(var(--sage) / 0.35), 0 0 50px hsl(var(--sage) / 0.15)" },
         },
       },
       animation: {

@@ -22,7 +22,7 @@ const dimensionMeta: Record<DimensionKey, {
   identity: {
     label: "Identity",
     phase: "Phase 1 — Disorientation",
-    color: "hsl(21 89% 54%)",
+    color: "hsl(145 25% 50%)",
     descriptions: {
       low: "Right now, your sense of self and your work are deeply intertwined — which means the disruption of one feels like the disruption of both. That's not a flaw; it's a sign of how fully you've committed to your work. The invitation here is to begin, slowly, to locate yourself somewhere that AI cannot reach.",
       mid: "You have some separation between who you are and what you do, but the line is still blurry. That's honest. Most people in this moment are somewhere in the middle, feeling the tug between identity and role.",
@@ -32,7 +32,7 @@ const dimensionMeta: Record<DimensionKey, {
   value: {
     label: "Value Clarity",
     phase: "Phase 3 — Excavation",
-    color: "hsl(155 26% 60%)",
+    color: "hsl(155 20% 55%)",
     descriptions: {
       low: "Right now, you're finding it hard to name what you uniquely bring — and that's one of the most honest and human places to be in this moment. The parts of your work that felt most distinctively yours may be the ones most visibly affected by AI. That's not evidence that you have nothing to offer. It's an invitation to look deeper.",
       mid: "You have a partial sense of your unique contribution, but you can't always name it clearly. That's common — and it's exactly the kind of thing a community conversation can help surface.",
@@ -42,7 +42,7 @@ const dimensionMeta: Record<DimensionKey, {
   purpose: {
     label: "Purpose",
     phase: "Phase 4 — Reorientation",
-    color: "hsl(207 79% 87%)",
+    color: "hsl(145 15% 70%)",
     descriptions: {
       low: "Direction is the hardest thing to rebuild from the outside in. If you're feeling unmoored about what you're building toward, you're not lost — you're in the part of the terrain that requires a different kind of navigation. Slower. More internal. Less certain.",
       mid: "You have some sense of direction, but it's not yet fully motivating. That's the middle of the map — enough to keep moving, not yet enough to feel pulled. The work is finding what genuinely energizes you and letting that be the compass.",
@@ -52,7 +52,7 @@ const dimensionMeta: Record<DimensionKey, {
   ai_relationship: {
     label: "AI Relationship",
     phase: "Phase 2 — Reckoning",
-    color: "hsl(49 78% 60%)",
+    color: "hsl(45 40% 55%)",
     descriptions: {
       low: "The best cure for anxiety about AI tools is actually using them — in a low-stakes, high-trust environment with other humans who are figuring it out too. Avoidance tends to amplify the fear. The AI Learning Lab is built exactly for this moment.",
       mid: "You're engaging with AI tools, but not yet on your own terms — or not yet with confidence. That's a very normal place to be. The shift from reluctant user to intentional user is less about skill than about context.",
@@ -62,7 +62,7 @@ const dimensionMeta: Record<DimensionKey, {
   creative_action: {
     label: "Creative Action",
     phase: "Phase 5 — Authorship",
-    color: "hsl(21 89% 54%)",
+    color: "hsl(145 25% 50%)",
     descriptions: {
       low: "You have signal. You're just not yet making it visible — to yourself or to others. The move from consuming to creating is one of the most important transitions in The Great Repurpose. It doesn't require perfection. It requires showing up.",
       mid: "You're creating some things, sharing some things — but not yet consistently or with full confidence. That's the creative equivalent of Reorientation: you know the direction, but you haven't yet made it a practice.",
@@ -294,18 +294,18 @@ const ResultsPreview = () => {
 
               <ResponsiveContainer width="100%" height={340}>
                 <RadarChart data={chartData}>
-                  <PolarGrid stroke="hsl(30 33% 91% / 0.15)" />
-                  <PolarAngleAxis
-                    dataKey="subject"
-                    tick={{ fill: "hsl(30 33% 91% / 0.7)", fontSize: 12, fontFamily: "Inter" }}
-                  />
+              <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
+              <PolarAngleAxis
+                dataKey="subject"
+                tick={{ fill: "hsl(40 25% 90% / 0.7)", fontSize: 12, fontFamily: "Inter" }}
+              />
                   <Radar
-                    name="Your Signal"
-                    dataKey="value"
-                    stroke="hsl(21 89% 54%)"
-                    fill="hsl(21 89% 54%)"
-                    fillOpacity={0.25}
-                    strokeWidth={2}
+                  name="Your Signal"
+                  dataKey="value"
+                  stroke="hsl(145 25% 50%)"
+                  fill="hsl(145 25% 50%)"
+                  fillOpacity={0.2}
+                  strokeWidth={2}
                   />
                 </RadarChart>
               </ResponsiveContainer>
@@ -352,10 +352,10 @@ const ResultsPreview = () => {
                     <div className="relative h-2 bg-cream/10 rounded-full mb-6 overflow-hidden">
                       <div
                         className="absolute inset-y-0 left-0 rounded-full"
-                        style={{
-                          width: `${((score - 1) / 9) * 100}%`,
-                          background: "linear-gradient(to right, hsl(21 89% 54%), hsl(207 79% 87%))",
-                        }}
+                      style={{
+                        width: `${((score - 1) / 9) * 100}%`,
+                        background: "linear-gradient(to right, hsl(70 10% 25%), hsl(145 25% 50%))",
+                      }}
                       />
                     </div>
                     <p className={`font-sans text-base leading-relaxed ${isNavy ? "text-cream/70" : "text-navy/70"}`}>
