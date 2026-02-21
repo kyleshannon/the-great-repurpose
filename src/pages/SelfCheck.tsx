@@ -62,7 +62,7 @@ const SelfCheck = () => {
   const navigate = useNavigate();
   const [currentQ, setCurrentQ] = useState(0);
   const [answers, setAnswers] = useState<Scores>(
-    Object.fromEntries(questions.map((q) => [q.id, 5]))
+    Object.fromEntries(questions.map((q) => [q.id, 5.5]))
   );
   const [touched, setTouched] = useState(false);
   const [slideDirection, setSlideDirection] = useState<"left" | "right">("right");

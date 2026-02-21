@@ -129,6 +129,59 @@ const salonRouting: Record<DimensionKey, { body: string; links: { label: string;
   },
 };
 
+const dimensionOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];
+
+// ── Score teaser card (shown pre-email) ──────────────────────────────────────
+
+function ScoreTeaser({ scores }: { scores: Record<DimensionKey, number> }) {
+  const strongest = getStrongestDimension(scores);
+  const overall = Object.values(scores).reduce((a, b) => a + b, 0) / 5;
+
+  return (
+    <div className="w-full max-w-xl mx-auto">
+      {/* Overall score */}
+      <div className="text-center mb-8">
+        <p className="font-sans text-cream/50 text-xs uppercase tracking-widest mb-2">
+          Your overall signal
+        </p>
+        <p className="font-serif text-coral text-6xl font-bold leading-none">
+          {overall.toFixed(1)}
+        </p>
+        <p className="font-sans text-cream/40 text-sm mt-1">out of 10</p>
+      </div>
+
+      {/* Per-dimension scores */}
+      <div className="grid grid-cols-5 gap-3 mb-8">
+        {dimensionOrder.map((dim) => (
+          <div key={dim} className="text-center">
+            <p className="font-serif text-cream text-2xl font-bold mb-1">
+              {scores[dim].toFixed(1)}
+            </p>
+            <p className="font-sans text-cream/40 text-[10px] uppercase tracking-wider leading-tight">
+              {dimensionMeta[dim].label}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* Teaser paragraph with fade */}
+      <div className="relative">
+        <p className="font-sans text-cream/70 text-base leading-relaxed">
+          Your signal is clearest in <span className="text-coral font-medium">{dimensionMeta[strongest].label}</span>.{" "}
+          {dimensionMeta[strongest].descriptions[getScoreTier(scores[strongest])].slice(0, 180)}...
+        </p>
+        {/* Fade overlay */}
+        <div
+          className="absolute bottom-0 left-0 right-0 h-16 pointer-events-none"
+          style={{
+            background: "linear-gradient(to bottom, transparent, hsl(70 10% 10%))",
+          }}
+        />
+      </div>
+    </div>
+  );
+}
+
 // ── Email gate component ─────────────────────────────────────────────────────
 
 function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
@@ -142,10 +195,10 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
   };
 
   return (
-    <div className="bg-navy border border-coral/20 rounded-xl p-8 text-center">
-      <h2 className="font-serif text-cream text-2xl mb-3">Your full results are ready.</h2>
-      <p className="font-sans text-cream/60 text-base mb-8 max-w-md mx-auto">
-        Enter your email to unlock your complete profile — including a dimension-by-dimension breakdown and your personalized next step.
+    <div className="border border-cream/10 rounded-xl p-8 text-center bg-cream/[0.03]">
+      <h2 className="font-serif text-cream text-xl mb-2">Read your full results.</h2>
+      <p className="font-sans text-cream/50 text-sm mb-6 max-w-md mx-auto">
+        Enter your email to unlock your complete profile — dimension-by-dimension breakdown, radar chart, and your personalized next step.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <label htmlFor="email-input" className="sr-only">Email address</label>
@@ -163,11 +216,11 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
           disabled={submitting}
           className="bg-coral text-cream font-sans font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
         >
-          {submitting ? "Saving..." : "Send My Results →"}
+          {submitting ? "Saving..." : "Unlock Results →"}
         </button>
       </form>
-      <p className="text-cream/50 text-xs mt-4 font-sans">
-        No spam. Ever. Your results are yours. We'll occasionally share things from The Great Repurpose and the AI Salon that are actually worth your time.
+      <p className="text-cream/40 text-xs mt-4 font-sans">
+        No spam. Ever. We'll occasionally share things from The Great Repurpose that are actually worth your time.
       </p>
     </div>
   );
@@ -206,7 +259,6 @@ const ResultsPreview = () => {
     const lowestDim = getLowestDimension(scores);
 
     try {
-      // Save results to DB
       const { data, error } = await supabase
         .from("selfcheck_results")
         .insert({
@@ -225,7 +277,6 @@ const ResultsPreview = () => {
         setResultId(data.id);
       }
 
-      // Subscribe to KIT Form 9103025 (fire-and-forget)
       supabase.functions.invoke("subscribe-kit", {
         body: { email, lowest_dimension: lowestDim },
       }).catch((err) => console.warn("KIT subscribe failed:", err));
@@ -269,23 +320,24 @@ const ResultsPreview = () => {
       <main id="main-content">
 
       {!submitted ? (
-        /* ── Email gate (shown first, before radar) ── */
-        <section className="bg-navy constellation-bg min-h-screen flex items-center justify-center px-6 pt-24 pb-16">
-          <div className="max-w-2xl mx-auto w-full text-center">
-            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">The Self-Check</p>
-            <h1 className="font-serif text-cream text-3xl md:text-4xl mb-4">
-              Your results are ready.
-            </h1>
-            <p className="font-sans text-cream/60 text-base mb-10 max-w-md mx-auto">
-              Enter your email to see your personal profile — a radar chart of your signal across five dimensions, plus your personalized next step.
+        /* ── Pre-email: scores teaser + email gate ── */
+        <section className="bg-navy min-h-screen flex items-center justify-center px-6 pt-24 pb-16">
+          <div className="max-w-2xl mx-auto w-full">
+            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">
+              Your Results
             </p>
-            <EmailGate onSuccess={handleEmailSuccess} />
+
+            <ScoreTeaser scores={scores} />
+
+            <div className="mt-10">
+              <EmailGate onSuccess={handleEmailSuccess} />
+            </div>
           </div>
         </section>
       ) : (
         <>
           {/* ── Radar chart + Strongest ── */}
-          <section className="bg-navy constellation-bg pt-28 pb-16 px-6">
+          <section className="bg-navy pt-28 pb-16 px-6">
             <div className="max-w-2xl mx-auto text-center">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">Your shape, right now</p>
               <h1 className="font-serif text-cream text-3xl md:text-4xl mb-10">
@@ -294,18 +346,18 @@ const ResultsPreview = () => {
 
               <ResponsiveContainer width="100%" height={340}>
                 <RadarChart data={chartData}>
-              <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
-              <PolarAngleAxis
-                dataKey="subject"
-                tick={{ fill: "hsl(40 25% 90% / 0.7)", fontSize: 12, fontFamily: "Inter" }}
-              />
+                  <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
+                  <PolarAngleAxis
+                    dataKey="subject"
+                    tick={{ fill: "hsl(40 25% 90% / 0.7)", fontSize: 12, fontFamily: "Inter" }}
+                  />
                   <Radar
-                  name="Your Signal"
-                  dataKey="value"
-                  stroke="hsl(145 25% 50%)"
-                  fill="hsl(145 25% 50%)"
-                  fillOpacity={0.2}
-                  strokeWidth={2}
+                    name="Your Signal"
+                    dataKey="value"
+                    stroke="hsl(145 25% 50%)"
+                    fill="hsl(145 25% 50%)"
+                    fillOpacity={0.2}
+                    strokeWidth={2}
                   />
                 </RadarChart>
               </ResponsiveContainer>
@@ -326,13 +378,11 @@ const ResultsPreview = () => {
 
       {submitted && (
         <>
-          {/* ── Full Results ── */}
-
-          {/* Dimension breakdown */}
+          {/* ── Dimension breakdown with scores ── */}
           <section className="py-16 px-6">
             <div className="max-w-3xl mx-auto space-y-2">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">Dimension by Dimension</p>
-              {(Object.keys(dimensionMeta) as DimensionKey[]).map((dim, i) => {
+              {dimensionOrder.map((dim, i) => {
                 const score = scores[dim];
                 const tier = getScoreTier(score);
                 const isNavy = i % 2 === 0;
@@ -347,15 +397,18 @@ const ResultsPreview = () => {
                           {dimensionMeta[dim].phase}
                         </p>
                       </div>
+                      <p className={`font-serif text-3xl font-bold ${isNavy ? "text-cream" : "text-navy"}`}>
+                        {score.toFixed(1)}
+                      </p>
                     </div>
                     {/* Spectrum bar */}
                     <div className="relative h-2 bg-cream/10 rounded-full mb-6 overflow-hidden">
                       <div
                         className="absolute inset-y-0 left-0 rounded-full"
-                      style={{
-                        width: `${((score - 1) / 9) * 100}%`,
-                        background: "linear-gradient(to right, hsl(70 10% 25%), hsl(145 25% 50%))",
-                      }}
+                        style={{
+                          width: `${((score - 1) / 9) * 100}%`,
+                          background: "linear-gradient(to right, hsl(70 10% 25%), hsl(145 25% 50%))",
+                        }}
                       />
                     </div>
                     <p className={`font-sans text-base leading-relaxed ${isNavy ? "text-cream/70" : "text-navy/70"}`}>
@@ -382,7 +435,7 @@ const ResultsPreview = () => {
           </section>
 
           {/* Personalized routing */}
-          <section className="bg-navy constellation-bg py-16 px-6">
+          <section className="bg-navy py-16 px-6">
             <div className="max-w-2xl mx-auto">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">Where to go from here — for you, specifically</p>
               <p className="font-sans text-cream/70 text-base leading-relaxed mb-6">
