@@ -148,13 +148,15 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
         Enter your email to unlock your complete profile — including a dimension-by-dimension breakdown and your personalized next step.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <label htmlFor="email-input" className="sr-only">Email address</label>
         <input
+          id="email-input"
           type="email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
-          className="flex-1 bg-navy border border-cream/20 text-cream placeholder:text-cream/30 rounded-lg px-4 py-3 font-sans text-base focus:outline-none focus:border-coral transition-colors"
+          className="flex-1 bg-navy border border-cream/20 text-cream placeholder:text-cream/40 rounded-lg px-4 py-3 font-sans text-base focus:outline-none focus:border-coral transition-colors"
         />
         <button
           type="submit"
@@ -164,7 +166,7 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
           {submitting ? "Saving..." : "Send My Results →"}
         </button>
       </form>
-      <p className="text-cream/30 text-xs mt-4 font-sans">
+      <p className="text-cream/50 text-xs mt-4 font-sans">
         No spam. Ever. Your results are yours. We'll occasionally share things from The Great Repurpose and the AI Salon that are actually worth your time.
       </p>
     </div>
@@ -264,6 +266,7 @@ const ResultsPreview = () => {
   return (
     <div className="min-h-screen bg-navy text-cream">
       <Navigation />
+      <main id="main-content">
 
       {!submitted ? (
         /* ── Email gate (shown first, before radar) ── */
@@ -457,6 +460,7 @@ const ResultsPreview = () => {
         </>
       )}
 
+      </main>
       <Footer />
     </div>
   );

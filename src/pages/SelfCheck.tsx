@@ -61,11 +61,13 @@ function CustomSlider({
   onChange,
   touched,
   setTouched,
+  label,
 }: {
   value: number;
   onChange: (v: number) => void;
   touched: boolean;
   setTouched: (v: boolean) => void;
+  label: string;
 }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
@@ -96,14 +98,39 @@ function CustomSlider({
     dragging.current = false;
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    let newVal = value;
+    if (e.key === "ArrowRight" || e.key === "ArrowUp") {
+      newVal = Math.min(10, value + 0.5);
+    } else if (e.key === "ArrowLeft" || e.key === "ArrowDown") {
+      newVal = Math.max(1, value - 0.5);
+    } else if (e.key === "Home") {
+      newVal = 1;
+    } else if (e.key === "End") {
+      newVal = 10;
+    } else {
+      return;
+    }
+    e.preventDefault();
+    setTouched(true);
+    onChange(Math.round(newVal * 10) / 10);
+  };
+
   const pct = ((value - 1) / 9) * 100;
 
   return (
     <div
       ref={trackRef}
+      role="slider"
+      aria-label={label}
+      aria-valuemin={1}
+      aria-valuemax={10}
+      aria-valuenow={Math.round(value)}
+      tabIndex={0}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
+      onKeyDown={handleKeyDown}
       className="relative w-full min-h-[44px] flex items-center cursor-pointer touch-none select-none"
     >
       {/* Track */}
@@ -178,7 +205,7 @@ const SelfCheck = () => {
 
   if (screen === "entry") {
     return (
-      <div className="min-h-screen bg-navy constellation-bg flex flex-col items-center justify-center px-6 text-center relative">
+      <main className="min-h-screen bg-navy constellation-bg flex flex-col items-center justify-center px-6 text-center relative">
         <button
           onClick={() => navigate("/")}
           className="absolute top-6 left-6 text-cream/50 hover:text-cream transition-colors flex items-center gap-1 text-sm font-sans"
@@ -203,14 +230,14 @@ const SelfCheck = () => {
           >
             Begin →
           </button>
-          <p className="text-cream/30 text-sm font-sans">Takes about 2 minutes. No account required.</p>
+          <p className="text-cream/50 text-sm font-sans">Takes about 2 minutes. No account required.</p>
         </div>
-      </div>
+      </main>
     );
   }
 
   return (
-    <div className="min-h-screen bg-navy constellation-bg flex flex-col">
+    <main className="min-h-screen bg-navy constellation-bg flex flex-col">
       {/* Top bar */}
       <div className="flex items-center justify-between px-6 pt-6 pb-4 max-w-3xl mx-auto w-full">
         <div className="flex items-center gap-4">
@@ -228,13 +255,20 @@ const SelfCheck = () => {
             Back
           </button>
         </div>
-        <span className="font-sans text-cream/40 text-xs uppercase tracking-widest">
+        <span className="font-sans text-cream/50 text-xs uppercase tracking-widest">
           {currentQ + 1} of {questions.length}
         </span>
       </div>
 
       {/* Progress bar */}
-      <div className="w-full h-0.5 bg-cream/10">
+      <div
+        className="w-full h-0.5 bg-cream/10"
+        role="progressbar"
+        aria-valuenow={currentQ + 1}
+        aria-valuemin={1}
+        aria-valuemax={questions.length}
+        aria-label={`Question ${currentQ + 1} of ${questions.length}`}
+      >
         <div
           className="h-full bg-coral transition-all duration-500"
           style={{ width: `${((currentQ + 1) / questions.length) * 100}%` }}
@@ -266,6 +300,7 @@ const SelfCheck = () => {
                 onChange={(v) => setAnswers((prev) => ({ ...prev, [q.id]: v }))}
                 touched={touched}
                 setTouched={setTouched}
+                label={`${q.dimension}: ${q.context}`}
               />
             </div>
           </div>
@@ -286,7 +321,7 @@ const SelfCheck = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

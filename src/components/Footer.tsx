@@ -2,20 +2,20 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <footer className="bg-navy constellation-bg">
+    <footer className="bg-navy constellation-bg" role="contentinfo">
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Left — Wordmark */}
         <div>
           <p className="font-serif text-cream text-xl mb-2">The Great Repurpose</p>
           <p className="text-cream/60 text-sm font-sans mb-1">A framework by Kyle Shannon</p>
-          <p className="text-cream/40 text-sm font-sans">
+          <p className="text-cream/50 text-sm font-sans">
             The Great Repurpose is the intellectual foundation of the AI Salon — a values-driven community for anyone curious about what generative AI makes possible.
           </p>
         </div>
 
         {/* Center — Nav */}
-        <div>
-          <p className="text-cream/40 text-xs uppercase tracking-widest font-sans mb-4">Navigate</p>
+        <nav aria-label="Footer navigation">
+          <p className="text-cream/50 text-xs uppercase tracking-widest font-sans mb-4">Navigate</p>
           <div className="flex flex-col gap-2">
             {[
               { to: "/", label: "Home" },
@@ -28,7 +28,7 @@ export function Footer() {
               </Link>
             ))}
           </div>
-        </div>
+        </nav>
 
         {/* Right — Community */}
         <div>

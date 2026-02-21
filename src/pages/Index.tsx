@@ -55,6 +55,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-navy text-cream">
       <Navigation />
+      <main id="main-content">
 
       {/* ── Section 1: Hero ── */}
       <section className="relative bg-navy">
@@ -87,7 +88,7 @@ const Index = () => {
             >
               Take the Self-Check →
             </Link>
-            <p className="text-cream/40 text-sm font-sans">
+            <p className="text-cream/50 text-sm font-sans">
               7 questions. 2 minutes. A mirror, not a grade.
             </p>
           </ScrollFadeUp>
@@ -348,6 +349,7 @@ const Index = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

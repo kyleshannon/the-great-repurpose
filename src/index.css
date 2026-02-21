@@ -93,6 +93,22 @@
     font-family: Georgia, 'Times New Roman', serif;
     line-height: 1.2;
   }
+
+  /* Skip to content link */
+  .skip-to-content {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-coral focus:text-cream focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-sans;
+  }
+
+  /* Focus visible styles for all interactive elements */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid hsl(var(--coral));
+    outline-offset: 2px;
+  }
 }
 
 @layer utilities {
@@ -182,6 +198,18 @@
   .section-fade-up.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .section-fade-up {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+
+    .pulse-coral {
+      animation: none;
+    }
   }
 }
 

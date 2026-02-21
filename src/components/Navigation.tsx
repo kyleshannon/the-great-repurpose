@@ -25,7 +25,11 @@ export function Navigation() {
 
   return (
     <>
+      <a href="#main-content" className="skip-to-content">
+        Skip to content
+      </a>
       <nav
+        aria-label="Main navigation"
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled || location.pathname !== "/"
             ? "bg-navy shadow-lg"
@@ -47,7 +51,7 @@ export function Navigation() {
                 className="text-cream/80 hover:text-cream text-xs uppercase tracking-widest font-sans transition-colors relative group"
               >
                 {label}
-                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-coral group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-coral group-hover:w-full transition-all duration-300" aria-hidden="true" />
               </Link>
             ))}
           </div>
@@ -64,7 +68,9 @@ export function Navigation() {
           <button
             className="md:hidden text-cream p-1"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-nav"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -73,7 +79,7 @@ export function Navigation() {
 
       {/* Mobile overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 bg-navy flex flex-col items-center justify-center gap-8">
+        <div id="mobile-nav" role="dialog" aria-label="Mobile navigation" className="fixed inset-0 z-40 bg-navy flex flex-col items-center justify-center gap-8">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
