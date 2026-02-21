@@ -84,7 +84,7 @@ const Phases = () => {
             The Five Stages of The Great Repurpose
           </h1>
           <p className="font-sans text-cream/70 text-lg md:text-xl max-w-2xl mx-auto">
-            These aren't steps. They're dimensions. You don't move through them in order — you live in all of them at once, in different proportions. The Self-Check shows you your shape. This page shows you the terrain.
+            These aren't steps. They're dimensions. You don't move through them in order — you live in all of them at once, in different proportions. Finding your TGR Type shows you your shape. This page shows you the terrain.
           </p>
         </ScrollFadeUp>
       </section>
@@ -143,13 +143,13 @@ const Phases = () => {
             Where are you across these five stages?
           </h2>
           <p className="font-sans text-cream/60 text-lg mb-10">
-            Take the Self-Check. 7 questions. A mirror, not a grade.
+            Discover where you are — and what you're building toward.
           </p>
           <Link
             to="/selfcheck"
             className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity"
           >
-            Take the Free Self-Check →
+            Find Your TGR Type →
           </Link>
         </ScrollFadeUp>
       </section>
