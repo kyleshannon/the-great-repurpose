@@ -21,7 +21,7 @@ export function Footer() {
               { to: "/", label: "Home" },
               { to: "/phases", label: "The Five Stages" },
               { to: "/about", label: "About" },
-              { to: "/selfcheck", label: "Take the Self-Check" },
+              { to: "/selfcheck", label: "Take the Free Self-Check" },
             ].map(({ to, label }) => (
               <Link key={to} to={to} className="text-cream/70 hover:text-coral text-sm font-sans transition-colors">
                 {label}
@@ -35,7 +35,7 @@ export function Footer() {
           <p className="text-cream/40 text-xs uppercase tracking-widest font-sans mb-4">Community</p>
           <div className="flex flex-col gap-2">
             {[
-              { href: "https://community.thesalon.ai", label: "thesalon.ai" },
+              { href: "https://community.thesalon.ai", label: "The AI Salon" },
               { href: "http://aireadinessproject.com/", label: "The AI Readiness Project Podcast" },
               { href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet", label: "Office Hours: Fridays" },
             ].map(({ href, label }) => (

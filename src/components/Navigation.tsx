@@ -61,7 +61,7 @@ export function Navigation() {
             to="/selfcheck"
             className="hidden md:inline-flex items-center gap-2 bg-coral text-cream text-sm font-sans font-medium px-5 py-2.5 rounded-full pulse-coral hover:opacity-90 transition-opacity"
           >
-            Take the Self-Check →
+            Take the Free Self-Check →
           </Link>
 
           {/* Mobile hamburger */}
@@ -93,7 +93,7 @@ export function Navigation() {
             to="/selfcheck"
             className="mt-4 bg-coral text-cream text-base font-sans font-medium px-8 py-3 rounded-full pulse-coral hover:opacity-90 transition-opacity"
           >
-            Take the Self-Check →
+            Take the Free Self-Check →
           </Link>
         </div>
       )}

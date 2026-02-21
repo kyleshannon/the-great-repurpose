@@ -234,7 +234,7 @@ const Index = () => {
                 to="/selfcheck"
                 className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity"
               >
-                Take the Self-Check →
+                Take the Free Self-Check →
               </Link>
             </div>
           </ScrollFadeUp>
@@ -349,7 +349,7 @@ const Index = () => {
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-lg px-10 py-5 rounded-full pulse-coral hover:opacity-90 transition-opacity"
             >
-              Take the Self-Check →
+              Take the Free Self-Check →
             </Link>
           </ScrollFadeUp>
         </div>
