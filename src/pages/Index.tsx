@@ -57,31 +57,38 @@ const Index = () => {
       <Navigation />
 
       {/* ── Section 1: Hero ── */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Navy overlay background (placeholder for user photo) */}
-        <div className="absolute inset-0 bg-navy constellation-bg" />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/75 to-navy" />
+      <section className="relative min-h-screen flex items-end overflow-hidden">
+        {/* Background photo */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/hero.png')" }}
+        />
+        {/* Gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
-        <div className="relative z-10 text-center max-w-3xl mx-auto px-6 pt-24 pb-16">
-          <ScrollFadeUp>
-            <h1 className="font-serif text-cream text-4xl md:text-6xl leading-tight mb-6">
-              <em>The work that defined you is changing.</em>
-              <br />
-              <em>This isn't a skills problem.</em>
-            </h1>
-            <p className="font-sans text-cream/80 text-lg md:text-xl leading-relaxed mb-10 max-w-xl mx-auto">
-              Something deeper is happening — to you, to work, to what it all means. The Great Repurpose names it.
-            </p>
-            <Link
-              to="/selfcheck"
-              className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-5"
-            >
-              Take the Self-Check →
-            </Link>
-            <p className="text-cream/40 text-sm font-sans">
-              7 questions. 2 minutes. A mirror, not a grade.
-            </p>
-          </ScrollFadeUp>
+        <div className="relative z-10 w-full">
+          {/* Semi-transparent bar behind text */}
+          <div className="bg-black/40 backdrop-blur-sm px-6 md:px-16 py-12 md:py-16">
+            <div className="max-w-5xl">
+              <ScrollFadeUp>
+                <h1 className="font-sans font-bold text-white text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-4">
+                  The Great Repurpose
+                </h1>
+                <p className="font-sans text-white/90 text-lg md:text-2xl font-light mb-8 max-w-2xl">
+                  Finding Meaning in the Face of Unprecedented Change
+                </p>
+                <Link
+                  to="/selfcheck"
+                  className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-3"
+                >
+                  Take the Self-Check →
+                </Link>
+                <p className="text-white/50 text-sm font-sans">
+                  7 questions. 2 minutes. A mirror, not a grade.
+                </p>
+              </ScrollFadeUp>
+            </div>
+          </div>
         </div>
       </section>
 
