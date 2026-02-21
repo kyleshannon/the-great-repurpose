@@ -90,7 +90,7 @@ const Index = () => {
               The Great Repurpose
             </h1>
             <p className="font-sans font-medium text-cream/80 text-2xl md:text-3xl lg:text-4xl">
-              AI is about to change every single job — and maybe even how we define work entirely.
+              Finding Meaning in the Face of Unprecedented Change
             </p>
           </div>
         </div>
@@ -100,7 +100,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <p className="font-sans text-cream/70 text-base mx-auto mb-6 leading-relaxed">
-              We didn't ask for this. We can't escape it. The only way forward is through — and you're not alone.
+              AI is about to change every single job — and maybe even how we define work entirely.
             </p>
             <Link
               to="/selfcheck"
@@ -108,8 +108,11 @@ const Index = () => {
             >
               Find Your TGR Type →
             </Link>
-            <p className="text-cream/50 text-sm font-sans">
+            <p className="text-cream/50 text-sm font-sans mb-6">
               Discover where you are — and what you're building toward.
+            </p>
+            <p className="font-sans text-cream/70 text-base mx-auto leading-relaxed">
+              We didn't ask for this. We can't escape it. The only way forward is through — and you're not alone.
             </p>
           </ScrollFadeUp>
           </div>
