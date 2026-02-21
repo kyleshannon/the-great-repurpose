@@ -102,7 +102,7 @@ const Index = () => {
             <p className="font-sans text-cream/70 text-base mx-auto mb-4 leading-relaxed">
               AI is about to change every single job — and maybe even how we define work entirely.
             </p>
-            <p className="font-sans text-cream/70 text-base mx-auto mb-6 leading-relaxed">
+            <p className="font-sans text-cream/70 text-base mx-auto mb-6 leading-relaxed text-left">
               We're all going through this, and we're all in different places. Some of us are holding on to what we were. Some of us are rebuilding. Some of us just felt something shift and can't name it yet. We've identified 10 "TGR Types" that capture where people are right now and what they're building toward.
             </p>
             <Link
