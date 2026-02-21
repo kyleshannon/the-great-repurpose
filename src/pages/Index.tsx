@@ -93,10 +93,10 @@ const Index = () => {
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-4"
             >
-              Take the Free Self-Check →
+              Find Your TGR Type →
             </Link>
             <p className="text-cream/50 text-sm font-sans mb-6">
-              7 questions. 2 minutes. A mirror, not a grade.
+              Discover where you are — and what you're building toward.
             </p>
             <p className="font-sans text-cream/70 text-base mx-auto leading-relaxed">
               The Self-Check is where you start. Seven scenario-based questions that reveal where you are across five stages of this transition — your strengths, your gaps, and the specific next step that matches where you are right now.
@@ -234,12 +234,12 @@ const Index = () => {
           <ScrollFadeUp delay={400}>
             <div className="text-center mt-14">
               <p className="font-serif text-navy text-xl mb-4">Where are you on this map?</p>
-              <p className="font-sans text-navy/60 text-base mb-6">Take the Self-Check. 7 questions. A mirror, not a grade.</p>
+              <p className="font-sans text-navy/60 text-base mb-6">Discover where you are — and what you're building toward.</p>
               <Link
                 to="/selfcheck"
                 className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity"
               >
-                Take the Free Self-Check →
+                Find Your TGR Type →
               </Link>
             </div>
           </ScrollFadeUp>
@@ -354,8 +354,11 @@ const Index = () => {
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-lg px-10 py-5 rounded-full pulse-coral hover:opacity-90 transition-opacity"
             >
-              Take the Free Self-Check →
+              Find Your TGR Type →
             </Link>
+            <p className="text-cream/50 text-sm font-sans mt-3">
+              Discover where you are — and what you're building toward.
+            </p>
           </ScrollFadeUp>
         </div>
       </section>
