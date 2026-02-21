@@ -132,7 +132,7 @@ const SelfCheck = () => {
       </div>
 
       {/* Content area */}
-      <div className="flex-1 flex flex-col items-center justify-center px-5 pb-28">
+      <div className="flex-1 flex flex-col items-center justify-center px-5 pt-2 pb-28">
         {/* Intro blurb on Q1 only */}
         {currentQ === 0 && (
           <div className="text-center mb-8 max-w-lg">
@@ -168,11 +168,11 @@ const SelfCheck = () => {
 
           {/* Slider area */}
           <div className="mb-2">
-            <div className="flex justify-between gap-6 mb-5">
-              <p className="font-sans text-cream/60 text-xs leading-snug text-left max-w-[45%]">
+            <div className="flex justify-between gap-4 md:gap-6 mb-5">
+              <p className="font-sans text-cream/60 text-xs leading-snug text-left max-w-[48%] md:max-w-[45%]">
                 {q.left}
               </p>
-              <p className="font-sans text-cream/60 text-xs leading-snug text-right max-w-[45%]">
+              <p className="font-sans text-cream/60 text-xs leading-snug text-right max-w-[48%] md:max-w-[45%]">
                 {q.right}
               </p>
             </div>
@@ -190,7 +190,7 @@ const SelfCheck = () => {
       </div>
 
       {/* Fixed bottom action bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-navy/90 backdrop-blur-md border-t border-cream/5 px-5 py-4 flex justify-center">
+      <div className="fixed bottom-0 left-0 right-0 bg-navy/90 backdrop-blur-md border-t border-cream/5 px-5 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] flex justify-center">
         <button
           onClick={handleNext}
           disabled={!touched}
