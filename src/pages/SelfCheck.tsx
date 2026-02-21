@@ -142,9 +142,7 @@ function CustomSlider({
       />
       {/* Thumb */}
       <div
-        className={`absolute w-5 h-5 rounded-full bg-coral pointer-events-none transition-opacity duration-150 ${
-          touched ? "opacity-100 glow-coral-sm" : "opacity-0"
-        }`}
+        className={`absolute w-5 h-5 rounded-full bg-coral pointer-events-none glow-coral-sm`}
         style={{ left: `calc(${pct}% - 10px)`, top: "50%", transform: "translateY(-50%)" }}
       />
     </div>
