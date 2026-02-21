@@ -60,11 +60,11 @@ const Index = () => {
       {/* ── Section 1: Hero ── */}
       <section className="relative bg-navy">
         {/* Hero image with text overlay */}
-        <div className="relative w-full pt-16">
+        <div className="relative w-full pt-16 max-h-[70vh] overflow-hidden">
           <img
             src="/images/hero.png"
             alt="People standing together, facing forward"
-            className="w-full h-auto block"
+            className="w-full h-auto block object-cover object-top"
           />
           {/* Dark gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent" />
