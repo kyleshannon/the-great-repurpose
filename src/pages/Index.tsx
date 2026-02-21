@@ -82,6 +82,12 @@ const Index = () => {
         {/* CTA below image */}
         <div className="bg-navy px-6 md:px-16 py-10 text-center">
           <ScrollFadeUp>
+            <p className="font-sans text-cream/70 text-base max-w-2xl mx-auto mb-4 leading-relaxed">
+              The Great Repurpose is a map for the invisible crisis no one is naming: what happens to your sense of meaning when the work that defined you changes faster than you can adapt.
+            </p>
+            <p className="font-sans text-cream/70 text-base max-w-2xl mx-auto mb-8 leading-relaxed">
+              The Self-Check is where you start. Seven scenario-based questions that reveal where you are across five stages of this transition — your strengths, your gaps, and the specific next step that matches where you are right now.
+            </p>
             <Link
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-3"
