@@ -7,8 +7,10 @@ export function Footer() {
         {/* Left — Wordmark */}
         <div>
           <p className="font-serif text-cream text-xl mb-2">The Great Repurpose</p>
-          <p className="text-cream/60 text-xs uppercase tracking-widest font-sans mb-1">Your Signal in the Noise</p>
-          <p className="text-cream/40 text-sm font-sans">By Kyle Shannon</p>
+          <p className="text-cream/60 text-sm font-sans mb-1">A framework by Kyle Shannon</p>
+          <p className="text-cream/40 text-sm font-sans">
+            The Great Repurpose is the intellectual foundation of the AI Salon — a values-driven community for anyone curious about what generative AI makes possible.
+          </p>
         </div>
 
         {/* Center — Nav */}
@@ -16,7 +18,7 @@ export function Footer() {
           <p className="text-cream/40 text-xs uppercase tracking-widest font-sans mb-4">Navigate</p>
           <div className="flex flex-col gap-2">
             {[
-              { to: "/", label: "The Signal" },
+              { to: "/", label: "Home" },
               { to: "/phases", label: "The Five Phases" },
               { to: "/about", label: "About" },
               { to: "/selfcheck", label: "Take the Self-Check" },
@@ -35,7 +37,7 @@ export function Footer() {
             {[
               { href: "https://thesalon.ai", label: "thesalon.ai" },
               { href: "https://thesalon.ai", label: "The AI Readiness Project Podcast" },
-              { href: "https://thesalon.ai", label: "Friday Office Hours" },
+              { href: "https://thesalon.ai", label: "Office Hours: Fridays" },
             ].map(({ href, label }) => (
               <a
                 key={label}
@@ -57,7 +59,7 @@ export function Footer() {
           <p className="text-cream/50 text-sm font-serif italic">
             "The future of AI is still up for grabs — join us."
           </p>
-          <p className="text-cream/30 text-xs font-sans">© 2025 The Great Repurpose</p>
+          <p className="text-cream/30 text-xs font-sans">© 2026 The Great Repurpose</p>
         </div>
       </div>
     </footer>
