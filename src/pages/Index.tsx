@@ -112,7 +112,10 @@ const Index = () => {
               Discover where you are — and what you're building toward.
             </p>
             <p className="font-sans text-cream/70 text-base mx-auto leading-relaxed">
-              We didn't ask for this. We can't escape it. The only way forward is through — and you're not alone.
+              We didn't ask for this.<br />
+              We can't escape it.<br />
+              The only way forward is through…<br />
+              and you're not alone.
             </p>
           </ScrollFadeUp>
           </div>
@@ -170,7 +173,10 @@ const Index = () => {
         <div className="max-w-3xl mx-auto text-center">
           <ScrollFadeUp>
             <p className="font-serif text-cream text-2xl md:text-3xl italic leading-snug mb-12">
-              "We didn't ask for this. We can't escape it. The only way forward is through — and you're not alone."
+              "We didn't ask for this.<br />
+              We can't escape it.<br />
+              The only way forward is through…<br />
+              and you're not alone."
             </p>
             <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
               <iframe
