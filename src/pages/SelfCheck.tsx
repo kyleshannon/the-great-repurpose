@@ -57,6 +57,8 @@ const questions = [
   },
 ];
 
+const TOTAL_STEPS = questions.length + 1; // 7 slider questions + 1 open-ended
+
 type Scores = Record<string, number>;
 
 const SelfCheck = () => {
@@ -65,12 +67,13 @@ const SelfCheck = () => {
   const [answers, setAnswers] = useState<Scores>(
     Object.fromEntries(questions.map((q) => [q.id, 5.5]))
   );
+  const [openAnswer, setOpenAnswer] = useState("");
   const [touched, setTouched] = useState(false);
   const [slideDirection, setSlideDirection] = useState<"left" | "right">("right");
   const [animating, setAnimating] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  const q = questions[currentQ];
+  const isOpenEndedStep = currentQ === questions.length;
 
   // Trigger slide animation on question change
   useEffect(() => {
@@ -80,11 +83,8 @@ const SelfCheck = () => {
   }, [currentQ]);
 
   const handleNext = () => {
-    if (currentQ < questions.length - 1) {
-      setSlideDirection("right");
-      setCurrentQ((prev) => prev + 1);
-      setTouched(false);
-    } else {
+    if (isOpenEndedStep) {
+      // Final step — navigate to results
       const finalScores: Record<string, number> = {
         identity: (answers.q1 + answers.q2) / 2,
         value: (answers.q3 + answers.q2 * 0.5) / 1.5,
@@ -99,9 +99,19 @@ const SelfCheck = () => {
         purpose: finalScores.purpose.toFixed(2),
         ai_relationship: finalScores.ai_relationship.toFixed(2),
         creative_action: finalScores.creative_action.toFixed(2),
+        ...(openAnswer.trim() ? { open_answer: openAnswer.trim() } : {}),
       });
 
       navigate(`/results/preview?${params.toString()}`);
+    } else if (currentQ < questions.length) {
+      setSlideDirection("right");
+      setCurrentQ((prev) => prev + 1);
+      if (currentQ + 1 === questions.length) {
+        // Open-ended step is always "touched" (optional)
+        setTouched(true);
+      } else {
+        setTouched(false);
+      }
     }
   };
 
@@ -127,7 +137,7 @@ const SelfCheck = () => {
         >
           <ChevronLeft size={20} />
         </button>
-        <StepDots total={questions.length} current={currentQ} />
+        <StepDots total={TOTAL_STEPS} current={currentQ} />
         <div className="w-10" /> {/* Spacer for centering */}
       </div>
 
@@ -148,45 +158,64 @@ const SelfCheck = () => {
           </div>
         )}
 
-        {/* Question card */}
-        <div
-          key={q.id}
-          ref={contentRef}
-          className={`w-full max-w-xl border border-cream/10 rounded-2xl bg-cream/[0.03] backdrop-blur-sm p-6 md:p-8 selfcheck-card-enter ${
-            slideDirection === "right" ? "selfcheck-slide-right" : "selfcheck-slide-left"
-          }`}
-        >
-          {/* Dimension label */}
-          <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4 text-center">
-            {q.dimension}
-          </p>
-
-          {/* Context */}
-          <p className="font-serif text-cream text-lg md:text-xl italic text-center mb-8 leading-snug">
-            "{q.context}"
-          </p>
-
-          {/* Slider area */}
-          <div className="mb-2">
-            <div className="flex justify-between gap-4 md:gap-6 mb-5">
-              <p className="font-sans text-cream/60 text-xs leading-snug text-left max-w-[48%] md:max-w-[45%]">
-                {q.left}
-              </p>
-              <p className="font-sans text-cream/60 text-xs leading-snug text-right max-w-[48%] md:max-w-[45%]">
-                {q.right}
-              </p>
-            </div>
-            <QuestionSlider
-              value={answers[q.id]}
-              onChange={(v) =>
-                setAnswers((prev) => ({ ...prev, [q.id]: v }))
-              }
-              touched={touched}
-              setTouched={setTouched}
-              label={`${q.dimension}: ${q.context}`}
+        {isOpenEndedStep ? (
+          /* Open-ended question */
+          <div
+            key="open-ended"
+            className={`w-full max-w-xl border border-cream/10 rounded-2xl bg-cream/[0.03] backdrop-blur-sm p-6 md:p-8 selfcheck-card-enter ${
+              slideDirection === "right" ? "selfcheck-slide-right" : "selfcheck-slide-left"
+            }`}
+          >
+            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4 text-center">
+              One more thing
+            </p>
+            <p className="font-serif text-cream text-lg md:text-xl text-center mb-8 leading-snug">
+              What's the thing you keep thinking about but haven't started yet?
+            </p>
+            <textarea
+              value={openAnswer}
+              onChange={(e) => setOpenAnswer(e.target.value)}
+              placeholder="Optional — but it makes your results much more personal."
+              className="w-full bg-navy border border-cream/20 text-cream placeholder:text-cream/30 rounded-lg px-4 py-3 font-sans text-base leading-relaxed focus:outline-none focus:border-coral transition-colors resize-none min-h-[120px]"
+              rows={4}
             />
           </div>
-        </div>
+        ) : (
+          /* Slider question card */
+          <div
+            key={questions[currentQ].id}
+            ref={contentRef}
+            className={`w-full max-w-xl border border-cream/10 rounded-2xl bg-cream/[0.03] backdrop-blur-sm p-6 md:p-8 selfcheck-card-enter ${
+              slideDirection === "right" ? "selfcheck-slide-right" : "selfcheck-slide-left"
+            }`}
+          >
+            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4 text-center">
+              {questions[currentQ].dimension}
+            </p>
+            <p className="font-serif text-cream text-lg md:text-xl italic text-center mb-8 leading-snug">
+              "{questions[currentQ].context}"
+            </p>
+            <div className="mb-2">
+              <div className="flex justify-between gap-4 md:gap-6 mb-5">
+                <p className="font-sans text-cream/60 text-xs leading-snug text-left max-w-[48%] md:max-w-[45%]">
+                  {questions[currentQ].left}
+                </p>
+                <p className="font-sans text-cream/60 text-xs leading-snug text-right max-w-[48%] md:max-w-[45%]">
+                  {questions[currentQ].right}
+                </p>
+              </div>
+              <QuestionSlider
+                value={answers[questions[currentQ].id]}
+                onChange={(v) =>
+                  setAnswers((prev) => ({ ...prev, [questions[currentQ].id]: v }))
+                }
+                touched={touched}
+                setTouched={setTouched}
+                label={`${questions[currentQ].dimension}: ${questions[currentQ].context}`}
+              />
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Fixed bottom action bar */}
@@ -200,7 +229,7 @@ const SelfCheck = () => {
               : "bg-cream/10 text-cream/20 cursor-not-allowed"
           }`}
         >
-          {currentQ === questions.length - 1 ? "Find Your TGR Type →" : "Next →"}
+          {isOpenEndedStep ? "Find Your TGR Type →" : "Next →"}
         </button>
       </div>
     </main>

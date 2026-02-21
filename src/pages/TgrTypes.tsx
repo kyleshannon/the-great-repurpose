@@ -108,9 +108,7 @@ const TgrTypes = () => {
 
             <ScrollFadeUp delay={600}>
               <div className="text-center mt-16">
-                <p className="font-serif text-navy text-xl mb-4">Which one are you?</p>
-                <p className="font-sans text-navy/60 text-base mb-6">
-                  7 questions. 2 minutes. Discover where you are — and what you're building toward.
+                <p className="font-serif text-navy text-xl mb-6">Which one are you?
                 </p>
                 <Link
                   to="/selfcheck"

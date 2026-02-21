@@ -11,7 +11,7 @@ serve(async (req) => {
   }
 
   try {
-    const { scores, archetype } = await req.json();
+    const { scores, archetype, openAnswer } = await req.json();
 
     if (!scores || !archetype) {
       return new Response(JSON.stringify({ error: 'Scores and archetype are required' }), {
@@ -25,9 +25,13 @@ serve(async (req) => {
       throw new Error('LOVABLE_API_KEY is not configured');
     }
 
-    const systemPrompt = `You are writing a personal interpretation for someone who just completed The Great Repurpose Self-Check — an assessment that measures five dimensions of readiness for the AI transition: Identity Independence, Value Clarity, Purpose Direction, AI Relationship, and Creative Action.
+    const openAnswerSection = openAnswer
+      ? `\n\nTHEIR OPEN-ENDED ANSWER to "What's the thing you keep thinking about but haven't started yet?":\n"${openAnswer}"\n\nThis is important. Weave this into the interpretation — especially in the "The Thing You Haven't Started" section. Connect it to their type and scores. Be specific about why THIS thing, for THIS person, matters.`
+      : `\n\nThey did not answer the open-ended question. Skip the "## The Thing You Haven't Started" section entirely.`;
 
-You are warm, perceptive, and direct — like a paragraph from a friend who happens to be a therapist. You see patterns. You name things people feel but haven't articulated.
+    const systemPrompt = `You are writing a personalized interpretation report for someone who just completed The Great Repurpose Self-Check — an assessment that measures five dimensions of readiness for the AI transition.
+
+You are warm, perceptive, and direct — like a letter from a friend who happens to be a therapist. You see patterns. You name things people feel but haven't articulated.
 
 THEIR TGR TYPE: "${archetype.name}"
 TAGLINE: "${archetype.tagline}"
@@ -42,17 +46,31 @@ THEIR SCORES (1-10):
 - Creative Action: ${scores.creative_action}
 
 RECOMMENDED SALON ACTIVITY: ${archetype.salonEntry.activity}
+SALON ACTIVITY DESCRIPTION: ${archetype.salonEntry.body}${openAnswerSection}
 
 INSTRUCTIONS:
-1. Write 3-4 paragraphs. No headers, no bullet points. Just flowing prose.
-2. Start by naming what you see in their SHAPE — the relationship between dimensions, not individual scores. What does the pattern reveal?
-3. Name the specific tension or vulnerability their archetype carries. Be honest but not harsh.
-4. Reference specific AI Salon activities naturally — ${archetype.salonEntry.activity} should feel like an organic recommendation, not an ad. You can also mention Office Hours, AI Learning Lab, Mastermind Practice Lab, or Learn Out Loud sessions where they fit naturally.
-5. End with a single clear, forward-facing sentence. Not generic encouragement. Something specific to THEIR shape.
+
+Write a structured report using markdown ## headers for each section. Each section should be 2-3 paragraphs of flowing prose. No bullet points.
+
+## Your Shape
+
+Narrative synthesis of the pattern across their five dimensions. Don't just list scores — describe the SHAPE. What's the relationship between their highs and lows? What does the pattern reveal about where they are? Name the tension their archetype carries. Be honest but kind.
+
+## What Your Scores Reveal
+
+Go dimension by dimension but make it feel like a conversation, not a report card. For each dimension, name the score naturally (e.g., "Your Identity Independence sits at 3.2 — which means...") and explain what it means for THIS person given their overall pattern. Connect dimensions to each other.
+
+${openAnswer ? `## The Thing You Haven't Started
+
+Respond directly to their open-ended answer. Don't just reflect it back — add insight. Why haven't they started? What does their type suggest about the block? What would the first step actually look like? Be specific and actionable.` : ''}
+
+## Your Next Move
+
+Specific recommendations. Lead with the primary AI Salon recommendation (${archetype.salonEntry.activity}) and explain WHY it fits them — don't just name it. Also mention 1-2 other relevant activities from: Friday Office Hours (https://thesalon.ai), AI Learning Lab (https://thesalon.ai), Mastermind Practice Lab (https://thesalon.ai), Learn Out Loud (https://thesalon.ai), or the free AI Salon Community (https://community.thesalon.ai). End with one clear, forward-facing sentence specific to THEIR shape.
 
 TONE: Warm but not saccharine. Honest but not clinical. Like someone who sees you clearly and isn't afraid to say it kindly.
 
-FORBIDDEN WORDS: assessment, metrics, optimize, leverage, synergy, unlock, journey, empower, transform, hack, crushing it, level up, game-changer, pivot, disrupt. Never use these.
+FORBIDDEN WORDS: assessment, metrics, optimize, leverage, synergy, unlock, empower, transform, hack, crushing it, level up, game-changer, pivot, disrupt. Never use these.
 
 Write in second person ("you"). Keep sentences varied — some short, some flowing. No exclamation marks.`;
 
@@ -66,7 +84,7 @@ Write in second person ("you"). Keep sentences varied — some short, some flowi
         model: 'google/gemini-3-flash-preview',
         messages: [
           { role: 'system', content: systemPrompt },
-          { role: 'user', content: `Write my personalized interpretation based on my scores and TGR Type. Remember: flowing prose, no headers, no bullets.` },
+          { role: 'user', content: `Write my personalized interpretation report. Use ## headers for each section as instructed.` },
         ],
         stream: true,
       }),
