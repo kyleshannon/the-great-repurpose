@@ -162,6 +162,26 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ── Video Section ── */}
+      <section className="bg-navy py-16 md:py-24 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <ScrollFadeUp>
+            <p className="font-serif text-cream text-2xl md:text-3xl italic leading-snug mb-12">
+              "We didn't ask for this. We can't escape it. The only way forward is through — and you're not alone."
+            </p>
+            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+              <iframe
+                className="absolute inset-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/4vTo0ZdzNYU"
+                title="The Great Repurpose"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </ScrollFadeUp>
+        </div>
+      </section>
+
       {/* ── Section 3: Three Faces of Disruption ── */}
       <section className="bg-navy constellation-bg py-16 md:py-24 px-6">
         <div className="max-w-4xl mx-auto">
@@ -203,26 +223,6 @@ const Index = () => {
             <p className="text-center text-cream/60 font-sans text-base mt-12">
               All three faces share the same root: <strong className="text-cream/80">the relationship between you and the work that gives you meaning is being renegotiated — and nobody asked your permission.</strong>
             </p>
-          </ScrollFadeUp>
-        </div>
-      </section>
-
-      {/* ── Video Section ── */}
-      <section className="bg-navy py-16 md:py-24 px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <ScrollFadeUp>
-            <p className="font-serif text-cream text-2xl md:text-3xl italic leading-snug mb-12">
-              "We didn't ask for this. We can't escape it. The only way forward is through — and you're not alone."
-            </p>
-            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-              <iframe
-                className="absolute inset-0 w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/4vTo0ZdzNYU"
-                title="The Great Repurpose"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
           </ScrollFadeUp>
         </div>
       </section>
