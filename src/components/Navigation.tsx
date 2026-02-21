@@ -19,7 +19,7 @@ export function Navigation() {
 
   const navLinks = [
     { to: "/", label: "The Signal" },
-    { to: "/phases", label: "The Five Phases" },
+    { to: "/phases", label: "The Five Stages" },
     { to: "/about", label: "About" },
   ];
 
