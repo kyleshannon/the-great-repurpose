@@ -155,9 +155,7 @@ const Index = () => {
           <ScrollFadeUp delay={350}>
             <blockquote className="border-l-4 border-coral pl-8 mt-14 mb-2">
               <p className="font-serif text-navy text-2xl md:text-3xl italic leading-snug">
-                "This is not a skills problem.<br />
-                It is a meaning crisis.<br />
-                And it has a name."
+                "The same technology that's disrupting your work could be the most powerful tool you've ever touched… once you know what you want to do with it."
               </p>
             </blockquote>
           </ScrollFadeUp>
