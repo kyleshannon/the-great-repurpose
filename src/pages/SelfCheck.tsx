@@ -4,67 +4,55 @@ import { ChevronLeft } from "lucide-react";
 
 const questions = [
   {
-    id: "identity",
+    id: "q1",
     dimension: "IDENTITY",
-    context: "Imagine your job title disappeared tomorrow...",
-    left: "I'd feel lost — that title is a big part of how I see myself",
-    right: "I'd be fine — who I am doesn't really live in a title",
+    context: "You're at a dinner party. Someone you just met asks: \"So, what do you do?\"",
+    left: "I give my title and company. It's the most natural answer",
+    right: "I end up talking about something I'm curious about or working on. My job title barely comes up",
   },
   {
-    id: "identity_value",
+    id: "q2",
     dimension: "IDENTITY + VALUE",
-    context: "A tool just did in seconds what used to take you hours...",
-    left: "Honestly? It stings a little",
-    right: "Interesting — my real value was never in that task",
+    context: "A colleague shows you something AI generated that looks a lot like your work.",
+    left: "My stomach drops. I start scanning for what's wrong with it, hoping it's bad. If it's good, I feel worse",
+    right: "I immediately see what's missing. There's a layer — taste, context, judgment — that I can point to and the tool can't",
   },
   {
-    id: "value_clarity",
+    id: "q3",
     dimension: "VALUE CLARITY",
-    context: "A friend introduces you at a dinner party...",
-    left: "I'd fumble for what to say beyond my job",
-    right: "I know exactly what I'd want them to say about me",
+    context: "A friend asks you to help their kid with career advice. The kid wants to go into your field.",
+    left: "I hesitate. I'm not sure what to tell them anymore. The field I entered doesn't exist the same way and I'd feel dishonest saying \"go for it\"",
+    right: "I get excited. I'd tell them the skills that matter aren't the obvious ones — it's the eye, the judgment, the ability to see what others miss",
   },
   {
-    id: "purpose_direction",
+    id: "q4",
     dimension: "PURPOSE DIRECTION",
-    context: "You have a free Saturday with no obligations...",
-    left: "I'd probably drift — I'm not sure what I'm building toward",
-    right: "I know exactly what I'd spend it on",
+    context: "It's Saturday morning. Nothing is scheduled. You have the whole day.",
+    left: "I feel a little lost. Without the structure of work, I'm not sure what pulls me. I'll probably scroll, clean, maybe start something I won't finish",
+    right: "I know exactly what I'm doing. There's a project, a question, something I've been wanting to get to. The unstructured time is a gift",
   },
   {
-    id: "purpose_ai",
+    id: "q5",
     dimension: "PURPOSE + AI",
-    context: "You read a headline: 'AI will reshape every industry by 2030'...",
-    left: "My stomach drops a little",
-    right: "I lean in — I want to know more",
+    context: "You just read that AI can now handle a major part of what people in your field do. Your first thought is:",
+    left: "That's one more thing being taken away. I feel the walls closing in and I don't know where to go",
+    right: "My mind immediately starts racing with what I could do if that task were off my plate. There's something I've been wanting to try",
   },
   {
-    id: "ai_relationship",
+    id: "q6",
     dimension: "AI RELATIONSHIP",
-    context: "Someone hands you a new AI tool and says 'try this'...",
-    left: "I'd put it off or feel overwhelmed",
-    right: "I'd be tinkering with it within the hour",
+    context: "A friend hands you their laptop and says \"try this new AI tool — make something with it.\"",
+    left: "I feel a knot in my stomach. I'd rather watch them use it. Or I'd try it but feel clumsy and quit after five minutes",
+    right: "I take the laptop and lose track of time. Twenty minutes later I'm showing them something I made and asking \"what if we tried…\"",
   },
   {
-    id: "creative_action",
+    id: "q7",
     dimension: "CREATIVE ACTION",
-    context: "Think about the last month...",
-    left: "I mostly consumed other people's ideas",
-    right: "I made something and put it out there, even if it wasn't perfect",
+    context: "Think about an idea you've had recently — something that excited you. Where is it right now?",
+    left: "It's still in my head. I've been thinking about it, maybe researching, but I haven't started making anything. I'm not sure it's ready",
+    right: "I've already made a rough version. It's messy but it exists. I showed someone. I'm iterating",
   },
 ];
-
-// Score maps: identity Q1 maps to identity_score, Q2 also maps to identity (averaged with value)
-// We'll map them explicitly
-const dimensionMap: Record<string, string> = {
-  identity: "identity",
-  identity_value: "value",
-  value_clarity: "value",
-  purpose_direction: "purpose",
-  purpose_ai: "purpose",
-  ai_relationship: "ai_relationship",
-  creative_action: "creative_action",
-};
 
 type Scores = Record<string, number>;
 
@@ -152,24 +140,19 @@ const SelfCheck = () => {
       setCurrentQ((prev) => prev + 1);
       setTouched(false);
     } else {
-      // Build final dimension scores
-      const dimTotals: Record<string, number[]> = {
-        identity: [],
-        value: [],
-        purpose: [],
-        ai_relationship: [],
-        creative_action: [],
+      // Build final dimension scores per scoring spec:
+      // Identity: (Q1 + Q2) / 2
+      // Value: (Q3 + Q2*0.5) / 1.5
+      // Purpose: (Q4 + Q5) / 2
+      // AI Relationship: (Q6 + Q5*0.5) / 1.5
+      // Creative Action: Q7
+      const finalScores: Record<string, number> = {
+        identity: (answers.q1 + answers.q2) / 2,
+        value: (answers.q3 + answers.q2 * 0.5) / 1.5,
+        purpose: (answers.q4 + answers.q5) / 2,
+        ai_relationship: (answers.q6 + answers.q5 * 0.5) / 1.5,
+        creative_action: answers.q7,
       };
-
-      questions.forEach((q) => {
-        const dim = dimensionMap[q.id];
-        dimTotals[dim].push(answers[q.id]);
-      });
-
-      const finalScores: Record<string, number> = {};
-      for (const [dim, vals] of Object.entries(dimTotals)) {
-        finalScores[dim] = vals.length > 0 ? vals.reduce((a, b) => a + b, 0) / vals.length : 5;
-      }
 
       // Encode scores to query params and navigate to results
       const params = new URLSearchParams({
