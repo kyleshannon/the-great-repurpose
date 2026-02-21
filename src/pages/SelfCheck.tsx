@@ -1,6 +1,8 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
+import QuestionSlider from "@/components/selfcheck/QuestionSlider";
+import StepDots from "@/components/selfcheck/StepDots";
 
 const questions = [
   {
@@ -56,121 +58,32 @@ const questions = [
 
 type Scores = Record<string, number>;
 
-function CustomSlider({
-  value,
-  onChange,
-  touched,
-  setTouched,
-  label,
-}: {
-  value: number;
-  onChange: (v: number) => void;
-  touched: boolean;
-  setTouched: (v: boolean) => void;
-  label: string;
-}) {
-  const trackRef = useRef<HTMLDivElement>(null);
-  const dragging = useRef(false);
-
-  const calcValue = useCallback((clientX: number) => {
-    const track = trackRef.current;
-    if (!track) return;
-    const rect = track.getBoundingClientRect();
-    const pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
-    const val = 1 + pct * 9;
-    setTouched(true);
-    onChange(Math.round(val * 10) / 10);
-  }, [onChange, setTouched]);
-
-  const handlePointerDown = (e: React.PointerEvent) => {
-    e.preventDefault();
-    dragging.current = true;
-    (e.target as HTMLElement).setPointerCapture(e.pointerId);
-    calcValue(e.clientX);
-  };
-
-  const handlePointerMove = (e: React.PointerEvent) => {
-    if (!dragging.current) return;
-    calcValue(e.clientX);
-  };
-
-  const handlePointerUp = () => {
-    dragging.current = false;
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    let newVal = value;
-    if (e.key === "ArrowRight" || e.key === "ArrowUp") {
-      newVal = Math.min(10, value + 0.5);
-    } else if (e.key === "ArrowLeft" || e.key === "ArrowDown") {
-      newVal = Math.max(1, value - 0.5);
-    } else if (e.key === "Home") {
-      newVal = 1;
-    } else if (e.key === "End") {
-      newVal = 10;
-    } else {
-      return;
-    }
-    e.preventDefault();
-    setTouched(true);
-    onChange(Math.round(newVal * 10) / 10);
-  };
-
-  const pct = ((value - 1) / 9) * 100;
-
-  return (
-    <div
-      ref={trackRef}
-      role="slider"
-      aria-label={label}
-      aria-valuemin={1}
-      aria-valuemax={10}
-      aria-valuenow={Math.round(value)}
-      tabIndex={0}
-      onPointerDown={handlePointerDown}
-      onPointerMove={handlePointerMove}
-      onPointerUp={handlePointerUp}
-      onKeyDown={handleKeyDown}
-      className="relative w-full min-h-[44px] flex items-center cursor-pointer touch-none select-none"
-    >
-      {/* Track */}
-      <div
-        className="w-full h-2 rounded-full"
-        style={{
-          background: `linear-gradient(to right, hsl(145 25% 50%), hsl(40 25% 90%))`,
-        }}
-      />
-      {/* Thumb */}
-      <div
-        className={`absolute w-5 h-5 rounded-full bg-coral pointer-events-none glow-coral-sm`}
-        style={{ left: `calc(${pct}% - 10px)`, top: "50%", transform: "translateY(-50%)" }}
-      />
-    </div>
-  );
-}
-
 const SelfCheck = () => {
   const navigate = useNavigate();
-  const [screen, setScreen] = useState<"entry" | "question" | "done">("entry");
   const [currentQ, setCurrentQ] = useState(0);
   const [answers, setAnswers] = useState<Scores>(
     Object.fromEntries(questions.map((q) => [q.id, 5]))
   );
   const [touched, setTouched] = useState(false);
+  const [slideDirection, setSlideDirection] = useState<"left" | "right">("right");
+  const [animating, setAnimating] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   const q = questions[currentQ];
 
+  // Trigger slide animation on question change
+  useEffect(() => {
+    setAnimating(true);
+    const timer = setTimeout(() => setAnimating(false), 350);
+    return () => clearTimeout(timer);
+  }, [currentQ]);
+
   const handleNext = () => {
     if (currentQ < questions.length - 1) {
+      setSlideDirection("right");
       setCurrentQ((prev) => prev + 1);
       setTouched(false);
     } else {
-      // Build final dimension scores per scoring spec:
-      // Identity: (Q1 + Q2) / 2
-      // Value: (Q3 + Q2*0.5) / 1.5
-      // Purpose: (Q4 + Q5) / 2
-      // AI Relationship: (Q6 + Q5*0.5) / 1.5
-      // Creative Action: Q7
       const finalScores: Record<string, number> = {
         identity: (answers.q1 + answers.q2) / 2,
         value: (answers.q3 + answers.q2 * 0.5) / 1.5,
@@ -179,7 +92,6 @@ const SelfCheck = () => {
         creative_action: answers.q7,
       };
 
-      // Encode scores to query params and navigate to results
       const params = new URLSearchParams({
         identity: finalScores.identity.toFixed(2),
         value: finalScores.value.toFixed(2),
@@ -194,130 +106,100 @@ const SelfCheck = () => {
 
   const handleBack = () => {
     if (currentQ > 0) {
+      setSlideDirection("left");
       setCurrentQ((prev) => prev - 1);
       setTouched(true);
     } else {
-      setScreen("entry");
+      navigate("/");
     }
   };
 
-  if (screen === "entry") {
-    return (
-      <main className="min-h-screen bg-navy constellation-bg flex flex-col items-center justify-center px-6 text-center relative">
-        <button
-          onClick={() => navigate("/")}
-          className="absolute top-6 left-6 text-cream/50 hover:text-cream transition-colors flex items-center gap-1 text-sm font-sans"
-        >
-          <ChevronLeft size={16} />
-          Home
-        </button>
-        <div className="max-w-xl mx-auto">
-          <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6">The Self-Check</p>
-          <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mb-6">
-            Seven questions.<br />A mirror, not a grade.
-          </h1>
-          <p className="font-sans text-cream/70 text-lg leading-relaxed mb-4">
-            Each question asks you to locate yourself between two true things. There are no right answers.
-          </p>
-          <p className="font-sans text-cream/50 text-base italic mb-10">
-            The questions map five dimensions: Identity, Value, Purpose, AI Relationship, and Creative Action. Your answers generate a personal profile — a shape that shows where you are right now.
-          </p>
-          <button
-            onClick={() => setScreen("question")}
-            className="inline-block bg-coral text-cream font-sans font-medium text-lg px-10 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-4"
-          >
-            Begin →
-          </button>
-          <p className="text-cream/50 text-sm font-sans">Takes about 2 minutes. No account required.</p>
-        </div>
-      </main>
-    );
-  }
-
   return (
-    <main className="min-h-screen bg-navy constellation-bg flex flex-col">
+    <main className="min-h-screen bg-navy flex flex-col relative overflow-hidden">
       {/* Top bar */}
-      <div className="flex items-center justify-between px-6 pt-6 pb-4 max-w-3xl mx-auto w-full">
-        <div className="flex items-center gap-4">
-          <button
-            onClick={() => navigate("/")}
-            className="text-cream/50 hover:text-cream transition-colors flex items-center gap-1 text-sm font-sans"
-          >
-            <ChevronLeft size={16} />
-            Home
-          </button>
-          <button
-            onClick={handleBack}
-            className="text-cream/50 hover:text-cream transition-colors text-sm font-sans"
-          >
-            Back
-          </button>
-        </div>
-        <span className="font-sans text-cream/50 text-xs uppercase tracking-widest">
-          {currentQ + 1} of {questions.length}
-        </span>
+      <div className="flex items-center justify-between px-5 pt-5 pb-3">
+        <button
+          onClick={handleBack}
+          className="w-10 h-10 flex items-center justify-center rounded-full text-cream/50 hover:text-cream hover:bg-cream/5 transition-all"
+          aria-label={currentQ === 0 ? "Go home" : "Previous question"}
+        >
+          <ChevronLeft size={20} />
+        </button>
+        <StepDots total={questions.length} current={currentQ} />
+        <div className="w-10" /> {/* Spacer for centering */}
       </div>
 
-      {/* Progress bar */}
-      <div
-        className="w-full h-0.5 bg-cream/10"
-        role="progressbar"
-        aria-valuenow={currentQ + 1}
-        aria-valuemin={1}
-        aria-valuemax={questions.length}
-        aria-label={`Question ${currentQ + 1} of ${questions.length}`}
-      >
+      {/* Content area */}
+      <div className="flex-1 flex flex-col items-center justify-center px-5 pb-28">
+        {/* Intro blurb on Q1 only */}
+        {currentQ === 0 && (
+          <div className="text-center mb-8 max-w-lg">
+            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-2">
+              The Self-Check
+            </p>
+            <h1 className="font-serif text-cream text-2xl md:text-3xl leading-tight mb-2">
+              Seven questions. A mirror, not a grade.
+            </h1>
+            <p className="font-sans text-cream/50 text-sm">
+              Each question asks you to locate yourself between two true things. No right answers.
+            </p>
+          </div>
+        )}
+
+        {/* Question card */}
         <div
-          className="h-full bg-coral transition-all duration-500"
-          style={{ width: `${((currentQ + 1) / questions.length) * 100}%` }}
-        />
-      </div>
-
-      {/* Question content */}
-      <div className="flex-1 flex flex-col items-center justify-center px-6 py-12">
-        <div className="max-w-2xl mx-auto w-full">
+          key={q.id}
+          ref={contentRef}
+          className={`w-full max-w-xl border border-cream/10 rounded-2xl bg-cream/[0.03] backdrop-blur-sm p-6 md:p-8 selfcheck-card-enter ${
+            slideDirection === "right" ? "selfcheck-slide-right" : "selfcheck-slide-left"
+          }`}
+        >
           {/* Dimension label */}
           <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4 text-center">
             {q.dimension}
           </p>
 
           {/* Context */}
-          <p className="font-serif text-cream text-xl md:text-2xl italic text-center mb-12 leading-snug">
+          <p className="font-serif text-cream text-lg md:text-xl italic text-center mb-8 leading-snug">
             "{q.context}"
           </p>
 
           {/* Slider area */}
-          <div className="mb-6">
-            <div className="flex justify-between gap-8 mb-6">
-              <p className="font-sans text-cream/60 text-sm leading-snug text-left max-w-[45%]">{q.left}</p>
-              <p className="font-sans text-cream/60 text-sm leading-snug text-right max-w-[45%]">{q.right}</p>
+          <div className="mb-2">
+            <div className="flex justify-between gap-6 mb-5">
+              <p className="font-sans text-cream/60 text-xs leading-snug text-left max-w-[45%]">
+                {q.left}
+              </p>
+              <p className="font-sans text-cream/60 text-xs leading-snug text-right max-w-[45%]">
+                {q.right}
+              </p>
             </div>
-            <div className="relative py-4">
-              <CustomSlider
-                value={answers[q.id]}
-                onChange={(v) => setAnswers((prev) => ({ ...prev, [q.id]: v }))}
-                touched={touched}
-                setTouched={setTouched}
-                label={`${q.dimension}: ${q.context}`}
-              />
-            </div>
-          </div>
-
-          {/* Next button — only after slider touched */}
-          <div className="flex justify-end mt-8">
-            <button
-              onClick={handleNext}
-              disabled={!touched}
-              className={`font-sans font-medium text-base px-8 py-3 rounded-full transition-all duration-300 ${
-                touched
-                  ? "bg-coral text-cream pulse-coral hover:opacity-90"
-                  : "bg-cream/10 text-cream/20 cursor-not-allowed"
-              }`}
-            >
-              {currentQ === questions.length - 1 ? "See my results →" : "Next →"}
-            </button>
+            <QuestionSlider
+              value={answers[q.id]}
+              onChange={(v) =>
+                setAnswers((prev) => ({ ...prev, [q.id]: v }))
+              }
+              touched={touched}
+              setTouched={setTouched}
+              label={`${q.dimension}: ${q.context}`}
+            />
           </div>
         </div>
+      </div>
+
+      {/* Fixed bottom action bar */}
+      <div className="fixed bottom-0 left-0 right-0 bg-navy/90 backdrop-blur-md border-t border-cream/5 px-5 py-4 flex justify-center">
+        <button
+          onClick={handleNext}
+          disabled={!touched}
+          className={`font-sans font-medium text-base px-10 py-3.5 rounded-full transition-all duration-300 w-full max-w-xs ${
+            touched
+              ? "bg-coral text-cream pulse-coral hover:opacity-90"
+              : "bg-cream/10 text-cream/20 cursor-not-allowed"
+          }`}
+        >
+          {currentQ === questions.length - 1 ? "See my results →" : "Next →"}
+        </button>
       </div>
     </main>
   );
