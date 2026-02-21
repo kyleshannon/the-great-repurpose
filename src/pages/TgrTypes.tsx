@@ -7,61 +7,61 @@ const types = [
   {
     name: "The Amplifier",
     tagline: "You're building toward leading others through this.",
-    pattern: "All five dimensions are high. The full Great Repurpose is in motion.",
+    description: "You've done the work. Your sense of self doesn't depend on your title, you know what you bring that AI can't replicate, you have direction, you're comfortable with the tools, and you're already creating. The next step isn't more preparation — it's helping someone else get here. Find a peer group, start teaching what you know, or build something that pulls others forward.",
     color: "border-coral",
   },
   {
     name: "The Awakener",
     tagline: "You're building toward clarity. Everything is early.",
-    pattern: "No dimension stands out yet. The honest starting point for most people.",
+    description: "Nothing feels clear yet, and that's okay. You're early — no single area has broken through, and the fog is real. The most important thing right now is to stop trying to figure it all out at once. Pick one dimension — just one — and take a small step. Read something that challenges how you think about your identity. Ask someone how they're using AI. Movement in any direction beats standing still.",
     color: "border-cream/30",
   },
   {
     name: "The Explorer",
     tagline: "You're building toward a new creative practice.",
-    pattern: "Strong in AI tools or creative action, but identity or value clarity is still forming.",
+    description: "You've been playing with AI tools or making things, which puts you ahead of most people. But the deeper questions — who you are without your job title, what value you bring that's uniquely yours — are still unanswered. The risk is building impressive things that don't mean anything to you. Slow down long enough to ask: what is all this capability actually for?",
     color: "border-mint",
   },
   {
     name: "The Firestarter",
     tagline: "You're building toward something that just caught fire.",
-    pattern: "One dimension is dramatically ahead of the rest. A single breakthrough is leading the way.",
+    description: "Something clicked. Maybe it was a moment of clarity about your identity, or a purpose that suddenly made sense, or an AI tool that opened a door. One area of your life just leapt ahead while everything else is still catching up. Don't dismiss the spark — it's the thread to pull. The next step is to let that breakthrough inform the areas that haven't moved yet. What does your spark tell you about where to go next?",
     color: "border-amber-brand",
   },
   {
     name: "The Translator",
     tagline: "You're building toward bridging two worlds.",
-    pattern: "Strong identity and tool engagement, but value clarity or purpose direction has a gap in the middle.",
+    description: "You're strong on the outside edges. You know who you are and you're comfortable with tools or creation. But there's a gap in the middle — you haven't fully articulated what makes you valuable, or you haven't locked in a clear direction. You're doing impressive things without a strategic center. The next step is excavation: figure out what's actually worth building before you build more of it.",
     color: "border-periwinkle",
   },
   {
     name: "The Architect",
     tagline: "You're building toward something only you can build.",
-    pattern: "Strong across identity, value, purpose, and AI — but creative output hasn't started yet.",
+    description: "You understand everything. Identity, value, purpose, tools — all solid. The only thing missing is output. You haven't shipped anything yet. The gap isn't knowledge, it's action. Perfectionism is probably disguised as preparation. The next step is to make something — anything — and put it in front of someone. A rough draft, a prototype, a first attempt. Done beats perfect.",
     color: "border-coral",
   },
   {
     name: "The Compass",
     tagline: "You're building toward leading the way.",
-    pattern: "Identity, value, and purpose are all strong. Tools and creation haven't started. The perfect map, no boots.",
+    description: "You've done the hardest part. You know who you are, what you bring, and where you're headed. But you haven't picked up the tools yet, and you haven't started creating. You have the perfect map and no boots on the ground. The next step is low-stakes experimentation with AI — not mastery, just familiarity. Try one tool. Make one thing. The inner work is done; now it's time to move.",
     color: "border-mint",
   },
   {
     name: "The Original",
     tagline: "You're building toward becoming irreplaceable.",
-    pattern: "Identity unhooked and value found, but purpose isn't aimed and tools aren't engaged yet.",
+    description: "Your identity is unhooked from your old title, and you've found real value in what you bring. But you haven't aimed it at anything yet, and tools or creation haven't started. You know who you are — you just haven't decided what to do about it. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it.",
     color: "border-periwinkle",
   },
   {
     name: "The Unlocker",
     tagline: "You're building toward freedom from the old story.",
-    pattern: "Identity is the active bottleneck. Everything else is waiting behind this one door.",
+    description: "Identity is the bottleneck. You're still separating who you are from the title you held, and until that shifts, nothing else can move. Every AI headline feels like a personal threat. That's normal — and it's the door to walk through. The next step isn't learning a tool or finding your purpose. It's sitting with the question: who am I if I'm not my job? Start there. Everything else is waiting on the other side.",
     color: "border-amber-brand",
   },
   {
     name: "The Catalyst",
     tagline: "You're building toward amplifying everything you touch.",
-    pattern: "Solid across the board — no catastrophic gaps, no single dimension fully resolved. One push from accelerating.",
+    description: "You're solid across the board. Nothing is catastrophically low, nothing is fully resolved. You're balanced, capable, and closer than you think. The risk is coasting — \"good enough\" can become a ceiling. The next step is to pick the one dimension where a small push would unlock the most momentum, and lean into it. You don't need a transformation. You need a catalyst.",
     color: "border-cream/30",
   },
 ];
@@ -97,10 +97,10 @@ const TgrTypes = () => {
             <div className="grid gap-6 md:grid-cols-2">
               {types.map((type, i) => (
                 <ScrollFadeUp key={type.name} delay={i * 60}>
-                  <div className={`border-l-4 ${type.color} bg-navy/5 border border-navy/10 rounded-r-lg p-6 h-full`}>
+                  <div className={`border-l-4 ${type.color} bg-navy/5 border border-navy/10 rounded-r-lg p-7 h-full`}>
                     <h3 className="font-serif text-navy text-xl mb-1">{type.name}</h3>
                     <p className="font-serif text-navy/60 text-sm italic mb-3">{type.tagline}</p>
-                    <p className="font-sans text-navy/70 text-sm leading-relaxed">{type.pattern}</p>
+                    <p className="font-sans text-navy/70 text-sm leading-relaxed">{type.description}</p>
                   </div>
                 </ScrollFadeUp>
               ))}
