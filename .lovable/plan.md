@@ -1,71 +1,65 @@
 
-
-# Responsive Design Audit and Homepage Layout Update
+# Replace Archetypes and Update UI Copy
 
 ## Overview
 
-A full responsive audit across all pages (Home, Self-Check, Results, Phases, About) plus a layout change on the homepage hero section to move the CTA button between the two descriptive paragraphs, matching the reference screenshot.
+Replace the existing 12 archetypes with 10 new ones ("TGR Types"), implement the new priority-based matching logic, update all CTA button text, and restructure the pre-email results page layout.
 
-## Homepage Hero Layout Change
+## Changes
 
-The reference screenshot shows the hero image is already matching well. The key change requested: **move the "Take the Free Self-Check" button and its subtitle between the two paragraphs** instead of above them.
+### 1. `src/lib/archetypes.ts` -- Complete rewrite
 
-Current order:
-1. Button
-2. "7 questions..." subtitle
-3. Paragraph 1 (map for the invisible crisis...)
-4. Paragraph 2 (Self-Check is where you start...)
+Replace all 12 archetypes with the 10 new ones:
+- The Amplifier, The Awakener, The Explorer, The Firestarter, The Original, The Compass, The Architect, The Translator, The Catalyst, The Unlocker
 
-New order:
-1. Paragraph 1 (map for the invisible crisis...)
-2. Button
-3. "7 questions..." subtitle
-4. Paragraph 2 (Self-Check is where you start...)
+Each archetype gets:
+- `name` (e.g. "The Amplifier")
+- `tagline` (the "You're building toward..." line from the brief)
+- `description` (a short prose description based on the provided details)
+- `vulnerability` (derived from the archetype's risk/tension)
+- `salonEntry` (activity, body, href) -- mapped to appropriate AI Salon activities
 
-## Responsive Design Fixes
+Replace the `matchArchetype()` function with the new matching logic, checked in this exact order:
+1. The Amplifier: all >= 7
+2. The Awakener: max <= 5 AND avg <= 4
+3. The Explorer: (ai >= 5 OR ca >= 5) AND (id <= 4 OR vc <= 4)
+4. The Firestarter: (max - avg) >= 3
+5. The Translator: id >= 7 AND (ai >= 5 OR ca >= 5) AND (vc <= 4 OR pd <= 4)
+6. The Architect: id >= 5 AND vc >= 5 AND pd >= 5 AND ai >= 5 AND ca <= 4
+7. The Compass: id >= 7 AND vc >= 7 AND pd >= 7 AND ai < 5 AND ca < 5
+8. The Original: id >= 7 AND vc >= 7 AND pd < 7 AND (ai < 5 OR ca < 5)
+9. The Unlocker: id <= 5 AND id >= avg-1 AND avg <= 5 AND no dimension above 6
+10. The Catalyst (fallback): avg >= 5 AND avg <= 7.5 AND (max - min) <= 4 -- or just default
 
-### `src/pages/Index.tsx`
-- Hero text overlay: scale down font sizes for small screens (already has `text-4xl md:text-6xl lg:text-7xl` -- looks fine)
-- Reorder CTA block elements as described above
-- Ensure all section padding is appropriate on mobile (`py-24 px-6` can feel too tall on mobile -- consider `py-16 md:py-24`)
-- Overall section padding adjustments for mobile breathing room
+### 2. `src/pages/Index.tsx` -- Button text updates
 
-### `src/pages/SelfCheck.tsx`
-- The quiz card uses `max-w-xl` which is good, but the bottom fixed action bar needs safe area padding for phones with notches/home indicators (`pb-safe` or extra bottom padding)
-- The slider label text at `text-xs` with `max-w-[45%]` can feel cramped on very small screens -- bump to slightly wider on mobile
-- Add `pt-20` or similar to account for the fixed nav on the content area
+All "Take the Free Self-Check" buttons become:
+- Button text: **"Find Your TGR Type"**
+- Subtext: **"Discover where you are -- and what you're building toward."**
 
-### `src/pages/ResultsPreview.tsx`
-- The radar chart at 300px/340px height works but could be reduced on mobile for a tighter layout
-- Email gate form: the `sm:flex-row` pattern is already responsive -- good
-- Share buttons section: `flex-wrap` handles mobile wrapping already -- good
-- Ensure dimension breakdown accordion buttons have adequate touch targets (already `p-6` -- fine)
+Update in:
+- Hero CTA section (line ~93-99)
+- Five Stages section CTA (line ~238-243)
+- Bottom Self-Check promo section (line ~353-358)
 
-### `src/pages/About.tsx`
-- Already using `max-w-3xl` -- responsive is clean
-- No changes needed
+### 3. `src/pages/ResultsPreview.tsx` -- Pre-email layout restructure
 
-### `src/pages/Phases.tsx`
-- Already using `max-w-3xl` -- responsive is clean
-- No changes needed
+Change the pre-email results page order to:
+1. "Based on your answers, you are **[TYPE]**" (replace "You are" with "Based on your answers, you are")
+2. Radar chart with a simple descriptive label underneath (e.g. "Your shape across the five dimensions")
+3. "As a [TYPE], you're building toward..." followed by 5-10 words of the tagline, then text fades/blurs into the email gate
 
-### `src/components/Navigation.tsx`
-- Mobile menu overlay is full-screen -- good
-- Already has hamburger at `md:hidden` breakpoint -- solid
+### 4. `supabase/functions/generate-interpretation/index.ts` -- Update system prompt
 
-### `src/components/Footer.tsx`
-- 3-column grid with `grid-cols-1 md:grid-cols-3` -- already responsive
-- No changes needed
+The system prompt references archetype fields that remain structurally the same (name, tagline, description, vulnerability, salonEntry.activity), so the edge function itself doesn't need structural changes. However, the prompt should reference "TGR Type" instead of "archetype" in the user-facing language.
 
-### `src/index.css`
-- No changes needed for responsive -- media queries and utilities are already set up
+### 5. `src/pages/SelfCheck.tsx` -- Button text update
 
-## Technical Details
+Change the final question button from "See my results" to "Find Your TGR Type" to match the new language.
 
-### Files to modify:
-1. **`src/pages/Index.tsx`** -- Reorder CTA block (button between paragraphs), adjust section vertical padding for mobile (`py-16 md:py-24` pattern)
-2. **`src/pages/SelfCheck.tsx`** -- Add safe bottom padding to the fixed action bar, ensure adequate top spacing below fixed nav
-3. **`src/pages/ResultsPreview.tsx`** -- Minor mobile padding tweaks for consistency
-
-### No new dependencies or backend changes required.
-
+## Files to modify
+1. `src/lib/archetypes.ts` -- Full rewrite (new archetypes + matching logic)
+2. `src/pages/Index.tsx` -- CTA button text and subtext
+3. `src/pages/ResultsPreview.tsx` -- Pre-email layout restructure
+4. `src/pages/SelfCheck.tsx` -- Final button text
+5. `supabase/functions/generate-interpretation/index.ts` -- Minor prompt language update
