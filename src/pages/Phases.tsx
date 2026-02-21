@@ -75,6 +75,7 @@ const Phases = () => {
   return (
     <div className="min-h-screen bg-navy text-cream">
       <Navigation />
+      <main id="main-content">
 
       {/* Page hero */}
       <section className="bg-navy constellation-bg pt-32 pb-20 px-6 text-center">
@@ -153,6 +154,7 @@ const Phases = () => {
         </ScrollFadeUp>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

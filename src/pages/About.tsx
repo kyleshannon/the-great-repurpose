@@ -25,6 +25,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-navy text-cream">
       <Navigation />
+      <main id="main-content">
 
       {/* ── Hero ── */}
       <section className="bg-navy constellation-bg pt-32 pb-16 px-6">
@@ -106,6 +107,7 @@ const About = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );
