@@ -586,7 +586,7 @@ const ResultsPreview = () => {
           <section className="bg-cream py-16 px-6">
             <div className="max-w-3xl mx-auto">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-8 text-center">Also worth exploring</p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="space-y-4">
                 {[
                   { label: "Free AI Salon Community", desc: "Join the conversation.", href: "https://community.thesalon.ai" },
                   { label: "AI Readiness Project Podcast", desc: "Conversations about what it means to be ready — humanly.", href: "http://aireadinessproject.com/" },
