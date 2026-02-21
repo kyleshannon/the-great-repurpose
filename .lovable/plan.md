@@ -1,48 +1,116 @@
-
-
-# Richer, More Actionable TGR Type Cards
+# Add Open-Ended Question, Remove Subtext, and Redesign AI-Powered Results
 
 ## Overview
 
-Rewrite every type card on `/types` to feel less like an inspirational poster and more like a real description someone anxious about their future would find grounding. Each card will have: a concrete description of where this person is, what's working, what's stuck, and a specific next move they can take.
+Four changes: (1) remove "7 questions. 2 minutes." subtext from the TGR Types page CTA, (2) add an open-ended text question as question 8 in the Self-Check, (3) redesign the post-email results page into a richer narrative report, and (4) rewrite the edge function prompt so the AI generates a structured, personalized report that synthesizes scores, references the open-ended answer, includes dimension breakdowns, and weaves in AI Salon recommendations with links.
 
-## Changes
+---
 
-### `src/pages/TgrTypes.tsx` — Rewrite the `types` array
+## 1. Remove CTA subtext on `/types`
 
-Replace the short `pattern` field with a multi-sentence `description` that covers:
-- **Where they are** (concrete, not abstract)
-- **What's working / what's stuck** (specific dimensions, in plain language)
-- **A next step** (something they can actually do)
+**File: `src/pages/TgrTypes.tsx**`
 
-New card content:
+Remove the line "7 questions. 2 minutes. Discover where you are -- and what you're building toward." and keep only the "Which one are you?" heading and the button.
 
-**The Amplifier** — You've done the work. Your sense of self doesn't depend on your title, you know what you bring that AI can't replicate, you have direction, you're comfortable with the tools, and you're already creating. The next step isn't more preparation — it's helping someone else get here. Find a peer group, start teaching what you know, or build something that pulls others forward.
+---
 
-**The Awakener** — Nothing feels clear yet, and that's okay. You're early — no single area has broken through, and the fog is real. The most important thing right now is to stop trying to figure it all out at once. Pick one dimension — just one — and take a small step. Read something that challenges how you think about your identity. Ask someone how they're using AI. Movement in any direction beats standing still.
+## 2. Add open-ended question 8
 
-**The Explorer** — You've been playing with AI tools or making things, which puts you ahead of most people. But the deeper questions — who you are without your job title, what value you bring that's uniquely yours — are still unanswered. The risk is building impressive things that don't mean anything to you. Slow down long enough to ask: what is all this capability actually for?
+**File: `src/pages/SelfCheck.tsx**`
 
-**The Firestarter** — Something clicked. Maybe it was a moment of clarity about your identity, or a purpose that suddenly made sense, or an AI tool that opened a door. One area of your life just leapt ahead while everything else is still catching up. Don't dismiss the spark — it's the thread to pull. The next step is to let that breakthrough inform the areas that haven't moved yet. What does your spark tell you about where to go next?
+- After the 7 slider questions, add a new step (question 8) that shows a textarea: **"What's the thing you keep thinking about but haven't started yet?"**
+- This step replaces the slider with a simple text input. The "Next" button becomes "Find Your TGR Type" on this step.
+- The `touched` state on this step is always true (the question is optional -- they can skip it or type something).
+- Store the answer in a new state variable `openAnswer`.
+- Pass the open-ended answer as a URL param `open_answer` to the results page.
 
-**The Translator** — You're strong on the outside edges. You know who you are and you're comfortable with tools or creation. But there's a gap in the middle — you haven't fully articulated what makes you valuable, or you haven't locked in a clear direction. You're doing impressive things without a strategic center. The next step is excavation: figure out what's actually worth building before you build more of it.
+**File: `src/components/selfcheck/QuestionSlider.tsx**` -- No changes needed; question 8 just won't use the slider component.
 
-**The Architect** — You understand everything. Identity, value, purpose, tools — all solid. The only thing missing is output. You haven't shipped anything yet. The gap isn't knowledge, it's action. Perfectionism is probably disguised as preparation. The next step is to make something — anything — and put it in front of someone. A rough draft, a prototype, a first attempt. Done beats perfect.
+---
 
-**The Compass** — You've done the hardest part. You know who you are, what you bring, and where you're headed. But you haven't picked up the tools yet, and you haven't started creating. You have the perfect map and no boots on the ground. The next step is low-stakes experimentation with AI — not mastery, just familiarity. Try one tool. Make one thing. The inner work is done; now it's time to move.
+## 3. Store open-ended answer in database
 
-**The Original** — Your identity is unhooked from your old title, and you've found real value in what you bring. But you haven't aimed it at anything yet, and tools or creation haven't started. You know who you are — you just haven't decided what to do about it. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it.
+**Database migration:** Add a nullable `open_answer` column (type `text`) to `selfcheck_results`.
 
-**The Unlocker** — Identity is the bottleneck. You're still separating who you are from the title you held, and until that shifts, nothing else can move. Every AI headline feels like a personal threat. That's normal — and it's the door to walk through. The next step isn't learning a tool or finding your purpose. It's sitting with the question: who am I if I'm not my job? Start there. Everything else is waiting on the other side.
+**File: `src/pages/ResultsPreview.tsx**`
 
-**The Catalyst** — You're solid across the board. Nothing is catastrophically low, nothing is fully resolved. You're balanced, capable, and closer than you think. The risk is coasting — "good enough" can become a ceiling. The next step is to pick the one dimension where a small push would unlock the most momentum, and lean into it. You don't need a transformation. You need a catalyst.
+- Read `open_answer` from URL params (pre-email) and from the DB row (post-email).
+- Pass it to the edge function along with scores and archetype.
+- Include it in the DB insert when saving results.
 
-### UI adjustments
+---
 
-- Switch from `pattern` to `description` in the data and rendering
-- Slightly increase card padding (`p-6` to `p-7`) to breathe with longer text
-- Keep the 2-column grid on desktop; cards will naturally grow taller
+## 4. Redesign the results page layout
+
+**File: `src/pages/ResultsPreview.tsx**`
+
+Replace the current post-email layout with a new structure:
+
+1. **Hero**: "Based on your answers, you are [TYPE]" + tagline
+2. **Radar chart** with "Your shape across the five dimensions"
+3. **AI-generated narrative report** (streamed) -- this is now the centerpiece. It will contain:
+  - Starts with "As [TYPE], you are building toward..." (The first sentence or two is teased and displayed before it fades out and asks for email.
+  - A narrative synthesis of their scores (not just "your identity is X")
+  - Their open-ended answer woven in naturally
+  - A dimension-by-dimension section with context for each score
+  - Specific AI Salon recommendations with links
+4. **Dimension breakdown cards** -- keep the collapsible score cards but move them below the narrative
+5. **Recommended next steps** -- keep the salon activity CTA and secondary links
+6. **Share + Download** section
+
+The AI narrative becomes the main content instead of a small section.
+
+---
+
+## 5. Rewrite the edge function prompt
+
+**File: `supabase/functions/generate-interpretation/index.ts**`
+
+Accept a new `openAnswer` field in the request body. Rewrite the system prompt to generate a structured report:
+
+- Accept the open-ended answer and incorporate it into the interpretation
+- Generate a report with clear sections using markdown headers:
+  - **Your Shape** -- narrative synthesis of the pattern across dimensions
+  - **What Your Scores Reveal** -- dimension-by-dimension context (Identity Independence: X/10, what this means for you)
+  - **The Thing You Haven't Started** -- respond to their open-ended answer with specific, actionable insight connecting it to their type
+  - **Your Next Move** -- specific AI Salon recommendations with activity names and links (Office Hours, AI Learning Lab, Mastermind Practice Lab, Learn Out Loud)
+- Use the archetype's hardcoded description, vulnerability, and salon recommendation as source material but let the AI weave them into personalized prose
+
+**File: `src/pages/ResultsPreview.tsx**`
+
+Update the interpretation rendering to support markdown-style headers (##) by splitting on them and rendering with appropriate styling, or use a simple markdown renderer.
+
+---
+
+## Technical Details
+
+### Database migration
+
+```sql
+ALTER TABLE selfcheck_results ADD COLUMN open_answer text;
+```
+
+### Edge function request body change
+
+```typescript
+// Before
+{ scores, archetype }
+// After  
+{ scores, archetype, openAnswer }
+```
+
+### New prompt structure (summary)
+
+The AI will receive all the same archetype data plus the open-ended answer. The prompt will instruct it to write 6-8 paragraphs organized into the sections above, using markdown `##` headers for structure. The hardcoded archetype descriptions and salon activities serve as the "bones" that the AI personalizes.
+
+### Results page rendering
+
+The streamed AI text will be split on `##` headers and rendered as styled sections with coral-colored section labels, prose paragraphs, and inline links to AI Salon activities.
 
 ### Files to modify
-1. `src/pages/TgrTypes.tsx` — Rewrite `types` array data and update rendering to use `description` instead of `pattern`
 
+1. `src/pages/TgrTypes.tsx` -- Remove CTA subtext
+2. `src/pages/SelfCheck.tsx` -- Add open-ended question 8
+3. `supabase/functions/generate-interpretation/index.ts` -- Rewrite prompt for structured report
+4. `src/pages/ResultsPreview.tsx` -- Pass open answer, redesign layout, render structured AI narrative
+5. Database migration -- Add `open_answer` column
