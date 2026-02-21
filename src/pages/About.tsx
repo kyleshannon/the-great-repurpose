@@ -29,7 +29,7 @@ const About = () => {
 
       {/* ── Hero ── */}
       <section className="bg-navy constellation-bg pt-32 pb-16 px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h1 className="font-serif text-cream text-3xl md:text-5xl leading-tight">
               About The Great Repurpose
@@ -40,7 +40,7 @@ const About = () => {
 
       {/* ── Origin story ── */}
       <section className="bg-cream py-20 px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-2xl md:text-3xl mb-8">The Origin</h2>
           </ScrollFadeUp>
@@ -66,7 +66,7 @@ const About = () => {
 
       {/* ── The AI Salon ── */}
       <section className="bg-navy constellation-bg py-20 px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-cream text-3xl md:text-4xl mb-4 leading-tight">
               The Great Repurpose is the diagnosis.<br />
