@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
 
@@ -6,51 +6,51 @@ const questions = [
   {
     id: "identity",
     dimension: "IDENTITY",
-    context: "When you think about who you are...",
-    left: "My sense of self is largely tied to my work and professional role",
-    right: "My sense of self exists largely independent of my work and professional role",
+    context: "Imagine your job title disappeared tomorrow...",
+    left: "I'd feel lost — that title is a big part of how I see myself",
+    right: "I'd be fine — who I am doesn't really live in a title",
   },
   {
     id: "identity_value",
     dimension: "IDENTITY + VALUE",
-    context: "When AI can do something you used to do...",
-    left: "I feel like that part of my value has been diminished or taken",
-    right: "I feel like my value lives somewhere AI doesn't reach",
+    context: "A tool just did in seconds what used to take you hours...",
+    left: "Honestly? It stings a little",
+    right: "Interesting — my real value was never in that task",
   },
   {
     id: "value_clarity",
     dimension: "VALUE CLARITY",
-    context: "If someone asked what you uniquely bring...",
-    left: "I would struggle to articulate it clearly",
-    right: "I have a clear sense of what I uniquely contribute",
+    context: "A friend introduces you at a dinner party...",
+    left: "I'd fumble for what to say beyond my job",
+    right: "I know exactly what I'd want them to say about me",
   },
   {
     id: "purpose_direction",
     dimension: "PURPOSE DIRECTION",
-    context: "Right now, in terms of direction...",
-    left: "I feel uncertain or unmoored about what I'm building toward",
-    right: "I have a clear and motivating sense of where I'm headed",
+    context: "You have a free Saturday with no obligations...",
+    left: "I'd probably drift — I'm not sure what I'm building toward",
+    right: "I know exactly what I'd spend it on",
   },
   {
     id: "purpose_ai",
     dimension: "PURPOSE + AI",
-    context: "When you think about AI and your future...",
-    left: "I mostly feel anxious or threatened",
-    right: "I mostly feel curious or energized",
+    context: "You read a headline: 'AI will reshape every industry by 2030'...",
+    left: "My stomach drops a little",
+    right: "I lean in — I want to know more",
   },
   {
     id: "ai_relationship",
     dimension: "AI RELATIONSHIP",
-    context: "Your current relationship with AI tools...",
-    left: "I avoid them, or use them reluctantly and without confidence",
-    right: "I engage with them actively, on my own terms",
+    context: "Someone hands you a new AI tool and says 'try this'...",
+    left: "I'd put it off or feel overwhelmed",
+    right: "I'd be tinkering with it within the hour",
   },
   {
     id: "creative_action",
     dimension: "CREATIVE ACTION",
-    context: "When it comes to making things and sharing them...",
-    left: "I'm mostly consuming or observing — not yet creating or contributing",
-    right: "I'm actively making and sharing work, even imperfectly",
+    context: "Think about the last month...",
+    left: "I mostly consumed other people's ideas",
+    right: "I made something and put it out there, even if it wasn't perfect",
   },
 ];
 
@@ -79,45 +79,58 @@ function CustomSlider({
   touched: boolean;
   setTouched: (v: boolean) => void;
 }) {
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const dragging = useRef(false);
+
+  const calcValue = useCallback((clientX: number) => {
+    const track = trackRef.current;
+    if (!track) return;
+    const rect = track.getBoundingClientRect();
+    const pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+    const val = 1 + pct * 9;
     setTouched(true);
-    onChange(Number(e.target.value));
+    onChange(Math.round(val * 10) / 10);
+  }, [onChange, setTouched]);
+
+  const handlePointerDown = (e: React.PointerEvent) => {
+    e.preventDefault();
+    dragging.current = true;
+    (e.target as HTMLElement).setPointerCapture(e.pointerId);
+    calcValue(e.clientX);
+  };
+
+  const handlePointerMove = (e: React.PointerEvent) => {
+    if (!dragging.current) return;
+    calcValue(e.clientX);
+  };
+
+  const handlePointerUp = () => {
+    dragging.current = false;
   };
 
   const pct = ((value - 1) / 9) * 100;
 
   return (
-    <div className="relative w-full">
-      <div className="relative h-2 rounded-full overflow-hidden mb-1" style={{
-        background: `linear-gradient(to right, hsl(21 89% 54%), hsl(207 79% 87%))`
-      }}>
-        <div className="absolute inset-0 opacity-30 bg-foreground/10" />
-      </div>
-      <input
-        type="range"
-        min={1}
-        max={10}
-        step={0.1}
-        value={value}
-        onChange={handleChange}
-        className="absolute inset-y-0 w-full opacity-0 cursor-pointer h-4 -mt-3"
-        style={{ top: "50%", transform: "translateY(-50%)" }}
+    <div
+      ref={trackRef}
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerUp}
+      className="relative w-full min-h-[44px] flex items-center cursor-pointer touch-none select-none"
+    >
+      {/* Track */}
+      <div
+        className="w-full h-2 rounded-full"
+        style={{
+          background: `linear-gradient(to right, hsl(21 89% 54%), hsl(207 79% 87%))`,
+        }}
       />
-      {/* Track visual */}
-      <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 h-2 rounded-full overflow-hidden pointer-events-none">
-        <div
-          className="h-full rounded-full"
-          style={{
-            background: `linear-gradient(to right, hsl(21 89% 54%), hsl(207 79% 87%))`,
-          }}
-        />
-      </div>
       {/* Thumb */}
       <div
-        className={`absolute top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-coral pointer-events-none transition-all duration-150 ${
+        className={`absolute w-5 h-5 rounded-full bg-coral pointer-events-none transition-opacity duration-150 ${
           touched ? "opacity-100 glow-coral-sm" : "opacity-0"
         }`}
-        style={{ left: `calc(${pct}% - 10px)` }}
+        style={{ left: `calc(${pct}% - 10px)`, top: "50%", transform: "translateY(-50%)" }}
       />
     </div>
   );
