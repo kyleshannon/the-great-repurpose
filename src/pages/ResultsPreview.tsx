@@ -387,7 +387,7 @@ const ResultsPreview = () => {
 
       {!submitted ? (
         /* ── Pre-email: Archetype teaser + radar + blurred preview + email gate ── */
-        <section className="bg-navy min-h-screen flex items-center justify-center px-6 pt-24 pb-16">
+        <section className="bg-navy min-h-screen flex items-center justify-center px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-16">
           <div className="max-w-2xl mx-auto w-full">
             {/* Archetype name */}
             <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3 text-center">
@@ -402,7 +402,7 @@ const ResultsPreview = () => {
 
             {/* Radar chart */}
             <div className="mb-10">
-              <ResponsiveContainer width="100%" height={300}>
+              <ResponsiveContainer width="100%" height={260}>
                 <RadarChart data={chartData}>
                   <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
                   <PolarAngleAxis
@@ -447,7 +447,7 @@ const ResultsPreview = () => {
           <div ref={reportRef}>
 
           {/* ── Archetype hero + radar ── */}
-          <section className="bg-navy pt-28 pb-16 px-6">
+          <section className="bg-navy pt-20 md:pt-28 pb-12 md:pb-16 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">You are</p>
               <h1 className="font-serif text-cream text-4xl md:text-5xl mb-2">

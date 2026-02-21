@@ -82,20 +82,20 @@ const Index = () => {
         </div>
 
         {/* CTA below image */}
-        <div className="bg-navy px-6 py-10 text-center">
+        <div className="bg-navy px-6 py-8 md:py-10 text-center">
           <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
+            <p className="font-sans text-cream/70 text-base mx-auto mb-6 leading-relaxed">
+              The Great Repurpose is a map for the invisible crisis no one is naming: what happens to your sense of meaning when the work that defined you changes faster than you can adapt.
+            </p>
             <Link
               to="/selfcheck"
-              className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-6"
+              className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-4"
             >
               Take the Free Self-Check →
             </Link>
-            <p className="text-cream/50 text-sm font-sans mb-8">
+            <p className="text-cream/50 text-sm font-sans mb-6">
               7 questions. 2 minutes. A mirror, not a grade.
-            </p>
-            <p className="font-sans text-cream/70 text-base mx-auto mb-4 leading-relaxed">
-              The Great Repurpose is a map for the invisible crisis no one is naming: what happens to your sense of meaning when the work that defined you changes faster than you can adapt.
             </p>
             <p className="font-sans text-cream/70 text-base mx-auto leading-relaxed">
               The Self-Check is where you start. Seven scenario-based questions that reveal where you are across five stages of this transition — your strengths, your gaps, and the specific next step that matches where you are right now.
@@ -106,7 +106,7 @@ const Index = () => {
       </section>
 
       {/* ── Section 2: Name the Crisis ── */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 md:py-24 px-6">
         <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-3xl md:text-4xl mb-10">
@@ -154,7 +154,7 @@ const Index = () => {
       </section>
 
       {/* ── Section 3: Three Faces of Disruption ── */}
-      <section className="bg-navy constellation-bg py-24 px-6">
+      <section className="bg-navy constellation-bg py-16 md:py-24 px-6">
         <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-cream text-3xl md:text-4xl text-center mb-16">
@@ -199,7 +199,7 @@ const Index = () => {
       </section>
 
       {/* ── Section 4: The Five Stages ── */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 md:py-24 px-6">
         <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-3xl md:text-4xl text-center mb-4">
@@ -246,7 +246,7 @@ const Index = () => {
       </section>
 
       {/* ── Section 5: This Isn't About Skills ── */}
-      <section className="bg-navy constellation-bg py-24 px-6">
+      <section className="bg-navy constellation-bg py-16 md:py-24 px-6">
         <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-cream text-3xl md:text-4xl leading-tight mb-10">
@@ -303,7 +303,7 @@ const Index = () => {
       </section>
 
       {/* ── Section 6: Self-Check Promo ── */}
-      <section className="bg-cream py-24 px-6">
+      <section className="bg-cream py-16 md:py-24 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-3xl md:text-4xl mb-4">
