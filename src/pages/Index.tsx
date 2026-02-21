@@ -69,18 +69,21 @@ const Index = () => {
           {/* Dark gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent" />
           {/* Text overlay */}
-          <div className="absolute bottom-0 left-0 right-0 px-6 md:px-16 pb-10 md:pb-14">
-            <h1 className="font-sans font-bold text-cream text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-1">
-              The Great Repurpose
-            </h1>
-            <p className="font-sans font-medium text-cream/80 text-2xl md:text-3xl lg:text-4xl max-w-3xl">
-              Finding Meaning in the Face of Unprecedented Change
-            </p>
+          <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 md:pb-14">
+            <div className="max-w-3xl mx-auto">
+              <h1 className="font-sans font-bold text-cream text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-1">
+                The Great Repurpose
+              </h1>
+              <p className="font-sans font-medium text-cream/80 text-2xl md:text-3xl lg:text-4xl">
+                Finding Meaning in the Face of Unprecedented Change
+              </p>
+            </div>
           </div>
         </div>
 
         {/* CTA below image */}
-        <div className="bg-navy px-6 md:px-16 py-10 text-center">
+        <div className="bg-navy px-6 py-10 text-center">
+          <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
             <Link
               to="/selfcheck"
@@ -98,6 +101,7 @@ const Index = () => {
               The Self-Check is where you start. Seven scenario-based questions that reveal where you are across five stages of this transition — your strengths, your gaps, and the specific next step that matches where you are right now.
             </p>
           </ScrollFadeUp>
+          </div>
         </div>
       </section>
 
