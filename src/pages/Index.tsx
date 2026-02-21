@@ -60,11 +60,11 @@ const Index = () => {
       {/* ── Section 1: Hero ── */}
       <section className="relative bg-navy">
         {/* Hero image with text overlay */}
-        <div className="relative w-full pt-16 max-h-[50vh] overflow-hidden">
+        <div className="relative w-full pt-16">
           <img
             src="/images/hero.png"
             alt="People standing together, facing forward"
-            className="w-full h-auto block object-cover object-center"
+            className="w-full h-auto block"
           />
           {/* Dark gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent" />
@@ -91,10 +91,10 @@ const Index = () => {
             <p className="text-cream/50 text-sm font-sans mb-8">
               7 questions. 2 minutes. A mirror, not a grade.
             </p>
-            <p className="font-sans text-cream/70 text-base max-w-2xl mx-auto mb-4 leading-relaxed">
+            <p className="font-sans text-cream/70 text-base mx-auto mb-4 leading-relaxed">
               The Great Repurpose is a map for the invisible crisis no one is naming: what happens to your sense of meaning when the work that defined you changes faster than you can adapt.
             </p>
-            <p className="font-sans text-cream/70 text-base max-w-2xl mx-auto leading-relaxed">
+            <p className="font-sans text-cream/70 text-base mx-auto leading-relaxed">
               The Self-Check is where you start. Seven scenario-based questions that reveal where you are across five stages of this transition — your strengths, your gaps, and the specific next step that matches where you are right now.
             </p>
           </ScrollFadeUp>
