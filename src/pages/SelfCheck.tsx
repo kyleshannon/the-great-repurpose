@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
+import { Navigation } from "@/components/Navigation";
 import QuestionSlider from "@/components/selfcheck/QuestionSlider";
 import StepDots from "@/components/selfcheck/StepDots";
 
@@ -116,6 +117,7 @@ const SelfCheck = () => {
 
   return (
     <main className="min-h-screen bg-navy flex flex-col relative overflow-hidden">
+      <Navigation />
       {/* Top bar */}
       <div className="flex items-center justify-between px-5 pt-5 pb-3">
         <button
