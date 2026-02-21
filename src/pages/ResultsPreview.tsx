@@ -160,8 +160,8 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
           {submitting ? "Saving..." : "Unlock Results →"}
         </button>
       </form>
-      <p className="text-cream/40 text-xs mt-4 font-sans">
-        No spam. Ever. We'll occasionally share things from The Great Repurpose that are actually worth your time.
+      <p className="text-cream/40 text-xs mt-4 font-sans max-w-md mx-auto leading-relaxed">
+        By submitting your email, you agree to receive emails from The AI Salon. You can unsubscribe at any time.
       </p>
     </div>
   );
