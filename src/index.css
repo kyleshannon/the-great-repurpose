@@ -223,3 +223,41 @@
     box-shadow: 0 0 25px hsl(var(--sage) / 0.35), 0 0 50px hsl(var(--sage) / 0.15);
   }
 }
+
+/* SelfCheck card slide-in animations */
+@keyframes selfcheck-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes selfcheck-slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.selfcheck-slide-right {
+  animation: selfcheck-slide-in-right 0.35s ease-out both;
+}
+
+.selfcheck-slide-left {
+  animation: selfcheck-slide-in-left 0.35s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .selfcheck-slide-right,
+  .selfcheck-slide-left {
+    animation: none;
+  }
+}
