@@ -137,7 +137,7 @@ function CustomSlider({
       <div
         className="w-full h-2 rounded-full"
         style={{
-          background: `linear-gradient(to right, hsl(70 10% 25%), hsl(145 25% 50%))`,
+          background: `linear-gradient(to right, hsl(145 25% 50%), hsl(40 25% 90%))`,
         }}
       />
       {/* Thumb */}
