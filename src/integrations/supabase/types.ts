@@ -25,6 +25,7 @@ export type Database = {
           id: string
           identity_score: number
           lowest_dimension: string | null
+          open_answer: string | null
           purpose_score: number
           value_score: number
         }
@@ -38,6 +39,7 @@ export type Database = {
           id?: string
           identity_score?: number
           lowest_dimension?: string | null
+          open_answer?: string | null
           purpose_score?: number
           value_score?: number
         }
@@ -51,6 +53,7 @@ export type Database = {
           id?: string
           identity_score?: number
           lowest_dimension?: string | null
+          open_answer?: string | null
           purpose_score?: number
           value_score?: number
         }

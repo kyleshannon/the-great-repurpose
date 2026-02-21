@@ -1,0 +1,1 @@
+ALTER TABLE public.selfcheck_results ADD COLUMN open_answer text;

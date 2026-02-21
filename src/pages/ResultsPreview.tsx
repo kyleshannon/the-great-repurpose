@@ -44,6 +44,62 @@ function scoresToArchetypeInput(scores: Record<DimensionKey, number>): Scores {
   };
 }
 
+// ── Render markdown sections ─────────────────────────────────────────────────
+
+function InterpretationRenderer({ text, streaming }: { text: string; streaming: boolean }) {
+  // Split on ## headers
+  const sections: { title: string; body: string }[] = [];
+  const parts = text.split(/^## /m);
+
+  // First part before any header (usually empty)
+  if (parts[0]?.trim()) {
+    sections.push({ title: "", body: parts[0].trim() });
+  }
+
+  for (let i = 1; i < parts.length; i++) {
+    const newlineIdx = parts[i].indexOf("\n");
+    if (newlineIdx === -1) {
+      sections.push({ title: parts[i].trim(), body: "" });
+    } else {
+      sections.push({
+        title: parts[i].slice(0, newlineIdx).trim(),
+        body: parts[i].slice(newlineIdx + 1).trim(),
+      });
+    }
+  }
+
+  // If no sections parsed yet (still streaming the first header), show raw text
+  if (sections.length === 0 && text.trim()) {
+    sections.push({ title: "", body: text.trim() });
+  }
+
+  return (
+    <div className="space-y-10">
+      {sections.map((section, i) => (
+        <div key={i}>
+          {section.title && (
+            <h3 className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
+              {section.title}
+            </h3>
+          )}
+          <div className="font-sans text-cream/80 text-base leading-relaxed space-y-4">
+            {section.body.split("\n\n").filter(Boolean).map((para, j) => (
+              <p key={j} dangerouslySetInnerHTML={{
+                __html: para
+                  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-coral hover:underline">$1</a>')
+                  .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+              }} />
+            ))}
+          </div>
+        </div>
+      ))}
+      {streaming && (
+        <span className="inline-block w-2 h-4 bg-coral animate-pulse ml-1" />
+      )}
+    </div>
+  );
+}
+
 // ── Streaming AI interpretation ──────────────────────────────────────────────
 
 function useStreamInterpretation() {
@@ -51,7 +107,7 @@ function useStreamInterpretation() {
   const [streaming, setStreaming] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const stream = async (scores: Record<DimensionKey, number>, archetype: Archetype) => {
+  const stream = async (scores: Record<DimensionKey, number>, archetype: Archetype, openAnswer?: string) => {
     setStreaming(true);
     setError(null);
     setText("");
@@ -65,7 +121,7 @@ function useStreamInterpretation() {
             "Content-Type": "application/json",
             Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
           },
-          body: JSON.stringify({ scores, archetype }),
+          body: JSON.stringify({ scores, archetype, openAnswer: openAnswer || "" }),
         }
       );
 
@@ -212,6 +268,7 @@ const ResultsPreview = () => {
   const [resultId, setResultId] = useState<string | null>(routeId || null);
   const [archetype, setArchetype] = useState<Archetype | null>(null);
   const [cachedInterpretation, setCachedInterpretation] = useState<string | null>(null);
+  const [openAnswer, setOpenAnswer] = useState<string>("");
   const [expandedDims, setExpandedDims] = useState<Set<DimensionKey>>(new Set());
 
   const { text: streamedText, streaming, error: streamError, stream } = useStreamInterpretation();
@@ -230,6 +287,7 @@ const ResultsPreview = () => {
       };
       setScores(s);
       setArchetype(matchArchetype(scoresToArchetypeInput(s)));
+      setOpenAnswer(searchParams.get("open_answer") || "");
       return;
     }
 
@@ -255,6 +313,9 @@ const ResultsPreview = () => {
         setArchetype(matchArchetype(scoresToArchetypeInput(s)));
         setSubmitted(true);
         setResultId(data.id);
+        if ((data as any).open_answer) {
+          setOpenAnswer((data as any).open_answer);
+        }
         if ((data as any).ai_interpretation) {
           setCachedInterpretation((data as any).ai_interpretation);
         }
@@ -265,9 +326,8 @@ const ResultsPreview = () => {
   // Auto-stream interpretation when submitted and no cached version
   useEffect(() => {
     if (submitted && scores && archetype && !cachedInterpretation && !streamedText && !streaming) {
-      stream(scores, archetype).then((fullText) => {
+      stream(scores, archetype, openAnswer).then((fullText) => {
         if (fullText && resultId) {
-          // Cache in DB
           supabase
             .from("selfcheck_results")
             .update({ ai_interpretation: fullText, archetype: archetype.name } as any)
@@ -286,7 +346,6 @@ const ResultsPreview = () => {
     );
   }
 
-  const overall = Object.values(scores).reduce((a, b) => a + b, 0) / 5;
   const chartData = [
     { subject: "Identity", value: scores.identity, fullMark: 10 },
     { subject: "Value", value: scores.value, fullMark: 10 },
@@ -315,6 +374,7 @@ const ResultsPreview = () => {
           creative_action_score: scores.creative_action,
           lowest_dimension: lowestDim,
           archetype: archetype.name,
+          open_answer: openAnswer || null,
         } as any)
         .select("id")
         .single();
@@ -446,7 +506,7 @@ const ResultsPreview = () => {
           <div ref={reportRef}>
 
           {/* ── Archetype hero + radar ── */}
-          <section className="bg-navy pt-20 md:pt-28 pb-12 md:pb-16 px-4 md:px-6">
+          <section className="bg-navy pt-20 md:pt-28 pb-8 md:pb-12 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">You are</p>
               <h1 className="font-serif text-cream text-4xl md:text-5xl mb-2">
@@ -456,7 +516,7 @@ const ResultsPreview = () => {
                 {archetype.tagline}
               </p>
 
-              <ResponsiveContainer width="100%" height={340}>
+              <ResponsiveContainer width="100%" height={300}>
                 <RadarChart data={chartData}>
                   <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
                   <PolarAngleAxis
@@ -473,58 +533,23 @@ const ResultsPreview = () => {
                   />
                 </RadarChart>
               </ResponsiveContainer>
-
-              <p className="font-serif text-coral text-5xl font-bold mt-6 mb-1">{overall.toFixed(1)}</p>
-              <p className="font-sans text-cream/40 text-sm">overall signal</p>
+              <p className="text-cream/40 text-xs font-sans mt-2">Your shape across the five dimensions</p>
             </div>
           </section>
 
-          {/* ── AI Interpretation ── */}
-          <section className="bg-navy py-16 px-6">
+          {/* ── AI-Generated Narrative Report (centerpiece) ── */}
+          <section className="bg-navy py-12 md:py-16 px-6">
             <div className="max-w-2xl mx-auto">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">
-                Your Interpretation
-              </p>
               {streamError ? (
                 <p className="font-sans text-cream/60 text-base text-center">{streamError}</p>
               ) : (
-                <div className="font-sans text-cream/80 text-base leading-relaxed space-y-4">
-                  {interpretationText.split("\n\n").filter(Boolean).map((para, i) => (
-                    <p key={i}>{para}</p>
-                  ))}
-                  {streaming && (
-                    <span className="inline-block w-2 h-4 bg-coral animate-pulse ml-1" />
-                  )}
-                </div>
+                <InterpretationRenderer text={interpretationText} streaming={streaming} />
               )}
             </div>
           </section>
 
-          {/* ── Your Path Forward ── */}
-          <section className="bg-cream py-16 px-6">
-            <div className="max-w-2xl mx-auto text-center">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
-                Your Path Forward
-              </p>
-              <h2 className="font-serif text-navy text-2xl mb-4">
-                {archetype.salonEntry.activity}
-              </h2>
-              <p className="font-sans text-navy/70 text-base leading-relaxed mb-6">
-                {archetype.salonEntry.body}
-              </p>
-              <a
-                href={archetype.salonEntry.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block border border-coral text-coral font-sans text-sm font-medium px-8 py-3 rounded-full hover:bg-coral hover:text-cream transition-colors"
-              >
-                {archetype.salonEntry.activity} →
-              </a>
-            </div>
-          </section>
-
           {/* ── Dimension breakdown (collapsible) ── */}
-          <section className="bg-navy py-16 px-6">
+          <section className="bg-navy py-12 px-6 border-t border-cream/5">
             <div className="max-w-4xl mx-auto">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">
                 Dimension by Dimension
@@ -581,8 +606,31 @@ const ResultsPreview = () => {
 
           </div>{/* end reportRef */}
 
-          {/* Secondary recommendations */}
+          {/* ── Your Path Forward ── */}
           <section className="bg-cream py-16 px-6">
+            <div className="max-w-2xl mx-auto text-center">
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
+                Your Path Forward
+              </p>
+              <h2 className="font-serif text-navy text-2xl mb-4">
+                {archetype.salonEntry.activity}
+              </h2>
+              <p className="font-sans text-navy/70 text-base leading-relaxed mb-6">
+                {archetype.salonEntry.body}
+              </p>
+              <a
+                href={archetype.salonEntry.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-coral text-coral font-sans text-sm font-medium px-8 py-3 rounded-full hover:bg-coral hover:text-cream transition-colors"
+              >
+                {archetype.salonEntry.activity} →
+              </a>
+            </div>
+          </section>
+
+          {/* Secondary recommendations */}
+          <section className="bg-cream py-16 px-6 border-t border-navy/10">
             <div className="max-w-4xl mx-auto">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-8 text-center">Also worth exploring</p>
               <div className="space-y-4">
