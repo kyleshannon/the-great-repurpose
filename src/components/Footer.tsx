@@ -7,9 +7,9 @@ export function Footer() {
         {/* Left — Wordmark */}
         <div>
           <p className="font-serif text-cream text-xl mb-2">The Great Repurpose</p>
-          <p className="text-cream/60 text-sm font-sans mb-1">A framework by Kyle Shannon</p>
+          <p className="text-cream/60 text-sm font-sans mb-1">By Kyle Shannon</p>
           <p className="text-cream/50 text-sm font-sans">
-            The Great Repurpose is the intellectual foundation of the AI Salon — a values-driven community for anyone curious about what generative AI makes possible.
+            The Great Repurpose puts a name to what's happening and offers a path through it — born in the AI Salon, a values-driven community for anyone curious about what generative AI makes possible.
           </p>
         </div>
 
@@ -20,8 +20,9 @@ export function Footer() {
             {[
               { to: "/", label: "Home" },
               { to: "/phases", label: "The Five Stages" },
+              { to: "/types", label: "TGR Types" },
               { to: "/about", label: "About" },
-              { to: "/selfcheck", label: "Take the Free Self-Check" },
+              { to: "/selfcheck", label: "Find Your TGR Type" },
             ].map(({ to, label }) => (
               <Link key={to} to={to} className="text-cream/70 hover:text-coral text-sm font-sans transition-colors">
                 {label}
@@ -59,6 +60,14 @@ export function Footer() {
           <p className="text-cream/50 text-sm font-serif italic">
             "The future of AI is still up for grabs — join us."
           </p>
+          <a
+            href="https://thesalon.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-coral text-sm font-sans hover:underline"
+          >
+            The Great Repurpose was born in the AI Salon → theSalon.ai
+          </a>
           <p className="text-cream/30 text-xs font-sans">© 2026 The Great Repurpose</p>
         </div>
       </div>

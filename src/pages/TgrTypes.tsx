@@ -108,14 +108,16 @@ const TgrTypes = () => {
 
             <ScrollFadeUp delay={600}>
               <div className="text-center mt-16">
-                <p className="font-serif text-navy text-xl mb-6">Which one are you?
-                </p>
+                <p className="font-serif text-navy text-xl mb-6">Which one are you?</p>
                 <Link
                   to="/selfcheck"
-                  className="inline-block bg-coral text-cream font-sans font-medium text-lg px-10 py-5 rounded-full pulse-coral hover:opacity-90 transition-opacity"
+                  className="inline-block bg-coral text-cream font-sans font-medium text-lg px-10 py-5 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-3"
                 >
                   Find Your TGR Type →
                 </Link>
+                <p className="text-navy/50 text-sm font-sans">
+                  Discover where you are — and what you're building toward.
+                </p>
               </div>
             </ScrollFadeUp>
           </div>

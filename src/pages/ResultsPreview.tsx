@@ -193,9 +193,9 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
 
   return (
     <div className="border border-cream/10 rounded-xl p-8 text-center bg-cream/[0.03]">
-      <h2 className="font-serif text-cream text-xl mb-2">Unlock your full reading.</h2>
+      <h2 className="font-serif text-cream text-xl mb-2">Your full TGR profile is ready.</h2>
       <p className="font-sans text-cream/50 text-sm mb-6 max-w-md mx-auto">
-        Enter your email to unlock your AI-generated interpretation, personalized next step, and full dimension breakdown.
+        We'll show you what your type means, where you're strongest, what to watch out for — and the one thing that would help you most right now.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <label htmlFor="email-input" className="sr-only">Email address</label>
@@ -213,7 +213,7 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
           disabled={submitting}
           className="bg-coral text-cream font-sans font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
         >
-          {submitting ? "Saving..." : "Unlock Results →"}
+          {submitting ? "Saving..." : "Show Me →"}
         </button>
       </form>
       <p className="text-cream/40 text-xs mt-4 font-sans max-w-md mx-auto leading-relaxed">
@@ -407,14 +407,14 @@ const ResultsPreview = () => {
   const handleShareLinkedIn = () => {
     const url = encodeURIComponent(resultUrl || selfCheckUrl);
     const text = encodeURIComponent(
-      `I just took The Great Repurpose Self-Check. I'm "${archetype.name}": ${archetype.tagline}\n\nCurious about your own shape? Take the free assessment →`
+      `I'm ${archetype.name}. What's your TGR Type?\n\n→ TheGreatRepurpose.com`
     );
     window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&summary=${text}`, "_blank");
   };
 
   const handleShareX = () => {
     const text = encodeURIComponent(
-      `My Great Repurpose result: ${archetype.name}. "${archetype.tagline}" — uncomfortably accurate.`
+      `I'm ${archetype.name}. What's your TGR Type? → TheGreatRepurpose.com`
     );
     const url = encodeURIComponent(selfCheckUrl);
     window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
@@ -450,12 +450,15 @@ const ResultsPreview = () => {
         <section className="bg-navy min-h-screen flex items-center justify-center px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-16">
           <div className="max-w-2xl mx-auto w-full">
             {/* Type name */}
-            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3 text-center">
-              Based on your answers, you are
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3 text-center">
+              Your TGR Type
             </p>
-            <h1 className="font-serif text-cream text-4xl md:text-5xl text-center mb-10">
-              {archetype.name}
+            <h1 className="font-serif text-cream text-4xl md:text-5xl text-center mb-2">
+              You are {archetype.name}.
             </h1>
+            <p className="font-serif text-cream/60 text-lg italic text-center mb-10">
+              {archetype.tagline}
+            </p>
 
             {/* Radar chart */}
             <div className="mb-2">
@@ -508,9 +511,9 @@ const ResultsPreview = () => {
           {/* ── Archetype hero + radar ── */}
           <section className="bg-navy pt-20 md:pt-28 pb-8 md:pb-12 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">You are</p>
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">Your TGR Type</p>
               <h1 className="font-serif text-cream text-4xl md:text-5xl mb-2">
-                {archetype.name}
+                You are {archetype.name}.
               </h1>
               <p className="font-serif text-cream/60 text-lg italic mb-10">
                 {archetype.tagline}
@@ -659,7 +662,7 @@ const ResultsPreview = () => {
             <div className="max-w-xl mx-auto text-center">
               <h2 className="font-serif text-cream text-2xl mb-3">Share your TGR Type.</h2>
               <p className="font-sans text-cream/50 text-sm mb-4">
-                Your link goes to your full results. Social shares invite others to take the free assessment.
+                I'm {archetype.name}. What's your TGR Type? → TheGreatRepurpose.com
               </p>
               <Link to="/types" className="inline-block text-coral font-sans text-sm hover:underline mb-8">
                 Explore all 10 TGR Types →

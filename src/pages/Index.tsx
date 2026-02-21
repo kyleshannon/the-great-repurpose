@@ -51,6 +51,19 @@ const phases = [
   },
 ];
 
+const typeNames = [
+  "The Awakener",
+  "The Unlocker",
+  "The Original",
+  "The Compass",
+  "The Explorer",
+  "The Firestarter",
+  "The Architect",
+  "The Translator",
+  "The Catalyst",
+  "The Amplifier",
+];
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-navy text-cream">
@@ -77,7 +90,7 @@ const Index = () => {
               The Great Repurpose
             </h1>
             <p className="font-sans font-medium text-cream/80 text-2xl md:text-3xl lg:text-4xl">
-              Finding Meaning in the Face of Unprecedented Change
+              AI is about to change every single job — and maybe even how we define work entirely.
             </p>
           </div>
         </div>
@@ -87,7 +100,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <p className="font-sans text-cream/70 text-base mx-auto mb-6 leading-relaxed">
-              The Great Repurpose is a map for the invisible crisis no one is naming: what happens to your sense of meaning when the work that defined you changes faster than you can adapt.
+              We didn't ask for this. We can't escape it. The only way forward is through — and you're not alone.
             </p>
             <Link
               to="/selfcheck"
@@ -95,11 +108,8 @@ const Index = () => {
             >
               Find Your TGR Type →
             </Link>
-            <p className="text-cream/50 text-sm font-sans mb-6">
+            <p className="text-cream/50 text-sm font-sans">
               Discover where you are — and what you're building toward.
-            </p>
-            <p className="font-sans text-cream/70 text-base mx-auto leading-relaxed">
-              The Self-Check is where you start. Seven scenario-based questions that reveal where you are across five stages of this transition — your strengths, your gaps, and the specific next step that matches where you are right now.
             </p>
           </ScrollFadeUp>
           </div>
@@ -111,13 +121,13 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-3xl md:text-4xl mb-10">
-              The headlines say "AI is taking jobs." That's the easy version.
+              The Great Repurpose puts a name to the invisible crisis underneath the AI disruption.
             </h2>
           </ScrollFadeUp>
 
           <div className="font-sans text-navy text-lg leading-relaxed space-y-6">
             <ScrollFadeUp delay={100}>
-              <p>The harder version is what's happening underneath.</p>
+              <p>The deeper challenge of meaning, identity, and purpose that touches everyone the transition reaches — even if you keep your job but watch it transform into something unrecognizable.</p>
             </ScrollFadeUp>
             <ScrollFadeUp delay={150}>
               <p>
@@ -199,6 +209,26 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ── Video Section ── */}
+      <section className="bg-navy py-16 md:py-24 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <ScrollFadeUp>
+            <p className="font-serif text-cream text-2xl md:text-3xl italic leading-snug mb-12">
+              "We didn't ask for this. We can't escape it. The only way forward is through — and you're not alone."
+            </p>
+            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+              <iframe
+                className="absolute inset-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/4vTo0ZdzNYU"
+                title="The Great Repurpose"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </ScrollFadeUp>
+        </div>
+      </section>
+
       {/* ── Section 4: The Five Stages ── */}
       <section className="bg-cream py-16 md:py-24 px-6">
         <div className="max-w-4xl mx-auto">
@@ -207,7 +237,7 @@ const Index = () => {
               The Great Repurpose: Five stages of finding your way through
             </h2>
             <p className="font-sans text-navy/70 text-center text-lg mb-16">
-              This isn't a program. It's not a course. It's a map of the territory people actually cross when the work that defined them changes. It doesn't happen in order. It isn't clean. But every person navigating this transition is somewhere on this map — and knowing where you are is the first step toward moving.
+              These are the five phases people actually go through when the work that defined them changes. They don't happen in order. They're not clean. But every person navigating this transition is somewhere on this map — and knowing where you are is the first step toward building what comes next.
             </p>
           </ScrollFadeUp>
 
@@ -233,8 +263,7 @@ const Index = () => {
 
           <ScrollFadeUp delay={400}>
             <div className="text-center mt-14">
-              <p className="font-serif text-navy text-xl mb-4">Where are you on this map?</p>
-              <p className="font-sans text-navy/60 text-base mb-6">Discover where you are — and what you're building toward.</p>
+              <p className="font-serif text-navy text-xl mb-6">Where are you on this map?</p>
               <Link
                 to="/selfcheck"
                 className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity"
@@ -281,69 +310,82 @@ const Index = () => {
             </ScrollFadeUp>
             <ScrollFadeUp delay={300}>
               <p>
-                The Great Repurpose isn't a course. It's a framework for the actual transition people are living through. And the path forward isn't a curriculum. It's a community of people navigating the same thing, together, with curiosity instead of fear.
+                An important part of navigating this is finding people going through it too. The Great Repurpose was born out of heartfelt discussions in the{" "}
+                <a
+                  href="https://thesalon.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-coral hover:underline"
+                >
+                  AI Salon
+                </a>
+                , a community for anyone exploring AI and what comes next with curiosity instead of fear.
               </p>
             </ScrollFadeUp>
           </div>
 
           <ScrollFadeUp delay={350}>
-            <p className="text-cream/70 font-sans text-lg mt-10">
-              <strong className="text-cream">That community exists. It's called the{" "}
+            <div className="mt-10">
               <a
                 href="https://thesalon.ai"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-coral hover:underline"
+                className="text-coral hover:underline font-sans text-lg font-medium"
               >
-                AI Salon
+                Learn more at theSalon.ai →
               </a>
-              .</strong>
-            </p>
+            </div>
           </ScrollFadeUp>
         </div>
       </section>
 
-      {/* ── Section 5b: TGR Types Intro ── */}
+      {/* ── Section 5b: The 10 TGR Types ── */}
       <section className="bg-cream py-16 md:py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <ScrollFadeUp>
-            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
-              The 10 TGR Types
-            </p>
             <h2 className="font-serif text-navy text-3xl md:text-4xl mb-6">
-              Everyone navigating this transition has a shape.
+              We're all going through this — and we're all in different places.
             </h2>
-            <p className="font-sans text-navy/70 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
-              Based on your pattern across five dimensions — Identity, Value, Purpose, AI Relationship, and Creative Action — you'll be matched with one of ten TGR Types. Each one tells you where you are and what you're building toward.
+            <p className="font-sans text-navy/70 text-lg leading-relaxed mb-4 max-w-2xl mx-auto">
+              Some of us are holding on to what we were. Some of us are rebuilding. Some of us just felt something shift and can't name it yet.
             </p>
+            <p className="font-sans text-navy/70 text-lg leading-relaxed mb-12 max-w-2xl mx-auto">
+              We've identified 10 types that capture where people are right now and what they're building toward. Each one is a mirror — not a grade. You'll see where you are, where your strengths already point, and the specific next step that matches your profile.
+            </p>
+          </ScrollFadeUp>
+
+          {/* Type names constellation */}
+          <ScrollFadeUp delay={100}>
+            <div className="flex flex-wrap justify-center gap-3 mb-12">
+              {typeNames.map((name, i) => (
+                <span
+                  key={name}
+                  className="font-serif text-navy/80 text-base md:text-lg px-3 py-1"
+                  style={{ opacity: 0.6 + (i % 3) * 0.15 }}
+                >
+                  {name}
+                </span>
+              ))}
+            </div>
+          </ScrollFadeUp>
+
+          <ScrollFadeUp delay={200}>
             <Link
-              to="/types"
-              className="inline-block border border-coral text-coral font-sans font-medium text-base px-8 py-4 rounded-full hover:bg-coral hover:text-cream transition-colors"
+              to="/selfcheck"
+              className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-4"
             >
-              Meet the 10 Types →
+              Find Your TGR Type →
             </Link>
+            <p className="text-navy/50 text-sm font-sans">
+              7 questions. 2 minutes. Then we'll tell you what you're building toward.
+            </p>
           </ScrollFadeUp>
         </div>
       </section>
 
-      {/* ── Section 6: Self-Check Promo ── */}
+      {/* ── Section 6: How It Works ── */}
       <section className="bg-cream py-16 md:py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <ScrollFadeUp>
-            <h2 className="font-serif text-navy text-3xl md:text-4xl mb-4">
-              The Great Repurpose Self-Check
-            </h2>
-            <p className="font-serif text-navy/70 text-xl italic mb-4">
-              7 questions. No grades. No judgment. Just a mirror.
-            </p>
-            <p className="font-sans text-navy/70 text-lg mb-14">
-              The Self-Check measures where you are across all five stages of The Great Repurpose. Not a single score — a shape. Your strengths and your gaps. Where you've already done the work and where you're still stuck.
-            </p>
-            <p className="font-sans text-navy/60 text-base mb-14">
-              You'll see your profile and get specific, personalized recommendations for what to do next — not generic advice, but the exact entry point that matches where you are right now.
-            </p>
-          </ScrollFadeUp>
-
           <div className="space-y-8 mb-14 text-left">
             {[
               {
@@ -379,7 +421,7 @@ const Index = () => {
             >
               Find Your TGR Type →
             </Link>
-            <p className="text-cream/50 text-sm font-sans mt-3">
+            <p className="text-navy/50 text-sm font-sans mt-3">
               Discover where you are — and what you're building toward.
             </p>
           </ScrollFadeUp>

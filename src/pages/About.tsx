@@ -57,7 +57,7 @@ const About = () => {
             </ScrollFadeUp>
             <ScrollFadeUp delay={150}>
               <p>
-                The Great Repurpose is the framework that emerged — a way of understanding what's actually happening to people when AI changes their relationship with work, and a map of the five phases they cross on the way to something new.
+                The Great Repurpose puts a name to what's happening — a way of understanding what's actually going on when AI changes your relationship with work, and a map of the five phases people cross on the way to something new.
               </p>
             </ScrollFadeUp>
           </div>
@@ -91,7 +91,7 @@ const About = () => {
 
           <ScrollFadeUp delay={320}>
             <p className="font-sans text-cream/70 text-lg mb-8">
-              If The Great Repurpose Self-Check showed you where you are, the AI Salon is where you go next.
+              If finding your TGR Type showed you where you are, the AI Salon is where you go next.
             </p>
             <div className="text-center">
               <a

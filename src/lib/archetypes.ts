@@ -29,7 +29,7 @@ const archetypes: Record<string, Archetype> = {
     vulnerability: "The danger is paralysis. When everything feels unclear, doing nothing feels safest. But stillness in the fog isn't rest — it's stagnation.",
     salonEntry: {
       activity: "Friday Office Hours",
-      body: "You don't need a course or a framework right now. You need a room full of people who get it. Friday Office Hours is the lowest-pressure entry point — show up, listen, ask a question if you want to.",
+      body: "You don't need a course or a program right now. You need a room full of people who get it. Friday Office Hours is the lowest-pressure entry point — show up, listen, ask a question if you want to.",
       href: "https://thesalon.ai",
     },
   },

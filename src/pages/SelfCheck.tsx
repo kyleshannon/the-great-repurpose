@@ -125,6 +125,27 @@ const SelfCheck = () => {
     }
   };
 
+  const handleSkipOpenEnded = () => {
+    setOpenAnswer("");
+    const finalScores: Record<string, number> = {
+      identity: (answers.q1 + answers.q2) / 2,
+      value: (answers.q3 + answers.q2 * 0.5) / 1.5,
+      purpose: (answers.q4 + answers.q5) / 2,
+      ai_relationship: (answers.q6 + answers.q5 * 0.5) / 1.5,
+      creative_action: answers.q7,
+    };
+
+    const params = new URLSearchParams({
+      identity: finalScores.identity.toFixed(2),
+      value: finalScores.value.toFixed(2),
+      purpose: finalScores.purpose.toFixed(2),
+      ai_relationship: finalScores.ai_relationship.toFixed(2),
+      creative_action: finalScores.creative_action.toFixed(2),
+    });
+
+    navigate(`/results/preview?${params.toString()}`);
+  };
+
   return (
     <main className="min-h-screen bg-navy flex flex-col relative overflow-hidden">
       <Navigation />
@@ -146,14 +167,11 @@ const SelfCheck = () => {
         {/* Intro blurb on Q1 only */}
         {currentQ === 0 && (
           <div className="text-center mb-8 max-w-lg">
-            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-2">
-              The Self-Check
-            </p>
             <h1 className="font-serif text-cream text-2xl md:text-3xl leading-tight mb-2">
-              Seven questions. A mirror, not a grade.
+              Find Your TGR Type
             </h1>
             <p className="font-sans text-cream/50 text-sm">
-              Each question asks you to locate yourself between two true things. No right answers.
+              7 questions about moments you'll recognize. Then we'll show you where you are — and what you're building toward.
             </p>
           </div>
         )}
@@ -169,16 +187,19 @@ const SelfCheck = () => {
             <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4 text-center">
               One more thing
             </p>
-            <p className="font-serif text-cream text-lg md:text-xl text-center mb-8 leading-snug">
+            <p className="font-serif text-cream text-lg md:text-xl italic text-center mb-8 leading-snug">
               What's the thing you keep thinking about but haven't started yet?
             </p>
             <textarea
               value={openAnswer}
               onChange={(e) => setOpenAnswer(e.target.value)}
-              placeholder="Optional — but it makes your results much more personal."
+              placeholder="A sentence or two is plenty."
               className="w-full bg-navy border border-cream/20 text-cream placeholder:text-cream/30 rounded-lg px-4 py-3 font-sans text-base leading-relaxed focus:outline-none focus:border-coral transition-colors resize-none min-h-[120px]"
               rows={4}
             />
+            <p className="text-cream/40 text-xs font-sans mt-3 text-center">
+              There's no wrong answer. This helps us make your results personal.
+            </p>
           </div>
         ) : (
           /* Slider question card */
@@ -219,7 +240,7 @@ const SelfCheck = () => {
       </div>
 
       {/* Fixed bottom action bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-navy/90 backdrop-blur-md border-t border-cream/5 px-5 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] flex justify-center">
+      <div className="fixed bottom-0 left-0 right-0 bg-navy/90 backdrop-blur-md border-t border-cream/5 px-5 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] flex flex-col items-center gap-2">
         <button
           onClick={handleNext}
           disabled={!touched}
@@ -229,8 +250,19 @@ const SelfCheck = () => {
               : "bg-cream/10 text-cream/20 cursor-not-allowed"
           }`}
         >
-          {isOpenEndedStep ? "Find Your TGR Type →" : "Next →"}
+          {isOpenEndedStep ? "See My TGR Type →" : "Next →"}
         </button>
+        {isOpenEndedStep && (
+          <button
+            onClick={handleSkipOpenEnded}
+            className="text-cream/40 text-xs font-sans hover:text-cream/60 transition-colors"
+          >
+            Skip this question
+          </button>
+        )}
+        {currentQ === 0 && (
+          <p className="text-cream/30 text-xs font-sans">Takes about 2 minutes. There are no wrong answers.</p>
+        )}
       </div>
     </main>
   );
