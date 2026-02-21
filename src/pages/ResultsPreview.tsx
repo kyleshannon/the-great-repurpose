@@ -95,21 +95,21 @@ const salonRouting: Record<DimensionKey, { body: string; links: { label: string;
   identity: {
     body: "Your most important work right now isn't about AI skills. It's about separating who you are from what you do — so that no tool, trend, or market shift can take the former when it takes the latter. Start with the Great Repurpose, then come to a Friday Office Hours session.",
     links: [
-      { label: "Friday Office Hours", href: "https://thesalon.ai" },
-      { label: "Free Community", href: "https://thesalon.ai" },
+      { label: "Friday Office Hours", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
+      { label: "Free Community", href: "https://community.thesalon.ai" },
     ],
   },
   value: {
     body: "You're in the most common and least-discussed dimension of the disruption: knowing you bring something, but struggling to name it. The AI Salon's free community is full of people helping each other with exactly this. And Friday Office Hours is a good place to start.",
     links: [
-      { label: "Free Community", href: "https://thesalon.ai" },
-      { label: "Friday Office Hours", href: "https://thesalon.ai" },
+      { label: "Free Community", href: "https://community.thesalon.ai" },
+      { label: "Friday Office Hours", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
     ],
   },
   purpose: {
     body: "Direction is the hardest thing to rebuild from the outside in. The Learn Out Loud sessions in the AI Salon community are designed specifically for people who are exploring — not yet certain, but moving. Come as you are.",
     links: [
-      { label: "Friday Office Hours", href: "https://thesalon.ai" },
+      { label: "Friday Office Hours", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
       { label: "Learn Out Loud sessions", href: "https://thesalon.ai" },
     ],
   },
@@ -117,7 +117,7 @@ const salonRouting: Record<DimensionKey, { body: string; links: { label: string;
     body: "The best cure for anxiety about AI tools is actually using them — in a low-stakes, high-trust environment with other humans who are figuring it out too. The AI Learning Lab is built exactly for that.",
     links: [
       { label: "AI Learning Lab", href: "https://thesalon.ai" },
-      { label: "Friday Office Hours", href: "https://thesalon.ai" },
+      { label: "Friday Office Hours", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
     ],
   },
   creative_action: {
@@ -463,9 +463,9 @@ const ResultsPreview = () => {
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-8 text-center">Also worth exploring</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
-                  { label: "Free AI Salon Community", desc: "Join the conversation.", href: "https://thesalon.ai" },
-                  { label: "AI Readiness Project Podcast", desc: "Conversations about what it means to be ready — humanly.", href: "https://thesalon.ai" },
-                  { label: "Friday Office Hours", desc: "Real questions. Real answers. Weekly.", href: "https://thesalon.ai" },
+                  { label: "Free AI Salon Community", desc: "Join the conversation.", href: "https://community.thesalon.ai" },
+                  { label: "AI Readiness Project Podcast", desc: "Conversations about what it means to be ready — humanly.", href: "http://aireadinessproject.com/" },
+                  { label: "Friday Office Hours", desc: "Real questions. Real answers. Weekly.", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
                 ].map(({ label, desc, href }) => (
                   <a
                     key={label}

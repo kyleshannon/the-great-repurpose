@@ -35,9 +35,9 @@ export function Footer() {
           <p className="text-cream/40 text-xs uppercase tracking-widest font-sans mb-4">Community</p>
           <div className="flex flex-col gap-2">
             {[
-              { href: "https://thesalon.ai", label: "thesalon.ai" },
-              { href: "https://thesalon.ai", label: "The AI Readiness Project Podcast" },
-              { href: "https://thesalon.ai", label: "Office Hours: Fridays" },
+              { href: "https://community.thesalon.ai", label: "thesalon.ai" },
+              { href: "http://aireadinessproject.com/", label: "The AI Readiness Project Podcast" },
+              { href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet", label: "Office Hours: Fridays" },
             ].map(({ href, label }) => (
               <a
                 key={label}
