@@ -303,6 +303,29 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ── Section 5b: TGR Types Intro ── */}
+      <section className="bg-cream py-16 md:py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <ScrollFadeUp>
+            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
+              The 10 TGR Types
+            </p>
+            <h2 className="font-serif text-navy text-3xl md:text-4xl mb-6">
+              Everyone navigating this transition has a shape.
+            </h2>
+            <p className="font-sans text-navy/70 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
+              Based on your pattern across five dimensions — Identity, Value, Purpose, AI Relationship, and Creative Action — you'll be matched with one of ten TGR Types. Each one tells you where you are and what you're building toward.
+            </p>
+            <Link
+              to="/types"
+              className="inline-block border border-coral text-coral font-sans font-medium text-base px-8 py-4 rounded-full hover:bg-coral hover:text-cream transition-colors"
+            >
+              Meet the 10 Types →
+            </Link>
+          </ScrollFadeUp>
+        </div>
+      </section>
+
       {/* ── Section 6: Self-Check Promo ── */}
       <section className="bg-cream py-16 md:py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">

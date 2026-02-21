@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useSearchParams, useParams, useNavigate } from "react-router-dom";
+import { useSearchParams, useParams, useNavigate, Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import {
   RadarChart,
@@ -609,10 +609,13 @@ const ResultsPreview = () => {
           {/* Share + Download */}
           <section className="bg-navy py-16 px-6">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-serif text-cream text-2xl mb-3">Share your archetype.</h2>
-              <p className="font-sans text-cream/50 text-sm mb-8">
+              <h2 className="font-serif text-cream text-2xl mb-3">Share your TGR Type.</h2>
+              <p className="font-sans text-cream/50 text-sm mb-4">
                 Your link goes to your full results. Social shares invite others to take the free assessment.
               </p>
+              <Link to="/types" className="inline-block text-coral font-sans text-sm hover:underline mb-8">
+                Explore all 10 TGR Types →
+              </Link>
               <div className="flex flex-wrap justify-center gap-4">
                 <button
                   onClick={handleDownloadPDF}

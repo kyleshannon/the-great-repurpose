@@ -8,6 +8,7 @@ import Phases from "./pages/Phases";
 import About from "./pages/About";
 import SelfCheck from "./pages/SelfCheck";
 import ResultsPreview from "./pages/ResultsPreview";
+import TgrTypes from "./pages/TgrTypes";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/phases" element={<Phases />} />
+          <Route path="/types" element={<TgrTypes />} />
           <Route path="/about" element={<About />} />
           <Route path="/selfcheck" element={<SelfCheck />} />
           <Route path="/results/preview" element={<ResultsPreview />} />
