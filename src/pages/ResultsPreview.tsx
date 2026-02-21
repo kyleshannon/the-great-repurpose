@@ -47,11 +47,9 @@ function scoresToArchetypeInput(scores: Record<DimensionKey, number>): Scores {
 // ── Render markdown sections ─────────────────────────────────────────────────
 
 function InterpretationRenderer({ text, streaming }: { text: string; streaming: boolean }) {
-  // Split on ## headers
   const sections: { title: string; body: string }[] = [];
   const parts = text.split(/^## /m);
 
-  // First part before any header (usually empty)
   if (parts[0]?.trim()) {
     sections.push({ title: "", body: parts[0].trim() });
   }
@@ -68,7 +66,6 @@ function InterpretationRenderer({ text, streaming }: { text: string; streaming: 
     }
   }
 
-  // If no sections parsed yet (still streaming the first header), show raw text
   if (sections.length === 0 && text.trim()) {
     sections.push({ title: "", body: text.trim() });
   }
@@ -100,17 +97,34 @@ function InterpretationRenderer({ text, streaming }: { text: string; streaming: 
   );
 }
 
+// ── Progress indicator ───────────────────────────────────────────────────────
+
+function GeneratingIndicator() {
+  return (
+    <div className="flex flex-col items-center gap-4 py-12">
+      <div className="flex gap-1.5">
+        <span className="w-2 h-2 rounded-full bg-coral animate-bounce" style={{ animationDelay: "0ms" }} />
+        <span className="w-2 h-2 rounded-full bg-coral animate-bounce" style={{ animationDelay: "150ms" }} />
+        <span className="w-2 h-2 rounded-full bg-coral animate-bounce" style={{ animationDelay: "300ms" }} />
+      </div>
+      <p className="font-sans text-cream/50 text-sm">Writing your report…</p>
+    </div>
+  );
+}
+
 // ── Streaming AI interpretation ──────────────────────────────────────────────
 
 function useStreamInterpretation() {
   const [text, setText] = useState("");
   const [streaming, setStreaming] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [done, setDone] = useState(false);
 
   const stream = async (scores: Record<DimensionKey, number>, archetype: Archetype, openAnswer?: string) => {
     setStreaming(true);
     setError(null);
     setText("");
+    setDone(false);
 
     try {
       const resp = await fetch(
@@ -136,9 +150,9 @@ function useStreamInterpretation() {
       const decoder = new TextDecoder();
       let buffer = "";
       let fullText = "";
-      let done = false;
+      let streamDone = false;
 
-      while (!done) {
+      while (!streamDone) {
         const { done: readDone, value } = await reader.read();
         if (readDone) break;
         buffer += decoder.decode(value, { stream: true });
@@ -151,7 +165,7 @@ function useStreamInterpretation() {
           if (line.startsWith(":") || line.trim() === "") continue;
           if (!line.startsWith("data: ")) continue;
           const jsonStr = line.slice(6).trim();
-          if (jsonStr === "[DONE]") { done = true; break; }
+          if (jsonStr === "[DONE]") { streamDone = true; break; }
           try {
             const parsed = JSON.parse(jsonStr);
             const content = parsed.choices?.[0]?.delta?.content as string | undefined;
@@ -167,6 +181,7 @@ function useStreamInterpretation() {
       }
 
       setStreaming(false);
+      setDone(true);
       return fullText;
     } catch (e) {
       console.error("Stream error:", e);
@@ -176,7 +191,7 @@ function useStreamInterpretation() {
     }
   };
 
-  return { text, streaming, error, stream };
+  return { text, streaming, error, done, stream };
 }
 
 // ── Email gate component ─────────────────────────────────────────────────────
@@ -252,6 +267,17 @@ async function generatePDF(reportRef: HTMLDivElement) {
   pdf.save("great-repurpose-results.pdf");
 }
 
+// ── AI Salon activities data ─────────────────────────────────────────────────
+
+const salonActivities = [
+  { label: "Friday Office Hours", desc: "Show up, ask questions, meet others navigating the same shift. Low-pressure, high-value. Weekly.", href: "https://thesalon.ai" },
+  { label: "AI Learning Lab", desc: "Kyle Shannon's nightly LIVE sessions exploring AI, complete with Champ the Singing Dog — no prior experience required.", href: "https://thesalon.ai" },
+  { label: "Mastermind Practice Lab", desc: "Peer-driven accountability for people creating a daily practice around how they use AI.", href: "https://thesalon.ai" },
+  { label: "Learn Out Loud", desc: "LOL sessions are taught by community members for community members. Learn or lead!", href: "https://thesalon.ai" },
+  { label: "Free AI Salon Community", desc: "The always-on conversation. Connect with others exploring AI and practicing the Cycle of AI Readiness.", href: "https://community.thesalon.ai" },
+  { label: "AI Readiness Project Podcast", desc: "Conversations about what it means to be ready for AI, and a chance to meet inspiring people making a difference in AI.", href: "http://aireadinessproject.com/" },
+];
+
 // ── Main component ───────────────────────────────────────────────────────────
 
 const ResultsPreview = () => {
@@ -270,8 +296,9 @@ const ResultsPreview = () => {
   const [cachedInterpretation, setCachedInterpretation] = useState<string | null>(null);
   const [openAnswer, setOpenAnswer] = useState<string>("");
   const [expandedDims, setExpandedDims] = useState<Set<DimensionKey>>(new Set());
+  const preGenStarted = useRef(false);
 
-  const { text: streamedText, streaming, error: streamError, stream } = useStreamInterpretation();
+  const { text: streamedText, streaming, error: streamError, done: streamDone, stream } = useStreamInterpretation();
 
   const interpretationText = cachedInterpretation || streamedText;
 
@@ -313,6 +340,8 @@ const ResultsPreview = () => {
         setArchetype(matchArchetype(scoresToArchetypeInput(s)));
         setSubmitted(true);
         setResultId(data.id);
+        // Save session link
+        sessionStorage.setItem("tgr_report_url", `/results/${data.id}`);
         if ((data as any).open_answer) {
           setOpenAnswer((data as any).open_answer);
         }
@@ -323,20 +352,24 @@ const ResultsPreview = () => {
       });
   }, [routeId]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Auto-stream interpretation when submitted and no cached version
+  // Pre-generate AI interpretation as soon as scores are available (before email)
   useEffect(() => {
-    if (submitted && scores && archetype && !cachedInterpretation && !streamedText && !streaming) {
-      stream(scores, archetype, openAnswer).then((fullText) => {
-        if (fullText && resultId) {
-          supabase
-            .from("selfcheck_results")
-            .update({ ai_interpretation: fullText, archetype: archetype.name } as any)
-            .eq("id", resultId)
-            .then(() => {});
-        }
-      });
+    if (scores && archetype && !routeId && !preGenStarted.current && !cachedInterpretation) {
+      preGenStarted.current = true;
+      stream(scores, archetype, openAnswer);
     }
-  }, [submitted, scores, archetype, cachedInterpretation]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [scores, archetype]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Save interpretation to DB once streaming finishes and we have a resultId
+  useEffect(() => {
+    if (streamDone && streamedText && resultId) {
+      supabase
+        .from("selfcheck_results")
+        .update({ ai_interpretation: streamedText, archetype: archetype?.name } as any)
+        .eq("id", resultId)
+        .then(() => {});
+    }
+  }, [streamDone, resultId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (loading || !scores || !archetype) {
     return (
@@ -347,16 +380,19 @@ const ResultsPreview = () => {
   }
 
   const chartData = [
-    { subject: "Identity", value: scores.identity, fullMark: 10 },
-    { subject: "Value", value: scores.value, fullMark: 10 },
-    { subject: "Purpose", value: scores.purpose, fullMark: 10 },
-    { subject: "AI Rel.", value: scores.ai_relationship, fullMark: 10 },
-    { subject: "Creative", value: scores.creative_action, fullMark: 10 },
+    { subject: "Unhook Identity", value: scores.identity, fullMark: 10 },
+    { subject: "Reclaim Value", value: scores.value, fullMark: 10 },
+    { subject: "Find Your Purpose", value: scores.purpose, fullMark: 10 },
+    { subject: "Discover AI", value: scores.ai_relationship, fullMark: 10 },
+    { subject: "Create with AI", value: scores.creative_action, fullMark: 10 },
   ];
 
   const selfCheckUrl = `${window.location.origin}/selfcheck`;
   const resultUrl = resultId ? `${window.location.origin}/results/${resultId}` : null;
   const archetypeSlug = getArchetypeSlug(archetype);
+
+  // Shareable summary text
+  const shareText = `I'm ${archetype.name}. ${archetype.tagline}\n\nRecommended: ${archetype.salonEntry.activity}\n\nWhat's your TGR Type? Find out at TheGreatRepurpose.com — a framework for people navigating the AI transition.`;
 
   const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
@@ -381,6 +417,7 @@ const ResultsPreview = () => {
 
       if (!error && data) {
         setResultId(data.id);
+        sessionStorage.setItem("tgr_report_url", `/results/${data.id}`);
         navigate(`/results/${data.id}`, { replace: true });
       }
 
@@ -406,15 +443,13 @@ const ResultsPreview = () => {
 
   const handleShareLinkedIn = () => {
     const url = encodeURIComponent(resultUrl || selfCheckUrl);
-    const text = encodeURIComponent(
-      `I'm ${archetype.name}. What's your TGR Type?\n\n→ TheGreatRepurpose.com`
-    );
+    const text = encodeURIComponent(shareText);
     window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&summary=${text}`, "_blank");
   };
 
   const handleShareX = () => {
     const text = encodeURIComponent(
-      `I'm ${archetype.name}. What's your TGR Type? → TheGreatRepurpose.com`
+      `I'm ${archetype.name}. ${archetype.tagline} What's your TGR Type? →`
     );
     const url = encodeURIComponent(selfCheckUrl);
     window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
@@ -439,6 +474,11 @@ const ResultsPreview = () => {
       return next;
     });
   };
+
+  // Filter salon activities to exclude the primary recommendation
+  const secondaryActivities = salonActivities.filter(
+    (a) => a.label !== archetype.salonEntry.activity
+  );
 
   return (
     <div className="min-h-screen bg-navy text-cream">
@@ -467,7 +507,7 @@ const ResultsPreview = () => {
                   <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
                   <PolarAngleAxis
                     dataKey="subject"
-                    tick={{ fill: "hsl(40 25% 90% / 0.7)", fontSize: 12, fontFamily: "Inter" }}
+                    tick={{ fill: "hsl(40 25% 90% / 0.7)", fontSize: 11, fontFamily: "Inter" }}
                   />
                   <Radar
                     name="Your Signal"
@@ -524,7 +564,7 @@ const ResultsPreview = () => {
                   <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
                   <PolarAngleAxis
                     dataKey="subject"
-                    tick={{ fill: "hsl(40 25% 90% / 0.7)", fontSize: 12, fontFamily: "Inter" }}
+                    tick={{ fill: "hsl(40 25% 90% / 0.7)", fontSize: 11, fontFamily: "Inter" }}
                   />
                   <Radar
                     name="Your Signal"
@@ -543,10 +583,22 @@ const ResultsPreview = () => {
           {/* ── AI-Generated Narrative Report (centerpiece) ── */}
           <section className="bg-navy py-12 md:py-16 px-6">
             <div className="max-w-2xl mx-auto">
+              {/* Lead-in tagline */}
+              <p className="font-serif text-cream/80 text-lg leading-relaxed mb-8">
+                As {archetype.name}, {archetype.tagline.charAt(0).toLowerCase() + archetype.tagline.slice(1)}
+              </p>
+
               {streamError ? (
                 <p className="font-sans text-cream/60 text-base text-center">{streamError}</p>
+              ) : !interpretationText && streaming ? (
+                <GeneratingIndicator />
+              ) : interpretationText ? (
+                <>
+                  {streaming && <GeneratingIndicator />}
+                  <InterpretationRenderer text={interpretationText} streaming={streaming} />
+                </>
               ) : (
-                <InterpretationRenderer text={interpretationText} streaming={streaming} />
+                <GeneratingIndicator />
               )}
             </div>
           </section>
@@ -609,11 +661,14 @@ const ResultsPreview = () => {
 
           </div>{/* end reportRef */}
 
-          {/* ── Your Path Forward ── */}
+          {/* ── Community context + Primary recommendation ── */}
           <section className="bg-cream py-16 px-6">
             <div className="max-w-2xl mx-auto text-center">
+              <p className="font-sans text-navy/70 text-base leading-relaxed mb-10 max-w-lg mx-auto">
+                Making this transition on your own isn't the move. You should be in community — and based on where you are right now, here are some things from the AI Salon you may find valuable.
+              </p>
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
-                Your Path Forward
+                Recommended for You
               </p>
               <h2 className="font-serif text-navy text-2xl mb-4">
                 {archetype.salonEntry.activity}
@@ -632,16 +687,12 @@ const ResultsPreview = () => {
             </div>
           </section>
 
-          {/* Secondary recommendations */}
+          {/* Secondary recommendations with descriptions */}
           <section className="bg-cream py-16 px-6 border-t border-navy/10">
             <div className="max-w-4xl mx-auto">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-8 text-center">Also worth exploring</p>
               <div className="space-y-4">
-                {[
-                  { label: "Free AI Salon Community", desc: "Join the conversation.", href: "https://community.thesalon.ai" },
-                  { label: "AI Readiness Project Podcast", desc: "Conversations about what it means to be ready — humanly.", href: "http://aireadinessproject.com/" },
-                  { label: "Friday Office Hours", desc: "Real questions. Real answers. Weekly.", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
-                ].map(({ label, desc, href }) => (
+                {secondaryActivities.map(({ label, desc, href }) => (
                   <a
                     key={label}
                     href={href}
@@ -661,8 +712,8 @@ const ResultsPreview = () => {
           <section className="bg-navy py-16 px-6">
             <div className="max-w-xl mx-auto text-center">
               <h2 className="font-serif text-cream text-2xl mb-3">Share your TGR Type.</h2>
-              <p className="font-sans text-cream/50 text-sm mb-4">
-                I'm {archetype.name}. What's your TGR Type? → TheGreatRepurpose.com
+              <p className="font-sans text-cream/50 text-sm mb-4 whitespace-pre-line max-w-md mx-auto">
+                {shareText}
               </p>
               <Link to="/types" className="inline-block text-coral font-sans text-sm hover:underline mb-8">
                 Explore all 10 TGR Types →

@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [reportUrl, setReportUrl] = useState<string | null>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -17,11 +18,20 @@ export function Navigation() {
     setMobileOpen(false);
   }, [location]);
 
+  // Read session report URL
+  useEffect(() => {
+    const url = sessionStorage.getItem("tgr_report_url");
+    setReportUrl(url);
+  }, [location]);
+
   const navLinks = [
     { to: "/phases", label: "The Five Stages" },
     { to: "/types", label: "TGR Types" },
     { to: "/about", label: "About" },
   ];
+
+  const isOnReportPage = reportUrl && location.pathname === reportUrl;
+  const showReportLink = reportUrl && !isOnReportPage;
 
   return (
     <>
@@ -54,6 +64,15 @@ export function Navigation() {
                 <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-coral group-hover:w-full transition-all duration-300" aria-hidden="true" />
               </Link>
             ))}
+            {showReportLink && (
+              <Link
+                to={reportUrl}
+                className="text-coral hover:text-cream text-xs uppercase tracking-widest font-sans transition-colors relative group"
+              >
+                Your TGR Report
+                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-coral group-hover:w-full transition-all duration-300" aria-hidden="true" />
+              </Link>
+            )}
           </div>
 
           {/* Desktop CTA */}
@@ -89,6 +108,14 @@ export function Navigation() {
               {label}
             </Link>
           ))}
+          {showReportLink && (
+            <Link
+              to={reportUrl}
+              className="text-coral text-2xl font-serif tracking-wide hover:text-cream transition-colors"
+            >
+              Your TGR Report
+            </Link>
+          )}
           <Link
             to="/selfcheck"
             className="mt-4 bg-coral text-cream text-base font-sans font-medium px-8 py-3 rounded-full pulse-coral hover:opacity-90 transition-opacity"

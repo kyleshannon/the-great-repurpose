@@ -52,9 +52,9 @@ INSTRUCTIONS:
 
 Write a structured report using markdown ## headers for each section. Each section should be 2-3 paragraphs of flowing prose. No bullet points.
 
-## Your Shape
+## Where You Stand
 
-Narrative synthesis of the pattern across their five dimensions. Don't just list scores — describe the SHAPE. What's the relationship between their highs and lows? What does the pattern reveal about where they are? Name the tension their archetype carries. Be honest but kind.
+Narrative synthesis of the pattern across their five dimensions. Don't just list scores — describe what stands out. What's the relationship between their highs and lows? What does the pattern reveal about where they are? Name the tension their archetype carries. Be honest but kind.
 
 ## What Your Scores Reveal
 
