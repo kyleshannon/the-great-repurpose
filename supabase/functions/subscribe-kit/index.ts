@@ -13,7 +13,7 @@ serve(async (req) => {
   }
 
   try {
-    const { email, lowest_dimension } = await req.json();
+    const { email, lowest_dimension, archetype } = await req.json();
 
     if (!email || typeof email !== 'string' || !email.includes('@')) {
       return new Response(JSON.stringify({ error: 'Valid email is required' }), {
@@ -38,6 +38,7 @@ serve(async (req) => {
         email_address: email.trim().toLowerCase(),
         fields: {
           lowest_dimension: lowest_dimension || '',
+          archetype: archetype || '',
         },
       }),
     });

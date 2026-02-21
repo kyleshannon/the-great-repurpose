@@ -10,74 +10,22 @@ import {
 } from "recharts";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { ChevronDown } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import { matchArchetype, getArchetypeSlug, type Scores, type Archetype } from "@/lib/archetypes";
 
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
 
-const dimensionMeta: Record<DimensionKey, {
-  label: string;
-  stage: string;
-  color: string;
-  descriptions: { low: string; mid: string; high: string };
-}> = {
-  identity: {
-    label: "Identity",
-    stage: "Stage 1 — Disorientation",
-    color: "hsl(145 25% 50%)",
-    descriptions: {
-      low: "Right now, your sense of self and your work are deeply intertwined — which means the disruption of one feels like the disruption of both. That's not a flaw; it's a sign of how fully you've committed to your work. The invitation here is to begin, slowly, to locate yourself somewhere that AI cannot reach.",
-      mid: "You have some separation between who you are and what you do, but the line is still blurry. That's honest. Most people in this moment are somewhere in the middle, feeling the tug between identity and role.",
-      high: "You've done meaningful work to locate your sense of self somewhere beyond your job title. That's a real advantage in this moment — it means your identity isn't up for negotiation every time the market shifts.",
-    },
-  },
-  value: {
-    label: "Value Clarity",
-    stage: "Stage 3 — Excavation",
-    color: "hsl(155 20% 55%)",
-    descriptions: {
-      low: "Right now, you're finding it hard to name what you uniquely bring — and that's one of the most honest and human places to be in this moment. The parts of your work that felt most distinctively yours may be the ones most visibly affected by AI. That's not evidence that you have nothing to offer. It's an invitation to look deeper.",
-      mid: "You have a partial sense of your unique contribution, but you can't always name it clearly. That's common — and it's exactly the kind of thing a community conversation can help surface.",
-      high: "You have a clear and grounded sense of what you uniquely bring — and that clarity is a genuine signal. The work now is making sure that signal is visible to the people who need to find you.",
-    },
-  },
-  purpose: {
-    label: "Purpose",
-    stage: "Stage 4 — Reorientation",
-    color: "hsl(145 15% 70%)",
-    descriptions: {
-      low: "Direction is the hardest thing to rebuild from the outside in. If you're feeling unmoored about what you're building toward, you're not lost — you're in the part of the terrain that requires a different kind of navigation. Slower. More internal. Less certain.",
-      mid: "You have some sense of direction, but it's not yet fully motivating. That's the middle of the map — enough to keep moving, not yet enough to feel pulled. The work is finding what genuinely energizes you and letting that be the compass.",
-      high: "You have a clear and motivating sense of where you're headed. That's not something everyone has right now — and it's worth protecting. The challenge in this stage is staying connected to that direction as the landscape continues to shift.",
-    },
-  },
-  ai_relationship: {
-    label: "AI Relationship",
-    stage: "Stage 2 — Reckoning",
-    color: "hsl(45 40% 55%)",
-    descriptions: {
-      low: "The best cure for anxiety about AI tools is actually using them — in a low-stakes, high-trust environment with other humans who are figuring it out too. Avoidance tends to amplify the fear. The AI Learning Lab is built exactly for this moment.",
-      mid: "You're engaging with AI tools, but not yet on your own terms — or not yet with confidence. That's a very normal place to be. The shift from reluctant user to intentional user is less about skill than about context.",
-      high: "You're engaging with AI tools actively and on your own terms. That's a meaningful advantage — and the question now is whether your relationship with these tools is enhancing your signal or slowly diluting it.",
-    },
-  },
-  creative_action: {
-    label: "Creative Action",
-    stage: "Stage 5 — Authorship",
-    color: "hsl(145 25% 50%)",
-    descriptions: {
-      low: "You have signal. You're just not yet making it visible — to yourself or to others. The move from consuming to creating is one of the most important transitions in The Great Repurpose. It doesn't require perfection. It requires showing up.",
-      mid: "You're creating some things, sharing some things — but not yet consistently or with full confidence. That's the creative equivalent of Reorientation: you know the direction, but you haven't yet made it a practice.",
-      high: "You're actively making and sharing work, even imperfectly. That's Authorship — and it's the most generative place to be in this moment. The work now is refining your signal, finding your audience, and going deeper.",
-    },
-  },
+const dimensionMeta: Record<DimensionKey, { label: string; stage: string }> = {
+  identity: { label: "Identity Independence", stage: "Stage 1 — Disorientation" },
+  value: { label: "Value Clarity", stage: "Stage 3 — Excavation" },
+  purpose: { label: "Purpose Direction", stage: "Stage 4 — Reorientation" },
+  ai_relationship: { label: "AI Relationship", stage: "Stage 2 — Reckoning" },
+  creative_action: { label: "Creative Action", stage: "Stage 5 — Authorship" },
 };
 
-function getScoreTier(score: number): "low" | "mid" | "high" {
-  if (score < 4) return "low";
-  if (score < 7) return "mid";
-  return "high";
-}
+const dimensionOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];
 
 function getLowestDimension(scores: Record<DimensionKey, number>): DimensionKey {
   return (Object.entries(scores) as [DimensionKey, number][]).reduce(
@@ -86,88 +34,93 @@ function getLowestDimension(scores: Record<DimensionKey, number>): DimensionKey 
   )[0];
 }
 
-function getStrongestDimension(scores: Record<DimensionKey, number>): DimensionKey {
-  return (Object.entries(scores) as [DimensionKey, number][]).reduce(
-    (max, [key, val]) => (val > max[1] ? [key, val] : max),
-    ["identity", -Infinity] as [DimensionKey, number]
-  )[0];
+function scoresToArchetypeInput(scores: Record<DimensionKey, number>): Scores {
+  return {
+    identity: scores.identity,
+    value: scores.value,
+    purpose: scores.purpose,
+    ai_relationship: scores.ai_relationship,
+    creative_action: scores.creative_action,
+  };
 }
 
-const salonRouting: Record<DimensionKey, { body: string; links: { label: string; href: string }[] }> = {
-  identity: {
-    body: "Your most important work right now isn't about AI skills. It's about separating who you are from what you do — so that no tool, trend, or market shift can take the former when it takes the latter. Start with the Great Repurpose, then come to a Friday Office Hours session.",
-    links: [
-      { label: "Friday Office Hours", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
-      { label: "Free Community", href: "https://community.thesalon.ai" },
-    ],
-  },
-  value: {
-    body: "You're in the most common and least-discussed dimension of the disruption: knowing you bring something, but struggling to name it. The AI Salon's free community is full of people helping each other with exactly this. And Friday Office Hours is a good place to start.",
-    links: [
-      { label: "Free Community", href: "https://community.thesalon.ai" },
-      { label: "Friday Office Hours", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
-    ],
-  },
-  purpose: {
-    body: "Direction is the hardest thing to rebuild from the outside in. The Learn Out Loud sessions in the AI Salon community are designed specifically for people who are exploring — not yet certain, but moving. Come as you are.",
-    links: [
-      { label: "Friday Office Hours", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
-      { label: "Learn Out Loud sessions", href: "https://thesalon.ai" },
-    ],
-  },
-  ai_relationship: {
-    body: "The best cure for anxiety about AI tools is actually using them — in a low-stakes, high-trust environment with other humans who are figuring it out too. The AI Learning Lab is built exactly for that.",
-    links: [
-      { label: "AI Learning Lab", href: "https://thesalon.ai" },
-      { label: "Friday Office Hours", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
-    ],
-  },
-  creative_action: {
-    body: "You have signal. You're just not yet making it visible — to yourself or to others. The Mastermind Practice Lab is where people build the habit of showing up and making things, even imperfectly. And the AI Learning Lab gives you the tools.",
-    links: [
-      { label: "Mastermind Practice Lab", href: "https://thesalon.ai" },
-      { label: "AI Learning Lab", href: "https://thesalon.ai" },
-    ],
-  },
-};
+// ── Streaming AI interpretation ──────────────────────────────────────────────
 
-const dimensionOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];
+function useStreamInterpretation() {
+  const [text, setText] = useState("");
+  const [streaming, setStreaming] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-// ── Score teaser card (shown pre-email — overall only, no per-dimension) ─────
+  const stream = async (scores: Record<DimensionKey, number>, archetype: Archetype) => {
+    setStreaming(true);
+    setError(null);
+    setText("");
 
-function ScoreTeaser({ scores }: { scores: Record<DimensionKey, number> }) {
-  const strongest = getStrongestDimension(scores);
-  const overall = Object.values(scores).reduce((a, b) => a + b, 0) / 5;
+    try {
+      const resp = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/generate-interpretation`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+          },
+          body: JSON.stringify({ scores, archetype }),
+        }
+      );
 
-  return (
-    <div className="w-full max-w-xl mx-auto">
-      {/* Overall score */}
-      <div className="text-center mb-8">
-        <p className="font-sans text-cream/50 text-xs uppercase tracking-widest mb-2">
-          Your overall signal
-        </p>
-        <p className="font-serif text-coral text-6xl font-bold leading-none">
-          {overall.toFixed(1)}
-        </p>
-        <p className="font-sans text-cream/40 text-sm mt-1">out of 10</p>
-      </div>
+      if (!resp.ok || !resp.body) {
+        const errData = await resp.json().catch(() => ({}));
+        setError(errData.error || "Failed to generate interpretation.");
+        setStreaming(false);
+        return "";
+      }
 
-      {/* Teaser paragraph with fade */}
-      <div className="relative">
-        <p className="font-sans text-cream/70 text-base leading-relaxed">
-          Your signal is clearest in <span className="text-coral font-medium">{dimensionMeta[strongest].label}</span>.{" "}
-          {dimensionMeta[strongest].descriptions[getScoreTier(scores[strongest])].slice(0, 180)}...
-        </p>
-        {/* Fade overlay */}
-        <div
-          className="absolute bottom-0 left-0 right-0 h-16 pointer-events-none"
-          style={{
-            background: "linear-gradient(to bottom, transparent, hsl(70 10% 10%))",
-          }}
-        />
-      </div>
-    </div>
-  );
+      const reader = resp.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      let fullText = "";
+      let done = false;
+
+      while (!done) {
+        const { done: readDone, value } = await reader.read();
+        if (readDone) break;
+        buffer += decoder.decode(value, { stream: true });
+
+        let newlineIndex: number;
+        while ((newlineIndex = buffer.indexOf("\n")) !== -1) {
+          let line = buffer.slice(0, newlineIndex);
+          buffer = buffer.slice(newlineIndex + 1);
+          if (line.endsWith("\r")) line = line.slice(0, -1);
+          if (line.startsWith(":") || line.trim() === "") continue;
+          if (!line.startsWith("data: ")) continue;
+          const jsonStr = line.slice(6).trim();
+          if (jsonStr === "[DONE]") { done = true; break; }
+          try {
+            const parsed = JSON.parse(jsonStr);
+            const content = parsed.choices?.[0]?.delta?.content as string | undefined;
+            if (content) {
+              fullText += content;
+              setText(fullText);
+            }
+          } catch {
+            buffer = line + "\n" + buffer;
+            break;
+          }
+        }
+      }
+
+      setStreaming(false);
+      return fullText;
+    } catch (e) {
+      console.error("Stream error:", e);
+      setError("Something went wrong generating your interpretation.");
+      setStreaming(false);
+      return "";
+    }
+  };
+
+  return { text, streaming, error, stream };
 }
 
 // ── Email gate component ─────────────────────────────────────────────────────
@@ -184,9 +137,9 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
 
   return (
     <div className="border border-cream/10 rounded-xl p-8 text-center bg-cream/[0.03]">
-      <h2 className="font-serif text-cream text-xl mb-2">Read your full results.</h2>
+      <h2 className="font-serif text-cream text-xl mb-2">Unlock your full reading.</h2>
       <p className="font-sans text-cream/50 text-sm mb-6 max-w-md mx-auto">
-        Enter your email to unlock your complete profile — dimension-by-dimension breakdown, radar chart, and your personalized next step.
+        Enter your email to unlock your AI-generated interpretation, personalized next step, and full dimension breakdown.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <label htmlFor="email-input" className="sr-only">Email address</label>
@@ -214,21 +167,9 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
   );
 }
 
-// ── Helper: build share text from scores ─────────────────────────────────────
-
-function buildShareSummary(scores: Record<DimensionKey, number>, selfCheckUrl: string) {
-  const overall = (Object.values(scores).reduce((a, b) => a + b, 0) / 5).toFixed(1);
-  const strongest = getStrongestDimension(scores);
-  return `I just took The Great Repurpose Self-Check — a free assessment for anyone navigating the AI transition.\n\nMy signal score: ${overall}/10\nStrongest dimension: ${dimensionMeta[strongest].label}\n\nCurious about your own shape? Take the free assessment → ${selfCheckUrl}`;
-}
-
 // ── PDF Generator ────────────────────────────────────────────────────────────
 
-async function generatePDF(
-  reportRef: HTMLDivElement,
-  scores: Record<DimensionKey, number>,
-) {
-  // Capture the report section as an image
+async function generatePDF(reportRef: HTMLDivElement) {
   const canvas = await html2canvas(reportRef, {
     backgroundColor: "#1a1c1e",
     scale: 2,
@@ -237,29 +178,22 @@ async function generatePDF(
   });
 
   const imgData = canvas.toDataURL("image/png");
-  const imgWidth = 210; // A4 width in mm
+  const imgWidth = 210;
   const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
   const pdf = new jsPDF("p", "mm", "a4");
-  const pageHeight = 297; // A4 height in mm
-
+  const pageHeight = 297;
   let heightLeft = imgHeight;
   let position = 0;
 
-  // First page
   pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
   heightLeft -= pageHeight;
-
-  // Additional pages if content overflows
   while (heightLeft > 0) {
     position = heightLeft - imgHeight;
     pdf.addPage();
     pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
     heightLeft -= pageHeight;
   }
-
-  const overall = (Object.values(scores).reduce((a, b) => a + b, 0) / 5).toFixed(1);
-  pdf.save(`great-repurpose-results-${overall}.pdf`);
+  pdf.save("great-repurpose-results.pdf");
 }
 
 // ── Main component ───────────────────────────────────────────────────────────
@@ -276,17 +210,26 @@ const ResultsPreview = () => {
   const [generating, setGenerating] = useState(false);
   const [scores, setScores] = useState<Record<DimensionKey, number> | null>(null);
   const [resultId, setResultId] = useState<string | null>(routeId || null);
+  const [archetype, setArchetype] = useState<Archetype | null>(null);
+  const [cachedInterpretation, setCachedInterpretation] = useState<string | null>(null);
+  const [expandedDims, setExpandedDims] = useState<Set<DimensionKey>>(new Set());
 
-  // If we have a route ID, load saved results from DB
+  const { text: streamedText, streaming, error: streamError, stream } = useStreamInterpretation();
+
+  const interpretationText = cachedInterpretation || streamedText;
+
+  // Load scores
   useEffect(() => {
     if (!routeId) {
-      setScores({
+      const s = {
         identity: parseFloat(searchParams.get("identity") || "5"),
         value: parseFloat(searchParams.get("value") || "5"),
         purpose: parseFloat(searchParams.get("purpose") || "5"),
         ai_relationship: parseFloat(searchParams.get("ai_relationship") || "5"),
         creative_action: parseFloat(searchParams.get("creative_action") || "5"),
-      });
+      };
+      setScores(s);
+      setArchetype(matchArchetype(scoresToArchetypeInput(s)));
       return;
     }
 
@@ -301,20 +244,41 @@ const ResultsPreview = () => {
           navigate("/selfcheck", { replace: true });
           return;
         }
-        setScores({
+        const s = {
           identity: data.identity_score,
           value: data.value_score,
           purpose: data.purpose_score,
           ai_relationship: data.ai_relationship_score,
           creative_action: data.creative_action_score,
-        });
+        };
+        setScores(s);
+        setArchetype(matchArchetype(scoresToArchetypeInput(s)));
         setSubmitted(true);
         setResultId(data.id);
+        if ((data as any).ai_interpretation) {
+          setCachedInterpretation((data as any).ai_interpretation);
+        }
         setLoading(false);
       });
   }, [routeId]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  if (loading || !scores) {
+  // Auto-stream interpretation when submitted and no cached version
+  useEffect(() => {
+    if (submitted && scores && archetype && !cachedInterpretation && !streamedText && !streaming) {
+      stream(scores, archetype).then((fullText) => {
+        if (fullText && resultId) {
+          // Cache in DB
+          supabase
+            .from("selfcheck_results")
+            .update({ ai_interpretation: fullText, archetype: archetype.name } as any)
+            .eq("id", resultId)
+            .then(() => {});
+        }
+      });
+    }
+  }, [submitted, scores, archetype, cachedInterpretation]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  if (loading || !scores || !archetype) {
     return (
       <div className="min-h-screen bg-navy text-cream flex items-center justify-center">
         <p className="font-sans text-cream/50">Loading your results…</p>
@@ -322,26 +286,21 @@ const ResultsPreview = () => {
     );
   }
 
-  const strongest = getStrongestDimension(scores);
-  const lowest = getLowestDimension(scores);
   const overall = Object.values(scores).reduce((a, b) => a + b, 0) / 5;
-
   const chartData = [
     { subject: "Identity", value: scores.identity, fullMark: 10 },
     { subject: "Value", value: scores.value, fullMark: 10 },
     { subject: "Purpose", value: scores.purpose, fullMark: 10 },
-    { subject: "AI Relationship", value: scores.ai_relationship, fullMark: 10 },
-    { subject: "Creative Action", value: scores.creative_action, fullMark: 10 },
+    { subject: "AI Rel.", value: scores.ai_relationship, fullMark: 10 },
+    { subject: "Creative", value: scores.creative_action, fullMark: 10 },
   ];
 
   const selfCheckUrl = `${window.location.origin}/selfcheck`;
-  const resultUrl = resultId
-    ? `${window.location.origin}/results/${resultId}`
-    : null;
+  const resultUrl = resultId ? `${window.location.origin}/results/${resultId}` : null;
+  const archetypeSlug = getArchetypeSlug(archetype);
 
   const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
-
     const lowestDim = getLowestDimension(scores);
 
     try {
@@ -355,7 +314,8 @@ const ResultsPreview = () => {
           ai_relationship_score: scores.ai_relationship,
           creative_action_score: scores.creative_action,
           lowest_dimension: lowestDim,
-        })
+          archetype: archetype.name,
+        } as any)
         .select("id")
         .single();
 
@@ -364,10 +324,11 @@ const ResultsPreview = () => {
         navigate(`/results/${data.id}`, { replace: true });
       }
 
-      supabase.functions.invoke("subscribe-kit", {
-        body: { email, lowest_dimension: lowestDim },
-      }).catch((err) => console.warn("KIT subscribe failed:", err));
-
+      supabase.functions
+        .invoke("subscribe-kit", {
+          body: { email, lowest_dimension: lowestDim, archetype: archetypeSlug },
+        })
+        .catch((err) => console.warn("KIT subscribe failed:", err));
     } catch (err) {
       console.error("Error saving results:", err);
     }
@@ -384,14 +345,16 @@ const ResultsPreview = () => {
   };
 
   const handleShareLinkedIn = () => {
-    const url = encodeURIComponent(resultUrl || window.location.href);
-    const text = encodeURIComponent(buildShareSummary(scores, selfCheckUrl));
+    const url = encodeURIComponent(resultUrl || selfCheckUrl);
+    const text = encodeURIComponent(
+      `I just took The Great Repurpose Self-Check. I'm "${archetype.name}": ${archetype.tagline}\n\nCurious about your own shape? Take the free assessment →`
+    );
     window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&summary=${text}`, "_blank");
   };
 
   const handleShareX = () => {
     const text = encodeURIComponent(
-      `I scored ${overall.toFixed(1)}/10 on The Great Repurpose Self-Check. My strongest signal: ${dimensionMeta[strongest].label}.\n\nCurious about your own shape? Take the free assessment →`
+      `My Great Repurpose result: ${archetype.name}. "${archetype.tagline}" — uncomfortably accurate.`
     );
     const url = encodeURIComponent(selfCheckUrl);
     window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
@@ -401,11 +364,20 @@ const ResultsPreview = () => {
     if (!reportRef.current) return;
     setGenerating(true);
     try {
-      await generatePDF(reportRef.current, scores);
+      await generatePDF(reportRef.current);
     } catch (err) {
       console.error("PDF generation failed:", err);
     }
     setGenerating(false);
+  };
+
+  const toggleDim = (dim: DimensionKey) => {
+    setExpandedDims((prev) => {
+      const next = new Set(prev);
+      if (next.has(dim)) next.delete(dim);
+      else next.add(dim);
+      return next;
+    });
   };
 
   return (
@@ -414,18 +386,59 @@ const ResultsPreview = () => {
       <main id="main-content">
 
       {!submitted ? (
-        /* ── Pre-email: overall score teaser + email gate ── */
+        /* ── Pre-email: Archetype teaser + radar + blurred preview + email gate ── */
         <section className="bg-navy min-h-screen flex items-center justify-center px-6 pt-24 pb-16">
           <div className="max-w-2xl mx-auto w-full">
-            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">
-              Your Results
+            {/* Archetype name */}
+            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3 text-center">
+              You are
+            </p>
+            <h1 className="font-serif text-cream text-4xl md:text-5xl text-center mb-2">
+              {archetype.name}
+            </h1>
+            <p className="font-serif text-cream/60 text-lg italic text-center mb-10">
+              {archetype.tagline}
             </p>
 
-            <ScoreTeaser scores={scores} />
-
-            <div className="mt-10">
-              <EmailGate onSuccess={handleEmailSuccess} />
+            {/* Radar chart */}
+            <div className="mb-10">
+              <ResponsiveContainer width="100%" height={300}>
+                <RadarChart data={chartData}>
+                  <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
+                  <PolarAngleAxis
+                    dataKey="subject"
+                    tick={{ fill: "hsl(40 25% 90% / 0.7)", fontSize: 12, fontFamily: "Inter" }}
+                  />
+                  <Radar
+                    name="Your Signal"
+                    dataKey="value"
+                    stroke="hsl(145 25% 50%)"
+                    fill="hsl(145 25% 50%)"
+                    fillOpacity={0.2}
+                    strokeWidth={2}
+                  />
+                </RadarChart>
+              </ResponsiveContainer>
             </div>
+
+            {/* Blurred interpretation preview */}
+            <div className="relative mb-10">
+              <div className="blur-sm select-none pointer-events-none">
+                <p className="font-sans text-cream/70 text-base leading-relaxed">
+                  {archetype.description} {archetype.vulnerability} The work ahead is clear, and the next step is specific to your shape. Your interpretation will reveal the relationship between your dimensions and what it means for your path forward...
+                </p>
+              </div>
+              <div
+                className="absolute inset-0 flex items-center justify-center"
+                style={{
+                  background: "linear-gradient(to bottom, transparent 0%, hsl(70 10% 10% / 0.8) 40%, hsl(70 10% 10%) 100%)",
+                }}
+              >
+                <p className="font-sans text-cream/60 text-sm">Enter your email to read your full interpretation</p>
+              </div>
+            </div>
+
+            <EmailGate onSuccess={handleEmailSuccess} />
           </div>
         </section>
       ) : (
@@ -433,13 +446,16 @@ const ResultsPreview = () => {
           {/* ── PDF-capturable report section ── */}
           <div ref={reportRef}>
 
-          {/* ── Radar chart + Strongest ── */}
+          {/* ── Archetype hero + radar ── */}
           <section className="bg-navy pt-28 pb-16 px-6">
             <div className="max-w-2xl mx-auto text-center">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">Your shape, right now</p>
-              <h1 className="font-serif text-cream text-3xl md:text-4xl mb-10">
-                Your signal is starting to come through.
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">You are</p>
+              <h1 className="font-serif text-cream text-4xl md:text-5xl mb-2">
+                {archetype.name}
               </h1>
+              <p className="font-serif text-cream/60 text-lg italic mb-10">
+                {archetype.tagline}
+              </p>
 
               <ResponsiveContainer width="100%" height={340}>
                 <RadarChart data={chartData}>
@@ -459,96 +475,107 @@ const ResultsPreview = () => {
                 </RadarChart>
               </ResponsiveContainer>
 
-              {/* Overall + strongest */}
               <p className="font-serif text-coral text-5xl font-bold mt-6 mb-1">{overall.toFixed(1)}</p>
-              <p className="font-sans text-cream/40 text-sm mb-4">overall signal</p>
-
-              <p className="font-sans text-cream/60 text-sm mb-2">
-                Your strongest signal right now:
-              </p>
-              <p className="font-serif text-coral text-2xl font-bold">
-                {dimensionMeta[strongest].label}
-              </p>
-              <p className="font-sans text-cream/60 text-base italic mt-2">
-                {dimensionMeta[strongest].stage}
-              </p>
+              <p className="font-sans text-cream/40 text-sm">overall signal</p>
             </div>
           </section>
 
-          {/* ── Dimension breakdown — consistent navy bg ── */}
-          <section className="bg-navy py-16 px-6">
-            <div className="max-w-3xl mx-auto space-y-4">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">Dimension by Dimension</p>
-              {dimensionOrder.map((dim) => {
-                const score = scores[dim];
-                const tier = getScoreTier(score);
-                return (
-                  <div key={dim} className="border border-cream/10 rounded-lg p-8 bg-cream/[0.03]">
-                    <div className="flex items-center justify-between mb-4">
-                      <div>
-                        <p className="font-sans text-xs uppercase tracking-widest text-coral font-medium mb-1">
-                          {dimensionMeta[dim].label}
-                        </p>
-                        <p className="font-sans text-xs text-cream/40">
-                          {dimensionMeta[dim].stage}
-                        </p>
-                      </div>
-                      <p className="font-serif text-3xl font-bold text-cream">
-                        {score.toFixed(1)}
-                      </p>
-                    </div>
-                    {/* Spectrum bar */}
-                    <div className="relative h-2 bg-cream/10 rounded-full mb-6 overflow-hidden">
-                      <div
-                        className="absolute inset-y-0 left-0 rounded-full"
-                        style={{
-                          width: `${((score - 1) / 9) * 100}%`,
-                          background: "linear-gradient(to right, hsl(70 10% 25%), hsl(145 25% 50%))",
-                        }}
-                      />
-                    </div>
-                    <p className="font-sans text-base leading-relaxed text-cream/70">
-                      {dimensionMeta[dim].descriptions[tier]}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-
-          {/* Insight summary */}
-          <section className="bg-cream py-16 px-6">
-            <div className="max-w-2xl mx-auto text-center">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">Your profile in full</p>
-              <p className="font-serif text-navy text-lg md:text-xl leading-relaxed italic">
-                "Your signal is clearest in{" "}
-                <span className="text-coral not-italic font-medium">{dimensionMeta[strongest].label}</span>
-                . The place where the noise is loudest right now is{" "}
-                <span className="not-italic font-medium">{dimensionMeta[lowest].label}</span>
-                . That's not a verdict — it's a coordinate. The work of The Great Repurpose is to move toward your signal from wherever you are. You don't have to do that alone."
-              </p>
-            </div>
-          </section>
-
-          {/* Personalized routing */}
+          {/* ── AI Interpretation ── */}
           <section className="bg-navy py-16 px-6">
             <div className="max-w-2xl mx-auto">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">Where to go from here — for you, specifically</p>
-              <p className="font-sans text-cream/70 text-base leading-relaxed mb-6">
-                {salonRouting[lowest].body}
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">
+                Your Interpretation
               </p>
-              <div className="flex flex-wrap gap-3">
-                {salonRouting[lowest].links.map(({ label, href }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border border-coral text-coral font-sans text-sm px-5 py-2 rounded-full hover:bg-coral hover:text-cream transition-colors"
-                  >
-                    {label} →
-                  </a>
-                ))}
+              {streamError ? (
+                <p className="font-sans text-cream/60 text-base text-center">{streamError}</p>
+              ) : (
+                <div className="font-sans text-cream/80 text-base leading-relaxed space-y-4">
+                  {interpretationText.split("\n\n").filter(Boolean).map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                  {streaming && (
+                    <span className="inline-block w-2 h-4 bg-coral animate-pulse ml-1" />
+                  )}
+                </div>
+              )}
+            </div>
+          </section>
+
+          {/* ── Your Path Forward ── */}
+          <section className="bg-cream py-16 px-6">
+            <div className="max-w-2xl mx-auto text-center">
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
+                Your Path Forward
+              </p>
+              <h2 className="font-serif text-navy text-2xl mb-4">
+                {archetype.salonEntry.activity}
+              </h2>
+              <p className="font-sans text-navy/70 text-base leading-relaxed mb-6">
+                {archetype.salonEntry.body}
+              </p>
+              <a
+                href={archetype.salonEntry.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-coral text-coral font-sans text-sm font-medium px-8 py-3 rounded-full hover:bg-coral hover:text-cream transition-colors"
+              >
+                {archetype.salonEntry.activity} →
+              </a>
+            </div>
+          </section>
+
+          {/* ── Dimension breakdown (collapsible) ── */}
+          <section className="bg-navy py-16 px-6">
+            <div className="max-w-3xl mx-auto">
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">
+                Dimension by Dimension
+              </p>
+              <div className="space-y-3">
+                {dimensionOrder.map((dim) => {
+                  const score = scores[dim];
+                  const isOpen = expandedDims.has(dim);
+                  return (
+                    <div key={dim} className="border border-cream/10 rounded-lg bg-cream/[0.03]">
+                      <button
+                        onClick={() => toggleDim(dim)}
+                        className="w-full flex items-center justify-between p-6 text-left"
+                      >
+                        <div>
+                          <p className="font-sans text-sm uppercase tracking-widest text-coral font-medium">
+                            {dimensionMeta[dim].label}
+                          </p>
+                          <p className="font-sans text-xs text-cream/40">
+                            {dimensionMeta[dim].stage}
+                          </p>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <p className="font-serif text-2xl font-bold text-cream">
+                            {score.toFixed(1)}
+                          </p>
+                          <ChevronDown
+                            className={`w-4 h-4 text-cream/40 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                          />
+                        </div>
+                      </button>
+                      {isOpen && (
+                        <div className="px-6 pb-6">
+                          <div className="relative h-2 bg-cream/10 rounded-full mb-4 overflow-hidden">
+                            <div
+                              className="absolute inset-y-0 left-0 rounded-full"
+                              style={{
+                                width: `${((score - 1) / 9) * 100}%`,
+                                background: "linear-gradient(to right, hsl(70 10% 25%), hsl(145 25% 50%))",
+                              }}
+                            />
+                          </div>
+                          <p className="font-sans text-sm text-cream/60">
+                            Score: {score.toFixed(1)} / 10
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </section>
@@ -583,7 +610,7 @@ const ResultsPreview = () => {
           {/* Share + Download */}
           <section className="bg-navy py-16 px-6">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-serif text-cream text-2xl mb-3">Share your shape.</h2>
+              <h2 className="font-serif text-cream text-2xl mb-3">Share your archetype.</h2>
               <p className="font-sans text-cream/50 text-sm mb-8">
                 Your link goes to your full results. Social shares invite others to take the free assessment.
               </p>

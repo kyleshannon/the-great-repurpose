@@ -16,7 +16,9 @@ export type Database = {
     Tables: {
       selfcheck_results: {
         Row: {
+          ai_interpretation: string | null
           ai_relationship_score: number
+          archetype: string | null
           created_at: string
           creative_action_score: number
           email: string | null
@@ -27,7 +29,9 @@ export type Database = {
           value_score: number
         }
         Insert: {
+          ai_interpretation?: string | null
           ai_relationship_score?: number
+          archetype?: string | null
           created_at?: string
           creative_action_score?: number
           email?: string | null
@@ -38,7 +42,9 @@ export type Database = {
           value_score?: number
         }
         Update: {
+          ai_interpretation?: string | null
           ai_relationship_score?: number
+          archetype?: string | null
           created_at?: string
           creative_action_score?: number
           email?: string | null
