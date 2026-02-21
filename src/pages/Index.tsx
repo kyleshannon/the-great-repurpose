@@ -69,10 +69,10 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent" />
           {/* Text overlay */}
           <div className="absolute bottom-0 left-0 right-0 px-6 md:px-16 pb-10 md:pb-14">
-            <h1 className="font-sans font-bold text-cream text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-3">
+            <h1 className="font-sans font-bold text-cream text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-1">
               The Great Repurpose
             </h1>
-            <p className="font-sans text-cream/70 text-lg md:text-xl max-w-2xl">
+            <p className="font-sans font-medium text-cream/80 text-2xl md:text-3xl lg:text-4xl max-w-3xl">
               Finding Meaning in the Face of Unprecedented Change
             </p>
           </div>
