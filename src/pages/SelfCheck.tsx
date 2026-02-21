@@ -182,7 +182,14 @@ const SelfCheck = () => {
 
   if (screen === "entry") {
     return (
-      <div className="min-h-screen bg-navy constellation-bg flex flex-col items-center justify-center px-6 text-center">
+      <div className="min-h-screen bg-navy constellation-bg flex flex-col items-center justify-center px-6 text-center relative">
+        <button
+          onClick={() => navigate("/")}
+          className="absolute top-6 left-6 text-cream/50 hover:text-cream transition-colors flex items-center gap-1 text-sm font-sans"
+        >
+          <ChevronLeft size={16} />
+          Home
+        </button>
         <div className="max-w-xl mx-auto">
           <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6">The Self-Check</p>
           <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mb-6">
@@ -210,13 +217,21 @@ const SelfCheck = () => {
     <div className="min-h-screen bg-navy constellation-bg flex flex-col">
       {/* Top bar */}
       <div className="flex items-center justify-between px-6 pt-6 pb-4 max-w-3xl mx-auto w-full">
-        <button
-          onClick={handleBack}
-          className="text-cream/50 hover:text-cream transition-colors flex items-center gap-1 text-sm font-sans"
-        >
-          <ChevronLeft size={16} />
-          Back
-        </button>
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => navigate("/")}
+            className="text-cream/50 hover:text-cream transition-colors flex items-center gap-1 text-sm font-sans"
+          >
+            <ChevronLeft size={16} />
+            Home
+          </button>
+          <button
+            onClick={handleBack}
+            className="text-cream/50 hover:text-cream transition-colors text-sm font-sans"
+          >
+            Back
+          </button>
+        </div>
         <span className="font-sans text-cream/40 text-xs uppercase tracking-widest">
           {currentQ + 1} of {questions.length}
         </span>
