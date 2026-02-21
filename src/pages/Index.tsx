@@ -57,38 +57,29 @@ const Index = () => {
       <Navigation />
 
       {/* ── Section 1: Hero ── */}
-      <section className="relative min-h-screen flex items-end overflow-hidden">
-        {/* Background photo */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero.png')" }}
-        />
-        {/* Gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+      <section className="relative bg-navy">
+        {/* Hero image with title baked in */}
+        <div className="w-full pt-16">
+          <img
+            src="/images/hero.png"
+            alt="The Great Repurpose — Finding Meaning in the Face of Unprecedented Change"
+            className="w-full h-auto block"
+          />
+        </div>
 
-        <div className="relative z-10 w-full">
-          {/* Semi-transparent bar behind text */}
-          <div className="bg-black/40 backdrop-blur-sm px-6 md:px-16 py-12 md:py-16">
-            <div className="max-w-5xl">
-              <ScrollFadeUp>
-                <h1 className="font-sans font-bold text-white text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-4">
-                  The Great Repurpose
-                </h1>
-                <p className="font-sans text-white/90 text-lg md:text-2xl font-light mb-8 max-w-2xl">
-                  Finding Meaning in the Face of Unprecedented Change
-                </p>
-                <Link
-                  to="/selfcheck"
-                  className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-3"
-                >
-                  Take the Self-Check →
-                </Link>
-                <p className="text-white/50 text-sm font-sans">
-                  7 questions. 2 minutes. A mirror, not a grade.
-                </p>
-              </ScrollFadeUp>
-            </div>
-          </div>
+        {/* CTA below image */}
+        <div className="bg-navy px-6 md:px-16 py-10 text-center">
+          <ScrollFadeUp>
+            <Link
+              to="/selfcheck"
+              className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-3"
+            >
+              Take the Self-Check →
+            </Link>
+            <p className="text-cream/40 text-sm font-sans">
+              7 questions. 2 minutes. A mirror, not a grade.
+            </p>
+          </ScrollFadeUp>
         </div>
       </section>
 
