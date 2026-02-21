@@ -72,7 +72,7 @@ const Index = () => {
 
       {/* ── Section 1: Hero ── */}
       <section className="relative bg-navy">
-        {/* Hero image */}
+        {/* Hero image with overlaid title */}
         <div className="relative w-full pt-16 max-h-[70vh] overflow-hidden">
           <img
             src="/images/hero.png"
@@ -80,18 +80,17 @@ const Index = () => {
             className="w-full h-auto block object-cover object-top"
           />
           {/* Gradient fade to navy at bottom */}
-          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-navy to-transparent" />
-        </div>
-
-        {/* Title block below image */}
-        <div className="bg-navy px-6 pb-6">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="font-sans font-bold text-cream text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-1">
-              The Great Repurpose
-            </h1>
-            <p className="font-sans font-medium text-cream/80 text-2xl md:text-3xl lg:text-4xl">
-              Finding Meaning in the Face of Unprecedented Change
-            </p>
+          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-navy via-navy/80 to-transparent" />
+          {/* Title overlaid on bottom quarter of image */}
+          <div className="absolute inset-x-0 bottom-0 px-6 pb-6">
+            <div className="max-w-4xl mx-auto">
+              <h1 className="font-sans font-bold text-cream text-4xl md:text-6xl lg:text-7xl leading-[1.1] mb-1 drop-shadow-lg">
+                The Great Repurpose
+              </h1>
+              <p className="font-sans font-medium text-cream/80 text-2xl md:text-3xl lg:text-4xl drop-shadow-md">
+                Finding Meaning in the Face of Unprecedented Change
+              </p>
+            </div>
           </div>
         </div>
 
