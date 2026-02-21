@@ -151,14 +151,14 @@ const Index = () => {
 
       {/* ── Section 3: Three Faces of Disruption ── */}
       <section className="bg-navy constellation-bg py-24 px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-cream text-3xl md:text-4xl text-center mb-16">
               Three faces of the same disruption
             </h2>
           </ScrollFadeUp>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="space-y-6">
             {[
               {
                 num: "01",
@@ -187,7 +187,7 @@ const Index = () => {
           </div>
 
           <ScrollFadeUp delay={300}>
-            <p className="text-center text-cream/60 font-sans text-base mt-12 max-w-2xl mx-auto">
+            <p className="text-center text-cream/60 font-sans text-base mt-12">
               All three faces share the same root: <strong className="text-cream/80">the relationship between you and the work that gives you meaning is being renegotiated — and nobody asked your permission.</strong>
             </p>
           </ScrollFadeUp>
@@ -196,12 +196,12 @@ const Index = () => {
 
       {/* ── Section 4: The Five Stages ── */}
       <section className="bg-cream py-24 px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-3xl md:text-4xl text-center mb-4">
               The Great Repurpose: Five stages of finding your way through
             </h2>
-            <p className="font-sans text-navy/70 text-center text-lg mb-16 max-w-2xl mx-auto">
+            <p className="font-sans text-navy/70 text-center text-lg mb-16">
               This isn't a program. It's not a course. It's a map of the territory people actually cross when the work that defined them changes. It doesn't happen in order. It isn't clean. But every person navigating this transition is somewhere on this map — and knowing where you are is the first step toward moving.
             </p>
           </ScrollFadeUp>
@@ -300,7 +300,7 @@ const Index = () => {
 
       {/* ── Section 6: Self-Check Promo ── */}
       <section className="bg-cream py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <ScrollFadeUp>
             <h2 className="font-serif text-navy text-3xl md:text-4xl mb-4">
               The Great Repurpose Self-Check
@@ -308,15 +308,15 @@ const Index = () => {
             <p className="font-serif text-navy/70 text-xl italic mb-4">
               7 questions. No grades. No judgment. Just a mirror.
             </p>
-            <p className="font-sans text-navy/70 text-lg mb-14 max-w-xl mx-auto">
+            <p className="font-sans text-navy/70 text-lg mb-14">
               The Self-Check measures where you are across all five stages of The Great Repurpose. Not a single score — a shape. Your strengths and your gaps. Where you've already done the work and where you're still stuck.
             </p>
-            <p className="font-sans text-navy/60 text-base mb-14 max-w-xl mx-auto">
+            <p className="font-sans text-navy/60 text-base mb-14">
               You'll see your profile and get specific, personalized recommendations for what to do next — not generic advice, but the exact entry point that matches where you are right now.
             </p>
           </ScrollFadeUp>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
+          <div className="space-y-8 mb-14 text-left">
             {[
               {
                 step: "1",

@@ -66,18 +66,18 @@ const About = () => {
 
       {/* ── The AI Salon ── */}
       <section className="bg-navy constellation-bg py-20 px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-cream text-3xl md:text-4xl mb-4 leading-tight">
               The Great Repurpose is the diagnosis.<br />
               The AI Salon is the treatment.
             </h2>
-            <p className="font-sans text-cream/70 text-lg leading-relaxed mb-14 max-w-2xl">
+            <p className="font-sans text-cream/70 text-lg leading-relaxed mb-14">
               The AI Salon is a community of artists, builders, educators, and policy thinkers exploring the potential of generative AI — with optimism, humility, and a shared belief that the future of AI should be co-created by the many, not the few. It operates on the Cycle of AI Readiness: Play First → Create Excellence → Generously Lead.
             </p>
           </ScrollFadeUp>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="space-y-6 mb-12">
             {pillars.map((pillar, i) => (
               <ScrollFadeUp key={pillar.name} delay={i * 80}>
                 <div className="border border-coral/30 rounded-lg p-7 bg-navy hover:border-coral/60 transition-colors">
@@ -90,7 +90,7 @@ const About = () => {
           </div>
 
           <ScrollFadeUp delay={320}>
-            <p className="font-sans text-cream/70 text-lg mb-8 max-w-2xl">
+            <p className="font-sans text-cream/70 text-lg mb-8">
               If The Great Repurpose Self-Check showed you where you are, the AI Salon is where you go next.
             </p>
             <div className="text-center">
