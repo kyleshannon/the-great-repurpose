@@ -60,11 +60,11 @@ const Index = () => {
       {/* ── Section 1: Hero ── */}
       <section className="relative bg-navy">
         {/* Hero image with text overlay */}
-        <div className="relative w-full pt-16">
+        <div className="relative w-full pt-16 max-h-[45vh] overflow-hidden">
           <img
             src="/images/hero.png"
             alt="People standing together, facing forward"
-            className="w-full h-auto block"
+            className="w-full h-auto block object-cover object-top"
           />
           {/* Dark gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent" />
@@ -92,7 +92,7 @@ const Index = () => {
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-3"
             >
-              Take the Self-Check →
+              Take the Free Self-Check →
             </Link>
             <p className="text-cream/50 text-sm font-sans">
               7 questions. 2 minutes. A mirror, not a grade.
