@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="8" fill="#2d2f31"/>
+  <g stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Center petal -->
+    <path d="M32 14 C26 22, 26 36, 32 46 C38 36, 38 22, 32 14Z" fill="#4CAF50" fill-opacity="0.15"/>
+    <!-- Left petal -->
+    <path d="M20 20 C18 30, 24 40, 32 46 C28 36, 22 26, 20 20Z" fill="#4CAF50" fill-opacity="0.15"/>
+    <!-- Right petal -->
+    <path d="M44 20 C46 30, 40 40, 32 46 C36 36, 42 26, 44 20Z" fill="#4CAF50" fill-opacity="0.15"/>
+    <!-- Far left petal -->
+    <path d="M14 28 C16 36, 24 42, 32 46 C24 40, 16 34, 14 28Z" fill="#4CAF50" fill-opacity="0.15"/>
+    <!-- Far right petal -->
+    <path d="M50 28 C48 36, 40 42, 32 46 C40 40, 48 34, 50 28Z" fill="#4CAF50" fill-opacity="0.15"/>
+  </g>
+</svg>
