@@ -27,15 +27,19 @@ serve(async (req) => {
       throw new Error('KIT_API_KEY is not configured');
     }
 
-    // Subscribe to Kit Form 9103025 via API v3
-    const response = await fetch(`https://api.convertkit.com/v3/forms/${KIT_FORM_ID}/subscribe`, {
+    const headers = {
+      'Content-Type': 'application/json',
+      'X-Kit-Api-Key': KIT_API_KEY,
+    };
+
+    const emailNorm = email.trim().toLowerCase();
+
+    // Step 1: Create subscriber (or get existing)
+    const createRes = await fetch('https://api.kit.com/v4/subscribers', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers,
       body: JSON.stringify({
-        api_secret: KIT_API_KEY,
-        email: email.trim().toLowerCase(),
+        email_address: emailNorm,
         fields: {
           lowest_dimension: lowest_dimension || '',
           archetype: archetype || '',
@@ -43,15 +47,37 @@ serve(async (req) => {
       }),
     });
 
-    const data = await response.json();
+    const createData = await createRes.json();
+    console.log('Create subscriber response:', createRes.status, JSON.stringify(createData));
 
-    if (!response.ok) {
-      console.error('KIT API error:', JSON.stringify(data));
-      // Don't block the user — log and return soft success
-      return new Response(JSON.stringify({ success: false, kit_error: data }), {
+    if (!createRes.ok) {
+      return new Response(JSON.stringify({ success: false, kit_error: createData }), {
         status: 200,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       });
+    }
+
+    const subscriberId = createData?.subscriber?.id;
+    if (!subscriberId) {
+      console.error('No subscriber ID returned:', JSON.stringify(createData));
+      return new Response(JSON.stringify({ success: false, error: 'No subscriber ID' }), {
+        status: 200,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      });
+    }
+
+    // Step 2: Add subscriber to form
+    const formRes = await fetch(`https://api.kit.com/v4/forms/${KIT_FORM_ID}/subscribers/${subscriberId}`, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({}),
+    });
+
+    const formData = await formRes.json();
+    console.log('Add to form response:', formRes.status, JSON.stringify(formData));
+
+    if (!formRes.ok) {
+      console.error('Form add error:', JSON.stringify(formData));
     }
 
     return new Response(JSON.stringify({ success: true }), {
