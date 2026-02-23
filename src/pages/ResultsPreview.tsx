@@ -426,6 +426,22 @@ const ResultsPreview = () => {
           body: { email, lowest_dimension: lowestDim, archetype: archetypeSlug },
         })
         .catch((err) => console.warn("KIT subscribe failed:", err));
+
+      supabase.functions
+        .invoke("push-to-sheet", {
+          body: {
+            email,
+            identity_score: scores.identity,
+            value_score: scores.value,
+            purpose_score: scores.purpose,
+            ai_relationship_score: scores.ai_relationship,
+            creative_action_score: scores.creative_action,
+            lowest_dimension: lowestDim,
+            archetype: archetype.name,
+            open_answer: openAnswer || null,
+          },
+        })
+        .catch((err) => console.warn("Sheet push failed:", err));
     } catch (err) {
       console.error("Error saving results:", err);
     }
