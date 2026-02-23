@@ -2,3 +2,6 @@ project_id = "lngeeauylwqaszgqddbc"
 
 [functions.generate-interpretation]
 verify_jwt = false
+
+[functions.push-to-sheet]
+verify_jwt = false
