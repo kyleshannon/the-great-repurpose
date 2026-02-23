@@ -27,15 +27,15 @@ serve(async (req) => {
       throw new Error('KIT_API_KEY is not configured');
     }
 
-    // Subscribe to Kit Form 9103025 via API v4
-    const response = await fetch(`https://api.kit.com/v4/forms/${KIT_FORM_ID}/subscribers`, {
+    // Subscribe to Kit Form 9103025 via API v3
+    const response = await fetch(`https://api.convertkit.com/v3/forms/${KIT_FORM_ID}/subscribe`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Kit-Api-Key': KIT_API_KEY,
       },
       body: JSON.stringify({
-        email_address: email.trim().toLowerCase(),
+        api_key: KIT_API_KEY,
+        email: email.trim().toLowerCase(),
         fields: {
           lowest_dimension: lowest_dimension || '',
           archetype: archetype || '',
