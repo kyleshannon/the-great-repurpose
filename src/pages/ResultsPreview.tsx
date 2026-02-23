@@ -486,59 +486,18 @@ const ResultsPreview = () => {
       <main id="main-content">
 
       {!submitted ? (
-        /* ── Pre-email: Archetype teaser + radar + blurred preview + email gate ── */
+        /* ── Pre-email: simple prompt + email gate ── */
         <section className="bg-navy min-h-screen flex items-center justify-center px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-16">
-          <div className="max-w-2xl mx-auto w-full">
-            {/* Type name */}
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3 text-center">
-              Your TGR Type
+          <div className="max-w-2xl mx-auto w-full text-center">
+            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">
+              Your Results
             </p>
-            <h1 className="font-serif text-cream text-4xl md:text-5xl text-center mb-2">
-              You are {archetype.name}.
+            <h1 className="font-serif text-cream text-4xl md:text-5xl mb-4">
+              Your TGR Report is ready.
             </h1>
-            <p className="font-serif text-cream/60 text-lg italic text-center mb-10">
-              {archetype.tagline}
+            <p className="font-sans text-cream/60 text-base mb-10">
+              Enter your email to unlock your personalized report — including your TGR Type, where you stand across the five dimensions, and what to do next.
             </p>
-
-            {/* Radar chart */}
-            <div className="mb-2">
-              <ResponsiveContainer width="100%" height={260}>
-                <RadarChart data={chartData}>
-                  <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
-                  <PolarAngleAxis
-                    dataKey="subject"
-                    tick={{ fill: "hsl(40 25% 90% / 0.7)", fontSize: 11, fontFamily: "Inter" }}
-                  />
-                  <Radar
-                    name="Your Signal"
-                    dataKey="value"
-                    stroke="hsl(145 25% 50%)"
-                    fill="hsl(145 25% 50%)"
-                    fillOpacity={0.2}
-                    strokeWidth={2}
-                  />
-                </RadarChart>
-              </ResponsiveContainer>
-              <p className="text-cream/40 text-xs text-center font-sans">Your shape across the five dimensions</p>
-            </div>
-
-            {/* Tagline teaser with fade */}
-            <div className="relative mb-10 mt-8">
-              <p className="font-serif text-cream/80 text-lg text-center leading-relaxed">
-                As {archetype.name}, you're building toward…
-              </p>
-              <div className="relative mt-2 overflow-hidden" style={{ maxHeight: "3.5em" }}>
-                <p className="font-sans text-cream/70 text-base leading-relaxed text-center">
-                  {archetype.tagline.replace("You're building toward ", "")} {archetype.description}
-                </p>
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background: "linear-gradient(to bottom, transparent 0%, hsl(70 10% 10%) 80%)",
-                  }}
-                />
-              </div>
-            </div>
 
             <EmailGate onSuccess={handleEmailSuccess} />
           </div>
