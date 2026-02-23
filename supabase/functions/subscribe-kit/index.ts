@@ -34,7 +34,7 @@ serve(async (req) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        api_key: KIT_API_KEY,
+        api_secret: KIT_API_KEY,
         email: email.trim().toLowerCase(),
         fields: {
           lowest_dimension: lowest_dimension || '',
