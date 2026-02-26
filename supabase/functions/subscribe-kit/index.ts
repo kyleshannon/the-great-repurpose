@@ -7,6 +7,19 @@ const corsHeaders = {
 
 const KIT_FORM_ID = '9103025';
 
+const ARCHETYPE_TAG_IDS: Record<string, number> = {
+  'the-amplifier': 16555347,
+  'the-architect': 16555359,
+  'the-awakener': 16555348,
+  'the-catalyst': 16554557,
+  'the-compass': 16555360,
+  'the-explorer': 16555350,
+  'the-firestarter': 16555352,
+  'the-original': 16555385,
+  'the-translator': 16555356,
+  'the-unlocker': 16555386,
+};
+
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
     return new Response(null, { headers: corsHeaders });
@@ -78,6 +91,25 @@ serve(async (req) => {
 
     if (!formRes.ok) {
       console.error('Form add error:', JSON.stringify(formData));
+    }
+
+    // Step 3: Tag subscriber with archetype
+    const tagId = archetype ? ARCHETYPE_TAG_IDS[archetype] : undefined;
+    if (tagId) {
+      try {
+        const tagRes = await fetch(`https://api.kit.com/v4/tags/${tagId}/subscribers`, {
+          method: 'POST',
+          headers,
+          body: JSON.stringify({ email_address: emailNorm }),
+        });
+        const tagData = await tagRes.json();
+        console.log('Tag subscriber response:', tagRes.status, JSON.stringify(tagData));
+        if (!tagRes.ok) {
+          console.error('Tag error:', JSON.stringify(tagData));
+        }
+      } catch (tagErr) {
+        console.error('Tag request failed:', tagErr.message);
+      }
     }
 
     return new Response(JSON.stringify({ success: true }), {
