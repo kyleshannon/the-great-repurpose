@@ -1,35 +1,44 @@
 
 
-# Add Kit Tags Based on Archetype
+# Align AI Report Dimensions with Site's Five Stages
 
-## What This Does
-After subscribing a user to the Kit form, we'll also tag them with their matched archetype tag so you can use tag-based automations in Kit.
+## The Problem
+The AI-generated report references dimensions by names that don't match the site's established Five Stages:
 
-## Changes
+| Current in AI Prompt | Site's Actual Stage Name |
+|---|---|
+| Identity Independence | Unhook Identity |
+| Value Clarity | Reclaim Value |
+| Purpose Direction | Find Your Purpose |
+| AI Relationship | Discover AI |
+| Creative Action | Create with AI |
 
-### Modify `supabase/functions/subscribe-kit/index.ts`
+This creates a disconnect -- users see "Unhook Identity" on the radar chart, the Phases page, and the homepage, but the AI report talks about "Identity Independence."
 
-1. Add an archetype-to-tag-ID mapping:
+## The Fix
 
-```text
-the-amplifier   -> 16555347
-the-architect   -> 16555359
-the-awakener    -> 16555348
-the-catalyst    -> 16554557
-the-compass     -> 16555360
-the-explorer    -> 16555350
-the-firestarter -> 16555352
-the-original    -> 16555385
-the-translator  -> 16555356
-the-unlocker    -> 16555386
+**File:** `supabase/functions/generate-interpretation/index.ts`
+
+Update the system prompt's score labels (lines 41-46) from:
+
+```
+- Identity Independence: ${scores.identity}
+- Value Clarity: ${scores.value}
+- Purpose Direction: ${scores.purpose}
+- AI Relationship: ${scores.ai_relationship}
+- Creative Action: ${scores.creative_action}
 ```
 
-2. After Step 2 (add to form), add a **Step 3** that tags the subscriber using the Kit v4 API:
+To:
 
-   - Endpoint: `POST https://api.kit.com/v4/tags/{tag_id}/subscribers/{subscriber_id}`
-   - Uses the same `X-Kit-Api-Key` header
-   - Only fires if the `archetype` value maps to a known tag ID
-   - Logged but non-blocking (won't fail the overall response)
+```
+- Unhook Identity: ${scores.identity}
+- Reclaim Value: ${scores.value}
+- Find Your Purpose: ${scores.purpose}
+- Discover AI: ${scores.ai_relationship}
+- Create with AI: ${scores.creative_action}
+```
 
-No other files need to change -- the `archetype` slug is already passed from `ResultsPreview.tsx` to this function.
+Also update the "What Your Scores Reveal" instruction (line 61) to reference the new names (e.g., `"Your Unhook Identity score sits at 3.2 — which means..."`) so the AI uses these stage names consistently throughout the report.
 
+No other files need changes -- the radar chart and all site pages already use the correct stage names.
