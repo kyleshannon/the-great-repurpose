@@ -39,11 +39,11 @@ DESCRIPTION: ${archetype.description}
 VULNERABILITY: ${archetype.vulnerability}
 
 THEIR SCORES (1-10):
-- Identity Independence: ${scores.identity}
-- Value Clarity: ${scores.value}
-- Purpose Direction: ${scores.purpose}
-- AI Relationship: ${scores.ai_relationship}
-- Creative Action: ${scores.creative_action}
+- Unhook Identity: ${scores.identity}
+- Reclaim Value: ${scores.value}
+- Find Your Purpose: ${scores.purpose}
+- Discover AI: ${scores.ai_relationship}
+- Create with AI: ${scores.creative_action}
 
 RECOMMENDED SALON ACTIVITY: ${archetype.salonEntry.activity}
 SALON ACTIVITY DESCRIPTION: ${archetype.salonEntry.body}${openAnswerSection}
@@ -58,7 +58,7 @@ Narrative synthesis of the pattern across their five dimensions. Don't just list
 
 ## What Your Scores Reveal
 
-Go dimension by dimension but make it feel like a conversation, not a report card. For each dimension, name the score naturally (e.g., "Your Identity Independence sits at 3.2 — which means...") and explain what it means for THIS person given their overall pattern. Connect dimensions to each other.
+Go dimension by dimension but make it feel like a conversation, not a report card. For each dimension, name the score naturally (e.g., "Your Unhook Identity score sits at 3.2 — which means...") and explain what it means for THIS person given their overall pattern. Connect dimensions to each other. Always use the exact stage names: Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI, Create with AI.
 
 ${openAnswer ? `## The Thing You Haven't Started
 
