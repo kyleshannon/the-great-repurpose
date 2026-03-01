@@ -1,44 +1,34 @@
 
 
-# Align AI Report Dimensions with Site's Five Stages
+# Fix Social Media Link Previews
 
-## The Problem
-The AI-generated report references dimensions by names that don't match the site's established Five Stages:
+## Problem
+When sharing on Twitter/X and other platforms, the link preview doesn't render correctly. The `index.html` has:
+- Missing `og:url` meta tag (required by most platforms)
+- Scattered empty lines and orphaned comments between meta tags that can confuse some crawlers
 
-| Current in AI Prompt | Site's Actual Stage Name |
-|---|---|
-| Identity Independence | Unhook Identity |
-| Value Clarity | Reclaim Value |
-| Purpose Direction | Find Your Purpose |
-| AI Relationship | Discover AI |
-| Creative Action | Create with AI |
+## Fix
 
-This creates a disconnect -- users see "Unhook Identity" on the radar chart, the Phases page, and the homepage, but the AI report talks about "Identity Independence."
+**File:** `index.html`
 
-## The Fix
+Clean up the `<head>` section to include all required Open Graph and Twitter meta tags in a well-structured block:
 
-**File:** `supabase/functions/generate-interpretation/index.ts`
+1. Add `og:url` pointing to the published URL (`https://the-great-repurpose.lovable.app`)
+2. Remove stray blank lines and empty comment placeholders between the meta tags
+3. Keep all existing tag values (title, description, image) unchanged
 
-Update the system prompt's score labels (lines 41-46) from:
+The final meta block will look like:
 
-```
-- Identity Independence: ${scores.identity}
-- Value Clarity: ${scores.value}
-- Purpose Direction: ${scores.purpose}
-- AI Relationship: ${scores.ai_relationship}
-- Creative Action: ${scores.creative_action}
-```
-
-To:
-
-```
-- Unhook Identity: ${scores.identity}
-- Reclaim Value: ${scores.value}
-- Find Your Purpose: ${scores.purpose}
-- Discover AI: ${scores.ai_relationship}
-- Create with AI: ${scores.creative_action}
+```html
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://the-great-repurpose.lovable.app" />
+<meta property="og:title" content="The Great Repurpose — Find Your TGR Type" />
+<meta property="og:description" content="..." />
+<meta property="og:image" content="..." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Great Repurpose — Find Your TGR Type" />
+<meta name="twitter:description" content="..." />
+<meta name="twitter:image" content="..." />
 ```
 
-Also update the "What Your Scores Reveal" instruction (line 61) to reference the new names (e.g., `"Your Unhook Identity score sits at 3.2 — which means..."`) so the AI uses these stage names consistently throughout the report.
-
-No other files need changes -- the radar chart and all site pages already use the correct stage names.
+No other files need changes -- this is purely a static HTML fix.
