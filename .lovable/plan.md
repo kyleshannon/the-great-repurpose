@@ -1,32 +1,52 @@
 
 
-# Rename "TGR Type(s)" → "Great Repurpose Profile" + Fix Stage Names
+# Fix Score Dimension Labels to Match the Five Stages
 
-## 1. Rename "TGR Type(s)" globally
+## The Problem
 
-Same as before — replace all user-facing "TGR Type" / "TGR Types" with "Great Repurpose Profile" / "Profiles" across: `index.html`, `Navigation.tsx`, `Footer.tsx`, `Index.tsx`, `TgrTypes.tsx`, `Phases.tsx`, `SelfCheck.tsx`, `ResultsPreview.tsx`, `About.tsx`, and the `generate-interpretation` edge function.
+The score breakdown at the bottom of the report uses made-up dimension names and wrong stage numbers that don't match the Five Stages:
 
-## 2. Fix the Five Stages — Phases page is source of truth
+| Current (wrong) | Correct (from Phases.tsx) |
+|---|---|
+| Identity Independence — Stage 1 Disorientation | **Unhook Identity** — Stage 1 Disorientation |
+| Value Clarity — Stage 3 Excavation | **Reclaim Value** — Stage **2** Excavation |
+| Purpose Direction — Stage 4 Reorientation | **Find Your Purpose** — Stage **3** Reorientation |
+| AI Relationship — Stage 2 Reckoning | **Discover AI's Power** — Stage **4** Reckoning |
+| Creative Action — Stage 5 Authorship | **Start Creating** — Stage 5 Authorship |
 
-The canonical stage names (from Phases.tsx) are:
+The radar chart already uses the correct names. Only the `dimensionMeta` object in `ResultsPreview.tsx` (lines 20-26) needs fixing.
 
-| # | Stage Name | Tagline |
-|---|---|---|
-| 01 | Unhook Identity | I'm not my job. |
-| 02 | Reclaim Value | But I AM this. |
-| 03 | Find Your Purpose | This is what matters to me. |
-| 04 | Discover AI's Power | Wait — I can do THAT now? |
-| 05 | Start Creating | Amplify your impact with AI. |
+## The Fix
 
-**What needs correcting:**
+Update `dimensionMeta` in `src/pages/ResultsPreview.tsx`:
 
-| File | Current (wrong) | Correct |
-|---|---|---|
-| `supabase/functions/generate-interpretation/index.ts` line 45 | Discover AI | **Discover AI's Power** |
-| `supabase/functions/generate-interpretation/index.ts` line 46 | Create with AI | **Start Creating** |
-| `supabase/functions/generate-interpretation/index.ts` line 61 | "Always use... Discover AI, Create with AI" | "Always use... Discover AI's Power, Start Creating" |
-| `src/pages/ResultsPreview.tsx` line 386 | `"Discover AI"` (radar chart label) | **"Discover AI's Power"** |
-| `src/pages/ResultsPreview.tsx` line 387 | `"Create with AI"` (radar chart label) | **"Start Creating"** |
+```typescript
+const dimensionMeta: Record<DimensionKey, { label: string; stage: string }> = {
+  identity:        { label: "Unhook Identity",     stage: "Stage 1 — Disorientation" },
+  value:           { label: "Reclaim Value",       stage: "Stage 2 — Excavation" },
+  purpose:         { label: "Find Your Purpose",   stage: "Stage 3 — Reorientation" },
+  ai_relationship: { label: "Discover AI's Power", stage: "Stage 4 — Reckoning" },
+  creative_action: { label: "Start Creating",      stage: "Stage 5 — Authorship" },
+};
+```
 
-Stages 1–3 are already correct everywhere. `Index.tsx` and `Phases.tsx` already use the correct names — no changes needed there.
+Also update the SelfCheck dimension labels (visible during the quiz) to match:
+
+| Current | Correct |
+|---|---|
+| VALUE CLARITY | RECLAIM VALUE |
+| PURPOSE DIRECTION | FIND YOUR PURPOSE |
+| AI RELATIONSHIP | DISCOVER AI'S POWER |
+| CREATIVE ACTION | START CREATING |
+| IDENTITY | UNHOOK IDENTITY |
+| IDENTITY + VALUE | UNHOOK IDENTITY + RECLAIM VALUE |
+| PURPOSE + AI | FIND YOUR PURPOSE + DISCOVER AI'S POWER |
+
+And update the TgrTypes.tsx description that references the old dimension names.
+
+## Files Changed
+
+- `src/pages/ResultsPreview.tsx` — fix `dimensionMeta` labels and stage numbers
+- `src/pages/SelfCheck.tsx` — fix question dimension labels
+- `src/pages/TgrTypes.tsx` — update dimension name references in copy
 
