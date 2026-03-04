@@ -76,13 +76,13 @@ const TgrTypes = () => {
           <div className="max-w-4xl mx-auto text-center">
             <ScrollFadeUp>
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
-                The 10 TGR Types
+                The 10 Great Repurpose Profiles
               </p>
               <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mb-6">
                 Everyone navigating this transition has a shape.
               </h1>
               <p className="font-sans text-cream/70 text-lg leading-relaxed max-w-2xl mx-auto mb-4">
-                The Great Repurpose measures five dimensions of readiness: Identity Independence, Value Clarity, Purpose Direction, AI Relationship, and Creative Action. Your pattern across those five dimensions determines your TGR Type — and what you're building toward.
+                The Great Repurpose measures five dimensions of readiness: Identity Independence, Value Clarity, Purpose Direction, AI Relationship, and Creative Action. Your pattern across those five dimensions determines your Great Repurpose Profile — and what you're building toward.
               </p>
               <p className="font-sans text-cream/50 text-base max-w-2xl mx-auto">
                 There are ten types. None of them are bad. All of them are a starting point.
@@ -113,8 +113,8 @@ const TgrTypes = () => {
                   to="/selfcheck"
                   className="inline-block bg-coral text-cream font-sans font-medium text-lg px-10 py-5 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-3"
                 >
-                  Find Your TGR Type →
-                </Link>
+                   Find Your Profile →
+                 </Link>
                 <p className="text-navy/50 text-sm font-sans">
                   Discover where you are — and what you're building toward.
                 </p>

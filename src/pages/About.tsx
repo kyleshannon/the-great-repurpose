@@ -91,7 +91,7 @@ const About = () => {
 
           <ScrollFadeUp delay={320}>
             <p className="font-sans text-cream/70 text-lg mb-8">
-              If finding your TGR Type showed you where you are, the AI Salon is where you go next.
+              If finding your Great Repurpose Profile showed you where you are, the AI Salon is where you go next.
             </p>
             <div className="text-center">
               <a

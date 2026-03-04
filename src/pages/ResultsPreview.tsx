@@ -208,9 +208,9 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
 
   return (
     <div className="border border-cream/10 rounded-xl p-8 text-center bg-cream/[0.03]">
-      <h2 className="font-serif text-cream text-xl mb-2">Your full TGR profile is ready.</h2>
+      <h2 className="font-serif text-cream text-xl mb-2">Your full Great Repurpose Profile is ready.</h2>
       <p className="font-sans text-cream/50 text-sm mb-6 max-w-md mx-auto">
-        We'll show you what your type means, where you're strongest, what to watch out for — and the one thing that would help you most right now.
+        We'll show you what your profile means, where you're strongest, what to watch out for — and the one thing that would help you most right now.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <label htmlFor="email-input" className="sr-only">Email address</label>
@@ -383,8 +383,8 @@ const ResultsPreview = () => {
     { subject: "Unhook Identity", value: scores.identity, fullMark: 10 },
     { subject: "Reclaim Value", value: scores.value, fullMark: 10 },
     { subject: "Find Your Purpose", value: scores.purpose, fullMark: 10 },
-    { subject: "Discover AI", value: scores.ai_relationship, fullMark: 10 },
-    { subject: "Create with AI", value: scores.creative_action, fullMark: 10 },
+     { subject: "Discover AI's Power", value: scores.ai_relationship, fullMark: 10 },
+     { subject: "Start Creating", value: scores.creative_action, fullMark: 10 },
   ];
 
   const selfCheckUrl = `${window.location.origin}/selfcheck`;
@@ -392,7 +392,7 @@ const ResultsPreview = () => {
   const archetypeSlug = getArchetypeSlug(archetype);
 
   // Shareable summary text
-  const shareText = `I'm ${archetype.name}. ${archetype.tagline}\n\nRecommended: ${archetype.salonEntry.activity}\n\nWhat's your TGR Type? Find out at TheGreatRepurpose.com — a framework for people navigating the AI transition.`;
+  const shareText = `I'm ${archetype.name}. ${archetype.tagline}\n\nRecommended: ${archetype.salonEntry.activity}\n\nWhat's your Great Repurpose Profile? Find out at TheGreatRepurpose.com — a framework for people navigating the AI transition.`;
 
   const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
@@ -464,9 +464,9 @@ const ResultsPreview = () => {
   };
 
   const handleShareX = () => {
-    const text = encodeURIComponent(
-      `I'm ${archetype.name}. ${archetype.tagline} What's your TGR Type? →`
-    );
+     const text = encodeURIComponent(
+       `I'm ${archetype.name}. ${archetype.tagline} What's your Great Repurpose Profile? →`
+     );
     const url = encodeURIComponent(selfCheckUrl);
     window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
   };
@@ -509,10 +509,10 @@ const ResultsPreview = () => {
               Your Results
             </p>
             <h1 className="font-serif text-cream text-4xl md:text-5xl mb-4">
-              Your TGR Report is ready.
+              Your Great Repurpose Report is ready.
             </h1>
             <p className="font-sans text-cream/60 text-base mb-10">
-              Enter your email to unlock your personalized report — including your TGR Type, where you stand across the five dimensions, and what to do next.
+              Enter your email to unlock your personalized report — including your Great Repurpose Profile, where you stand across the five dimensions, and what to do next.
             </p>
 
             <EmailGate onSuccess={handleEmailSuccess} />
@@ -526,7 +526,7 @@ const ResultsPreview = () => {
           {/* ── Archetype hero + radar ── */}
           <section className="bg-navy pt-20 md:pt-28 pb-8 md:pb-12 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">Your TGR Type</p>
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">Your Great Repurpose Profile</p>
               <h1 className="font-serif text-cream text-4xl md:text-5xl mb-2">
                 You are {archetype.name}.
               </h1>
@@ -686,12 +686,12 @@ const ResultsPreview = () => {
           {/* Share + Download */}
           <section className="bg-navy py-16 px-6">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-serif text-cream text-2xl mb-3">Share your TGR Type.</h2>
+              <h2 className="font-serif text-cream text-2xl mb-3">Share your Great Repurpose Profile.</h2>
               <p className="font-sans text-cream/50 text-sm mb-4 whitespace-pre-line max-w-md mx-auto">
                 {shareText}
               </p>
-              <Link to="/types" className="inline-block text-coral font-sans text-sm hover:underline mb-8">
-                Explore all 10 TGR Types →
+               <Link to="/types" className="inline-block text-coral font-sans text-sm hover:underline mb-8">
+                 Explore all 10 Great Repurpose Profiles →
               </Link>
               <div className="flex flex-wrap justify-center gap-4">
                 <button
