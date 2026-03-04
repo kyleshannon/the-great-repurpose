@@ -22,7 +22,7 @@ export function Footer() {
               { to: "/phases", label: "The Five Stages" },
               { to: "/types", label: "Great Repurpose Profiles" },
               { to: "/about", label: "About" },
-              { to: "/selfcheck", label: "What's Your Profile?" },
+              { to: "/selfcheck", label: "What's Your Repurpose Profile?" },
             ].map(({ to, label }) => (
               <Link key={to} to={to} className="text-cream/70 hover:text-coral text-sm font-sans transition-colors">
                 {label}
