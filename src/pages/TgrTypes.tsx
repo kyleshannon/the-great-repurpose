@@ -113,7 +113,7 @@ const TgrTypes = () => {
                   to="/selfcheck"
                   className="inline-block bg-coral text-cream font-sans font-medium text-lg px-10 py-5 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-3"
                 >
-                   What's Your Great Repurpose Profile? →
+                   What's Your Repurpose Profile? →
                  </Link>
                 <p className="text-navy/50 text-sm font-sans">
                   Discover where you are — and what you're building toward.
