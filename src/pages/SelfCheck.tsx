@@ -211,7 +211,7 @@ const SelfCheck = () => {
             }`}
           >
             <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4 text-center">
-              {questions[currentQ].dimension}
+              Question {currentQ + 1} of {questions.length}
             </p>
             <p className="font-serif text-cream text-lg md:text-xl italic text-center mb-8 leading-snug">
               "{questions[currentQ].context}"
