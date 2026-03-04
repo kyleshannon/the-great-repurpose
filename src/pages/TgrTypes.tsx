@@ -82,7 +82,7 @@ const TgrTypes = () => {
                 Everyone navigating this transition has a shape.
               </h1>
               <p className="font-sans text-cream/70 text-lg leading-relaxed max-w-2xl mx-auto mb-4">
-                The Great Repurpose measures five dimensions of readiness: Identity Independence, Value Clarity, Purpose Direction, AI Relationship, and Creative Action. Your pattern across those five dimensions determines your Great Repurpose Profile — and what you're building toward.
+                The Great Repurpose measures five dimensions of readiness: Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, and Start Creating. Your pattern across those five dimensions determines your Great Repurpose Profile — and what you're building toward.
               </p>
               <p className="font-sans text-cream/50 text-base max-w-2xl mx-auto">
                 There are ten types. None of them are bad. All of them are a starting point.

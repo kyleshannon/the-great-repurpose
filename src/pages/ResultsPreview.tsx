@@ -18,11 +18,11 @@ import { matchArchetype, getArchetypeSlug, type Scores, type Archetype } from "@
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
 
 const dimensionMeta: Record<DimensionKey, { label: string; stage: string }> = {
-  identity: { label: "Identity Independence", stage: "Stage 1 — Disorientation" },
-  value: { label: "Value Clarity", stage: "Stage 3 — Excavation" },
-  purpose: { label: "Purpose Direction", stage: "Stage 4 — Reorientation" },
-  ai_relationship: { label: "AI Relationship", stage: "Stage 2 — Reckoning" },
-  creative_action: { label: "Creative Action", stage: "Stage 5 — Authorship" },
+  identity:        { label: "Unhook Identity",     stage: "Stage 1 — Disorientation" },
+  value:           { label: "Reclaim Value",       stage: "Stage 2 — Excavation" },
+  purpose:         { label: "Find Your Purpose",   stage: "Stage 3 — Reorientation" },
+  ai_relationship: { label: "Discover AI's Power", stage: "Stage 4 — Reckoning" },
+  creative_action: { label: "Start Creating",      stage: "Stage 5 — Authorship" },
 };
 
 const dimensionOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];
