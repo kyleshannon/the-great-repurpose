@@ -168,7 +168,7 @@ const SelfCheck = () => {
         {currentQ === 0 && (
           <div className="text-center mb-8 max-w-lg">
             <h1 className="font-serif text-cream text-2xl md:text-3xl leading-tight mb-2">
-              Find Your TGR Type
+              Find Your Great Repurpose Profile
             </h1>
             <p className="font-sans text-cream/50 text-sm">
               7 questions about moments you'll recognize. Then we'll show you where you are — and what you're building toward.
@@ -250,7 +250,7 @@ const SelfCheck = () => {
               : "bg-cream/10 text-cream/20 cursor-not-allowed"
           }`}
         >
-          {isOpenEndedStep ? "See My TGR Type →" : "Next →"}
+          {isOpenEndedStep ? "See My Profile →" : "Next →"}
         </button>
         {isOpenEndedStep && (
           <button

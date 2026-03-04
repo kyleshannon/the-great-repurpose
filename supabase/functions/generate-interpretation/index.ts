@@ -29,11 +29,11 @@ serve(async (req) => {
       ? `\n\nTHEIR OPEN-ENDED ANSWER to "What's the thing you keep thinking about but haven't started yet?":\n"${openAnswer}"\n\nThis is important. Weave this into the interpretation — especially in the "The Thing You Haven't Started" section. Connect it to their type and scores. Be specific about why THIS thing, for THIS person, matters.`
       : `\n\nThey did not answer the open-ended question. Skip the "## The Thing You Haven't Started" section entirely.`;
 
-    const systemPrompt = `You are writing a personalized interpretation report for someone who just completed The Great Repurpose Self-Check — an assessment that measures five dimensions of readiness for the AI transition.
+    const systemPrompt = `You are writing a personalized interpretation report for someone who just completed The Great Repurpose Self-Check — an assessment that measures five dimensions of readiness for the AI transition. Their result is called their "Great Repurpose Profile."
 
 You are warm, perceptive, and direct — like a letter from a friend who happens to be a therapist. You see patterns. You name things people feel but haven't articulated.
 
-THEIR TGR TYPE: "${archetype.name}"
+THEIR GREAT REPURPOSE PROFILE: "${archetype.name}"
 TAGLINE: "${archetype.tagline}"
 DESCRIPTION: ${archetype.description}
 VULNERABILITY: ${archetype.vulnerability}
@@ -42,8 +42,8 @@ THEIR SCORES (1-10):
 - Unhook Identity: ${scores.identity}
 - Reclaim Value: ${scores.value}
 - Find Your Purpose: ${scores.purpose}
-- Discover AI: ${scores.ai_relationship}
-- Create with AI: ${scores.creative_action}
+- Discover AI's Power: ${scores.ai_relationship}
+- Start Creating: ${scores.creative_action}
 
 RECOMMENDED SALON ACTIVITY: ${archetype.salonEntry.activity}
 SALON ACTIVITY DESCRIPTION: ${archetype.salonEntry.body}${openAnswerSection}
@@ -58,7 +58,7 @@ Narrative synthesis of the pattern across their five dimensions. Don't just list
 
 ## What Your Scores Reveal
 
-Go dimension by dimension but make it feel like a conversation, not a report card. For each dimension, name the score naturally (e.g., "Your Unhook Identity score sits at 3.2 — which means...") and explain what it means for THIS person given their overall pattern. Connect dimensions to each other. Always use the exact stage names: Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI, Create with AI.
+Go dimension by dimension but make it feel like a conversation, not a report card. For each dimension, name the score naturally (e.g., "Your Unhook Identity score sits at 3.2 — which means...") and explain what it means for THIS person given their overall pattern. Connect dimensions to each other. Always use the exact stage names: Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, Start Creating.
 
 ${openAnswer ? `## The Thing You Haven't Started
 

@@ -20,9 +20,9 @@ export function Footer() {
             {[
               { to: "/", label: "Home" },
               { to: "/phases", label: "The Five Stages" },
-              { to: "/types", label: "TGR Types" },
+              { to: "/types", label: "Great Repurpose Profiles" },
               { to: "/about", label: "About" },
-              { to: "/selfcheck", label: "Find Your TGR Type" },
+              { to: "/selfcheck", label: "Find Your Profile" },
             ].map(({ to, label }) => (
               <Link key={to} to={to} className="text-cream/70 hover:text-coral text-sm font-sans transition-colors">
                 {label}

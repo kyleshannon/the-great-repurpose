@@ -102,13 +102,13 @@ const Index = () => {
               AI is about to change every single job — and maybe even how we define work entirely.
             </p>
             <p className="font-sans text-cream/70 text-base mx-auto mb-6 leading-relaxed text-left">
-              We're all going through this, and we're all in different places. Some of us are holding on to what we were. Some of us are rebuilding. Some of us just felt something shift and can't name it yet. We've identified 10 "TGR Types" that capture where people are right now and what they're building toward.
+              We're all going through this, and we're all in different places. Some of us are holding on to what we were. Some of us are rebuilding. Some of us just felt something shift and can't name it yet. We've identified 10 Great Repurpose Profiles that capture where people are right now and what they're building toward.
             </p>
             <Link
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-4"
             >
-              Find Your TGR Type →
+               Find Your Profile →
             </Link>
             <p className="text-cream/50 text-sm font-sans mb-6">
               Discover where you are — and what you're building toward.
@@ -271,7 +271,7 @@ const Index = () => {
                 to="/selfcheck"
                 className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity"
               >
-                Find Your TGR Type →
+                 Find Your Profile →
               </Link>
             </div>
           </ScrollFadeUp>
@@ -342,7 +342,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── Section 5b: The 10 TGR Types ── */}
+      {/* ── Section 5b: The 10 Great Repurpose Profiles ── */}
       <section className="bg-cream py-16 md:py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <ScrollFadeUp>
@@ -377,8 +377,8 @@ const Index = () => {
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-4"
             >
-              Find Your TGR Type →
-            </Link>
+               Find Your Profile →
+             </Link>
             <p className="text-navy/50 text-sm font-sans">
               7 questions. 2 minutes. Then we'll tell you what you're building toward.
             </p>
@@ -422,7 +422,7 @@ const Index = () => {
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-lg px-10 py-5 rounded-full pulse-coral hover:opacity-90 transition-opacity"
             >
-              Find Your TGR Type →
+              Find Your Profile →
             </Link>
             <p className="text-navy/50 text-sm font-sans mt-3">
               Discover where you are — and what you're building toward.

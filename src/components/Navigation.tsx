@@ -26,7 +26,7 @@ export function Navigation() {
 
   const navLinks = [
     { to: "/phases", label: "The Five Stages" },
-    { to: "/types", label: "TGR Types" },
+    { to: "/types", label: "Profiles" },
     { to: "/about", label: "About" },
   ];
 
@@ -69,7 +69,7 @@ export function Navigation() {
                 to={reportUrl}
                 className="text-coral hover:text-cream text-xs uppercase tracking-widest font-sans transition-colors relative group"
               >
-                Your TGR Report
+                Your Report
                 <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-coral group-hover:w-full transition-all duration-300" aria-hidden="true" />
               </Link>
             )}
@@ -80,7 +80,7 @@ export function Navigation() {
             to="/selfcheck"
             className="hidden md:inline-flex items-center gap-2 bg-coral text-cream text-sm font-sans font-medium px-5 py-2.5 rounded-full pulse-coral hover:opacity-90 transition-opacity"
           >
-            Find Your TGR Type
+            Find Your Profile
           </Link>
 
           {/* Mobile hamburger */}
@@ -113,14 +113,14 @@ export function Navigation() {
               to={reportUrl}
               className="text-coral text-2xl font-serif tracking-wide hover:text-cream transition-colors"
             >
-              Your TGR Report
+              Your Report
             </Link>
           )}
           <Link
             to="/selfcheck"
             className="mt-4 bg-coral text-cream text-base font-sans font-medium px-8 py-3 rounded-full pulse-coral hover:opacity-90 transition-opacity"
           >
-            Find Your TGR Type →
+            Find Your Profile →
           </Link>
         </div>
       )}
