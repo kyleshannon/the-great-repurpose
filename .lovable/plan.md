@@ -1,34 +1,32 @@
 
 
-# Fix Social Media Link Previews
+# Rename "TGR Type(s)" → "Great Repurpose Profile" + Fix Stage Names
 
-## Problem
-When sharing on Twitter/X and other platforms, the link preview doesn't render correctly. The `index.html` has:
-- Missing `og:url` meta tag (required by most platforms)
-- Scattered empty lines and orphaned comments between meta tags that can confuse some crawlers
+## 1. Rename "TGR Type(s)" globally
 
-## Fix
+Same as before — replace all user-facing "TGR Type" / "TGR Types" with "Great Repurpose Profile" / "Profiles" across: `index.html`, `Navigation.tsx`, `Footer.tsx`, `Index.tsx`, `TgrTypes.tsx`, `Phases.tsx`, `SelfCheck.tsx`, `ResultsPreview.tsx`, `About.tsx`, and the `generate-interpretation` edge function.
 
-**File:** `index.html`
+## 2. Fix the Five Stages — Phases page is source of truth
 
-Clean up the `<head>` section to include all required Open Graph and Twitter meta tags in a well-structured block:
+The canonical stage names (from Phases.tsx) are:
 
-1. Add `og:url` pointing to the published URL (`https://the-great-repurpose.lovable.app`)
-2. Remove stray blank lines and empty comment placeholders between the meta tags
-3. Keep all existing tag values (title, description, image) unchanged
+| # | Stage Name | Tagline |
+|---|---|---|
+| 01 | Unhook Identity | I'm not my job. |
+| 02 | Reclaim Value | But I AM this. |
+| 03 | Find Your Purpose | This is what matters to me. |
+| 04 | Discover AI's Power | Wait — I can do THAT now? |
+| 05 | Start Creating | Amplify your impact with AI. |
 
-The final meta block will look like:
+**What needs correcting:**
 
-```html
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://the-great-repurpose.lovable.app" />
-<meta property="og:title" content="The Great Repurpose — Find Your TGR Type" />
-<meta property="og:description" content="..." />
-<meta property="og:image" content="..." />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="The Great Repurpose — Find Your TGR Type" />
-<meta name="twitter:description" content="..." />
-<meta name="twitter:image" content="..." />
-```
+| File | Current (wrong) | Correct |
+|---|---|---|
+| `supabase/functions/generate-interpretation/index.ts` line 45 | Discover AI | **Discover AI's Power** |
+| `supabase/functions/generate-interpretation/index.ts` line 46 | Create with AI | **Start Creating** |
+| `supabase/functions/generate-interpretation/index.ts` line 61 | "Always use... Discover AI, Create with AI" | "Always use... Discover AI's Power, Start Creating" |
+| `src/pages/ResultsPreview.tsx` line 386 | `"Discover AI"` (radar chart label) | **"Discover AI's Power"** |
+| `src/pages/ResultsPreview.tsx` line 387 | `"Create with AI"` (radar chart label) | **"Start Creating"** |
 
-No other files need changes -- this is purely a static HTML fix.
+Stages 1–3 are already correct everywhere. `Index.tsx` and `Phases.tsx` already use the correct names — no changes needed there.
+
