@@ -108,7 +108,7 @@ const Index = () => {
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-4"
             >
-               What's Your Repurpose Profile? →
+               Get Your Repurpose Profile →
             </Link>
             <p className="text-cream/50 text-sm font-sans mb-6">
               Discover where you are — and what you're building toward.
