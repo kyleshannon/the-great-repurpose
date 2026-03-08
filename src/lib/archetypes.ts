@@ -19,7 +19,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Mastermind Practice Lab",
       body: "You don't need introductory resources — you need peers operating at your level. The Mastermind Practice Lab is where people like you pressure-test ideas, share what's working, and push each other further.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/spaces/21791897",
     },
   },
   "the-awakener": {
