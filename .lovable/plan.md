@@ -1,52 +1,22 @@
 
 
-# Fix Score Dimension Labels to Match the Five Stages
+# Fix: Returning to Results Shows Empty Report
 
-## The Problem
+## Root Cause
 
-The score breakdown at the bottom of the report uses made-up dimension names and wrong stage numbers that don't match the Five Stages:
+When the user completes the quiz on `/results/preview`, the AI interpretation streams in. When they enter their email, `handleEmailSuccess` inserts the DB record, sets `resultId`, and immediately navigates to `/results/:id`. This **unmounts** the component before the save effect (which watches `streamDone && resultId`) can write the interpretation to the database.
 
-| Current (wrong) | Correct (from Phases.tsx) |
-|---|---|
-| Identity Independence — Stage 1 Disorientation | **Unhook Identity** — Stage 1 Disorientation |
-| Value Clarity — Stage 3 Excavation | **Reclaim Value** — Stage **2** Excavation |
-| Purpose Direction — Stage 4 Reorientation | **Find Your Purpose** — Stage **3** Reorientation |
-| AI Relationship — Stage 2 Reckoning | **Discover AI's Power** — Stage **4** Reckoning |
-| Creative Action — Stage 5 Authorship | **Start Creating** — Stage 5 Authorship |
+Result: the `ai_interpretation` column stays `null`. When the user returns via the nav link, the DB record loads with no cached interpretation, and the pre-gen guard (`!routeId`) prevents re-streaming. The user sees an empty report with the "Writing your report..." indicator that never resolves.
 
-The radar chart already uses the correct names. Only the `dimensionMeta` object in `ResultsPreview.tsx` (lines 20-26) needs fixing.
+## Fix
 
-## The Fix
+Two changes in `src/pages/ResultsPreview.tsx`:
 
-Update `dimensionMeta` in `src/pages/ResultsPreview.tsx`:
+1. **Save interpretation before navigating**: In `handleEmailSuccess`, if the streamed text is already available, include it in the initial `insert` call (or `update` immediately after insert) so it's persisted before the navigation unmounts the component.
 
-```typescript
-const dimensionMeta: Record<DimensionKey, { label: string; stage: string }> = {
-  identity:        { label: "Unhook Identity",     stage: "Stage 1 — Disorientation" },
-  value:           { label: "Reclaim Value",       stage: "Stage 2 — Excavation" },
-  purpose:         { label: "Find Your Purpose",   stage: "Stage 3 — Reorientation" },
-  ai_relationship: { label: "Discover AI's Power", stage: "Stage 4 — Reckoning" },
-  creative_action: { label: "Start Creating",      stage: "Stage 5 — Authorship" },
-};
-```
-
-Also update the SelfCheck dimension labels (visible during the quiz) to match:
-
-| Current | Correct |
-|---|---|
-| VALUE CLARITY | RECLAIM VALUE |
-| PURPOSE DIRECTION | FIND YOUR PURPOSE |
-| AI RELATIONSHIP | DISCOVER AI'S POWER |
-| CREATIVE ACTION | START CREATING |
-| IDENTITY | UNHOOK IDENTITY |
-| IDENTITY + VALUE | UNHOOK IDENTITY + RECLAIM VALUE |
-| PURPOSE + AI | FIND YOUR PURPOSE + DISCOVER AI'S POWER |
-
-And update the TgrTypes.tsx description that references the old dimension names.
+2. **Fallback: stream on `/results/:id` if interpretation is missing**: In the DB-load effect, if the fetched record has no `ai_interpretation`, trigger streaming so the user isn't stuck on an empty page. Remove the `!routeId` guard from the pre-gen effect, replacing it with a `!cachedInterpretation` check.
 
 ## Files Changed
 
-- `src/pages/ResultsPreview.tsx` — fix `dimensionMeta` labels and stage numbers
-- `src/pages/SelfCheck.tsx` — fix question dimension labels
-- `src/pages/TgrTypes.tsx` — update dimension name references in copy
+- `src/pages/ResultsPreview.tsx` — save interpretation in the insert call; add fallback streaming for records missing interpretation
 
