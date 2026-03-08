@@ -107,7 +107,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "AI Learning Lab",
       body: "You're close. The AI Learning Lab will help you close the gap on tools, while the community helps sharpen the rest. You don't need a transformation — you need a catalyst.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/spaces/12680384",
     },
   },
   "the-unlocker": {
