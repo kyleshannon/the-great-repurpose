@@ -91,7 +91,7 @@ const archetypes: Record<string, Archetype> = {
   "the-translator": {
     name: "The Translator",
     tagline: "You're building toward bridging two worlds.",
-    description: "Strong on the ends — identity is solid and tools or creation are engaged — but there's a structural hole in value clarity or purpose direction. The ends are impressive, the middle is the risk.",
+    description: "Strong on the outside edges — you know who you are and you're comfortable with tools or creation. But there's a gap in the middle: you haven't connected your identity to a clear direction. You're doing impressive things without a strategic center.",
     vulnerability: "Activity without direction is just noise. You're building impressively but the strategic layer is thin. Without the middle, the ends don't connect.",
     salonEntry: {
       activity: "Learn Out Loud",
