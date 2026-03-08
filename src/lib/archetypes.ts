@@ -112,7 +112,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-unlocker": {
     name: "The Unlocker",
-    tagline: "You're building toward freedom from the old story.",
+    tagline: "You're still tying who you are to the title you held.",
     description: "Identity is the active bottleneck. You're in the process of separating self from title, and nothing else can move until this does. Everything is waiting behind this one door.",
     vulnerability: "Every headline about AI replacing jobs lands like a personal attack. You're not processing information — you're processing threat. The grip on the old identity is the thing keeping you stuck.",
     salonEntry: {
