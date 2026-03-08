@@ -10,8 +10,8 @@ const phases = [
     tagline: "I'm not my job.",
     description:
       "The hardest step and the most necessary. You built an identity on what you do — the title, the craft, the expertise. When that gets disrupted, the instinct is to hold tighter. This phase is about loosening the grip. Not abandoning what you've built. Recognizing that you are not reducible to a set of tasks a machine can absorb.",
-    borderColor: "border-cream/40",
-    textColor: "text-cream/70",
+    borderColor: "border-coral",
+    textColor: "text-coral",
   },
   {
     number: "02",
