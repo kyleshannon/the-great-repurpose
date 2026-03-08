@@ -241,32 +241,7 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
 
 // ── PDF Generator ────────────────────────────────────────────────────────────
 
-async function generatePDF(reportRef: HTMLDivElement) {
-  const canvas = await html2canvas(reportRef, {
-    backgroundColor: "#1a1c1e",
-    scale: 2,
-    useCORS: true,
-    logging: false,
-  });
-
-  const imgData = canvas.toDataURL("image/png");
-  const imgWidth = 210;
-  const imgHeight = (canvas.height * imgWidth) / canvas.width;
-  const pdf = new jsPDF("p", "mm", "a4");
-  const pageHeight = 297;
-  let heightLeft = imgHeight;
-  let position = 0;
-
-  pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
-  heightLeft -= pageHeight;
-  while (heightLeft > 0) {
-    position = heightLeft - imgHeight;
-    pdf.addPage();
-    pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
-    heightLeft -= pageHeight;
-  }
-  pdf.save("great-repurpose-results.pdf");
-}
+// PDF generation moved to src/lib/generateReport.ts
 
 // ── AI Salon activities data ─────────────────────────────────────────────────
 
