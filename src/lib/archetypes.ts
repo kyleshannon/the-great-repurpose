@@ -118,7 +118,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Friday Office Hours",
       body: "Start with people, not tools. The Friday Office Hours sessions are full of people working through the same identity questions. Hearing someone else say 'I don't know who I am without my title' can be the thing that cracks the door open.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet",
     },
   },
 };
