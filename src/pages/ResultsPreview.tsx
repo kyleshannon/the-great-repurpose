@@ -347,6 +347,10 @@ const ResultsPreview = () => {
         }
         if ((data as any).ai_interpretation) {
           setCachedInterpretation((data as any).ai_interpretation);
+        } else {
+          // No cached interpretation — trigger fallback streaming
+          const archetypeObj = matchArchetype(scoresToArchetypeInput(s));
+          stream(s, archetypeObj, (data as any).open_answer || "");
         }
         setLoading(false);
       });
@@ -399,19 +403,25 @@ const ResultsPreview = () => {
     const lowestDim = getLowestDimension(scores);
 
     try {
+      // Include the already-streamed interpretation so it's persisted before navigation unmounts
+      const insertPayload: any = {
+        email,
+        identity_score: scores.identity,
+        value_score: scores.value,
+        purpose_score: scores.purpose,
+        ai_relationship_score: scores.ai_relationship,
+        creative_action_score: scores.creative_action,
+        lowest_dimension: lowestDim,
+        archetype: archetype.name,
+        open_answer: openAnswer || null,
+      };
+      if (streamedText) {
+        insertPayload.ai_interpretation = streamedText;
+      }
+
       const { data, error } = await supabase
         .from("selfcheck_results")
-        .insert({
-          email,
-          identity_score: scores.identity,
-          value_score: scores.value,
-          purpose_score: scores.purpose,
-          ai_relationship_score: scores.ai_relationship,
-          creative_action_score: scores.creative_action,
-          lowest_dimension: lowestDim,
-          archetype: archetype.name,
-          open_answer: openAnswer || null,
-        } as any)
+        .insert(insertPayload)
         .select("id")
         .single();
 
