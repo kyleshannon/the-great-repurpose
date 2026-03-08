@@ -651,31 +651,8 @@ const ResultsPreview = () => {
 
           </div>{/* end reportRef */}
 
-          {/* ── Community context + Primary recommendation ── */}
-          <section className="bg-cream py-16 px-6">
-            <div className="max-w-2xl mx-auto text-center">
-              <p className="font-sans text-navy/70 text-base leading-relaxed mb-10 max-w-lg mx-auto">
-                Making this transition on your own isn't the move. You should be in community — and based on where you are right now, here are some things from the AI Salon you may find valuable.
-              </p>
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
-                Recommended for You
-              </p>
-              <h2 className="font-serif text-navy text-2xl mb-4">
-                {archetype.salonEntry.activity}
-              </h2>
-              <p className="font-sans text-navy/70 text-base leading-relaxed mb-6">
-                {archetype.salonEntry.body}
-              </p>
-              <a
-                href={archetype.salonEntry.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block border border-coral text-coral font-sans text-sm font-medium px-8 py-3 rounded-full hover:bg-coral hover:text-cream transition-colors"
-              >
-                {archetype.salonEntry.activity} →
-              </a>
-            </div>
-          </section>
+
+          {/* ── Secondary recommendations (light section) ── */}
 
           {/* Secondary recommendations with descriptions */}
           <section className="bg-cream py-16 px-6 border-t border-navy/10">
