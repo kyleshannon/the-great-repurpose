@@ -52,7 +52,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Friday Office Hours",
       body: "Bring your spark to a room full of people who will see it. Friday Office Hours is where nascent breakthroughs get their first audience — and where you can start to see how your one strong dimension connects to the others.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet",
     },
   },
   "the-original": {
