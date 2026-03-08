@@ -98,7 +98,7 @@ const TgrTypes = () => {
               {types.map((type, i) => (
                 <ScrollFadeUp key={type.name} delay={i * 60}>
                   <div className={`border-l-4 ${type.color} bg-navy/5 border border-navy/10 rounded-r-lg p-7 h-full`}>
-                    <h3 className="font-serif text-navy text-xl mb-1">{type.name}</h3>
+                    <h3 className="font-serif text-emerald-700 text-xl mb-1">{type.name}</h3>
                     <p className="font-serif text-navy/60 text-sm italic mb-3">{type.tagline}</p>
                     <p className="font-sans text-navy/70 text-sm leading-relaxed">{type.description}</p>
                   </div>
