@@ -58,7 +58,7 @@ const archetypes: Record<string, Archetype> = {
   "the-original": {
     name: "The Original",
     tagline: "You're building toward becoming irreplaceable.",
-    description: "Identity unhooked and value found, but you haven't aimed it or engaged with tools. You know who you are and what you bring. You just haven't done anything with it yet.",
+    description: "Identity unhooked and value found, but you haven't aimed it anywhere yet. You know who you are and what you bring. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it.",
     vulnerability: "Clarity without action becomes complacency. Knowing your value isn't the same as deploying it. The world won't wait for you to feel ready.",
     salonEntry: {
       activity: "AI Learning Lab",
