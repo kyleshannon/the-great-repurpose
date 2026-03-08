@@ -483,10 +483,14 @@ const ResultsPreview = () => {
   };
 
   const handleDownloadPDF = async () => {
-    if (!reportRef.current) return;
+    if (!scores || !archetype) return;
     setGenerating(true);
     try {
-      await generatePDF(reportRef.current);
+      generateReportPDF({
+        archetype,
+        scores,
+        interpretation: interpretationText || "",
+      });
     } catch (err) {
       console.error("PDF generation failed:", err);
     }
