@@ -170,7 +170,7 @@ const Index = () => {
           <ScrollFadeUp>
             <p className="font-serif text-cream text-2xl md:text-3xl italic leading-snug mb-12">
               "We didn't ask for this.<br />
-              We can't escape it.<br />
+              It's here.<br />
               The only way forward is through…<br />
               and you're not alone."
             </p>
