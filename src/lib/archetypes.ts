@@ -102,7 +102,7 @@ const archetypes: Record<string, Archetype> = {
   "the-catalyst": {
     name: "The Catalyst",
     tagline: "You're building toward amplifying everything you touch.",
-    description: "Solid across the board. No catastrophic gaps. No single dimension fully resolved either. You're one push from accelerating — and the most common profile is also the most important to make compelling.",
+    description: "Solid across the board. No catastrophic gaps. No single dimension fully resolved either. You're balanced, capable, and closer than you think. The risk is coasting — 'good enough' can become a ceiling. One deliberate push could change everything.",
     vulnerability: "Complacency. 'Good enough' can become the enemy of great. The last 20% is where the real differentiation happens.",
     salonEntry: {
       activity: "AI Learning Lab",

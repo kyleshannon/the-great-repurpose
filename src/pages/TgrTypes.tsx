@@ -31,7 +31,7 @@ const types = [
   {
     name: "The Translator",
     tagline: "You're building toward bridging two worlds.",
-    description: "You're strong on the outside edges. You know who you are and you're comfortable with tools or creation. But there's a gap in the middle — you haven't fully articulated what makes you valuable, or you haven't locked in a clear direction. You're doing impressive things without a strategic center. The next step is excavation: figure out what's actually worth building before you build more of it.",
+    description: "You're strong on the outside edges — you know who you are and you're comfortable with tools or creation. But there's a gap in the middle: you haven't connected your identity to a clear direction. You're doing impressive things without a strategic center. The next step is to slow down and ask what's worth building — before you build more of it.",
     color: "border-periwinkle",
   },
   {

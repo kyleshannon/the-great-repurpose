@@ -69,11 +69,11 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-cream text-3xl md:text-4xl mb-4 leading-tight">
-              The Great Repurpose is the diagnosis.<br />
-              The AI Salon is the treatment.
+              Your Repurpose Profile is a starting point.<br />
+              The AI Salon is where you figure it out.
             </h2>
             <p className="font-sans text-cream/70 text-lg leading-relaxed mb-14">
-              The AI Salon is a community of artists, builders, educators, and policy thinkers exploring the potential of generative AI — with optimism, humility, and a shared belief that the future of AI should be co-created by the many, not the few. It operates on the Cycle of AI Readiness: Play First → Create Excellence → Generously Lead.
+              The <a href="https://community.thesalon.ai" target="_blank" rel="noopener noreferrer" className="text-coral hover:underline">AI Salon</a> is a community of artists, builders, educators, and policy thinkers exploring the potential of generative AI — with optimism, humility, and a shared belief that the future of AI should be co-created by the many, not the few. It operates on the Cycle of AI Readiness: Play First → Create Excellence → Generously Lead.
             </p>
           </ScrollFadeUp>
 
