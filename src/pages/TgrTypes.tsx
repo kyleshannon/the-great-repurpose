@@ -61,7 +61,7 @@ const types = [
   {
     name: "The Catalyst",
     tagline: "You're building toward amplifying everything you touch.",
-    description: "You're solid across the board. Nothing is catastrophically low, nothing is fully resolved. You're balanced, capable, and closer than you think. The risk is coasting — \"good enough\" can become a ceiling. The next step is to pick the one dimension where a small push would unlock the most momentum, and lean into it. You don't need a transformation. You need a catalyst.",
+    description: "You're solid across the board. Nothing is catastrophically low, nothing is fully resolved. You're balanced, capable, and closer than you think. The risk is coasting — \"good enough\" can become a ceiling. The next step is to pick the one dimension where a small push would create the most momentum, and lean into it. You're closer than you think — and one deliberate move could change everything.",
     color: "border-cream/30",
   },
 ];
