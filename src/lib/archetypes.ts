@@ -19,7 +19,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Mastermind Practice Lab",
       body: "You don't need introductory resources — you need peers operating at your level. The Mastermind Practice Lab is where people like you pressure-test ideas, share what's working, and push each other further.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/spaces/21791897",
     },
   },
   "the-awakener": {
@@ -30,7 +30,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Friday Office Hours",
       body: "You don't need a course or a program right now. You need a room full of people who get it. Friday Office Hours is the lowest-pressure entry point — show up, listen, ask a question if you want to.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet",
     },
   },
   "the-explorer": {
@@ -41,7 +41,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Learn Out Loud",
       body: "You don't need more tool tutorials. You need the reflective space to figure out what all that capability is in service of. The Learn Out Loud sessions are designed for exactly this — exploring direction, not just skill.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/events/learn-out-loud",
     },
   },
   "the-firestarter": {
@@ -52,7 +52,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Friday Office Hours",
       body: "Bring your spark to a room full of people who will see it. Friday Office Hours is where nascent breakthroughs get their first audience — and where you can start to see how your one strong dimension connects to the others.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet",
     },
   },
   "the-original": {
@@ -63,7 +63,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "AI Learning Lab",
       body: "You've done the hard part — the identity and clarity work. Now you need a low-stakes, high-trust space to actually use the tools. The AI Learning Lab is built for people exactly like you: clear on who they are, ready to learn how AI fits.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/spaces/12680384",
     },
   },
   "the-compass": {
@@ -74,7 +74,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "AI Learning Lab",
       body: "You've done the hardest part — the identity, value, and purpose work. Now you need a low-stakes, high-trust space to actually pick up the tools. The AI Learning Lab is built for people exactly like you.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/spaces/12680384",
     },
   },
   "the-architect": {
@@ -85,7 +85,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Mastermind Practice Lab",
       body: "You need accountability, not more clarity. The Mastermind Practice Lab is where people commit to making something and then actually do it — with support, feedback, and gentle pressure.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/spaces/21791897",
     },
   },
   "the-translator": {
@@ -96,7 +96,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Learn Out Loud",
       body: "You need the excavation work — figuring out what's actually worth building. The Learn Out Loud sessions are designed to slow you down just enough to find your signal before you amplify it.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/events/learn-out-loud",
     },
   },
   "the-catalyst": {
@@ -107,7 +107,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "AI Learning Lab",
       body: "You're close. The AI Learning Lab will help you close the gap on tools, while the community helps sharpen the rest. You don't need a transformation — you need a catalyst.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/spaces/12680384",
     },
   },
   "the-unlocker": {
@@ -118,7 +118,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Friday Office Hours",
       body: "Start with people, not tools. The Friday Office Hours sessions are full of people working through the same identity questions. Hearing someone else say 'I don't know who I am without my title' can be the thing that cracks the door open.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet",
     },
   },
 };
