@@ -14,6 +14,7 @@ import { ChevronDown } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { matchArchetype, getArchetypeSlug, type Scores, type Archetype } from "@/lib/archetypes";
+import { generateReportPDF } from "@/lib/generateReport";
 
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
 
@@ -240,32 +241,7 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
 
 // ── PDF Generator ────────────────────────────────────────────────────────────
 
-async function generatePDF(reportRef: HTMLDivElement) {
-  const canvas = await html2canvas(reportRef, {
-    backgroundColor: "#1a1c1e",
-    scale: 2,
-    useCORS: true,
-    logging: false,
-  });
-
-  const imgData = canvas.toDataURL("image/png");
-  const imgWidth = 210;
-  const imgHeight = (canvas.height * imgWidth) / canvas.width;
-  const pdf = new jsPDF("p", "mm", "a4");
-  const pageHeight = 297;
-  let heightLeft = imgHeight;
-  let position = 0;
-
-  pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
-  heightLeft -= pageHeight;
-  while (heightLeft > 0) {
-    position = heightLeft - imgHeight;
-    pdf.addPage();
-    pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
-    heightLeft -= pageHeight;
-  }
-  pdf.save("great-repurpose-results.pdf");
-}
+// PDF generation moved to src/lib/generateReport.ts
 
 // ── AI Salon activities data ─────────────────────────────────────────────────
 
@@ -482,10 +458,14 @@ const ResultsPreview = () => {
   };
 
   const handleDownloadPDF = async () => {
-    if (!reportRef.current) return;
+    if (!scores || !archetype) return;
     setGenerating(true);
     try {
-      await generatePDF(reportRef.current);
+      generateReportPDF({
+        archetype,
+        scores,
+        interpretation: interpretationText || "",
+      });
     } catch (err) {
       console.error("PDF generation failed:", err);
     }
