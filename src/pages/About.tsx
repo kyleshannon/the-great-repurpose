@@ -52,7 +52,7 @@ const About = () => {
             </ScrollFadeUp>
             <ScrollFadeUp delay={100}>
               <p>
-                Kyle is the co-founder and president of the AI Salon, a values-driven community that's been exploring the intersection of generative AI and human potential since December 7, 2022 — five days after ChatGPT launched. A Grammy award-winning lyricist, a co-founder of one of the first digital agencies in the '90s, and someone who's spent decades at the intersection of new technology and creative expression, Kyle saw something in the AI transition that the bootcamps and the influencers were missing: the crisis wasn't about skills. It was about meaning.
+               Kyle is the Co-Founder and President of the <a href="https://community.thesalon.ai" target="_blank" rel="noopener noreferrer" className="text-coral hover:underline">AI Salon</a>, a values-driven community that's been exploring the intersection of generative AI and human potential since December 7, 2022 — five days after ChatGPT launched. A Grammy award-winning lyricist, a co-founder of one of the first digital agencies in the '90s, and someone who's spent decades at the intersection of new technology and creative expression, Kyle saw something in the AI transition that the bootcamps and the influencers were missing: the crisis wasn't about skills. It was about meaning.
               </p>
             </ScrollFadeUp>
             <ScrollFadeUp delay={150}>
