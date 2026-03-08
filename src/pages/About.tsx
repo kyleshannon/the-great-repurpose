@@ -57,7 +57,7 @@ const About = () => {
             </ScrollFadeUp>
             <ScrollFadeUp delay={150}>
               <p>
-                The Great Repurpose puts a name to what's happening — a way of understanding what's actually going on when AI changes your relationship with work, and a map of the five phases people cross on the way to something new.
+                 The Great Repurpose puts a name to what's happening — a way of understanding what's going on when AI changes your relationship with work, and a map of the five phases people cross on the way to something new.
               </p>
             </ScrollFadeUp>
           </div>
