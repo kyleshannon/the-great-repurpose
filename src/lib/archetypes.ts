@@ -30,7 +30,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Friday Office Hours",
       body: "You don't need a course or a program right now. You need a room full of people who get it. Friday Office Hours is the lowest-pressure entry point — show up, listen, ask a question if you want to.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet",
     },
   },
   "the-explorer": {
