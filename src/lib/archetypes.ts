@@ -63,7 +63,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "AI Learning Lab",
       body: "You've done the hard part — the identity and clarity work. Now you need a low-stakes, high-trust space to actually use the tools. The AI Learning Lab is built for people exactly like you: clear on who they are, ready to learn how AI fits.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/spaces/12680384",
     },
   },
   "the-compass": {
