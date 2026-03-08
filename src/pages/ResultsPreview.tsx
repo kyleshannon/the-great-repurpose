@@ -568,6 +568,31 @@ const ResultsPreview = () => {
             </div>
           </section>
 
+          {/* ── Primary recommendation (inside dark report) ── */}
+          <section className="bg-navy py-12 md:py-16 px-6">
+            <div className="max-w-2xl mx-auto">
+              <div className="border border-cream/10 rounded-xl p-8 md:p-10 bg-cream/[0.03]">
+                <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
+                  Recommended for You
+                </p>
+                <h3 className="font-serif text-cream text-xl md:text-2xl mb-3">
+                  {archetype.salonEntry.activity}
+                </h3>
+                <p className="font-sans text-cream/60 text-base leading-relaxed mb-6">
+                  {archetype.salonEntry.body}
+                </p>
+                <a
+                  href={archetype.salonEntry.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block border border-coral text-coral font-sans text-sm font-medium px-8 py-3 rounded-full hover:bg-coral hover:text-cream transition-colors"
+                >
+                  {archetype.salonEntry.activity} →
+                </a>
+              </div>
+            </div>
+          </section>
+
           {/* ── Dimension breakdown (collapsible) ── */}
           <section className="bg-navy py-12 px-6 border-t border-cream/5">
             <div className="max-w-4xl mx-auto">
