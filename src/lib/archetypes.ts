@@ -85,7 +85,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Mastermind Practice Lab",
       body: "You need accountability, not more clarity. The Mastermind Practice Lab is where people commit to making something and then actually do it — with support, feedback, and gentle pressure.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/spaces/21791897",
     },
   },
   "the-translator": {
