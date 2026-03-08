@@ -58,7 +58,7 @@ const archetypes: Record<string, Archetype> = {
   "the-original": {
     name: "The Original",
     tagline: "You're building toward becoming irreplaceable.",
-    description: "Identity unhooked and value found, but you haven't aimed it or engaged with tools. You know who you are and what you bring. You just haven't done anything with it yet.",
+    description: "Identity unhooked and value found, but you haven't aimed it anywhere yet. You know who you are and what you bring. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it.",
     vulnerability: "Clarity without action becomes complacency. Knowing your value isn't the same as deploying it. The world won't wait for you to feel ready.",
     salonEntry: {
       activity: "AI Learning Lab",
@@ -91,7 +91,7 @@ const archetypes: Record<string, Archetype> = {
   "the-translator": {
     name: "The Translator",
     tagline: "You're building toward bridging two worlds.",
-    description: "Strong on the ends — identity is solid and tools or creation are engaged — but there's a structural hole in value clarity or purpose direction. The ends are impressive, the middle is the risk.",
+    description: "Strong on the outside edges — you know who you are and you're comfortable with tools or creation. But there's a gap in the middle: you haven't connected your identity to a clear direction. You're doing impressive things without a strategic center.",
     vulnerability: "Activity without direction is just noise. You're building impressively but the strategic layer is thin. Without the middle, the ends don't connect.",
     salonEntry: {
       activity: "Learn Out Loud",
@@ -102,7 +102,7 @@ const archetypes: Record<string, Archetype> = {
   "the-catalyst": {
     name: "The Catalyst",
     tagline: "You're building toward amplifying everything you touch.",
-    description: "Solid across the board. No catastrophic gaps. No single dimension fully resolved either. You're one push from accelerating — and the most common profile is also the most important to make compelling.",
+    description: "Solid across the board. No catastrophic gaps. No single dimension fully resolved either. You're balanced, capable, and closer than you think. The risk is coasting — 'good enough' can become a ceiling. One deliberate push could change everything.",
     vulnerability: "Complacency. 'Good enough' can become the enemy of great. The last 20% is where the real differentiation happens.",
     salonEntry: {
       activity: "AI Learning Lab",
@@ -112,7 +112,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-unlocker": {
     name: "The Unlocker",
-    tagline: "You're building toward freedom from the old story.",
+    tagline: "You're still tying who you are to the title you held.",
     description: "Identity is the active bottleneck. You're in the process of separating self from title, and nothing else can move until this does. Everything is waiting behind this one door.",
     vulnerability: "Every headline about AI replacing jobs lands like a personal attack. You're not processing information — you're processing threat. The grip on the old identity is the thing keeping you stuck.",
     salonEntry: {

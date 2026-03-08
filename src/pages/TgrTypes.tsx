@@ -31,7 +31,7 @@ const types = [
   {
     name: "The Translator",
     tagline: "You're building toward bridging two worlds.",
-    description: "You're strong on the outside edges. You know who you are and you're comfortable with tools or creation. But there's a gap in the middle — you haven't fully articulated what makes you valuable, or you haven't locked in a clear direction. You're doing impressive things without a strategic center. The next step is excavation: figure out what's actually worth building before you build more of it.",
+    description: "You're strong on the outside edges — you know who you are and you're comfortable with tools or creation. But there's a gap in the middle: you haven't connected your identity to a clear direction. You're doing impressive things without a strategic center. The next step is to slow down and ask what's worth building — before you build more of it.",
     color: "border-periwinkle",
   },
   {
@@ -49,19 +49,19 @@ const types = [
   {
     name: "The Original",
     tagline: "You're building toward becoming irreplaceable.",
-    description: "Your identity is unhooked from your old title, and you've found real value in what you bring. But you haven't aimed it at anything yet, and tools or creation haven't started. You know who you are — you just haven't decided what to do about it. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it.",
+    description: "Your identity is unhooked from your old title, and you've found real value in what you bring. But you haven't aimed it anywhere yet. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it.",
     color: "border-periwinkle",
   },
   {
     name: "The Unlocker",
-    tagline: "You're building toward freedom from the old story.",
+    tagline: "You're still tying who you are to the title you held.",
     description: "Identity is the bottleneck. You're still separating who you are from the title you held, and until that shifts, nothing else can move. Every AI headline feels like a personal threat. That's normal — and it's the door to walk through. The next step isn't learning a tool or finding your purpose. It's sitting with the question: who am I if I'm not my job? Start there. Everything else is waiting on the other side.",
     color: "border-amber-brand",
   },
   {
     name: "The Catalyst",
     tagline: "You're building toward amplifying everything you touch.",
-    description: "You're solid across the board. Nothing is catastrophically low, nothing is fully resolved. You're balanced, capable, and closer than you think. The risk is coasting — \"good enough\" can become a ceiling. The next step is to pick the one dimension where a small push would unlock the most momentum, and lean into it. You don't need a transformation. You need a catalyst.",
+    description: "You're solid across the board. Nothing is catastrophically low, nothing is fully resolved. You're balanced, capable, and closer than you think. The risk is coasting — \"good enough\" can become a ceiling. The next step is to pick the one dimension where a small push would create the most momentum, and lean into it. You're closer than you think — and one deliberate move could change everything.",
     color: "border-cream/30",
   },
 ];
@@ -98,7 +98,7 @@ const TgrTypes = () => {
               {types.map((type, i) => (
                 <ScrollFadeUp key={type.name} delay={i * 60}>
                   <div className={`border-l-4 ${type.color} bg-navy/5 border border-navy/10 rounded-r-lg p-7 h-full`}>
-                    <h3 className="font-serif text-navy text-xl mb-1">{type.name}</h3>
+                    <h3 className="font-serif text-emerald-700 text-xl mb-1">{type.name}</h3>
                     <p className="font-serif text-navy/60 text-sm italic mb-3">{type.tagline}</p>
                     <p className="font-sans text-navy/70 text-sm leading-relaxed">{type.description}</p>
                   </div>

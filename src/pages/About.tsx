@@ -52,12 +52,12 @@ const About = () => {
             </ScrollFadeUp>
             <ScrollFadeUp delay={100}>
               <p>
-                Kyle is the co-founder and president of the AI Salon, a values-driven community that's been exploring the intersection of generative AI and human potential since December 7, 2022 — five days after ChatGPT launched. A Grammy award-winning lyricist, a co-founder of one of the first digital agencies in the '90s, and someone who's spent decades at the intersection of new technology and creative expression, Kyle saw something in the AI transition that the bootcamps and the influencers were missing: the crisis wasn't about skills. It was about meaning.
+               Kyle is the Co-Founder and President of the <a href="https://community.thesalon.ai" target="_blank" rel="noopener noreferrer" className="text-coral hover:underline">AI Salon</a>, a values-driven community that's been exploring the intersection of generative AI and human potential since December 7, 2022 — five days after ChatGPT launched. A Grammy award-winning lyricist, a co-founder of one of the first digital agencies in the '90s, and someone who's spent decades at the intersection of new technology and creative expression, Kyle saw something in the AI transition that the bootcamps and the influencers were missing: the crisis wasn't about skills. It was about meaning.
               </p>
             </ScrollFadeUp>
             <ScrollFadeUp delay={150}>
               <p>
-                The Great Repurpose puts a name to what's happening — a way of understanding what's actually going on when AI changes your relationship with work, and a map of the five phases people cross on the way to something new.
+                 The Great Repurpose puts a name to what's happening — a way of understanding what's going on when AI changes your relationship with work, and a map of the five phases people cross on the way to something new.
               </p>
             </ScrollFadeUp>
           </div>
@@ -69,11 +69,11 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-serif text-cream text-3xl md:text-4xl mb-4 leading-tight">
-              The Great Repurpose is the diagnosis.<br />
-              The AI Salon is the treatment.
+              Your Repurpose Profile is a starting point.<br />
+              The AI Salon is where you figure it out.
             </h2>
             <p className="font-sans text-cream/70 text-lg leading-relaxed mb-14">
-              The AI Salon is a community of artists, builders, educators, and policy thinkers exploring the potential of generative AI — with optimism, humility, and a shared belief that the future of AI should be co-created by the many, not the few. It operates on the Cycle of AI Readiness: Play First → Create Excellence → Generously Lead.
+              The <a href="https://community.thesalon.ai" target="_blank" rel="noopener noreferrer" className="text-coral hover:underline">AI Salon</a> is a community of artists, builders, educators, and policy thinkers exploring the potential of generative AI — with optimism, humility, and a shared belief that the future of AI should be co-created by the many, not the few. It operates on the Cycle of AI Readiness: Play First → Create Excellence → Generously Lead.
             </p>
           </ScrollFadeUp>
 

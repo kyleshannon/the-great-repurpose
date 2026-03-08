@@ -10,8 +10,8 @@ const phases = [
     tagline: "I'm not my job.",
     description:
       "The hardest step and the most necessary. You built an identity on what you do — the title, the craft, the expertise. When that gets disrupted, the instinct is to hold tighter. This phase is about loosening the grip. Not abandoning what you've built. Recognizing that you are not reducible to a set of tasks a machine can absorb.",
-    borderColor: "border-cream/40",
-    textColor: "text-cream/70",
+    borderColor: "border-coral",
+    textColor: "text-coral",
   },
   {
     number: "02",
@@ -170,7 +170,7 @@ const Index = () => {
           <ScrollFadeUp>
             <p className="font-serif text-cream text-2xl md:text-3xl italic leading-snug mb-12">
               "We didn't ask for this.<br />
-              We can't escape it.<br />
+              It's here.<br />
               The only way forward is through…<br />
               and you're not alone."
             </p>
@@ -271,8 +271,8 @@ const Index = () => {
                 to="/selfcheck"
                 className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity"
               >
-                 What's Your Repurpose Profile? →
-              </Link>
+               Get Your Repurpose Profile →
+             </Link>
             </div>
           </ScrollFadeUp>
         </div>
@@ -377,7 +377,7 @@ const Index = () => {
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-base px-8 py-4 rounded-full pulse-coral hover:opacity-90 transition-opacity mb-4"
             >
-               What's Your Repurpose Profile? →
+               Get Your Repurpose Profile →
              </Link>
             <p className="text-navy/50 text-sm font-sans">
               7 questions. 2 minutes. Then we'll tell you what you're building toward.
@@ -422,7 +422,7 @@ const Index = () => {
               to="/selfcheck"
               className="inline-block bg-coral text-cream font-sans font-medium text-lg px-10 py-5 rounded-full pulse-coral hover:opacity-90 transition-opacity"
             >
-              What's Your Repurpose Profile? →
+              Get Your Repurpose Profile →
             </Link>
             <p className="text-navy/50 text-sm font-sans mt-3">
               Discover where you are — and what you're building toward.

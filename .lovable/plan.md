@@ -1,60 +1,52 @@
 
 
-# Multi-Page Content Updates
+# Fix Score Dimension Labels to Match the Five Stages
 
-## Changes
+## The Problem
 
-### 1. `src/pages/Index.tsx` — Homepage
+The score breakdown at the bottom of the report uses made-up dimension names and wrong stage numbers that don't match the Five Stages:
 
-**CTA buttons**: Change the lower CTAs from "What's Your Repurpose Profile?" to "Get Your Repurpose Profile →". Keep the first hero CTA as-is (question form works there). Specifically:
-- Line 274: "Get Your Repurpose Profile →"
-- Line 380: "Get Your Repurpose Profile →"  
-- Line 425: "Get Your Repurpose Profile →"
+| Current (wrong) | Correct (from Phases.tsx) |
+|---|---|
+| Identity Independence — Stage 1 Disorientation | **Unhook Identity** — Stage 1 Disorientation |
+| Value Clarity — Stage 3 Excavation | **Reclaim Value** — Stage **2** Excavation |
+| Purpose Direction — Stage 4 Reorientation | **Find Your Purpose** — Stage **3** Reorientation |
+| AI Relationship — Stage 2 Reckoning | **Discover AI's Power** — Stage **4** Reckoning |
+| Creative Action — Stage 5 Authorship | **Start Creating** — Stage 5 Authorship |
 
-**Video quote** (line 173): Change `"We can't escape it."` to `"It's here."`
+The radar chart already uses the correct names. Only the `dimensionMeta` object in `ResultsPreview.tsx` (lines 20-26) needs fixing.
 
-**Unhook Identity colors** (lines 8-15): Change `borderColor` to `"border-coral"` and `textColor` to `"text-coral"` (currently `border-cream/40` and `text-cream/70` which are near-invisible on the cream background). Make all five phases use their defined accent colors consistently — they already do except phase 01.
+## The Fix
 
-**"actually" removal** — not on this page but noted for About page below.
+Update `dimensionMeta` in `src/pages/ResultsPreview.tsx`:
 
-### 2. `src/pages/TgrTypes.tsx` — Profiles Page
+```typescript
+const dimensionMeta: Record<DimensionKey, { label: string; stage: string }> = {
+  identity:        { label: "Unhook Identity",     stage: "Stage 1 — Disorientation" },
+  value:           { label: "Reclaim Value",       stage: "Stage 2 — Excavation" },
+  purpose:         { label: "Find Your Purpose",   stage: "Stage 3 — Reorientation" },
+  ai_relationship: { label: "Discover AI's Power", stage: "Stage 4 — Reckoning" },
+  creative_action: { label: "Start Creating",      stage: "Stage 5 — Authorship" },
+};
+```
 
-**Profile names in green** in the intro paragraph (line 80): Wrap the phrase "10 Great Repurpose Profiles" in a `<span className="text-mint">` tag, and style the profile names in the grid headings with mint/green color.
+Also update the SelfCheck dimension labels (visible during the quiz) to match:
 
-Actually, re-reading: "profile names in that first paragraph in green" — the first paragraph mentions "five dimensions" and profile types. The profile names appear in the grid below. I think the user wants the type name headings in the cards to be green. Change `text-navy` on `h3` elements to `text-mint` or a green shade that works on the cream/light background. Let me use a darker green for readability: keep them navy but style them with a green accent, or use `text-emerald-700` or similar. I'll use the existing `text-mint` but that might be too light on cream. Better approach: add the mint color as an accent to the names, e.g. make the `h3` use a green that's readable. I'll propose `text-green-700` or similar.
+| Current | Correct |
+|---|---|
+| VALUE CLARITY | RECLAIM VALUE |
+| PURPOSE DIRECTION | FIND YOUR PURPOSE |
+| AI RELATIONSHIP | DISCOVER AI'S POWER |
+| CREATIVE ACTION | START CREATING |
+| IDENTITY | UNHOOK IDENTITY |
+| IDENTITY + VALUE | UNHOOK IDENTITY + RECLAIM VALUE |
+| PURPOSE + AI | FIND YOUR PURPOSE + DISCOVER AI'S POWER |
 
-**The Unlocker tagline**: Change from "You're building toward freedom from the old story." to "You're still tying who you are to the title you held."
-
-**The Catalyst description**: Rewrite last two sentences to remove the circular "You need a catalyst" line. Replace with something like: "The next step is to pick the one dimension where a small push would create the most momentum, and lean into it. You're closer than you think — and one deliberate move could change everything."
-
-**The Original description**: Remove the redundant sentence. Tighten to: "Your identity is unhooked from your old title, and you've found real value in what you bring. But you haven't aimed it anywhere yet. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it."
-
-**The Translator description**: Refine to resolve the contradiction. Something like: "You're strong on the outside edges — you know who you are and you're comfortable with tools or creation. But there's a gap in the middle: you haven't connected your identity to a clear direction. You're doing impressive things without a strategic center. The next step is to slow down and ask what's worth building — before you build more of it."
-
-### 3. `src/lib/archetypes.ts` — Update matching descriptions
-
-Update the Unlocker tagline, Catalyst description, Original description, and Translator description to match the TgrTypes changes (these are the canonical source used in reports).
-
-### 4. `src/pages/About.tsx`
-
-- Capitalize "President" (line ~56: "the co-founder and president" → "the Co-Founder and President")
-- Hyperlink "AI Salon" to `https://community.thesalon.ai`
-- Remove "actually" from "what's actually going on" → "what's going on"
-- Replace the "diagnosis/treatment" heading. New copy:
-  - "Your Repurpose Profile is a starting point." / "The AI Salon is where you figure it out."
-
-### 5. `src/pages/Phases.tsx` — Bottom CTA
-
-Change "What's Your Repurpose Profile?" (line 152) to "Get Your Repurpose Profile →"
-
-### 6. `supabase/functions/generate-interpretation/index.ts`
-
-Update the archetype descriptions/taglines in the prompt data that gets passed (these come from the archetype object, so they'll automatically reflect the `archetypes.ts` changes — no separate update needed).
+And update the TgrTypes.tsx description that references the old dimension names.
 
 ## Files Changed
-- `src/pages/Index.tsx`
-- `src/pages/TgrTypes.tsx`
-- `src/lib/archetypes.ts`
-- `src/pages/About.tsx`
-- `src/pages/Phases.tsx`
+
+- `src/pages/ResultsPreview.tsx` — fix `dimensionMeta` labels and stage numbers
+- `src/pages/SelfCheck.tsx` — fix question dimension labels
+- `src/pages/TgrTypes.tsx` — update dimension name references in copy
 
