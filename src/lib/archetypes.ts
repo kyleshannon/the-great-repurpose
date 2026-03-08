@@ -96,7 +96,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Learn Out Loud",
       body: "You need the excavation work — figuring out what's actually worth building. The Learn Out Loud sessions are designed to slow you down just enough to find your signal before you amplify it.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/events/learn-out-loud",
     },
   },
   "the-catalyst": {
