@@ -246,10 +246,10 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
 // ── AI Salon activities data ─────────────────────────────────────────────────
 
 const salonActivities = [
-  { label: "Friday Office Hours", desc: "Show up, ask questions, meet others navigating the same shift. Low-pressure, high-value. Weekly.", href: "https://thesalon.ai" },
-  { label: "AI Learning Lab", desc: "Kyle Shannon's nightly LIVE sessions exploring AI, complete with Champ the Singing Dog — no prior experience required.", href: "https://thesalon.ai" },
-  { label: "Mastermind Practice Lab", desc: "Peer-driven accountability for people creating a daily practice around how they use AI.", href: "https://thesalon.ai" },
-  { label: "Learn Out Loud", desc: "LOL sessions are taught by community members for community members. Learn or lead!", href: "https://thesalon.ai" },
+  { label: "Friday Office Hours", desc: "Show up, ask questions, meet others navigating the same shift. Low-pressure, high-value. Weekly.", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
+  { label: "AI Learning Lab", desc: "Kyle Shannon's nightly LIVE sessions exploring AI, complete with Champ the Singing Dog — no prior experience required.", href: "https://aisalon.mn.co/spaces/12680384" },
+  { label: "Mastermind Practice Lab", desc: "Peer-driven accountability for people creating a daily practice around how they use AI.", href: "https://aisalon.mn.co/spaces/21791897" },
+  { label: "Learn Out Loud", desc: "LOL sessions are taught by community members for community members. Learn or lead!", href: "https://aisalon.mn.co/events/learn-out-loud" },
   { label: "Free AI Salon Community", desc: "The always-on conversation. Connect with others exploring AI and practicing the Cycle of AI Readiness.", href: "https://community.thesalon.ai" },
   { label: "AI Readiness Project Podcast", desc: "Conversations about what it means to be ready for AI, and a chance to meet inspiring people making a difference in AI.", href: "http://aireadinessproject.com/" },
 ];

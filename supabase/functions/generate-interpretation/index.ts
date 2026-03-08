@@ -66,7 +66,7 @@ Respond directly to their open-ended answer. Don't just reflect it back — add 
 
 ## Your Next Move
 
-Specific recommendations. Lead with the primary AI Salon recommendation (${archetype.salonEntry.activity}) and explain WHY it fits them — don't just name it. Also mention 1-2 other relevant activities from: Friday Office Hours (https://thesalon.ai), AI Learning Lab (https://thesalon.ai), Mastermind Practice Lab (https://thesalon.ai), Learn Out Loud (https://thesalon.ai), or the free AI Salon Community (https://community.thesalon.ai). End with one clear, forward-facing sentence specific to THEIR shape.
+Specific recommendations. Lead with the primary AI Salon recommendation (${archetype.salonEntry.activity}) and explain WHY it fits them — don't just name it. Also mention 1-2 other relevant activities from: Friday Office Hours (https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet), AI Learning Lab (https://aisalon.mn.co/spaces/12680384), Mastermind Practice Lab (https://aisalon.mn.co/spaces/21791897), Learn Out Loud (https://aisalon.mn.co/events/learn-out-loud), or the free AI Salon Community (https://community.thesalon.ai). End with one clear, forward-facing sentence specific to THEIR shape.
 
 TONE: Warm but not saccharine. Honest but not clinical. Like someone who sees you clearly and isn't afraid to say it kindly.
 
