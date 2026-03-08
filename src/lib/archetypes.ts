@@ -41,7 +41,7 @@ const archetypes: Record<string, Archetype> = {
     salonEntry: {
       activity: "Learn Out Loud",
       body: "You don't need more tool tutorials. You need the reflective space to figure out what all that capability is in service of. The Learn Out Loud sessions are designed for exactly this — exploring direction, not just skill.",
-      href: "https://thesalon.ai",
+      href: "https://aisalon.mn.co/events/learn-out-loud",
     },
   },
   "the-firestarter": {
