@@ -655,8 +655,11 @@ const ResultsPreview = () => {
           {/* ── Secondary recommendations (light section) ── */}
 
           {/* Secondary recommendations with descriptions */}
-          <section className="bg-cream py-16 px-6 border-t border-navy/10">
+          <section className="bg-cream py-16 px-6">
             <div className="max-w-4xl mx-auto">
+              <p className="font-sans text-navy/70 text-base leading-relaxed mb-4 text-center max-w-lg mx-auto">
+                Making this transition on your own isn't the move. Here are some other ways to get involved with the AI Salon community.
+              </p>
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-8 text-center">Also worth exploring</p>
               <div className="space-y-4">
                 {secondaryActivities.map(({ label, desc, href }) => (
