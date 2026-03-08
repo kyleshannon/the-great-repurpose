@@ -347,6 +347,10 @@ const ResultsPreview = () => {
         }
         if ((data as any).ai_interpretation) {
           setCachedInterpretation((data as any).ai_interpretation);
+        } else {
+          // No cached interpretation — trigger fallback streaming
+          const archetypeObj = matchArchetype(scoresToArchetypeInput(s));
+          stream(s, archetypeObj, (data as any).open_answer || "");
         }
         setLoading(false);
       });
