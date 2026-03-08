@@ -545,26 +545,18 @@ const ResultsPreview = () => {
             </div>
           </section>
 
-          {/* ── AI-Generated Narrative Report (centerpiece) ── */}
+          {/* ── About this profile (static description) ── */}
           <section className="bg-navy py-12 md:py-16 px-6">
             <div className="max-w-2xl mx-auto">
-              {/* Lead-in tagline */}
-              <p className="font-serif text-cream/80 text-lg leading-relaxed mb-8">
-                As {archetype.name}, {archetype.tagline.charAt(0).toLowerCase() + archetype.tagline.slice(1)}
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
+                About {archetype.name}
               </p>
-
-              {streamError ? (
-                <p className="font-sans text-cream/60 text-base text-center">{streamError}</p>
-              ) : !interpretationText && streaming ? (
-                <GeneratingIndicator />
-              ) : interpretationText ? (
-                <>
-                  {streaming && <GeneratingIndicator />}
-                  <InterpretationRenderer text={interpretationText} streaming={streaming} />
-                </>
-              ) : (
-                <GeneratingIndicator />
-              )}
+              <p className="font-sans text-cream/80 text-base leading-relaxed mb-4">
+                {archetype.description}
+              </p>
+              <p className="font-sans text-cream/60 text-base leading-relaxed italic">
+                {archetype.vulnerability}
+              </p>
             </div>
           </section>
 
@@ -590,6 +582,28 @@ const ResultsPreview = () => {
                   {archetype.salonEntry.activity} →
                 </a>
               </div>
+            </div>
+          </section>
+
+          {/* ── AI-Generated Narrative Report ── */}
+          <section className="bg-navy py-12 md:py-16 px-6 border-t border-cream/5">
+            <div className="max-w-2xl mx-auto">
+              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6">
+                Your Personalized Report
+              </p>
+
+              {streamError ? (
+                <p className="font-sans text-cream/60 text-base text-center">{streamError}</p>
+              ) : !interpretationText && streaming ? (
+                <GeneratingIndicator />
+              ) : interpretationText ? (
+                <>
+                  {streaming && <GeneratingIndicator />}
+                  <InterpretationRenderer text={interpretationText} streaming={streaming} />
+                </>
+              ) : (
+                <GeneratingIndicator />
+              )}
             </div>
           </section>
 
