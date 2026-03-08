@@ -54,7 +54,7 @@ const types = [
   },
   {
     name: "The Unlocker",
-    tagline: "You're building toward freedom from the old story.",
+    tagline: "You're still tying who you are to the title you held.",
     description: "Identity is the bottleneck. You're still separating who you are from the title you held, and until that shifts, nothing else can move. Every AI headline feels like a personal threat. That's normal — and it's the door to walk through. The next step isn't learning a tool or finding your purpose. It's sitting with the question: who am I if I'm not my job? Start there. Everything else is waiting on the other side.",
     color: "border-amber-brand",
   },
