@@ -49,7 +49,7 @@ const types = [
   {
     name: "The Original",
     tagline: "You're building toward becoming irreplaceable.",
-    description: "Your identity is unhooked from your old title, and you've found real value in what you bring. But you haven't aimed it at anything yet, and tools or creation haven't started. You know who you are — you just haven't decided what to do about it. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it.",
+    description: "Your identity is unhooked from your old title, and you've found real value in what you bring. But you haven't aimed it anywhere yet. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it.",
     color: "border-periwinkle",
   },
   {
