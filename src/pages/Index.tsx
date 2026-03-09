@@ -88,7 +88,7 @@ const Index = () => {
                 The Great Repurpose
               </h1>
               <p className="font-sans font-medium text-cream/80 text-2xl md:text-3xl lg:text-4xl drop-shadow-md">
-                Finding Meaning in the Face of Unprecedented Change
+                Reclaiming Agency, Meaning and Value in the Age of AI
               </p>
             </div>
           </div>
@@ -98,8 +98,8 @@ const Index = () => {
         <div className="bg-navy px-6 py-8 md:py-10 text-center">
           <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
-            <p className="font-sans text-cream/70 text-base mx-auto mb-4 leading-relaxed">
-              AI is about to change every single job — and maybe even how we define work entirely.
+            <p className="font-serif italic text-cream text-xl md:text-2xl mx-auto mb-4 leading-relaxed">
+              We didn't ask for it. It's here. The only way forward is through.
             </p>
             <p className="font-sans text-cream/70 text-base mx-auto mb-6 leading-relaxed text-left">
               We're all going through this, and we're all in different places. Some of us are holding on to what we were. Some of us are rebuilding. Some of us just felt something shift and can't name it yet. We've identified 10 Great Repurpose Profiles that capture where people are right now and what they're building toward.
