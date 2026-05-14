@@ -78,6 +78,8 @@ const Index = () => {
             src="/images/hero.png"
             alt="People standing together, facing forward"
             className="w-full h-auto block object-cover object-top"
+            fetchPriority="high"
+            decoding="async"
           />
           {/* Gradient fade to navy at bottom */}
           <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-navy via-navy/80 to-transparent" />
