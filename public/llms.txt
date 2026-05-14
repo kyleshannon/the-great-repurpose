@@ -1,0 +1,13 @@
+# The Great Repurpose
+
+> Reclaiming agency, meaning, and value in the age of AI. The Great Repurpose names the invisible crisis underneath the AI workforce disruption — and offers a path through it via 10 Repurpose Profiles and 5 stages of transition.
+
+The Great Repurpose is a movement and self-discovery tool for people whose work and identity are being reshaped by AI. It identifies where you are across five phases (Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, Start Creating) and matches you to one of 10 Repurpose Profiles with a specific next step.
+
+## Pages
+
+- [Home](/): Overview of The Great Repurpose, the crisis it names, and the five stages.
+- [Phases](/phases): Detailed breakdown of the five stages of finding your way through.
+- [Types](/types): The 10 Great Repurpose Profiles — descriptions of each archetype.
+- [About](/about): About the project and its founder, Kyle Shannon.
+- [Self Check](/selfcheck): 7-question assessment to discover your Repurpose Profile.
