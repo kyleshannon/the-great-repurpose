@@ -1,14 +1,61 @@
+export type CategoryKey = "identity-seekers" | "direction-finders" | "builders-in-motion" | "capstone";
+
 export interface Archetype {
   name: string;
   tagline: string;
   description: string;
   vulnerability: string;
+  category: CategoryKey;
   salonEntry: {
     activity: string;
     body: string;
     href: string;
   };
 }
+
+export interface Category {
+  key: CategoryKey;
+  name: string;
+  label: string; // singular form, e.g. "Direction Finder"
+  tagline: string;
+  description: string;
+  archetypeSlugs: string[];
+}
+
+export const categories: Record<CategoryKey, Category> = {
+  "identity-seekers": {
+    key: "identity-seekers",
+    name: "Identity Seekers",
+    label: "Identity Seeker",
+    tagline: "The work right now is inner: who are you when the title falls away?",
+    description: "You're early in the journey. The disorientation is real — but it's the honest beginning of finding yourself again on the other side of AI.",
+    archetypeSlugs: ["the-unlocker", "the-awakener", "the-explorer"],
+  },
+  "direction-finders": {
+    key: "direction-finders",
+    name: "Direction Finders",
+    label: "Direction Finder",
+    tagline: "You know yourself. Now the work is aiming it at something that matters.",
+    description: "Identity is loosening. The next move is direction — naming your value, picking a problem worth solving, pointing your clarity at a target.",
+    archetypeSlugs: ["the-firestarter", "the-translator", "the-original"],
+  },
+  "builders-in-motion": {
+    key: "builders-in-motion",
+    name: "Builders in Motion",
+    label: "Builder in Motion",
+    tagline: "The foundation is set. The work is shipping, not preparing.",
+    description: "You've done most of the inner work. The remaining gap is action — picking up tools, making things, putting work in front of real people.",
+    archetypeSlugs: ["the-compass", "the-architect", "the-catalyst"],
+  },
+  "capstone": {
+    key: "capstone",
+    name: "The Capstone",
+    label: "Capstone",
+    tagline: "You've made it through. The next step is generosity.",
+    description: "All five dimensions are alive in you. The journey now isn't about you anymore — it's about pulling others through.",
+    archetypeSlugs: ["the-amplifier"],
+  },
+};
 
 const archetypes: Record<string, Archetype> = {
   "the-amplifier": {
