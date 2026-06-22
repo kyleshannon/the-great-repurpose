@@ -1,0 +1,205 @@
+import { Link, useParams } from "react-router-dom";
+import { ExternalLink } from "lucide-react";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { ScrollFadeUp } from "@/components/ScrollFadeUp";
+import { getSignalBySlug, signals } from "@/data/signals";
+
+const formatDate = (date: string) =>
+  new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date(`${date}T12:00:00Z`));
+
+const SignalDetail = () => {
+  const { slug } = useParams();
+  const signal = slug ? getSignalBySlug(slug) : undefined;
+
+  if (!signal) {
+    return (
+      <div className="min-h-screen bg-navy text-cream">
+        <Navigation />
+        <main id="main-content" className="pt-32 pb-20 px-6">
+          <div className="max-w-3xl mx-auto">
+            <h1 className="font-serif text-cream text-4xl mb-4">
+              Signal not found
+            </h1>
+            <Link to="/signals" className="text-coral hover:underline font-sans">
+              Return to the Signal archive
+            </Link>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  const related = signals
+    .filter((item) => item.slug !== signal.slug)
+    .filter((item) => item.stages.some((stage) => signal.stages.includes(stage)))
+    .slice(0, 3);
+
+  return (
+    <div className="min-h-screen bg-navy text-cream">
+      <Navigation />
+      <main id="main-content">
+        <article>
+          <section className="bg-navy constellation-bg pt-32 pb-16 px-6">
+            <div className="max-w-4xl mx-auto">
+              <ScrollFadeUp>
+                <Link
+                  to="/signals"
+                  className="font-sans text-coral text-xs uppercase tracking-widest font-medium hover:underline"
+                >
+                  TGR Signals
+                </Link>
+                <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mt-5 mb-5">
+                  {signal.title}
+                </h1>
+                <p className="font-sans text-cream/60 text-base">
+                  {formatDate(signal.date)}
+                </p>
+              </ScrollFadeUp>
+            </div>
+          </section>
+
+          <section className="bg-cream py-14 md:py-20 px-6">
+            <div className="max-w-4xl mx-auto">
+              {signal.pattern && (
+                <ScrollFadeUp>
+                  <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-4">
+                    Pattern of the Day
+                  </p>
+                  <blockquote className="border-l-4 border-coral bg-navy/5 pl-6 pr-6 py-5 mb-12 rounded-r-lg">
+                    <p className="font-serif text-navy text-2xl italic leading-relaxed">
+                      {signal.pattern}
+                    </p>
+                  </blockquote>
+                </ScrollFadeUp>
+              )}
+
+              {signal.stages.length > 0 && (
+                <ScrollFadeUp delay={80}>
+                  <div className="mb-12 flex flex-wrap gap-2">
+                    {signal.stages.map((stage) => (
+                      <Link
+                        key={stage}
+                        to="/signals"
+                        className="font-sans text-xs uppercase tracking-widest text-navy/65 border border-navy/15 rounded-full px-3 py-1 hover:border-coral hover:text-coral transition-colors"
+                      >
+                        {stage}
+                      </Link>
+                    ))}
+                  </div>
+                </ScrollFadeUp>
+              )}
+
+              <ScrollFadeUp delay={120}>
+                <h2 className="font-serif text-navy text-3xl mb-8">
+                  Five Signals
+                </h2>
+              </ScrollFadeUp>
+
+              <div className="space-y-8">
+                {signal.stories.map((story, index) => (
+                  <ScrollFadeUp key={`${story.url}-${index}`} delay={(index % 5) * 60}>
+                    <a
+                      href={story.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group block rounded-lg border border-navy/10 bg-navy/[0.03] p-5 transition-colors hover:border-coral/70"
+                    >
+                      <div className="grid gap-5 md:grid-cols-[180px_1fr]">
+                        {story.imageUrl ? (
+                          <img
+                            src={story.imageUrl}
+                            alt=""
+                            loading="lazy"
+                            className="h-36 w-full rounded-md object-cover bg-navy/10"
+                          />
+                        ) : (
+                          <div className="hidden h-36 rounded-md bg-navy/10 md:block" />
+                        )}
+                        <div>
+                          <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-2">
+                            {String(index + 1).padStart(2, "0")}
+                          </p>
+                          <h3 className="font-serif text-navy text-xl md:text-2xl leading-snug mb-2 group-hover:text-coral transition-colors">
+                            {story.title}
+                          </h3>
+                          <p className="font-sans text-navy/45 text-sm mb-3">
+                            {story.source}
+                          </p>
+                          {story.summary && (
+                            <p className="font-sans text-navy/70 text-base leading-relaxed mb-4">
+                              {story.summary}
+                            </p>
+                          )}
+                          {story.keyPoints.length > 0 && (
+                            <ul className="font-sans text-navy/65 text-sm leading-relaxed space-y-1 mb-4 list-disc pl-5">
+                              {story.keyPoints.map((point) => (
+                                <li key={point}>{point}</li>
+                              ))}
+                            </ul>
+                          )}
+                          {story.stages.length > 0 && (
+                            <div className="mb-4 flex flex-wrap gap-2">
+                              {story.stages.map((stage) => (
+                                <span
+                                  key={stage}
+                                  className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1"
+                                >
+                                  {stage}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                          <span className="inline-flex items-center gap-2 font-sans text-sm text-coral">
+                            Read source <ExternalLink size={14} aria-hidden="true" />
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </ScrollFadeUp>
+                ))}
+              </div>
+            </div>
+          </section>
+        </article>
+
+        {related.length > 0 && (
+          <section className="bg-navy constellation-bg py-16 px-6">
+            <div className="max-w-4xl mx-auto">
+              <ScrollFadeUp>
+                <h2 className="font-serif text-cream text-2xl md:text-3xl mb-8">
+                  Related Signals
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                  {related.map((item) => (
+                    <Link
+                      key={item.slug}
+                      to={`/signals/${item.slug}`}
+                      className="border border-cream/10 rounded-lg p-5 hover:border-coral/60 transition-colors bg-cream/[0.03]"
+                    >
+                      <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-3">
+                        {formatDate(item.date)}
+                      </p>
+                      <h3 className="font-serif text-cream text-lg leading-snug">
+                        {item.title}
+                      </h3>
+                    </Link>
+                  ))}
+                </div>
+              </ScrollFadeUp>
+            </div>
+          </section>
+        )}
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default SignalDetail;
