@@ -297,7 +297,7 @@ const ResultsPreview = () => {
     setLoading(true);
     supabase
       .from("selfcheck_results")
-      .select("*")
+      .select("id, identity_score, value_score, purpose_score, ai_relationship_score, creative_action_score, lowest_dimension, archetype, ai_interpretation, open_answer, created_at")
       .eq("id", routeId)
       .single()
       .then(({ data, error }) => {
