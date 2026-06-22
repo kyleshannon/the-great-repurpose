@@ -1,0 +1,72 @@
+// Build the TGR Signals RSS feed from public/signals/index.json.
+// Reads each signal's full JSON to grab a richer description.
+// Runs at build time via the `prebuild` script in package.json.
+
+import { promises as fs } from "node:fs";
+import path from "node:path";
+
+const SITE = "https://thegreatrepurpose.com";
+const SIGNALS_DIR = path.join(process.cwd(), "public", "signals");
+const OUT = path.join(process.cwd(), "public", "signals.xml");
+
+const escapeXml = (s) =>
+  String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+
+async function main() {
+  let indexRaw;
+  try {
+    indexRaw = await fs.readFile(path.join(SIGNALS_DIR, "index.json"), "utf8");
+  } catch {
+    console.warn("[signals-rss] no index.json; skipping feed");
+    return;
+  }
+  const index = JSON.parse(indexRaw)
+    .slice()
+    .sort((a, b) => b.date.localeCompare(a.date));
+
+  const items = await Promise.all(
+    index.map(async (entry) => {
+      let pattern = entry.pattern ?? "";
+      try {
+        const full = JSON.parse(
+          await fs.readFile(path.join(SIGNALS_DIR, `${entry.slug}.json`), "utf8")
+        );
+        pattern = full.pattern || pattern;
+      } catch {}
+      const link = `${SITE}/signals/${entry.slug}`;
+      const pubDate = new Date(`${entry.date}T12:00:00Z`).toUTCString();
+      return `    <item>
+      <title>${escapeXml(entry.title)}</title>
+      <link>${link}</link>
+      <guid isPermaLink="true">${link}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <description>${escapeXml(pattern)}</description>
+    </item>`;
+    })
+  );
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>TGR Signals — The Great Repurpose</title>
+    <link>${SITE}/signals</link>
+    <description>A daily five-story briefing reading AI news through The Great Repurpose lens.</description>
+    <language>en-us</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+${items.join("\n")}
+  </channel>
+</rss>
+`;
+  await fs.writeFile(OUT, xml, "utf8");
+  console.log(`[signals-rss] wrote ${items.length} items to public/signals.xml`);
+}
+
+main().catch((err) => {
+  console.error("[signals-rss] failed:", err);
+  process.exitCode = 1;
+});
