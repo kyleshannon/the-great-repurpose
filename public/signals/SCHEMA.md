@@ -1,7 +1,7 @@
-# TGR Signals — data schema for Codex
+# Daily Signal — data schema for Codex
 
-The Signals section reads its data from JSON files in this folder. To
-publish a new daily Signal, **write two files and commit**. No TypeScript
+The Daily Signal section reads its data from JSON files in this folder. To
+publish a new daily briefing, **write two files and commit**. No TypeScript
 edits, no build steps. Lovable's GitHub sync auto-deploys on push.
 
 ## Files Codex writes each day

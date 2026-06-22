@@ -21,7 +21,7 @@ export function Footer() {
               { to: "/", label: "Home" },
               { to: "/phases", label: "The Five Stages" },
               { to: "/types", label: "Great Repurpose Profiles" },
-              { to: "/signals", label: "TGR Signals" },
+              { to: "/signals", label: "Daily Signal" },
               { to: "/about", label: "About" },
               { to: "/selfcheck", label: "What's Your Repurpose Profile?" },
             ].map(({ to, label }) => (

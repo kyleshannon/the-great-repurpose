@@ -86,20 +86,20 @@ const Signals = () => {
   return (
     <div className="min-h-screen bg-navy text-cream">
       <Helmet>
-        <title>TGR Signals — Daily AI news through The Great Repurpose lens</title>
+        <title>Daily Signal — AI news through The Great Repurpose lens</title>
         <meta
           name="description"
           content="A daily five-story briefing reading the AI news through work, identity, value, purpose, capability, and human agency."
         />
         <link rel="canonical" href="https://thegreatrepurpose.com/signals" />
-        <meta property="og:title" content="TGR Signals — Daily AI news through The Great Repurpose lens" />
+        <meta property="og:title" content="Daily Signal — AI news through The Great Repurpose lens" />
         <meta property="og:url" content="https://thegreatrepurpose.com/signals" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
           content="A daily five-story briefing reading the AI news through work, identity, value, purpose, capability, and human agency."
         />
-        <link rel="alternate" type="application/rss+xml" title="TGR Signals" href="/signals.xml" />
+        <link rel="alternate" type="application/rss+xml" title="Daily Signal" href="/signals.xml" />
       </Helmet>
       <Navigation />
       <main id="main-content">
@@ -107,7 +107,7 @@ const Signals = () => {
           <div className="max-w-5xl mx-auto">
             <ScrollFadeUp>
               <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mb-5">
-                The Great Repurpose Signals
+                The Daily Signal
               </h1>
               <p className="font-sans text-cream/70 text-lg md:text-xl leading-relaxed max-w-3xl">
                 Five-story briefings that read the AI news through work, identity,
@@ -124,7 +124,7 @@ const Signals = () => {
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5">
                   <div>
                     <h2 className="font-serif text-navy text-3xl md:text-4xl mb-3">
-                      Signal Archive
+                      Daily Signal Archive
                     </h2>
                     <p className="font-sans text-navy/65 text-base leading-relaxed max-w-2xl">
                       Browse the daily patterns and the stories behind them. Filter by
@@ -173,12 +173,12 @@ const Signals = () => {
           <div className="max-w-5xl mx-auto">
             {error ? (
               <div className="rounded-lg border border-navy/10 p-8 text-center">
-                <p className="font-serif text-navy text-2xl mb-2">Couldn't load Signals</p>
+                <p className="font-serif text-navy text-2xl mb-2">Couldn't load the Daily Signal</p>
                 <p className="font-sans text-navy/60 text-base">{error}</p>
               </div>
             ) : !signals ? (
               <div className="rounded-lg border border-navy/10 p-8 text-center">
-                <p className="font-sans text-navy/60 text-base">Loading Signals…</p>
+                <p className="font-sans text-navy/60 text-base">Loading the Daily Signal…</p>
               </div>
             ) : visibleSignals.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
@@ -227,7 +227,7 @@ const Signals = () => {
               </div>
             ) : (
               <div className="rounded-lg border border-navy/10 p-8 text-center">
-                <p className="font-serif text-navy text-2xl mb-2">No Signals found</p>
+                <p className="font-serif text-navy text-2xl mb-2">No briefings found</p>
                 <p className="font-sans text-navy/60 text-base">
                   Try a different stage filter or return to the full archive.
                 </p>

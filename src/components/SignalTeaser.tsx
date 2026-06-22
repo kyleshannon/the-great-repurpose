@@ -29,7 +29,7 @@ export function SignalTeaser() {
       <div className="max-w-4xl mx-auto">
         <ScrollFadeUp>
           <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-3">
-            Latest TGR Signal · {formatSignalDate(latest.date)}
+            Latest Daily Signal · {formatSignalDate(latest.date)}
           </p>
           <Link
             to={`/signals/${latest.slug}`}
@@ -66,7 +66,7 @@ export function SignalTeaser() {
               to="/signals"
               className="font-sans text-cream/60 text-sm hover:text-coral transition-colors"
             >
-              Browse the full Signal archive →
+              Browse the full Daily Signal archive →
             </Link>
           </div>
         </ScrollFadeUp>
