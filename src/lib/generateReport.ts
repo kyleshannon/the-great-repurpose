@@ -100,7 +100,7 @@ export function generateReportPDF(data: ReportData) {
     doc.setFontSize(14);
     setColor(doc, CREAM);
     const headline = data.category.isCapstone
-      ? "You're at the capstone."
+      ? "You've made it through."
       : `You're a ${data.category.label}.`;
     doc.text(headline, pageWidth / 2, y, { align: "center" });
     y += 10;

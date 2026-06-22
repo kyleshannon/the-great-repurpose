@@ -525,12 +525,12 @@ const ResultsPreview = () => {
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">Your Great Repurpose Profile</p>
               {(() => {
                 const cat = categories[archetype.category];
-                const isCapstone = archetype.category === "capstone";
+                const isAmplifier = archetype.category === "capstone";
                 return (
                   <>
                     <h1 className="font-serif text-cream text-3xl md:text-4xl leading-tight mb-3">
-                      {isCapstone ? (
-                        <>You're at the capstone. <span className="block md:inline">Meet <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
+                      {isAmplifier ? (
+                        <>You've made it through. <span className="block md:inline">Meet <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
                       ) : (
                         <>You're a <span className="font-semibold">{cat.label}</span>. <span className="block md:inline">Specifically: <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
                       )}
