@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">The Great Repurpose Daily Signal fallback thumbnail</title>
+  <desc id="desc">A branded Daily Signal thumbnail with a central human figure, orbit lines, stage markers, and warm editorial typography.</desc>
+  <defs>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="58%">
+      <stop offset="0" stop-color="#5f9876" stop-opacity="0.42"/>
+      <stop offset="0.45" stop-color="#5f9876" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#1b1f17" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0eadf"/>
+      <stop offset="1" stop-color="#d8cfbf"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#050605" flood-opacity="0.34"/>
+    </filter>
+    <pattern id="grain" width="140" height="140" patternUnits="userSpaceOnUse">
+      <path d="M12 34h34M88 21h20M26 96h58M101 116h26M8 124h18" stroke="#efe8dc" stroke-opacity="0.055" stroke-width="2"/>
+      <circle cx="68" cy="70" r="1.8" fill="#efe8dc" fill-opacity="0.08"/>
+      <circle cx="118" cy="44" r="1.3" fill="#efe8dc" fill-opacity="0.06"/>
+      <circle cx="34" cy="18" r="1.2" fill="#efe8dc" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="#1b1f17"/>
+  <rect width="1200" height="750" fill="url(#grain)"/>
+  <circle cx="600" cy="376" r="335" fill="url(#centerGlow)"/>
+  <g opacity="0.82" fill="none" stroke="#5f9876" stroke-width="2">
+    <ellipse cx="600" cy="376" rx="380" ry="145" transform="rotate(-8 600 376)"/>
+    <ellipse cx="600" cy="376" rx="300" ry="250" transform="rotate(29 600 376)" opacity="0.58"/>
+    <ellipse cx="600" cy="376" rx="205" ry="330" transform="rotate(-47 600 376)" opacity="0.44"/>
+  </g>
+  <g fill="#d4b768" opacity="0.96">
+    <circle cx="265" cy="337" r="9"/>
+    <circle cx="413" cy="188" r="7"/>
+    <circle cx="803" cy="178" r="8"/>
+    <circle cx="931" cy="402" r="10"/>
+    <circle cx="744" cy="595" r="7"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <path d="M536 519c20-57 42-96 64-96s44 39 64 96c8 23-9 47-33 47h-62c-24 0-41-24-33-47Z" fill="url(#paper)"/>
+    <circle cx="600" cy="349" r="67" fill="url(#paper)"/>
+    <path d="M557 361c28 29 58 38 92 19" fill="none" stroke="#1b1f17" stroke-width="8" stroke-linecap="round" opacity="0.62"/>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="600" y="106" fill="#efe8dc" font-size="38" font-weight="700">The Great Repurpose</text>
+    <text x="600" y="670" fill="#efe8dc" font-size="72" font-weight="700">Daily Signal</text>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle" text-transform="uppercase">
+    <text x="600" y="625" fill="#5f9876" font-size="16" font-weight="600" letter-spacing="5">Five stories. One pattern. Human agency.</text>
+  </g>
+  <g fill="#efe8dc" opacity="0.62">
+    <circle cx="113" cy="118" r="2"/>
+    <circle cx="1073" cy="113" r="2.4"/>
+    <circle cx="1014" cy="642" r="2"/>
+    <circle cx="173" cy="606" r="2.2"/>
+    <circle cx="1030" cy="278" r="1.6"/>
+    <circle cx="151" cy="274" r="1.6"/>
+  </g>
+</svg>
