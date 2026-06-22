@@ -461,8 +461,14 @@ const ResultsPreview = () => {
     if (!scores || !archetype) return;
     setGenerating(true);
     try {
+      const cat = categories[archetype.category];
       generateReportPDF({
         archetype,
+        category: {
+          label: cat.label,
+          description: cat.description,
+          isCapstone: archetype.category === "capstone",
+        },
         scores,
         interpretation: interpretationText || "",
       });
