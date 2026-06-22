@@ -1,39 +1,44 @@
-## Options for the new Profiles page headline
+## Recommendation on the data source
 
-**A.** Where you are on The Great Repurpose Journey
+Codex's current approach (typed `src/data/signals.ts`) works but has friction: every daily update is a TS edit with escape/syntax risk, and every story re-compiles the whole bundle. I recommend keeping Codex's pages but moving the **data** out of TypeScript and into JSON files under `public/signals/`. Codex's job becomes: write one JSON file per day + update an index — no TS, no schema fights, no rebuild risk. The site fetches at runtime, Lovable's GitHub sync auto-deploys on Codex's commit, and you can hand-edit a signal in seconds if needed.
 
-**B.** The 10 Profiles of The Great Repurpose
+I considered a Cloud DB + edge function (Codex POSTs JSON, live updates with no commit). It's more powerful but adds an API key, an admin surface, and removes git history of what was published. For a daily editorial briefing, version-controlled JSON is the better fit. We can graduate to DB later if you ever want non-Codex editors.
 
-**C.** Find yourself in the journey
+## Phase 1 — Merge as-is
 
-## What changes
+1. Merge `origin/codex/tgr-signal-section` into main. Branch is additive (6 files, no conflicts on the files I checked).
+2. Fix the one shipped bug: `Signals.tsx` and `SignalDetail.tsx` import `getSignalBySlug` from `@/data/signals`, but that helper isn't exported in the seed file — detail page would 404 on every slug. Add it (one-line export) so the merged state actually works.
 
-1. **Profiles page (`/types`)**
-   - Replace hero headline + subcopy. New subcopy explains that each profile is a point on the journey, not a stage label or ranking.
-   - Remove "Capstone — for those already leading the way" label from The Amplifier card.
-   - Update The Amplifier tagline to something like "Now the real work begins." Description should feel like arrival + invitation, not graduation.
+Outcome: `/signals` and `/signals/:slug` go live on the navy/cream/coral theme with the seeded data.
 
-2. **Homepage Profiles section (`/`)**
-   - Remove "plus a capstone for those already pulling others forward" from the intro paragraph.
-   - Remove "Capstone" label from the Amplifier preview line. Present The Amplifier as the 10th profile, not a separate tier.
+## Phase 2 — Make Codex's daily update painless
 
-3. **Report / Results page (`/results/:id`)**
-   - Remove "You're at the capstone" headline for Amplifier results.
-   - New headline for Amplifierifer: something like "You've made it through. Now the real work begins." or "Meet The Amplifier."
+3. **Move data to `public/signals/`:**
+   - `public/signals/index.json` — array of `{ slug, date, title, pattern, stages, imageUrl }` for the archive list, newest first.
+   - `public/signals/<slug>.json` — full `TgrSignal` (pattern, stages, 5 stories with summaries, images, key points).
+4. **Refactor pages to fetch:**
+   - `Signals.tsx` — fetch `/signals/index.json` once, render list. Loading + empty states.
+   - `SignalDetail.tsx` — fetch `/signals/<slug>.json` from the URL param. 404 state if fetch fails.
+5. **Delete `src/data/signals.ts`** once both pages are migrated.
+6. **Write `public/signals/SCHEMA.md`** — the contract Codex follows: file naming (`YYYY-MM-DD-kebab-title.json`), required fields, canonical stage names, image URL rules, how to update `index.json` (prepend new entry, keep sorted desc). This is the single doc you point Codex at.
 
-4. **PDF report (`src/lib/generateReport.ts`)**
-   - Remove capstone-specific headline branching. Use the same category-led headline pattern for all profiles, including Amplifier.
+## Phase 3 — Polish
 
-5. **`public/llms.txt`**
-   - Update Types page description to remove "plus a capstone" language.
+7. **Per-page SEO** via `react-helmet-async` (already in the head-meta playbook): unique `<title>`, description, canonical, `og:title/url/image` on both `/signals` and each `/signals/:slug`. Use the signal's `imageUrl` as `og:image`. Add `Article` JSON-LD on detail pages.
+8. **Homepage Signal teaser** — a "Latest Signal" card on `Index.tsx` that fetches `index.json` and links to the most recent briefing. Slots in above or below the existing journey section (will check the homepage structure before placing).
+9. **RSS feed** — `public/signals.xml` generated at build time from `index.json`, or a small Node prebuild script. Add `<link rel="alternate" type="application/rss+xml">` in `index.html`.
+10. **Footer + Navigation** already wired by Codex — leave as-is.
 
-6. **`src/lib/archetypes.ts`**
-   - Rename category label from "The Capstone" / "Capstone" to something neutral like "The Amplifier" or just remove the separate naming distinction. Keep the `category: "capstone"` key internally if needed for logic.
+## Technical notes
 
-## What does NOT change
-- The 3 group names (Identity Seekers, Direction Finders, Builders in Motion) stay.
-- The groupings themselves stay.
-- Assessment questions, scoring, and `matchArchetype` logic stay untouched.
-- The 5 stages (Unhook Identity, Reclaim Value, etc.) stay as-is everywhere else they appear.
+- The `2026` dates in the seed are placeholders from Codex; the schema doc will specify ISO dates as the source of truth.
+- Pages already use `Navigation`, `Footer`, `ScrollFadeUp` and the project's `navy / cream / coral` tokens — consistent with the rest of the site.
+- `Signals.tsx` uses a native `<select>` for sort. Project memory forbids native range inputs but allows native selects; leaving as-is.
+- Detail page links each stage chip back to `/signals` (no stage param). I'll wire `?stage=<name>` so chip clicks land on a filtered archive.
+- Two seeded entries share the title "AI Moves Into The Workday" — the slug includes the date so routing is fine, but I'll flag duplicates in the schema doc.
 
-## Pick a headline option and approve the plan — then I'll implement all the changes at once.
+## Files touched
+
+- New: `public/signals/index.json`, `public/signals/<slug>.json` (×4 seeded), `public/signals/SCHEMA.md`, `public/signals.xml`
+- Edited: `src/pages/Signals.tsx`, `src/pages/SignalDetail.tsx`, `src/pages/Index.tsx` (teaser), `src/main.tsx` (HelmetProvider if not already wired), `index.html` (RSS link), `mem://index.md` + a new `mem://features/tgr-signals` memory
+- Deleted: `src/data/signals.ts`
