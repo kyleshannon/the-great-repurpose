@@ -408,6 +408,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ── Latest TGR Signal teaser ── */}
+      <SignalTeaser />
+
       {/* ── Section 6: How It Works ── */}
       <section className="bg-cream py-16 md:py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
