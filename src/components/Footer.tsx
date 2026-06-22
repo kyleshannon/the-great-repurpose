@@ -38,7 +38,6 @@ export function Footer() {
           <div className="flex flex-col gap-2">
             {[
               { href: "https://community.thesalon.ai", label: "The AI Salon" },
-              { href: "http://aireadinessproject.com/", label: "The AI Readiness Project Podcast" },
               { href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet", label: "Office Hours: Fridays" },
             ].map(({ href, label }) => (
               <a
@@ -62,12 +61,12 @@ export function Footer() {
             "The future of AI is still up for grabs — join us."
           </p>
           <a
-            href="https://thesalon.ai"
+            href="https://community.thesalon.ai"
             target="_blank"
             rel="noopener noreferrer"
             className="text-coral text-sm font-sans hover:underline"
           >
-            The Great Repurpose was born in the AI Salon → theSalon.ai
+            Community.theSalon.ai
           </a>
           <p className="text-cream/30 text-xs font-sans">© 2026 The Great Repurpose</p>
         </div>
