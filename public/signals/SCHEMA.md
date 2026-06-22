@@ -64,7 +64,7 @@ selected five stories do not provide a usable image.
 | `date` | yes | ISO date `YYYY-MM-DD`. Renders as the briefing date. |
 | `title` | yes | 4–9 words. Used in `<h1>`, OG title, archive card. |
 | `pattern` | yes | The "Pattern of the Day". Plain text, ~2–3 sentences. |
-| `stages` | yes | 1–5 entries. Must match the canonical names below exactly. |
+| `stages` | yes | 1–5 entries. Must match the canonical names below exactly. Derive from the five story `stages`, order by relevance/frequency for that day, and never default to the full canonical list unless all five stages are genuinely represented. |
 | `imageUrl` | yes | Used as the OG share image and archive card image. Use the strongest story image, or `/signals/tgr-signal-thumbnail.svg` if no selected story has a usable image. Do not leave empty. |
 | `stories` | yes | Exactly **5** entries. Fewer renders but looks sparse. |
 | `stories[].summary` | yes | 1–3 sentences in The Great Repurpose voice. Direct, human, concrete. No empty strings. |
@@ -87,7 +87,9 @@ Any other string is silently dropped from filters.
 ## `index.json` shape
 
 A JSON array, newest entry first. Each entry is a subset of the full
-file — Codex must keep these in sync.
+file — Codex must keep these in sync. The archive card displays the full
+`stages` list from this file, so the `index.json` `stages` must exactly match
+the same briefing-level `stages` array in `<slug>.json`.
 
 ```json
 [
@@ -107,12 +109,13 @@ file — Codex must keep these in sync.
 1. Pick the canonical date `YYYY-MM-DD` (UTC).
 2. Build the slug: `<date>-<kebab-title>`.
 3. Write `public/signals/<slug>.json` following the schema above.
-4. Choose the briefing-level `imageUrl`: use the strongest selected story image, or `/signals/tgr-signal-thumbnail.svg` if no selected story has a usable image.
-5. Open `public/signals/index.json` and **prepend** the matching index
-   entry. Re-sort by `date` descending if unsure.
-6. Commit both files in one commit. Suggested message:
+4. Choose the briefing-level `stages` by combining the five story-level `stages`, ordered by relevance/frequency. Do not use a generic stage list.
+5. Choose the briefing-level `imageUrl`: use the strongest selected story image, or `/signals/tgr-signal-thumbnail.svg` if no selected story has a usable image.
+6. Open `public/signals/index.json` and **prepend** the matching index
+   entry. Its `stages` array must exactly match the briefing file `stages` array. Re-sort by `date` descending if unsure.
+7. Commit both files in one commit. Suggested message:
    `signal: <date> — <title>`.
-7. Push to `main`. Lovable redeploys; the new briefing appears at
+8. Push to `main`. Lovable redeploys; the new briefing appears at
    `https://thegreatrepurpose.com/signals/<slug>` and on the homepage
    teaser within a minute or two.
 
@@ -121,6 +124,7 @@ file — Codex must keep these in sync.
 - Both files are valid JSON (`node -e "JSON.parse(require('fs').readFileSync('public/signals/<slug>.json','utf8'))"`).
 - `slug` in the file equals the filename minus `.json`.
 - `index.json` contains exactly one entry with this slug.
+- `index.json` `stages` for this slug exactly matches `<slug>.json` `stages`.
 - `stages` and `stories[].stages` entries appear in the canonical list above.
 - Every story has non-empty `summary`, at least two `keyPoints`, and at least one canonical `stage`.
 - Briefing-level `imageUrl` and index entry `imageUrl` are non-empty. Use `/signals/tgr-signal-thumbnail.svg` if needed.
