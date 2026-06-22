@@ -54,7 +54,7 @@ const SignalDetail = () => {
     return (
       <div className="min-h-screen bg-navy text-cream">
         <Helmet>
-          <title>Signal not found — TGR Signals</title>
+          <title>Signal not found — Daily Signal</title>
           <meta name="robots" content="noindex" />
         </Helmet>
         <Navigation />
@@ -62,7 +62,7 @@ const SignalDetail = () => {
           <div className="max-w-3xl mx-auto">
             <h1 className="font-serif text-cream text-4xl mb-4">Signal not found</h1>
             <Link to="/signals" className="text-coral hover:underline font-sans">
-              Return to the Signal archive
+              Return to the Daily Signal archive
             </Link>
           </div>
         </main>
@@ -79,7 +79,7 @@ const SignalDetail = () => {
   const canonical = `https://thegreatrepurpose.com/signals/${signal.slug}`;
   const description =
     signal.pattern?.slice(0, 200) ||
-    `A five-story TGR Signal briefing from ${formatSignalDate(signal.date)}.`;
+    `A five-story Daily Signal briefing from ${formatSignalDate(signal.date)}.`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -95,10 +95,10 @@ const SignalDetail = () => {
   return (
     <div className="min-h-screen bg-navy text-cream">
       <Helmet>
-        <title>{signal.title} — TGR Signals</title>
+        <title>{signal.title} — Daily Signal</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
-        <meta property="og:title" content={`${signal.title} — TGR Signals`} />
+        <meta property="og:title" content={`${signal.title} — Daily Signal`} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="article" />
         <meta property="og:description" content={description} />
@@ -116,7 +116,7 @@ const SignalDetail = () => {
                   to="/signals"
                   className="font-sans text-coral text-xs uppercase tracking-widest font-medium hover:underline"
                 >
-                  TGR Signals
+                  Daily Signal
                 </Link>
                 <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mt-5 mb-5">
                   {signal.title}
@@ -160,7 +160,7 @@ const SignalDetail = () => {
               )}
 
               <ScrollFadeUp delay={120}>
-                <h2 className="font-serif text-navy text-3xl mb-8">Five Signals</h2>
+                <h2 className="font-serif text-navy text-3xl mb-8">Five Stories</h2>
               </ScrollFadeUp>
 
               <div className="space-y-8">
@@ -233,7 +233,7 @@ const SignalDetail = () => {
             <div className="max-w-4xl mx-auto">
               <ScrollFadeUp>
                 <h2 className="font-serif text-cream text-2xl md:text-3xl mb-8">
-                  Related Signals
+                  Related Briefings
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                   {related.map((item) => (

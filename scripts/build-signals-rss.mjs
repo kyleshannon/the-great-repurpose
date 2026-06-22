@@ -53,7 +53,7 @@ async function main() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>TGR Signals — The Great Repurpose</title>
+    <title>Daily Signal — The Great Repurpose</title>
     <link>${SITE}/signals</link>
     <description>A daily five-story briefing reading AI news through The Great Repurpose lens.</description>
     <language>en-us</language>
