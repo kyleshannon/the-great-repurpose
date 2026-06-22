@@ -37,20 +37,68 @@ export const canonicalStages = [
   "Start Creating",
 ] as const;
 
+export const fallbackSignalImage = "/signals/tgr-signal-thumbnail.svg";
+
 const withBase = (path: string) => `${import.meta.env.BASE_URL ?? "/"}${path}`.replace(/\/{2,}/g, "/");
+
+const asString = (value: unknown) => (typeof value === "string" ? value : "");
+const asStringArray = (value: unknown) => (Array.isArray(value) ? value.filter((v): v is string => typeof v === "string") : []);
+const imageOrFallback = (value: unknown) => asString(value).trim() || fallbackSignalImage;
+
+type RawSignalStory = Partial<SignalStory> & {
+  publishedAt?: string;
+};
+
+type RawSignal = Partial<TgrSignal> & {
+  patternOfDay?: string;
+  heroImageUrl?: string;
+  stories?: RawSignalStory[];
+};
+
+function normalizeStory(raw: RawSignalStory): SignalStory {
+  return {
+    title: asString(raw.title),
+    url: asString(raw.url),
+    source: asString(raw.source),
+    published: asString(raw.published) || asString(raw.publishedAt),
+    summary: asString(raw.summary),
+    imageUrl: asString(raw.imageUrl),
+    stages: asStringArray(raw.stages),
+    keyPoints: asStringArray(raw.keyPoints),
+  };
+}
+
+function normalizeSignalIndexEntry(raw: RawSignal): SignalIndexEntry {
+  return {
+    slug: asString(raw.slug),
+    date: asString(raw.date),
+    title: asString(raw.title),
+    pattern: asString(raw.pattern) || asString(raw.patternOfDay),
+    stages: asStringArray(raw.stages),
+    imageUrl: imageOrFallback(raw.imageUrl || raw.heroImageUrl),
+  };
+}
+
+function normalizeSignal(raw: RawSignal): TgrSignal {
+  return {
+    ...normalizeSignalIndexEntry(raw),
+    stories: Array.isArray(raw.stories) ? raw.stories.map(normalizeStory) : [],
+    sourceStatus: raw.sourceStatus,
+  };
+}
 
 export async function fetchSignalIndex(): Promise<SignalIndexEntry[]> {
   const res = await fetch(withBase("signals/index.json"), { cache: "no-cache" });
   if (!res.ok) throw new Error(`Failed to load signal index (${res.status})`);
-  const data = (await res.json()) as SignalIndexEntry[];
-  return [...data].sort((a, b) => b.date.localeCompare(a.date));
+  const data = (await res.json()) as RawSignal[];
+  return data.map(normalizeSignalIndexEntry).sort((a, b) => b.date.localeCompare(a.date));
 }
 
 export async function fetchSignal(slug: string): Promise<TgrSignal | null> {
   const res = await fetch(withBase(`signals/${slug}.json`), { cache: "no-cache" });
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`Failed to load signal ${slug} (${res.status})`);
-  return (await res.json()) as TgrSignal;
+  return normalizeSignal((await res.json()) as RawSignal);
 }
 
 export const formatSignalDate = (date: string, opts?: Intl.DateTimeFormatOptions) =>
