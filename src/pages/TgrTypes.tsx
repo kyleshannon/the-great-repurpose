@@ -123,7 +123,7 @@ const TgrTypes = () => {
                 The 10 Great Repurpose Profiles
               </p>
               <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mb-6">
-                Where you are on The Great Repurpose journey
+                Where Are You On Your Journey?
               </h1>
               <p className="font-sans text-cream/70 text-lg leading-relaxed max-w-2xl mx-auto mb-4">
                 Everyone navigating the AI transition is somewhere on this map. Ten profiles, each one a real place people find themselves — defined by your pattern across Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, and Start Creating.
