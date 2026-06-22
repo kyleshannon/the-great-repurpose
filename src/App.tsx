@@ -9,6 +9,8 @@ import About from "./pages/About";
 import SelfCheck from "./pages/SelfCheck";
 import ResultsPreview from "./pages/ResultsPreview";
 import TgrTypes from "./pages/TgrTypes";
+import Signals from "./pages/Signals";
+import SignalDetail from "./pages/SignalDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
