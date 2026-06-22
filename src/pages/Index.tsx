@@ -361,22 +361,35 @@ const Index = () => {
               Some of us are holding on to what we were. Some of us are rebuilding. Some of us just felt something shift and can't name it yet.
             </p>
             <p className="font-sans text-navy/70 text-lg leading-relaxed mb-12 max-w-2xl mx-auto">
-              We've identified 10 types that capture where people are right now and what they're building toward. Each one is a mirror — not a grade. You'll see where you are, where your strengths already point, and the specific next step that matches your profile.
+              Ten profiles across three stages — Identity Seekers, Direction Finders, and Builders in Motion — plus a capstone for those already pulling others forward.
             </p>
           </ScrollFadeUp>
 
-          {/* Type names constellation */}
+          {/* Three-column group preview */}
           <ScrollFadeUp delay={100}>
-            <div className="flex flex-wrap justify-center gap-3 mb-12">
-              {typeNames.map((name, i) => (
-                <span
-                  key={name}
-                  className="font-serif text-navy/80 text-base md:text-lg px-3 py-1"
-                  style={{ opacity: 0.6 + (i % 3) * 0.15 }}
-                >
-                  {name}
-                </span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 text-left">
+              {profileGroups.map((group) => (
+                <div key={group.name} className="border-t-2 border-coral/40 pt-5">
+                  <h3 className="font-serif text-navy text-xl mb-1">{group.name}</h3>
+                  <p className="font-sans text-navy/50 text-sm italic mb-4">{group.tagline}</p>
+                  <ul className="space-y-1.5">
+                    {group.profiles.map((p) => (
+                      <li key={p} className="font-serif text-navy/80 text-base">
+                        {p}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
+            </div>
+
+            {/* Capstone */}
+            <div className="border border-coral/30 rounded-lg bg-coral/5 px-6 py-5 mb-12 text-center">
+              <p className="font-sans text-coral text-xs uppercase tracking-widest mb-1">Capstone</p>
+              <p className="font-serif text-navy text-lg">
+                <span className="font-semibold">The Amplifier</span>
+                <span className="text-navy/60"> — for those already leading others through this.</span>
+              </p>
             </div>
           </ScrollFadeUp>
 
@@ -391,6 +404,7 @@ const Index = () => {
               7 questions. 2 minutes. Then we'll tell you what you're building toward.
             </p>
           </ScrollFadeUp>
+
         </div>
       </section>
 
