@@ -25,6 +25,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/phases" element={<Phases />} />
           <Route path="/types" element={<TgrTypes />} />
+          <Route path="/signals" element={<Signals />} />
+          <Route path="/signals/:slug" element={<SignalDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/selfcheck" element={<SelfCheck />} />
           <Route path="/results/preview" element={<ResultsPreview />} />
