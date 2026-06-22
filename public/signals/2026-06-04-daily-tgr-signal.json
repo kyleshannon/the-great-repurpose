@@ -1,0 +1,67 @@
+{
+  "date": "2026-06-04",
+  "title": "Daily TGR Signal",
+  "slug": "2026-06-04-daily-tgr-signal",
+  "pattern": "\"Creativity is really that sweet spot. People feel it will be useful in a world of automation and AI and also that it is less replaceable by these technologies.\"",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Find Your Purpose",
+    "Discover AI's Power",
+    "Start Creating"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "AI Isn't Replacing Creativity. It's Moving It Upstream.",
+      "url": "https://www.forbes.com/sites/cathyrubin/2026/05/26/ai-isnt-replacing-creativity-its-moving-it-upstream/",
+      "source": "forbes.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "Will the AI Economy Create a Permanent Underclass?",
+      "url": "https://www.theguardian.com/business/2026/jun/02/will-the-ai-economy-create-a-permanent-underclass",
+      "source": "theguardian.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://i.guim.co.uk/img/media/1fe5f1ddb95275c40b568819f804bd506f87e7b5/1129_0_6630_5304/master/6630.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3Bpb25zLnBuZw&enable=upscale&s=4b31a47b53bb90937f11090168a18996",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "AI Will Reshape More Jobs Than It Replaces",
+      "url": "https://www.bcg.com/publications/2026/ai-will-reshape-more-jobs-than-it-replaces",
+      "source": "bcg.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://web-assets.bcg.com/dims4/default/781d637/2147483647/strip/true/crop/2880x1512+0+0/resize/1200x630!/format/webp/quality/90/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2F01%2F6b%2F6458a17e4f19b3f8b0ce0f2909ca%2Fai-will-reshape-more-jobs-than-it-replaces-hero.jpg",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "Is AI Prompting a Creative Renaissance?",
+      "url": "https://insight.kellogg.northwestern.edu/article/is-ai-prompting-a-creative-renaissance",
+      "source": "insight.kellogg.northwestern.edu",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://cdn.craft.cloud/019d3066-3548-718e-af5b-3333a57196ee/assets/content/uploads/Full_0326_AI_Job_Threats.jpg?fit=contain&height=630&width=1200&s=JaRYTH4Qx4EH_xfmWlTOgNJ7M5CM_PKvnJLuQuw8WH0",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "10 Human Skills Likely to Protect Your Job From AI",
+      "url": "https://www.forbes.com/sites/bryanrobinson/2026/06/04/10-human-skills-likely-to-protect-your-job-from-ai-per-click-finder/",
+      "source": "forbes.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a1095d86b6918320ec56b91/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [],
+      "keyPoints": []
+    }
+  ],
+  "sourceStatus": "sent_html"
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-06-05",
+  "title": "Creative Control In The Age Of AI",
+  "slug": "2026-06-05-creative-control-in-the-age-of-ai",
+  "pattern": "The old guard of creative ownership is fighting back — Adobe's Creator Act, Epidemic Sound's Creator Economy Report, and a Forbes piece on AI agents all point to the same inflection point: human creators are demanding legal and technical guardrails over their work. The Great Repurpose isn't just about adapting to AI — it's about asserting who owns the output and who gets to decide. 1. AI Agents Put Creative Control Back on the Table",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Find Your Purpose",
+    "Discover AI's Power",
+    "Start Creating"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a20a739ac75b76282f7cc99/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds",
+  "stories": [
+    {
+      "title": "AI Agents Put Creative Control Back on the Table",
+      "url": "https://www.forbes.com/sites/ronschmelzer/2026/06/03/ai-agents-put-creative-control-back-on-the-table/",
+      "source": "forbes.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a20a739ac75b76282f7cc99/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "The Creator Act: Protection Artists Need in the Age of AI",
+      "url": "https://blog.adobe.com/en/publish/2026/06/02/the-creator-act-protection-artists-need-age-of-ai",
+      "source": "blog.adobe.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://blog.adobe.com/en/publish/2026/06/02/media_1b491d2d3d60132a30441b36aba2191fe7fc7a2e5.png?width=1200&format=pjpg&optimize=medium",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "Commerce Department Announces $25 Million For AI Upskilling Initiative",
+      "url": "https://www.forbes.com/sites/shalinjyotishi/2026/06/01/commerce-department-announces-25-million-for-ai-upskilling-initiative/",
+      "source": "forbes.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a1cf9180c213ac369150d21/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "34,000 Small Businesses Said AI Is Working. The Data Says Otherwise.",
+      "url": "https://www.forbes.com/sites/terdawn-deboe/2026/05/29/34000-small-businesses-said-ai-is-working-the-data-says-otherwise/",
+      "source": "forbes.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a1a22a809d983793369bc09/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "Epidemic Sound's Creator Economy Report: Human Creativity Will Define Who Succeeds",
+      "url": "https://corporate.epidemicsound.com/press-and-media/press-releases/2026/ai-is-changing-how-creators-work-but-control-and-human-creativity-will-define-who-succeeds-epidemic-sound-unveils-the-future-of-the-creator-economy-report-2026/",
+      "source": "corporate.epidemicsound.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "",
+      "stages": [],
+      "keyPoints": []
+    }
+  ],
+  "sourceStatus": "draft_html"
+}
