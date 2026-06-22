@@ -361,7 +361,7 @@ const Index = () => {
               Some of us are holding on to what we were. Some of us are rebuilding. Some of us just felt something shift and can't name it yet.
             </p>
             <p className="font-sans text-navy/70 text-lg leading-relaxed mb-12 max-w-2xl mx-auto">
-              Ten profiles across three stages — Identity Seekers, Direction Finders, and Builders in Motion — plus a capstone for those already pulling others forward.
+              Ten profiles across the journey — grouped as Identity Seekers, Direction Finders, and Builders in Motion — with The Amplifier for those for whom the real work is just beginning.
             </p>
           </ScrollFadeUp>
 
@@ -383,12 +383,11 @@ const Index = () => {
               ))}
             </div>
 
-            {/* Capstone */}
+            {/* The Amplifier */}
             <div className="border border-coral/30 rounded-lg bg-coral/5 px-6 py-5 mb-12 text-center">
-              <p className="font-sans text-coral text-xs uppercase tracking-widest mb-1">Capstone</p>
               <p className="font-serif text-navy text-lg">
                 <span className="font-semibold">The Amplifier</span>
-                <span className="text-navy/60"> — for those already leading others through this.</span>
+                <span className="text-navy/60"> — you've made it through. Now the real work begins.</span>
               </p>
             </div>
           </ScrollFadeUp>

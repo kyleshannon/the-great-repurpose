@@ -49,10 +49,10 @@ export const categories: Record<CategoryKey, Category> = {
   },
   "capstone": {
     key: "capstone",
-    name: "The Capstone",
-    label: "Capstone",
-    tagline: "You've made it through. The next step is generosity.",
-    description: "All five dimensions are alive in you. The journey now isn't about you anymore — it's about pulling others through.",
+    name: "The Amplifier",
+    label: "Amplifier",
+    tagline: "You've made it through. Now the real work begins.",
+    description: "All five dimensions are alive in you. What's ahead isn't a victory lap — it's doing this work at a different scale, with more on the line, and pulling others through as you go.",
     archetypeSlugs: ["the-amplifier"],
   },
 };
