@@ -3,68 +3,112 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 
-const types = [
+type ProfileCard = {
+  name: string;
+  tagline: string;
+  description: string;
+};
+
+type Group = {
+  name: string;
+  intro: string;
+  accent: string; // border + text accent
+  profiles: ProfileCard[];
+};
+
+const groups: Group[] = [
   {
-    name: "The Amplifier",
-    tagline: "You're building toward leading others through this.",
-    description: "You've done the work. Your sense of self doesn't depend on your title, you know what you bring that AI can't replicate, you have direction, you're comfortable with the tools, and you're already creating. The next step isn't more preparation — it's helping someone else get here. Find a peer group, start teaching what you know, or build something that pulls others forward.",
-    color: "border-coral",
+    name: "Identity Seekers",
+    intro:
+      "The work right now is inner: who are you when the title falls away? The disorientation is real — but it's the honest beginning of finding yourself again on the other side of AI.",
+    accent: "amber-brand",
+    profiles: [
+      {
+        name: "The Unlocker",
+        tagline: "You're still tying who you are to the title you held.",
+        description:
+          "AI replacing jobs feels personal — because who you are and what you did are the same thing in your head. Until that loosens, nothing else lands. Your work isn't learning ChatGPT. It's answering one question honestly: who am I if I'm not my job?",
+      },
+      {
+        name: "The Awakener",
+        tagline: "You're building toward clarity. Everything is early.",
+        description:
+          "You feel AI reshaping work, but you haven't started any of it — still fused to your title, haven't named your unique value, no direction, no tools. Trying to solve all four at once is why you're frozen. Pick one and take a concrete step this week.",
+      },
+      {
+        name: "The Explorer",
+        tagline: "You're building toward a new creative practice.",
+        description:
+          "You're using AI tools and making things — ahead of most. But you skipped the inner work: you haven't separated from your old role or named what you bring that AI can't. Producing without knowing what it's for. Answer: what am I building, and why me?",
+      },
+    ],
   },
   {
-    name: "The Awakener",
-    tagline: "You're building toward clarity. Everything is early.",
-    description: "Nothing feels clear yet, and that's okay. You're early — no single area has broken through, and the fog is real. The most important thing right now is to stop trying to figure it all out at once. Pick one dimension — just one — and take a small step. Read something that challenges how you think about your identity. Ask someone how they're using AI. Movement in any direction beats standing still.",
-    color: "border-cream/30",
+    name: "Direction Finders",
+    intro:
+      "You know yourself. Now the work is aiming it at something that matters — naming your value, picking a problem worth solving, pointing your clarity at a target.",
+    accent: "coral",
+    profiles: [
+      {
+        name: "The Firestarter",
+        tagline: "You're building toward something that just caught fire.",
+        description:
+          "One piece just broke through — your value, a purpose, a tool. That area surged while the rest stayed flat. The breakthrough is a clue about your shape. Use it to pull the other pieces — identity, direction, tools, output — forward.",
+      },
+      {
+        name: "The Translator",
+        tagline: "You're building toward bridging two worlds.",
+        description:
+          "You know yourself and you're fluent with AI — the two hardest bookends. But the middle is hollow: no clear sense of your value or where to aim it. Producing capably without a center. Stop long enough to ask what's actually worth building, and why you.",
+      },
+      {
+        name: "The Original",
+        tagline: "You're building toward becoming irreplaceable.",
+        description:
+          "You've unhooked from your title and you know what you bring. The inner work is done. But you haven't aimed it — no problem picked, no audience, no tools. Pick a specific problem worth solving or audience worth serving. Point your clarity at a target.",
+      },
+    ],
   },
   {
-    name: "The Explorer",
-    tagline: "You're building toward a new creative practice.",
-    description: "You've been playing with AI tools or making things, which puts you ahead of most people. But the deeper questions — who you are without your job title, what value you bring that's uniquely yours — are still unanswered. The risk is building impressive things that don't mean anything to you. Slow down long enough to ask: what is all this capability actually for?",
-    color: "border-mint",
-  },
-  {
-    name: "The Firestarter",
-    tagline: "You're building toward something that just caught fire.",
-    description: "Something clicked. Maybe it was a moment of clarity about your identity, or a purpose that suddenly made sense, or an AI tool that opened a door. One area of your life just leapt ahead while everything else is still catching up. Don't dismiss the spark — it's the thread to pull. The next step is to let that breakthrough inform the areas that haven't moved yet. What does your spark tell you about where to go next?",
-    color: "border-amber-brand",
-  },
-  {
-    name: "The Translator",
-    tagline: "You're building toward bridging two worlds.",
-    description: "You're strong on the outside edges — you know who you are and you're comfortable with tools or creation. But there's a gap in the middle: you haven't connected your identity to a clear direction. You're doing impressive things without a strategic center. The next step is to slow down and ask what's worth building — before you build more of it.",
-    color: "border-periwinkle",
-  },
-  {
-    name: "The Architect",
-    tagline: "You're building toward something only you can build.",
-    description: "You understand everything. Identity, value, purpose, tools — all solid. The only thing missing is output. You haven't shipped anything yet. The gap isn't knowledge, it's action. Perfectionism is probably disguised as preparation. The next step is to make something — anything — and put it in front of someone. A rough draft, a prototype, a first attempt. Done beats perfect.",
-    color: "border-coral",
-  },
-  {
-    name: "The Compass",
-    tagline: "You're building toward leading the way.",
-    description: "You've done the hardest part. You know who you are, what you bring, and where you're headed. But you haven't picked up the tools yet, and you haven't started creating. You have the perfect map and no boots on the ground. The next step is low-stakes experimentation with AI — not mastery, just familiarity. Try one tool. Make one thing. The inner work is done; now it's time to move.",
-    color: "border-mint",
-  },
-  {
-    name: "The Original",
-    tagline: "You're building toward becoming irreplaceable.",
-    description: "Your identity is unhooked from your old title, and you've found real value in what you bring. But you haven't aimed it anywhere yet. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it.",
-    color: "border-periwinkle",
-  },
-  {
-    name: "The Unlocker",
-    tagline: "You're still tying who you are to the title you held.",
-    description: "Identity is the bottleneck. You're still separating who you are from the title you held, and until that shifts, nothing else can move. Every AI headline feels like a personal threat. That's normal — and it's the door to walk through. The next step isn't learning a tool or finding your purpose. It's sitting with the question: who am I if I'm not my job? Start there. Everything else is waiting on the other side.",
-    color: "border-amber-brand",
-  },
-  {
-    name: "The Catalyst",
-    tagline: "You're building toward amplifying everything you touch.",
-    description: "You're solid across the board. Nothing is catastrophically low, nothing is fully resolved. You're balanced, capable, and closer than you think. The risk is coasting — \"good enough\" can become a ceiling. The next step is to pick the one dimension where a small push would create the most momentum, and lean into it. You're closer than you think — and one deliberate move could change everything.",
-    color: "border-cream/30",
+    name: "Builders in Motion",
+    intro:
+      "The foundation is set. The remaining work is action — picking up tools, making things, putting work in front of real people. Shipping, not preparing.",
+    accent: "mint",
+    profiles: [
+      {
+        name: "The Compass",
+        tagline: "You're building toward leading the way.",
+        description:
+          "Identity, value, direction — all clear. The hardest part is done. But you haven't picked up the tools or made anything. Perfect map, no boots on the ground. Pick one AI tool this week and make one small thing. Familiarity, not mastery.",
+      },
+      {
+        name: "The Architect",
+        tagline: "You're building toward something only you can build.",
+        description:
+          "You understand all of it — who you are, what you bring, where you're going, how the tools work. The only gap is output. Preparation is disguising itself as progress. Make something rough and put it in front of a real person by Friday.",
+      },
+      {
+        name: "The Catalyst",
+        tagline: "You're building toward amplifying everything you touch.",
+        description:
+          "Solid across identity, value, direction, tools, and output — nothing broken, nothing fully resolved. Balanced and capable, which is why \"good enough\" could quietly become your ceiling. Pick the one area where a small push creates the most momentum.",
+      },
+    ],
   },
 ];
+
+const capstone: ProfileCard = {
+  name: "The Amplifier",
+  tagline: "You've done all five. The next step is generosity.",
+  description:
+    "Identity unhooked, value named, direction set, tools in hand, shipping regularly. The next step isn't preparation; it's generosity. Find a peer group, teach what you know, or build something that pulls others forward. You got here. Help someone else get here.",
+};
+
+const accentClasses: Record<string, { border: string; text: string; bg: string }> = {
+  "amber-brand": { border: "border-amber-brand", text: "text-amber-brand", bg: "bg-amber-brand/5" },
+  "coral":       { border: "border-coral",       text: "text-coral",       bg: "bg-coral/5"       },
+  "mint":        { border: "border-mint",        text: "text-emerald-700", bg: "bg-mint/10"       },
+};
 
 const TgrTypes = () => {
   return (
@@ -79,35 +123,72 @@ const TgrTypes = () => {
                 The 10 Great Repurpose Profiles
               </p>
               <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mb-6">
-                Everyone navigating this transition has a shape.
+                Ten profiles. Three stages. One capstone.
               </h1>
               <p className="font-sans text-cream/70 text-lg leading-relaxed max-w-2xl mx-auto mb-4">
-                The Great Repurpose measures five dimensions of readiness: Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, and Start Creating. Your pattern across those five dimensions determines your Great Repurpose Profile — and what you're building toward.
+                Your pattern across five dimensions — Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, and Start Creating — places you in one of three stages of the journey, with a capstone for those already leading others through it.
               </p>
               <p className="font-sans text-cream/50 text-base max-w-2xl mx-auto">
-                There are ten types. None of them are bad. All of them are a starting point.
+                None of them are bad. All of them are a starting point.
               </p>
             </ScrollFadeUp>
           </div>
         </section>
 
-        {/* Types grid */}
+        {/* Groups */}
         <section className="bg-cream py-16 md:py-24 px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid gap-6 md:grid-cols-2">
-              {types.map((type, i) => (
-                <ScrollFadeUp key={type.name} delay={i * 60}>
-                  <div className={`border-l-4 ${type.color} bg-navy/5 border border-navy/10 rounded-r-lg p-7 h-full`}>
-                    <h3 className="font-serif text-emerald-700 text-xl mb-1">{type.name}</h3>
-                    <p className="font-serif text-navy/60 text-sm italic mb-3">{type.tagline}</p>
-                    <p className="font-sans text-navy/70 text-sm leading-relaxed">{type.description}</p>
-                  </div>
-                </ScrollFadeUp>
-              ))}
-            </div>
+          <div className="max-w-5xl mx-auto space-y-20">
+            {groups.map((group, gi) => {
+              const a = accentClasses[group.accent];
+              return (
+                <div key={group.name}>
+                  <ScrollFadeUp>
+                    <div className="text-center mb-10 max-w-2xl mx-auto">
+                      <p className={`font-sans text-xs uppercase tracking-widest mb-3 ${a.text}`}>
+                        Stage {gi + 1}
+                      </p>
+                      <h2 className={`font-serif text-3xl md:text-4xl mb-3 ${a.text}`}>
+                        {group.name}
+                      </h2>
+                      <p className="font-sans text-navy/70 text-base md:text-lg leading-relaxed">
+                        {group.intro}
+                      </p>
+                    </div>
+                  </ScrollFadeUp>
 
-            <ScrollFadeUp delay={600}>
-              <div className="text-center mt-16">
+                  <div className="grid gap-6 md:grid-cols-3">
+                    {group.profiles.map((p, i) => (
+                      <ScrollFadeUp key={p.name} delay={i * 60}>
+                        <div className={`border-l-4 ${a.border} ${a.bg} border-y border-r border-navy/10 rounded-r-lg p-6 h-full`}>
+                          <h3 className="font-serif text-emerald-700 text-xl mb-1">{p.name}</h3>
+                          <p className="font-serif text-navy/60 text-sm italic mb-3">{p.tagline}</p>
+                          <p className="font-sans text-navy/70 text-sm leading-relaxed">{p.description}</p>
+                        </div>
+                      </ScrollFadeUp>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+
+            {/* Capstone */}
+            <ScrollFadeUp>
+              <div className="border-2 border-coral rounded-lg bg-coral/5 p-8 md:p-10 text-center">
+                <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">
+                  Capstone — for those already leading the way
+                </p>
+                <h3 className="font-serif text-navy text-3xl md:text-4xl mb-2">{capstone.name}</h3>
+                <p className="font-serif text-navy/60 text-base md:text-lg italic mb-5 max-w-2xl mx-auto">
+                  {capstone.tagline}
+                </p>
+                <p className="font-sans text-navy/70 text-base leading-relaxed max-w-2xl mx-auto">
+                  {capstone.description}
+                </p>
+              </div>
+            </ScrollFadeUp>
+
+            <ScrollFadeUp delay={200}>
+              <div className="text-center pt-4">
                 <p className="font-serif text-navy text-xl mb-6">Which one are you?</p>
                 <Link
                   to="/selfcheck"
