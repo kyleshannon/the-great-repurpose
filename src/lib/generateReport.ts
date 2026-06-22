@@ -20,7 +20,8 @@ const dimensionLabels: Record<DimensionKey, { label: string; stage: string }> = 
 const dimOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];
 
 interface ReportData {
-  archetype: { name: string; tagline: string; description: string; vulnerability: string };
+  archetype: { name: string; tagline: string; description: string; vulnerability: string; category?: string };
+  category?: { label: string; description: string; isCapstone: boolean };
   scores: Record<DimensionKey, number>;
   interpretation: string;
 }
