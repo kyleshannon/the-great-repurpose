@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 import { ChevronDown } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { matchArchetype, getArchetypeSlug, type Scores, type Archetype } from "@/lib/archetypes";
+import { matchArchetype, getArchetypeSlug, categories, type Scores, type Archetype } from "@/lib/archetypes";
 import { generateReportPDF } from "@/lib/generateReport";
 
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
@@ -461,8 +461,14 @@ const ResultsPreview = () => {
     if (!scores || !archetype) return;
     setGenerating(true);
     try {
+      const cat = categories[archetype.category];
       generateReportPDF({
         archetype,
+        category: {
+          label: cat.label,
+          description: cat.description,
+          isCapstone: archetype.category === "capstone",
+        },
         scores,
         interpretation: interpretationText || "",
       });
@@ -517,12 +523,27 @@ const ResultsPreview = () => {
           <section className="bg-navy pt-20 md:pt-28 pb-8 md:pb-12 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
               <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">Your Great Repurpose Profile</p>
-              <h1 className="font-serif text-cream text-4xl md:text-5xl mb-2">
-                You are {archetype.name}.
-              </h1>
-              <p className="font-serif text-cream/60 text-lg italic mb-10">
-                {archetype.tagline}
-              </p>
+              {(() => {
+                const cat = categories[archetype.category];
+                const isCapstone = archetype.category === "capstone";
+                return (
+                  <>
+                    <h1 className="font-serif text-cream text-3xl md:text-4xl leading-tight mb-3">
+                      {isCapstone ? (
+                        <>You're at the capstone. <span className="block md:inline">Meet <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
+                      ) : (
+                        <>You're a <span className="font-semibold">{cat.label}</span>. <span className="block md:inline">Specifically: <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
+                      )}
+                    </h1>
+                    <p className="font-sans text-cream/60 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-3">
+                      {cat.description}
+                    </p>
+                    <p className="font-serif text-cream/70 text-lg italic mb-10">
+                      {archetype.tagline}
+                    </p>
+                  </>
+                );
+              })()}
 
               <ResponsiveContainer width="100%" height={300}>
                 <RadarChart data={chartData}>
@@ -544,6 +565,7 @@ const ResultsPreview = () => {
               <p className="text-cream/40 text-xs font-sans mt-2">Your shape across the five dimensions</p>
             </div>
           </section>
+
 
           {/* ── About this profile (static description) ── */}
           <section className="bg-navy py-12 md:py-16 px-6">

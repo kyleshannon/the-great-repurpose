@@ -20,7 +20,8 @@ const dimensionLabels: Record<DimensionKey, { label: string; stage: string }> = 
 const dimOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];
 
 interface ReportData {
-  archetype: { name: string; tagline: string; description: string; vulnerability: string };
+  archetype: { name: string; tagline: string; description: string; vulnerability: string; category?: string };
+  category?: { label: string; description: string; isCapstone: boolean };
   scores: Record<DimensionKey, number>;
   interpretation: string;
 }
@@ -91,14 +92,39 @@ export function generateReportPDF(data: ReportData) {
   doc.setFontSize(9);
   setColor(doc, SAGE);
   doc.text("YOUR GREAT REPURPOSE PROFILE", pageWidth / 2, y, { align: "center" });
-  y += 18;
+  y += 14;
+
+  // Category headline
+  if (data.category) {
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(14);
+    setColor(doc, CREAM);
+    const headline = data.category.isCapstone
+      ? "You're at the capstone."
+      : `You're a ${data.category.label}.`;
+    doc.text(headline, pageWidth / 2, y, { align: "center" });
+    y += 10;
+  }
 
   // Archetype name
   doc.setFont("helvetica", "bold");
-  doc.setFontSize(32);
+  doc.setFontSize(28);
   setColor(doc, CREAM);
   doc.text(data.archetype.name, pageWidth / 2, y, { align: "center" });
-  y += 12;
+  y += 10;
+
+  // Category description
+  if (data.category) {
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10);
+    setColor(doc, MUTED);
+    const descLines = doc.splitTextToSize(data.category.description, contentWidth - 30) as string[];
+    for (const line of descLines) {
+      doc.text(line, pageWidth / 2, y, { align: "center" });
+      y += 5;
+    }
+    y += 4;
+  }
 
   // Tagline
   doc.setFont("helvetica", "italic");
