@@ -33,10 +33,10 @@ edits, no build steps. Lovable's GitHub sync auto-deploys on push.
       "url": "https://source.example.com/article",
       "source": "source.example.com",
       "published": "2026-06-18T11:00:00+00:00",
-      "summary": "Optional 1–3 sentence summary in TGR voice.",
+      "summary": "Required 1–3 sentence overview in The Great Repurpose voice.",
       "imageUrl": "https://source.example.com/hero.jpg",
       "stages": ["Reclaim Value"],
-      "keyPoints": ["Optional bullet", "Optional bullet"]
+      "keyPoints": ["Required bullet", "Required bullet"]
     }
   ],
   "sourceStatus": "generated"
@@ -54,7 +54,10 @@ edits, no build steps. Lovable's GitHub sync auto-deploys on push.
 | `stages` | yes | 1–5 entries. Must match the canonical names below exactly. |
 | `imageUrl` | recommended | Used as the OG share image and archive card image. Empty string allowed but the card will render without a thumbnail. |
 | `stories` | yes | Exactly **5** entries. Fewer renders but looks sparse. |
-| `stories[].summary`, `stories[].keyPoints`, `stories[].published` | optional | Empty string / `[]` are fine. |
+| `stories[].summary` | yes | 1–3 sentences in The Great Repurpose voice. Direct, human, concrete. No empty strings. |
+| `stories[].keyPoints` | yes | 2–3 bullets that make the story scannable. No empty arrays. |
+| `stories[].stages` | yes | 1–2 canonical TGR stages per story. No empty arrays. |
+| `stories[].published` | recommended | ISO date/time when available. Empty string allowed only if unavailable. |
 | `sourceStatus` | optional | Internal provenance marker. Not displayed. |
 
 ### Canonical stage names (case-sensitive, exact match)
@@ -103,5 +106,6 @@ file — Codex must keep these in sync.
 - Both files are valid JSON (`node -e "JSON.parse(require('fs').readFileSync('public/signals/<slug>.json','utf8'))"`).
 - `slug` in the file equals the filename minus `.json`.
 - `index.json` contains exactly one entry with this slug.
-- `stages` entries appear in the canonical list above.
-- All `stories[].url` resolve (200 OK) and use HTTPS.
+- `stages` and `stories[].stages` entries appear in the canonical list above.
+- Every story has non-empty `summary`, at least two `keyPoints`, and at least one canonical `stage`.
+- All `stories[].url` resolve and use HTTPS.
