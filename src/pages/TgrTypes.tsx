@@ -144,9 +144,6 @@ const TgrTypes = () => {
                 <div key={group.name}>
                   <ScrollFadeUp>
                     <div className="text-center mb-10 max-w-2xl mx-auto">
-                      <p className={`font-sans text-xs uppercase tracking-widest mb-3 ${a.text}`}>
-                        Stage {gi + 1}
-                      </p>
                       <h2 className={`font-serif text-3xl md:text-4xl mb-3 ${a.text}`}>
                         {group.name}
                       </h2>
