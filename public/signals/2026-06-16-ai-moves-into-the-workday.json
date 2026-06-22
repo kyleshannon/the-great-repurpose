@@ -16,64 +16,84 @@
       "url": "https://www.computerworld.com/video/4185559/why-ai-agents-could-create-a-new-control-and-security-crisis.html",
       "source": "computerworld.com",
       "published": "2026-06-16T04:49:00+00:00",
-      "summary": "",
+      "summary": "This matters because the capability curve is moving from novelty into operating reality. As AI agents begin touching enterprise data, APIs, and workflows, the human question shifts from whether the tools work to who has judgment, authority, and accountability over what they do.",
       "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/06/4185559-0-48713800-1781610470-youtube-thumbnail-uPpd9EJ4iNI_55eb26.jpg?quality=50&strip=all&w=1024",
       "stages": [
         "Discover AI's Power",
         "Start Creating"
       ],
-      "keyPoints": []
+      "keyPoints": [
+        "AI agents are rapidly evolving from productivity assistants into autonomous systems capable of accessing enterprise data, APIs, applications, and business processes.",
+        "The control problem becomes more urgent as agents gain permission to act inside real systems.",
+        "The TGR signal is that people need to create with AI while staying responsible for the systems they unleash."
+      ]
     },
     {
       "title": "Adobe’s AI Edge: Turning Solo Creators Into Global Media Brands",
       "url": "https://www.forbes.com/sites/jamiegutfreund/2026/06/16/adobes-ai-edge-turning-solo-creators-into-global-media-brands/",
       "source": "forbes.com",
       "published": "2026-06-16T06:41:00+00:00",
-      "summary": "",
+      "summary": "This matters because it points to the human value that remains when execution gets automated. AI gives solo creators scale, but the work still depends on human taste, voice, direction, and judgment.",
       "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a30d0afa8d3ddcf046cccc3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
       "stages": [
         "Reclaim Value",
         "Start Creating"
       ],
-      "keyPoints": []
+      "keyPoints": [
+        "Adobe research shows creators say AI is accelerating growth while making creativity and judgment more valuable.",
+        "Production leverage is becoming available to individuals who once needed teams or large budgets.",
+        "The TGR signal is that reclaimed human value becomes more powerful when paired with new creative instruments."
+      ]
     },
     {
       "title": "Build AI agents that do one job",
       "url": "https://www.fastcompany.com/91558102/build-ai-agents-that-do-one-job",
       "source": "fastcompany.com",
       "published": "2026-06-15T07:23:00+00:00",
-      "summary": "",
+      "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them. The clearer the agent's job becomes, the clearer the human's role must become too: setting context, constraints, standards, and purpose.",
       "imageUrl": "",
       "stages": [
         "Unhook Identity",
         "Discover AI's Power"
       ],
-      "keyPoints": []
+      "keyPoints": [
+        "The article argues that every agent should have one clear job, with a defined input, output, and constraint.",
+        "Vague agents create vague accountability; focused agents make delegation safer and more useful.",
+        "The TGR signal is that humans need to stop identifying with every task and start designing the work intentionally."
+      ]
     },
     {
       "title": "Tech Layoffs Hit 1,115 a Day in 2026: Companies Cite AI but Cuts Fail to Boost Returns",
       "url": "https://www.techtimes.com/articles/318466/20260616/tech-layoffs-hit-1115-day-2026-companies-cite-ai-cuts-fail-boost-returns.htm",
       "source": "techtimes.com",
       "published": "2026-06-16T13:20:34+00:00",
-      "summary": "",
+      "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them. AI is now part of the explanation companies use for layoffs, but the deeper human work is learning not to let that explanation define identity or worth.",
       "imageUrl": "https://d.techtimes.com/en/full/466792/hiring-expo.jpg",
       "stages": [
         "Unhook Identity"
       ],
-      "keyPoints": []
+      "keyPoints": [
+        "Tech layoffs in 2026 are averaging 1,115 job cuts per day as companies cite AI in workforce reductions.",
+        "The story notes that companies cutting the most did not necessarily see better financial returns.",
+        "The TGR signal is that AI disruption is both a labor story and a meaning story."
+      ]
     },
     {
       "title": "AI Made Content Abundant. For Creators, Voice Is Now The Scarce Asset",
       "url": "https://www.forbes.com/sites/maureenkerr/2026/06/16/ai-made-content-abundant-for-creators-voice-is-now-the-scarce-asset/",
       "source": "forbes.com",
       "published": "2026-06-16T11:30:00+00:00",
-      "summary": "",
+      "summary": "This matters because it points to the human value that remains when execution gets automated. When content becomes abundant, voice and judgment become the scarce assets people actually seek out.",
       "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a311e87a5a0ca492480343a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
       "stages": [
         "Reclaim Value",
         "Start Creating"
       ],
-      "keyPoints": []
+      "keyPoints": [
+        "A 2026 survey of 16,000 creators shows voice and judgment, not volume, are now the scarce asset.",
+        "AI abundance makes generic content less valuable and distinctive human perspective more valuable.",
+        "The TGR signal is that creators need to reclaim what makes their work recognizably theirs."
+      ]
     }
   ],
   "sourceStatus": "generated"
