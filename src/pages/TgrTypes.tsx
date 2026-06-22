@@ -99,9 +99,9 @@ const groups: Group[] = [
 
 const capstone: ProfileCard = {
   name: "The Amplifier",
-  tagline: "You've done all five. The next step is generosity.",
+  tagline: "Now the real work begins.",
   description:
-    "Identity unhooked, value named, direction set, tools in hand, shipping regularly. The next step isn't preparation; it's generosity. Find a peer group, teach what you know, or build something that pulls others forward. You got here. Help someone else get here.",
+    "Identity unhooked, value named, direction set, tools in hand, shipping regularly. You've made it through the parts that stop most people. What's ahead isn't a victory lap — it's the work of doing this at a different scale, in front of more people, with more on the line. Find peers operating at your level. Pull someone else forward. Keep building.",
 };
 
 const accentClasses: Record<string, { border: string; text: string; bg: string }> = {
@@ -123,10 +123,10 @@ const TgrTypes = () => {
                 The 10 Great Repurpose Profiles
               </p>
               <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mb-6">
-                Ten profiles. Three stages. One capstone.
+                Where you are on The Great Repurpose journey
               </h1>
               <p className="font-sans text-cream/70 text-lg leading-relaxed max-w-2xl mx-auto mb-4">
-                Your pattern across five dimensions — Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, and Start Creating — places you in one of three stages of the journey, with a capstone for those already leading others through it.
+                Everyone navigating the AI transition is somewhere on this map. Ten profiles, each one a real place people find themselves — defined by your pattern across Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, and Start Creating.
               </p>
               <p className="font-sans text-cream/50 text-base max-w-2xl mx-auto">
                 None of them are bad. All of them are a starting point.
@@ -168,12 +168,9 @@ const TgrTypes = () => {
               );
             })}
 
-            {/* Capstone */}
+            {/* The Amplifier */}
             <ScrollFadeUp>
               <div className="border-2 border-coral rounded-lg bg-coral/5 p-8 md:p-10 text-center">
-                <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">
-                  Capstone — for those already leading the way
-                </p>
                 <h3 className="font-serif text-navy text-3xl md:text-4xl mb-2">{capstone.name}</h3>
                 <p className="font-serif text-navy/60 text-base md:text-lg italic mb-5 max-w-2xl mx-auto">
                   {capstone.tagline}
