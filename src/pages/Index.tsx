@@ -51,18 +51,24 @@ const phases = [
   },
 ];
 
-const typeNames = [
-  "The Awakener",
-  "The Unlocker",
-  "The Original",
-  "The Compass",
-  "The Explorer",
-  "The Firestarter",
-  "The Architect",
-  "The Translator",
-  "The Catalyst",
-  "The Amplifier",
+const profileGroups = [
+  {
+    name: "Identity Seekers",
+    tagline: "The work right now is inner.",
+    profiles: ["The Unlocker", "The Awakener", "The Explorer"],
+  },
+  {
+    name: "Direction Finders",
+    tagline: "Now the work is aiming it.",
+    profiles: ["The Firestarter", "The Translator", "The Original"],
+  },
+  {
+    name: "Builders in Motion",
+    tagline: "The work is shipping.",
+    profiles: ["The Compass", "The Architect", "The Catalyst"],
+  },
 ];
+
 
 const Index = () => {
   return (
