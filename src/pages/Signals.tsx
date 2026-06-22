@@ -211,7 +211,7 @@ const Signals = () => {
                           </p>
                         )}
                         <div className="mt-auto flex flex-wrap gap-2 pt-2">
-                          {signal.stages.slice(0, 3).map((stage) => (
+                          {signal.stages.map((stage) => (
                             <span
                               key={stage}
                               className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1"
