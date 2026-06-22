@@ -10,6 +10,19 @@ edits, no build steps. Lovable's GitHub sync auto-deploys on push.
 2. `public/signals/index.json` — prepend a new entry so the archive lists
    it. Keep the array sorted by `date` descending.
 
+## Built-in fallback thumbnail
+
+Every archive card must have an image. If none of the selected stories has a
+usable article image, set the briefing-level `imageUrl` and the matching
+`index.json` entry `imageUrl` to:
+
+```text
+/signals/tgr-signal-thumbnail.svg
+```
+
+Use a real story image when one is available. Use the fallback only when the
+selected five stories do not provide a usable image.
+
 ## Slug rules
 
 - Format: `YYYY-MM-DD-kebab-title` (e.g. `2026-06-18-ai-moves-into-the-workday`).
@@ -52,11 +65,12 @@ edits, no build steps. Lovable's GitHub sync auto-deploys on push.
 | `title` | yes | 4–9 words. Used in `<h1>`, OG title, archive card. |
 | `pattern` | yes | The "Pattern of the Day". Plain text, ~2–3 sentences. |
 | `stages` | yes | 1–5 entries. Must match the canonical names below exactly. |
-| `imageUrl` | recommended | Used as the OG share image and archive card image. Empty string allowed but the card will render without a thumbnail. |
+| `imageUrl` | yes | Used as the OG share image and archive card image. Use the strongest story image, or `/signals/tgr-signal-thumbnail.svg` if no selected story has a usable image. Do not leave empty. |
 | `stories` | yes | Exactly **5** entries. Fewer renders but looks sparse. |
 | `stories[].summary` | yes | 1–3 sentences in The Great Repurpose voice. Direct, human, concrete. No empty strings. |
 | `stories[].keyPoints` | yes | 2–3 bullets that make the story scannable. No empty arrays. |
 | `stories[].stages` | yes | 1–2 canonical TGR stages per story. No empty arrays. |
+| `stories[].imageUrl` | optional | Story-level article image when available. Empty string allowed. Do not use the fallback here unless the story itself needs a visible thumbnail in a future UI. |
 | `stories[].published` | recommended | ISO date/time when available. Empty string allowed only if unavailable. |
 | `sourceStatus` | optional | Internal provenance marker. Not displayed. |
 
@@ -93,11 +107,12 @@ file — Codex must keep these in sync.
 1. Pick the canonical date `YYYY-MM-DD` (UTC).
 2. Build the slug: `<date>-<kebab-title>`.
 3. Write `public/signals/<slug>.json` following the schema above.
-4. Open `public/signals/index.json` and **prepend** the matching index
+4. Choose the briefing-level `imageUrl`: use the strongest selected story image, or `/signals/tgr-signal-thumbnail.svg` if no selected story has a usable image.
+5. Open `public/signals/index.json` and **prepend** the matching index
    entry. Re-sort by `date` descending if unsure.
-5. Commit both files in one commit. Suggested message:
+6. Commit both files in one commit. Suggested message:
    `signal: <date> — <title>`.
-6. Push to `main`. Lovable redeploys; the new briefing appears at
+7. Push to `main`. Lovable redeploys; the new briefing appears at
    `https://thegreatrepurpose.com/signals/<slug>` and on the homepage
    teaser within a minute or two.
 
@@ -108,4 +123,5 @@ file — Codex must keep these in sync.
 - `index.json` contains exactly one entry with this slug.
 - `stages` and `stories[].stages` entries appear in the canonical list above.
 - Every story has non-empty `summary`, at least two `keyPoints`, and at least one canonical `stage`.
+- Briefing-level `imageUrl` and index entry `imageUrl` are non-empty. Use `/signals/tgr-signal-thumbnail.svg` if needed.
 - All `stories[].url` resolve and use HTTPS.
