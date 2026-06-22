@@ -1,0 +1,67 @@
+{
+  "date": "2026-06-02",
+  "title": "Anthropic Files IPO, Sanders Demands Public AI Equity, Banks Cut 7K Jobs To AI",
+  "slug": "2026-06-02-anthropic-files-ipo-sanders-demands-public-ai-equity-banks-cut-7k-jobs-to-ai",
+  "pattern": "The infrastructure layer of AI is consolidating into monopoly-scale valuations (Anthropic's $965B IPO filing) while the labor layer is being dismantled in real time (7,000 Standard Chartered job cuts). The gap between capital concentration and worker displacement is widening faster than policy can respond. Sanders' sovereign wealth fund proposal is the first serious attempt to build a dam.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Find Your Purpose",
+    "Discover AI's Power",
+    "Start Creating"
+  ],
+  "imageUrl": "https://assets.forbes.com/imageservice/anthropic-ipo.jpg",
+  "stories": [
+    {
+      "title": "Anthropic Confidentially Files To Go Public",
+      "url": "https://www.forbes.com/sites/aliciapark/2026/06/01/anthropic-confidentially-files-for-its-highly-anticipated-ipo/",
+      "source": "forbes.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://assets.forbes.com/imageservice/anthropic-ipo.jpg",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "Bernie Sanders AI Bill Would Give Public Half Of The AI Industry",
+      "url": "https://mashable.com/tech/bernie-sanders-nyt-op-ed-pubic-ai-ownership-argument",
+      "source": "mashable.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://i2.wp.com/h-cdn.anceli.com/3780/2026/06/01/1200x630.png",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "Standard Chartered To Cut More Than 7,000 Jobs As It Steps Up AI Use",
+      "url": "https://www.theguardian.com/business/2026/may/19/standard-chartered-bank-cut-jobs-ai-london",
+      "source": "theguardian.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://i.guim.co.uk/img/media/standard-chartered-hq.jpg",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "AI LLM Agent Cyberattack Exfiltrates AWS Database",
+      "url": "https://cybernews.com/news/llm-agent-cyberattack-aws-database/",
+      "source": "cybernews.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://assets.forbes.com/imageservice/artist-machine-summit.jpg",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "AI Isn't Replacing Creativity. It's Moving It Upstream.",
+      "url": "https://www.forbes.com/sites/cathyrubin/2026/05/26/ai-isnt-replacing-creativity-its-moving-it-upstream/",
+      "source": "forbes.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "",
+      "stages": [],
+      "keyPoints": []
+    }
+  ],
+  "sourceStatus": "sent_html"
+}

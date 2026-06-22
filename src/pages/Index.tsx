@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
+import { SignalTeaser } from "@/components/SignalTeaser";
 
 const phases = [
   {
@@ -406,6 +407,9 @@ const Index = () => {
 
         </div>
       </section>
+
+      {/* ── Latest TGR Signal teaser ── */}
+      <SignalTeaser />
 
       {/* ── Section 6: How It Works ── */}
       <section className="bg-cream py-16 md:py-24 px-6">

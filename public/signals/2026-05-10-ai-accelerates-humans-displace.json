@@ -1,0 +1,67 @@
+{
+  "date": "2026-05-10",
+  "title": "AI Accelerates, Humans Displace",
+  "slug": "2026-05-10-ai-accelerates-humans-displace",
+  "pattern": "The pattern this week is unmistakable: AI adoption is no longer about augmentation — it's about replacement at scale. Meta, Cloudflare, and others are cutting headcount precisely as their AI systems absorb human labor. The question isn't whether jobs will change; it's whether people have the inner foundation to survive the transition with their identity intact.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Find Your Purpose",
+    "Discover AI's Power",
+    "Start Creating"
+  ],
+  "imageUrl": "https://static01.nyt.com/images/2026/05/08/multimedia/08meta-ai-employees-qfzp/08meta-ai-employees-qfzp-superJumbo.jpg",
+  "stories": [
+    {
+      "title": "Meta Employees Miserable Between Looming Layoffs and AI Push",
+      "url": "https://www.nytimes.com/2026/05/08/technology/meta-ai-employees-miserable.html",
+      "source": "nytimes.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "https://static01.nyt.com/images/2026/05/08/multimedia/08meta-ai-employees-qfzp/08meta-ai-employees-qfzp-superJumbo.jpg",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "Cloudflare Lays Off 1,100 Workers as AI Usage Increases 600%",
+      "url": "https://www.theverge.com/2026/5/7/cloudflare-layoffs-ai",
+      "source": "theverge.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "Golden Globes Release Rules Allowing AI in Acting Awards",
+      "url": "https://goldenglobes.com/wp-content/uploads/2026/05/FINAL_84th-ANNUAL-GOLDEN-GLOBES-ELIGIBILITY-AND-CONSIDERATION-RULES-.pdf",
+      "source": "goldenglobes.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "Gmail's \"Help Me Write\" Now Generates Emails That Sound Like You",
+      "url": "https://workspaceupdates.googleblog.com/2026/05/improvements-to-help-me-write-in-gmail.html",
+      "source": "workspaceupdates.googleblog.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "",
+      "stages": [],
+      "keyPoints": []
+    },
+    {
+      "title": "Naughty Dog and Santa Monica Studio Adopt AI-Powered Animation",
+      "url": "https://www.theverge.com/2026/5/8/naughty-dog-ai-animation-tool",
+      "source": "theverge.com",
+      "published": "",
+      "summary": "",
+      "imageUrl": "",
+      "stages": [],
+      "keyPoints": []
+    }
+  ],
+  "sourceStatus": "sent_html"
+}
