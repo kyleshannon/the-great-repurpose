@@ -8,6 +8,6 @@ The Great Repurpose is a movement and self-discovery tool for people whose work 
 
 - [Home](/): Overview of The Great Repurpose, the crisis it names, and the five stages.
 - [Phases](/phases): Detailed breakdown of the five stages of finding your way through.
-- [Types](/types): The 10 Great Repurpose Profiles, organized into three stages — Identity Seekers (The Unlocker, The Awakener, The Explorer), Direction Finders (The Firestarter, The Translator, The Original), and Builders in Motion (The Compass, The Architect, The Catalyst) — plus a capstone, The Amplifier, for those already leading others through the transition.
+- [Types](/types): The 10 Great Repurpose Profiles, grouped as Identity Seekers (The Unlocker, The Awakener, The Explorer), Direction Finders (The Firestarter, The Translator, The Original), Builders in Motion (The Compass, The Architect, The Catalyst), and The Amplifier — each a real place people find themselves on the journey through the AI transition.
 - [About](/about): About the project and its founder, Kyle Shannon.
 - [Self Check](/selfcheck): 7-question assessment to discover your Repurpose Profile.
