@@ -60,6 +60,7 @@ export const categories: Record<CategoryKey, Category> = {
 const archetypes: Record<string, Archetype> = {
   "the-amplifier": {
     name: "The Amplifier",
+    category: "capstone",
     tagline: "You're building toward leading others through this.",
     description: "Everything is high. The full Great Repurpose is in motion. You've done the inner work, found your signal, built your AI fluency, and you're creating. The question now isn't readiness — it's reach and responsibility.",
     vulnerability: "The risk at this stage is isolation. You're ahead of most people around you, and that can feel lonely. Don't mistake self-sufficiency for not needing community.",
@@ -71,6 +72,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-awakener": {
     name: "The Awakener",
+    category: "identity-seekers",
     tagline: "You're building toward clarity. Everything is early.",
     description: "No dimension above 5, average below 4. You just started looking. The disorientation you feel isn't failure — it's the honest beginning of something important. Most people never even get here.",
     vulnerability: "The danger is paralysis. When everything feels unclear, doing nothing feels safest. But stillness in the fog isn't rest — it's stagnation.",
@@ -82,6 +84,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-explorer": {
     name: "The Explorer",
+    category: "identity-seekers",
     tagline: "You're building toward a new creative practice.",
     description: "You've jumped into AI tools or started creating, but the foundation is missing. High tool engagement without the inner work. You're building with powerful instruments but without a clear signal of your own.",
     vulnerability: "You might be using AI fluency as a shield against deeper questions about what you actually want to build and why.",
@@ -93,6 +96,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-firestarter": {
     name: "The Firestarter",
+    category: "direction-finders",
     tagline: "You're building toward something that just caught fire.",
     description: "One dimension is dramatically ahead of the rest. A single breakthrough. Something sparked — and the work is to let that spark illuminate the other areas instead of burning out alone.",
     vulnerability: "Dismissing the spark as 'not enough.' It is enough. It's the thread to pull. But a single flame without fuel eventually dies.",
@@ -104,6 +108,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-original": {
     name: "The Original",
+    category: "direction-finders",
     tagline: "You're building toward becoming irreplaceable.",
     description: "Identity unhooked and value found, but you haven't aimed it anywhere yet. You know who you are and what you bring. The next step is direction: pick a problem worth solving or an audience worth serving, and point your clarity at it.",
     vulnerability: "Clarity without action becomes complacency. Knowing your value isn't the same as deploying it. The world won't wait for you to feel ready.",
@@ -115,6 +120,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-compass": {
     name: "The Compass",
+    category: "builders-in-motion",
     tagline: "You're building toward leading the way.",
     description: "Identity, value, and purpose are all strong. The inner work is fully done. Tools and creation haven't started. You have the perfect map but no boots on the ground yet.",
     vulnerability: "Waiting for the 'right moment' to engage with AI. There isn't one. The right moment was yesterday; the second-best moment is today.",
@@ -126,6 +132,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-architect": {
     name: "The Architect",
+    category: "builders-in-motion",
     tagline: "You're building toward something only you can build.",
     description: "Strong across identity, value, purpose, and tool engagement. The only thing missing is creative output — you understand everything and have built nothing. The gap is specifically in creation, not knowledge.",
     vulnerability: "Perfectionism disguised as preparation. You keep refining the plan instead of shipping the first version. Understanding without making is just sophisticated procrastination.",
@@ -137,6 +144,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-translator": {
     name: "The Translator",
+    category: "direction-finders",
     tagline: "You're building toward bridging two worlds.",
     description: "Strong on the outside edges — you know who you are and you're comfortable with tools or creation. But there's a gap in the middle: you haven't connected your identity to a clear direction. You're doing impressive things without a strategic center.",
     vulnerability: "Activity without direction is just noise. You're building impressively but the strategic layer is thin. Without the middle, the ends don't connect.",
@@ -148,6 +156,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-catalyst": {
     name: "The Catalyst",
+    category: "builders-in-motion",
     tagline: "You're building toward amplifying everything you touch.",
     description: "Solid across the board. No catastrophic gaps. No single dimension fully resolved either. You're balanced, capable, and closer than you think. The risk is coasting — 'good enough' can become a ceiling. One deliberate push could change everything.",
     vulnerability: "Complacency. 'Good enough' can become the enemy of great. The last 20% is where the real differentiation happens.",
@@ -159,6 +168,7 @@ const archetypes: Record<string, Archetype> = {
   },
   "the-unlocker": {
     name: "The Unlocker",
+    category: "identity-seekers",
     tagline: "You're still tying who you are to the title you held.",
     description: "Identity is the active bottleneck. You're in the process of separating self from title, and nothing else can move until this does. Everything is waiting behind this one door.",
     vulnerability: "Every headline about AI replacing jobs lands like a personal attack. You're not processing information — you're processing threat. The grip on the old identity is the thing keeping you stuck.",
