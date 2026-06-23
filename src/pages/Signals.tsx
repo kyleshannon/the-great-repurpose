@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import {
   canonicalStages,
   fallbackSignalImage,
@@ -11,6 +12,7 @@ import {
   formatSignalDate,
   type SignalIndexEntry,
 } from "@/lib/signals";
+import { getStageDefinition } from "@/lib/stages";
 
 const PAGE_SIZE = 9;
 
@@ -219,12 +221,16 @@ const Signals = () => {
                         )}
                         <div className="mt-auto flex flex-wrap gap-2 pt-2">
                           {signal.stages.map((stage) => (
-                            <span
-                              key={stage}
-                              className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1"
-                            >
-                              {stage}
-                            </span>
+                            <Tooltip key={stage}>
+                              <TooltipTrigger asChild>
+                                <span className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/70">
+                                  {stage}
+                                </span>
+                              </TooltipTrigger>
+                              <TooltipContent className="max-w-xs border-coral/30 bg-navy px-4 py-3 font-sans text-sm leading-relaxed text-cream">
+                                {getStageDefinition(stage)}
+                              </TooltipContent>
+                            </Tooltip>
                           ))}
                         </div>
                       </div>
