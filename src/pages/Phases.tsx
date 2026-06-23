@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
+import { getStageAnchor } from "@/lib/stages";
 
 const stages = [
   {
@@ -72,6 +74,17 @@ const stages = [
 ];
 
 const Phases = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) return;
+
+    const id = decodeURIComponent(location.hash.slice(1));
+    window.requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, [location.hash]);
+
   return (
     <div className="min-h-screen bg-navy text-cream">
       <Navigation />
@@ -91,7 +104,11 @@ const Phases = () => {
 
       {/* Stage sections */}
       {stages.map((stage) => (
-        <section key={stage.number} className={`${stage.bg} py-20 px-6`}>
+        <section
+          key={stage.number}
+          id={getStageAnchor(stage.name)}
+          className={`${stage.bg} scroll-mt-24 py-20 px-6 md:scroll-mt-28`}
+        >
           <div className="max-w-4xl mx-auto">
             <ScrollFadeUp>
               <div className="flex items-center gap-4 mb-6">
