@@ -12,7 +12,7 @@ import {
   formatSignalDate,
   type SignalIndexEntry,
 } from "@/lib/signals";
-import { getStageDefinition } from "@/lib/stages";
+import { getStageDefinition, getStagePath } from "@/lib/stages";
 
 const PAGE_SIZE = 9;
 
@@ -187,45 +187,50 @@ const Signals = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {visibleSignals.map((signal, index) => (
                   <ScrollFadeUp key={signal.slug} delay={(index % PAGE_SIZE) * 45}>
-                    <Link
-                      to={`/signals/${signal.slug}`}
-                      className="group flex h-full flex-col overflow-hidden rounded-lg border border-navy/10 bg-navy/[0.03] transition-colors hover:border-coral/70"
-                    >
+                    <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-navy/10 bg-navy/[0.03] transition-colors hover:border-coral/70">
                       {signal.imageUrl && (
                         <div className="aspect-[16/10] overflow-hidden bg-navy/10">
-                          <img
-                            src={signal.imageUrl}
-                            alt=""
-                            loading="lazy"
-                            onError={(event) => {
-                              const image = event.currentTarget;
-                              if (image.dataset.fallbackApplied === "true") return;
-                              image.dataset.fallbackApplied = "true";
-                              image.src = fallbackSignalImage;
-                            }}
-                            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                          />
+                          <Link to={`/signals/${signal.slug}`} aria-label={`Read ${signal.title}`}>
+                            <img
+                              src={signal.imageUrl}
+                              alt=""
+                              loading="lazy"
+                              onError={(event) => {
+                                const image = event.currentTarget;
+                                if (image.dataset.fallbackApplied === "true") return;
+                                image.dataset.fallbackApplied = "true";
+                                image.src = fallbackSignalImage;
+                              }}
+                              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                            />
+                          </Link>
                         </div>
                       )}
                       <div className="flex flex-1 flex-col p-6">
-                        <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-3">
-                          {formatSignalDate(signal.date)}
-                        </p>
-                        <h3 className="font-serif text-navy text-2xl leading-snug mb-4 group-hover:text-coral transition-colors">
-                          {signal.title}
-                        </h3>
-                        {signal.pattern && (
-                          <p className="font-sans text-navy/70 text-base leading-relaxed mb-5">
-                            {signal.pattern}
+                        <Link to={`/signals/${signal.slug}`} className="block">
+                          <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-3">
+                            {formatSignalDate(signal.date)}
                           </p>
-                        )}
+                          <h3 className="font-serif text-navy text-2xl leading-snug mb-4 transition-colors hover:text-coral">
+                            {signal.title}
+                          </h3>
+                          {signal.pattern && (
+                            <p className="font-sans text-navy/70 text-base leading-relaxed mb-5">
+                              {signal.pattern}
+                            </p>
+                          )}
+                        </Link>
                         <div className="mt-auto flex flex-wrap gap-2 pt-2">
                           {signal.stages.map((stage) => (
                             <Tooltip key={stage}>
                               <TooltipTrigger asChild>
-                                <span className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/70">
+                                <Link
+                                  to={getStagePath(stage)}
+                                  title={getStageDefinition(stage)}
+                                  className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1 transition-colors hover:border-coral hover:text-coral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/70"
+                                >
                                   {stage}
-                                </span>
+                                </Link>
                               </TooltipTrigger>
                               <TooltipContent className="max-w-xs border-coral/30 bg-navy px-4 py-3 font-sans text-sm leading-relaxed text-cream">
                                 {getStageDefinition(stage)}
@@ -234,7 +239,7 @@ const Signals = () => {
                           ))}
                         </div>
                       </div>
-                    </Link>
+                    </article>
                   </ScrollFadeUp>
                 ))}
               </div>

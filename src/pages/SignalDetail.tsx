@@ -154,6 +154,7 @@ const SignalDetail = () => {
                         <TooltipTrigger asChild>
                           <Link
                             to={getStagePath(stage)}
+                            title={getStageDefinition(stage)}
                             className="font-sans text-xs uppercase tracking-widest text-navy/65 border border-navy/15 rounded-full px-3 py-1 hover:border-coral hover:text-coral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/70 transition-colors"
                           >
                             {stage}
@@ -225,6 +226,7 @@ const SignalDetail = () => {
                                   <TooltipTrigger asChild>
                                     <Link
                                       to={getStagePath(stage)}
+                                      title={getStageDefinition(stage)}
                                       className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1 hover:border-coral hover:text-coral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/70 transition-colors"
                                     >
                                       {stage}
