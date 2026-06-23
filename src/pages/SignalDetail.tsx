@@ -6,6 +6,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 import {
+  fallbackSignalImage,
   fetchSignal,
   fetchSignalIndex,
   formatSignalDate,
@@ -173,16 +174,18 @@ const SignalDetail = () => {
                       className="group block rounded-lg border border-navy/10 bg-navy/[0.03] p-5 transition-colors hover:border-coral/70"
                     >
                       <div className="grid gap-5 md:grid-cols-[180px_1fr]">
-                        {story.imageUrl ? (
-                          <img
-                            src={story.imageUrl}
-                            alt=""
-                            loading="lazy"
-                            className="h-36 w-full rounded-md object-cover bg-navy/10"
-                          />
-                        ) : (
-                          <div className="hidden h-36 rounded-md bg-navy/10 md:block" />
-                        )}
+                        <img
+                          src={story.imageUrl || fallbackSignalImage}
+                          alt=""
+                          loading="lazy"
+                          onError={(event) => {
+                            const image = event.currentTarget;
+                            if (image.dataset.fallbackApplied === "true") return;
+                            image.dataset.fallbackApplied = "true";
+                            image.src = fallbackSignalImage;
+                          }}
+                          className="h-36 w-full rounded-md object-cover bg-navy/10"
+                        />
                         <div>
                           <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-2">
                             {String(index + 1).padStart(2, "0")}
