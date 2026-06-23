@@ -37,7 +37,7 @@ export const canonicalStages = [
   "Start Creating",
 ] as const;
 
-export const fallbackSignalImage = "/signals/tgr-signal-thumbnail.svg";
+export const fallbackSignalImage = "/signals/tgr-signal-thumbnail.jpg";
 
 const withBase = (path: string) => `${import.meta.env.BASE_URL ?? "/"}${path}`.replace(/\/{2,}/g, "/");
 
