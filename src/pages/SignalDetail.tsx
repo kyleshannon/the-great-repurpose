@@ -5,6 +5,7 @@ import { ExternalLink } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import {
   fallbackSignalImage,
   fetchSignal,
@@ -13,6 +14,7 @@ import {
   type SignalIndexEntry,
   type TgrSignal,
 } from "@/lib/signals";
+import { getStageDefinition, getStagePath } from "@/lib/stages";
 
 const SignalDetail = () => {
   const { slug } = useParams();
@@ -148,13 +150,19 @@ const SignalDetail = () => {
                 <ScrollFadeUp delay={80}>
                   <div className="mb-12 flex flex-wrap gap-2">
                     {signal.stages.map((stage) => (
-                      <Link
-                        key={stage}
-                        to={`/signals?stage=${encodeURIComponent(stage)}`}
-                        className="font-sans text-xs uppercase tracking-widest text-navy/65 border border-navy/15 rounded-full px-3 py-1 hover:border-coral hover:text-coral transition-colors"
-                      >
-                        {stage}
-                      </Link>
+                      <Tooltip key={stage}>
+                        <TooltipTrigger asChild>
+                          <Link
+                            to={getStagePath(stage)}
+                            className="font-sans text-xs uppercase tracking-widest text-navy/65 border border-navy/15 rounded-full px-3 py-1 hover:border-coral hover:text-coral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/70 transition-colors"
+                          >
+                            {stage}
+                          </Link>
+                        </TooltipTrigger>
+                        <TooltipContent className="max-w-xs border-coral/30 bg-navy px-4 py-3 font-sans text-sm leading-relaxed text-cream">
+                          {getStageDefinition(stage)}
+                        </TooltipContent>
+                      </Tooltip>
                     ))}
                   </div>
                 </ScrollFadeUp>
@@ -167,32 +175,36 @@ const SignalDetail = () => {
               <div className="space-y-8">
                 {signal.stories.map((story, index) => (
                   <ScrollFadeUp key={`${story.url}-${index}`} delay={(index % 5) * 60}>
-                    <a
-                      href={story.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group block rounded-lg border border-navy/10 bg-navy/[0.03] p-5 transition-colors hover:border-coral/70"
-                    >
+                    <div className="group rounded-lg border border-navy/10 bg-navy/[0.03] p-5 transition-colors hover:border-coral/70">
                       <div className="grid gap-5 md:grid-cols-[180px_1fr]">
-                        <img
-                          src={story.imageUrl || fallbackSignalImage}
-                          alt=""
-                          loading="lazy"
-                          onError={(event) => {
-                            const image = event.currentTarget;
-                            if (image.dataset.fallbackApplied === "true") return;
-                            image.dataset.fallbackApplied = "true";
-                            image.src = fallbackSignalImage;
-                          }}
-                          className="h-36 w-full rounded-md object-cover bg-navy/10"
-                        />
+                        <a
+                          href={story.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Read source article: ${story.title}`}
+                        >
+                          <img
+                            src={story.imageUrl || fallbackSignalImage}
+                            alt=""
+                            loading="lazy"
+                            onError={(event) => {
+                              const image = event.currentTarget;
+                              if (image.dataset.fallbackApplied === "true") return;
+                              image.dataset.fallbackApplied = "true";
+                              image.src = fallbackSignalImage;
+                            }}
+                            className="h-36 w-full rounded-md object-cover bg-navy/10 transition-opacity hover:opacity-90"
+                          />
+                        </a>
                         <div>
                           <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-2">
                             {String(index + 1).padStart(2, "0")}
                           </p>
-                          <h3 className="font-serif text-navy text-xl md:text-2xl leading-snug mb-2 group-hover:text-coral transition-colors">
-                            {story.title}
-                          </h3>
+                          <a href={story.url} target="_blank" rel="noopener noreferrer">
+                            <h3 className="font-serif text-navy text-xl md:text-2xl leading-snug mb-2 hover:text-coral transition-colors">
+                              {story.title}
+                            </h3>
+                          </a>
                           <p className="font-sans text-navy/45 text-sm mb-3">{story.source}</p>
                           {story.summary && (
                             <p className="font-sans text-navy/70 text-base leading-relaxed mb-4">
@@ -209,21 +221,33 @@ const SignalDetail = () => {
                           {story.stages.length > 0 && (
                             <div className="mb-4 flex flex-wrap gap-2">
                               {story.stages.map((stage) => (
-                                <span
-                                  key={stage}
-                                  className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1"
-                                >
-                                  {stage}
-                                </span>
+                                <Tooltip key={stage}>
+                                  <TooltipTrigger asChild>
+                                    <Link
+                                      to={getStagePath(stage)}
+                                      className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1 hover:border-coral hover:text-coral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/70 transition-colors"
+                                    >
+                                      {stage}
+                                    </Link>
+                                  </TooltipTrigger>
+                                  <TooltipContent className="max-w-xs border-coral/30 bg-navy px-4 py-3 font-sans text-sm leading-relaxed text-cream">
+                                    {getStageDefinition(stage)}
+                                  </TooltipContent>
+                                </Tooltip>
                               ))}
                             </div>
                           )}
-                          <span className="inline-flex items-center gap-2 font-sans text-sm text-coral">
+                          <a
+                            href={story.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 font-sans text-sm text-coral hover:underline"
+                          >
                             Read source <ExternalLink size={14} aria-hidden="true" />
-                          </span>
+                          </a>
                         </div>
                       </div>
-                    </a>
+                    </div>
                   </ScrollFadeUp>
                 ))}
               </div>
