@@ -14,14 +14,15 @@ edits, no build steps. Lovable's GitHub sync auto-deploys on push.
 
 Every archive card must have an image. If none of the selected stories has a
 usable article image, set the briefing-level `imageUrl` and the matching
-`index.json` entry `imageUrl` to:
+`index.json` entry `imageUrl` to this real JPG asset:
 
 ```text
-/signals/tgr-signal-thumbnail.svg
+/signals/tgr-signal-thumbnail.jpg
 ```
 
 Use a real story image when one is available. Use the fallback only when the
-selected five stories do not provide a usable image.
+selected five stories do not provide a usable image. Do not replace this with
+an SVG or generated vector substitute.
 
 ## Slug rules
 
@@ -65,7 +66,7 @@ selected five stories do not provide a usable image.
 | `title` | yes | 4–9 words. Used in `<h1>`, OG title, archive card. |
 | `pattern` | yes | The "Pattern of the Day". Plain text, ~2–3 sentences. |
 | `stages` | yes | 1–5 entries. Must match the canonical names below exactly. Derive from the five story `stages`, order by relevance/frequency for that day, and never default to the full canonical list unless all five stages are genuinely represented. |
-| `imageUrl` | yes | Used as the OG share image and archive card image. Use the strongest story image, or `/signals/tgr-signal-thumbnail.svg` if no selected story has a usable image. Do not leave empty. |
+| `imageUrl` | yes | Used as the OG share image and archive card image. Use the strongest story image, or `/signals/tgr-signal-thumbnail.jpg` if no selected story has a usable image. Do not leave empty. |
 | `stories` | yes | Exactly **5** entries. Fewer renders but looks sparse. |
 | `stories[].summary` | yes | 1–3 sentences in The Great Repurpose voice. Direct, human, concrete. No empty strings. |
 | `stories[].keyPoints` | yes | 2–3 bullets that make the story scannable. No empty arrays. |
@@ -110,7 +111,7 @@ the same briefing-level `stages` array in `<slug>.json`.
 2. Build the slug: `<date>-<kebab-title>`.
 3. Write `public/signals/<slug>.json` following the schema above.
 4. Choose the briefing-level `stages` by combining the five story-level `stages`, ordered by relevance/frequency. Do not use a generic stage list.
-5. Choose the briefing-level `imageUrl`: use the strongest selected story image, or `/signals/tgr-signal-thumbnail.svg` if no selected story has a usable image.
+5. Choose the briefing-level `imageUrl`: use the strongest selected story image, or `/signals/tgr-signal-thumbnail.jpg` if no selected story has a usable image.
 6. Open `public/signals/index.json` and **prepend** the matching index
    entry. Its `stages` array must exactly match the briefing file `stages` array. Re-sort by `date` descending if unsure.
 7. Commit both files in one commit. Suggested message:
@@ -127,5 +128,5 @@ the same briefing-level `stages` array in `<slug>.json`.
 - `index.json` `stages` for this slug exactly matches `<slug>.json` `stages`.
 - `stages` and `stories[].stages` entries appear in the canonical list above.
 - Every story has non-empty `summary`, at least two `keyPoints`, and at least one canonical `stage`.
-- Briefing-level `imageUrl` and index entry `imageUrl` are non-empty. Use `/signals/tgr-signal-thumbnail.svg` if needed.
+- Briefing-level `imageUrl` and index entry `imageUrl` are non-empty. Use `/signals/tgr-signal-thumbnail.jpg` if needed.
 - All `stories[].url` resolve and use HTTPS.
