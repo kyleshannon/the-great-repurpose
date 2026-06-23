@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 import {
   canonicalStages,
+  fallbackSignalImage,
   fetchSignalIndex,
   formatSignalDate,
   type SignalIndexEntry,
@@ -194,6 +195,12 @@ const Signals = () => {
                             src={signal.imageUrl}
                             alt=""
                             loading="lazy"
+                            onError={(event) => {
+                              const image = event.currentTarget;
+                              if (image.dataset.fallbackApplied === "true") return;
+                              image.dataset.fallbackApplied = "true";
+                              image.src = fallbackSignalImage;
+                            }}
                             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                           />
                         </div>
