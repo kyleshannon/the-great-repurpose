@@ -13,6 +13,15 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: "assets/[name]-[hash]-signals.js",
+        chunkFileNames: "assets/[name]-[hash]-signals.js",
+        assetFileNames: "assets/[name]-[hash][extname]",
+      },
+    },
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
