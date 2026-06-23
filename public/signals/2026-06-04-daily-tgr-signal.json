@@ -1,14 +1,14 @@
 {
   "date": "2026-06-04",
-  "title": "Daily TGR Signal",
+  "title": "Creativity Moves Upstream",
   "slug": "2026-06-04-daily-tgr-signal",
-  "pattern": "\"Creativity is really that sweet spot. People feel it will be useful in a world of automation and AI and also that it is less replaceable by these technologies.\"",
+  "pattern": "The signal is that creativity is becoming more valuable, not less, but it is changing location. As AI absorbs more execution, human advantage moves upstream into taste, judgment, problem selection, and the courage to make something that actually matters.",
   "stages": [
-    "Unhook Identity",
     "Reclaim Value",
+    "Unhook Identity",
     "Find Your Purpose",
-    "Discover AI's Power",
-    "Start Creating"
+    "Start Creating",
+    "Discover AI's Power"
   ],
   "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
   "stories": [
@@ -17,50 +17,85 @@
       "url": "https://www.forbes.com/sites/cathyrubin/2026/05/26/ai-isnt-replacing-creativity-its-moving-it-upstream/",
       "source": "forbes.com",
       "published": "",
-      "summary": "",
+      "summary": "This is the cleanest articulation of the creative shift: AI does not remove the need for creativity, it changes where creativity lives. The person who can define the problem, shape the brief, and judge the output becomes more important, not less.",
       "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Start Creating",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI compresses execution, which makes upstream creative judgment more valuable.",
+        "The human edge is taste, framing, intent, and the ability to know what good is.",
+        "TGR relevance: Start Creating now means directing systems, not just producing assets by hand."
+      ]
     },
     {
       "title": "Will the AI Economy Create a Permanent Underclass?",
       "url": "https://www.theguardian.com/business/2026/jun/02/will-the-ai-economy-create-a-permanent-underclass",
       "source": "theguardian.com",
       "published": "",
-      "summary": "",
+      "summary": "The underclass question is the hard edge of the AI economy: productivity gains do not automatically translate into human flourishing. Without new paths to agency, the people displaced by systems may be told to adapt after the value has already moved elsewhere.",
       "imageUrl": "https://i.guim.co.uk/img/media/1fe5f1ddb95275c40b568819f804bd506f87e7b5/1129_0_6630_5304/master/6630.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3Bpb25zLnBuZw&enable=upscale&s=4b31a47b53bb90937f11090168a18996",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "AI could deepen inequality if ownership and opportunity remain concentrated.",
+        "The story forces the labor question beyond reskilling slogans.",
+        "This is Unhook Identity plus Find Your Purpose: people need a new foundation, not just a new course link."
+      ]
     },
     {
       "title": "AI Will Reshape More Jobs Than It Replaces",
       "url": "https://www.bcg.com/publications/2026/ai-will-reshape-more-jobs-than-it-replaces",
       "source": "bcg.com",
       "published": "",
-      "summary": "",
+      "summary": "The more honest labor story is not a clean replacement count. It is a reshaping of tasks, teams, expectations, and value inside millions of roles. That can be hopeful, but only if people get a map for the transition.",
       "imageUrl": "https://web-assets.bcg.com/dims4/default/781d637/2147483647/strip/true/crop/2880x1512+0+0/resize/1200x630!/format/webp/quality/90/?url=http%3A%2F%2Fboston-consulting-group-brightspot.s3.amazonaws.com%2F01%2F6b%2F6458a17e4f19b3f8b0ce0f2909ca%2Fai-will-reshape-more-jobs-than-it-replaces-hero.jpg",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Job change will often arrive as task redesign before full displacement.",
+        "Workers need to understand which parts of their work are becoming automated and which parts become more valuable.",
+        "TGR relevance: Reclaim Value is the bridge between fear and practical adaptation."
+      ]
     },
     {
       "title": "Is AI Prompting a Creative Renaissance?",
       "url": "https://insight.kellogg.northwestern.edu/article/is-ai-prompting-a-creative-renaissance",
       "source": "insight.kellogg.northwestern.edu",
       "published": "",
-      "summary": "",
+      "summary": "A creative renaissance is possible, but it will not happen automatically because the tools got better. It happens when more people use AI to explore, combine, and express ideas they would not have had the time or means to make before.",
       "imageUrl": "https://cdn.craft.cloud/019d3066-3548-718e-af5b-3333a57196ee/assets/content/uploads/Full_0326_AI_Job_Threats.jpg?fit=contain&height=630&width=1200&s=JaRYTH4Qx4EH_xfmWlTOgNJ7M5CM_PKvnJLuQuw8WH0",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Discover AI's Power",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "AI can expand creative participation if people use it as an instrument rather than a shortcut.",
+        "The renaissance depends on human curiosity, taste, and willingness to play.",
+        "This is Discover AI's Power leading into Start Creating."
+      ]
     },
     {
       "title": "10 Human Skills Likely to Protect Your Job From AI",
       "url": "https://www.forbes.com/sites/bryanrobinson/2026/06/04/10-human-skills-likely-to-protect-your-job-from-ai-per-click-finder/",
       "source": "forbes.com",
       "published": "",
-      "summary": "",
+      "summary": "Lists of human skills matter because they help people name what remains valuable when tools change. The danger is treating them as motivational wallpaper instead of a real inventory of judgment, trust, communication, and adaptability.",
       "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a1095d86b6918320ec56b91/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Reclaim Value",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "The story points toward durable skills that automation struggles to absorb cleanly.",
+        "People need language for the human layer beneath their current tasks.",
+        "This is Reclaim Value and Find Your Purpose: know what you bring, then aim it somewhere useful."
+      ]
     }
   ],
   "sourceStatus": "sent_html"

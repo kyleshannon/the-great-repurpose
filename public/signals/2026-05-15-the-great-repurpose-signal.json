@@ -2,12 +2,12 @@
   "date": "2026-05-15",
   "title": "xAI Folds Into SpaceXAI",
   "slug": "2026-05-15-the-great-repurpose-signal",
-  "pattern": "xAI Fully Folded Into SpaceX as \"SpaceXAI\"",
+  "pattern": "AI power is consolidating into larger systems while the public pushes back on the infrastructure those systems require. The signal is scale: bigger companies, bigger models, bigger deployment channels, and bigger civic consequences. Human agency now depends on understanding the systems, not just the tools.",
   "stages": [
     "Reclaim Value",
-    "Find Your Purpose",
     "Discover AI's Power",
-    "Start Creating"
+    "Unhook Identity",
+    "Find Your Purpose"
   ],
   "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
   "stories": [
@@ -16,40 +16,68 @@
       "url": "https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html",
       "source": "cnbc.com",
       "published": "",
-      "summary": "",
+      "summary": "Folding xAI into SpaceX would turn AI into part of a much larger industrial and infrastructure machine. The signal is consolidation: intelligence, compute, rockets, networks, and capital moving under fewer roofs.",
       "imageUrl": "",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI is being absorbed into larger corporate systems with infrastructure ambitions.",
+        "The story is less about a product and more about concentration of capability and control.",
+        "TGR relevance: people need to understand the systems shaping their choices before those systems feel inevitable."
+      ]
     },
     {
       "title": "OpenAI Launches Self-Serve Ads in ChatGPT",
       "url": "https://www.marketingprofs.com/opinions/2026/54655/ai-update-may-8-2026-ai-news-and-views-from-the-past-week",
       "source": "marketingprofs.com",
       "published": "",
-      "summary": "",
+      "summary": "Self-serve ads inside ChatGPT would move AI from assistant to marketplace. That changes the relationship: the tool helping you think also becomes a channel trying to influence what you choose.",
       "imageUrl": "",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Advertising would turn conversational AI into a commercial attention layer.",
+        "Users will need sharper judgment about when an answer is help, persuasion, or both.",
+        "This is Reclaim Value: attention and trust become assets people have to protect."
+      ]
     },
     {
       "title": "OpenAI Gives EU Access to GPT-5.5-Cyber; Anthropic Holds Back",
       "url": "https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html",
       "source": "cnbc.com",
       "published": "",
-      "summary": "",
+      "summary": "Cyber-capable AI models sharpen the governance question around access. The same capability that can defend systems can also increase risk, so deployment becomes a question of judgment, trust, and institutional maturity.",
       "imageUrl": "",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Advanced AI capability is being released unevenly across jurisdictions and providers.",
+        "Cyber models make the power/risk tradeoff unusually clear.",
+        "The TGR lens is Discover AI's Power with eyes open: power without judgment is not readiness."
+      ]
     },
     {
       "title": "Gallup: 70% of Americans Oppose AI Data Centers in Their Backyard",
       "url": "https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx",
       "source": "news.gallup.com",
       "published": "",
-      "summary": "",
+      "summary": "The public resistance to AI data centers is a reminder that the cloud has neighbors. People are being asked to host the physical cost of intelligence systems they may not control or benefit from.",
       "imageUrl": "",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Reclaim Value",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "The headline signals strong local resistance to AI infrastructure.",
+        "Infrastructure growth is running into questions of fairness, consent, and community value.",
+        "This is Reclaim Value at civic scale: what does a community get in return for hosting the future?"
+      ]
     }
   ],
   "sourceStatus": "draft_html"

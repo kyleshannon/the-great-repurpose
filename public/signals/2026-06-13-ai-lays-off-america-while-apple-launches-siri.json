@@ -6,8 +6,8 @@
   "stages": [
     "Unhook Identity",
     "Reclaim Value",
-    "Find Your Purpose",
     "Discover AI's Power",
+    "Find Your Purpose",
     "Start Creating"
   ],
   "imageUrl": "https://media.assettype.com/outlookbusiness/2026-04-24/zfplh735/5.png?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
@@ -17,50 +17,85 @@
       "url": "https://www.outlookbusiness.com/corporate/ai-overtakes-all-other-reasons-for-us-job-cuts-as-layoffs-surge-in-2026",
       "source": "outlookbusiness.com",
       "published": "",
-      "summary": "",
+      "summary": "This is the labor-market alarm bell in plain language: AI is not just a tool companies are testing, it is becoming a reason companies give for cutting jobs. The emotional reality is that people are being forced to repurpose under pressure.",
       "imageUrl": "https://media.assettype.com/outlookbusiness/2026-04-24/zfplh735/5.png?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI is being named as a leading driver of job cuts in the headline data.",
+        "The story moves AI displacement from future anxiety into present workforce planning.",
+        "TGR relevance: people need identity and value work before disruption becomes personal."
+      ]
     },
     {
       "title": "Apple Introduces Siri AI, a Profoundly More Capable and Personal Assistant",
       "url": "https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/",
       "source": "apple.com",
       "published": "",
-      "summary": "",
+      "summary": "A more capable Siri would put AI assistance deeper into the daily rhythm of ordinary users. The signal is mainstreaming: AI becomes less like a destination app and more like an always-available layer between intention and action.",
       "imageUrl": "https://www.apple.com/newsroom/images/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/tile/Apple-Siri-AI-hero-260608-lp.jpg.og.jpg?202606121954",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Apple-style integration can make AI feel normal to people who never went looking for it.",
+        "The assistant layer will shape how people search, decide, communicate, and create.",
+        "This is Discover AI's Power with a human-agency question attached: who is steering the assistant?"
+      ]
     },
     {
       "title": "AI, Jobs, and the Next Generation",
       "url": "https://blogs.microsoft.com/on-the-issues/2026/06/10/ai-jobs-and-the-next-generation/",
       "source": "blogs.microsoft.com",
       "published": "",
-      "summary": "",
+      "summary": "Microsoft framing AI and jobs for the next generation points to the education gap underneath the labor story. Young people do not just need tool familiarity. They need a way to build identity, judgment, and purpose in a market that keeps shifting.",
       "imageUrl": "https://blogs.microsoft.com/wp-content/uploads/sites/5/2026/06/BANNERS_BRAD_POSTA-1024x576.png",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Find Your Purpose",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The next generation is entering work at the same time AI is rewriting entry-level assumptions.",
+        "Education has to prepare people for judgment and adaptability, not only technical fluency.",
+        "TGR relevance: Find Your Purpose becomes a workforce skill, not a luxury."
+      ]
     },
     {
       "title": "AI Isn't Replacing Creativity. It's Moving It Upstream.",
       "url": "https://www.forbes.com/sites/cathyrubin/2026/05/26/ai-isnt-replacing-creativity-its-moving-it-upstream/",
       "source": "forbes.com",
       "published": "",
-      "summary": "",
+      "summary": "The creative story gives the day its counterweight: even as AI pressures jobs, it can also move people toward higher-order creative judgment. The opportunity is real, but only for people willing to claim the directing role.",
       "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Start Creating",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI can make execution cheaper while increasing the value of taste and direction.",
+        "Creatives need to move upstream into intent, framing, and quality judgment.",
+        "This is Start Creating from a reclaimed sense of value."
+      ]
     },
     {
       "title": "JPMorgan Chase Reclassifies AI as Core Infrastructure in $19.8B Tech Budget",
       "url": "https://www.businessinsider.com/jpmorgan-tech-budget-ai-20-billion-jamie-dimon-2026-2",
       "source": "businessinsider.com",
       "published": "",
-      "summary": "",
+      "summary": "When a major bank treats AI as core infrastructure, the workplace shift becomes structural. AI is no longer an innovation budget experiment. It is part of how the institution expects work to happen.",
       "imageUrl": "https://i.insider.com/699ce38d156648bc16a8c346?width=800&format=jpeg",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Discover AI's Power",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "AI is being funded as foundational business infrastructure, not a side project.",
+        "Large institutions are preparing for operating-model change at serious scale.",
+        "TGR relevance: Discover AI's Power now means understanding the systems that will define future work."
+      ]
     }
   ],
   "sourceStatus": "sent_html"

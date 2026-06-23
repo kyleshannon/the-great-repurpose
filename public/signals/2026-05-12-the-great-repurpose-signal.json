@@ -2,12 +2,11 @@
   "date": "2026-05-12",
   "title": "Meta's AI Push Makes Employees Miserable",
   "slug": "2026-05-12-the-great-repurpose-signal",
-  "pattern": "Meta's AI Push Is Making Its Own Employees Miserable",
+  "pattern": "The signal is inside the institutions building the future: employees, platforms, courts, media companies, and enterprise buyers are all being reorganized around AI at once. The Great Repurpose begins when people stop treating that reorganization as background noise and start asking what human judgment, responsibility, and value must become.",
   "stages": [
-    "Unhook Identity",
     "Reclaim Value",
-    "Find Your Purpose",
     "Discover AI's Power",
+    "Unhook Identity",
     "Start Creating"
   ],
   "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
@@ -17,50 +16,85 @@
       "url": "https://www.nytimes.com/2026/05/11/technology/meta-ai-employees-misery.html",
       "source": "nytimes.com",
       "published": "",
-      "summary": "",
+      "summary": "Meta is not just selling an AI future. It is showing what that future can feel like inside a company moving too fast for its own people. The story is about the emotional cost of being asked to build the machine that may change your own work.",
       "imageUrl": "",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The AI transition is creating stress inside the companies most eager to lead it.",
+        "Workers are being asked to adapt while the ground underneath them keeps moving.",
+        "This is an Unhook Identity signal: the role, the company, and the self can no longer be treated as the same thing."
+      ]
     },
     {
       "title": "Microsoft's CEO Intervened When OpenAI Fired Sam Altman, Musk's Lawyer Claims",
       "url": "https://www.nytimes.com/2026/05/11/technology/musk-altman-trial-nadella.html",
       "source": "nytimes.com",
       "published": "",
-      "summary": "",
+      "summary": "The OpenAI governance drama keeps revealing how much of the AI future is being shaped by a small circle of corporate power. That matters because the tools changing everyone's work are also being steered through alliances, leverage, and boardroom intervention.",
       "imageUrl": "",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI infrastructure is not neutral; it is shaped by power relationships between major companies and leaders.",
+        "The story reminds us that governance decisions can ripple into the tools people depend on.",
+        "TGR relevance: people need agency inside systems they did not design and cannot fully control."
+      ]
     },
     {
       "title": "OpenAI Sued Over ChatGPT's Alleged Role in FSU Shooting",
       "url": "https://www.theverge.com/2026/5/11/openai-lawsuit-fsu-shooting-chatgpt",
       "source": "theverge.com",
       "published": "",
-      "summary": "",
+      "summary": "The lawsuit points to the darker edge of AI adoption: when tools become intimate enough to influence behavior, responsibility becomes harder to wave away. Human agency still matters, but so does the design of systems that millions of people now treat as companions, advisors, and mirrors.",
       "imageUrl": "",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Discover AI's Power",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "AI safety is moving from abstract debate into legal and human consequences.",
+        "The story raises questions about responsibility when people rely on AI in vulnerable moments.",
+        "This belongs in Discover AI's Power because power includes risk, not just capability."
+      ]
     },
     {
       "title": "BuzzFeed CEO Becomes 'President of BuzzFeed AI' as Byron Allen Takes Control",
       "url": "https://www.theverge.com/2026/5/11/buzzfeed-ceo-jonah-peretti-ai-byron-allen",
       "source": "theverge.com",
       "published": "",
-      "summary": "",
+      "summary": "BuzzFeed turning leadership toward AI is a media-industry signal: the content business is no longer experimenting at the edges. It is rebuilding the center of gravity around automated creation, distribution, and monetization.",
       "imageUrl": "",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Reclaim Value",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "A media company known for internet-era content is repositioning itself around AI.",
+        "Creative and editorial value are being renegotiated at the leadership level.",
+        "The TGR lens is Reclaim Value: creators and editors have to name what human taste still owns."
+      ]
     },
     {
       "title": "OpenAI Forms $14B Company to Help Businesses Deploy AI Systems",
       "url": "https://www.theverge.com/2026/5/11/openai-deployment-company-14-billion",
       "source": "theverge.com",
       "published": "",
-      "summary": "",
+      "summary": "The deployment layer is where AI stops being a demo and becomes a workplace operating system. A company built to help enterprises install AI at scale means the next wave is not novelty. It is implementation.",
       "imageUrl": "",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Discover AI's Power",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "Enterprise AI is moving from pilots into structured deployment businesses.",
+        "The work impact will come through systems, processes, and operating models, not just chatbots.",
+        "This is a Discover AI's Power signal with immediate consequences for how people create and deliver value."
+      ]
     }
   ],
   "sourceStatus": "draft_html"

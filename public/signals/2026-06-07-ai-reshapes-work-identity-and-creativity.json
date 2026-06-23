@@ -1,13 +1,12 @@
 {
   "date": "2026-06-07",
-  "title": "AI reshapes work, identity, and creativity",
+  "title": "AI Reshapes Work, Identity, And Creativity",
   "slug": "2026-06-07-ai-reshapes-work-identity-and-creativity",
-  "pattern": "",
+  "pattern": "The signal is that AI is no longer only changing what people do. It is changing how people understand themselves, how companies explain job cuts, and where creative value lives. The human move is to name the part of us that remains durable before the market names us obsolete.",
   "stages": [
-    "Unhook Identity",
     "Reclaim Value",
+    "Unhook Identity",
     "Find Your Purpose",
-    "Discover AI's Power",
     "Start Creating"
   ],
   "imageUrl": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt7f9b16d39bc44ab3/6a22353270c5a9918127c424/AI-Changing-Human.jpg?branch=production&width=1200&quality=75&auto=webp&crop=1200:675&height=675",
@@ -17,50 +16,85 @@
       "url": "https://time.com/article/2026/06/05/ai-is-already-shaping-who-we-are/",
       "source": "time.com",
       "published": "",
-      "summary": "",
+      "summary": "This is the identity layer of the AI transition: tools do not simply help us complete tasks, they start to shape how we think, choose, and relate. The Great Repurpose begins by noticing that change instead of sleepwalking through it.",
       "imageUrl": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt7f9b16d39bc44ab3/6a22353270c5a9918127c424/AI-Changing-Human.jpg?branch=production&width=1200&quality=75&auto=webp&crop=1200:675&height=675",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "AI influence is becoming personal and cultural, not only professional.",
+        "The tools may shape habits, self-understanding, and expectations over time.",
+        "This is Unhook Identity: stay awake to who you are becoming while the tools get more intimate."
+      ]
     },
     {
       "title": "AI Overtakes All Other Reasons For US Job Cuts As Layoffs Surge In 2026",
       "url": "https://www.outlookbusiness.com/corporate/ai-overtakes-all-other-reasons-for-us-job-cuts-as-layoffs-surge-in-2026",
       "source": "outlookbusiness.com",
       "published": "",
-      "summary": "",
+      "summary": "The layoff signal is blunt: AI is becoming a named cause of job loss, not just an abstract future risk. That makes identity work urgent, because many people will be asked to redefine themselves faster than they expected.",
       "imageUrl": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/971609117608a5b0102a9373e92032e6.jpg",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI is being cited directly in workforce reductions.",
+        "The disruption is moving from forecast to lived experience for workers.",
+        "TGR relevance: people need to unhook their worth from roles that companies may rapidly redesign."
+      ]
     },
     {
       "title": "AI Cited As Top Reason For US Job Cuts For Third Straight Month",
       "url": "https://www.cfodive.com/news/ai-cited-top-reason-us-job-cuts-third-straight-month/822029/",
       "source": "cfodive.com",
       "published": "",
-      "summary": "",
+      "summary": "A repeated monthly pattern changes the story from anomaly to trend. AI-related job cuts are becoming part of the operating logic of companies, which means workers need a repeatable way to respond.",
       "imageUrl": "https://media.deloitte.com/is/image/null:1200-x-627",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Repeated AI-related job cut data suggests a sustained labor-market shift.",
+        "The story reinforces that adaptation cannot be a one-time panic response.",
+        "This is Reclaim Value: understand what part of your contribution survives the restructuring."
+      ]
     },
     {
       "title": "AI Cultural Debt: The Hidden Cost of Speed-First Adoption",
       "url": "https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends/2026/ai-cultural-debt.html",
       "source": "deloitte.com",
       "published": "",
-      "summary": "",
+      "summary": "Cultural debt is what accumulates when companies adopt AI faster than people can make sense of it. The tool may work, but trust, clarity, and shared purpose can quietly break underneath it.",
       "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Find Your Purpose",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Speed-first AI adoption can create hidden organizational costs.",
+        "Culture, trust, and meaning need attention alongside efficiency and deployment.",
+        "TGR relevance: Find Your Purpose is not soft. It is how groups stay coherent during acceleration."
+      ]
     },
     {
       "title": "AI Isn’t Replacing Creativity. It’s Moving It Upstream.",
       "url": "https://www.forbes.com/sites/cathyrubin/2026/05/26/ai-isnt-replacing-creativity-its-moving-it-upstream/",
       "source": "forbes.com",
       "published": "",
-      "summary": "",
+      "summary": "Creativity is not disappearing. It is moving toward the choices that happen before execution: what to make, why it matters, how it should feel, and when it is good enough to share.",
       "imageUrl": "",
-      "stages": [],
-      "keyPoints": []
+      "stages": [
+        "Start Creating",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI shifts creative leverage toward framing, direction, and judgment.",
+        "The person with taste and purpose becomes more valuable as execution gets cheaper.",
+        "This is Start Creating after Reclaim Value: use the machine to express more of the human, not less."
+      ]
     }
   ],
   "sourceStatus": "sent_html"
