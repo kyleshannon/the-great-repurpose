@@ -12,10 +12,6 @@ const pillars = [
     desc: "Five nights a week. Hands-on exploration of AI tools in a low-stakes, high-trust environment.",
   },
   {
-    name: "The AI Readiness Project Podcast",
-    desc: "Conversations about what it actually means to be ready — not technically, but humanly — for what AI is making possible.",
-  },
-  {
     name: "Mastermind Practice Lab",
     desc: "For members ready to go deeper. Small-group accountability and practice for people building new directions.",
   },
