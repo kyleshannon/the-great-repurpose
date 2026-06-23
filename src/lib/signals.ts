@@ -2,6 +2,8 @@
 // Data lives in /public/signals/*.json so Codex can update daily by
 // writing files (no TS edits, no rebuild risk). See public/signals/SCHEMA.md.
 
+import { bundledSignalIndex, bundledSignalsBySlug } from "@/data/generatedSignals";
+
 export type SignalStory = {
   title: string;
   url: string;
@@ -92,17 +94,26 @@ function normalizeSignal(raw: RawSignal): TgrSignal {
 }
 
 export async function fetchSignalIndex(): Promise<SignalIndexEntry[]> {
-  const res = await fetch(withBase("signals/index.json"), { cache: "no-cache" });
-  if (!res.ok) throw new Error(`Failed to load signal index (${res.status})`);
-  const data = (await res.json()) as RawSignal[];
+  let data: RawSignal[];
+  try {
+    const res = await fetch(withBase("signals/index.json"), { cache: "no-cache" });
+    if (!res.ok) throw new Error(`Failed to load signal index (${res.status})`);
+    data = (await res.json()) as RawSignal[];
+  } catch {
+    data = bundledSignalIndex as unknown as RawSignal[];
+  }
   return data.map(normalizeSignalIndexEntry).sort((a, b) => b.date.localeCompare(a.date));
 }
 
 export async function fetchSignal(slug: string): Promise<TgrSignal | null> {
-  const res = await fetch(withBase(`signals/${slug}.json`), { cache: "no-cache" });
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`Failed to load signal ${slug} (${res.status})`);
-  return normalizeSignal((await res.json()) as RawSignal);
+  try {
+    const res = await fetch(withBase(`signals/${slug}.json`), { cache: "no-cache" });
+    if (res.ok) return normalizeSignal((await res.json()) as RawSignal);
+    if (res.status !== 404) throw new Error(`Failed to load signal ${slug} (${res.status})`);
+  } catch {}
+
+  const bundled = (bundledSignalsBySlug as unknown as Record<string, RawSignal>)[slug];
+  return bundled ? normalizeSignal(bundled) : null;
 }
 
 export const formatSignalDate = (date: string, opts?: Intl.DateTimeFormatOptions) =>
