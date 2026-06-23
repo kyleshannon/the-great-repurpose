@@ -1,40 +1,31 @@
-## Goal
-Rename the public-facing section name from "TGR Signals" to "Daily Signal" everywhere it appears in the UI, SEO metadata, RSS feed, and Codex schema documentation.
+# Fix the broken Daily Signal fallback thumbnail
 
-## Changes
+## Problem
+`public/signals/tgr-signal-thumbnail.svg` wraps a base64-encoded JPEG. The base64 payload is truncated mid-stream — it's not a multiple of 4 chars and decodes to a JPEG that ends with `2981 fffd` instead of the required `ffd9` end-of-image marker. Browsers render the first scanlines they can decode (~10%) and then stop, which is why every story on June 2 (and any other story missing an `imageUrl`) shows a partial image.
 
-### Navigation & Footer
-- **src/components/Navigation.tsx**: Change nav link label from `Signals` to `Daily Signal`.
-- **src/components/Footer.tsx**: Change footer link label from `TGR Signals` to `Daily Signal`.
+The site code is correct: `SignalDetail.tsx` and `SignalTeaser.tsx` already fall back to this asset via `fallbackSignalImage`. The asset itself is the bug.
 
-### Archive page (src/pages/Signals.tsx)
-- Page `<title>` and `<h1>`: "The Great Repurpose Signals" → "The Great Repurpose Daily Signal" (or shorter if it reads better).
-- Meta `og:title`, meta description, canonical references: update branding.
-- Section heading "Signal Archive" and body copy: replace "Signal" references with "Daily Signal" where it refers to the section brand.
+## Fix
+Replace `public/signals/tgr-signal-thumbnail.svg` with a clean, lightweight, on-brand SVG fallback — built from real SVG primitives (no embedded raster), so it can't be truncated and stays crisp at any size.
 
-### Detail page (src/pages/SignalDetail.tsx)
-- `<title>` suffix: "TGR Signals" → "Daily Signal".
-- Breadcrumb link text: "TGR Signals" → "Daily Signal".
-- Meta `og:title` suffix: "TGR Signals" → "Daily Signal".
+Proposed design, matching the site's palette (`navy` background, `cream` text, `coral` accent, constellation feel):
 
-### Homepage teaser (src/components/SignalTeaser.tsx)
-- Label "Latest TGR Signal" → "Latest Daily Signal".
-- CTA link text "Browse the full Signal archive" → "Browse the full Daily Signal archive".
+- 480 × 270 viewBox
+- Solid `#0B1B2B` navy background
+- A few small `cream`/`coral` dot "constellation" marks
+- Centered serif wordmark: **"Daily Signal"** in cream
+- Small uppercase eyebrow above: `THE GREAT REPURPOSE` in coral, tracked-out sans
+- `role="img"` + `<title>` / `<desc>` for accessibility (keep the existing pattern)
 
-### RSS feed (scripts/build-signals-rss.mjs + public/signals.xml)
-- RSS `<title>`: "TGR Signals — The Great Repurpose" → "Daily Signal — The Great Repurpose".
-- Regenerate `public/signals.xml` so the built file matches.
+File size target: < 2 KB, pure vector, no `<image>` tag.
 
-### Codex schema doc (public/signals/SCHEMA.md)
-- Title and all "TGR Signals" references updated to "Daily Signal" so Codex uses the correct terminology going forward.
+## Files
+- `public/signals/tgr-signal-thumbnail.svg` — overwrite with the new vector SVG
 
 ## Out of scope
-- URL paths (`/signals`, `/signals/:slug`) remain unchanged to avoid breaking links and SEO.
-- Internal code variable names (`SignalIndexEntry`, `fetchSignal`, etc.) stay as-is.
-- JSON data fields and story titles inside `public/signals/*.json` are not modified.
+- No changes to JSON, components, or the `onError` fallback wiring.
+- No changes to story-level `imageUrl` values (the bad June 2 URLs are a separate question — once the fallback renders cleanly, those stories will look correct).
 
-## Acceptance
-- Every visible user-facing mention of "TGR Signals" or the nav label "Signals" reads "Daily Signal".
-- RSS feed title matches.
-- SCHEMA.md uses the new name for Codex instructions.
-- Build passes and pages render correctly.
+## Verification
+- After the replacement, reload `/signals/2026-06-02-...` and confirm all five story cards show the full branded thumbnail (not a partial sliver).
+- Confirm the SignalTeaser on the homepage and any other fallback usage also render cleanly.
