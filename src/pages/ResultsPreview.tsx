@@ -340,14 +340,18 @@ const ResultsPreview = () => {
     }
   }, [scores, archetype]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Save interpretation to DB once streaming finishes and we have a resultId
+  // Save interpretation to DB once streaming finishes and we have a resultId.
+  // Update is gated by the per-submission claim token stored in sessionStorage.
   useEffect(() => {
     if (streamDone && streamedText && resultId) {
-      supabase
-        .from("selfcheck_results")
-        .update({ ai_interpretation: streamedText, archetype: archetype?.name } as any)
-        .eq("id", resultId)
-        .then(() => {});
+      const token = sessionStorage.getItem(`tgr_token_${resultId}`);
+      if (!token) return; // not the original submitter on this device
+      (supabase.rpc as any)("set_selfcheck_interpretation", {
+        p_id: resultId,
+        p_token: token,
+        p_interpretation: streamedText,
+        p_archetype: archetype?.name ?? null,
+      }).then(() => {});
     }
   }, [streamDone, resultId]); // eslint-disable-line react-hooks/exhaustive-deps
 
