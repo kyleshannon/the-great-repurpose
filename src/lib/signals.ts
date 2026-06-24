@@ -116,7 +116,7 @@ export async function fetchSignal(slug: string): Promise<TgrSignal | null> {
   const bundled = (bundledSignalsBySlug as unknown as Record<string, RawSignal>)[slug];
 
   try {
-    const res = await fetch(withBase(`signals/${slug}.json`), { cache: "no-cache" });
+    const res = await fetch(`${SIGNALS_CDN}/${slug}.json`, { cache: "no-cache" });
     if (res.ok) return normalizeSignal((await res.json()) as RawSignal);
     if (res.status !== 404) throw new Error(`Failed to load signal ${slug} (${res.status})`);
   } catch {
