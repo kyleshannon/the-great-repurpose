@@ -100,7 +100,7 @@ export async function fetchSignalIndex(): Promise<SignalIndexEntry[]> {
     .sort((a, b) => b.date.localeCompare(a.date));
 
   try {
-    const res = await fetch(withBase("signals/index.json"), { cache: "no-cache" });
+    const res = await fetch(`${SIGNALS_CDN}/index.json`, { cache: "no-cache" });
     if (!res.ok) throw new Error(`Failed to load signal index (${res.status})`);
     const fetched = ((await res.json()) as RawSignal[])
       .map(normalizeSignalIndexEntry)
