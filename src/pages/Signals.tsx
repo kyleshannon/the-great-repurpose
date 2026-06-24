@@ -120,24 +120,10 @@ const Signals = () => {
           </div>
         </section>
 
-        <section className="bg-cream px-6 pt-10 pb-8">
+        <section className="bg-cream px-6 pt-7 pb-6">
           <div className="max-w-5xl mx-auto">
             <ScrollFadeUp>
-              <div className="flex flex-col gap-6">
-                <div className="flex justify-start md:justify-end">
-                  <label className="font-sans text-navy/60 text-xs uppercase tracking-widest">
-                    Sort by date
-                    <select
-                      value={sortDirection}
-                      onChange={(e) => setSortDirection(e.target.value as "desc" | "asc")}
-                      className="mt-2 block w-full md:w-48 rounded-md border border-navy/15 bg-cream px-3 py-2 text-sm normal-case tracking-normal text-navy"
-                    >
-                      <option value="desc">Newest first</option>
-                      <option value="asc">Oldest first</option>
-                    </select>
-                  </label>
-                </div>
-
+              <div className="flex flex-col gap-4">
                 <div className="flex flex-wrap gap-2" aria-label="Filter by TGR stage">
                   {["All", ...canonicalStages].map((stage) => {
                     const active = selectedStage === stage;
@@ -157,12 +143,24 @@ const Signals = () => {
                     );
                   })}
                 </div>
+
+                <label className="inline-flex flex-wrap items-center gap-3 font-sans text-navy/60 text-xs uppercase tracking-widest">
+                  Sort by date
+                  <select
+                    value={sortDirection}
+                    onChange={(e) => setSortDirection(e.target.value as "desc" | "asc")}
+                    className="block w-48 rounded-md border border-navy/15 bg-cream px-3 py-2 text-sm normal-case tracking-normal text-navy"
+                  >
+                    <option value="desc">Newest first</option>
+                    <option value="asc">Oldest first</option>
+                  </select>
+                </label>
               </div>
             </ScrollFadeUp>
           </div>
         </section>
 
-        <section className="bg-cream px-6 pb-12 pt-8 md:pb-16 md:pt-10">
+        <section className="bg-cream px-6 pb-12 pt-6 md:pb-16 md:pt-8">
           <div className="max-w-5xl mx-auto">
             {error ? (
               <div className="rounded-lg border border-navy/10 p-8 text-center">
