@@ -340,14 +340,18 @@ const ResultsPreview = () => {
     }
   }, [scores, archetype]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Save interpretation to DB once streaming finishes and we have a resultId
+  // Save interpretation to DB once streaming finishes and we have a resultId.
+  // Update is gated by the per-submission claim token stored in sessionStorage.
   useEffect(() => {
     if (streamDone && streamedText && resultId) {
-      supabase
-        .from("selfcheck_results")
-        .update({ ai_interpretation: streamedText, archetype: archetype?.name } as any)
-        .eq("id", resultId)
-        .then(() => {});
+      const token = sessionStorage.getItem(`tgr_token_${resultId}`);
+      if (!token) return; // not the original submitter on this device
+      (supabase.rpc as any)("set_selfcheck_interpretation", {
+        p_id: resultId,
+        p_token: token,
+        p_interpretation: streamedText,
+        p_archetype: archetype?.name ?? null,
+      }).then(() => {});
     }
   }, [streamDone, resultId]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -379,32 +383,32 @@ const ResultsPreview = () => {
     const lowestDim = getLowestDimension(scores);
 
     try {
-      // Include the already-streamed interpretation so it's persisted before navigation unmounts
-      const insertPayload: any = {
-        email,
-        identity_score: scores.identity,
-        value_score: scores.value,
-        purpose_score: scores.purpose,
-        ai_relationship_score: scores.ai_relationship,
-        creative_action_score: scores.creative_action,
-        lowest_dimension: lowestDim,
-        archetype: archetype.name,
-        open_answer: openAnswer || null,
-      };
-      if (streamedText) {
-        insertPayload.ai_interpretation = streamedText;
-      }
+      // Create the result via SECURITY DEFINER RPC, which validates input,
+      // generates a private claim token, and returns id + token.
+      const { data, error } = await (supabase.rpc as any)("create_selfcheck_result", {
+        p_email: email,
+        p_identity: scores.identity,
+        p_value: scores.value,
+        p_purpose: scores.purpose,
+        p_ai_relationship: scores.ai_relationship,
+        p_creative_action: scores.creative_action,
+        p_lowest_dimension: lowestDim,
+        p_archetype: archetype.name,
+        p_open_answer: openAnswer || null,
+        p_ai_interpretation: streamedText || null,
+      });
 
-      const { data, error } = await supabase
-        .from("selfcheck_results")
-        .insert(insertPayload)
-        .select("id")
-        .single();
+      const row = Array.isArray(data) ? data[0] : data;
 
-      if (!error && data) {
-        setResultId(data.id);
-        sessionStorage.setItem("tgr_report_url", `/results/${data.id}`);
-        navigate(`/results/${data.id}`, { replace: true });
+      if (!error && row?.id) {
+        // Stash the claim token locally so only this browser session can
+        // attach an interpretation to this row later.
+        if (row.claim_token) {
+          sessionStorage.setItem(`tgr_token_${row.id}`, row.claim_token);
+        }
+        setResultId(row.id);
+        sessionStorage.setItem("tgr_report_url", `/results/${row.id}`);
+        navigate(`/results/${row.id}`, { replace: true });
       }
 
       supabase.functions

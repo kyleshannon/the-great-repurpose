@@ -19,6 +19,7 @@ export type Database = {
           ai_interpretation: string | null
           ai_relationship_score: number
           archetype: string | null
+          claim_token: string | null
           created_at: string
           creative_action_score: number
           email: string | null
@@ -33,6 +34,7 @@ export type Database = {
           ai_interpretation?: string | null
           ai_relationship_score?: number
           archetype?: string | null
+          claim_token?: string | null
           created_at?: string
           creative_action_score?: number
           email?: string | null
@@ -47,6 +49,7 @@ export type Database = {
           ai_interpretation?: string | null
           ai_relationship_score?: number
           archetype?: string | null
+          claim_token?: string | null
           created_at?: string
           creative_action_score?: number
           email?: string | null
@@ -61,10 +64,77 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      selfcheck_results_public: {
+        Row: {
+          ai_interpretation: string | null
+          ai_relationship_score: number | null
+          archetype: string | null
+          created_at: string | null
+          creative_action_score: number | null
+          id: string | null
+          identity_score: number | null
+          lowest_dimension: string | null
+          open_answer: string | null
+          purpose_score: number | null
+          value_score: number | null
+        }
+        Insert: {
+          ai_interpretation?: string | null
+          ai_relationship_score?: number | null
+          archetype?: string | null
+          created_at?: string | null
+          creative_action_score?: number | null
+          id?: string | null
+          identity_score?: number | null
+          lowest_dimension?: string | null
+          open_answer?: string | null
+          purpose_score?: number | null
+          value_score?: number | null
+        }
+        Update: {
+          ai_interpretation?: string | null
+          ai_relationship_score?: number | null
+          archetype?: string | null
+          created_at?: string | null
+          creative_action_score?: number | null
+          id?: string | null
+          identity_score?: number | null
+          lowest_dimension?: string | null
+          open_answer?: string | null
+          purpose_score?: number | null
+          value_score?: number | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
-      [_ in never]: never
+      create_selfcheck_result: {
+        Args: {
+          p_ai_interpretation: string
+          p_ai_relationship: number
+          p_archetype: string
+          p_creative_action: number
+          p_email: string
+          p_identity: number
+          p_lowest_dimension: string
+          p_open_answer: string
+          p_purpose: number
+          p_value: number
+        }
+        Returns: {
+          claim_token: string
+          id: string
+        }[]
+      }
+      set_selfcheck_interpretation: {
+        Args: {
+          p_archetype: string
+          p_id: string
+          p_interpretation: string
+          p_token: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
       [_ in never]: never
