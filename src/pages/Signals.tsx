@@ -1,12 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import {
-  canonicalStages,
   fallbackSignalImage,
   fetchSignalIndex,
   formatSignalDate,
@@ -17,18 +16,10 @@ import { getStageDefinition, getStagePath } from "@/lib/stages";
 const PAGE_SIZE = 9;
 
 const Signals = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const stageParam = searchParams.get("stage") ?? "All";
-  const [selectedStage, setSelectedStage] = useState(stageParam);
-  const [sortDirection, setSortDirection] = useState<"desc" | "asc">("desc");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [signals, setSignals] = useState<SignalIndexEntry[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const sentinelRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    setSelectedStage(stageParam);
-  }, [stageParam]);
 
   useEffect(() => {
     let cancelled = false;
@@ -44,24 +35,17 @@ const Signals = () => {
     };
   }, []);
 
-  const filteredSignals = useMemo(() => {
+  const sortedSignals = useMemo(() => {
     if (!signals) return [];
-    const filtered =
-      selectedStage === "All"
-        ? signals
-        : signals.filter((s) => s.stages.includes(selectedStage));
-    return [...filtered].sort((a, b) => {
-      const cmp = a.date.localeCompare(b.date);
-      return sortDirection === "asc" ? cmp : -cmp;
-    });
-  }, [signals, selectedStage, sortDirection]);
+    return [...signals].sort((a, b) => b.date.localeCompare(a.date));
+  }, [signals]);
 
-  const visibleSignals = filteredSignals.slice(0, visibleCount);
-  const hasMore = visibleCount < filteredSignals.length;
+  const visibleSignals = sortedSignals.slice(0, visibleCount);
+  const hasMore = visibleCount < sortedSignals.length;
 
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [selectedStage, sortDirection]);
+  }, [signals]);
 
   useEffect(() => {
     const sentinel = sentinelRef.current;
@@ -69,22 +53,14 @@ const Signals = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setVisibleCount((c) => Math.min(c + PAGE_SIZE, filteredSignals.length));
+          setVisibleCount((c) => Math.min(c + PAGE_SIZE, sortedSignals.length));
         }
       },
       { rootMargin: "600px 0px" }
     );
     observer.observe(sentinel);
     return () => observer.disconnect();
-  }, [filteredSignals.length, hasMore]);
-
-  const handleStageClick = (stage: string) => {
-    setSelectedStage(stage);
-    const next = new URLSearchParams(searchParams);
-    if (stage === "All") next.delete("stage");
-    else next.set("stage", stage);
-    setSearchParams(next, { replace: true });
-  };
+  }, [sortedSignals.length, hasMore]);
 
   return (
     <div className="min-h-screen bg-navy text-cream">
@@ -120,47 +96,7 @@ const Signals = () => {
           </div>
         </section>
 
-        <section className="bg-cream px-6 pt-7 pb-6">
-          <div className="max-w-5xl mx-auto">
-            <ScrollFadeUp>
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-wrap gap-2" aria-label="Filter by TGR stage">
-                  {["All", ...canonicalStages].map((stage) => {
-                    const active = selectedStage === stage;
-                    return (
-                      <button
-                        key={stage}
-                        type="button"
-                        onClick={() => handleStageClick(stage)}
-                        className={`rounded-full border px-4 py-2 font-sans text-xs uppercase tracking-widest transition-colors ${
-                          active
-                            ? "border-coral bg-coral text-cream"
-                            : "border-navy/15 text-navy/65 hover:border-coral hover:text-coral"
-                        }`}
-                      >
-                        {stage}
-                      </button>
-                    );
-                  })}
-                </div>
-
-                <label className="inline-flex flex-wrap items-center gap-3 font-sans text-navy/60 text-xs uppercase tracking-widest">
-                  Sort by date
-                  <select
-                    value={sortDirection}
-                    onChange={(e) => setSortDirection(e.target.value as "desc" | "asc")}
-                    className="block w-48 rounded-md border border-navy/15 bg-cream px-3 py-2 text-sm normal-case tracking-normal text-navy"
-                  >
-                    <option value="desc">Newest first</option>
-                    <option value="asc">Oldest first</option>
-                  </select>
-                </label>
-              </div>
-            </ScrollFadeUp>
-          </div>
-        </section>
-
-        <section className="bg-cream px-6 pb-12 pt-6 md:pb-16 md:pt-8">
+        <section className="bg-cream px-6 py-12 md:py-16">
           <div className="max-w-5xl mx-auto">
             {error ? (
               <div className="rounded-lg border border-navy/10 p-8 text-center">
