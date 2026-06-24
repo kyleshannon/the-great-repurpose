@@ -1,43 +1,21 @@
 ## Goal
-Make the live site fetch the latest TGR Signals from GitHub via jsDelivr, so Codex can publish daily by committing JSON files — no Lovable rebuild needed.
+Document the jsDelivr cache-purge step in the Codex instructions so newly committed signals appear on the live site within seconds instead of waiting ~12 minutes.
 
-## How it works
+## Where it goes
+`public/signals/SCHEMA.md` is the existing single source of truth that Codex reads when publishing a signal. Add a new section at the end so Codex sees it as part of its normal workflow — no new file, no new place to look.
 
-```text
-Codex commits public/signals/*.json  ──►  GitHub (public repo)
-                                              │
-                                              ▼
-                                    cdn.jsdelivr.net/gh/...@main
-                                              │
-                                              ▼
-              Live site fetches index.json + <slug>.json at runtime
-                                              │
-                       newest of {jsDelivr, bundled} wins
-```
+## Change
+Append a **"Publishing checklist"** section to `public/signals/SCHEMA.md` with these steps:
 
-The bundled data in `src/data/generatedSignals.ts` stays as a guaranteed fallback if jsDelivr is ever slow, down, or behind.
+1. Write/update the signal JSON file (`public/signals/<date>-<slug>.json`).
+2. Update `public/signals/index.json` to include the new entry, sorted newest first.
+3. Commit and push to `main` on GitHub (`kyleshannon/the-great-repurpose`).
+4. **Purge the jsDelivr cache** so the live site sees the change immediately. Hit each URL once (a GET is enough; jsDelivr returns a small JSON confirmation):
+   - `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/index.json`
+   - `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/<date>-<slug>.json`
+5. Verify by loading `https://thegreatrepurpose.com/signals` in a fresh tab — the new entry should appear at the top within a few seconds.
 
-## Changes
+Also add a one-line note explaining *why*: the live site fetches signals from `cdn.jsdelivr.net/gh/...@main/public/signals/...` at runtime, and jsDelivr edge-caches `@main` for ~12 minutes unless purged.
 
-**1. `src/lib/signals.ts`** — swap the fetch base from same-origin `/signals/...` to jsDelivr:
-
-- New constant:
-  `const SIGNALS_CDN = "https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals";`
-- `fetchSignalIndex()` fetches `${SIGNALS_CDN}/index.json`
-- `fetchSignal(slug)` fetches `${SIGNALS_CDN}/${slug}.json`
-- Keep the existing "newest date wins" comparison against `bundledSignalIndex` so the site never regresses if the CDN is stale or unreachable.
-- Use `cache: "no-cache"` (already in place) so browsers always revalidate. jsDelivr's own edge cache (~12 min for `@main`) is the real TTL.
-
-**2. Nothing else changes.** Routing, components, RSS build, and the bundled fallback all keep working exactly as today.
-
-## Daily publish flow for Codex
-
-1. Codex writes a new `public/signals/<date>-<slug>.json` and updates `public/signals/index.json` in the GitHub repo.
-2. Commit + push to `main`.
-3. Within ~12 minutes jsDelivr serves the new file; the live site picks it up on the next visit. No Lovable deploy required.
-
-## Optional (not in this change, mentioning for awareness)
-- To force-bust jsDelivr cache instantly instead of waiting ~12 min, Codex can hit `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/index.json` after pushing. Happy to add that to Codex's instructions if you want.
-
-## Risks
-- If the repo is ever made private again, the CDN URLs will 404 and the site will silently fall back to bundled data (same behavior as today's same-origin fetch on a stale build). Worth knowing but not blocking.
+## Not changed
+No app code changes. The runtime fetch already points at jsDelivr from the previous step.
