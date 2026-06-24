@@ -120,21 +120,11 @@ const Signals = () => {
           </div>
         </section>
 
-        <section className="bg-cream py-12 px-6 border-b border-navy/10">
+        <section className="bg-cream px-6 pt-10 pb-8">
           <div className="max-w-5xl mx-auto">
             <ScrollFadeUp>
-              <div className="flex flex-col gap-8">
-                <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5">
-                  <div>
-                    <h2 className="font-serif text-navy text-3xl md:text-4xl mb-3">
-                      Daily Signal Archive
-                    </h2>
-                    <p className="font-sans text-navy/65 text-base leading-relaxed max-w-2xl">
-                      Browse the daily patterns and the stories behind them. Filter by
-                      the TGR stage you want to study, or move through the archive by date.
-                    </p>
-                  </div>
-
+              <div className="flex flex-col gap-6">
+                <div className="flex justify-start md:justify-end">
                   <label className="font-sans text-navy/60 text-xs uppercase tracking-widest">
                     Sort by date
                     <select
@@ -172,7 +162,7 @@ const Signals = () => {
           </div>
         </section>
 
-        <section className="bg-cream px-6 py-12 md:py-16">
+        <section className="bg-cream px-6 pb-12 pt-8 md:pb-16 md:pt-10">
           <div className="max-w-5xl mx-auto">
             {error ? (
               <div className="rounded-lg border border-navy/10 p-8 text-center">
