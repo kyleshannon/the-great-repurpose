@@ -42,7 +42,7 @@ export const canonicalStages = [
 export const fallbackSignalImagePath = "/signals/tgr-signal-thumbnail.jpg";
 export const fallbackSignalImage = fallbackSignalImagePath;
 
-const withBase = (path: string) => `${import.meta.env.BASE_URL ?? "/"}${path}`.replace(/\/{2,}/g, "/");
+const SIGNALS_CDN = "https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals";
 
 const asString = (value: unknown) => (typeof value === "string" ? value : "");
 const asStringArray = (value: unknown) => (Array.isArray(value) ? value.filter((v): v is string => typeof v === "string") : []);
@@ -100,7 +100,7 @@ export async function fetchSignalIndex(): Promise<SignalIndexEntry[]> {
     .sort((a, b) => b.date.localeCompare(a.date));
 
   try {
-    const res = await fetch(withBase("signals/index.json"), { cache: "no-cache" });
+    const res = await fetch(`${SIGNALS_CDN}/index.json`, { cache: "no-cache" });
     if (!res.ok) throw new Error(`Failed to load signal index (${res.status})`);
     const fetched = ((await res.json()) as RawSignal[])
       .map(normalizeSignalIndexEntry)
@@ -116,7 +116,7 @@ export async function fetchSignal(slug: string): Promise<TgrSignal | null> {
   const bundled = (bundledSignalsBySlug as unknown as Record<string, RawSignal>)[slug];
 
   try {
-    const res = await fetch(withBase(`signals/${slug}.json`), { cache: "no-cache" });
+    const res = await fetch(`${SIGNALS_CDN}/${slug}.json`, { cache: "no-cache" });
     if (res.ok) return normalizeSignal((await res.json()) as RawSignal);
     if (res.status !== 404) throw new Error(`Failed to load signal ${slug} (${res.status})`);
   } catch {
