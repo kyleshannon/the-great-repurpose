@@ -116,9 +116,20 @@ the same briefing-level `stages` array in `<slug>.json`.
    entry. Its `stages` array must exactly match the briefing file `stages` array. Re-sort by `date` descending if unsure.
 7. Commit both files in one commit. Suggested message:
    `signal: <date> — <title>`.
-8. Push to `main`. Lovable redeploys; the new briefing appears at
-   `https://thegreatrepurpose.com/signals/<slug>` and on the homepage
-   teaser within a minute or two.
+8. Push to `main` on `kyleshannon/the-great-repurpose`.
+9. **Purge the jsDelivr cache** so the live site picks up the change
+   immediately (otherwise it can take up to ~12 minutes). Hit each URL
+   once with a GET — jsDelivr returns a small JSON confirmation:
+   - `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/index.json`
+   - `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/<slug>.json`
+10. Verify by opening `https://thegreatrepurpose.com/signals` in a fresh
+    tab. The new briefing should appear at the top within a few seconds
+    and be reachable at `https://thegreatrepurpose.com/signals/<slug>`.
+
+> Why the purge: the live site fetches signals at runtime from
+> `cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/...`.
+> jsDelivr edge-caches the `@main` branch for ~12 minutes unless purged,
+> so without step 9 the new signal won't appear right away.
 
 ## Validating before commit
 
