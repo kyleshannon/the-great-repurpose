@@ -165,98 +165,100 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
-  "2026-06-21-ai-moves-into-the-workday": {
-    "date": "2026-06-21",
-    "slug": "2026-06-21-ai-moves-into-the-workday",
-    "title": "AI Agents Get Work Identities",
+  "2026-06-24-entry-level-jobs-get-senior-ai-standards": {
+    "slug": "2026-06-24-entry-level-jobs-get-senior-ai-standards",
+    "date": "2026-06-24",
+    "title": "Entry-Level Jobs Get Senior AI Standards",
     "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
       "Discover AI's Power",
-      "Start Creating"
+      "Find Your Purpose"
     ],
-    "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/NewCore-Raises-66M-To-Give-AI-Agents-Work-Identities-In-2026-1024x576.png",
+    "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/06/4188067-0-04562000-1782298982-future-ready-IT-workforce-shutterstock_2677450619.jpg?quality=50&strip=all&w=1024",
     "stories": [
       {
-        "title": "AI agents need more than reasoning: they need to actually use the web",
-        "source": "digitaltrends.com",
-        "url": "https://www.digitaltrends.com/contributor-content/ai-agents-need-more-than-reasoning-they-need-to-actually-use-the-web/",
-        "published": "2026-06-19T11:49:46+00:00",
-        "imageUrl": "https://www.digitaltrends.com/tachyon/2026/06/AdobeStock_567681994.jpg?resize=1200%2C630",
-        "summary": "This matters because the capability curve is moving from novelty into operating reality.",
-        "keyPoints": [
-          "A company rolls out an AI customer service assistant.",
-          "The model behind it is current and capable enough for the job.",
-          "Source signal: digitaltrends.com is connecting this story to ai agents workplace jobs."
+        "title": "Entry-level AI workers now need 'senior-level' skills, PwC says",
+        "url": "https://www.computerworld.com/article/4188067/entry-level-ai-workers-now-need-senior-level-skills-pwc-says.html",
+        "source": "computerworld.com",
+        "published": "2026-06-24T04:05:00+00:00",
+        "summary": "PwC's signal is that the bottom rung of the AI labor market is getting pulled upward. Entry-level workers are being asked to show judgment, adaptability, and senior-style leverage before the old apprenticeship path has time to form.",
+        "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/06/4188067-0-04562000-1782298982-future-ready-IT-workforce-shutterstock_2677450619.jpg?quality=50&strip=all&w=1024",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
         ],
+        "keyPoints": [
+          "Generative AI is raising skill expectations even for workers at the start of their careers.",
+          "The old promise of learning slowly inside a junior role is being compressed by AI-assisted work.",
+          "For TGR, the useful move is separating human value from the entry-level label itself."
+        ]
+      },
+      {
+        "title": "Agentic AI reshapes jobs, skills and HR models as governments rethink the future of work",
+        "url": "https://www.khaleejtimes.com/business/agentic-ai-reshapes-jobs-skills-and-hr-models-as-governments-rethink-the-future-of-work",
+        "source": "khaleejtimes.com",
+        "published": "2026-06-23T05:47:00+00:00",
+        "summary": "A Dubai forum puts agentic AI inside the operating model of work, not outside it as a novelty. The story matters because governments and HR leaders are now treating skills, roles, and human judgment as active design problems.",
+        "imageUrl": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-06-23/v1mmkcze/Agentic-AI-forum.jpeg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=0,0,7008,4672",
         "stages": [
           "Discover AI's Power",
           "Unhook Identity"
-        ]
-      },
-      {
-        "title": "NewCore Raises $66M To Give AI Agents Work Identities In 2026 - Memeburn",
-        "source": "memeburn.com",
-        "url": "https://memeburn.com/newcore-raises-66m-to-give-ai-agents-work-identities-in-2026/",
-        "published": "2026-06-20T03:54:07+00:00",
-        "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/NewCore-Raises-66M-To-Give-AI-Agents-Work-Identities-In-2026-1024x576.png",
-        "summary": "This matters because the capability curve is moving from novelty into operating reality.",
-        "keyPoints": [
-          "NewCore raised $66M to manage AI agent identities as companies rethink security, access and automation in South Africa.",
-          "Source signal: memeburn.com is connecting this story to ai agents workplace jobs.",
-          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
         ],
-        "stages": [
-          "Discover AI's Power"
+        "keyPoints": [
+          "AI agents are being discussed as forces that reshape workforce structures, skills demand, and leadership models.",
+          "The article keeps human judgment central even as more work becomes agent-assisted.",
+          "The TGR signal is that institutions are starting to redesign work around AI rather than merely add tools to existing jobs."
         ]
       },
       {
-        "title": "Adobe’s AI Edge: Turning Solo Creators Into Global Media Brands",
+        "title": "Microsoft's AI Education Lead Says Job Fear Is Real. Here's The Fix",
+        "url": "https://www.forbes.com/sites/danfitzpatrick/2026/06/22/microsofts-ai-education-lead-says-job-fear-is-real-heres-the-fix/",
         "source": "forbes.com",
-        "url": "https://www.forbes.com/sites/jamiegutfreund/2026/06/16/adobes-ai-edge-turning-solo-creators-into-global-media-brands/",
-        "published": "2026-06-16T06:41:00+00:00",
-        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a30d0afa8d3ddcf046cccc3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-        "summary": "This matters because it points to the human value that remains when execution gets automated.",
-        "keyPoints": [
-          "As Cannes Lions begins next week, Adobe research shows 87% of creators say AI is accelerating growth while making creativity and judgment more valuable",
-          "Source signal: forbes.com is connecting this story to ai creativity work creators.",
-          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
-        ],
+        "published": "2026-06-22T03:58:00+00:00",
+        "summary": "Microsoft's education AI lead names the fear students already feel: the labor market is changing faster than credentials can explain. The deeper signal is that purpose and adaptable judgment are becoming career infrastructure, not soft extras.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
         "stages": [
-          "Reclaim Value",
-          "Start Creating"
+          "Find Your Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Justin Spelhaug runs Microsoft's $4B education AI effort.",
+          "He says student fear of AI taking jobs is rational, and the skill that beats it is not purely technical.",
+          "For TGR, the human task is to build direction before the market assigns identity by role."
         ]
       },
       {
-        "title": "The AI jobs crisis no one is talking about (Opinion)",
-        "source": "dailycamera.com",
-        "url": "https://www.dailycamera.com/2026/06/20/ai-artificial-intelligence-job-crisis-chatgpt-work-employment-opinion/",
-        "published": "2026-06-20T11:00:03+00:00",
-        "imageUrl": "https://www.dailycamera.com/wp-content/uploads/2026/05/AI_Health_Care_Poll_84564_1d4d7c.jpg?w=1024&h=682",
-        "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
-        "keyPoints": [
-          "Source signal: dailycamera.com is connecting this story to artificial intelligence productivity jobs.",
-          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
-        ],
+        "title": "Oracle layoffs: Tech giant cuts 21,000 jobs as AI investments reshape workforce- Moneycontrol.com",
+        "url": "https://www.moneycontrol.com/technology/oracle-layoffs-tech-giant-cuts-21-000-jobs-as-ai-investments-reshape-workforce-article-13956730.html",
+        "source": "moneycontrol.com",
+        "published": "2026-06-23T02:58:00+00:00",
+        "summary": "Oracle's reported 21,000 job cuts make the AI workforce shift concrete. The hard lesson is that people need value they can carry across roles when companies redesign the roles themselves.",
+        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/04/20260401082814_MixCollage-01-Apr-2026-01-53-PM-7018.jpg",
         "stages": [
           "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Oracle has cut around 21,000 jobs globally over the past year while realigning around AI.",
+          "The story turns AI workforce restructuring from abstraction into operating policy.",
+          "The TGR question is what human value survives when the company rewrites the org chart."
         ]
       },
       {
-        "title": "Is AI replacing tech workers or providing an excuse for job cuts?",
-        "source": "inquirer.com",
-        "url": "https://www.inquirer.com/business/ai-tech-workers-layoffs-companies-meta-coinbase-block-snap-intuit-cisco-cloudflare-20260614.html",
-        "published": "2026-06-14T09:01:00+00:00",
-        "imageUrl": "https://www.inquirer.com/resizer/v2/DAGFY4WR6RSHQPBRIV4JINOW6E.jpg?auth=d60528a00ead4069abe3aa99c54f35f9604c9f6bb4f4b04bf05d007e1dce5145&width=760&height=507&smart=true",
-        "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
-        "keyPoints": [
-          "Tech industry layoffs are accelerating, and executives have been quick to say it’s because their companies are doing more with artificial intelligence, even when there may be more to it.",
-          "Source signal: inquirer.com is connecting this story to ai layoffs job cuts workforce.",
-          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
-        ],
+        "title": "PwC chairman pushes back on fears of AI-driven mass layoffs, says AI is adding more jobs",
+        "url": "https://indianexpress.com/article/technology/artificial-intelligence/pwc-chairman-pushes-back-on-fears-of-ai-driven-mass-layoffs-says-ai-is-adding-more-jobs-10753088/",
+        "source": "indianexpress.com",
+        "published": "2026-06-23T07:19:18+00:00",
+        "summary": "PwC's chair offers the counterweight to the layoff story: effective AI adoption may expand work instead of simply removing it. The tension is the point, because workers still have to repurpose themselves while leaders argue over the net effect.",
+        "imageUrl": "https://images.indianexpress.com/2026/06/PwC-chairman-quells-fears-of-AI-driven-mass-layoffs-says-AI-adoption-is-adding-more-jobs.png",
         "stages": [
           "Unhook Identity"
+        ],
+        "keyPoints": [
+          "PwC's global chairman says organizations using AI well are focused on transformation and productivity gains, not only headcount cuts.",
+          "The claim complicates the simple story that AI equals mass layoffs.",
+          "For TGR, the practical signal is still the same: identity cannot depend on a single employer's version of the future."
         ]
       }
     ],
@@ -362,100 +364,196 @@ export const bundledSignalsBySlug = {
     ],
     "sourceStatus": "generated"
   },
-  "2026-06-24-entry-level-jobs-get-senior-ai-standards": {
-    "slug": "2026-06-24-entry-level-jobs-get-senior-ai-standards",
-    "date": "2026-06-24",
-    "title": "Entry-Level Jobs Get Senior AI Standards",
+  "2026-06-22-ai-moves-into-the-workday": {
+    "date": "2026-06-22",
+    "slug": "2026-06-22-ai-moves-into-the-workday",
+    "title": "Job Fear Meets AI Education",
+    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "Microsoft's AI Education Lead Says Job Fear Is Real. Here's The Fix",
+        "source": "forbes.com",
+        "url": "https://www.forbes.com/sites/danfitzpatrick/2026/06/22/microsofts-ai-education-lead-says-job-fear-is-real-heres-the-fix/",
+        "published": "2026-06-22T03:58:00+00:00",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
+        "summary": "This matters because people need a clearer inner compass before the labor market tells them who they are allowed to be.",
+        "keyPoints": [
+          "Justin Spelhaug runs Microsoft's $4B education AI effort.",
+          "He says students' fear of AI taking their jobs is rational and the skill that beats it isn't technical.",
+          "Source signal: forbes.com is connecting this story to ai agents workplace jobs."
+        ],
+        "stages": [
+          "Find Your Purpose",
+          "Unhook Identity"
+        ]
+      },
+      {
+        "title": "AI Layoffs Are Here, But They Don’t Mean What You Think",
+        "source": "forbes.com",
+        "url": "https://www.forbes.com/sites/bernardmarr/2026/06/22/ai-layoffs-are-here-but-they-dont-mean-what-you-think/",
+        "published": "2026-06-21T22:33:00+00:00",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a38c8bbc4ed237ab060e054/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
+        "keyPoints": [
+          "As companies pour billions into AI infrastructure, cloud computing and specialist skills, the latest job cuts reveal how businesses are reshaping themselves around AI.",
+          "Source signal: forbes.com is connecting this story to ai layoffs job cuts workforce.",
+          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ]
+      },
+      {
+        "title": "NewCore Raises $66M To Give AI Agents Work Identities In 2026 - Memeburn",
+        "source": "memeburn.com",
+        "url": "https://memeburn.com/newcore-raises-66m-to-give-ai-agents-work-identities-in-2026/",
+        "published": "2026-06-20T03:54:07+00:00",
+        "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/NewCore-Raises-66M-To-Give-AI-Agents-Work-Identities-In-2026-1024x576.png",
+        "summary": "This matters because the capability curve is moving from novelty into operating reality.",
+        "keyPoints": [
+          "NewCore raised $66M to manage AI agent identities as companies rethink security, access and automation in South Africa.",
+          "Source signal: memeburn.com is connecting this story to ai agents workplace jobs.",
+          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+        ],
+        "stages": [
+          "Discover AI's Power"
+        ]
+      },
+      {
+        "title": "Jensen Huang says AI will reshape work like the Industrial Revolution and the US 'should absolutely lead'",
+        "source": "foxnews.com",
+        "url": "https://www.foxnews.com/media/jensen-huang-says-ai-reshape-work-like-industrial-revolution-us-should-absolutely-lead",
+        "published": "2026-06-20T06:07:00+00:00",
+        "imageUrl": "https://static.foxnews.com/foxnews.com/content/uploads/2024/03/Nvidia-CEO-Jensen-Huang-Blackwell-GTC-2024.gif",
+        "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
+        "keyPoints": [
+          "Nvidia CEO Jensen Huang says AI will transform the workforce like the Industrial Revolution, creating new jobs while reshaping how Americans work.",
+          "Source signal: foxnews.com is connecting this story to artificial intelligence productivity jobs.",
+          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+        ],
+        "stages": [
+          "Unhook Identity"
+        ]
+      },
+      {
+        "title": "Human-centered AI could be PH’s competitive edge",
+        "source": "sunstar.com.ph",
+        "url": "https://www.sunstar.com.ph/cebu/human-centered-ai-could-be-phs-competitive-edge",
+        "published": "2026-06-22T04:13:00+00:00",
+        "imageUrl": "https://cf-images.assettype.com/sunstar%2F2024-05%2F4177634e-2b4a-43ae-ae2d-5a16eac4e5d8%2FArtificial_Intelligence.jpg?rect=0%2C53%2C750%2C394&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
+        "keyPoints": [
+          "AS ARTIFICIAL intelligence reshapes industries worldwide, Philippine companies should focus on using the technology to enhance workers rather than replace them,",
+          "Source signal: sunstar.com.ph is connecting this story to ai skills reskilling workers.",
+          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+        ],
+        "stages": [
+          "Unhook Identity"
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-06-21-ai-moves-into-the-workday": {
+    "date": "2026-06-21",
+    "slug": "2026-06-21-ai-moves-into-the-workday",
+    "title": "AI Agents Get Work Identities",
     "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
       "Discover AI's Power",
-      "Find Your Purpose"
+      "Start Creating"
     ],
-    "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/06/4188067-0-04562000-1782298982-future-ready-IT-workforce-shutterstock_2677450619.jpg?quality=50&strip=all&w=1024",
+    "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/NewCore-Raises-66M-To-Give-AI-Agents-Work-Identities-In-2026-1024x576.png",
     "stories": [
       {
-        "title": "Entry-level AI workers now need 'senior-level' skills, PwC says",
-        "url": "https://www.computerworld.com/article/4188067/entry-level-ai-workers-now-need-senior-level-skills-pwc-says.html",
-        "source": "computerworld.com",
-        "published": "2026-06-24T04:05:00+00:00",
-        "summary": "PwC's signal is that the bottom rung of the AI labor market is getting pulled upward. Entry-level workers are being asked to show judgment, adaptability, and senior-style leverage before the old apprenticeship path has time to form.",
-        "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/06/4188067-0-04562000-1782298982-future-ready-IT-workforce-shutterstock_2677450619.jpg?quality=50&strip=all&w=1024",
-        "stages": [
-          "Unhook Identity",
-          "Reclaim Value"
-        ],
+        "title": "AI agents need more than reasoning: they need to actually use the web",
+        "source": "digitaltrends.com",
+        "url": "https://www.digitaltrends.com/contributor-content/ai-agents-need-more-than-reasoning-they-need-to-actually-use-the-web/",
+        "published": "2026-06-19T11:49:46+00:00",
+        "imageUrl": "https://www.digitaltrends.com/tachyon/2026/06/AdobeStock_567681994.jpg?resize=1200%2C630",
+        "summary": "This matters because the capability curve is moving from novelty into operating reality.",
         "keyPoints": [
-          "Generative AI is raising skill expectations even for workers at the start of their careers.",
-          "The old promise of learning slowly inside a junior role is being compressed by AI-assisted work.",
-          "For TGR, the useful move is separating human value from the entry-level label itself."
-        ]
-      },
-      {
-        "title": "Agentic AI reshapes jobs, skills and HR models as governments rethink the future of work",
-        "url": "https://www.khaleejtimes.com/business/agentic-ai-reshapes-jobs-skills-and-hr-models-as-governments-rethink-the-future-of-work",
-        "source": "khaleejtimes.com",
-        "published": "2026-06-23T05:47:00+00:00",
-        "summary": "A Dubai forum puts agentic AI inside the operating model of work, not outside it as a novelty. The story matters because governments and HR leaders are now treating skills, roles, and human judgment as active design problems.",
-        "imageUrl": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-06-23/v1mmkcze/Agentic-AI-forum.jpeg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=0,0,7008,4672",
+          "A company rolls out an AI customer service assistant.",
+          "The model behind it is current and capable enough for the job.",
+          "Source signal: digitaltrends.com is connecting this story to ai agents workplace jobs."
+        ],
         "stages": [
           "Discover AI's Power",
           "Unhook Identity"
-        ],
-        "keyPoints": [
-          "AI agents are being discussed as forces that reshape workforce structures, skills demand, and leadership models.",
-          "The article keeps human judgment central even as more work becomes agent-assisted.",
-          "The TGR signal is that institutions are starting to redesign work around AI rather than merely add tools to existing jobs."
         ]
       },
       {
-        "title": "Microsoft's AI Education Lead Says Job Fear Is Real. Here's The Fix",
-        "url": "https://www.forbes.com/sites/danfitzpatrick/2026/06/22/microsofts-ai-education-lead-says-job-fear-is-real-heres-the-fix/",
+        "title": "NewCore Raises $66M To Give AI Agents Work Identities In 2026 - Memeburn",
+        "source": "memeburn.com",
+        "url": "https://memeburn.com/newcore-raises-66m-to-give-ai-agents-work-identities-in-2026/",
+        "published": "2026-06-20T03:54:07+00:00",
+        "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/NewCore-Raises-66M-To-Give-AI-Agents-Work-Identities-In-2026-1024x576.png",
+        "summary": "This matters because the capability curve is moving from novelty into operating reality.",
+        "keyPoints": [
+          "NewCore raised $66M to manage AI agent identities as companies rethink security, access and automation in South Africa.",
+          "Source signal: memeburn.com is connecting this story to ai agents workplace jobs.",
+          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+        ],
+        "stages": [
+          "Discover AI's Power"
+        ]
+      },
+      {
+        "title": "Adobe’s AI Edge: Turning Solo Creators Into Global Media Brands",
         "source": "forbes.com",
-        "published": "2026-06-22T03:58:00+00:00",
-        "summary": "Microsoft's education AI lead names the fear students already feel: the labor market is changing faster than credentials can explain. The deeper signal is that purpose and adaptable judgment are becoming career infrastructure, not soft extras.",
-        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
-        "stages": [
-          "Find Your Purpose",
-          "Unhook Identity"
-        ],
+        "url": "https://www.forbes.com/sites/jamiegutfreund/2026/06/16/adobes-ai-edge-turning-solo-creators-into-global-media-brands/",
+        "published": "2026-06-16T06:41:00+00:00",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a30d0afa8d3ddcf046cccc3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "summary": "This matters because it points to the human value that remains when execution gets automated.",
         "keyPoints": [
-          "Justin Spelhaug runs Microsoft's $4B education AI effort.",
-          "He says student fear of AI taking jobs is rational, and the skill that beats it is not purely technical.",
-          "For TGR, the human task is to build direction before the market assigns identity by role."
+          "As Cannes Lions begins next week, Adobe research shows 87% of creators say AI is accelerating growth while making creativity and judgment more valuable",
+          "Source signal: forbes.com is connecting this story to ai creativity work creators.",
+          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+        ],
+        "stages": [
+          "Reclaim Value",
+          "Start Creating"
         ]
       },
       {
-        "title": "Oracle layoffs: Tech giant cuts 21,000 jobs as AI investments reshape workforce- Moneycontrol.com",
-        "url": "https://www.moneycontrol.com/technology/oracle-layoffs-tech-giant-cuts-21-000-jobs-as-ai-investments-reshape-workforce-article-13956730.html",
-        "source": "moneycontrol.com",
-        "published": "2026-06-23T02:58:00+00:00",
-        "summary": "Oracle's reported 21,000 job cuts make the AI workforce shift concrete. The hard lesson is that people need value they can carry across roles when companies redesign the roles themselves.",
-        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/04/20260401082814_MixCollage-01-Apr-2026-01-53-PM-7018.jpg",
+        "title": "The AI jobs crisis no one is talking about (Opinion)",
+        "source": "dailycamera.com",
+        "url": "https://www.dailycamera.com/2026/06/20/ai-artificial-intelligence-job-crisis-chatgpt-work-employment-opinion/",
+        "published": "2026-06-20T11:00:03+00:00",
+        "imageUrl": "https://www.dailycamera.com/wp-content/uploads/2026/05/AI_Health_Care_Poll_84564_1d4d7c.jpg?w=1024&h=682",
+        "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
+        "keyPoints": [
+          "Source signal: dailycamera.com is connecting this story to artificial intelligence productivity jobs.",
+          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+        ],
         "stages": [
           "Unhook Identity"
-        ],
-        "keyPoints": [
-          "Oracle has cut around 21,000 jobs globally over the past year while realigning around AI.",
-          "The story turns AI workforce restructuring from abstraction into operating policy.",
-          "The TGR question is what human value survives when the company rewrites the org chart."
         ]
       },
       {
-        "title": "PwC chairman pushes back on fears of AI-driven mass layoffs, says AI is adding more jobs",
-        "url": "https://indianexpress.com/article/technology/artificial-intelligence/pwc-chairman-pushes-back-on-fears-of-ai-driven-mass-layoffs-says-ai-is-adding-more-jobs-10753088/",
-        "source": "indianexpress.com",
-        "published": "2026-06-23T07:19:18+00:00",
-        "summary": "PwC's chair offers the counterweight to the layoff story: effective AI adoption may expand work instead of simply removing it. The tension is the point, because workers still have to repurpose themselves while leaders argue over the net effect.",
-        "imageUrl": "https://images.indianexpress.com/2026/06/PwC-chairman-quells-fears-of-AI-driven-mass-layoffs-says-AI-adoption-is-adding-more-jobs.png",
+        "title": "Is AI replacing tech workers or providing an excuse for job cuts?",
+        "source": "inquirer.com",
+        "url": "https://www.inquirer.com/business/ai-tech-workers-layoffs-companies-meta-coinbase-block-snap-intuit-cisco-cloudflare-20260614.html",
+        "published": "2026-06-14T09:01:00+00:00",
+        "imageUrl": "https://www.inquirer.com/resizer/v2/DAGFY4WR6RSHQPBRIV4JINOW6E.jpg?auth=d60528a00ead4069abe3aa99c54f35f9604c9f6bb4f4b04bf05d007e1dce5145&width=760&height=507&smart=true",
+        "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
+        "keyPoints": [
+          "Tech industry layoffs are accelerating, and executives have been quick to say it’s because their companies are doing more with artificial intelligence, even when there may be more to it.",
+          "Source signal: inquirer.com is connecting this story to ai layoffs job cuts workforce.",
+          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+        ],
         "stages": [
           "Unhook Identity"
-        ],
-        "keyPoints": [
-          "PwC's global chairman says organizations using AI well are focused on transformation and productivity gains, not only headcount cuts.",
-          "The claim complicates the simple story that AI equals mass layoffs.",
-          "For TGR, the practical signal is still the same: identity cannot depend on a single employer's version of the future."
         ]
       }
     ],
@@ -659,104 +757,6 @@ export const bundledSignalsBySlug = {
     ],
     "sourceStatus": "generated"
   },
-  "2026-06-22-ai-moves-into-the-workday": {
-    "date": "2026-06-22",
-    "slug": "2026-06-22-ai-moves-into-the-workday",
-    "title": "Job Fear Meets AI Education",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
-    "stages": [
-      "Unhook Identity",
-      "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power"
-    ],
-    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
-    "stories": [
-      {
-        "title": "Microsoft's AI Education Lead Says Job Fear Is Real. Here's The Fix",
-        "source": "forbes.com",
-        "url": "https://www.forbes.com/sites/danfitzpatrick/2026/06/22/microsofts-ai-education-lead-says-job-fear-is-real-heres-the-fix/",
-        "published": "2026-06-22T03:58:00+00:00",
-        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
-        "summary": "This matters because people need a clearer inner compass before the labor market tells them who they are allowed to be.",
-        "keyPoints": [
-          "Justin Spelhaug runs Microsoft's $4B education AI effort.",
-          "He says students' fear of AI taking their jobs is rational and the skill that beats it isn't technical.",
-          "Source signal: forbes.com is connecting this story to ai agents workplace jobs."
-        ],
-        "stages": [
-          "Find Your Purpose",
-          "Unhook Identity"
-        ]
-      },
-      {
-        "title": "AI Layoffs Are Here, But They Don’t Mean What You Think",
-        "source": "forbes.com",
-        "url": "https://www.forbes.com/sites/bernardmarr/2026/06/22/ai-layoffs-are-here-but-they-dont-mean-what-you-think/",
-        "published": "2026-06-21T22:33:00+00:00",
-        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a38c8bbc4ed237ab060e054/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-        "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
-        "keyPoints": [
-          "As companies pour billions into AI infrastructure, cloud computing and specialist skills, the latest job cuts reveal how businesses are reshaping themselves around AI.",
-          "Source signal: forbes.com is connecting this story to ai layoffs job cuts workforce.",
-          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
-        ],
-        "stages": [
-          "Unhook Identity",
-          "Reclaim Value"
-        ]
-      },
-      {
-        "title": "NewCore Raises $66M To Give AI Agents Work Identities In 2026 - Memeburn",
-        "source": "memeburn.com",
-        "url": "https://memeburn.com/newcore-raises-66m-to-give-ai-agents-work-identities-in-2026/",
-        "published": "2026-06-20T03:54:07+00:00",
-        "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/NewCore-Raises-66M-To-Give-AI-Agents-Work-Identities-In-2026-1024x576.png",
-        "summary": "This matters because the capability curve is moving from novelty into operating reality.",
-        "keyPoints": [
-          "NewCore raised $66M to manage AI agent identities as companies rethink security, access and automation in South Africa.",
-          "Source signal: memeburn.com is connecting this story to ai agents workplace jobs.",
-          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
-        ],
-        "stages": [
-          "Discover AI's Power"
-        ]
-      },
-      {
-        "title": "Jensen Huang says AI will reshape work like the Industrial Revolution and the US 'should absolutely lead'",
-        "source": "foxnews.com",
-        "url": "https://www.foxnews.com/media/jensen-huang-says-ai-reshape-work-like-industrial-revolution-us-should-absolutely-lead",
-        "published": "2026-06-20T06:07:00+00:00",
-        "imageUrl": "https://static.foxnews.com/foxnews.com/content/uploads/2024/03/Nvidia-CEO-Jensen-Huang-Blackwell-GTC-2024.gif",
-        "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
-        "keyPoints": [
-          "Nvidia CEO Jensen Huang says AI will transform the workforce like the Industrial Revolution, creating new jobs while reshaping how Americans work.",
-          "Source signal: foxnews.com is connecting this story to artificial intelligence productivity jobs.",
-          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
-        ],
-        "stages": [
-          "Unhook Identity"
-        ]
-      },
-      {
-        "title": "Human-centered AI could be PH’s competitive edge",
-        "source": "sunstar.com.ph",
-        "url": "https://www.sunstar.com.ph/cebu/human-centered-ai-could-be-phs-competitive-edge",
-        "published": "2026-06-22T04:13:00+00:00",
-        "imageUrl": "https://cf-images.assettype.com/sunstar%2F2024-05%2F4177634e-2b4a-43ae-ae2d-5a16eac4e5d8%2FArtificial_Intelligence.jpg?rect=0%2C53%2C750%2C394&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
-        "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
-        "keyPoints": [
-          "AS ARTIFICIAL intelligence reshapes industries worldwide, Philippine companies should focus on using the technology to enhance workers rather than replace them,",
-          "Source signal: sunstar.com.ph is connecting this story to ai skills reskilling workers.",
-          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
-        ],
-        "stages": [
-          "Unhook Identity"
-        ]
-      }
-    ],
-    "sourceStatus": "generated"
-  },
   "2026-06-18-ai-moves-into-the-workday": {
     "date": "2026-06-18",
     "title": "AI Literacy Becomes The Baseline",
@@ -856,107 +856,6 @@ export const bundledSignalsBySlug = {
       }
     ],
     "sourceStatus": "generated"
-  },
-  "2026-06-07-ai-reshapes-work-identity-and-creativity": {
-    "date": "2026-06-07",
-    "title": "AI Reshapes Work, Identity, And Creativity",
-    "slug": "2026-06-07-ai-reshapes-work-identity-and-creativity",
-    "pattern": "The signal is that AI is no longer only changing what people do. It is changing how people understand themselves, how companies explain job cuts, and where creative value lives. The human move is to name the part of us that remains durable before the market names us obsolete.",
-    "stages": [
-      "Reclaim Value",
-      "Unhook Identity",
-      "Find Your Purpose",
-      "Start Creating"
-    ],
-    "imageUrl": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt7f9b16d39bc44ab3/6a22353270c5a9918127c424/AI-Changing-Human.jpg?branch=production&width=1200&quality=75&auto=webp&crop=1200:675&height=675",
-    "stories": [
-      {
-        "title": "AI Is Already Shaping Who We Are",
-        "url": "https://time.com/article/2026/06/05/ai-is-already-shaping-who-we-are/",
-        "source": "time.com",
-        "published": "",
-        "summary": "This is the identity layer of the AI transition: tools do not simply help us complete tasks, they start to shape how we think, choose, and relate. The Great Repurpose begins by noticing that change instead of sleepwalking through it.",
-        "imageUrl": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt7f9b16d39bc44ab3/6a22353270c5a9918127c424/AI-Changing-Human.jpg?branch=production&width=1200&quality=75&auto=webp&crop=1200:675&height=675",
-        "stages": [
-          "Unhook Identity",
-          "Find Your Purpose"
-        ],
-        "keyPoints": [
-          "AI influence is becoming personal and cultural, not only professional.",
-          "The tools may shape habits, self-understanding, and expectations over time.",
-          "This is Unhook Identity: stay awake to who you are becoming while the tools get more intimate."
-        ]
-      },
-      {
-        "title": "AI Overtakes All Other Reasons For US Job Cuts As Layoffs Surge In 2026",
-        "url": "https://www.outlookbusiness.com/corporate/ai-overtakes-all-other-reasons-for-us-job-cuts-as-layoffs-surge-in-2026",
-        "source": "outlookbusiness.com",
-        "published": "",
-        "summary": "The layoff signal is blunt: AI is becoming a named cause of job loss, not just an abstract future risk. That makes identity work urgent, because many people will be asked to redefine themselves faster than they expected.",
-        "imageUrl": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/971609117608a5b0102a9373e92032e6.jpg",
-        "stages": [
-          "Unhook Identity",
-          "Reclaim Value"
-        ],
-        "keyPoints": [
-          "AI is being cited directly in workforce reductions.",
-          "The disruption is moving from forecast to lived experience for workers.",
-          "TGR relevance: people need to unhook their worth from roles that companies may rapidly redesign."
-        ]
-      },
-      {
-        "title": "AI Cited As Top Reason For US Job Cuts For Third Straight Month",
-        "url": "https://www.cfodive.com/news/ai-cited-top-reason-us-job-cuts-third-straight-month/822029/",
-        "source": "cfodive.com",
-        "published": "",
-        "summary": "A repeated monthly pattern changes the story from anomaly to trend. AI-related job cuts are becoming part of the operating logic of companies, which means workers need a repeatable way to respond.",
-        "imageUrl": "https://media.deloitte.com/is/image/null:1200-x-627",
-        "stages": [
-          "Reclaim Value",
-          "Unhook Identity"
-        ],
-        "keyPoints": [
-          "Repeated AI-related job cut data suggests a sustained labor-market shift.",
-          "The story reinforces that adaptation cannot be a one-time panic response.",
-          "This is Reclaim Value: understand what part of your contribution survives the restructuring."
-        ]
-      },
-      {
-        "title": "AI Cultural Debt: The Hidden Cost of Speed-First Adoption",
-        "url": "https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends/2026/ai-cultural-debt.html",
-        "source": "deloitte.com",
-        "published": "",
-        "summary": "Cultural debt is what accumulates when companies adopt AI faster than people can make sense of it. The tool may work, but trust, clarity, and shared purpose can quietly break underneath it.",
-        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-        "stages": [
-          "Find Your Purpose",
-          "Reclaim Value"
-        ],
-        "keyPoints": [
-          "Speed-first AI adoption can create hidden organizational costs.",
-          "Culture, trust, and meaning need attention alongside efficiency and deployment.",
-          "TGR relevance: Find Your Purpose is not soft. It is how groups stay coherent during acceleration."
-        ]
-      },
-      {
-        "title": "AI Isn’t Replacing Creativity. It’s Moving It Upstream.",
-        "url": "https://www.forbes.com/sites/cathyrubin/2026/05/26/ai-isnt-replacing-creativity-its-moving-it-upstream/",
-        "source": "forbes.com",
-        "published": "",
-        "summary": "Creativity is not disappearing. It is moving toward the choices that happen before execution: what to make, why it matters, how it should feel, and when it is good enough to share.",
-        "imageUrl": "",
-        "stages": [
-          "Start Creating",
-          "Reclaim Value"
-        ],
-        "keyPoints": [
-          "AI shifts creative leverage toward framing, direction, and judgment.",
-          "The person with taste and purpose becomes more valuable as execution gets cheaper.",
-          "This is Start Creating after Reclaim Value: use the machine to express more of the human, not less."
-        ]
-      }
-    ],
-    "sourceStatus": "sent_html"
   },
   "2026-06-16-ai-moves-into-the-workday": {
     "date": "2026-06-16",
@@ -1155,6 +1054,107 @@ export const bundledSignalsBySlug = {
           "AI is being funded as foundational business infrastructure, not a side project.",
           "Large institutions are preparing for operating-model change at serious scale.",
           "TGR relevance: Discover AI's Power now means understanding the systems that will define future work."
+        ]
+      }
+    ],
+    "sourceStatus": "sent_html"
+  },
+  "2026-06-07-ai-reshapes-work-identity-and-creativity": {
+    "date": "2026-06-07",
+    "title": "AI Reshapes Work, Identity, And Creativity",
+    "slug": "2026-06-07-ai-reshapes-work-identity-and-creativity",
+    "pattern": "The signal is that AI is no longer only changing what people do. It is changing how people understand themselves, how companies explain job cuts, and where creative value lives. The human move is to name the part of us that remains durable before the market names us obsolete.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Start Creating"
+    ],
+    "imageUrl": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt7f9b16d39bc44ab3/6a22353270c5a9918127c424/AI-Changing-Human.jpg?branch=production&width=1200&quality=75&auto=webp&crop=1200:675&height=675",
+    "stories": [
+      {
+        "title": "AI Is Already Shaping Who We Are",
+        "url": "https://time.com/article/2026/06/05/ai-is-already-shaping-who-we-are/",
+        "source": "time.com",
+        "published": "",
+        "summary": "This is the identity layer of the AI transition: tools do not simply help us complete tasks, they start to shape how we think, choose, and relate. The Great Repurpose begins by noticing that change instead of sleepwalking through it.",
+        "imageUrl": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt7f9b16d39bc44ab3/6a22353270c5a9918127c424/AI-Changing-Human.jpg?branch=production&width=1200&quality=75&auto=webp&crop=1200:675&height=675",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "AI influence is becoming personal and cultural, not only professional.",
+          "The tools may shape habits, self-understanding, and expectations over time.",
+          "This is Unhook Identity: stay awake to who you are becoming while the tools get more intimate."
+        ]
+      },
+      {
+        "title": "AI Overtakes All Other Reasons For US Job Cuts As Layoffs Surge In 2026",
+        "url": "https://www.outlookbusiness.com/corporate/ai-overtakes-all-other-reasons-for-us-job-cuts-as-layoffs-surge-in-2026",
+        "source": "outlookbusiness.com",
+        "published": "",
+        "summary": "The layoff signal is blunt: AI is becoming a named cause of job loss, not just an abstract future risk. That makes identity work urgent, because many people will be asked to redefine themselves faster than they expected.",
+        "imageUrl": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/971609117608a5b0102a9373e92032e6.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AI is being cited directly in workforce reductions.",
+          "The disruption is moving from forecast to lived experience for workers.",
+          "TGR relevance: people need to unhook their worth from roles that companies may rapidly redesign."
+        ]
+      },
+      {
+        "title": "AI Cited As Top Reason For US Job Cuts For Third Straight Month",
+        "url": "https://www.cfodive.com/news/ai-cited-top-reason-us-job-cuts-third-straight-month/822029/",
+        "source": "cfodive.com",
+        "published": "",
+        "summary": "A repeated monthly pattern changes the story from anomaly to trend. AI-related job cuts are becoming part of the operating logic of companies, which means workers need a repeatable way to respond.",
+        "imageUrl": "https://media.deloitte.com/is/image/null:1200-x-627",
+        "stages": [
+          "Reclaim Value",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Repeated AI-related job cut data suggests a sustained labor-market shift.",
+          "The story reinforces that adaptation cannot be a one-time panic response.",
+          "This is Reclaim Value: understand what part of your contribution survives the restructuring."
+        ]
+      },
+      {
+        "title": "AI Cultural Debt: The Hidden Cost of Speed-First Adoption",
+        "url": "https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends/2026/ai-cultural-debt.html",
+        "source": "deloitte.com",
+        "published": "",
+        "summary": "Cultural debt is what accumulates when companies adopt AI faster than people can make sense of it. The tool may work, but trust, clarity, and shared purpose can quietly break underneath it.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Find Your Purpose",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Speed-first AI adoption can create hidden organizational costs.",
+          "Culture, trust, and meaning need attention alongside efficiency and deployment.",
+          "TGR relevance: Find Your Purpose is not soft. It is how groups stay coherent during acceleration."
+        ]
+      },
+      {
+        "title": "AI Isn’t Replacing Creativity. It’s Moving It Upstream.",
+        "url": "https://www.forbes.com/sites/cathyrubin/2026/05/26/ai-isnt-replacing-creativity-its-moving-it-upstream/",
+        "source": "forbes.com",
+        "published": "",
+        "summary": "Creativity is not disappearing. It is moving toward the choices that happen before execution: what to make, why it matters, how it should feel, and when it is good enough to share.",
+        "imageUrl": "",
+        "stages": [
+          "Start Creating",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AI shifts creative leverage toward framing, direction, and judgment.",
+          "The person with taste and purpose becomes more valuable as execution gets cheaper.",
+          "This is Start Creating after Reclaim Value: use the machine to express more of the human, not less."
         ]
       }
     ],

@@ -30,7 +30,7 @@ async function main() {
     .slice()
     .sort((a, b) => b.date.localeCompare(a.date));
 
-  const fullSignals = [];
+  const fullSignalsBySlug = new Map();
 
   const items = await Promise.all(
     index.map(async (entry) => {
@@ -39,7 +39,7 @@ async function main() {
         const full = JSON.parse(
           await fs.readFile(path.join(SIGNALS_DIR, `${entry.slug}.json`), "utf8")
         );
-        fullSignals.push(full);
+        fullSignalsBySlug.set(entry.slug, full);
         pattern = full.pattern || pattern;
       } catch {}
       const link = `${SITE}/signals/${entry.slug}`;
@@ -74,7 +74,10 @@ ${items.join("\n")}
       `// Daily Signal source data lives in public/signals/*.json.\n\n` +
       `export const bundledSignalIndex = ${JSON.stringify(index, null, 2)} as const;\n\n` +
       `export const bundledSignalsBySlug = ${JSON.stringify(
-        Object.fromEntries(fullSignals.map((signal) => [signal.slug, signal])),
+        Object.fromEntries(index.flatMap((entry) => {
+          const signal = fullSignalsBySlug.get(entry.slug);
+          return signal ? [[signal.slug, signal]] : [];
+        })),
         null,
         2
       )} as const;\n`,

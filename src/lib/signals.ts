@@ -50,6 +50,7 @@ const imageOrFallback = (value: unknown) => {
   const image = asString(value).trim();
   return !image || image === fallbackSignalImagePath ? fallbackSignalImage : image;
 };
+const newestDate = (signals: SignalIndexEntry[]) => signals[0]?.date ?? "";
 
 type RawSignalStory = Partial<SignalStory> & {
   publishedAt?: string;
@@ -94,25 +95,34 @@ function normalizeSignal(raw: RawSignal): TgrSignal {
 }
 
 export async function fetchSignalIndex(): Promise<SignalIndexEntry[]> {
-  let data: RawSignal[];
+  const bundled = (bundledSignalIndex as unknown as RawSignal[])
+    .map(normalizeSignalIndexEntry)
+    .sort((a, b) => b.date.localeCompare(a.date));
+
   try {
     const res = await fetch(withBase("signals/index.json"), { cache: "no-cache" });
     if (!res.ok) throw new Error(`Failed to load signal index (${res.status})`);
-    data = (await res.json()) as RawSignal[];
+    const fetched = ((await res.json()) as RawSignal[])
+      .map(normalizeSignalIndexEntry)
+      .sort((a, b) => b.date.localeCompare(a.date));
+
+    return newestDate(bundled) > newestDate(fetched) ? bundled : fetched;
   } catch {
-    data = bundledSignalIndex as unknown as RawSignal[];
+    return bundled;
   }
-  return data.map(normalizeSignalIndexEntry).sort((a, b) => b.date.localeCompare(a.date));
 }
 
 export async function fetchSignal(slug: string): Promise<TgrSignal | null> {
+  const bundled = (bundledSignalsBySlug as unknown as Record<string, RawSignal>)[slug];
+
   try {
     const res = await fetch(withBase(`signals/${slug}.json`), { cache: "no-cache" });
     if (res.ok) return normalizeSignal((await res.json()) as RawSignal);
     if (res.status !== 404) throw new Error(`Failed to load signal ${slug} (${res.status})`);
-  } catch {}
+  } catch {
+    return bundled ? normalizeSignal(bundled) : null;
+  }
 
-  const bundled = (bundledSignalsBySlug as unknown as Record<string, RawSignal>)[slug];
   return bundled ? normalizeSignal(bundled) : null;
 }
 
