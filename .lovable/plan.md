@@ -1,31 +1,43 @@
-# Fix the broken Daily Signal fallback thumbnail
+## Goal
+Make the live site fetch the latest TGR Signals from GitHub via jsDelivr, so Codex can publish daily by committing JSON files — no Lovable rebuild needed.
 
-## Problem
-`public/signals/tgr-signal-thumbnail.svg` wraps a base64-encoded JPEG. The base64 payload is truncated mid-stream — it's not a multiple of 4 chars and decodes to a JPEG that ends with `2981 fffd` instead of the required `ffd9` end-of-image marker. Browsers render the first scanlines they can decode (~10%) and then stop, which is why every story on June 2 (and any other story missing an `imageUrl`) shows a partial image.
+## How it works
 
-The site code is correct: `SignalDetail.tsx` and `SignalTeaser.tsx` already fall back to this asset via `fallbackSignalImage`. The asset itself is the bug.
+```text
+Codex commits public/signals/*.json  ──►  GitHub (public repo)
+                                              │
+                                              ▼
+                                    cdn.jsdelivr.net/gh/...@main
+                                              │
+                                              ▼
+              Live site fetches index.json + <slug>.json at runtime
+                                              │
+                       newest of {jsDelivr, bundled} wins
+```
 
-## Fix
-Replace `public/signals/tgr-signal-thumbnail.svg` with a clean, lightweight, on-brand SVG fallback — built from real SVG primitives (no embedded raster), so it can't be truncated and stays crisp at any size.
+The bundled data in `src/data/generatedSignals.ts` stays as a guaranteed fallback if jsDelivr is ever slow, down, or behind.
 
-Proposed design, matching the site's palette (`navy` background, `cream` text, `coral` accent, constellation feel):
+## Changes
 
-- 480 × 270 viewBox
-- Solid `#0B1B2B` navy background
-- A few small `cream`/`coral` dot "constellation" marks
-- Centered serif wordmark: **"Daily Signal"** in cream
-- Small uppercase eyebrow above: `THE GREAT REPURPOSE` in coral, tracked-out sans
-- `role="img"` + `<title>` / `<desc>` for accessibility (keep the existing pattern)
+**1. `src/lib/signals.ts`** — swap the fetch base from same-origin `/signals/...` to jsDelivr:
 
-File size target: < 2 KB, pure vector, no `<image>` tag.
+- New constant:
+  `const SIGNALS_CDN = "https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals";`
+- `fetchSignalIndex()` fetches `${SIGNALS_CDN}/index.json`
+- `fetchSignal(slug)` fetches `${SIGNALS_CDN}/${slug}.json`
+- Keep the existing "newest date wins" comparison against `bundledSignalIndex` so the site never regresses if the CDN is stale or unreachable.
+- Use `cache: "no-cache"` (already in place) so browsers always revalidate. jsDelivr's own edge cache (~12 min for `@main`) is the real TTL.
 
-## Files
-- `public/signals/tgr-signal-thumbnail.svg` — overwrite with the new vector SVG
+**2. Nothing else changes.** Routing, components, RSS build, and the bundled fallback all keep working exactly as today.
 
-## Out of scope
-- No changes to JSON, components, or the `onError` fallback wiring.
-- No changes to story-level `imageUrl` values (the bad June 2 URLs are a separate question — once the fallback renders cleanly, those stories will look correct).
+## Daily publish flow for Codex
 
-## Verification
-- After the replacement, reload `/signals/2026-06-02-...` and confirm all five story cards show the full branded thumbnail (not a partial sliver).
-- Confirm the SignalTeaser on the homepage and any other fallback usage also render cleanly.
+1. Codex writes a new `public/signals/<date>-<slug>.json` and updates `public/signals/index.json` in the GitHub repo.
+2. Commit + push to `main`.
+3. Within ~12 minutes jsDelivr serves the new file; the live site picks it up on the next visit. No Lovable deploy required.
+
+## Optional (not in this change, mentioning for awareness)
+- To force-bust jsDelivr cache instantly instead of waiting ~12 min, Codex can hit `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/index.json` after pushing. Happy to add that to Codex's instructions if you want.
+
+## Risks
+- If the repo is ever made private again, the CDN URLs will 404 and the site will silently fall back to bundled data (same behavior as today's same-origin fetch on a stale build). Worth knowing but not blocking.

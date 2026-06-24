@@ -42,7 +42,7 @@ export const canonicalStages = [
 export const fallbackSignalImagePath = "/signals/tgr-signal-thumbnail.jpg";
 export const fallbackSignalImage = fallbackSignalImagePath;
 
-const withBase = (path: string) => `${import.meta.env.BASE_URL ?? "/"}${path}`.replace(/\/{2,}/g, "/");
+const SIGNALS_CDN = "https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals";
 
 const asString = (value: unknown) => (typeof value === "string" ? value : "");
 const asStringArray = (value: unknown) => (Array.isArray(value) ? value.filter((v): v is string => typeof v === "string") : []);
