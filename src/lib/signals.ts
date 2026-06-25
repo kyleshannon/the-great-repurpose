@@ -42,7 +42,10 @@ export const canonicalStages = [
 export const fallbackSignalImagePath = "/signals/tgr-signal-thumbnail.jpg";
 export const fallbackSignalImage = fallbackSignalImagePath;
 
-const SIGNALS_CDN = "https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals";
+const SIGNALS_REMOTE_BASES = [
+  "https://raw.githubusercontent.com/kyleshannon/the-great-repurpose/main/public/signals",
+  "https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals",
+];
 
 const asString = (value: unknown) => (typeof value === "string" ? value : "");
 const asStringArray = (value: unknown) => (Array.isArray(value) ? value.filter((v): v is string => typeof v === "string") : []);
@@ -99,28 +102,34 @@ export async function fetchSignalIndex(): Promise<SignalIndexEntry[]> {
     .map(normalizeSignalIndexEntry)
     .sort((a, b) => b.date.localeCompare(a.date));
 
-  try {
-    const res = await fetch(`${SIGNALS_CDN}/index.json`, { cache: "no-cache" });
-    if (!res.ok) throw new Error(`Failed to load signal index (${res.status})`);
-    const fetched = ((await res.json()) as RawSignal[])
-      .map(normalizeSignalIndexEntry)
-      .sort((a, b) => b.date.localeCompare(a.date));
+  for (const base of SIGNALS_REMOTE_BASES) {
+    try {
+      const res = await fetch(`${base}/index.json`, { cache: "no-store" });
+      if (!res.ok) throw new Error(`Failed to load signal index (${res.status})`);
+      const fetched = ((await res.json()) as RawSignal[])
+        .map(normalizeSignalIndexEntry)
+        .sort((a, b) => b.date.localeCompare(a.date));
 
-    return newestDate(bundled) > newestDate(fetched) ? bundled : fetched;
-  } catch {
-    return bundled;
+      return newestDate(bundled) >= newestDate(fetched) ? bundled : fetched;
+    } catch {
+      // Try the next remote source, then fall back to bundled data.
+    }
   }
+
+  return bundled;
 }
 
 export async function fetchSignal(slug: string): Promise<TgrSignal | null> {
   const bundled = (bundledSignalsBySlug as unknown as Record<string, RawSignal>)[slug];
 
-  try {
-    const res = await fetch(`${SIGNALS_CDN}/${slug}.json`, { cache: "no-cache" });
-    if (res.ok) return normalizeSignal((await res.json()) as RawSignal);
-    if (res.status !== 404) throw new Error(`Failed to load signal ${slug} (${res.status})`);
-  } catch {
-    return bundled ? normalizeSignal(bundled) : null;
+  for (const base of SIGNALS_REMOTE_BASES) {
+    try {
+      const res = await fetch(`${base}/${slug}.json`, { cache: "no-store" });
+      if (res.ok) return normalizeSignal((await res.json()) as RawSignal);
+      if (res.status !== 404) throw new Error(`Failed to load signal ${slug} (${res.status})`);
+    } catch {
+      // Try the next remote source, then fall back to bundled data.
+    }
   }
 
   return bundled ? normalizeSignal(bundled) : null;

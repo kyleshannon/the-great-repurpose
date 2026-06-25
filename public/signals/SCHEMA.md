@@ -128,10 +128,13 @@ the same briefing-level `stages` array in `<slug>.json`.
    - `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/<slug>.json`
 12. Verify both the CDN and the live rendered site. CDN verification alone is
     not enough.
-    - CDN index: `https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/index.json`
-      must have today's slug as the first entry.
-    - CDN detail: `https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/<slug>.json`
+    - GitHub raw index: `https://raw.githubusercontent.com/kyleshannon/the-great-repurpose/main/public/signals/index.json`
+      must have today's slug as the first entry. This is the live site's primary
+      runtime source.
+    - GitHub raw detail: `https://raw.githubusercontent.com/kyleshannon/the-great-repurpose/main/public/signals/<slug>.json`
       must return the matching slug and title.
+    - jsDelivr index/detail should also be checked after purge because it is the
+      live site's secondary runtime source.
     - Live archive: `https://thegreatrepurpose.com/signals` must render today's
       date and title at the top of the page.
     - Live detail: `https://thegreatrepurpose.com/signals/<slug>` must render
@@ -141,10 +144,10 @@ the same briefing-level `stages` array in `<slug>.json`.
     success until the live site renders today's issue; report "repo/CDN updated,
     live render not yet updated" if it still fails after retries.
 
-> Why the purge: the live site fetches signals at runtime from
-> `cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/...`.
-> jsDelivr edge-caches the `@main` branch for ~12 minutes unless purged,
-> so without step 9 the new signal won't appear right away.
+> Why the purge: the live site fetches signals at runtime from GitHub raw first,
+> then `cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/...`
+> as a fallback. jsDelivr edge-caches the `@main` branch for ~12 minutes unless
+> purged, so keep purging it even though GitHub raw is now the primary source.
 
 ## Validating before commit
 
