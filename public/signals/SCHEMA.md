@@ -122,9 +122,20 @@ the same briefing-level `stages` array in `<slug>.json`.
    once with a GET — jsDelivr returns a small JSON confirmation:
    - `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/index.json`
    - `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/<slug>.json`
-10. Verify by opening `https://thegreatrepurpose.com/signals` in a fresh
-    tab. The new briefing should appear at the top within a few seconds
-    and be reachable at `https://thegreatrepurpose.com/signals/<slug>`.
+10. Verify both the CDN and the live rendered site. CDN verification alone is
+    not enough.
+    - CDN index: `https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/index.json`
+      must have today's slug as the first entry.
+    - CDN detail: `https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/<slug>.json`
+      must return the matching slug and title.
+    - Live archive: `https://thegreatrepurpose.com/signals` must render today's
+      date and title at the top of the page.
+    - Live detail: `https://thegreatrepurpose.com/signals/<slug>` must render
+      the same title.
+    If the CDN is current but the live site is not, purge both jsDelivr URLs
+    again, wait briefly, and retry the live archive/detail checks. Do not report
+    success until the live site renders today's issue; report "repo/CDN updated,
+    live render not yet updated" if it still fails after retries.
 
 > Why the purge: the live site fetches signals at runtime from
 > `cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/...`.
