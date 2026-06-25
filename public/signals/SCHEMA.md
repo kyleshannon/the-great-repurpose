@@ -64,7 +64,7 @@ an SVG or generated vector substitute.
 | `slug` | yes | Matches the filename (without `.json`). |
 | `date` | yes | ISO date `YYYY-MM-DD`. Renders as the briefing date. |
 | `title` | yes | 4–9 words. Used in `<h1>`, OG title, archive card. |
-| `pattern` | yes | The "Pattern of the Day". Plain text, ~2–3 sentences. |
+| `pattern` | yes | The "Pattern of the Day". Plain text, ~2–3 sentences. Must synthesize the actual five selected stories for that date. Do not use reusable framing copy, canned templates, or a pattern that duplicates any other issue. |
 | `stages` | yes | 1–5 entries. Must match the canonical names below exactly. Derive from the five story `stages`, order by relevance/frequency for that day, and never default to the full canonical list unless all five stages are genuinely represented. |
 | `imageUrl` | yes | Used as the OG share image and archive card image. Use the strongest story image, or `/signals/tgr-signal-thumbnail.jpg` if no selected story has a usable image. Do not leave empty. |
 | `stories` | yes | Exactly **5** entries. Fewer renders but looks sparse. |
@@ -111,18 +111,22 @@ the same briefing-level `stages` array in `<slug>.json`.
 2. Build the slug: `<date>-<kebab-title>`.
 3. Write `public/signals/<slug>.json` following the schema above.
 4. Choose the briefing-level `stages` by combining the five story-level `stages`, ordered by relevance/frequency. Do not use a generic stage list.
-5. Choose the briefing-level `imageUrl`: use the strongest selected story image, or `/signals/tgr-signal-thumbnail.jpg` if no selected story has a usable image.
-6. Open `public/signals/index.json` and **prepend** the matching index
+5. Write a date-specific Pattern of the Day that names the actual tension, companies, institutions, or human stakes in the five selected stories. It must not repeat the same generic wording from prior issues.
+6. Choose the briefing-level `imageUrl`: use the strongest selected story image, or `/signals/tgr-signal-thumbnail.jpg` if no selected story has a usable image.
+7. Open `public/signals/index.json` and **prepend** the matching index
    entry. Its `stages` array must exactly match the briefing file `stages` array. Re-sort by `date` descending if unsure.
-7. Commit both files in one commit. Suggested message:
+8. Run `npm run validate:signals`. Do not commit if this fails. This catches
+   duplicate issue patterns, generic canned pattern copy, index/file mismatches,
+   invalid stages, missing story summaries, missing key points, and bad sort order.
+9. Commit both files in one commit. Suggested message:
    `signal: <date> — <title>`.
-8. Push to `main` on `kyleshannon/the-great-repurpose`.
-9. **Purge the jsDelivr cache** so the live site picks up the change
+10. Push to `main` on `kyleshannon/the-great-repurpose`.
+11. **Purge the jsDelivr cache** so the live site picks up the change
    immediately (otherwise it can take up to ~12 minutes). Hit each URL
    once with a GET — jsDelivr returns a small JSON confirmation:
    - `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/index.json`
    - `https://purge.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/<slug>.json`
-10. Verify both the CDN and the live rendered site. CDN verification alone is
+12. Verify both the CDN and the live rendered site. CDN verification alone is
     not enough.
     - CDN index: `https://cdn.jsdelivr.net/gh/kyleshannon/the-great-repurpose@main/public/signals/index.json`
       must have today's slug as the first entry.
@@ -148,6 +152,8 @@ the same briefing-level `stages` array in `<slug>.json`.
 - `slug` in the file equals the filename minus `.json`.
 - `index.json` contains exactly one entry with this slug.
 - `index.json` `stages` for this slug exactly matches `<slug>.json` `stages`.
+- `index.json` `pattern` for this slug exactly matches `<slug>.json` `pattern`.
+- No issue `pattern` duplicates another issue or uses generic canned framing.
 - `stages` and `stories[].stages` entries appear in the canonical list above.
 - Every story has non-empty `summary`, at least two `keyPoints`, and at least one canonical `stage`.
 - Briefing-level `imageUrl` and index entry `imageUrl` are non-empty. Use `/signals/tgr-signal-thumbnail.jpg` if needed.

@@ -1,1 +1,98 @@
-{"date":"2026-06-20","slug":"2026-06-20-agents-enter-the-real-economy","title":"Agents Enter The Real Economy","pattern":"AI is moving from answer machine to active participant. That makes the old productivity frame too small. The question becomes who directs the work, what judgment remains human, and where people learn to create with systems instead of merely using tools.","stages":["Unhook Identity","Reclaim Value","Discover AI's Power","Start Creating"],"imageUrl":"https://www.digitaltrends.com/tachyon/2026/06/AdobeStock_567681994.jpg?resize=1200%2C630","stories":[{"title":"AI agents need more than reasoning: they need to actually use the web","source":"digitaltrends.com","url":"https://www.digitaltrends.com/contributor-content/ai-agents-need-more-than-reasoning-they-need-to-actually-use-the-web/","published":"2026-06-19T11:49:46+00:00","imageUrl":"https://www.digitaltrends.com/tachyon/2026/06/AdobeStock_567681994.jpg?resize=1200%2C630","summary":"This matters because the capability curve is moving from novelty into operating reality.","keyPoints":["A company rolls out an AI customer service assistant.","The model behind it is current and capable enough for the job.","Source signal: digitaltrends.com is connecting this story to ai agents workplace jobs."],"stages":["Discover AI's Power","Unhook Identity"]},{"title":"Ray Dalio Warns AI Will Reshape The Economy: 'It's Also Going To Bring Jobs Down A Lot'","source":"finance.yahoo.com","url":"https://finance.yahoo.com/technology/ai/articles/ray-dalio-warns-ai-reshape-203113909.html","published":"2026-06-18T15:46:00+00:00","imageUrl":"","summary":"This matters to The Great Repurpose because it separates the human being from the job wrapper around them.","keyPoints":["On Tuesday, billionaire investor Ray Dalio warned that artificial intelligence could significantly reshape the global economy by boosting productivity while reducing jobs.","AI Productivity Boom Raises Job Loss Concerns In a post on X, the billionaire investor said AI represents...","Source signal: finance.yahoo.com is connecting this story to artificial intelligence productivity jobs."],"stages":["Unhook Identity"]},{"title":"The AI jobs crisis no one is talking about (Opinion)","source":"dailycamera.com","url":"https://www.dailycamera.com/2026/06/20/ai-artificial-intelligence-job-crisis-chatgpt-work-employment-opinion/","published":"2026-06-20T11:00:03+00:00","imageUrl":"https://www.dailycamera.com/wp-content/uploads/2026/05/AI_Health_Care_Poll_84564_1d4d7c.jpg?w=1024&h=682","summary":"This matters to The Great Repurpose because it separates the human being from the job wrapper around them.","keyPoints":["Source signal: dailycamera.com is connecting this story to ai agents workplace jobs.","TGR relevance: the story helps show where AI is changing work, value, agency, or creation."],"stages":["Unhook Identity"]},{"title":"Adobe’s AI Edge: Turning Solo Creators Into Global Media Brands","source":"forbes.com","url":"https://www.forbes.com/sites/jamiegutfreund/2026/06/16/adobes-ai-edge-turning-solo-creators-into-global-media-brands/","published":"2026-06-16T06:41:00+00:00","imageUrl":"https://imageio.forbes.com/specials-images/imageserve/6a30d0afa8d3ddcf046cccc3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","summary":"This matters because it points to the human value that remains when execution gets automated.","keyPoints":["As Cannes Lions begins next week, Adobe research shows 87% of creators say AI is accelerating growth while making creativity and judgment more valuable","Source signal: forbes.com is connecting this story to ai creativity work creators.","TGR relevance: the story helps show where AI is changing work, value, agency, or creation."],"stages":["Reclaim Value","Start Creating"]},{"title":"A Founder Ran the Numbers on AI-Generated Creative Content. The Results Were a Reality Check","source":"inc.com","url":"https://www.inc.com/netta-jenkins/ai-can-generate-content-it-still-struggles-to-replicate-human-creativity/91360916","published":"2026-06-19T07:09:00+00:00","imageUrl":"","summary":"This matters because creation is where anxiety turns into agency.","keyPoints":["A founder's data shows a decline in the performance of ads created by AI were much less effective than human-made ones, offering a lesson in creativity.","Source signal: inc.com is connecting this story to ai creativity work creators.","TGR relevance: the story helps show where AI is changing work, value, agency, or creation."],"stages":["Start Creating","Reclaim Value"]}],"sourceStatus":"generated"}
+{
+  "date": "2026-06-20",
+  "slug": "2026-06-20-agents-enter-the-real-economy",
+  "title": "Agents Enter The Real Economy",
+  "pattern": "AI is moving from answer machine to active participant. That makes the old productivity frame too small. The question becomes who directs the work, what judgment remains human, and where people learn to create with systems instead of merely using tools.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Discover AI's Power",
+    "Start Creating"
+  ],
+  "imageUrl": "https://www.digitaltrends.com/tachyon/2026/06/AdobeStock_567681994.jpg?resize=1200%2C630",
+  "stories": [
+    {
+      "title": "AI agents need more than reasoning: they need to actually use the web",
+      "source": "digitaltrends.com",
+      "url": "https://www.digitaltrends.com/contributor-content/ai-agents-need-more-than-reasoning-they-need-to-actually-use-the-web/",
+      "published": "2026-06-19T11:49:46+00:00",
+      "imageUrl": "https://www.digitaltrends.com/tachyon/2026/06/AdobeStock_567681994.jpg?resize=1200%2C630",
+      "summary": "This matters because the capability curve is moving from novelty into operating reality.",
+      "keyPoints": [
+        "A company rolls out an AI customer service assistant.",
+        "The model behind it is current and capable enough for the job.",
+        "Source signal: digitaltrends.com is connecting this story to ai agents workplace jobs."
+      ],
+      "stages": [
+        "Discover AI's Power",
+        "Unhook Identity"
+      ]
+    },
+    {
+      "title": "Ray Dalio Warns AI Will Reshape The Economy: 'It's Also Going To Bring Jobs Down A Lot'",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ray-dalio-warns-ai-reshape-203113909.html",
+      "published": "2026-06-18T15:46:00+00:00",
+      "imageUrl": "",
+      "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
+      "keyPoints": [
+        "On Tuesday, billionaire investor Ray Dalio warned that artificial intelligence could significantly reshape the global economy by boosting productivity while reducing jobs.",
+        "AI Productivity Boom Raises Job Loss Concerns In a post on X, the billionaire investor said AI represents...",
+        "Source signal: finance.yahoo.com is connecting this story to artificial intelligence productivity jobs."
+      ],
+      "stages": [
+        "Unhook Identity"
+      ]
+    },
+    {
+      "title": "The AI jobs crisis no one is talking about (Opinion)",
+      "source": "dailycamera.com",
+      "url": "https://www.dailycamera.com/2026/06/20/ai-artificial-intelligence-job-crisis-chatgpt-work-employment-opinion/",
+      "published": "2026-06-20T11:00:03+00:00",
+      "imageUrl": "https://www.dailycamera.com/wp-content/uploads/2026/05/AI_Health_Care_Poll_84564_1d4d7c.jpg?w=1024&h=682",
+      "summary": "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
+      "keyPoints": [
+        "Source signal: dailycamera.com is connecting this story to ai agents workplace jobs.",
+        "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+      ],
+      "stages": [
+        "Unhook Identity"
+      ]
+    },
+    {
+      "title": "Adobe’s AI Edge: Turning Solo Creators Into Global Media Brands",
+      "source": "forbes.com",
+      "url": "https://www.forbes.com/sites/jamiegutfreund/2026/06/16/adobes-ai-edge-turning-solo-creators-into-global-media-brands/",
+      "published": "2026-06-16T06:41:00+00:00",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a30d0afa8d3ddcf046cccc3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "summary": "This matters because it points to the human value that remains when execution gets automated.",
+      "keyPoints": [
+        "As Cannes Lions begins next week, Adobe research shows 87% of creators say AI is accelerating growth while making creativity and judgment more valuable",
+        "Source signal: forbes.com is connecting this story to ai creativity work creators.",
+        "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+      ],
+      "stages": [
+        "Reclaim Value",
+        "Start Creating"
+      ]
+    },
+    {
+      "title": "A Founder Ran the Numbers on AI-Generated Creative Content. The Results Were a Reality Check",
+      "source": "inc.com",
+      "url": "https://www.inc.com/netta-jenkins/ai-can-generate-content-it-still-struggles-to-replicate-human-creativity/91360916",
+      "published": "2026-06-19T07:09:00+00:00",
+      "imageUrl": "",
+      "summary": "The Inc. story is a useful reality check on AI creativity: cheap output is not the same as effective creative work. If AI-generated ads underperform human-made ones, the value shifts back toward taste, audience understanding, and the judgment to know what should be made in the first place.",
+      "keyPoints": [
+        "A founder's performance data showed AI-generated creative did not automatically beat human-made ads.",
+        "The story separates production speed from creative effectiveness, which matters as brands chase lower-cost content.",
+        "For TGR, the signal is that human taste and judgment still create value when AI makes output abundant."
+      ],
+      "stages": [
+        "Start Creating",
+        "Reclaim Value"
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}

@@ -3,10 +3,22 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-06-25-autonomous-agents-redraw-career-value",
+    "date": "2026-06-25",
+    "title": "Autonomous Agents Redraw Career Value",
+    "pattern": "The five stories point to a labor market learning two truths at once: agents are becoming infrastructure, and careers now have to outlast any one employer's redesign. Oracle cuts and broader tech restructuring show old roles being rewritten, while PwC and the 100-year career frame point to renewal rather than simple replacement. The durable move is to build portable judgment, not just defend a job title.",
+    "stages": [
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg"
+  },
+  {
     "slug": "2026-06-24-entry-level-jobs-get-senior-ai-standards",
     "date": "2026-06-24",
     "title": "Entry-Level Jobs Get Senior AI Standards",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "The early-career bargain is being compressed. Entry-level workers are now expected to bring senior judgment while schools, governments, and HR teams race to explain a labor market where AI both threatens roles and creates new ones. The real signal is not 'learn a tool'; it is that people need purpose, adaptability, and proof of value before the first rung appears.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -19,7 +31,7 @@ export const bundledSignalIndex = [
     "slug": "2026-06-23-microsoft-job-fear-meets-oracle-cuts",
     "date": "2026-06-23",
     "title": "Microsoft Job Fear Meets Oracle Cuts",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "Today's stories split the AI transition between fear and agency: students worry about jobs, Oracle cuts roles, and AI begins shaping even how young people discover universities. At the same time, Picsart's creator economy story shows value moving toward people who can claim audience, voice, and leverage. Purpose formation now has to happen earlier and more deliberately than the old career path required.",
     "stages": [
       "Unhook Identity",
       "Find Your Purpose",
@@ -33,7 +45,7 @@ export const bundledSignalIndex = [
     "slug": "2026-06-22-ai-moves-into-the-workday",
     "date": "2026-06-22",
     "title": "Job Fear Meets AI Education",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "The day's pattern is work identity moving into systems design. AI agents are getting identities and access, leaders are comparing AI to an industrial revolution, and education voices are telling students their fear is rational. The human answer is not panic or blind optimism; it is building AI fluency around human-centered judgment before institutions redesign the roles.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -46,7 +58,7 @@ export const bundledSignalIndex = [
     "slug": "2026-06-21-ai-moves-into-the-workday",
     "date": "2026-06-21",
     "title": "AI Agents Get Work Identities",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "AI is becoming a coworker with credentials, permissions, and practical reach, while companies keep using AI language to explain job cuts. That makes the old question 'will AI replace me?' too narrow. The better question is what human voice, accountability, and creative judgment become more valuable when agents can take on more of the work.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -72,7 +84,7 @@ export const bundledSignalIndex = [
     "slug": "2026-06-19-ai-moves-into-the-workday",
     "date": "2026-06-19",
     "title": "AI Education Meets The Work Shift",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "Education and work are both being forced to move from compliance to capability. AI is turning cheating, coding, creative production, and email delegation into tests of whether people understand the systems they use, not just whether they can produce output. AI literacy is becoming protective value: people who can direct the tool thoughtfully are less exposed than people who only perform the old task.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -86,7 +98,7 @@ export const bundledSignalIndex = [
     "slug": "2026-06-18-ai-moves-into-the-workday",
     "date": "2026-06-18",
     "title": "AI Literacy Becomes The Baseline",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "AI literacy is crossing from advantage to baseline. Government hiring, graduate roles, creator work, and layoff narratives all point to the same shift: execution is easier, but trusted judgment, voice, and direction are harder to replace. Treat AI fluency as table stakes and human point of view as the real differentiator.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -99,7 +111,7 @@ export const bundledSignalIndex = [
     "slug": "2026-06-16-ai-moves-into-the-workday",
     "date": "2026-06-16",
     "title": "AI Agents Need Human Control",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "This issue is about control: agents are becoming capable enough to touch real systems, while companies are still using AI as a blunt story for cuts. The strongest human response is not to compete task-for-task, but to design clearer delegation, constraints, voice, and accountability. AI can multiply output; it cannot decide what deserves trust unless people stay in command.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -165,11 +177,108 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-06-25-autonomous-agents-redraw-career-value": {
+    "slug": "2026-06-25-autonomous-agents-redraw-career-value",
+    "date": "2026-06-25",
+    "title": "Autonomous Agents Redraw Career Value",
+    "pattern": "The five stories point to a labor market learning two truths at once: agents are becoming infrastructure, and careers now have to outlast any one employer's redesign. Oracle cuts and broader tech restructuring show old roles being rewritten, while PwC and the 100-year career frame point to renewal rather than simple replacement. The durable move is to build portable judgment, not just defend a job title.",
+    "stages": [
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg",
+    "stories": [
+      {
+        "title": "Autonomous agents are redefining work and jobs - SiliconANGLE",
+        "url": "https://siliconangle.com/2026/06/24/dell-ai-autonomous-agents-jobs-aifactoriesdatacenters/",
+        "source": "siliconangle.com",
+        "published": "2026-06-24T15:31:02+00:00",
+        "summary": "Dell's AI work points to a practical shift: autonomous agents are moving from demo layer into the operating model of companies. That matters because job design, capital spending, and human leverage start changing once agents can take on pieces of real enterprise work.",
+        "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg",
+        "stages": [
+          "Discover AI's Power",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Dell is framing autonomous agents as part of the next enterprise infrastructure shift, not just another software feature.",
+          "The story connects AI agents to job design and the economics of AI factories and data centers.",
+          "For TGR, the useful move is learning what work agents can absorb while naming the human judgment that still has to steer them."
+        ]
+      },
+      {
+        "title": "Why The 100-Year Career Will Change How Employers Think About Work",
+        "url": "https://www.forbes.com/sites/benjaminlaker/2026/06/24/why-the-100-year-career-will-change-how-employers-think-about-work/",
+        "source": "forbes.com",
+        "published": "2026-06-24T04:59:00+00:00",
+        "summary": "The 100-year career idea makes the AI transition bigger than a single reskilling cycle. Longer lives and faster capability shifts mean people and employers have to design for renewal, adaptability, and portable value instead of one stable ladder.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3b99037338d7f370b94acf/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Longer working lives make career sustainability a structural question for employers.",
+          "AI disruption turns adaptability from a nice trait into career infrastructure.",
+          "For TGR, the story reinforces that identity has to separate from the current job wrapper."
+        ]
+      },
+      {
+        "title": "Oracle layoffs: Tech giant cuts 21,000 jobs as AI investments reshape workforce- Moneycontrol.com",
+        "url": "https://www.moneycontrol.com/technology/oracle-layoffs-tech-giant-cuts-21-000-jobs-as-ai-investments-reshape-workforce-article-13956730.html",
+        "source": "moneycontrol.com",
+        "published": "2026-06-23T02:58:00+00:00",
+        "summary": "Oracle's reported job cuts make the workforce redesign story concrete. When a company realigns around AI at this scale, the risk is not only job loss; it is the speed at which old roles stop explaining where human value belongs.",
+        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/04/20260401082814_MixCollage-01-Apr-2026-01-53-PM-7018.jpg",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Oracle reportedly cut around 21,000 jobs globally over the past year while investing heavily in AI.",
+          "The story shows AI strategy turning into organizational redesign, not just tool adoption.",
+          "For TGR, the practical question is what value a person can carry when the company rewrites the org chart."
+        ]
+      },
+      {
+        "title": "PwC chairman pushes back on fears of AI-driven mass layoffs, says AI is adding more jobs",
+        "url": "https://indianexpress.com/article/technology/artificial-intelligence/pwc-chairman-pushes-back-on-fears-of-ai-driven-mass-layoffs-says-ai-is-adding-more-jobs-10753088/",
+        "source": "indianexpress.com",
+        "published": "2026-06-23T07:19:18+00:00",
+        "summary": "PwC's chair gives the counter-signal to the layoff narrative: effective AI adoption can also expand work and productivity. The tension matters because workers still have to repurpose themselves while leaders argue over whether AI subtracts jobs or redesigns them.",
+        "imageUrl": "https://images.indianexpress.com/2026/06/PwC-chairman-quells-fears-of-AI-driven-mass-layoffs-says-AI-adoption-is-adding-more-jobs.png",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "PwC's Mohamed Kande says organizations using AI well are focused on transformation and productivity gains.",
+          "The claim complicates the simple story that AI adoption automatically means mass layoffs.",
+          "For TGR, the stable takeaway is that people need portable value whether AI shrinks roles or expands them."
+        ]
+      },
+      {
+        "title": "Oracle AI Layoffs, Meta Workforce Cuts, Amazon Restructuring, Microsoft Workforce Changes Signal Global Tech Downsizing Wave in 2026",
+        "url": "https://www.ibtimes.sg/oracle-ai-layoffs-meta-workforce-cuts-amazon-restructuring-microsoft-workforce-changes-signal-88452",
+        "source": "ibtimes.sg",
+        "published": "2026-06-24T09:13:51+00:00",
+        "summary": "The broader tech downsizing story turns isolated layoff headlines into a pattern. AI investment, restructuring, and pressure for efficiency are converging across major companies, which makes repurposing a near-term workforce problem rather than an abstract future concern.",
+        "imageUrl": "https://data.ibtimes.sg/en/full/87335/tech-layoffs.jpg?w=1200&h=630?q=60",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The article frames Oracle, Meta, Amazon, and Microsoft workforce changes as part of a wider 2026 tech downsizing wave.",
+          "AI investment is becoming one of the forces companies cite as they restructure teams.",
+          "For TGR, the story sharpens the need to build identity and value outside any single employer's operating plan."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-06-24-entry-level-jobs-get-senior-ai-standards": {
     "slug": "2026-06-24-entry-level-jobs-get-senior-ai-standards",
     "date": "2026-06-24",
     "title": "Entry-Level Jobs Get Senior AI Standards",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "The early-career bargain is being compressed. Entry-level workers are now expected to bring senior judgment while schools, governments, and HR teams race to explain a labor market where AI both threatens roles and creates new ones. The real signal is not 'learn a tool'; it is that people need purpose, adaptability, and proof of value before the first rung appears.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -268,7 +377,7 @@ export const bundledSignalsBySlug = {
     "slug": "2026-06-23-microsoft-job-fear-meets-oracle-cuts",
     "date": "2026-06-23",
     "title": "Microsoft Job Fear Meets Oracle Cuts",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "Today's stories split the AI transition between fear and agency: students worry about jobs, Oracle cuts roles, and AI begins shaping even how young people discover universities. At the same time, Picsart's creator economy story shows value moving toward people who can claim audience, voice, and leverage. Purpose formation now has to happen earlier and more deliberately than the old career path required.",
     "stages": [
       "Unhook Identity",
       "Find Your Purpose",
@@ -368,7 +477,7 @@ export const bundledSignalsBySlug = {
     "date": "2026-06-22",
     "slug": "2026-06-22-ai-moves-into-the-workday",
     "title": "Job Fear Meets AI Education",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "The day's pattern is work identity moving into systems design. AI agents are getting identities and access, leaders are comparing AI to an industrial revolution, and education voices are telling students their fear is rational. The human answer is not panic or blind optimism; it is building AI fluency around human-centered judgment before institutions redesign the roles.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -466,7 +575,7 @@ export const bundledSignalsBySlug = {
     "date": "2026-06-21",
     "slug": "2026-06-21-ai-moves-into-the-workday",
     "title": "AI Agents Get Work Identities",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "AI is becoming a coworker with credentials, permissions, and practical reach, while companies keep using AI language to explain job cuts. That makes the old question 'will AI replace me?' too narrow. The better question is what human voice, accountability, and creative judgment become more valuable when agents can take on more of the work.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -643,11 +752,11 @@ export const bundledSignalsBySlug = {
         "url": "https://www.inc.com/netta-jenkins/ai-can-generate-content-it-still-struggles-to-replicate-human-creativity/91360916",
         "published": "2026-06-19T07:09:00+00:00",
         "imageUrl": "",
-        "summary": "This matters because creation is where anxiety turns into agency.",
+        "summary": "The Inc. story is a useful reality check on AI creativity: cheap output is not the same as effective creative work. If AI-generated ads underperform human-made ones, the value shifts back toward taste, audience understanding, and the judgment to know what should be made in the first place.",
         "keyPoints": [
-          "A founder's data shows a decline in the performance of ads created by AI were much less effective than human-made ones, offering a lesson in creativity.",
-          "Source signal: inc.com is connecting this story to ai creativity work creators.",
-          "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
+          "A founder's performance data showed AI-generated creative did not automatically beat human-made ads.",
+          "The story separates production speed from creative effectiveness, which matters as brands chase lower-cost content.",
+          "For TGR, the signal is that human taste and judgment still create value when AI makes output abundant."
         ],
         "stages": [
           "Start Creating",
@@ -661,7 +770,7 @@ export const bundledSignalsBySlug = {
     "date": "2026-06-19",
     "slug": "2026-06-19-ai-moves-into-the-workday",
     "title": "AI Education Meets The Work Shift",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "Education and work are both being forced to move from compliance to capability. AI is turning cheating, coding, creative production, and email delegation into tests of whether people understand the systems they use, not just whether they can produce output. AI literacy is becoming protective value: people who can direct the tool thoughtfully are less exposed than people who only perform the old task.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -761,7 +870,7 @@ export const bundledSignalsBySlug = {
     "date": "2026-06-18",
     "title": "AI Literacy Becomes The Baseline",
     "slug": "2026-06-18-ai-moves-into-the-workday",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "AI literacy is crossing from advantage to baseline. Government hiring, graduate roles, creator work, and layoff narratives all point to the same shift: execution is easier, but trusted judgment, voice, and direction are harder to replace. Treat AI fluency as table stakes and human point of view as the real differentiator.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
@@ -861,7 +970,7 @@ export const bundledSignalsBySlug = {
     "date": "2026-06-16",
     "title": "AI Agents Need Human Control",
     "slug": "2026-06-16-ai-moves-into-the-workday",
-    "pattern": "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage. The human task is to stop treating identity as a job title and start naming the value that travels with you.",
+    "pattern": "This issue is about control: agents are becoming capable enough to touch real systems, while companies are still using AI as a blunt story for cuts. The strongest human response is not to compete task-for-task, but to design clearer delegation, constraints, voice, and accountability. AI can multiply output; it cannot decide what deserves trust unless people stay in command.",
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
