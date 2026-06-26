@@ -1,5 +1,18 @@
 [
   {
+    "slug": "2026-06-26-jobs-split-into-human-and-ai-work",
+    "date": "2026-06-26",
+    "title": "Jobs Split Into Human And AI Work",
+    "pattern": "Today's five stories show the job itself being taken apart. Dell is planning for autonomous agents inside enterprise operations, Forbes is telling leaders to classify the tasks inside roles, and Goldman Sachs is arguing the disruption will be uneven rather than apocalyptic. The human stakes are clearest in the reskilling story and Roberto Blake's VidCon argument: people have to prove value at the task, judgment, and voice level, not just through the old job title.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Start Creating",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://helios-i.mashable.com/imagery/articles/02Wagdh5MgvJQDkCMBsPbFd/hero-image.fill.size_1200x675.v1782433043.jpg"
+  },
+  {
     "slug": "2026-06-25-autonomous-agents-redraw-career-value",
     "date": "2026-06-25",
     "title": "Autonomous Agents Redraw Career Value",

@@ -1,0 +1,100 @@
+{
+  "slug": "2026-06-26-jobs-split-into-human-and-ai-work",
+  "date": "2026-06-26",
+  "title": "Jobs Split Into Human And AI Work",
+  "pattern": "Today's five stories show the job itself being taken apart. Dell is planning for autonomous agents inside enterprise operations, Forbes is telling leaders to classify the tasks inside roles, and Goldman Sachs is arguing the disruption will be uneven rather than apocalyptic. The human stakes are clearest in the reskilling story and Roberto Blake's VidCon argument: people have to prove value at the task, judgment, and voice level, not just through the old job title.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Start Creating",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "https://helios-i.mashable.com/imagery/articles/02Wagdh5MgvJQDkCMBsPbFd/hero-image.fill.size_1200x675.v1782433043.jpg",
+  "stories": [
+    {
+      "title": "Autonomous agents are redefining work and jobs",
+      "url": "https://siliconangle.com/2026/06/24/dell-ai-autonomous-agents-jobs-aifactoriesdatacenters/",
+      "source": "siliconangle.com",
+      "published": "2026-06-24T15:31:02+00:00",
+      "summary": "Dell's AI infrastructure story is not just about faster data centers. It points to a work system where autonomous agents become part of operations, which means people need to understand where authority, accountability, and judgment sit when software starts doing more of the work.",
+      "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg",
+      "stages": [
+        "Discover AI's Power",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Dell is framing autonomous agents as part of enterprise infrastructure, not just a productivity experiment.",
+        "The work shift is moving from individual tool use toward operating models where agents take on real tasks.",
+        "The TGR question is who directs the agentic work and what human accountability remains visible."
+      ]
+    },
+    {
+      "title": "Before AI Replaces Jobs, Leaders Need To Classify The Work Inside Them",
+      "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/06/26/before-ai-replaces-jobs-leaders-need-to-classify-the-work-inside-them/",
+      "source": "forbes.com",
+      "published": "2026-06-26T04:00:00+00:00",
+      "summary": "Forbes names the practical management move underneath the AI jobs debate: stop treating roles as indivisible containers. Once leaders classify the work inside jobs, people can see which tasks are automatable, which need human judgment, and where they must reclaim value.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The article argues that hybrid human-AI teams require task-level role design.",
+        "Classifying work separates a person's value from the old job wrapper around them.",
+        "This is the operational version of unhooking identity from a title."
+      ]
+    },
+    {
+      "title": "AI unlikely to trigger 'Job Apocalypse', it may create uneven workforce disruption: Goldman Sachs Report",
+      "url": "https://www.thehindubusinessline.com/info-tech/ai-unlikely-to-trigger-job-apocalypse-it-may-create-uneven-workforce-disruption-goldman-sachs-report/article71149349.ece",
+      "source": "thehindubusinessline.com",
+      "published": "2026-06-26T05:31:37+00:00",
+      "summary": "Goldman Sachs pushes against the simple apocalypse narrative while still warning that disruption will not land evenly. That matters because the Great Repurpose is not a single event; it is a rolling redistribution of risk, opportunity, and pressure across different kinds of work.",
+      "imageUrl": "https://bl-i.thgim.com/public/incoming/kh8tmf/article71149367.ece/alternates/LANDSCAPE_1200/IMG_bl03_Think2_Work_2_1_9SCOF6EL.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "Goldman Sachs expects AI to reshape labor markets without producing one uniform jobs collapse.",
+        "Uneven disruption means workers need portable capability before their specific role is pressured.",
+        "The opportunity side belongs to people who can create new value as old task bundles shift."
+      ]
+    },
+    {
+      "title": "Reclaim your edge: Mastering new skills at any career stage",
+      "url": "https://www.bizcommunity.com/article/reclaim-your-edge-mastering-new-skills-at-any-career-stage-519240a",
+      "source": "bizcommunity.com",
+      "published": "2026-06-26T04:04:00+00:00",
+      "summary": "The reskilling story brings the signal down to mid-career professionals who can feel their old edge aging out. The move is not to mourn expertise, but to translate it into new skills, better judgment, and a more current claim on value.",
+      "imageUrl": "https://biz-file.com/c/2606/814811.png?5",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The article focuses on professionals in their 40s, 50s, and beyond facing skill obsolescence.",
+        "The strongest response is to convert experience into current capability instead of defending the past.",
+        "This is the personal side of the broader task-level redesign happening inside organizations."
+      ]
+    },
+    {
+      "title": "Can AI level the playing field for working class content creators?",
+      "url": "https://mashable.com/life/ai-working-class-content-creator-roberto-blake",
+      "source": "mashable.com",
+      "published": "2026-06-26T00:45:40+00:00",
+      "summary": "At VidCon, Roberto Blake's case for AI centers on working-class creators and the possibility of wider access. The important tension is not whether AI makes content cheaper; it is whether people who lacked production leverage can use it to make their human value more visible.",
+      "imageUrl": "https://helios-i.mashable.com/imagery/articles/02Wagdh5MgvJQDkCMBsPbFd/hero-image.fill.size_1200x675.v1782433043.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "Roberto Blake argues that AI can help working-class creators compete while still centering human value.",
+        "The creator economy version of the shift is about leverage, access, and voice.",
+        "AI lowers execution barriers, but the durable advantage is still point of view and trust."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
