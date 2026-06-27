@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-06-27-ai-job-cuts-force-task-level-redesign",
+    "date": "2026-06-27",
+    "title": "AI Job Cuts Force Task-Level Redesign",
+    "pattern": "Today's five stories show AI pressure moving from broad workforce anxiety into task-level redesign. Forbes argues leaders need to classify the work inside jobs, AI builders are openly funding research into displacement, and Meta, Robinhood, Walmart, and Oracle appear in a layoff tracker tied to AI investment. HR Dive and Dell point to the next human stake: entry-level workers and enterprise teams will be judged by how well they supervise, direct, and redesign work with agents in the loop.",
+    "stages": [
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-06-26-jobs-split-into-human-and-ai-work",
     "date": "2026-06-26",
     "title": "Jobs Split Into Human And AI Work",

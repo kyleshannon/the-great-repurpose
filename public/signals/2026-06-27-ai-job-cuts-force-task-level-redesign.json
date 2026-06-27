@@ -1,0 +1,99 @@
+{
+  "slug": "2026-06-27-ai-job-cuts-force-task-level-redesign",
+  "date": "2026-06-27",
+  "title": "AI Job Cuts Force Task-Level Redesign",
+  "pattern": "Today's five stories show AI pressure moving from broad workforce anxiety into task-level redesign. Forbes argues leaders need to classify the work inside jobs, AI builders are openly funding research into displacement, and Meta, Robinhood, Walmart, and Oracle appear in a layoff tracker tied to AI investment. HR Dive and Dell point to the next human stake: entry-level workers and enterprise teams will be judged by how well they supervise, direct, and redesign work with agents in the loop.",
+  "stages": [
+    "Unhook Identity",
+    "Discover AI's Power",
+    "Start Creating"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "Before AI Replaces Jobs, Leaders Need To Classify The Work Inside Them",
+      "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/06/26/before-ai-replaces-jobs-leaders-need-to-classify-the-work-inside-them/",
+      "source": "forbes.com",
+      "published": "2026-06-26T04:00:00+00:00",
+      "summary": "Forbes frames the AI workforce question as a classification problem, not a simple headcount forecast. Leaders need to break roles into tasks and decide what should be done by people, AI systems, or hybrid teams.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The story pushes leaders to inspect the work inside a job instead of treating the job title as the unit of change.",
+        "Human-AI hybrid teams make role design, task ownership, and accountability more important than blanket automation claims.",
+        "For TGR, the signal is that identity has to separate from the job wrapper before the organization redraws it."
+      ]
+    },
+    {
+      "title": "The People Who Build AI Just Admitted It Will Cut Jobs At Scale",
+      "url": "https://www.forbes.com/sites/terdawn-deboe/2026/06/26/the-people-who-build-ai-just-admitted-it-will-cut-jobs-at-scale/",
+      "source": "forbes.com",
+      "published": "2026-06-26T08:25:00+00:00",
+      "summary": "Forbes reports that AI's own builders are funding research into the jobs their tools may displace. The small business question becomes sharper: what can be automated, what should stay human, and who gets to make that call?",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3e90a7a62c2be2656d5939/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "The displacement conversation is no longer only coming from critics; it is being acknowledged inside the AI industry.",
+        "Small businesses face practical choices about which tasks become automated and which human relationships still create value.",
+        "The creator move is to redesign the work before the market reduces it to a cost-cutting exercise."
+      ]
+    },
+    {
+      "title": "2026 Layoffs Tracker: Meta, Robinhood, Walmart, and Oracle Lead AI-Driven Job Cuts",
+      "url": "https://www.eweek.com/news/tech-layoffs-ai-investment-2026/",
+      "source": "eweek.com",
+      "published": "2026-06-26T17:51:42.563000+00:00",
+      "summary": "eWeek's tracker turns AI-driven restructuring into a concrete list of companies and consequences. Meta, Robinhood, Walmart, and Oracle make the workforce shift visible as a capital allocation story, not just a technology adoption story.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "The tracker links layoffs to heavy AI investment, raising the accountability question behind corporate automation claims.",
+        "Big-company examples make the labor impact easier to see than abstract productivity language does.",
+        "The TGR signal is that people need a portable value story when institutional restructuring becomes the default."
+      ]
+    },
+    {
+      "title": "Will AI create new entry-level jobs?",
+      "url": "https://www.hrdive.com/news/will-ai-create-new-entry-level-jobs/823871/",
+      "source": "hrdive.com",
+      "published": "2026-06-26T08:24:00+00:00",
+      "summary": "HR Dive looks at the entry-level problem from the other side of displacement: new work may exist, but it will ask people to supervise AI systems sooner. The first rung of a career is starting to look less like task execution and more like system oversight.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "HR leaders may need early-career workers who can monitor and direct AI systems, not just complete narrow starter tasks.",
+        "The story makes the new-entry-level question specific: what does apprenticeship look like when AI handles more execution?",
+        "For workers, the opportunity is to learn supervision, judgment, and workflow design earlier."
+      ]
+    },
+    {
+      "title": "Autonomous agents are redefining work and jobs - SiliconANGLE",
+      "url": "https://siliconangle.com/2026/06/24/dell-ai-autonomous-agents-jobs-aifactoriesdatacenters/",
+      "source": "siliconangle.com",
+      "published": "2026-06-24T15:31:02+00:00",
+      "summary": "SiliconANGLE reports on Dell's view that autonomous agents are becoming part of enterprise operating reality. The story connects job redesign to infrastructure, AI factories, data centers, and capital planning.",
+      "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg",
+      "stages": [
+        "Discover AI's Power",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Dell's agent framing shows AI moving from experimental tools into enterprise systems and operating models.",
+        "Job redesign is tied to CapEx strategy and infrastructure choices, not just individual productivity habits.",
+        "The human question is who understands enough of the system to direct agents responsibly."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
