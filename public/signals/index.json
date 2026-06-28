@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-06-28-ai-layoffs-expose-reskilling-bill",
+    "date": "2026-06-28",
+    "title": "AI Layoffs Expose Reskilling Bill",
+    "pattern": "Today's five stories put the same bill on the table from different angles: companies are breaking jobs into tasks, using AI investment to justify cuts, and then asking workers to prove they can adapt fast enough. Forbes frames the redesign problem inside roles, while Memeburn and eWeek name the sharper human stake: Meta, Robinhood, Walmart, Oracle, South African workers, and anxious professionals are all caught between displacement headlines and the unanswered question of who pays for retraining.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg"
+  },
+  {
     "slug": "2026-06-27-ai-job-cuts-force-task-level-redesign",
     "date": "2026-06-27",
     "title": "AI Job Cuts Force Task-Level Redesign",

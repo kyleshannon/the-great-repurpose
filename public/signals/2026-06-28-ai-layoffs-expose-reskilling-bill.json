@@ -1,0 +1,97 @@
+{
+  "slug": "2026-06-28-ai-layoffs-expose-reskilling-bill",
+  "date": "2026-06-28",
+  "title": "AI Layoffs Expose Reskilling Bill",
+  "pattern": "Today's five stories put the same bill on the table from different angles: companies are breaking jobs into tasks, using AI investment to justify cuts, and then asking workers to prove they can adapt fast enough. Forbes frames the redesign problem inside roles, while Memeburn and eWeek name the sharper human stake: Meta, Robinhood, Walmart, Oracle, South African workers, and anxious professionals are all caught between displacement headlines and the unanswered question of who pays for retraining.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg",
+  "stories": [
+    {
+      "title": "Before AI Replaces Jobs, Leaders Need To Classify The Work Inside Them",
+      "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/06/26/before-ai-replaces-jobs-leaders-need-to-classify-the-work-inside-them/",
+      "source": "forbes.com",
+      "published": "2026-06-26T04:00:00+00:00",
+      "summary": "Forbes argues that leaders cannot make serious AI workforce decisions by treating a job as one indivisible thing. The work has to be classified at the task level so organizations can see what should be automated, augmented, protected, or redesigned around human judgment.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The story shifts the replacement conversation from whole jobs to the work inside them.",
+        "Human-AI hybrid teams require clearer boundaries around task ownership and accountability.",
+        "The TGR signal is that identity has to detach from a job wrapper before the role gets redesigned."
+      ]
+    },
+    {
+      "title": "AI layoffs 2026: major tech firms cutting jobs as AI rises - Memeburn",
+      "url": "https://memeburn.com/ai-layoffs-2026-major-tech-firms-cutting-jobs-as-ai-rises/",
+      "source": "memeburn.com",
+      "published": "2026-06-27T12:29:25+00:00",
+      "summary": "Memeburn tracks 2026 tech layoffs where employers have tied cuts to AI, with a specific warning for South African workers and companies watching the pattern spread. The piece makes the abstraction concrete: AI is already part of the explanation for headcount decisions.",
+      "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-layoffs-2026_-major-tech-firms-cutting-jobs-as-AI-rises.jpg",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The layoff story is becoming a recurring corporate narrative, not a distant scenario.",
+        "South African workers and firms are framed as needing to watch global AI restructuring closely.",
+        "For TGR, the pressure point is how people stay legible when employers redefine roles around AI."
+      ]
+    },
+    {
+      "title": "Why AI Anxiety Is Making Workers Question Their Future",
+      "url": "https://www.forbes.com/sites/carolinecastrillon/2026/06/26/why-ai-anxiety-is-making-workers-question-their-future/",
+      "source": "forbes.com",
+      "published": "2026-06-26T09:46:00+00:00",
+      "summary": "Forbes names the emotional side of the workforce shift: professionals are not just learning tools, they are questioning whether their future at work still makes sense. The useful move is staying relevant without pretending everyone can simply start over.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3eac52a1a95e441dd9433e/0x0.jpg?format=jpg&crop=1319,742,x0,y0,safe&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "AI anxiety is showing up as a work-identity problem, not only a skills problem.",
+        "The piece emphasizes staying relevant without requiring a total career reset.",
+        "The human stake is confidence: workers need a clearer story of value before the market rewrites it."
+      ]
+    },
+    {
+      "title": "AI Reskilling 2026: Who's Actually Paying to Retrain Millions? - Memeburn",
+      "url": "https://memeburn.com/ai-reskilling-2026-who-pays-to-retrain-workers/",
+      "source": "memeburn.com",
+      "published": "2026-06-28T01:25:06+00:00",
+      "summary": "Memeburn turns the reskilling conversation into a funding question. If millions of workers need new AI-era capabilities by 2027, the central issue is not whether retraining sounds good; it is whether companies, governments, or workers are actually carrying the cost.",
+      "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The story frames reskilling as a race against the clock for millions of workers.",
+        "It asks who pays for the transition when companies benefit from AI-driven restructuring.",
+        "For TGR, reclaiming value means building portable capability without letting institutions off the hook."
+      ]
+    },
+    {
+      "title": "2026 Layoffs Tracker: Meta, Robinhood, Walmart, and Oracle Lead AI-Driven Job Cuts",
+      "url": "https://www.eweek.com/news/tech-layoffs-ai-investment-2026/",
+      "source": "eweek.com",
+      "published": "2026-06-26T17:51:42.563000+00:00",
+      "summary": "eWeek's tracker ties major company cuts to heavy AI investment and names the corporate accountability problem directly. Meta, Robinhood, Walmart, and Oracle become examples of the same tension: automation budgets are rising while workers absorb the uncertainty.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "The tracker connects layoffs, AI investment, over-hiring, and automation pressure.",
+        "Meta, Robinhood, Walmart, and Oracle make the pattern visible across recognizable employers.",
+        "The TGR signal is that discovering AI's power also means seeing who bears the transition cost."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
