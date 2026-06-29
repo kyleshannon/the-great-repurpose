@@ -1,0 +1,98 @@
+{
+  "slug": "2026-06-29-ai-layoffs-push-reskilling-onto-graduates",
+  "date": "2026-06-29",
+  "title": "AI Layoffs Push Reskilling Onto Graduates",
+  "pattern": "Today's five stories pin the cost of AI adaptation on workers before institutions have settled who pays. Memeburn tracks AI-cited cuts and the unpaid reskilling bill, TNO's Dutch study points to higher mental load after routine work is automated, and Microsoft plus South African graduate coverage show students being told to become AI-fluent before the first job stabilizes. The tension is no longer only displacement; it is whether companies, schools, and governments absorb any of the transition cost or leave workers to self-fund the new baseline.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Find Your Purpose"
+  ],
+  "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-layoffs-2026_-major-tech-firms-cutting-jobs-as-AI-rises.jpg",
+  "stories": [
+    {
+      "title": "AI layoffs 2026: major tech firms cutting jobs as AI rises - Memeburn",
+      "url": "https://memeburn.com/ai-layoffs-2026-major-tech-firms-cutting-jobs-as-ai-rises/",
+      "source": "memeburn.com",
+      "published": "2026-06-27T12:29:25+00:00",
+      "summary": "Memeburn tracks 2026 tech layoffs where employers cited AI, turning displacement from an abstract forecast into a visible management choice. The story matters because workers in South Africa and beyond are being asked to separate their value from job titles that companies can now redesign or remove.",
+      "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-layoffs-2026_-major-tech-firms-cutting-jobs-as-AI-rises.jpg",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The tracker names major tech firms cutting jobs while pointing to AI investment or automation pressure.",
+        "The South African framing widens the story beyond Silicon Valley and makes the risk local for workers and employers.",
+        "The core TGR signal is identity pressure: people need portable value when the job wrapper changes."
+      ]
+    },
+    {
+      "title": "AI Reskilling 2026: Who's Actually Paying to Retrain Millions? - Memeburn",
+      "url": "https://memeburn.com/ai-reskilling-2026-who-pays-to-retrain-workers/",
+      "source": "memeburn.com",
+      "published": "2026-06-28T01:25:06+00:00",
+      "summary": "Memeburn turns the reskilling conversation into a funding question: if millions of workers need new AI-era skills, someone has to pay for the time, training, and transition. That makes reskilling less like personal enrichment and more like a contested bill created by institutional redesign.",
+      "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The piece frames AI reskilling as a race against the clock rather than a nice-to-have workplace benefit.",
+        "It highlights the gap between large forecasts about worker retraining and unclear responsibility for funding it.",
+        "The value question shifts from whether workers should adapt to whether employers and public institutions share the cost."
+      ]
+    },
+    {
+      "title": "One-third of workers expect AI to make their jobs mentally harder",
+      "url": "https://nltimes.nl/2026/06/27/one-third-workers-expect-ai-make-jobs-mentally-harder",
+      "source": "nltimes.nl",
+      "published": "2026-06-27T06:15:00+00:00",
+      "summary": "A TNO study reported by NL Times shows many Dutch workers expect AI to leave the job intact but make the remaining work mentally heavier. That is a quieter version of disruption: routine tasks disappear, complexity concentrates, and the human role becomes harder to carry.",
+      "imageUrl": "https://nltimes.nl/sites/nltimes.nl/files/styles/news_article_full_desktop_2x/public/2021-11/Depositphotos_33035107_L.jpg?h=56d0ca2e",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Most workers surveyed expect AI to leave their jobs largely unchanged, but a substantial share expects higher mental pressure.",
+        "The pressure comes from automating routine work while leaving more complex judgment and coordination behind.",
+        "The TGR signal is that keeping the job title may still mean losing the old rhythm, load, and identity of the work."
+      ]
+    },
+    {
+      "title": "Microsoft's AI Education Lead Says Job Fear Is Real. Here's The Fix",
+      "url": "https://www.forbes.com/sites/danfitzpatrick/2026/06/22/microsofts-ai-education-lead-says-job-fear-is-real-heres-the-fix/",
+      "source": "forbes.com",
+      "published": "2026-06-22T03:58:00+00:00",
+      "summary": "Forbes profiles Justin Spelhaug and Microsoft's $4 billion education AI effort, with a clear admission that student job fear is rational. The answer offered is not only technical training; it is helping learners develop the human-centered judgment that can travel across a shifting labor market.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Find Your Purpose",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Microsoft's education AI lead treats student anxiety about jobs as rational, not naive.",
+        "The proposed fix centers on human skills and purpose, not simply racing to learn every new tool.",
+        "Education is being pulled into the same transition cost question facing workers and employers."
+      ]
+    },
+    {
+      "title": "AI is reshaping the workplace faster than graduates expect",
+      "url": "https://mg.co.za/thought-leader/2026-06-29-ai-is-reshaping-the-workplace-faster-than-graduates-expect/",
+      "source": "mg.co.za",
+      "published": "2026-06-29T01:40:00+00:00",
+      "summary": "Mail & Guardian argues that South African graduates are entering a market where AI fluency is already becoming a baseline expectation. The human challenge is to combine digital literacy with communication, adaptability, and judgment before the first rung of the career ladder has settled.",
+      "imageUrl": "https://images.newsteam.io/image/400/GbSdY1y2zcq1fMohHtmH9QnTtyN7bhQsYcFVgx6TJnh35A44x7JsTVRUhEK9adcE116EMznrCM8ouKDaT5tr2fBdc3fAwX7579rGYZsJJQUdG7YM6be6q2NzG9f4XTGBLDWP32bimaHpxfEFcC5wh",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Global AI investment is raising the baseline for graduates before many have stable work experience.",
+        "The article emphasizes AI fluency plus human-centered skills as the new employability mix.",
+        "For TGR, the career starting line is being redrawn around proof of value, not just credentials."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
