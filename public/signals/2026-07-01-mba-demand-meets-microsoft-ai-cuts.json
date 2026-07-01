@@ -1,0 +1,99 @@
+{
+  "slug": "2026-07-01-mba-demand-meets-microsoft-ai-cuts",
+  "date": "2026-07-01",
+  "title": "MBA Demand Meets Microsoft AI Cuts",
+  "pattern": "Today's five stories show the labor market splitting between credentials, agents, and human data. GMAC says MBA graduates are still in demand, while Microsoft prepares cuts in sales, consulting, and Xbox as AI spending rises; AvePoint and Kyndryl show agents arriving faster than jobs can be redesigned. PwC's two-track market and the VLGE-Protege training-data deal make the daily tension plain: institutions still want human judgment, but they are also turning behavior, adaptability, and AI fluency into the new price of staying valuable.",
+  "stages": [
+    "Unhook Identity",
+    "Start Creating",
+    "Find Your Purpose",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4291319d4dff266b92597b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "MBA Jobs Under Threat? New Report Says MBA Graduates Are Still in High Demand Despite AI",
+      "url": "https://thesiliconreview.com/2026/07/mba-jobs-graduates-demand-ai-gmac",
+      "source": "thesiliconreview.com",
+      "published": "2026-07-01T03:48:00+00:00",
+      "summary": "GMAC's survey complicates the easy story that AI simply erases business careers. Employers still want MBA graduates, but the value of the degree now depends on whether those graduates can lead through AI-shaped change instead of defending yesterday's role map.",
+      "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview-%20copy_2026-07-01_10-41-24.webp",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "GMAC reports continued employer demand for MBA graduates despite anxiety about AI disruption.",
+        "The story separates durable leadership capability from the assumption that a credential alone protects a career.",
+        "For TGR, the useful question is what human judgment business schools now have to prove."
+      ]
+    },
+    {
+      "title": "Companies roll out AI agents faster than they can redesign jobs: reports",
+      "url": "https://www.theedgesingapore.com/digitaledge/artificial-intelligence/companies-roll-out-ai-agents-faster-they-can-redesign-jobs",
+      "source": "theedgesingapore.com",
+      "published": "2026-06-30T20:30:00+00:00",
+      "summary": "AvePoint and Kyndryl point to the same operational gap: agents are entering routine work before organizations have redesigned roles, controls, and worker support. That makes AI adoption less a tools rollout than a management and identity problem.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "AI agents are already becoming part of routine employee workflows.",
+        "Companies are moving faster on deployment than on job design, governance, and worker preparation.",
+        "The human risk is ambiguity: people are asked to collaborate with agents before knowing what changed in their job."
+      ]
+    },
+    {
+      "title": "The Future Of AI Training Data Is Human. The Question Is How",
+      "url": "https://www.forbes.com/sites/cortneyharding/2026/06/29/the-future-of-ai-training-data-is-human-the-question-is-how/",
+      "source": "forbes.com",
+      "published": "2026-06-29T08:40:00+00:00",
+      "summary": "VLGE and Protege are treating natural human behavior in virtual environments as training data. The story shifts human value from output alone to the behavioral patterns, context, and judgment that AI systems still need to learn from.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4291319d4dff266b92597b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "The VLGE-Protege partnership uses human behavior in virtual environments to build AI training sets.",
+        "Human activity becomes both source material and economic input for new AI systems.",
+        "For creators and workers, the stake is who captures value when lived behavior becomes machine-learning infrastructure."
+      ]
+    },
+    {
+      "title": "AI creating two-track job market, PwC survey finds",
+      "url": "https://www.royalgazette.com/international-business/business/article/20260701/ai-creating-two-track-job-market-pwc-survey-finds/",
+      "source": "royalgazette.com",
+      "published": "2026-07-01T10:57:00+00:00",
+      "summary": "PwC's jobs-barometer frame makes AI exposure a divider between companies and workers. The practical signal is not that every job changes at the same speed; it is that people in AI-exposed environments face a different value test than people in slower-moving sectors.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "PwC finds a widening divide between companies and roles more exposed to AI and those less exposed.",
+        "The two-track market means opportunity and pressure are rising unevenly rather than universally.",
+        "TGR's lens is portability: workers need value that travels across the faster and slower tracks."
+      ]
+    },
+    {
+      "title": "Microsoft plans thousands of job cuts, impacting less than 2.5% of workforce",
+      "url": "https://www.businessinsider.com/microsoft-job-cuts-layoffs-sales-consulting-2026-6",
+      "source": "businessinsider.com",
+      "published": "2026-06-30T23:08:00.188000+00:00",
+      "summary": "Microsoft's planned cuts put a concrete company name on the transition cost of AI investment. Sales, consulting, and Xbox are not abstract categories; they are familiar work identities being re-priced while the company keeps pouring capital into AI.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Microsoft is planning thousands of cuts, reportedly affecting sales, consulting, and Xbox.",
+        "The cuts sit alongside continued AI investment, making the tradeoff visible inside a leading AI platform company.",
+        "The human stake is direct: old roles can shrink even inside firms creating the next layer of AI work."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
