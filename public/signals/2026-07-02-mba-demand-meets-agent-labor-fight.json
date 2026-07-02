@@ -1,0 +1,99 @@
+{
+  "slug": "2026-07-02-mba-demand-meets-agent-labor-fight",
+  "date": "2026-07-02",
+  "title": "MBA Demand Meets Agent Labor Fight",
+  "pattern": "Today's five stories put workforce readiness between institutional promises and worker protection. GMAC says MBA graduates remain in demand, the Freedom Institute sells AI-personalized career readiness, and Forbes argues organizations still decide how jobs change. But AvePoint, Kyndryl, and BMS expose the pressure underneath: agents are entering routine work faster than roles, controls, surveillance rules, and platform-worker protections can catch up.",
+  "stages": [
+    "Unhook Identity",
+    "Find Your Purpose",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a442534b7d5da8de0b45c9a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "MBA Jobs Under Threat? New Report Says MBA Graduates Are Still in High Demand Despite AI",
+      "url": "https://thesiliconreview.com/2026/07/mba-jobs-graduates-demand-ai-gmac",
+      "source": "thesiliconreview.com",
+      "published": "2026-06-30T17:00:00+00:00",
+      "summary": "GMAC's demand signal complicates the easy story that AI simply hollows out business careers. The MBA still has labor-market pull, but its value now depends on whether graduates can lead through AI-shaped change instead of leaning on the credential as protection.",
+      "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview-%20copy_2026-07-01_10-41-24.webp",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "GMAC reports continued employer demand for MBA graduates despite anxiety about AI disruption.",
+        "The story separates durable leadership capability from the assumption that a credential alone protects a career.",
+        "For TGR, the practical question is what judgment and adaptability business education now has to prove."
+      ]
+    },
+    {
+      "title": "The Freedom Institute Earns a 2026 Global Recognition Award for AI-Driven Education and Workforce Readiness",
+      "url": "https://markets.businessinsider.com/news/stocks/the-freedom-institute-earns-a-2026-global-recognition-award-for-ai-driven-education-and-workforce-readiness-1036291126",
+      "source": "markets.businessinsider.com",
+      "published": "2026-07-01T04:44:00+00:00",
+      "summary": "The Freedom Institute frames AI-personalized education as a route to career readiness, not just better coursework. That matters because schools are being asked to prepare people for a labor market where roles shift faster than traditional pathways can update.",
+      "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/CqUC39NlcCczdNcC5rKEoyqgqXu2/1782919227399-0.png",
+      "stages": [
+        "Find Your Purpose",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The institute is positioning AI-driven personalization around workforce development and career readiness.",
+        "Education providers are moving from content delivery toward continuous adaptation for changing work.",
+        "The human stake is whether AI helps learners form direction or simply trains them for the next unstable job description."
+      ]
+    },
+    {
+      "title": "Companies roll out AI agents faster than they can redesign jobs: reports",
+      "url": "https://sg.finance.yahoo.com/news/companies-roll-ai-agents-faster-192754752.html",
+      "source": "sg.finance.yahoo.com",
+      "published": "2026-06-30T12:28:00+00:00",
+      "summary": "AvePoint and Kyndryl point to the same operational gap: agents are entering routine work before companies have redesigned jobs, controls, and worker support. AI adoption becomes less a software rollout than a management test of who directs the work and who absorbs the ambiguity.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "AI agents are already becoming part of routine employee workflows.",
+        "Companies are moving faster on deployment than on role design, governance, and worker preparation.",
+        "The human risk is ambiguity: employees are asked to collaborate with agents before the job has been clearly redefined."
+      ]
+    },
+    {
+      "title": "Ahead of BRICS forum, BMS outlines AI agenda centred on labour protections",
+      "url": "https://www.business-standard.com/technology/artificial-intelligence/ahead-of-brics-forum-bms-outlines-ai-agenda-centred-on-labour-protections-126070101176_1.html",
+      "source": "business-standard.com",
+      "published": "2026-07-01T06:40:00+00:00",
+      "summary": "BMS is bringing workplace surveillance, automation-linked job loss, platform-worker rights, and ethical AI into the BRICS labor conversation. The story makes the institutional stakes explicit: AI is not only changing tasks, it is forcing governments and unions to define what protection means when management systems become more automated.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "BMS is centering labor protections, surveillance, job loss, and platform-worker rights ahead of the BRICS Trade Union Forum.",
+        "The agenda treats AI governance as a worker-rights issue, not just a competitiveness issue.",
+        "For TGR, this is the policy side of the same workplace redesign pressure showing up inside companies."
+      ]
+    },
+    {
+      "title": "AI Does Not Decide The Future Of Jobs. Organizations Do",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/07/01/ai-does-not-decide-the-future-of-jobs-organizations-do/",
+      "source": "forbes.com",
+      "published": "2026-07-01T05:45:00+00:00",
+      "summary": "Forbes puts responsibility back on organizations instead of treating AI as an autonomous labor-market force. The useful signal is that workforce readiness, adaptability, and job design are choices leaders make before employees experience them as disruption.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a442534b7d5da8de0b45c9a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The piece argues that organizations, not AI in the abstract, decide how jobs are redesigned.",
+        "Workforce readiness and adaptability become management responsibilities, not individual slogans.",
+        "The story gives today's issue its decision point: institutions can either prepare people or let automation pressure define the transition."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
