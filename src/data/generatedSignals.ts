@@ -3,6 +3,93 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-02-mba-demand-meets-agent-labor-fight",
+    "date": "2026-07-02",
+    "title": "MBA Demand Meets Agent Labor Fight",
+    "pattern": "Today's five stories put workforce readiness between institutional promises and worker protection. GMAC says MBA graduates remain in demand, the Freedom Institute sells AI-personalized career readiness, and Forbes argues organizations still decide how jobs change. But AvePoint, Kyndryl, and BMS expose the pressure underneath: agents are entering routine work faster than roles, controls, surveillance rules, and platform-worker protections can catch up.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a442534b7d5da8de0b45c9a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
+    "slug": "2026-07-01-mba-demand-meets-microsoft-ai-cuts",
+    "date": "2026-07-01",
+    "title": "MBA Demand Meets Microsoft AI Cuts",
+    "pattern": "Today's five stories show the labor market splitting between credentials, agents, and human data. GMAC says MBA graduates are still in demand, while Microsoft prepares cuts in sales, consulting, and Xbox as AI spending rises; AvePoint and Kyndryl show agents arriving faster than jobs can be redesigned. PwC's two-track market and the VLGE-Protege training-data deal make the daily tension plain: institutions still want human judgment, but they are also turning behavior, adaptability, and AI fluency into the new price of staying valuable.",
+    "stages": [
+      "Unhook Identity",
+      "Start Creating",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4291319d4dff266b92597b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
+    "slug": "2026-06-30-serkis-capcut-human-control-test",
+    "date": "2026-06-30",
+    "title": "Serkis, CapCut, And The Human Control Test",
+    "pattern": "Today's five stories move the fight over AI from jobs alone into control over creation. Andy Serkis argues human creativity must evolve alongside AI, CapCut packages short-drama production into a single AI dashboard, and ZDNet treats agents as colleagues people must learn to direct. The harder stakes sit underneath: Memeburn asks who pays to retrain millions, while VLGE and Protege turn human behavior inside virtual worlds into training data, making human judgment both the product and the scarce skill.",
+    "stages": [
+      "Start Creating",
+      "Reclaim Value",
+      "Unhook Identity",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://www.zdnet.com/a/img/resize/e21ae17f217fc6ddbd281a9b92c2029448ae9afd/2026/06/29/e43bae81-9868-4e20-b973-02744ecfcaa1/gettyimages-1165984977-cropped.jpg?auto=webp&fit=crop&height=675&width=1200"
+  },
+  {
+    "slug": "2026-06-29-ai-layoffs-push-reskilling-onto-graduates",
+    "date": "2026-06-29",
+    "title": "AI Layoffs Push Reskilling Onto Graduates",
+    "pattern": "Today's five stories pin the cost of AI adaptation on workers before institutions have settled who pays. Memeburn tracks AI-cited cuts and the unpaid reskilling bill, TNO's Dutch study points to higher mental load after routine work is automated, and Microsoft plus South African graduate coverage show students being told to become AI-fluent before the first job stabilizes. The tension is no longer only displacement; it is whether companies, schools, and governments absorb any of the transition cost or leave workers to self-fund the new baseline.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose"
+    ],
+    "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-layoffs-2026_-major-tech-firms-cutting-jobs-as-AI-rises.jpg"
+  },
+  {
+    "slug": "2026-06-28-ai-layoffs-expose-reskilling-bill",
+    "date": "2026-06-28",
+    "title": "AI Layoffs Expose Reskilling Bill",
+    "pattern": "Today's five stories put the same bill on the table from different angles: companies are breaking jobs into tasks, using AI investment to justify cuts, and then asking workers to prove they can adapt fast enough. Forbes frames the redesign problem inside roles, while Memeburn and eWeek name the sharper human stake: Meta, Robinhood, Walmart, Oracle, South African workers, and anxious professionals are all caught between displacement headlines and the unanswered question of who pays for retraining.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg"
+  },
+  {
+    "slug": "2026-06-27-ai-job-cuts-force-task-level-redesign",
+    "date": "2026-06-27",
+    "title": "AI Job Cuts Force Task-Level Redesign",
+    "pattern": "Today's five stories show AI pressure moving from broad workforce anxiety into task-level redesign. Forbes argues leaders need to classify the work inside jobs, AI builders are openly funding research into displacement, and Meta, Robinhood, Walmart, and Oracle appear in a layoff tracker tied to AI investment. HR Dive and Dell point to the next human stake: entry-level workers and enterprise teams will be judged by how well they supervise, direct, and redesign work with agents in the loop.",
+    "stages": [
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
+    "slug": "2026-06-26-jobs-split-into-human-and-ai-work",
+    "date": "2026-06-26",
+    "title": "Jobs Split Into Human And AI Work",
+    "pattern": "Today's five stories show the job itself being taken apart. Dell is planning for autonomous agents inside enterprise operations, Forbes is telling leaders to classify the tasks inside roles, and Goldman Sachs is arguing the disruption will be uneven rather than apocalyptic. The human stakes are clearest in the reskilling story and Roberto Blake's VidCon argument: people have to prove value at the task, judgment, and voice level, not just through the old job title.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Start Creating",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://helios-i.mashable.com/imagery/articles/02Wagdh5MgvJQDkCMBsPbFd/hero-image.fill.size_1200x675.v1782433043.jpg"
+  },
+  {
     "slug": "2026-06-25-autonomous-agents-redraw-career-value",
     "date": "2026-06-25",
     "title": "Autonomous Agents Redraw Career Value",
@@ -177,6 +264,697 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-02-mba-demand-meets-agent-labor-fight": {
+    "slug": "2026-07-02-mba-demand-meets-agent-labor-fight",
+    "date": "2026-07-02",
+    "title": "MBA Demand Meets Agent Labor Fight",
+    "pattern": "Today's five stories put workforce readiness between institutional promises and worker protection. GMAC says MBA graduates remain in demand, the Freedom Institute sells AI-personalized career readiness, and Forbes argues organizations still decide how jobs change. But AvePoint, Kyndryl, and BMS expose the pressure underneath: agents are entering routine work faster than roles, controls, surveillance rules, and platform-worker protections can catch up.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a442534b7d5da8de0b45c9a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "MBA Jobs Under Threat? New Report Says MBA Graduates Are Still in High Demand Despite AI",
+        "url": "https://thesiliconreview.com/2026/07/mba-jobs-graduates-demand-ai-gmac",
+        "source": "thesiliconreview.com",
+        "published": "2026-06-30T17:00:00+00:00",
+        "summary": "GMAC's demand signal complicates the easy story that AI simply hollows out business careers. The MBA still has labor-market pull, but its value now depends on whether graduates can lead through AI-shaped change instead of leaning on the credential as protection.",
+        "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview-%20copy_2026-07-01_10-41-24.webp",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "GMAC reports continued employer demand for MBA graduates despite anxiety about AI disruption.",
+          "The story separates durable leadership capability from the assumption that a credential alone protects a career.",
+          "For TGR, the practical question is what judgment and adaptability business education now has to prove."
+        ]
+      },
+      {
+        "title": "The Freedom Institute Earns a 2026 Global Recognition Award for AI-Driven Education and Workforce Readiness",
+        "url": "https://markets.businessinsider.com/news/stocks/the-freedom-institute-earns-a-2026-global-recognition-award-for-ai-driven-education-and-workforce-readiness-1036291126",
+        "source": "markets.businessinsider.com",
+        "published": "2026-07-01T04:44:00+00:00",
+        "summary": "The Freedom Institute frames AI-personalized education as a route to career readiness, not just better coursework. That matters because schools are being asked to prepare people for a labor market where roles shift faster than traditional pathways can update.",
+        "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/CqUC39NlcCczdNcC5rKEoyqgqXu2/1782919227399-0.png",
+        "stages": [
+          "Find Your Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The institute is positioning AI-driven personalization around workforce development and career readiness.",
+          "Education providers are moving from content delivery toward continuous adaptation for changing work.",
+          "The human stake is whether AI helps learners form direction or simply trains them for the next unstable job description."
+        ]
+      },
+      {
+        "title": "Companies roll out AI agents faster than they can redesign jobs: reports",
+        "url": "https://sg.finance.yahoo.com/news/companies-roll-ai-agents-faster-192754752.html",
+        "source": "sg.finance.yahoo.com",
+        "published": "2026-06-30T12:28:00+00:00",
+        "summary": "AvePoint and Kyndryl point to the same operational gap: agents are entering routine work before companies have redesigned jobs, controls, and worker support. AI adoption becomes less a software rollout than a management test of who directs the work and who absorbs the ambiguity.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "AI agents are already becoming part of routine employee workflows.",
+          "Companies are moving faster on deployment than on role design, governance, and worker preparation.",
+          "The human risk is ambiguity: employees are asked to collaborate with agents before the job has been clearly redefined."
+        ]
+      },
+      {
+        "title": "Ahead of BRICS forum, BMS outlines AI agenda centred on labour protections",
+        "url": "https://www.business-standard.com/technology/artificial-intelligence/ahead-of-brics-forum-bms-outlines-ai-agenda-centred-on-labour-protections-126070101176_1.html",
+        "source": "business-standard.com",
+        "published": "2026-07-01T06:40:00+00:00",
+        "summary": "BMS is bringing workplace surveillance, automation-linked job loss, platform-worker rights, and ethical AI into the BRICS labor conversation. The story makes the institutional stakes explicit: AI is not only changing tasks, it is forcing governments and unions to define what protection means when management systems become more automated.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "BMS is centering labor protections, surveillance, job loss, and platform-worker rights ahead of the BRICS Trade Union Forum.",
+          "The agenda treats AI governance as a worker-rights issue, not just a competitiveness issue.",
+          "For TGR, this is the policy side of the same workplace redesign pressure showing up inside companies."
+        ]
+      },
+      {
+        "title": "AI Does Not Decide The Future Of Jobs. Organizations Do",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/07/01/ai-does-not-decide-the-future-of-jobs-organizations-do/",
+        "source": "forbes.com",
+        "published": "2026-07-01T05:45:00+00:00",
+        "summary": "Forbes puts responsibility back on organizations instead of treating AI as an autonomous labor-market force. The useful signal is that workforce readiness, adaptability, and job design are choices leaders make before employees experience them as disruption.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a442534b7d5da8de0b45c9a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The piece argues that organizations, not AI in the abstract, decide how jobs are redesigned.",
+          "Workforce readiness and adaptability become management responsibilities, not individual slogans.",
+          "The story gives today's issue its decision point: institutions can either prepare people or let automation pressure define the transition."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-07-01-mba-demand-meets-microsoft-ai-cuts": {
+    "slug": "2026-07-01-mba-demand-meets-microsoft-ai-cuts",
+    "date": "2026-07-01",
+    "title": "MBA Demand Meets Microsoft AI Cuts",
+    "pattern": "Today's five stories show the labor market splitting between credentials, agents, and human data. GMAC says MBA graduates are still in demand, while Microsoft prepares cuts in sales, consulting, and Xbox as AI spending rises; AvePoint and Kyndryl show agents arriving faster than jobs can be redesigned. PwC's two-track market and the VLGE-Protege training-data deal make the daily tension plain: institutions still want human judgment, but they are also turning behavior, adaptability, and AI fluency into the new price of staying valuable.",
+    "stages": [
+      "Unhook Identity",
+      "Start Creating",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4291319d4dff266b92597b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "MBA Jobs Under Threat? New Report Says MBA Graduates Are Still in High Demand Despite AI",
+        "url": "https://thesiliconreview.com/2026/07/mba-jobs-graduates-demand-ai-gmac",
+        "source": "thesiliconreview.com",
+        "published": "2026-07-01T03:48:00+00:00",
+        "summary": "GMAC's survey complicates the easy story that AI simply erases business careers. Employers still want MBA graduates, but the value of the degree now depends on whether those graduates can lead through AI-shaped change instead of defending yesterday's role map.",
+        "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview-%20copy_2026-07-01_10-41-24.webp",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "GMAC reports continued employer demand for MBA graduates despite anxiety about AI disruption.",
+          "The story separates durable leadership capability from the assumption that a credential alone protects a career.",
+          "For TGR, the useful question is what human judgment business schools now have to prove."
+        ]
+      },
+      {
+        "title": "Companies roll out AI agents faster than they can redesign jobs: reports",
+        "url": "https://www.theedgesingapore.com/digitaledge/artificial-intelligence/companies-roll-out-ai-agents-faster-they-can-redesign-jobs",
+        "source": "theedgesingapore.com",
+        "published": "2026-06-30T20:30:00+00:00",
+        "summary": "AvePoint and Kyndryl point to the same operational gap: agents are entering routine work before organizations have redesigned roles, controls, and worker support. That makes AI adoption less a tools rollout than a management and identity problem.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "AI agents are already becoming part of routine employee workflows.",
+          "Companies are moving faster on deployment than on job design, governance, and worker preparation.",
+          "The human risk is ambiguity: people are asked to collaborate with agents before knowing what changed in their job."
+        ]
+      },
+      {
+        "title": "The Future Of AI Training Data Is Human. The Question Is How",
+        "url": "https://www.forbes.com/sites/cortneyharding/2026/06/29/the-future-of-ai-training-data-is-human-the-question-is-how/",
+        "source": "forbes.com",
+        "published": "2026-06-29T08:40:00+00:00",
+        "summary": "VLGE and Protege are treating natural human behavior in virtual environments as training data. The story shifts human value from output alone to the behavioral patterns, context, and judgment that AI systems still need to learn from.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4291319d4dff266b92597b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "The VLGE-Protege partnership uses human behavior in virtual environments to build AI training sets.",
+          "Human activity becomes both source material and economic input for new AI systems.",
+          "For creators and workers, the stake is who captures value when lived behavior becomes machine-learning infrastructure."
+        ]
+      },
+      {
+        "title": "AI creating two-track job market, PwC survey finds",
+        "url": "https://www.royalgazette.com/international-business/business/article/20260701/ai-creating-two-track-job-market-pwc-survey-finds/",
+        "source": "royalgazette.com",
+        "published": "2026-07-01T10:57:00+00:00",
+        "summary": "PwC's jobs-barometer frame makes AI exposure a divider between companies and workers. The practical signal is not that every job changes at the same speed; it is that people in AI-exposed environments face a different value test than people in slower-moving sectors.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "PwC finds a widening divide between companies and roles more exposed to AI and those less exposed.",
+          "The two-track market means opportunity and pressure are rising unevenly rather than universally.",
+          "TGR's lens is portability: workers need value that travels across the faster and slower tracks."
+        ]
+      },
+      {
+        "title": "Microsoft plans thousands of job cuts, impacting less than 2.5% of workforce",
+        "url": "https://www.businessinsider.com/microsoft-job-cuts-layoffs-sales-consulting-2026-6",
+        "source": "businessinsider.com",
+        "published": "2026-06-30T23:08:00.188000+00:00",
+        "summary": "Microsoft's planned cuts put a concrete company name on the transition cost of AI investment. Sales, consulting, and Xbox are not abstract categories; they are familiar work identities being re-priced while the company keeps pouring capital into AI.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Microsoft is planning thousands of cuts, reportedly affecting sales, consulting, and Xbox.",
+          "The cuts sit alongside continued AI investment, making the tradeoff visible inside a leading AI platform company.",
+          "The human stake is direct: old roles can shrink even inside firms creating the next layer of AI work."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-06-30-serkis-capcut-human-control-test": {
+    "slug": "2026-06-30-serkis-capcut-human-control-test",
+    "date": "2026-06-30",
+    "title": "Serkis, CapCut, And The Human Control Test",
+    "pattern": "Today's five stories move the fight over AI from jobs alone into control over creation. Andy Serkis argues human creativity must evolve alongside AI, CapCut packages short-drama production into a single AI dashboard, and ZDNet treats agents as colleagues people must learn to direct. The harder stakes sit underneath: Memeburn asks who pays to retrain millions, while VLGE and Protege turn human behavior inside virtual worlds into training data, making human judgment both the product and the scarce skill.",
+    "stages": [
+      "Start Creating",
+      "Reclaim Value",
+      "Unhook Identity",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://www.zdnet.com/a/img/resize/e21ae17f217fc6ddbd281a9b92c2029448ae9afd/2026/06/29/e43bae81-9868-4e20-b973-02744ecfcaa1/gettyimages-1165984977-cropped.jpg?auto=webp&fit=crop&height=675&width=1200",
+    "stories": [
+      {
+        "title": "Andy Serkis on AI and the Future of Storytelling: Human Creativity Will Evolve Alongside It",
+        "url": "https://geektyrant.com/news/andy-serkis-on-ai-and-the-future-of-storytelling-human-creativity-will-evolve-alongside-it",
+        "source": "geektyrant.com",
+        "published": "2026-06-29T14:30:00+00:00",
+        "summary": "Andy Serkis frames AI in entertainment as a creative evolution rather than a simple replacement story. The useful signal is agency: creators still have to decide how the tools are used, what human performance contributes, and where authorship stays anchored.",
+        "imageUrl": "http://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/51ce6099e4b0d911b4489b79/6a32d18ad46573512daf1b73/1782768674845/Andy+Serkis+on+AI+and+the+Future+of+Storytelling-+%E2%80%9CHuman+Creativity+Will+Evolve+Alongside+It%E2%80%9D.jpg?format=1500w",
+        "stages": [
+          "Start Creating",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Serkis puts the emphasis on how creators choose to use AI, not just what the technology can generate.",
+          "The entertainment stake is control over performance, authorship, and creative direction as AI enters production.",
+          "For The Great Repurpose, the story points toward creative agency as a skill people can practice."
+        ]
+      },
+      {
+        "title": "AI Reskilling 2026: Who's Actually Paying to Retrain Millions?",
+        "url": "https://memeburn.com/ai-reskilling-2026-who-pays-to-retrain-workers/",
+        "source": "memeburn.com",
+        "published": "2026-06-28T01:25:06+00:00",
+        "summary": "Memeburn turns reskilling from a motivational slogan into a funding question. If workers need new AI skills at mass scale, the real fight is whether employers, governments, schools, or individuals absorb the cost of becoming employable again.",
+        "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The story names the reskilling gap as a practical bill, not just a personal-growth challenge.",
+          "Workers are being asked to adapt before institutions have settled who pays for the transition.",
+          "The human stake is whether people can rebuild value without being left to self-fund the whole shift."
+        ]
+      },
+      {
+        "title": "The Future Of AI Training Data Is Human. The Question Is How",
+        "url": "https://www.forbes.com/sites/cortneyharding/2026/06/29/the-future-of-ai-training-data-is-human-the-question-is-how/",
+        "source": "forbes.com",
+        "published": "2026-06-29T08:40:00+00:00",
+        "summary": "Forbes points to a partnership between VLGE and Protege using human behavior in virtual environments as AI training data. That makes the value question sharper: human action, taste, and context become raw material for systems that may later automate parts of creation.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4291319d4dff266b92597b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "VLGE and Protege are treating natural human behavior in virtual worlds as training signal.",
+          "The story shifts attention from machine output to the human data and context that make output possible.",
+          "The Great Repurpose angle is ownership: people need to understand when their behavior becomes the product."
+        ]
+      },
+      {
+        "title": "CapCut Introduces Director Mode to Help Creators Produce AI Short Dramas From One Creative Dashboard",
+        "url": "https://markets.businessinsider.com/news/stocks/capcut-introduces-director-mode-to-help-creators-produce-ai-short-dramas-from-one-creative-dashboard-1036281241",
+        "source": "markets.businessinsider.com",
+        "published": "2026-06-28T13:30:00+00:00",
+        "summary": "CapCut's Director Mode shows AI creation moving into bundled production dashboards. The opportunity is faster output, but the human advantage shifts upstream into taste, story judgment, direction, and deciding what deserves to be made.",
+        "imageUrl": "https://ml.globenewswire.com/Resource/Download/ff9b16b9-9b21-4120-8733-7105417e9851/c1.png",
+        "stages": [
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "CapCut is packaging AI short-drama production into a single creative workflow.",
+          "The tool compresses execution, which raises the value of direction, taste, and story selection.",
+          "Creators are being pushed to act less like operators and more like directors of automated systems."
+        ]
+      },
+      {
+        "title": "AI Agents Are Your New Colleagues - How To Get The Best Results",
+        "url": "https://www.zdnet.com/article/how-to-create-great-results-with-your-agentic-work-colleagues-in-the-autonomous-business/",
+        "source": "zdnet.com",
+        "published": "2026-06-29T19:00:00+00:00",
+        "summary": "ZDNet treats agentic AI as a workplace colleague rather than a background tool. The practical shift is that people need to learn delegation, supervision, and feedback with systems that can act, not just prompt craft with systems that answer.",
+        "imageUrl": "https://www.zdnet.com/a/img/resize/e21ae17f217fc6ddbd281a9b92c2029448ae9afd/2026/06/29/e43bae81-9868-4e20-b973-02744ecfcaa1/gettyimages-1165984977-cropped.jpg?auto=webp&fit=crop&height=675&width=1200",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Agentic systems are being framed as collaborators that require clear direction and management.",
+          "The skill shift is from using AI as a tool to coordinating work with autonomous counterparts.",
+          "Human value moves toward judgment, delegation, accountability, and knowing when the agent is wrong."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-06-29-ai-layoffs-push-reskilling-onto-graduates": {
+    "slug": "2026-06-29-ai-layoffs-push-reskilling-onto-graduates",
+    "date": "2026-06-29",
+    "title": "AI Layoffs Push Reskilling Onto Graduates",
+    "pattern": "Today's five stories pin the cost of AI adaptation on workers before institutions have settled who pays. Memeburn tracks AI-cited cuts and the unpaid reskilling bill, TNO's Dutch study points to higher mental load after routine work is automated, and Microsoft plus South African graduate coverage show students being told to become AI-fluent before the first job stabilizes. The tension is no longer only displacement; it is whether companies, schools, and governments absorb any of the transition cost or leave workers to self-fund the new baseline.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose"
+    ],
+    "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-layoffs-2026_-major-tech-firms-cutting-jobs-as-AI-rises.jpg",
+    "stories": [
+      {
+        "title": "AI layoffs 2026: major tech firms cutting jobs as AI rises - Memeburn",
+        "url": "https://memeburn.com/ai-layoffs-2026-major-tech-firms-cutting-jobs-as-ai-rises/",
+        "source": "memeburn.com",
+        "published": "2026-06-27T12:29:25+00:00",
+        "summary": "Memeburn tracks 2026 tech layoffs where employers cited AI, turning displacement from an abstract forecast into a visible management choice. The story matters because workers in South Africa and beyond are being asked to separate their value from job titles that companies can now redesign or remove.",
+        "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-layoffs-2026_-major-tech-firms-cutting-jobs-as-AI-rises.jpg",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The tracker names major tech firms cutting jobs while pointing to AI investment or automation pressure.",
+          "The South African framing widens the story beyond Silicon Valley and makes the risk local for workers and employers.",
+          "The core TGR signal is identity pressure: people need portable value when the job wrapper changes."
+        ]
+      },
+      {
+        "title": "AI Reskilling 2026: Who's Actually Paying to Retrain Millions? - Memeburn",
+        "url": "https://memeburn.com/ai-reskilling-2026-who-pays-to-retrain-workers/",
+        "source": "memeburn.com",
+        "published": "2026-06-28T01:25:06+00:00",
+        "summary": "Memeburn turns the reskilling conversation into a funding question: if millions of workers need new AI-era skills, someone has to pay for the time, training, and transition. That makes reskilling less like personal enrichment and more like a contested bill created by institutional redesign.",
+        "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The piece frames AI reskilling as a race against the clock rather than a nice-to-have workplace benefit.",
+          "It highlights the gap between large forecasts about worker retraining and unclear responsibility for funding it.",
+          "The value question shifts from whether workers should adapt to whether employers and public institutions share the cost."
+        ]
+      },
+      {
+        "title": "One-third of workers expect AI to make their jobs mentally harder",
+        "url": "https://nltimes.nl/2026/06/27/one-third-workers-expect-ai-make-jobs-mentally-harder",
+        "source": "nltimes.nl",
+        "published": "2026-06-27T06:15:00+00:00",
+        "summary": "A TNO study reported by NL Times shows many Dutch workers expect AI to leave the job intact but make the remaining work mentally heavier. That is a quieter version of disruption: routine tasks disappear, complexity concentrates, and the human role becomes harder to carry.",
+        "imageUrl": "https://nltimes.nl/sites/nltimes.nl/files/styles/news_article_full_desktop_2x/public/2021-11/Depositphotos_33035107_L.jpg?h=56d0ca2e",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Most workers surveyed expect AI to leave their jobs largely unchanged, but a substantial share expects higher mental pressure.",
+          "The pressure comes from automating routine work while leaving more complex judgment and coordination behind.",
+          "The TGR signal is that keeping the job title may still mean losing the old rhythm, load, and identity of the work."
+        ]
+      },
+      {
+        "title": "Microsoft's AI Education Lead Says Job Fear Is Real. Here's The Fix",
+        "url": "https://www.forbes.com/sites/danfitzpatrick/2026/06/22/microsofts-ai-education-lead-says-job-fear-is-real-heres-the-fix/",
+        "source": "forbes.com",
+        "published": "2026-06-22T03:58:00+00:00",
+        "summary": "Forbes profiles Justin Spelhaug and Microsoft's $4 billion education AI effort, with a clear admission that student job fear is rational. The answer offered is not only technical training; it is helping learners develop the human-centered judgment that can travel across a shifting labor market.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Find Your Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Microsoft's education AI lead treats student anxiety about jobs as rational, not naive.",
+          "The proposed fix centers on human skills and purpose, not simply racing to learn every new tool.",
+          "Education is being pulled into the same transition cost question facing workers and employers."
+        ]
+      },
+      {
+        "title": "AI is reshaping the workplace faster than graduates expect",
+        "url": "https://mg.co.za/thought-leader/2026-06-29-ai-is-reshaping-the-workplace-faster-than-graduates-expect/",
+        "source": "mg.co.za",
+        "published": "2026-06-29T01:40:00+00:00",
+        "summary": "Mail & Guardian argues that South African graduates are entering a market where AI fluency is already becoming a baseline expectation. The human challenge is to combine digital literacy with communication, adaptability, and judgment before the first rung of the career ladder has settled.",
+        "imageUrl": "https://images.newsteam.io/image/400/GbSdY1y2zcq1fMohHtmH9QnTtyN7bhQsYcFVgx6TJnh35A44x7JsTVRUhEK9adcE116EMznrCM8ouKDaT5tr2fBdc3fAwX7579rGYZsJJQUdG7YM6be6q2NzG9f4XTGBLDWP32bimaHpxfEFcC5wh",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Global AI investment is raising the baseline for graduates before many have stable work experience.",
+          "The article emphasizes AI fluency plus human-centered skills as the new employability mix.",
+          "For TGR, the career starting line is being redrawn around proof of value, not just credentials."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-06-28-ai-layoffs-expose-reskilling-bill": {
+    "slug": "2026-06-28-ai-layoffs-expose-reskilling-bill",
+    "date": "2026-06-28",
+    "title": "AI Layoffs Expose Reskilling Bill",
+    "pattern": "Today's five stories put the same bill on the table from different angles: companies are breaking jobs into tasks, using AI investment to justify cuts, and then asking workers to prove they can adapt fast enough. Forbes frames the redesign problem inside roles, while Memeburn and eWeek name the sharper human stake: Meta, Robinhood, Walmart, Oracle, South African workers, and anxious professionals are all caught between displacement headlines and the unanswered question of who pays for retraining.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg",
+    "stories": [
+      {
+        "title": "Before AI Replaces Jobs, Leaders Need To Classify The Work Inside Them",
+        "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/06/26/before-ai-replaces-jobs-leaders-need-to-classify-the-work-inside-them/",
+        "source": "forbes.com",
+        "published": "2026-06-26T04:00:00+00:00",
+        "summary": "Forbes argues that leaders cannot make serious AI workforce decisions by treating a job as one indivisible thing. The work has to be classified at the task level so organizations can see what should be automated, augmented, protected, or redesigned around human judgment.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The story shifts the replacement conversation from whole jobs to the work inside them.",
+          "Human-AI hybrid teams require clearer boundaries around task ownership and accountability.",
+          "The TGR signal is that identity has to detach from a job wrapper before the role gets redesigned."
+        ]
+      },
+      {
+        "title": "AI layoffs 2026: major tech firms cutting jobs as AI rises - Memeburn",
+        "url": "https://memeburn.com/ai-layoffs-2026-major-tech-firms-cutting-jobs-as-ai-rises/",
+        "source": "memeburn.com",
+        "published": "2026-06-27T12:29:25+00:00",
+        "summary": "Memeburn tracks 2026 tech layoffs where employers have tied cuts to AI, with a specific warning for South African workers and companies watching the pattern spread. The piece makes the abstraction concrete: AI is already part of the explanation for headcount decisions.",
+        "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-layoffs-2026_-major-tech-firms-cutting-jobs-as-AI-rises.jpg",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The layoff story is becoming a recurring corporate narrative, not a distant scenario.",
+          "South African workers and firms are framed as needing to watch global AI restructuring closely.",
+          "For TGR, the pressure point is how people stay legible when employers redefine roles around AI."
+        ]
+      },
+      {
+        "title": "Why AI Anxiety Is Making Workers Question Their Future",
+        "url": "https://www.forbes.com/sites/carolinecastrillon/2026/06/26/why-ai-anxiety-is-making-workers-question-their-future/",
+        "source": "forbes.com",
+        "published": "2026-06-26T09:46:00+00:00",
+        "summary": "Forbes names the emotional side of the workforce shift: professionals are not just learning tools, they are questioning whether their future at work still makes sense. The useful move is staying relevant without pretending everyone can simply start over.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3eac52a1a95e441dd9433e/0x0.jpg?format=jpg&crop=1319,742,x0,y0,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "AI anxiety is showing up as a work-identity problem, not only a skills problem.",
+          "The piece emphasizes staying relevant without requiring a total career reset.",
+          "The human stake is confidence: workers need a clearer story of value before the market rewrites it."
+        ]
+      },
+      {
+        "title": "AI Reskilling 2026: Who's Actually Paying to Retrain Millions? - Memeburn",
+        "url": "https://memeburn.com/ai-reskilling-2026-who-pays-to-retrain-workers/",
+        "source": "memeburn.com",
+        "published": "2026-06-28T01:25:06+00:00",
+        "summary": "Memeburn turns the reskilling conversation into a funding question. If millions of workers need new AI-era capabilities by 2027, the central issue is not whether retraining sounds good; it is whether companies, governments, or workers are actually carrying the cost.",
+        "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The story frames reskilling as a race against the clock for millions of workers.",
+          "It asks who pays for the transition when companies benefit from AI-driven restructuring.",
+          "For TGR, reclaiming value means building portable capability without letting institutions off the hook."
+        ]
+      },
+      {
+        "title": "2026 Layoffs Tracker: Meta, Robinhood, Walmart, and Oracle Lead AI-Driven Job Cuts",
+        "url": "https://www.eweek.com/news/tech-layoffs-ai-investment-2026/",
+        "source": "eweek.com",
+        "published": "2026-06-26T17:51:42.563000+00:00",
+        "summary": "eWeek's tracker ties major company cuts to heavy AI investment and names the corporate accountability problem directly. Meta, Robinhood, Walmart, and Oracle become examples of the same tension: automation budgets are rising while workers absorb the uncertainty.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The tracker connects layoffs, AI investment, over-hiring, and automation pressure.",
+          "Meta, Robinhood, Walmart, and Oracle make the pattern visible across recognizable employers.",
+          "The TGR signal is that discovering AI's power also means seeing who bears the transition cost."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-06-27-ai-job-cuts-force-task-level-redesign": {
+    "slug": "2026-06-27-ai-job-cuts-force-task-level-redesign",
+    "date": "2026-06-27",
+    "title": "AI Job Cuts Force Task-Level Redesign",
+    "pattern": "Today's five stories show AI pressure moving from broad workforce anxiety into task-level redesign. Forbes argues leaders need to classify the work inside jobs, AI builders are openly funding research into displacement, and Meta, Robinhood, Walmart, and Oracle appear in a layoff tracker tied to AI investment. HR Dive and Dell point to the next human stake: entry-level workers and enterprise teams will be judged by how well they supervise, direct, and redesign work with agents in the loop.",
+    "stages": [
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "Before AI Replaces Jobs, Leaders Need To Classify The Work Inside Them",
+        "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/06/26/before-ai-replaces-jobs-leaders-need-to-classify-the-work-inside-them/",
+        "source": "forbes.com",
+        "published": "2026-06-26T04:00:00+00:00",
+        "summary": "Forbes frames the AI workforce question as a classification problem, not a simple headcount forecast. Leaders need to break roles into tasks and decide what should be done by people, AI systems, or hybrid teams.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The story pushes leaders to inspect the work inside a job instead of treating the job title as the unit of change.",
+          "Human-AI hybrid teams make role design, task ownership, and accountability more important than blanket automation claims.",
+          "For TGR, the signal is that identity has to separate from the job wrapper before the organization redraws it."
+        ]
+      },
+      {
+        "title": "The People Who Build AI Just Admitted It Will Cut Jobs At Scale",
+        "url": "https://www.forbes.com/sites/terdawn-deboe/2026/06/26/the-people-who-build-ai-just-admitted-it-will-cut-jobs-at-scale/",
+        "source": "forbes.com",
+        "published": "2026-06-26T08:25:00+00:00",
+        "summary": "Forbes reports that AI's own builders are funding research into the jobs their tools may displace. The small business question becomes sharper: what can be automated, what should stay human, and who gets to make that call?",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3e90a7a62c2be2656d5939/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "The displacement conversation is no longer only coming from critics; it is being acknowledged inside the AI industry.",
+          "Small businesses face practical choices about which tasks become automated and which human relationships still create value.",
+          "The creator move is to redesign the work before the market reduces it to a cost-cutting exercise."
+        ]
+      },
+      {
+        "title": "2026 Layoffs Tracker: Meta, Robinhood, Walmart, and Oracle Lead AI-Driven Job Cuts",
+        "url": "https://www.eweek.com/news/tech-layoffs-ai-investment-2026/",
+        "source": "eweek.com",
+        "published": "2026-06-26T17:51:42.563000+00:00",
+        "summary": "eWeek's tracker turns AI-driven restructuring into a concrete list of companies and consequences. Meta, Robinhood, Walmart, and Oracle make the workforce shift visible as a capital allocation story, not just a technology adoption story.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The tracker links layoffs to heavy AI investment, raising the accountability question behind corporate automation claims.",
+          "Big-company examples make the labor impact easier to see than abstract productivity language does.",
+          "The TGR signal is that people need a portable value story when institutional restructuring becomes the default."
+        ]
+      },
+      {
+        "title": "Will AI create new entry-level jobs?",
+        "url": "https://www.hrdive.com/news/will-ai-create-new-entry-level-jobs/823871/",
+        "source": "hrdive.com",
+        "published": "2026-06-26T08:24:00+00:00",
+        "summary": "HR Dive looks at the entry-level problem from the other side of displacement: new work may exist, but it will ask people to supervise AI systems sooner. The first rung of a career is starting to look less like task execution and more like system oversight.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "HR leaders may need early-career workers who can monitor and direct AI systems, not just complete narrow starter tasks.",
+          "The story makes the new-entry-level question specific: what does apprenticeship look like when AI handles more execution?",
+          "For workers, the opportunity is to learn supervision, judgment, and workflow design earlier."
+        ]
+      },
+      {
+        "title": "Autonomous agents are redefining work and jobs - SiliconANGLE",
+        "url": "https://siliconangle.com/2026/06/24/dell-ai-autonomous-agents-jobs-aifactoriesdatacenters/",
+        "source": "siliconangle.com",
+        "published": "2026-06-24T15:31:02+00:00",
+        "summary": "SiliconANGLE reports on Dell's view that autonomous agents are becoming part of enterprise operating reality. The story connects job redesign to infrastructure, AI factories, data centers, and capital planning.",
+        "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg",
+        "stages": [
+          "Discover AI's Power",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Dell's agent framing shows AI moving from experimental tools into enterprise systems and operating models.",
+          "Job redesign is tied to CapEx strategy and infrastructure choices, not just individual productivity habits.",
+          "The human question is who understands enough of the system to direct agents responsibly."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-06-26-jobs-split-into-human-and-ai-work": {
+    "slug": "2026-06-26-jobs-split-into-human-and-ai-work",
+    "date": "2026-06-26",
+    "title": "Jobs Split Into Human And AI Work",
+    "pattern": "Today's five stories show the job itself being taken apart. Dell is planning for autonomous agents inside enterprise operations, Forbes is telling leaders to classify the tasks inside roles, and Goldman Sachs is arguing the disruption will be uneven rather than apocalyptic. The human stakes are clearest in the reskilling story and Roberto Blake's VidCon argument: people have to prove value at the task, judgment, and voice level, not just through the old job title.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Start Creating",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://helios-i.mashable.com/imagery/articles/02Wagdh5MgvJQDkCMBsPbFd/hero-image.fill.size_1200x675.v1782433043.jpg",
+    "stories": [
+      {
+        "title": "Autonomous agents are redefining work and jobs",
+        "url": "https://siliconangle.com/2026/06/24/dell-ai-autonomous-agents-jobs-aifactoriesdatacenters/",
+        "source": "siliconangle.com",
+        "published": "2026-06-24T15:31:02+00:00",
+        "summary": "Dell's AI infrastructure story is not just about faster data centers. It points to a work system where autonomous agents become part of operations, which means people need to understand where authority, accountability, and judgment sit when software starts doing more of the work.",
+        "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg",
+        "stages": [
+          "Discover AI's Power",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Dell is framing autonomous agents as part of enterprise infrastructure, not just a productivity experiment.",
+          "The work shift is moving from individual tool use toward operating models where agents take on real tasks.",
+          "The TGR question is who directs the agentic work and what human accountability remains visible."
+        ]
+      },
+      {
+        "title": "Before AI Replaces Jobs, Leaders Need To Classify The Work Inside Them",
+        "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/06/26/before-ai-replaces-jobs-leaders-need-to-classify-the-work-inside-them/",
+        "source": "forbes.com",
+        "published": "2026-06-26T04:00:00+00:00",
+        "summary": "Forbes names the practical management move underneath the AI jobs debate: stop treating roles as indivisible containers. Once leaders classify the work inside jobs, people can see which tasks are automatable, which need human judgment, and where they must reclaim value.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The article argues that hybrid human-AI teams require task-level role design.",
+          "Classifying work separates a person's value from the old job wrapper around them.",
+          "This is the operational version of unhooking identity from a title."
+        ]
+      },
+      {
+        "title": "AI unlikely to trigger 'Job Apocalypse', it may create uneven workforce disruption: Goldman Sachs Report",
+        "url": "https://www.thehindubusinessline.com/info-tech/ai-unlikely-to-trigger-job-apocalypse-it-may-create-uneven-workforce-disruption-goldman-sachs-report/article71149349.ece",
+        "source": "thehindubusinessline.com",
+        "published": "2026-06-26T05:31:37+00:00",
+        "summary": "Goldman Sachs pushes against the simple apocalypse narrative while still warning that disruption will not land evenly. That matters because the Great Repurpose is not a single event; it is a rolling redistribution of risk, opportunity, and pressure across different kinds of work.",
+        "imageUrl": "https://bl-i.thgim.com/public/incoming/kh8tmf/article71149367.ece/alternates/LANDSCAPE_1200/IMG_bl03_Think2_Work_2_1_9SCOF6EL.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "Goldman Sachs expects AI to reshape labor markets without producing one uniform jobs collapse.",
+          "Uneven disruption means workers need portable capability before their specific role is pressured.",
+          "The opportunity side belongs to people who can create new value as old task bundles shift."
+        ]
+      },
+      {
+        "title": "Reclaim your edge: Mastering new skills at any career stage",
+        "url": "https://www.bizcommunity.com/article/reclaim-your-edge-mastering-new-skills-at-any-career-stage-519240a",
+        "source": "bizcommunity.com",
+        "published": "2026-06-26T04:04:00+00:00",
+        "summary": "The reskilling story brings the signal down to mid-career professionals who can feel their old edge aging out. The move is not to mourn expertise, but to translate it into new skills, better judgment, and a more current claim on value.",
+        "imageUrl": "https://biz-file.com/c/2606/814811.png?5",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The article focuses on professionals in their 40s, 50s, and beyond facing skill obsolescence.",
+          "The strongest response is to convert experience into current capability instead of defending the past.",
+          "This is the personal side of the broader task-level redesign happening inside organizations."
+        ]
+      },
+      {
+        "title": "Can AI level the playing field for working class content creators?",
+        "url": "https://mashable.com/life/ai-working-class-content-creator-roberto-blake",
+        "source": "mashable.com",
+        "published": "2026-06-26T00:45:40+00:00",
+        "summary": "At VidCon, Roberto Blake's case for AI centers on working-class creators and the possibility of wider access. The important tension is not whether AI makes content cheaper; it is whether people who lacked production leverage can use it to make their human value more visible.",
+        "imageUrl": "https://helios-i.mashable.com/imagery/articles/02Wagdh5MgvJQDkCMBsPbFd/hero-image.fill.size_1200x675.v1782433043.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "Roberto Blake argues that AI can help working-class creators compete while still centering human value.",
+          "The creator economy version of the shift is about leverage, access, and voice.",
+          "AI lowers execution barriers, but the durable advantage is still point of view and trust."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-06-25-autonomous-agents-redraw-career-value": {
     "slug": "2026-06-25-autonomous-agents-redraw-career-value",
     "date": "2026-06-25",
