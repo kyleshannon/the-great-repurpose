@@ -3,6 +3,31 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-04-cisco-agents-meet-human-dignity-pushback",
+    "date": "2026-07-04",
+    "title": "Cisco Agents Meet Human Dignity Pushback",
+    "pattern": "Today's five stories show AI pressure landing on the meaning of professional judgment, not just headcount. OK Diario names translators, writers, consultants, call center agents, and other language workers as exposed; Forbes answers with education-to-job transition systems and a healthcare redesign that protects some roles while reshaping others. Baptist News brings the dignity fight into HR through religious AI objections, while Cisco's 90,000-employee agent rollout makes the daily tension concrete: institutions are normalizing AI participation faster than workers, schools, and conscience policies can define what must remain human.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://baptistnews.com/wp-content/uploads/2026/07/shutterstock_2229125163.jpg"
+  },
+  {
+    "slug": "2026-07-03-healthcare-ai-anxiety-tests-credential-confidence",
+    "date": "2026-07-03",
+    "title": "Healthcare AI Anxiety Tests Credential Confidence",
+    "pattern": "Today's five stories show AI turning job security into a contest over what still counts as protected human judgment. Forbes frames healthcare disruption as role-by-role rather than wholesale replacement, GMAC and the Freedom Institute sell credentials and AI-ready education as shields, and BMS is taking worker surveillance and platform protections to BRICS while the jobs-report story argues value is shifting toward qualities that resist commoditization.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a44260badfeba28839f0a92/0x0.jpg?format=jpg&crop=1627,1084,x0,y0,safe&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-07-02-mba-demand-meets-agent-labor-fight",
     "date": "2026-07-02",
     "title": "MBA Demand Meets Agent Labor Fight",
@@ -264,6 +289,204 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-04-cisco-agents-meet-human-dignity-pushback": {
+    "slug": "2026-07-04-cisco-agents-meet-human-dignity-pushback",
+    "date": "2026-07-04",
+    "title": "Cisco Agents Meet Human Dignity Pushback",
+    "pattern": "Today's five stories show AI pressure landing on the meaning of professional judgment, not just headcount. OK Diario names translators, writers, consultants, call center agents, and other language workers as exposed; Forbes answers with education-to-job transition systems and a healthcare redesign that protects some roles while reshaping others. Baptist News brings the dignity fight into HR through religious AI objections, while Cisco's 90,000-employee agent rollout makes the daily tension concrete: institutions are normalizing AI participation faster than workers, schools, and conscience policies can define what must remain human.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://baptistnews.com/wp-content/uploads/2026/07/shutterstock_2229125163.jpg",
+    "stories": [
+      {
+        "title": "The list of jobs most at risk from artificial intelligence is surprising, as it doesn't start with industrial robots, but rather with translators, writers, historians, call center agents, consultants, and other professionals who make their living through language",
+        "url": "https://okdiario.com/techy/en/your-college-degree-wont-shield-you-from-ai-these-10-white-collar-jobs-may-be-gone-by-2030/5900/",
+        "source": "okdiario.com",
+        "published": "2026-07-03T20:45:00+00:00",
+        "summary": "OK Diario frames AI risk around language-heavy professional work, from translators and writers to consultants and call center agents. The useful signal is not that every role disappears, but that credentials alone no longer protect people when the core output of the job is text, explanation, or routine expertise.",
+        "imageUrl": "https://okdiario.com/techy/en/wp-content/uploads/2026/07/ai-job-market-impact-2030.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "The risk list centers on white-collar language work rather than factory automation.",
+          "College degrees are presented as weaker shields when AI can imitate routine knowledge work.",
+          "The human move is to separate identity from the old role and locate value beyond repeatable output."
+        ]
+      },
+      {
+        "title": "Connect Education To Jobs And Create An AI Workforce Transition Plan",
+        "url": "https://www.forbes.com/sites/paulocarvao/2026/07/01/connect-education-to-jobs-and-create-an-ai-workforce-transition-system/",
+        "source": "forbes.com",
+        "published": "2026-07-01T04:29:00+00:00",
+        "summary": "Forbes argues that AI workforce transition needs more than generic retraining slogans. The P-TECH example points toward a tighter bridge between schools, employers, credentials, and actual jobs, which is exactly where institutional responsibility has to show up if adaptation is not left entirely to individuals.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "The piece calls for a workforce transition system, not isolated reskilling advice.",
+          "P-TECH is used as a model for connecting education, employers, and credentials to real jobs.",
+          "The story shifts the burden from individual panic toward coordinated pathways into changed work."
+        ]
+      },
+      {
+        "title": "Will AI Replace Healthcare Jobs? Not How You May Think",
+        "url": "https://www.forbes.com/sites/jessepines/article/will-ai-replace-healthcare-jobs/",
+        "source": "forbes.com",
+        "published": "2026-07-03T04:14:00+00:00",
+        "summary": "Forbes treats healthcare disruption as uneven role redesign rather than a clean replacement story. That matters because healthcare is full of licensed trust, human presence, administrative burden, and clinical judgment, so the real question is which tasks become automated and which human responsibilities become more valuable.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a44260badfeba28839f0a92/0x0.jpg?format=jpg&crop=1627,1084,x0,y0,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Healthcare AI disruption is framed role by role, not as blanket job replacement.",
+          "Some work becomes more exposed while trust, care, and judgment remain harder to automate.",
+          "The signal is a redesign of responsibility inside jobs, not a simple before-and-after labor market."
+        ]
+      },
+      {
+        "title": "Conscientious AI objectors: HR's role in keeping workplaces human",
+        "url": "https://baptistnews.com/article/conscientious-ai-objectors-hrs-role-in-keeping-workplace-human/",
+        "source": "baptistnews.com",
+        "published": "2026-07-02T22:47:58+00:00",
+        "summary": "Baptist News brings AI adoption into the territory of conscience, dignity, and religious accommodation. If employees begin objecting to AI use on moral or spiritual grounds, HR is no longer just managing software rollout; it is deciding how much room work leaves for human conviction.",
+        "imageUrl": "https://baptistnews.com/wp-content/uploads/2026/07/shutterstock_2229125163.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The story connects workplace AI policy to Pope Leo XIV's warning about human dignity.",
+          "HR teams may face religious accommodation requests from employees who object to using AI tools.",
+          "The human stake is whether efficiency mandates can coexist with conscience and dignity at work."
+        ]
+      },
+      {
+        "title": "Cisco AI Agents Are Coming for Every Employee. Is This Progress or the End of Human Judgment at Work?",
+        "url": "https://thesiliconreview.com/2026/07/cisco-ai-agents-90000-employees-productivity",
+        "source": "thesiliconreview.com",
+        "published": "2026-07-02T06:15:00+00:00",
+        "summary": "The Silicon Review says Cisco is rolling AI agents out across 90,000 employees, turning agentic work from a pilot into an enterprise default. The issue is not whether productivity rises in a dashboard; it is whether employees retain judgment, control, and responsibility when software becomes an active participant in daily work.",
+        "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview- copy_2026-07-02_13-11-45.webp",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Cisco is presented as deploying AI agents broadly across its 90,000-person workforce.",
+          "The rollout raises a practical question about who directs work when agents become everyday infrastructure.",
+          "The TGR signal is the need to reclaim judgment and agency inside increasingly automated workflows."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-07-03-healthcare-ai-anxiety-tests-credential-confidence": {
+    "slug": "2026-07-03-healthcare-ai-anxiety-tests-credential-confidence",
+    "date": "2026-07-03",
+    "title": "Healthcare AI Anxiety Tests Credential Confidence",
+    "pattern": "Today's five stories show AI turning job security into a contest over what still counts as protected human judgment. Forbes frames healthcare disruption as role-by-role rather than wholesale replacement, GMAC and the Freedom Institute sell credentials and AI-ready education as shields, and BMS is taking worker surveillance and platform protections to BRICS while the jobs-report story argues value is shifting toward qualities that resist commoditization.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a44260badfeba28839f0a92/0x0.jpg?format=jpg&crop=1627,1084,x0,y0,safe&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "Will AI Replace Healthcare Jobs? Not How You May Think",
+        "url": "https://www.forbes.com/sites/jessepines/article/will-ai-replace-healthcare-jobs/",
+        "source": "forbes.com",
+        "published": "2026-07-03T04:14:00+00:00",
+        "summary": "The healthcare story is not a clean replacement narrative. It is a role-by-role sorting of what can be automated, what has to stay relational, and where clinicians and support workers will need clearer judgment about how AI enters care.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a44260badfeba28839f0a92/0x0.jpg?format=jpg&crop=1627,1084,x0,y0,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Forbes frames healthcare AI disruption as uneven across roles rather than a blanket replacement of healthcare workers.",
+          "The durable work is likely to sit where care, responsibility, trust, and context matter more than task completion alone.",
+          "For TGR, the question is how people detach identity from a fixed job description while protecting the human stakes of care."
+        ]
+      },
+      {
+        "title": "MBA Jobs Under Threat? New Report Says MBA Graduates Are Still in High Demand Despite AI",
+        "url": "https://thesiliconreview.com/2026/07/mba-jobs-graduates-demand-ai-gmac",
+        "source": "thesiliconreview.com",
+        "published": "2026-07-01T03:48:00+00:00",
+        "summary": "GMAC's demand signal pushes back on the idea that AI automatically weakens business careers. The MBA still has market value, but the credential now has to prove it produces leaders who can make judgment calls inside AI-shaped organizations.",
+        "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview-%20copy_2026-07-01_10-41-24.webp",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "Employer demand for MBA graduates reportedly remains strong despite anxiety about AI disruption.",
+          "The story separates credential confidence from the deeper question of adaptive leadership capability.",
+          "For TGR, the useful move is to treat the degree as a platform for judgment, not as protection from change."
+        ]
+      },
+      {
+        "title": "The Freedom Institute Earns a 2026 Global Recognition Award for AI-Driven Education and Workforce Readiness",
+        "url": "https://markets.businessinsider.com/news/stocks/the-freedom-institute-earns-a-2026-global-recognition-award-for-ai-driven-education-and-workforce-readiness-1036291126",
+        "source": "markets.businessinsider.com",
+        "published": "2026-07-01T09:22:00+00:00",
+        "summary": "The Freedom Institute is positioning AI-personalized education around workforce readiness, not just better coursework. That matters because learners need direction and adaptability before the labor market tells them which version of themselves is still useful.",
+        "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/CqUC39NlcCczdNcC5rKEoyqgqXu2/1782919227399-0.png",
+        "stages": [
+          "Find Your Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The education model is framed around AI-driven personalization, career readiness, and workforce development.",
+          "Schools and training providers are being pushed from content delivery toward continuous labor-market adaptation.",
+          "The human stake is whether AI helps people form direction or simply trains them for unstable job descriptions."
+        ]
+      },
+      {
+        "title": "Ahead of BRICS forum, BMS outlines AI agenda centred on labour protections",
+        "url": "https://www.business-standard.com/technology/artificial-intelligence/ahead-of-brics-forum-bms-outlines-ai-agenda-centred-on-labour-protections-126070101176_1.html",
+        "source": "business-standard.com",
+        "published": "2026-07-01T06:39:00+00:00",
+        "summary": "BMS is moving the AI work debate into labor protections: surveillance, automation-linked job loss, platform-worker rights, and ethical deployment. The story makes clear that AI readiness is also a governance problem, not just an individual upskilling assignment.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "BMS is bringing workplace surveillance, job losses, platform-worker rights, and ethical AI to the BRICS labor agenda.",
+          "The institutional question is who protects workers when automated management systems gain more reach.",
+          "For TGR, this is the policy side of the same identity shift workers feel inside jobs."
+        ]
+      },
+      {
+        "title": "What Today’s Jobs Report Doesn’t Tell You About Work In The AI Era",
+        "url": "https://www.forbes.com/sites/williamarruda/2026/07/02/what-todays-jobs-report-doesnt-tell-you-about-work-in-the-ai-era/",
+        "source": "forbes.com",
+        "published": "2026-07-01T20:59:00+00:00",
+        "summary": "The jobs-report story points past headcount into the qualities that are harder to commoditize. In an AI labor market, the premium shifts toward judgment, distinctiveness, trust, and the ability to make work mean something beyond efficient output.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a46595f026dd3980e52b129/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The piece argues that headline jobs numbers miss how AI changes the qualities employers value.",
+          "Professionals who command a premium will need strengths that are difficult to standardize or commoditize.",
+          "For TGR, this is the practical case for reclaiming value from human judgment rather than from task volume alone."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-02-mba-demand-meets-agent-labor-fight": {
     "slug": "2026-07-02-mba-demand-meets-agent-labor-fight",
     "date": "2026-07-02",
