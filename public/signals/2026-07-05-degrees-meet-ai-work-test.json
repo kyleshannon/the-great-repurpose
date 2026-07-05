@@ -1,0 +1,99 @@
+{
+  "slug": "2026-07-05-degrees-meet-ai-work-test",
+  "date": "2026-07-05",
+  "title": "Degrees Meet The AI Work Test",
+  "pattern": "Today's five stories show the old credential bargain being stress-tested by AI before students and institutions have a clean replacement. OK Diario names language-heavy white-collar roles as exposed, Forbes points to education-to-job systems and healthcare roles being redesigned rather than simply erased, and The Week plus AOL show graduates and students already adjusting majors around employability. The deeper pattern is not just job loss; it is the collapse of degree-as-shelter and the rise of demonstrable judgment, applied skill, and purpose as the new proof of value.",
+  "stages": [
+    "Unhook Identity",
+    "Find Your Purpose",
+    "Reclaim Value"
+  ],
+  "imageUrl": "https://okdiario.com/techy/en/wp-content/uploads/2026/07/ai-job-market-impact-2030.jpg",
+  "stories": [
+    {
+      "title": "The list of jobs most at risk from artificial intelligence is surprising, as it doesn't start with industrial robots, but rather with translators, writers, historians, call center agents, consultants, and other professionals who make their living through language",
+      "url": "https://okdiario.com/techy/en/your-college-degree-wont-shield-you-from-ai-these-10-white-collar-jobs-may-be-gone-by-2030/5900/",
+      "source": "okdiario.com",
+      "published": "2026-07-03T20:45:00+00:00",
+      "summary": "OK Diario puts the pressure directly on language-heavy professional identity: translators, writers, historians, call center agents, consultants, and other knowledge workers who once looked safer than factory roles. The TGR signal is that people cannot rely on the social status of white-collar work to protect them; they have to separate their value from the tasks AI can now imitate.",
+      "imageUrl": "https://okdiario.com/techy/en/wp-content/uploads/2026/07/ai-job-market-impact-2030.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "The story frames AI exposure around language and knowledge work instead of industrial automation.",
+        "A college degree is treated as insufficient protection when the work itself is built from repeatable communication tasks.",
+        "The human move is to identify durable judgment and purpose underneath the old professional label."
+      ]
+    },
+    {
+      "title": "Connect Education To Jobs And Create An AI Workforce Transition Plan",
+      "url": "https://www.forbes.com/sites/paulocarvao/2026/07/01/connect-education-to-jobs-and-create-an-ai-workforce-transition-system/",
+      "source": "forbes.com",
+      "published": "2026-07-01T04:29:00+00:00",
+      "summary": "Forbes argues that AI workforce transition needs more than generic retraining slogans. The P-TECH example points toward a tighter bridge between schools, employers, credentials, and actual jobs, which is exactly where institutional responsibility has to show up if adaptation is not left entirely to individuals.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "The piece treats AI transition as a system design problem across education, employers, and credentials.",
+        "P-TECH is used as a model for connecting learning pathways to jobs that are actually changing.",
+        "The story shifts responsibility from individual panic toward shared transition infrastructure."
+      ]
+    },
+    {
+      "title": "Will AI Replace Healthcare Jobs? Not How You May Think",
+      "url": "https://www.forbes.com/sites/jessepines/article/will-ai-replace-healthcare-jobs/",
+      "source": "forbes.com",
+      "published": "2026-07-03T04:14:00+00:00",
+      "summary": "The healthcare story resists the easy replacement narrative and looks at which roles change, which stay resilient, and how the workforce evolves. That matters because healthcare makes the distinction between task automation and human trust visible: AI can reshape workflows, but accountability, care, and judgment still have to be located somewhere.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a44260badfeba28839f0a92/0x0.jpg?format=jpg&crop=1627,1084,x0,y0,safe&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Healthcare disruption is presented role by role rather than as blanket replacement.",
+        "Some duties are exposed to automation while other forms of human judgment remain structurally important.",
+        "The story helps separate job titles from the human trust and accountability inside the work."
+      ]
+    },
+    {
+      "title": "OPINION | India's AI jobs are booming: Can our graduates do the work or only talk about it?",
+      "url": "https://www.theweek.in/news/sci-tech/2026/07/03/guest-opinion-indian-graduates-ai-skills-gap.html",
+      "source": "theweek.in",
+      "published": "2026-07-03T02:08:00+00:00",
+      "summary": "The Week's India skills-gap story turns the credential question into a capability question. Employers may want AI talent, but degrees and AI vocabulary are not enough if graduates cannot do hands-on work, which makes employability depend on demonstrable skill rather than institutional signaling alone.",
+      "imageUrl": "https://img.theweek.in/content/dam/week/week/news/biz-tech/images/2025/1/31/ai-in-india.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The article contrasts booming AI job demand with graduates who may not be deployable.",
+        "It exposes the gap between credentialed confidence and applied capability.",
+        "The TGR signal is that value has to be reclaimed through useful skill, not merely declared through a degree."
+      ]
+    },
+    {
+      "title": "10 ways AI is changing what students choose to major in - AOL",
+      "url": "https://www.aol.com/articles/10-ways-ai-changing-students-074742000.html",
+      "source": "aol.com",
+      "published": "2026-07-05T03:50:00+00:00",
+      "summary": "AOL captures the downstream behavior: students are already interpreting AI as a labor-market signal and changing what they choose to study. That makes purpose formation more urgent, because the major is no longer just a field of interest; it becomes a bet on which human capabilities will still matter.",
+      "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "Students are adjusting major choices in response to AI's perceived effect on future jobs.",
+        "The story shows workforce anxiety entering education decisions before careers even begin.",
+        "The useful question becomes what purpose and capabilities should guide a path when old career maps are unstable."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
