@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-06-credentials-meet-the-ai-role-map",
+    "date": "2026-07-06",
+    "title": "Credentials Meet The AI Role Map",
+    "pattern": "Today's five stories show the credential market trying to prove it still maps to work while AI breaks jobs into role-level risk and opportunity. Forbes points to P-TECH-style education-to-job systems and healthcare roles being reshaped instead of erased; GMAC data says MBAs still have demand, while 24/7 Wall St. reports AI-investing companies adding jobs with a catch and OK Diario names language-heavy professions facing direct exposure. The pattern is not degrees versus AI; it is whether credentials, employers, and workers can translate human judgment into new roles fast enough.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-07-05-degrees-meet-ai-work-test",
     "date": "2026-07-05",
     "title": "Degrees Meet The AI Work Test",
@@ -301,6 +313,106 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-06-credentials-meet-the-ai-role-map": {
+    "slug": "2026-07-06-credentials-meet-the-ai-role-map",
+    "date": "2026-07-06",
+    "title": "Credentials Meet The AI Role Map",
+    "pattern": "Today's five stories show the credential market trying to prove it still maps to work while AI breaks jobs into role-level risk and opportunity. Forbes points to P-TECH-style education-to-job systems and healthcare roles being reshaped instead of erased; GMAC data says MBAs still have demand, while 24/7 Wall St. reports AI-investing companies adding jobs with a catch and OK Diario names language-heavy professions facing direct exposure. The pattern is not degrees versus AI; it is whether credentials, employers, and workers can translate human judgment into new roles fast enough.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "Connect Education To Jobs And Create An AI Workforce Transition Plan",
+        "url": "https://www.forbes.com/sites/paulocarvao/2026/07/01/connect-education-to-jobs-and-create-an-ai-workforce-transition-system/",
+        "source": "forbes.com",
+        "published": "2026-07-01T04:29:00+00:00",
+        "summary": "Forbes argues that an AI workforce transition needs connective tissue between schools, employers, credentials, and actual jobs. The TGR signal is that education cannot stay symbolic; it has to become a bridge into work that AI is actively reshaping.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "The story pushes beyond generic retraining into systems that connect learning, employers, credentials, and roles.",
+          "P-TECH becomes the example of education designed around transition, not just academic completion.",
+          "For workers, the deeper move is shifting identity from the old credential to the value they can carry into redesigned work."
+        ]
+      },
+      {
+        "title": "Study: AI Is Actually Creating More Jobs, Not Killing Them (But There's a Catch)",
+        "url": "https://247wallst.com/investing/2026/07/04/study-ai-is-actually-creating-more-jobs-not-killing-them-but-theres-a-catch/",
+        "source": "247wallst.com",
+        "published": "2026-07-04T11:21:48+00:00",
+        "summary": "24/7 Wall St. complicates the layoff story by reporting that heavy AI investors may also be expanding payrolls. The catch matters: more jobs does not mean familiar jobs, so people still have to separate their value from the old shape of their role.",
+        "imageUrl": "https://247wallst.com/wp-content/uploads/2021/09/imageForEntry4-0bG.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The article challenges a simple replacement narrative by pointing to companies investing in AI while adding workers.",
+          "Job growth can still hide role churn, new expectations, and a higher bar for human judgment.",
+          "The Great Repurpose question is what value workers can make legible when the headcount number alone looks reassuring."
+        ]
+      },
+      {
+        "title": "The list of jobs most at risk from artificial intelligence is surprising, as it doesn't start with industrial robots, but rather with translators, writers, historians, call center agents, consultants, and other professionals who make their living through language",
+        "url": "https://okdiario.com/techy/en/your-college-degree-wont-shield-you-from-ai-these-10-white-collar-jobs-may-be-gone-by-2030/5900/",
+        "source": "okdiario.com",
+        "published": "2026-07-03T20:45:00+00:00",
+        "summary": "OK Diario names a blunt threat to the old white-collar bargain: language-heavy professional work is exposed even when it came wrapped in a degree. The human issue is not whether writing, translation, support, or consulting vanish overnight; it is how people stop treating those tasks as the whole of who they are.",
+        "imageUrl": "https://okdiario.com/techy/en/wp-content/uploads/2026/07/ai-job-market-impact-2030.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "The risk list centers on knowledge and language roles rather than factory automation.",
+          "A college degree is framed as less protective when AI can perform parts of the work that once signaled expertise.",
+          "The practical move is to locate judgment, trust, context, and purpose beyond the tasks AI can mimic."
+        ]
+      },
+      {
+        "title": "MBA Jobs Under Threat? New Report Says MBA Graduates Are Still in High Demand Despite AI",
+        "url": "https://thesiliconreview.com/2026/07/mba-jobs-graduates-demand-ai-gmac",
+        "source": "thesiliconreview.com",
+        "published": "2026-07-01T03:48:00+00:00",
+        "summary": "The Silicon Review reports that GMAC still sees strong demand for MBA graduates despite AI anxiety. That is a useful counterweight to panic, but it also turns the credential into a promise that has to keep proving its connection to leadership, judgment, and adaptive value.",
+        "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview- copy_2026-07-01_10-41-24.webp",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "The GMAC framing suggests business leadership credentials still have labor-market pull.",
+          "Demand for graduates does not remove the pressure to show what humans uniquely contribute in AI-shaped organizations.",
+          "The signal is confidence with conditions: credentials matter most when they point toward purpose, judgment, and real decisions."
+        ]
+      },
+      {
+        "title": "Will AI Replace Healthcare Jobs? Not How You May Think",
+        "url": "https://www.forbes.com/sites/jessepines/article/will-ai-replace-healthcare-jobs/",
+        "source": "forbes.com",
+        "published": "2026-07-03T04:14:00+00:00",
+        "summary": "Forbes treats healthcare AI disruption as uneven and role-specific rather than a simple replacement wave. That distinction matters because the future of work will be negotiated inside actual tasks, relationships, risks, and responsibilities, not in abstract headlines about jobs disappearing.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a44260badfeba28839f0a92/0x0.jpg?format=jpg&crop=1627,1084,x0,y0,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Healthcare roles face different levels of exposure depending on the mix of routine tasks, clinical judgment, and human contact.",
+          "The article shifts the conversation from whether AI replaces healthcare jobs to how the workforce evolves around it.",
+          "The durable value is likely to sit in trust, accountability, care, and decisions that cannot be reduced to workflow automation."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-05-degrees-meet-ai-work-test": {
     "slug": "2026-07-05-degrees-meet-ai-work-test",
     "date": "2026-07-05",
