@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-07-microsoft-layoffs-break-the-career-ladder",
+    "date": "2026-07-07",
+    "title": "Microsoft Layoffs Break The Career Ladder",
+    "pattern": "Today's five stories show AI turning the career ladder into a redesign problem before workers, students, and institutions have agreed on the new rungs. Microsoft says AI is not replacing workers while 4,800 jobs disappear, Forbes points to education-to-job transition systems, Herald Business argues for restoring youth skills ladders, Fast Company asks whether the first rung still exists, and healthcare reporting shows roles being reshaped rather than simply erased. The pattern is not one company cutting jobs; it is the collapse of job title, credential, and first-step certainty as reliable containers for human value.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://thelogicalindian.com/wp-content/uploads/2026/07/Copy-of-Social-Thumbnail-Template-39-1.jpg"
+  },
+  {
     "slug": "2026-07-06-credentials-meet-the-ai-role-map",
     "date": "2026-07-06",
     "title": "Credentials Meet The AI Role Map",
@@ -313,6 +326,106 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-07-microsoft-layoffs-break-the-career-ladder": {
+    "slug": "2026-07-07-microsoft-layoffs-break-the-career-ladder",
+    "date": "2026-07-07",
+    "title": "Microsoft Layoffs Break The Career Ladder",
+    "pattern": "Today's five stories show AI turning the career ladder into a redesign problem before workers, students, and institutions have agreed on the new rungs. Microsoft says AI is not replacing workers while 4,800 jobs disappear, Forbes points to education-to-job transition systems, Herald Business argues for restoring youth skills ladders, Fast Company asks whether the first rung still exists, and healthcare reporting shows roles being reshaped rather than simply erased. The pattern is not one company cutting jobs; it is the collapse of job title, credential, and first-step certainty as reliable containers for human value.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://thelogicalindian.com/wp-content/uploads/2026/07/Copy-of-Social-Thumbnail-Template-39-1.jpg",
+    "stories": [
+      {
+        "title": "Microsoft Says AI Isn't Replacing Workers, So Why Did 4,800 Employees Lose Their Jobs Anyway? - The Logical Indian",
+        "url": "https://thelogicalindian.com/microsoft-says-ai-isnt-replacing-workers-so-why-did-4800-employees-lose-their-jobs-anyway/",
+        "source": "thelogicalindian.com",
+        "published": "2026-07-07T05:17:59+00:00",
+        "summary": "Microsoft's layoffs make the contradiction visible: leaders can say AI is not replacing people while still rebuilding the company around AI investment, leaner structures, and different kinds of leverage. For The Great Repurpose, the human question is what part of a worker's value survives when the role wrapper changes faster than the public explanation.",
+        "imageUrl": "https://thelogicalindian.com/wp-content/uploads/2026/07/Copy-of-Social-Thumbnail-Template-39-1.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Microsoft cut 4,800 jobs while arguing AI is reshaping work rather than simply replacing workers.",
+          "The story points to AI changing corporate structure, capital priorities, and expectations for remaining roles.",
+          "The durable issue is identity and value when a prestigious job title no longer protects the person holding it."
+        ]
+      },
+      {
+        "title": "Connect Education To Jobs And Create An AI Workforce Transition Plan",
+        "url": "https://www.forbes.com/sites/paulocarvao/2026/07/01/connect-education-to-jobs-and-create-an-ai-workforce-transition-system/",
+        "source": "forbes.com",
+        "published": "2026-07-01T04:29:00+00:00",
+        "summary": "Forbes frames AI workforce transition as a system design problem, not a motivational poster about reskilling. The P-TECH example matters because it connects schools, employers, credentials, and jobs instead of leaving individuals to guess which skills will still count.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "The transition requires education-to-job systems that connect credentials to real employer demand.",
+          "P-TECH is presented as a model for building clearer pathways into AI-shaped work.",
+          "The Great Repurpose lens is about helping people find purpose and proof of value inside new labor-market maps."
+        ]
+      },
+      {
+        "title": "AI disruption demands restoration of 'skills ladder' for youth, experts say",
+        "url": "https://biz.heraldcorp.com/article/10800974",
+        "source": "biz.heraldcorp.com",
+        "published": "2026-07-07T05:56:58+00:00",
+        "summary": "Herald Business puts the youth version of the problem in plain terms: productivity gains do not automatically create a first step into work. Calls to restore the skills ladder are really calls to rebuild the bridge between learning, agency, and employability.",
+        "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/07/07/news-p.v1.20260707.33244d1138cb48d58e24a5fcd2419126_R.png",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Business leaders are calling for stronger upskilling and reskilling programs as AI raises productivity pressure.",
+          "The story centers young workers whose first durable rung into the labor market may be weakening.",
+          "The human value question is whether institutions rebuild ladders or ask each person to climb a disappearing one alone."
+        ]
+      },
+      {
+        "title": "The career ladder is changing",
+        "url": "https://www.fastcompany.com/91568860/the-career-ladder-is-changing",
+        "source": "fastcompany.com",
+        "published": "2026-07-06T05:00:00+00:00",
+        "summary": "Fast Company names the anxiety under the whole issue: students are asking whether the first rung of the career ladder is still there. That is not just a labor-market question; it is an identity question arriving before a career has even begun.",
+        "imageUrl": "",
+        "stages": [
+          "Find Your Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The path from college into work is being redrawn while students are still preparing to enter it.",
+          "The entry-level role is becoming less predictable as AI changes what early-career work contains.",
+          "People need an inner compass and visible skill proof when the old sequence of school, first job, and advancement gets unstable."
+        ]
+      },
+      {
+        "title": "Will AI Replace Healthcare Jobs? Not How You May Think",
+        "url": "https://www.forbes.com/sites/jessepines/article/will-ai-replace-healthcare-jobs/",
+        "source": "forbes.com",
+        "published": "2026-07-03T04:14:00+00:00",
+        "summary": "The healthcare story cuts against simple replacement narratives. Some roles are exposed, some remain resilient, and many will be redesigned around new divisions of human judgment, patient trust, and machine-supported execution.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a44260badfeba28839f0a92/0x0.jpg?format=jpg&crop=1627,1084,x0,y0,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Healthcare disruption is role-by-role rather than a single blanket story of replacement.",
+          "The most resilient work depends on judgment, trust, accountability, and human context.",
+          "The Great Repurpose question is how professionals reclaim value as tasks move between people and systems."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-06-credentials-meet-the-ai-role-map": {
     "slug": "2026-07-06-credentials-meet-the-ai-role-map",
     "date": "2026-07-06",
