@@ -1,0 +1,102 @@
+{
+  "slug": "2026-07-08-skills-ladders-meet-agent-bootcamps",
+  "date": "2026-07-08",
+  "title": "Skills Ladders Meet Agent Bootcamps",
+  "pattern": "Today's five stories show the career ladder being rebuilt while AI agents move straight into the workplace. Forbes argues that education, employers, and credentials need a connected transition system; Herald Business calls for restoring youth skills ladders; Fast Company asks whether the first rung still exists; SK On is training employees to build agents across business functions; and Cannes Lions puts human connection back at the center of AI-shaped creative work. The pattern is a widening gap between institutions trying to prepare people for work and companies already teaching workers to create with agents inside the work itself.",
+  "stages": [
+    "Unhook Identity",
+    "Find Your Purpose",
+    "Reclaim Value",
+    "Discover AI's Power",
+    "Start Creating"
+  ],
+  "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/07/07/news-p.v1.20260707.33244d1138cb48d58e24a5fcd2419126_R.png",
+  "stories": [
+    {
+      "title": "Connect Education To Jobs And Create An AI Workforce Transition Plan",
+      "url": "https://www.forbes.com/sites/paulocarvao/2026/07/01/connect-education-to-jobs-and-create-an-ai-workforce-transition-system/",
+      "source": "forbes.com",
+      "published": "2026-07-01T04:29:00+00:00",
+      "summary": "Forbes points to P-TECH as a model for connecting education, employers, credentials, and job pathways as AI reshapes work. The human issue is not only retraining; it is whether people can see a credible route from learning into meaningful, current work.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "Workforce transition needs connected systems, not isolated reskilling slogans.",
+        "Education, employers, and credentials have to line up around jobs that AI is actively changing.",
+        "The story frames career preparation as a bridge-building problem between institutions and real work."
+      ]
+    },
+    {
+      "title": "AI disruption demands restoration of 'skills ladder' for youth, experts say",
+      "url": "https://biz.heraldcorp.com/article/10800974",
+      "source": "biz.heraldcorp.com",
+      "published": "2026-07-07T05:56:58+00:00",
+      "summary": "Herald Business reports calls to restore the skills ladder for young people as AI lifts productivity and unsettles entry-level job security. The Great Repurpose signal is that youth need more than exposure to tools; they need visible rungs for building judgment, value, and confidence.",
+      "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/07/07/news-p.v1.20260707.33244d1138cb48d58e24a5fcd2419126_R.png",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI productivity gains are increasing pressure on entry-level workers and young job seekers.",
+        "Experts are calling for stronger upskilling and reskilling paths that protect employability.",
+        "The skills ladder is becoming a social infrastructure problem, not just a training program."
+      ]
+    },
+    {
+      "title": "SK On accelerates AI transformation, deploying agents across all business functions",
+      "url": "https://biz.heraldcorp.com/article/10801714",
+      "source": "biz.heraldcorp.com",
+      "published": "2026-07-08T06:00:00+00:00",
+      "summary": "SK On is moving AI from experimentation into operations by deploying agents across business functions and training employees through an internal AI Agent Bootcamp. This is the worker-facing version of the transition: people are being asked to design, direct, and collaborate with agents inside everyday business systems.",
+      "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/07/08/news-p.v1.20251105.e959970a23584ae5b76cd292a264cfd7_R.jpg",
+      "stages": [
+        "Discover AI's Power",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "SK On is deploying AI agents broadly across business functions rather than keeping AI in a lab.",
+        "The company is training employees to design and build agents through its internal academy.",
+        "The story shows creation with AI becoming a workplace expectation, not an optional side skill."
+      ]
+    },
+    {
+      "title": "What Cannes Lions 2026 Taught Marketers About AI And Human Connection",
+      "url": "https://www.forbes.com/sites/committeeof200/2026/07/07/what-cannes-lions-2026-taught-marketers-about-ai-and-human-connection/",
+      "source": "forbes.com",
+      "published": "2026-07-07T08:12:00+00:00",
+      "summary": "Forbes reads Cannes Lions 2026 as a reset around AI, creativity, strategy, research, personalization, and human connection. For The Great Repurpose, the important part is that creative value is moving away from pure output and toward taste, relationship, judgment, and meaning.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4c4f9bb96620d7cf81ed25/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Cannes Lions framed AI as part of creative strategy rather than a simple production shortcut.",
+        "Human connection remains the differentiator as personalization and automation become easier.",
+        "Creative workers have to reclaim value through judgment, taste, and emotional relevance."
+      ]
+    },
+    {
+      "title": "The career ladder is changing",
+      "url": "https://www.fastcompany.com/91568860/the-career-ladder-is-changing",
+      "source": "fastcompany.com",
+      "published": "2026-07-06T05:00:00+00:00",
+      "summary": "Fast Company asks whether the first rung of the career ladder is still available as students and graduates try to enter a labor market being redrawn by AI. The story turns the abstract future-of-work debate into a personal question: how do people find direction when the old opening moves are less reliable?",
+      "imageUrl": "",
+      "stages": [
+        "Find Your Purpose",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Students and new workers are questioning whether the first rung of the career ladder still exists.",
+        "The college-to-work path is being redrawn while people are still trying to step onto it.",
+        "The deeper need is a clearer sense of purpose and value before job titles provide certainty."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
