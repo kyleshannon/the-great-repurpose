@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-09-ai-classes-meet-the-creativity-premium",
+    "date": "2026-07-09",
+    "title": "AI Classes Meet The Creativity Premium",
+    "pattern": "Today's five stories show education becoming an AI-economy bet while the value of learning shifts beyond tool fluency. Forbes sees investment opportunity in lifelong training, Herald Business calls for restoring youth skills ladders, and North Texas colleges are adding AI classes for job seekers; meanwhile, gaming keeps creativity and judgment in human hands, and Digital Journal argues that jobs themselves are moving targets. The pattern is a race to teach AI skills before schools and employers can define the adaptable identity, taste, and direction those skills are meant to serve.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-07-09/bidq3q1x/SPARQ2promptJPEGscaled75.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=230,0,2393,1595"
+  },
+  {
     "slug": "2026-07-08-skills-ladders-meet-agent-bootcamps",
     "date": "2026-07-08",
     "title": "Skills Ladders Meet Agent Bootcamps",
@@ -340,6 +353,103 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-09-ai-classes-meet-the-creativity-premium": {
+    "slug": "2026-07-09-ai-classes-meet-the-creativity-premium",
+    "date": "2026-07-09",
+    "title": "AI Classes Meet The Creativity Premium",
+    "pattern": "Today's five stories show education becoming an AI-economy bet while the value of learning shifts beyond tool fluency. Forbes sees investment opportunity in lifelong training, Herald Business calls for restoring youth skills ladders, and North Texas colleges are adding AI classes for job seekers; meanwhile, gaming keeps creativity and judgment in human hands, and Digital Journal argues that jobs themselves are moving targets. The pattern is a race to teach AI skills before schools and employers can define the adaptable identity, taste, and direction those skills are meant to serve.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-07-09/bidq3q1x/SPARQ2promptJPEGscaled75.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=230,0,2393,1595",
+    "stories": [
+      {
+        "title": "Three Education Stocks For The AI Economy",
+        "url": "https://www.forbes.com/sites/robertdaugherty/2026/07/08/three-education-stocks-for-the-ai-economy/",
+        "source": "forbes.com",
+        "published": "2026-07-08T11:53:00+00:00",
+        "summary": "Education stocks may benefit as AI reshapes workforce training, lifelong learning, career education and global demand for new human capital skills.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4e9bfe260d403d45702102/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Find Your Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Education stocks may benefit as AI reshapes workforce training, lifelong learning, career education and global demand for new human capital skills.",
+          "The deeper signal: people need visible paths for building judgment, value, and direction, not just more exposure to AI tools."
+        ]
+      },
+      {
+        "title": "AI disruption demands restoration of 'skills ladder' for youth, experts say",
+        "url": "https://biz.heraldcorp.com/article/10800974",
+        "source": "biz.heraldcorp.com",
+        "published": "2026-07-07T05:56:58+00:00",
+        "summary": "Herald Business reports calls to restore the skills ladder for young people as AI lifts productivity and unsettles entry-level job security.",
+        "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/07/07/news-p.v1.20260707.33244d1138cb48d58e24a5fcd2419126_R.png",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Herald Business reports calls to restore the skills ladder for young people as AI lifts productivity and unsettles entry-level job security.",
+          "The deeper signal: young people need visible rungs for building judgment, value, and confidence, not just more exposure to AI tools."
+        ]
+      },
+      {
+        "title": "Looking for an edge in the job hunt? Take an AI class",
+        "url": "https://www.dallasnews.com/news/education/article/north-texas-colleges-ai-programs-job-search-22217857.php",
+        "source": "dallasnews.com",
+        "published": "2026-07-08T11:30:00+00:00",
+        "summary": "As students confront an uncertain job market, TCU, SMU and UNT are launching AI offerings focused on how to leverage the technology across careers.",
+        "imageUrl": "https://s.hdnux.com/photos/01/66/61/72/31137445/3/rawImage.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "As students confront an uncertain job market, TCU, SMU and UNT are launching AI offerings focused on how to leverage the technology across careers.",
+          "The deeper signal: people need visible paths for building judgment, value, and direction, not just more exposure to AI tools."
+        ]
+      },
+      {
+        "title": "AI and gaming: The first industry where creativity still leads",
+        "url": "https://www.khaleejtimes.com/business/innovation-city/ai-and-gaming-the-first-industry-where-creativity-still-leads",
+        "source": "khaleejtimes.com",
+        "published": "2026-07-09T04:27:00+00:00",
+        "summary": "As AI reshapes game development, automation is streamlining production while leaving creativity, storytelling and human judgement firmly in the hands of creators.",
+        "imageUrl": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-07-09/bidq3q1x/SPARQ2promptJPEGscaled75.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=230,0,2393,1595",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "As AI reshapes game development, automation is streamlining production while leaving creativity, storytelling and human judgement firmly in the hands of creators.",
+          "The deeper signal: creative value is moving upstream into taste, relationship, judgment, meaning, and the decision about what deserves to be made."
+        ]
+      },
+      {
+        "title": "Op-Ed: The shallow approach to automation vs jobs is proving labour and tech experts right, but it’s messy",
+        "url": "https://www.digitaljournal.com/article/3854845/",
+        "source": "digitaljournal.com",
+        "published": "2026-07-08T00:54:19+00:00",
+        "summary": "Jobs aren't static things. Tasks, objectives, and priorities change, with unknown roles and new environments likely to become the next frontier of work.",
+        "imageUrl": "https://www.digitaljournal.com/wp-content/uploads/2026/06/e66c98b257127bf2cf8aafa3b5064fdfc6656f4c.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Tasks change, objectives change, and priorities change.",
+          "Unknown roles and whole new environments are likely to be the new frontier of work.",
+          "The deeper signal: identity has to separate from the job wrapper before institutions redraw that wrapper for people."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-08-skills-ladders-meet-agent-bootcamps": {
     "slug": "2026-07-08-skills-ladders-meet-agent-bootcamps",
     "date": "2026-07-08",
