@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-10-older-workers-meet-the-ai-task-force",
+    "date": "2026-07-10",
+    "title": "Older Workers Meet The AI Task Force",
+    "pattern": "Today's five stories show workers being asked to adapt before institutions can explain what adaptation will protect. AOL finds many workers over 60 unconcerned about AI even as age bias and automation narrow their options; Sri Lanka is confronting white-collar exposure; and an Xbox executive is joining a Federal Reserve AI-and-jobs task force after 3,200 layoffs. North Texas colleges are teaching students to use AI across careers while Digital Journal argues that jobs themselves are fluid, making the pattern a widening lag between lived workforce disruption and the systems meant to help people navigate it.",
+    "stages": [
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Find Your Purpose"
+    ],
+    "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/06/20260608074948_Xbox-CEO-Asha-Sharma.png"
+  },
+  {
     "slug": "2026-07-09-ai-classes-meet-the-creativity-premium",
     "date": "2026-07-09",
     "title": "AI Classes Meet The Creativity Premium",
@@ -353,6 +365,105 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-10-older-workers-meet-the-ai-task-force": {
+    "slug": "2026-07-10-older-workers-meet-the-ai-task-force",
+    "date": "2026-07-10",
+    "title": "Older Workers Meet The AI Task Force",
+    "pattern": "Today's five stories show workers being asked to adapt before institutions can explain what adaptation will protect. AOL finds many workers over 60 unconcerned about AI even as age bias and automation narrow their options; Sri Lanka is confronting white-collar exposure; and an Xbox executive is joining a Federal Reserve AI-and-jobs task force after 3,200 layoffs. North Texas colleges are teaching students to use AI across careers while Digital Journal argues that jobs themselves are fluid, making the pattern a widening lag between lived workforce disruption and the systems meant to help people navigate it.",
+    "stages": [
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Find Your Purpose"
+    ],
+    "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/06/20260608074948_Xbox-CEO-Asha-Sharma.png",
+    "stories": [
+      {
+        "title": "Workers Over 60 Think AI Won't Touch Their Jobs - But They May Be Running Out of Time - AOL",
+        "url": "https://www.aol.com/finance/workers-over-60-think-ai-153500005.html",
+        "source": "AOL",
+        "published": "2026-07-08T15:35:00+00:00",
+        "summary": "AOL reports that many workers over 60 do not expect AI to threaten their jobs, even as automation, age discrimination, and labor-market shifts may compress their remaining career options. The TGR signal is a dangerous mismatch between personal confidence and institutional change: experienced workers need ways to translate judgment and purpose beyond a familiar job title before the market makes that choice for them.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "Many workers over 60 remain relatively unconcerned about AI-driven job loss.",
+          "Automation and age bias may combine to make late-career transitions especially difficult.",
+          "Experience retains value only when workers and employers can carry it into changing roles."
+        ]
+      },
+      {
+        "title": "From Vulnerability to Opportunity: AI and the Future of Work in Sri Lanka - Opinion | Daily Mirror",
+        "url": "https://www.dailymirror.lk/opinion/From-Vulnerability-to-Opportunity-AI-and-the-Future-of-Work-in-Sri-Lanka/172-345236",
+        "source": "Daily Mirror",
+        "published": "2026-07-09T11:30:00+00:00",
+        "summary": "Daily Mirror argues that generative AI is reaching Sri Lanka's professional and clerical workforce, extending automation beyond the manual and manufacturing jobs targeted by earlier technology waves. The country's opportunity depends on treating adoption as a human-capability transition, helping white-collar workers understand the technology and reposition their value instead of assuming professional status offers shelter.",
+        "imageUrl": "https://bmkltsly13vb.compat.objectstorage.ap-singapore-1.oraclecloud.com/cdn.sg.dailymirror.lk/assets/uploads/image_9143b3aafa.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Generative AI is becoming embedded in Sri Lanka's everyday white-collar work.",
+          "Professional and clerical roles face exposure that earlier automation waves largely spared.",
+          "Turning vulnerability into opportunity requires deliberate worker capability-building."
+        ]
+      },
+      {
+        "title": "After Xbox's 3,200 layoffs, CEO Asha Sharma joins Federal Reserve AI and jobs task force- Moneycontrol.com",
+        "url": "https://www.moneycontrol.com/technology/xbox-ceo-asha-sharma-joins-federal-reserve-task-force-on-ai-and-jobs-article-13970800.html",
+        "source": "Moneycontrol",
+        "published": "2026-07-10T00:41:00+00:00",
+        "summary": "Moneycontrol reports that Xbox executive Asha Sharma has joined a new Federal Reserve task force studying AI's effects on employment, productivity, and monetary policy after 3,200 Xbox layoffs. The sequence turns an abstract policy inquiry into a trust test: workers need institutions to connect research and productivity gains to the people absorbing restructuring in real time.",
+        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/06/20260608074948_Xbox-CEO-Asha-Sharma.png",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "A Federal Reserve task force will study AI's effects on jobs, productivity, and policymaking.",
+          "Sharma's appointment follows 3,200 layoffs at Xbox.",
+          "Policy credibility depends on connecting macroeconomic analysis to workers' lived transitions."
+        ]
+      },
+      {
+        "title": "Young job-hunters are searching for an edge. These students say this is it",
+        "url": "https://www.dallasnews.com/news/education/article/north-texas-colleges-ai-programs-job-search-22217857.php",
+        "source": "The Dallas Morning News",
+        "published": "2026-07-08T11:30:00+00:00",
+        "summary": "The Dallas Morning News reports that TCU, SMU, and UNT are launching AI programs aimed at helping students use the technology across careers in an uncertain job market. These offerings acknowledge that AI literacy is becoming baseline preparation, but the deeper opportunity is to help students combine tool fluency with judgment and direction rather than chase a temporary hiring edge.",
+        "imageUrl": "https://s.hdnux.com/photos/01/66/61/72/31137445/3/rawImage.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "TCU, SMU, and UNT are adding AI offerings tied to career preparation.",
+          "Students see AI fluency as an advantage in an uncertain entry-level market.",
+          "Durable readiness requires judgment and direction alongside technical exposure."
+        ]
+      },
+      {
+        "title": "Op-Ed: The shallow approach to automation vs jobs is proving labour and tech experts right, but it’s messy",
+        "url": "https://www.digitaljournal.com/article/3854845/",
+        "source": "Digital Journal",
+        "published": "2026-07-08T00:54:19+00:00",
+        "summary": "Digital Journal rejects the simple automation-versus-jobs debate, arguing that tasks, objectives, and priorities continually change while unfamiliar roles and work environments emerge. That fluid view fits The Great Repurpose: the challenge is not defending a static job container, but learning to recognize and create value as the contents of work are recombined.",
+        "imageUrl": "https://www.digitaljournal.com/wp-content/uploads/2026/06/e66c98b257127bf2cf8aafa3b5064fdfc6656f4c.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Jobs change as their tasks, objectives, and priorities are reorganized.",
+          "New roles and work environments make binary replacement claims inadequate.",
+          "Workers need a portable account of their value that survives changing job wrappers."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-09-ai-classes-meet-the-creativity-premium": {
     "slug": "2026-07-09-ai-classes-meet-the-creativity-premium",
     "date": "2026-07-09",
