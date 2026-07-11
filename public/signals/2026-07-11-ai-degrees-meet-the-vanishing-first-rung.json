@@ -1,0 +1,93 @@
+{
+  "slug": "2026-07-11-ai-degrees-meet-the-vanishing-first-rung",
+  "date": "2026-07-11",
+  "title": "AI Degrees Meet The Vanishing First Rung",
+  "pattern": "Today's five stories expose a broken handoff between preparing for an AI career and finding a first place to practice it. Forbes maps the degrees meant to future-proof students, Psychology Today argues remote work is erasing the apprenticeship that turns education into judgment, and two reports put an Xbox executive on the Federal Reserve's AI-and-jobs task force just after 3,200 layoffs. With Forbes also describing agents as workers already entering the org chart, the pattern is that people are being told to choose the right credential while both the entry rung and the shape of the workforce are being redesigned beneath them.",
+  "stages": [
+    "Unhook Identity",
+    "Find Your Purpose",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "The Best AI Degrees And How To Choose The Right Major",
+      "url": "https://www.forbes.com/sites/sarahhernholm/article/best-ai-degrees/",
+      "source": "forbes.com",
+      "published": "2026-07-11T04:00:00+00:00",
+      "summary": "Forbes compares dedicated AI majors with established STEM routes for students trying to build a durable career in artificial intelligence. For The Great Repurpose, the choice matters less as a permanent identity than as a platform for finding purposeful work while roles and required skills keep changing.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "AI-specific majors now compete with computer science, engineering, mathematics, and other established routes into the field.",
+        "Students need to choose an education for adaptable capability, not treat a degree title as a guarantee of a future-proof identity."
+      ]
+    },
+    {
+      "title": "After Xbox's 3,200 layoffs, CEO Asha Sharma joins Federal Reserve AI and jobs task force- Moneycontrol.com",
+      "url": "https://www.moneycontrol.com/technology/xbox-ceo-asha-sharma-joins-federal-reserve-task-force-on-ai-and-jobs-article-13970800.html",
+      "source": "moneycontrol.com",
+      "published": "2026-07-10T00:41:00+00:00",
+      "summary": "Moneycontrol reports that Xbox executive Asha Sharma joined a new Federal Reserve task force studying AI, employment, productivity, and monetary policy after 3,200 layoffs at Xbox. The sequence makes the institutional contradiction visible: workers are living through role loss while the people shaping that loss are only beginning to define how it should be understood.",
+      "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/06/20260608074948_Xbox-CEO-Asha-Sharma.png",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The Federal Reserve task force will examine how AI affects employment, productivity, and economic policymaking.",
+        "Sharma's appointment follows 3,200 Xbox layoffs, tying abstract workforce policy directly to recent job loss."
+      ]
+    },
+    {
+      "title": "Remote Work Hurts Early Careers More Than AI",
+      "url": "https://www.psychologytoday.com/us/blog/silicon-psyche/202607/remote-work-hurts-early-careers-more-than-ai",
+      "source": "psychologytoday.com",
+      "published": "2026-07-10T09:17:00+00:00",
+      "summary": "Psychology Today argues that remote work may be doing more immediate damage to young professionals than AI by weakening mentorship, observation, and the informal learning attached to junior roles. The TGR stake is the disappearing first rung: people cannot discover purpose or portable value if institutions remove the environments where beginners learn how work actually works.",
+      "imageUrl": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-07/pexels-wendelinjacober-1411394.jpg?h=e2ba213a&itok=5eGI9hgw",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "Remote work can strip junior employees of proximity-based mentoring, observation, and relationship building.",
+        "The early-career problem is not only whether jobs exist, but whether beginners still have a path from credentials to practiced judgment."
+      ]
+    },
+    {
+      "title": "After Laying Off 3,200 Employees, Xbox CEO Joins the Fed's Jobs Task Force",
+      "url": "https://247wallst.com/investing/2026/07/10/after-laying-off-3200-employees-xbox-ceo-joins-the-feds-jobs-task-force/",
+      "source": "247wallst.com",
+      "published": "2026-07-10T09:47:03+00:00",
+      "summary": "24/7 Wall St. sharpens the timing of Asha Sharma's Federal Reserve appointment, placing it three days after the largest gaming-industry layoff of 2026. The report underscores how quickly leaders move between cutting today's roles and advising the institutions tasked with interpreting tomorrow's labor market.",
+      "imageUrl": "https://247wallst.com/wp-content/uploads/2026/05/Kevin-Warsh-1.png",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The appointment came only days after Xbox announced 3,200 layoffs.",
+        "Workforce redesign and workforce policy are now being shaped by many of the same executives, raising the stakes for worker-centered accountability."
+      ]
+    },
+    {
+      "title": "AI Agents Are Already On Your Payroll, Even If You Never Hired Them",
+      "url": "https://www.forbes.com/councils/forbesbusinessdevelopmentcouncil/2026/07/09/ai-agents-are-already-on-your-payroll-even-if-you-never-hired-them/",
+      "source": "forbes.com",
+      "published": "2026-07-09T04:00:00+00:00",
+      "summary": "Forbes argues that AI agents have already entered company workflows as a new class of worker, whether or not leaders formally acknowledge them on the org chart. That shifts human value toward directing systems, setting boundaries, and owning judgment rather than defending every task inside an old role.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/66e8ad9143dea9f7185cc9ad/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "AI agents are already performing work inside organizations before many companies have formally defined their place.",
+        "Human responsibility moves toward supervision, judgment, accountability, and the design of work shared with agents."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}

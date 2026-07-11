@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-07-11-ai-degrees-meet-the-vanishing-first-rung",
+    "date": "2026-07-11",
+    "title": "AI Degrees Meet The Vanishing First Rung",
+    "pattern": "Today's five stories expose a broken handoff between preparing for an AI career and finding a first place to practice it. Forbes maps the degrees meant to future-proof students, Psychology Today argues remote work is erasing the apprenticeship that turns education into judgment, and two reports put an Xbox executive on the Federal Reserve's AI-and-jobs task force just after 3,200 layoffs. With Forbes also describing agents as workers already entering the org chart, the pattern is that people are being told to choose the right credential while both the entry rung and the shape of the workforce are being redesigned beneath them.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-07-10-older-workers-meet-the-ai-task-force",
     "date": "2026-07-10",
     "title": "Older Workers Meet The AI Task Force",
