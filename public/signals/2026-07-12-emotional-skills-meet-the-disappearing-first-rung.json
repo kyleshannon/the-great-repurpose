@@ -1,0 +1,92 @@
+{
+  "slug": "2026-07-12-emotional-skills-meet-the-disappearing-first-rung",
+  "date": "2026-07-12",
+  "title": "Emotional Skills Meet The Disappearing First Rung",
+  "pattern": "Today's five stories show schools trying to prepare people for a human-centered AI economy while the places where those qualities are learned and rewarded are coming apart. Forbes argues for emotional education and maps degree choices for AI careers, Psychology Today says remote work is stripping junior workers of apprenticeship, and two reports place an Xbox executive on the Federal Reserve's AI-and-jobs task force just after 3,200 layoffs. The pattern is that empathy, judgment, and direction are becoming more valuable at the same moment that credentials, entry-level practice, and institutional trust are becoming less reliable paths for developing them.",
+  "stages": [
+    "Unhook Identity",
+    "Find Your Purpose"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5205e8a09a80202929b872/0x0.jpg?format=jpg&crop=3642,2049,x0,y123,safe&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "The Case For Emotional Education For An AI Economy",
+      "url": "https://www.forbes.com/sites/danfitzpatrick/2026/07/11/the-case-for-emotional-education-for-an-ai-economy/",
+      "source": "forbes.com",
+      "published": "2026-07-11T02:00:00+00:00",
+      "summary": "Forbes argues that empathy, communication, and emotional intelligence become more important as AI absorbs more technical and repeatable work. The TGR question is whether schools can help people name and develop those durable human capacities before the labor market forces them to discover their value through disruption.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5205e8a09a80202929b872/0x0.jpg?format=jpg&crop=3642,2049,x0,y123,safe&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Find Your Purpose",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Employers are placing more value on empathy, communication, and emotional intelligence as AI reshapes tasks and roles.",
+        "Education needs to develop portable human judgment and relational capacity, not only exposure to new tools."
+      ]
+    },
+    {
+      "title": "The Best AI Degrees And How To Choose The Right Major",
+      "url": "https://www.forbes.com/sites/sarahhernholm/article/best-ai-degrees/",
+      "source": "forbes.com",
+      "published": "2026-07-11T04:00:00+00:00",
+      "summary": "Forbes compares dedicated AI majors with traditional STEM routes for students trying to choose a durable path into artificial intelligence. The degree can be a foundation, but not a fixed identity: students need adaptable capabilities and a sense of direction that can survive changing job titles.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "AI-specific majors now compete with computer science, engineering, mathematics, and other established routes into the field.",
+        "Students need to choose an education for adaptable capability rather than treat a degree title as a future-proof identity."
+      ]
+    },
+    {
+      "title": "After Xbox's 3,200 layoffs, CEO Asha Sharma joins Federal Reserve AI and jobs task force- Moneycontrol.com",
+      "url": "https://www.moneycontrol.com/technology/xbox-ceo-asha-sharma-joins-federal-reserve-task-force-on-ai-and-jobs-article-13970800.html",
+      "source": "moneycontrol.com",
+      "published": "2026-07-10T00:41:00+00:00",
+      "summary": "Moneycontrol reports that Xbox executive Asha Sharma joined a Federal Reserve task force studying AI, employment, productivity, and monetary policy after 3,200 layoffs at Xbox. The sequence makes the institutional contradiction visible: workers are living through role loss while leaders are still defining how that loss should be understood.",
+      "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/06/20260608074948_Xbox-CEO-Asha-Sharma.png",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The Federal Reserve task force will examine how AI affects employment, productivity, and economic policymaking.",
+        "Sharma's appointment follows 3,200 Xbox layoffs, tying abstract workforce policy directly to recent job loss."
+      ]
+    },
+    {
+      "title": "Remote Work Hurts Early Careers More Than AI",
+      "url": "https://www.psychologytoday.com/us/blog/silicon-psyche/202607/remote-work-hurts-early-careers-more-than-ai",
+      "source": "psychologytoday.com",
+      "published": "2026-07-10T09:28:00+00:00",
+      "summary": "Psychology Today argues that remote work may be doing more immediate damage to young professionals than AI by weakening mentorship, observation, and informal learning. The disappearing first rung matters because people cannot discover purpose or portable value if institutions remove the environments where beginners develop practiced judgment.",
+      "imageUrl": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-07/pexels-wendelinjacober-1411394.jpg?h=e2ba213a&itok=5eGI9hgw",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "Remote work can strip junior employees of proximity-based mentoring, observation, and relationship building.",
+        "The early-career problem is not only whether jobs exist, but whether beginners still have a path from credentials to practiced judgment."
+      ]
+    },
+    {
+      "title": "After Laying Off 3,200 Employees, Xbox CEO Joins the Fed's Jobs Task Force",
+      "url": "https://247wallst.com/investing/2026/07/10/after-laying-off-3200-employees-xbox-ceo-joins-the-feds-jobs-task-force/",
+      "source": "247wallst.com",
+      "published": "2026-07-10T09:47:03+00:00",
+      "summary": "24/7 Wall St. sharpens the timing of Asha Sharma's Federal Reserve appointment, placing it three days after the largest gaming-industry layoff of 2026. The report underscores how quickly leaders move between cutting today's roles and advising the institutions tasked with interpreting tomorrow's labor market.",
+      "imageUrl": "https://247wallst.com/wp-content/uploads/2026/05/Kevin-Warsh-1.png",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The appointment came only days after Xbox announced 3,200 layoffs.",
+        "Workforce redesign and workforce policy are being shaped by many of the same executives, raising the stakes for worker-centered accountability."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
