@@ -1,0 +1,94 @@
+{
+  "slug": "2026-07-13-enterprise-readiness-meets-the-broken-skills-ladder",
+  "date": "2026-07-13",
+  "title": "Enterprise Readiness Meets The Broken Skills Ladder",
+  "pattern": "Today's five stories expose a mismatch between what enterprise AI success demands and how institutions prepare people for it. Forbes says AI value depends on organizational readiness and human leadership, another Forbes piece tells students to choose future-facing degrees, and Herald Business calls for restoring youth skills ladders; meanwhile, two reports put Xbox CEO Asha Sharma on the Federal Reserve's AI jobs task force after 3,200 layoffs. The pattern is that companies need people with judgment, accountability, and transformation capacity just as the educational and employment systems that develop those qualities are losing credible rungs.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Find Your Purpose"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5472bb97e75b48bdf6c70b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "Delivering Enterprise AI Value Requires More Than Technology",
+      "url": "https://www.forbes.com/sites/jonathanreichental/2026/07/13/delivering-enterprise-ai-value-requires-more-than-technology/",
+      "source": "forbes.com",
+      "published": "2026-07-12T22:41:00+00:00",
+      "summary": "Forbes argues that enterprise AI value comes from people, organizational readiness, and leaders willing to redesign how work gets done, not from technology alone. The TGR signal is that judgment, accountability, and the ability to direct change are becoming part of the job even as familiar role boundaries dissolve.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5472bb97e75b48bdf6c70b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Reclaim Value",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "Enterprise AI returns depend on organizational readiness, operating change, and human leadership as much as the underlying tools.",
+        "Workers increasingly create value by designing, directing, and supervising AI inside real systems.",
+        "Judgment and accountability become more visible when execution is shared with machines."
+      ]
+    },
+    {
+      "title": "The Best AI Degrees And How To Choose The Right Major",
+      "url": "https://www.forbes.com/sites/sarahhernholm/article/best-ai-degrees/",
+      "source": "forbes.com",
+      "published": "2026-07-11T04:00:00+00:00",
+      "summary": "Forbes compares dedicated AI majors with established STEM routes for students trying to choose a durable path into artificial intelligence. A degree can provide a foundation, but students still need portable capabilities and a sense of direction that can survive changing job titles.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "AI-specific majors now compete with computer science, engineering, mathematics, and other established routes into the field.",
+        "Students need to choose an education for adaptable capability rather than treat a degree title as a future-proof identity."
+      ]
+    },
+    {
+      "title": "Xbox CEO Joins Fed AI Jobs Task Force Days After Announcing 3,200 Layoffs - Decrypt",
+      "url": "https://decrypt.co/373277/xbox-ceo-fed-ai-jobs-task-force-days-after-layoffs",
+      "source": "decrypt.co",
+      "published": "2026-07-11T00:02:21+00:00",
+      "summary": "Decrypt reports that Xbox CEO Asha Sharma will advise the Federal Reserve on AI, jobs, and productivity while Xbox undergoes the largest restructuring in its history. The timing puts an uncomfortable human question inside the policy conversation: what value and agency remain for workers when roles disappear faster than institutions can explain the transition?",
+      "imageUrl": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2026/07/decrypt-style-xbox-ceo-asha-sharma-gID_7.png",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Sharma joined a Federal Reserve task force studying AI's effects on jobs and productivity after Xbox announced 3,200 layoffs.",
+        "The restructuring makes workforce disruption concrete while the institutional framework for understanding it is still being built."
+      ]
+    },
+    {
+      "title": "AI disruption demands restoration of 'skills ladder' for youth, experts say",
+      "url": "https://biz.heraldcorp.com/article/10800974",
+      "source": "biz.heraldcorp.com",
+      "published": "2026-07-07T05:56:58+00:00",
+      "summary": "Herald Business reports calls to restore a skills ladder for young people as AI raises productivity and unsettles entry-level job security. The missing rung is not just a training problem: beginners need visible ways to build judgment, confidence, and proof of value through real work.",
+      "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/07/07/news-p.v1.20260707.33244d1138cb48d58e24a5fcd2419126_R.png",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Business leaders are calling for stronger upskilling and reskilling systems as AI changes entry-level work.",
+        "Young people need credible pathways for developing judgment and demonstrating value, not only exposure to AI tools."
+      ]
+    },
+    {
+      "title": "After Xbox's 3,200 layoffs, CEO Asha Sharma joins Federal Reserve AI and jobs task force- Moneycontrol.com",
+      "url": "https://www.moneycontrol.com/technology/xbox-ceo-asha-sharma-joins-federal-reserve-task-force-on-ai-and-jobs-article-13970800.html",
+      "source": "moneycontrol.com",
+      "published": "2026-07-10T00:41:00+00:00",
+      "summary": "Moneycontrol also connects Sharma's Federal Reserve appointment to the 3,200 Xbox layoffs, showing how investment, restructuring, job security, and economic policy are now tangled together. The repeated coverage is itself a signal: the contradiction between cutting today's roles and advising on tomorrow's labor market is becoming hard to ignore.",
+      "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/06/20260608074948_Xbox-CEO-Asha-Sharma.png",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The Federal Reserve task force will study how AI reshapes employment, productivity, and monetary policymaking.",
+        "Sharma's appointment after 3,200 layoffs ties workforce policy directly to recent role loss and restructuring."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
