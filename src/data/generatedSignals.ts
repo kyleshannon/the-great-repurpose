@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-14-layoff-shock-meets-the-bionic-coworker",
+    "date": "2026-07-14",
+    "title": "Layoff Shock Meets The Bionic Coworker",
+    "pattern": "Today's five stories show workers searching for solid ground while AI agents move deeper into the workplace. Amazon layoffs have pushed people into a saturated job market and Gen Z is treating the trades as an escape from automation, even as Forbes imagines bionic workers and Wall Street promotes research tools into digital coworkers. The counterweight comes from Hans India: when execution becomes abundant, durable human value gathers around meaning, memory, context, and better decisions.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Find Your Purpose"
+    ],
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108217469-1761596968439-gettyimages-2221389323-AFP_63TY9KL.jpeg?v=1761597002&w=1920&h=1080"
+  },
+  {
     "slug": "2026-07-13-enterprise-readiness-meets-the-broken-skills-ladder",
     "date": "2026-07-13",
     "title": "Enterprise Readiness Meets The Broken Skills Ladder",
@@ -400,6 +413,106 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-14-layoff-shock-meets-the-bionic-coworker": {
+    "slug": "2026-07-14-layoff-shock-meets-the-bionic-coworker",
+    "date": "2026-07-14",
+    "title": "Layoff Shock Meets The Bionic Coworker",
+    "pattern": "Today's five stories show workers searching for solid ground while AI agents move deeper into the workplace. Amazon layoffs have pushed people into a saturated job market and Gen Z is treating the trades as an escape from automation, even as Forbes imagines bionic workers and Wall Street promotes research tools into digital coworkers. The counterweight comes from Hans India: when execution becomes abundant, durable human value gathers around meaning, memory, context, and better decisions.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Find Your Purpose"
+    ],
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108217469-1761596968439-gettyimages-2221389323-AFP_63TY9KL.jpeg?v=1761597002&w=1920&h=1080",
+    "stories": [
+      {
+        "title": "Burnout, frustration and heartbreak: Amazon layoffs take their toll in saturated job market",
+        "url": "https://www.cnbc.com/2026/07/11/burnout-frustration-and-heartbreak-amazon-layoffs-take-their-toll.html",
+        "source": "cnbc.com",
+        "published": "2026-07-12T03:47:00+00:00",
+        "summary": "CNBC follows former Amazon employees carrying burnout, frustration, and heartbreak into a labor market already crowded by months of large-scale cuts. The human cost is not only lost income; people are being forced to separate their identity and value from a role that disappeared before a credible next rung appeared.",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108217469-1761596968439-gettyimages-2221389323-AFP_63TY9KL.jpeg?v=1761597002&w=1920&h=1080",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Amazon's broad layoffs have sent experienced workers into an increasingly saturated job market.",
+          "Burnout and heartbreak reveal how deeply employment still carries identity, stability, and belonging.",
+          "The transition problem is larger than finding another job when familiar career pathways are narrowing at the same time."
+        ]
+      },
+      {
+        "title": "College vs. Trade School: Gen Z Turns to Jobs AI Can't Replace—Welders, Plumbers and Electricians",
+        "url": "https://www.ibtimes.co.uk/gen-z-trade-schools-ai-career-path-1808554",
+        "source": "ibtimes.co.uk",
+        "published": "2026-07-14T11:16:52+00:00",
+        "summary": "International Business Times reports that more Gen Z students are choosing trades as tuition rises and office careers appear increasingly exposed to AI. Welding, plumbing, and electrical work become more than alternatives to college: they are bets that embodied, locally accountable skill will retain visible value.",
+        "imageUrl": "https://d.ibtimes.co.uk/en/full/1819449/gen-z.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Rising college costs and automation anxiety are making trade schools more attractive to Gen Z.",
+          "Hands-on work is being valued for its physical context, local demand, and resistance to easy automation.",
+          "Choosing a trade challenges the inherited belief that a four-year degree is the default route to status and security."
+        ]
+      },
+      {
+        "title": "The Next Chapter of AI Is About Meaning, Memory and Better Decisions",
+        "url": "https://www.thehansindia.com/technology/tech-news/the-next-chapter-of-ai-is-about-meaning-memory-and-better-decisions-1097314",
+        "source": "thehansindia.com",
+        "published": "2026-07-14T05:06:54+00:00",
+        "summary": "Hans India argues that AI's next chapter will be defined less by automation than by intelligence with memory, context, and judgment. That shifts the human question away from competing on execution and toward deciding what matters, which context deserves attention, and what a good outcome should be.",
+        "imageUrl": "https://assets.thehansindia.com/h-upload/2026/07/14/1677341-memory.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "Persistent memory and richer context could make AI systems more useful for consequential decisions.",
+          "Better automation does not eliminate the need to define meaning, priorities, and acceptable outcomes.",
+          "Human value moves toward judgment and purpose when mechanical execution becomes easier to obtain."
+        ]
+      },
+      {
+        "title": "The Future Of Business: AI Agents And Bionic Workers",
+        "url": "https://www.forbes.com/sites/chris-perry/2026/07/13/the-future-of-business-ai-agents-and-bionic-workers/",
+        "source": "forbes.com",
+        "published": "2026-07-13T06:07:00+00:00",
+        "summary": "Forbes reframes the replacement debate around bionic workers who operate with AI agents rather than compete against them. The promise only becomes real when people learn to design, direct, and supervise agentic work—and remain accountable for what those systems do.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4eed08874209de3bb6a1ba/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Agentic AI renews fears of worker replacement while creating a competing model of human-machine collaboration.",
+          "Bionic work shifts the role from performing every task to orchestrating people, tools, and autonomous systems.",
+          "Judgment and accountability become more important when agents can act with less direct human intervention."
+        ]
+      },
+      {
+        "title": "Wall Street banks promoting AI agents from research aids into digital coworkers",
+        "url": "https://www.investmentnews.com/fintech/wall-street-banks-promoting-ai-agents-from-research-aids-into-digital-coworkers/267388",
+        "source": "investmentnews.com",
+        "published": "2026-07-13T12:01:03+00:00",
+        "summary": "InvestmentNews reports that major banks are moving agentic AI from research assistance into trading, treasury, wealth management, and eventually advisory work. Calling these systems digital coworkers makes the transition explicit: professionals will be judged increasingly by how well they direct, verify, and take responsibility for machine-enabled work.",
+        "imageUrl": "https://cdn-res.keymedia.com/cms/images/in/deni_639093387782762277.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Banks are deploying agents across trading, treasury, and wealth-management workflows.",
+          "Advisory functions are emerging as the next frontier for systems that began as research aids.",
+          "Financial professionals must build new habits of orchestration, verification, and accountability as agents gain autonomy."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-13-enterprise-readiness-meets-the-broken-skills-ladder": {
     "slug": "2026-07-13-enterprise-readiness-meets-the-broken-skills-ladder",
     "date": "2026-07-13",
