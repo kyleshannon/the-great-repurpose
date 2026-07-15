@@ -1,0 +1,98 @@
+{
+  "slug": "2026-07-15-meta-layoffs-meet-the-taste-premium",
+  "date": "2026-07-15",
+  "title": "Meta Layoffs Meet The Taste Premium",
+  "pattern": "Today's five stories draw a line between AI used on people and AI used with them. Two reports on Meta's disputed layoff system make accountability the immediate stakes, while essential workers and Wall Street professionals are being equipped with AI as a source of context and leverage. As creation becomes cheap, the durable human premium shifts toward taste, judgment, and responsibility for which decisions deserve to be made.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "https://image.cnbcfm.com/api/v1/image/108297760-1777307207308-108297760-1777307153926-gettyimages-2267943764-Zuckerberg_182_032626.jpeg?v=1780690805&w=1920&h=1080",
+  "stories": [
+    {
+      "title": "Current and former employees sue Meta, alleging discrimination in using AI to conduct layoffs",
+      "url": "https://www.cnbc.com/2026/07/14/meta-lawsuit-layoffs-ai.html",
+      "source": "cnbc.com",
+      "published": "2026-07-14T13:19:00+00:00",
+      "summary": "CNBC reports that current and former Meta employees are suing over allegations that AI helped shape layoffs that disproportionately affected disabled workers and people on medical leave. The case puts a concrete human question behind algorithmic workforce decisions: who remains accountable when a system helps decide whose role, livelihood, and institutional standing disappear?",
+      "imageUrl": "https://image.cnbcfm.com/api/v1/image/108297760-1777307207308-108297760-1777307153926-gettyimages-2267943764-Zuckerberg_182_032626.jpeg?v=1780690805&w=1920&h=1080",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Current and former employees allege that Meta used AI in layoffs that discriminated against disabled workers and people on medical leave.",
+        "The dispute shows why automated workforce decisions require visible human accountability, not only technical explanations.",
+        "Workers bear the identity and livelihood shock even when responsibility for the decision is distributed across people and systems."
+      ]
+    },
+    {
+      "title": "AI Made Creation Free. Taste Is What's Scarce Now",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/07/14/ai-made-creation-free-taste-is-whats-scarce-now/",
+      "source": "forbes.com",
+      "published": "2026-07-13T21:00:00+00:00",
+      "summary": "Forbes argues that generative AI has made producing more images and ideas nearly frictionless, making selection rather than output the creative bottleneck. The creators who stand out will not be those who generate the most; they will be those with the taste, context, and conviction to recognize the one thing worth keeping.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a552ce8a580febfe0577c13/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Reclaim Value",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "Generative tools are driving the marginal cost of creative production toward zero.",
+        "Abundant output makes taste, editing, and the decision about what deserves attention more scarce.",
+        "Creative value moves upstream from making more artifacts to exercising judgment about meaning and quality."
+      ]
+    },
+    {
+      "title": "Why AI's Greatest Value Is Empowering The Essential Worker",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/07/15/from-forecasting-to-feeling-why-ais-greatest-value-is-empowering-the-essential-worker/",
+      "source": "forbes.com",
+      "published": "2026-07-14T21:00:00+00:00",
+      "summary": "Forbes makes the case for applying AI to the people doing essential, situational work rather than treating the technology only as a headquarters efficiency layer. Giving frontline workers timely information and context can increase confidence and agency, provided the system strengthens their judgment instead of quietly narrowing their autonomy.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6642719058fb6729d2862dbb/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI can deliver timely information and context to workers handling unpredictable real-world situations.",
+        "The strongest augmentation case improves frontline confidence and decision quality instead of merely extracting efficiency.",
+        "Essential workers retain value through situated judgment that cannot be reduced to a standard workflow."
+      ]
+    },
+    {
+      "title": "Wall Street banks promoting AI agents from research aids into digital coworkers",
+      "url": "https://www.investmentnews.com/fintech/wall-street-banks-promoting-ai-agents-from-research-aids-into-digital-coworkers/267388",
+      "source": "investmentnews.com",
+      "published": "2026-07-13T12:01:03+00:00",
+      "summary": "InvestmentNews reports that major banks are advancing AI agents from research assistance into trading, treasury, wealth management, and eventually advisory work. The digital-coworker label signals a genuine role redesign: professionals increasingly create value by directing, checking, and accepting responsibility for work performed with autonomous systems.",
+      "imageUrl": "https://cdn-res.keymedia.com/cms/images/in/deni_639093387782762277.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "Agentic AI is moving from research support into core banking workflows across trading, treasury, and wealth management.",
+        "Advisory work is emerging as the next frontier as agents gain more operational autonomy.",
+        "Professionals must develop orchestration, verification, and accountability as performance separates from direct task execution."
+      ]
+    },
+    {
+      "title": "Meta slams lawsuit alleging use of AI in ‘discriminatory’ job cuts — ‘Workforce decisions made by people, not AI’",
+      "url": "https://www.financialexpress.com/world-news/us-news/meta-slams-lawsuit-alleging-use-of-ai-in-discriminatory-job-cuts-workforce-decisions-made-by-people-not-ai/4291924/",
+      "source": "financialexpress.com",
+      "published": "2026-07-14T20:48:00+00:00",
+      "summary": "Financial Express covers Meta's denial that AI made discriminatory workforce decisions and the employees' demand for an audit and halt to the contested layoffs. The competing claims expose the governance gap at the center of automated management: saying people made the final decision is not enough unless institutions can show how evidence, judgment, and responsibility actually traveled through the system.",
+      "imageUrl": "https://images.financialexpressdigital.com/2026/07/MarkmetaReuters_20260715034602.jpg",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Meta denies that AI made its workforce decisions while employees allege discriminatory algorithmic influence.",
+        "The plaintiffs are seeking both an audit and a court order stopping the contested layoff process.",
+        "Human sign-off does not resolve accountability unless the organization can explain how the system affected the outcome."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
