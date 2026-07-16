@@ -1,0 +1,101 @@
+{
+  "slug": "2026-07-16-office-cuts-meet-the-ai-apprenticeship",
+  "date": "2026-07-16",
+  "title": "Office Cuts Meet The AI Apprenticeship",
+  "pattern": "Today's five stories show the AI transition splitting into two competing paths. AOL's list of exposed office roles, JPMorgan's 40% departmental cuts, and Sprout Social's 20% workforce reduction treat work as capacity to remove; Cognizant's 1,500-graduate plan and a new creator-tool stack treat it as capability to build. The deeper pattern is that institutions are redesigning the first rung of work in real time—and the human outcome depends on whether AI becomes an excuse to erase roles or an apprenticeship for judgment, agency, and creation.",
+  "stages": [
+    "Unhook Identity",
+    "Discover AI's Power",
+    "Reclaim Value",
+    "Find Your Purpose",
+    "Start Creating"
+  ],
+  "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+  "stories": [
+    {
+      "title": "AI Could Replace These 11 Common Office Jobs Faster Than Workers Expect",
+      "url": "https://www.aol.com/articles/ai-could-replace-11-common-115100000.html",
+      "source": "aol.com",
+      "published": "2026-07-15T04:51:00+00:00",
+      "summary": "AOL identifies 11 familiar office roles where automation is advancing faster than many workers expect. The list matters less as a prediction than as a warning: when tasks detach from a job title, people need a clearer account of the judgment, trust, and context they contribute beyond the old role wrapper.",
+      "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Routine office work is becoming a near-term automation target across a range of recognizable roles.",
+        "Workers need to separate durable capabilities from job titles whose task bundles are being redrawn.",
+        "The transition raises a value question: which parts of office work still depend on human judgment, relationships, and accountability?"
+      ]
+    },
+    {
+      "title": "Cognizant On Track to Hire 1,500 U.S. College Graduates in 2026 to Power AI-Era Workforce",
+      "url": "https://www.aol.com/articles/cognizant-track-hire-1-500-140000000.html",
+      "source": "aol.com",
+      "published": "2026-07-15T07:02:00+00:00",
+      "summary": "Cognizant plans to hire 1,500 U.S. college graduates through university partnerships, apprenticeships, and frontier-engineering programs. At a moment when many companies are shrinking entry-level pathways, the plan offers a different model: use the first rung of work to develop people alongside AI rather than demanding finished expertise before they arrive.",
+      "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
+      "stages": [
+        "Find Your Purpose",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Cognizant is expanding early-career hiring through university partners, apprenticeships, and advanced engineering tracks.",
+        "The program treats AI-era readiness as something institutions can cultivate, not merely screen for.",
+        "Visible learning pathways give graduates a place to build direction and judgment while role definitions are changing."
+      ]
+    },
+    {
+      "title": "Jamie Dimon Says JPMorgan Has Slashed 40% of Jobs in Some Departments, Thanks to AI",
+      "url": "https://www.fastcompany.com/91573524/jamie-dimon-says-jpmorgan-has-slashed-40-of-jobs-in-some-departments-thanks-to-ai",
+      "source": "fastcompany.com",
+      "published": "2026-07-14T14:00:00+00:00",
+      "summary": "Fast Company reports Jamie Dimon's disclosure that JPMorgan has cut staffing by as much as 40% in some departments as AI changes the bank's operations. The gap between earlier reassurance and current cuts leaves workers absorbing more than job loss: they must rebuild trust and identity while institutional explanations catch up to the transformation already underway.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "JPMorgan has reduced staffing by as much as 40% in some departments amid AI adoption.",
+        "The disclosure complicates earlier assurances that the technology would not produce widespread layoffs.",
+        "Workers face both an employment shock and an institutional trust gap when the story changes after the cuts arrive."
+      ]
+    },
+    {
+      "title": "Sprout Social to Cut 20% of Workforce as AI-Fueled Tech Layoffs Continue",
+      "url": "https://www.marketwatch.com/story/sprout-social-to-cut-20-of-workforce-as-ai-fueled-tech-layoffs-continue-7e2b1b17",
+      "source": "marketwatch.com",
+      "published": "2026-07-15T06:35:00+00:00",
+      "summary": "MarketWatch reports that Sprout Social is cutting 20% of its workforce as the software industry reorganizes around AI. The scale of the reduction turns an abstract technology shift into a human one: people are being asked to reimagine their value while companies are still learning what an AI-shaped organization should become.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "Sprout Social has begun notifying employees as it eliminates one-fifth of its workforce.",
+        "The company places the cuts inside a broader AI-driven restructuring of the software industry.",
+        "The speed of organizational redesign is outrunning the support workers receive for rebuilding identity and direction."
+      ]
+    },
+    {
+      "title": "Best AI Tools for Digital Creators in 2026",
+      "url": "https://www.tmcnet.com/usubmit/2026/07/16/10415551.htm",
+      "source": "tmcnet.com",
+      "published": "2026-07-15T17:00:00+00:00",
+      "summary": "TMCnet surveys AI tools for digital creators, highlighting CapCut for video and visual production. The list shows creation becoming more accessible and more automated at once, pushing human value upstream from operating software toward taste, intent, selection, and the courage to decide what is worth making.",
+      "imageUrl": "https://images.tmcnet.com/tmc/world.jpg",
+      "stages": [
+        "Start Creating",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "AI-assisted video and visual tools are lowering the technical barrier to producing polished content.",
+        "CapCut is presented as part of a broader creator stack in which automation handles more execution.",
+        "As production becomes easier, differentiation shifts toward taste, meaning, and creative direction."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
