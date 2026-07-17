@@ -1,0 +1,100 @@
+{
+  "slug": "2026-07-17-layoff-boomerang-meets-the-hiring-loop",
+  "date": "2026-07-17",
+  "title": "Layoff Boomerang Meets The Hiring Loop",
+  "pattern": "Today's five stories expose a feedback loop hiding inside the AI jobs debate. Wells Fargo's 79,000-job contraction sits beside Cisco's and Jensen Huang's claims that deeper AI use can create work, while Forbes reports that some companies are already rehiring people after automation stripped out judgment they still needed. Outlook India's focus on human thinking makes the deeper pattern clear: the organizations learning fastest are discovering that efficiency can remove a role faster than it can replace the context, accountability, and discernment inside it.",
+  "stages": [
+    "Unhook Identity",
+    "Start Creating",
+    "Reclaim Value",
+    "Find Your Purpose"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a593cb030f01f60b0533bd9/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "Cisco AI Automation Vision: Can AI Create More Jobs Than It Destroys?",
+      "url": "https://thesiliconreview.com/2026/07/cisco-ai-automation-future-jobs-workforce",
+      "source": "thesiliconreview.com",
+      "published": "2026-07-15T17:00:00+00:00",
+      "summary": "Cisco argues that automation can create more jobs than it destroys if workers build AI skills alongside the transformation. The claim shifts the test from counting old roles to asking whether companies are actually creating pathways for people to turn new capability into useful work.",
+      "imageUrl": "https://thesiliconreview.com/story_image_upload/article/Cisco_2026-07-16_12-53-08.webp",
+      "stages": [
+        "Unhook Identity",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "Cisco frames AI adoption as a possible engine of job creation rather than only displacement.",
+        "That outcome depends on whether workers receive practical routes to build and apply AI capability.",
+        "People must separate identity from a current job wrapper to see the work that emerging tools make possible."
+      ]
+    },
+    {
+      "title": "Are Mass AI-Driven Layoffs A Boomerang?",
+      "url": "https://www.forbes.com/sites/johnwerner/2026/07/17/are-mass-ai-driven-layoffs-a-boomerang/",
+      "source": "forbes.com",
+      "published": "2026-07-16T21:00:00+00:00",
+      "summary": "Forbes describes companies rehiring people after AI-driven cuts revealed that automation had not replaced the human judgment the work required. The boomerang matters because it turns human value from a sentimental claim into an operating fact discovered through failed redesign.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a593cb030f01f60b0533bd9/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Some firms are reversing layoffs after learning that automated systems did not absorb the full work.",
+        "Human judgment, context, and exception handling remain essential after routine tasks are removed.",
+        "The rehiring loop reveals which parts of value belonged to people rather than to the old role description."
+      ]
+    },
+    {
+      "title": "Wells Fargo layoffs: Bank cuts 79,000 jobs in 6 years, says AI will drive more workforce reductions",
+      "url": "https://www.firstpost.com/tech/wells-fargo-layoffs-bank-cuts-79000-jobs-in-6-years-says-ai-will-drive-more-workforce-reductions-14032116.html",
+      "source": "firstpost.com",
+      "published": "2026-07-17T03:19:00+00:00",
+      "summary": "Firstpost reports that Wells Fargo has cut 79,000 jobs over six years and expects AI and other technology to drive further reductions. The scale makes the identity shock concrete: workers are being asked to navigate a structural transition while the institution describes the change mainly through efficiency.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Wells Fargo's workforce has contracted by 79,000 positions over six years.",
+        "The bank expects technology and AI to enable additional headcount reductions.",
+        "Efficiency language leaves workers to reconstruct identity and direction after roles disappear."
+      ]
+    },
+    {
+      "title": "Jensen Huang says the more AI is used, the more ‘we have to hire’",
+      "url": "https://www.fastcompany.com/91575095/jensen-huang-says-the-more-ai-is-used-the-more-we-have-to-hire",
+      "source": "fastcompany.com",
+      "published": "2026-07-16T12:00:00+00:00",
+      "summary": "Fast Company reports Jensen Huang's argument that greater AI use expands the number of ideas a company can pursue and therefore increases its need to hire. It is the inverse of the efficiency-only story: when capability grows, the constraint can shift from labor cost to human imagination and execution.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "Huang argues that AI-driven productivity creates room to pursue more opportunities rather than simply remove workers.",
+        "More realizable ideas can increase demand for people who can choose, shape, and execute them.",
+        "The job outcome depends on whether leaders treat new capacity as a reason to contract or to create."
+      ]
+    },
+    {
+      "title": "Column | AI Will Reshape More Jobs Than It Replaces: What Professionals Need to Know | Outlook India",
+      "url": "https://www.outlookindia.com/education/column-ai-will-reshape-more-jobs-than-it-replaces-what-professionals-need-to-know",
+      "source": "outlookindia.com",
+      "published": "2026-07-17T04:07:46+00:00",
+      "summary": "Outlook India argues that AI will reshape more jobs than it replaces and that human thinking will remain central for students entering work. The practical challenge is not merely learning tools; it is building judgment and direction so people can recognize where their contribution belongs as roles are recomposed.",
+      "imageUrl": "https://cf-images.assettype.com/outlookindia/2026-07-14/w98e7gve/jitinchawla120260803.jpg?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "The column frames job transformation as broader than outright replacement.",
+        "Human thinking remains a differentiator as AI takes on more routine execution.",
+        "Students need visible ways to connect durable judgment with an evolving sense of direction."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
