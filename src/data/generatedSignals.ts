@@ -3,17 +3,15 @@
 
 export const bundledSignalIndex = [
   {
-    "slug": "2026-07-18-taste-meets-the-reverse-recruiter",
+    "slug": "2026-07-18-judge-wont-block-meta-ai-layoffs",
     "date": "2026-07-18",
-    "title": "Taste Meets The Reverse Recruiter",
-    "pattern": "Today's five stories show AI changing both sides of the employment bargain. Wells Fargo's continuing cuts and the prospect of an agent that charges workers to find a job sit beside Cisco's promise of new roles and Forbes's evidence that companies are rehiring people after automation removed judgment they still need. The creative-economy story sharpens the pattern: as execution becomes abundant, human leverage moves toward taste, discernment, and the ability to decide which opportunities are worth pursuing.",
+    "title": "Judge Won't Block Meta AI Layoffs",
+    "pattern": "Today's stories move the AI work conversation from headline job counts to the terms on which people are kept, ranked, or represented. Meta's layoffs and discrimination allegations show the governance cost of automated decisions; the productivity and white-collar stories show that efficiency alone does not explain—or sustain—human contribution. The deeper pattern is that AI transition demands more than new tools: it asks institutions to make accountability, agency, and durable human value visible.",
     "stages": [
       "Unhook Identity",
-      "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Discover AI's Power"
     ],
-    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a552ce8a580febfe0577c13/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+    "imageUrl": "https://data.ibtimes.sg/en/full/93078/us.jpg?w=1200&h=630?q=60"
   },
   {
     "slug": "2026-07-17-layoff-boomerang-meets-the-hiring-loop",
@@ -465,84 +463,30 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
-  "2026-07-18-taste-meets-the-reverse-recruiter": {
-    "slug": "2026-07-18-taste-meets-the-reverse-recruiter",
+  "2026-07-18-judge-wont-block-meta-ai-layoffs": {
+    "slug": "2026-07-18-judge-wont-block-meta-ai-layoffs",
     "date": "2026-07-18",
-    "title": "Taste Meets The Reverse Recruiter",
-    "pattern": "Today's five stories show AI changing both sides of the employment bargain. Wells Fargo's continuing cuts and the prospect of an agent that charges workers to find a job sit beside Cisco's promise of new roles and Forbes's evidence that companies are rehiring people after automation removed judgment they still need. The creative-economy story sharpens the pattern: as execution becomes abundant, human leverage moves toward taste, discernment, and the ability to decide which opportunities are worth pursuing.",
+    "title": "Judge Won't Block Meta AI Layoffs",
+    "pattern": "Today's stories move the AI work conversation from headline job counts to the terms on which people are kept, ranked, or represented. Meta's layoffs and discrimination allegations show the governance cost of automated decisions; the productivity and white-collar stories show that efficiency alone does not explain—or sustain—human contribution. The deeper pattern is that AI transition demands more than new tools: it asks institutions to make accountability, agency, and durable human value visible.",
     "stages": [
       "Unhook Identity",
-      "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Discover AI's Power"
     ],
-    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a552ce8a580febfe0577c13/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "imageUrl": "https://data.ibtimes.sg/en/full/93078/us.jpg?w=1200&h=630?q=60",
     "stories": [
       {
-        "title": "Are Mass AI-Driven Layoffs A Boomerang?",
-        "url": "https://www.forbes.com/sites/johnwerner/2026/07/17/are-mass-ai-driven-layoffs-a-boomerang/",
-        "source": "forbes.com",
-        "published": "2026-07-16T21:00:00+00:00",
-        "summary": "Forbes reports that some companies are rehiring people after AI-driven cuts exposed work that automation could not absorb. The reversal turns human judgment from a vague virtue into an operating requirement discovered after the role itself was removed.",
-        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a593cb030f01f60b0533bd9/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-        "stages": [
-          "Unhook Identity",
-          "Reclaim Value"
-        ],
-        "keyPoints": [
-          "Some employers are bringing people back after automation failed to cover the full work.",
-          "Context, exception handling, and judgment remained necessary after routine execution was removed.",
-          "The boomerang reveals human value that old job descriptions failed to name."
-        ]
-      },
-      {
-        "title": "Cisco AI Automation Vision: Can AI Create More Jobs Than It Destroys?",
-        "url": "https://thesiliconreview.com/2026/07/cisco-ai-automation-future-jobs-workforce",
-        "source": "thesiliconreview.com",
-        "published": "2026-07-15T17:00:00+00:00",
-        "summary": "Cisco argues that AI can create more jobs than it destroys if workers gain practical AI skills. The promise depends on whether institutions build real pathways from displaced roles into useful new work instead of leaving adaptation to individuals.",
-        "imageUrl": "https://thesiliconreview.com/story_image_upload/article/Cisco_2026-07-16_12-53-08.webp",
-        "stages": [
-          "Unhook Identity",
-          "Start Creating"
-        ],
-        "keyPoints": [
-          "Cisco frames automation as a possible source of job creation rather than only contraction.",
-          "Workers need practical opportunities to build and apply AI capability.",
-          "New work becomes visible when identity is no longer confined to the current role wrapper."
-        ]
-      },
-      {
-        "title": "Wells Fargo layoffs: Bank cuts 79,000 jobs in 6 years, says AI will drive more workforce reductions",
-        "url": "https://www.firstpost.com/tech/wells-fargo-layoffs-bank-cuts-79000-jobs-in-6-years-says-ai-will-drive-more-workforce-reductions-14032116.html",
-        "source": "firstpost.com",
-        "published": "2026-07-17T03:19:00+00:00",
-        "summary": "Firstpost reports that Wells Fargo has eliminated 79,000 jobs in six years and expects AI and technology to enable further reductions. The scale makes the transition personal: efficiency gains arrive as identity and livelihood shocks for workers whose roles disappear.",
-        "imageUrl": "",
+        "title": "Judge Won't Block Meta AI Layoffs",
+        "url": "https://www.ibtimes.sg/26-meta-workers-challenge-ai-layoffs-judge-lets-job-cuts-proceed-90036",
+        "source": "ibtimes.sg",
+        "published": "2026-07-18T17:08:15+00:00",
+        "summary": "An early ruling lets Meta continue layoffs while a group of workers challenges AI-driven performance tools they say were used unfairly against employees with disabilities or medical leave. It shifts the conversation from abstract AI layoffs to the human governance question: who is accountable when a system helps decide whose work, health, or performance makes them expendable?",
+        "imageUrl": "https://data.ibtimes.sg/en/full/93078/us.jpg?w=1200&h=630?q=60",
         "stages": [
           "Unhook Identity"
         ],
         "keyPoints": [
-          "Wells Fargo's workforce has contracted by 79,000 positions over six years.",
-          "The bank expects AI and other technology to support additional reductions.",
-          "Workers must reconstruct direction while institutions describe the transition primarily as efficiency."
-        ]
-      },
-      {
-        "title": "AI Made Creation Free. Taste Is What's Scarce Now",
-        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/07/14/ai-made-creation-free-taste-is-whats-scarce-now/",
-        "source": "forbes.com",
-        "published": "2026-07-13T21:00:00+00:00",
-        "summary": "Forbes argues that cheap AI generation has made selection more valuable than output volume. When anyone can produce endless options, creative advantage moves upstream into taste: knowing what to keep, what to discard, and what deserves to exist.",
-        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a552ce8a580febfe0577c13/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-        "stages": [
-          "Reclaim Value",
-          "Discover AI's Power"
-        ],
-        "keyPoints": [
-          "AI has reduced the cost and friction of generating creative options.",
-          "Scarcity shifts from production capacity to selection and editorial judgment.",
-          "Human value gathers around taste, meaning, and responsibility for the final choice."
+          "A federal judge declined to temporarily halt Meta's layoffs of 26 employees alleging AI-driven performance tools discriminated against workers.",
+          "The case makes the accountability of automated workforce decisions a concrete human and institutional question."
         ]
       },
       {
@@ -550,7 +494,7 @@ export const bundledSignalsBySlug = {
         "url": "https://gizmodo.com/reverse-recruiter-startup-wants-you-to-pay-if-its-ai-agent-finds-you-a-job-2000786519",
         "source": "gizmodo.com",
         "published": "2026-07-16T18:30:57+00:00",
-        "summary": "Gizmodo examines a startup proposing to charge job seekers when an AI agent finds them work. Automating the search may reduce friction, but it also relocates agency and accountability into a system acting at one of the most consequential moments in a person's working life.",
+        "summary": "Gizmodo reports on a startup that wants to charge job seekers only when an AI agent lands them a role. It moves AI beyond application assistance into representing a person in a high-stakes labor market, which makes agency, informed consent, and accountability part of the service—not a technical detail.",
         "imageUrl": "https://gizmodo.com/app/uploads/2025/08/GettyImages-2229210608-1200x675.jpg",
         "stages": [
           "Unhook Identity",
@@ -560,6 +504,52 @@ export const bundledSignalsBySlug = {
           "The proposed agent searches for work on a candidate's behalf and charges after placement.",
           "Automation is moving from helping people apply to intermediating the job search itself.",
           "Workers need clarity about who directs the agent and who is accountable for its choices."
+        ]
+      },
+      {
+        "title": "Meta Used AI to Target Workers With Disabilities or on Medical Leave for Layoffs, Lawsuit Claims",
+        "url": "https://www.yahoo.com/news/us/articles/meta-used-ai-target-workers-171207955.html",
+        "source": "yahoo.com",
+        "published": "2026-07-15T10:12:00+00:00",
+        "summary": "A separate lawsuit alleges Meta's AI may have singled out workers with disabilities or medical leave in layoffs. Alongside the judge's ruling, it shows why organizational AI is not neutral when it ranks or flags people: automated decisions can carry a company's hidden assumptions directly into someone's livelihood.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The lawsuit claims Meta used AI to identify workers with disabilities or medical leave for layoffs.",
+          "Automated workforce tools require scrutiny for the criteria, incentives, and bias they may encode."
+        ]
+      },
+      {
+        "title": "U.S. Workers Are More Productive Than Ever. A.I. Isn't the Key.",
+        "url": "https://www.nytimes.com/2026/07/14/business/worker-productivity-artificial-intelligence-economy.html",
+        "source": "nytimes.com",
+        "published": "2026-07-14T06:25:00+00:00",
+        "summary": "The New York Times looks at the productivity boom and argues it stems as much from tight labor markets, digitization, and changed work practices as from AI. That distinction matters: organizations should not use the idea of AI efficiency to credit technology for human effort—or to erase the conditions and judgment behind real output.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The article attributes productivity gains to several forces, not AI alone.",
+          "Workers' experience and changed operating conditions remain part of the explanation for higher output."
+        ]
+      },
+      {
+        "title": "Are employers facing a potential AI-driven exodus of white-collar workers?",
+        "url": "https://diginomica.com/are-employers-facing-potential-ai-driven-exodus-white-collar-workers",
+        "source": "diginomica.com",
+        "published": "2026-07-14T09:00:02+00:00",
+        "summary": "Diginomica asks whether white-collar workers may leave rather than accept AI-shaped roles they see as less secure or less meaningful. The story reframes workforce risk: even when companies keep jobs, trust, autonomy, and a credible path for human contribution determine whether people stay engaged.",
+        "imageUrl": "https://diginomica.com/sites/default/files/images/2022-03/shutterstock_2067577946.png",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The piece considers the organizational implications of an AI-driven white-collar exodus.",
+          "Retention depends on whether people can see agency and value in the work that remains."
         ]
       }
     ],
