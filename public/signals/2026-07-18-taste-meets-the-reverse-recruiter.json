@@ -1,0 +1,86 @@
+{
+  "slug": "2026-07-18-taste-meets-the-reverse-recruiter",
+  "date": "2026-07-18",
+  "title": "Taste Meets The Reverse Recruiter",
+  "pattern": "Today's five stories show AI changing both sides of the employment bargain. Wells Fargo's continuing cuts and the prospect of an agent that charges workers to find a job sit beside Cisco's promise of new roles and Forbes's evidence that companies are rehiring people after automation removed judgment they still need. The creative-economy story sharpens the pattern: as execution becomes abundant, human leverage moves toward taste, discernment, and the ability to decide which opportunities are worth pursuing.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Discover AI's Power",
+    "Start Creating"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a552ce8a580febfe0577c13/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "Are Mass AI-Driven Layoffs A Boomerang?",
+      "url": "https://www.forbes.com/sites/johnwerner/2026/07/17/are-mass-ai-driven-layoffs-a-boomerang/",
+      "source": "forbes.com",
+      "published": "2026-07-16T21:00:00+00:00",
+      "summary": "Forbes reports that some companies are rehiring people after AI-driven cuts exposed work that automation could not absorb. The reversal turns human judgment from a vague virtue into an operating requirement discovered after the role itself was removed.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a593cb030f01f60b0533bd9/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "Some employers are bringing people back after automation failed to cover the full work.",
+        "Context, exception handling, and judgment remained necessary after routine execution was removed.",
+        "The boomerang reveals human value that old job descriptions failed to name."
+      ]
+    },
+    {
+      "title": "Cisco AI Automation Vision: Can AI Create More Jobs Than It Destroys?",
+      "url": "https://thesiliconreview.com/2026/07/cisco-ai-automation-future-jobs-workforce",
+      "source": "thesiliconreview.com",
+      "published": "2026-07-15T17:00:00+00:00",
+      "summary": "Cisco argues that AI can create more jobs than it destroys if workers gain practical AI skills. The promise depends on whether institutions build real pathways from displaced roles into useful new work instead of leaving adaptation to individuals.",
+      "imageUrl": "https://thesiliconreview.com/story_image_upload/article/Cisco_2026-07-16_12-53-08.webp",
+      "stages": ["Unhook Identity", "Start Creating"],
+      "keyPoints": [
+        "Cisco frames automation as a possible source of job creation rather than only contraction.",
+        "Workers need practical opportunities to build and apply AI capability.",
+        "New work becomes visible when identity is no longer confined to the current role wrapper."
+      ]
+    },
+    {
+      "title": "Wells Fargo layoffs: Bank cuts 79,000 jobs in 6 years, says AI will drive more workforce reductions",
+      "url": "https://www.firstpost.com/tech/wells-fargo-layoffs-bank-cuts-79000-jobs-in-6-years-says-ai-will-drive-more-workforce-reductions-14032116.html",
+      "source": "firstpost.com",
+      "published": "2026-07-17T03:19:00+00:00",
+      "summary": "Firstpost reports that Wells Fargo has eliminated 79,000 jobs in six years and expects AI and technology to enable further reductions. The scale makes the transition personal: efficiency gains arrive as identity and livelihood shocks for workers whose roles disappear.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity"],
+      "keyPoints": [
+        "Wells Fargo's workforce has contracted by 79,000 positions over six years.",
+        "The bank expects AI and other technology to support additional reductions.",
+        "Workers must reconstruct direction while institutions describe the transition primarily as efficiency."
+      ]
+    },
+    {
+      "title": "AI Made Creation Free. Taste Is What's Scarce Now",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/07/14/ai-made-creation-free-taste-is-whats-scarce-now/",
+      "source": "forbes.com",
+      "published": "2026-07-13T21:00:00+00:00",
+      "summary": "Forbes argues that cheap AI generation has made selection more valuable than output volume. When anyone can produce endless options, creative advantage moves upstream into taste: knowing what to keep, what to discard, and what deserves to exist.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a552ce8a580febfe0577c13/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": ["Reclaim Value", "Discover AI's Power"],
+      "keyPoints": [
+        "AI has reduced the cost and friction of generating creative options.",
+        "Scarcity shifts from production capacity to selection and editorial judgment.",
+        "Human value gathers around taste, meaning, and responsibility for the final choice."
+      ]
+    },
+    {
+      "title": "'Reverse Recruiter' Startup Wants You to Pay If Its AI Agent Finds You a Job",
+      "url": "https://gizmodo.com/reverse-recruiter-startup-wants-you-to-pay-if-its-ai-agent-finds-you-a-job-2000786519",
+      "source": "gizmodo.com",
+      "published": "2026-07-16T18:30:57+00:00",
+      "summary": "Gizmodo examines a startup proposing to charge job seekers when an AI agent finds them work. Automating the search may reduce friction, but it also relocates agency and accountability into a system acting at one of the most consequential moments in a person's working life.",
+      "imageUrl": "https://gizmodo.com/app/uploads/2025/08/GettyImages-2229210608-1200x675.jpg",
+      "stages": ["Unhook Identity", "Discover AI's Power"],
+      "keyPoints": [
+        "The proposed agent searches for work on a candidate's behalf and charges after placement.",
+        "Automation is moving from helping people apply to intermediating the job search itself.",
+        "Workers need clarity about who directs the agent and who is accountable for its choices."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
