@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-19-creators-keep-the-chair-as-agents-take-the-search",
+    "date": "2026-07-19",
+    "title": "Creators Keep The Chair As Agents Take The Search",
+    "pattern": "Today's five stories show AI moving deeper into the machinery of making and finding work without settling who should remain in charge. CapCut compresses creative production, a recruitment agent offers to hunt for jobs, and Netflix says AI touched 300 titles while creators kept the lead; Upwork's freelance index and the warning of a white-collar exodus reveal the other half of the bargain. The pattern is not simply more automation—it is a negotiation over whether people gain leverage to direct the system or lose agency inside workflows designed around them.",
+    "stages": [
+      "Start Creating",
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/07/20260717092550_Netflix.png"
+  },
+  {
     "slug": "2026-07-18-judge-wont-block-meta-ai-layoffs",
     "date": "2026-07-18",
     "title": "Judge Won't Block Meta AI Layoffs",
@@ -463,6 +476,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-19-creators-keep-the-chair-as-agents-take-the-search": {
+    "slug": "2026-07-19-creators-keep-the-chair-as-agents-take-the-search",
+    "date": "2026-07-19",
+    "title": "Creators Keep The Chair As Agents Take The Search",
+    "pattern": "Today's five stories show AI moving deeper into the machinery of making and finding work without settling who should remain in charge. CapCut compresses creative production, a recruitment agent offers to hunt for jobs, and Netflix says AI touched 300 titles while creators kept the lead; Upwork's freelance index and the warning of a white-collar exodus reveal the other half of the bargain. The pattern is not simply more automation—it is a negotiation over whether people gain leverage to direct the system or lose agency inside workflows designed around them.",
+    "stages": [
+      "Start Creating",
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/07/20260717092550_Netflix.png",
+    "stories": [
+      {
+        "title": "CapCut Recognized Among 2026 AI Productivity Tools for Creators",
+        "url": "https://www.tmcnet.com/usubmit/2026/07/19/10416603.htm",
+        "source": "tmcnet.com",
+        "published": "2026-07-18T17:00:00+00:00",
+        "summary": "A software-industry roundup recognizes CapCut for accelerating video and image workflows with AI. The practical gain is faster execution, but the human work moves upstream: creators still have to choose the idea, direct the system, judge the result, and decide what is worth putting into the world.",
+        "imageUrl": "https://images.tmcnet.com/tmc/world.jpg",
+        "stages": [
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "CapCut is highlighted for using AI to speed video and image production workflows.",
+          "Faster execution increases the importance of creative direction, taste, and accountability for the finished work."
+        ]
+      },
+      {
+        "title": "AI Recruitment Startup Offers a Virtual Talent Agent",
+        "url": "https://www.aol.com/articles/ai-recruitment-startup-help-job-103000000.html",
+        "source": "aol.com",
+        "published": "2026-07-19T03:30:00+00:00",
+        "summary": "AOL profiles a paid AI recruitment service positioned as a virtual talent agent, with the startup claiming that more than half its clients receive interviews within 24 hours. The offer can give job seekers leverage, but it also places an automated intermediary inside a deeply personal transition, making transparency, consent, and control essential parts of the product.",
+        "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The service acts as a virtual talent agent and charges job seekers for its recruitment assistance.",
+          "The startup says more than half of its clients secure interviews within 24 hours.",
+          "Automating representation raises questions about who directs the search and remains accountable for its choices."
+        ]
+      },
+      {
+        "title": "Netflix Says AI Helped Create 300 Titles Without Replacing Creators",
+        "url": "https://www.moneycontrol.com/news/trends/netflix-says-ai-helped-create-300-titles-without-replacing-creators-13977742.html",
+        "source": "moneycontrol.com",
+        "published": "2026-07-19T02:36:00+00:00",
+        "summary": "Netflix says AI-powered visual effects contributed to 300 titles while creators continued to lead the process. That distinction offers a concrete model for augmentation: technology can expand what a team can make without becoming the author of the intention, taste, and meaning that hold the work together.",
+        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/07/20260717092550_Netflix.png",
+        "stages": [
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "Netflix reports that AI-powered visual effects were used across 300 titles.",
+          "The company says creators remained in control of the creative process.",
+          "The example separates expanded production capability from authorship and creative judgment."
+        ]
+      },
+      {
+        "title": "Upwork's Future Workforce Index Tracks Skilled Freelancing's AI Shift",
+        "url": "https://markets.businessinsider.com/news/stocks/upwork-s-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates-1036323000",
+        "source": "markets.businessinsider.com",
+        "published": "2026-07-14T02:17:00+00:00",
+        "summary": "Upwork's 2026 workforce index frames skilled freelancing as an accelerating part of a human-and-AI labor market. As work is broken into projects and matched through platforms, value becomes less attached to a fixed job title and more dependent on demonstrable expertise, trusted judgment, and the ability to combine human skill with new tools.",
+        "imageUrl": "https://ml.globenewswire.com/media/15ddbb23-7272-49b1-8aa1-517bcdcb21a4/small/upworklogo-black-png.png",
+        "stages": [
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Upwork's index examines how AI and skilled freelancing are reshaping the value of work.",
+          "Project-based markets make portable capability and trust more visible than conventional job identity.",
+          "Workers increasingly need to articulate the judgment and expertise they contribute alongside AI."
+        ]
+      },
+      {
+        "title": "Employers Risk an AI-Generated White-Collar Exodus",
+        "url": "https://diginomica.com/how-can-employers-avoid-ai-generated-anticipatory-exodus-white-collar-workers",
+        "source": "diginomica.com",
+        "published": "2026-07-14T09:30:02+00:00",
+        "summary": "Diginomica warns that employers' choices about AI could trigger an anticipatory exodus among white-collar workers before job losses actually arrive. The signal is about trust as much as employment: when people cannot see a credible future for their agency, development, or contribution, they may detach from the institution before the institution formally redraws their role.",
+        "imageUrl": "https://diginomica.com/sites/default/files/images/2023-12/Screenshot%202023-12-12%20at%2011.28.04.png",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The article argues that today's employer decisions will shape workforce trust for years.",
+          "Fear of AI-driven role changes can prompt white-collar workers to leave before displacement occurs.",
+          "A credible transition must preserve agency and a visible path for human contribution."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-18-judge-wont-block-meta-ai-layoffs": {
     "slug": "2026-07-18-judge-wont-block-meta-ai-layoffs",
     "date": "2026-07-18",
