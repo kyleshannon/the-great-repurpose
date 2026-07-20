@@ -3,6 +3,20 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-20-ai-opportunity-meets-the-accountability-gap",
+    "date": "2026-07-20",
+    "title": "AI Opportunity Meets The Accountability Gap",
+    "pattern": "Today's five stories expose a widening gap between AI opportunity and institutional accountability. PwC's eightfold growth in AI roles and graduates' confidence in healthcare, education, STEM, and finance point toward new paths, while two reports on Meta's AI-discrimination lawsuit ask whether workers can challenge opaque systems that help determine who is cut; Netflix's 300 AI-assisted productions show the more constructive alternative, where people remain visibly responsible for judgment and creative direction.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Find Your Purpose",
+      "Start Creating"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5d35f8df9431e0619bb4ec/0x0.jpg?format=jpg&crop=2960,1663,x0,y0,safe&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-07-19-creators-keep-the-chair-as-agents-take-the-search",
     "date": "2026-07-19",
     "title": "Creators Keep The Chair As Agents Take The Search",
@@ -476,6 +490,108 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-20-ai-opportunity-meets-the-accountability-gap": {
+    "slug": "2026-07-20-ai-opportunity-meets-the-accountability-gap",
+    "date": "2026-07-20",
+    "title": "AI Opportunity Meets The Accountability Gap",
+    "pattern": "Today's five stories expose a widening gap between AI opportunity and institutional accountability. PwC's eightfold growth in AI roles and graduates' confidence in healthcare, education, STEM, and finance point toward new paths, while two reports on Meta's AI-discrimination lawsuit ask whether workers can challenge opaque systems that help determine who is cut; Netflix's 300 AI-assisted productions show the more constructive alternative, where people remain visibly responsible for judgment and creative direction.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Find Your Purpose",
+      "Start Creating"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5d35f8df9431e0619bb4ec/0x0.jpg?format=jpg&crop=2960,1663,x0,y0,safe&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "AI Jobs Grow Eight Times Faster Than The Market",
+        "url": "https://www.forbes.com/sites/rachelwells/2026/07/19/ai-jobs-surged-8x-faster-than-the-job-market-you-dont-need-to-code/",
+        "source": "forbes.com",
+        "published": "2026-07-19T14:26:00+00:00",
+        "summary": "Forbes reports PwC findings that AI-related jobs are growing eight times faster than the broader labor market and that AI skills command a 62% wage premium. Many of these roles do not require coding, shifting the opportunity from holding a particular technical identity toward showing how human expertise can direct and apply AI.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5d35f8df9431e0619bb4ec/0x0.jpg?format=jpg&crop=2960,1663,x0,y0,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Reclaim Value",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "PwC found AI-related roles growing eight times faster than the overall job market.",
+          "AI skills carry a reported 62% wage premium, including in roles that do not require coding.",
+          "The durable advantage is the ability to apply AI within a domain, not simply adopting a technical job label."
+        ]
+      },
+      {
+        "title": "Judge Allows Meta Layoffs To Proceed",
+        "url": "https://www.freepressjournal.in/tech/cannot-stop-job-cuts-us-judge-allows-meta-to-proceed-with-layoffs-of-employees",
+        "source": "freepressjournal.in",
+        "published": "2026-07-19T22:47:00+00:00",
+        "summary": "A U.S. judge declined to halt Meta's layoffs of 26 employees who say AI tools were used in selecting them, while leaving open the possibility of revisiting the decision if stronger evidence emerges. The immediate ruling preserves management's ability to proceed, but it leaves workers confronting how to prove harm when consequential systems are difficult to inspect.",
+        "imageUrl": "https://media.assettype.com/freepressjournal/2022-11/602a4f8b-383b-496a-9e38-b715fdb7f1ea/Meta_May_Shut_Down_Facebook_and_Instagram_in_Europe_800x420.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The court allowed layoffs involving 26 Meta employees to continue.",
+          "The employees allege AI tools influenced who was selected for dismissal.",
+          "The judge left room to reconsider if further evidence clarifies AI's role."
+        ]
+      },
+      {
+        "title": "Graduates Still Trust Several Career Paths",
+        "url": "https://www.investopedia.com/here-s-where-new-graduates-have-the-most-confidence-about-their-first-job-prospects-12013050",
+        "source": "investopedia.com",
+        "published": "2026-07-17T13:35:00+00:00",
+        "summary": "Investopedia reports that new graduates remain confident about first-job prospects in healthcare, education, STEM, and finance despite a difficult labor market. Their optimism is a useful counterweight to displacement headlines, but confidence becomes durable only when institutions provide visible entry points where young workers can build judgment, relationships, and real responsibility.",
+        "imageUrl": "https://www.investopedia.com/thmb/KlztX6889baeQ7-z8jWdyCEheD4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2156935520-0b1e9463c8624c1d9ddb449167331969.jpg",
+        "stages": [
+          "Find Your Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Graduates identify healthcare, education, STEM, and finance as promising first-job fields.",
+          "Their confidence persists despite a challenging overall labor market.",
+          "Employers still need to create credible early-career paths for learning and contribution."
+        ]
+      },
+      {
+        "title": "Meta Workers Challenge AI-Assisted Layoff Decisions",
+        "url": "https://www.firstpost.com/tech/meta-layoffs-us-judge-refuses-to-halt-job-cuts-amid-ai-discrimination-lawsuit-14032624.html",
+        "source": "firstpost.com",
+        "published": "2026-07-20T00:47:00+00:00",
+        "summary": "Firstpost focuses on the discrimination claim behind the Meta case: 26 employees allege AI-assisted evaluation systems unfairly targeted people who had taken medical or family leave. The dispute makes accountability concrete—if automated evidence helps reshape a livelihood, workers need a meaningful way to understand the criteria, contest the result, and identify who owns the decision.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The employees say AI-assisted evaluations unfairly affected workers who took medical or family leave.",
+          "The court refused a temporary order stopping the planned cuts.",
+          "The case tests whether workers can examine and challenge automated inputs to employment decisions."
+        ]
+      },
+      {
+        "title": "Netflix Used AI Across 300 Productions",
+        "url": "https://www.cnet.com/tech/services-and-software/netflix-300-programs-this-year-ai-production-q2-earnings/",
+        "source": "cnet.com",
+        "published": "2026-07-18T00:37:16+00:00",
+        "summary": "CNET reports that Netflix used generative AI in production workflows across roughly 300 titles this year. The scale shows that AI-assisted creation is becoming ordinary infrastructure; the human test is whether creators remain clearly empowered to set intention, exercise taste, and take responsibility for what reaches an audience.",
+        "imageUrl": "https://www.cnet.com/wp-content/uploads/sites/2/netflix-brazil70.jpg",
+        "stages": [
+          "Start Creating",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Netflix says generative AI contributed to production work on roughly 300 titles this year.",
+          "AI-assisted workflows are moving from isolated experiments into mainstream production infrastructure.",
+          "Creative agency depends on people retaining authorship, judgment, and accountability for the final work."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-19-creators-keep-the-chair-as-agents-take-the-search": {
     "slug": "2026-07-19-creators-keep-the-chair-as-agents-take-the-search",
     "date": "2026-07-19",
