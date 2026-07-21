@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-21-growth-without-a-human-guarantee",
+    "date": "2026-07-21",
+    "title": "Growth Without A Human Guarantee",
+    "pattern": "Today's five stories show that AI growth no longer guarantees people a secure place inside the value it creates. Intel's AI business is expanding while the company continues cutting jobs—including inside its Data Center and AI Group—while Netchex is bringing agents to deskless HR, YouTube is withholding monetization from repetitive AI content, and Will Cady argues that business must deliberately preserve humanity. The tension is no longer whether AI can produce growth or output; it is whether institutions will design that progress around human agency, trusted judgment, and work worth doing.",
+    "stages": [
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Reclaim Value",
+      "Start Creating"
+    ],
+    "imageUrl": "https://data.ibtimes.sg/en/full/93281/intel.jpg?w=1200&h=630?q=60"
+  },
+  {
     "slug": "2026-07-20-ai-opportunity-meets-the-accountability-gap",
     "date": "2026-07-20",
     "title": "AI Opportunity Meets The Accountability Gap",
@@ -490,6 +503,106 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-21-growth-without-a-human-guarantee": {
+    "slug": "2026-07-21-growth-without-a-human-guarantee",
+    "date": "2026-07-21",
+    "title": "Growth Without A Human Guarantee",
+    "pattern": "Today's five stories show that AI growth no longer guarantees people a secure place inside the value it creates. Intel's AI business is expanding while the company continues cutting jobs—including inside its Data Center and AI Group—while Netchex is bringing agents to deskless HR, YouTube is withholding monetization from repetitive AI content, and Will Cady argues that business must deliberately preserve humanity. The tension is no longer whether AI can produce growth or output; it is whether institutions will design that progress around human agency, trusted judgment, and work worth doing.",
+    "stages": [
+      "Unhook Identity",
+      "Discover AI's Power",
+      "Reclaim Value",
+      "Start Creating"
+    ],
+    "imageUrl": "https://data.ibtimes.sg/en/full/93281/intel.jpg?w=1200&h=630?q=60",
+    "stories": [
+      {
+        "title": "Intel's AI Growth Does Not Stop Job Cuts",
+        "url": "https://www.ibtimes.sg/intels-ai-business-grew-22-job-cuts-continue-heres-why-90257",
+        "source": "ibtimes.sg",
+        "published": "2026-07-21T10:20:01+00:00",
+        "summary": "Intel's AI business grew 22% year over year, yet the company is still cutting jobs as it prioritizes restructuring and profitability. The split exposes a central Great Repurpose tension: growth in an AI business does not automatically secure the people who helped build it, so workers must locate value beyond any single role or corporate growth story.",
+        "imageUrl": "https://data.ibtimes.sg/en/full/93281/intel.jpg?w=1200&h=630?q=60",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Intel's AI business reportedly grew 22% year over year.",
+          "The company continues layoffs while emphasizing restructuring and profitability.",
+          "Business growth and worker security are increasingly separate outcomes."
+        ]
+      },
+      {
+        "title": "AI Agents Move Into Deskless HR",
+        "url": "https://www.forbes.com/sites/davidprosser/2026/07/20/putting-ai-agents-to-work-for-americas-deskless-employees/",
+        "source": "forbes.com",
+        "published": "2026-07-19T21:00:00+00:00",
+        "summary": "Forbes reports that payroll and HR provider Netchex acquired startup Mesh to introduce AI agents for deskless workers in industries including hospitality and leisure. Bringing agents into everyday employment systems could make support more accessible, but it also makes human oversight essential wherever automated workflows touch pay, benefits, scheduling, or other consequential needs.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5a50bcda04814bfac55a6e/0x0.jpg?format=jpg&crop=1929,904,x0,y189,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Netchex acquired Mesh to add AI agents to its HR platform.",
+          "The planned tools target deskless workers in sectors such as hospitality and leisure.",
+          "Automation in employment systems raises the stakes for clear human accountability."
+        ]
+      },
+      {
+        "title": "Intel Cuts Reach Its AI Organization",
+        "url": "https://www.thehrdigest.com/2026-job-cuts-whats-driving-todays-intel-layoffs/",
+        "source": "thehrdigest.com",
+        "published": "2026-07-21T07:40:48+00:00",
+        "summary": "The HR Digest reports that Intel is planning another layoff round affecting its Data Center and AI Group, with the number of cuts not yet disclosed. Paired with Intel's reported AI growth, the move punctures the idea that proximity to a strategic technology is itself protection; durable agency comes from portable judgment and capability, not an organizational label.",
+        "imageUrl": "https://www.thehrdigest.com/wp-content/uploads/2026/07/Intel-layoffs-todays-news-2026-job-cuts-workforce-reductions-CEO-Lip-Bu-Tan.jpg",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The planned cuts affect Intel's Data Center and AI Group.",
+          "Intel had not disclosed the size of this layoff round.",
+          "Working near an AI growth engine does not make a role immune to restructuring."
+        ]
+      },
+      {
+        "title": "YouTube Draws A Line Against AI Slop",
+        "url": "https://mashable.com/life/youtube-ai-slop-monetization-policy",
+        "source": "mashable.com",
+        "published": "2026-07-21T09:00:00+00:00",
+        "summary": "Mashable explains YouTube's effort to deny monetization to repetitive videos, rage bait, and low-value AI characters rather than treating all AI-assisted creation alike. The distinction creates a practical market signal for creators: abundant generation makes intention, originality, editorial judgment, and genuine audience value more—not less—important.",
+        "imageUrl": "https://helios-i.mashable.com/imagery/articles/04gCEt15pxtaJmidJJEX7tu/hero-image.fill.size_1200x675.v1784576316.jpg",
+        "stages": [
+          "Start Creating",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "YouTube is targeting repetitive videos, rage bait, and low-value AI characters for demonetization.",
+          "The policy distinguishes AI-assisted creation from mass-produced content without meaningful value.",
+          "Human taste and editorial intent become more valuable as generation gets cheaper."
+        ]
+      },
+      {
+        "title": "Will Cady Puts Humanity At The Center",
+        "url": "https://lamag.com/business/in-the-age-of-ai-will-cady-believes-the-future-of-work-needs-more-humanity/",
+        "source": "lamag.com",
+        "published": "2026-07-20T17:30:00+00:00",
+        "summary": "Los Angeles Magazine profiles Will Cady's argument that AI-era leadership and the future of work need more humanity, not simply more technical capacity. His HEAL MVMNT framing supplies the choice running beneath today's other stories: organizations can use AI to extract more output, or deliberately build cultures where people retain connection, agency, and meaning.",
+        "imageUrl": "https://lamag.com/wp-content/uploads/2026/07/SGCC2024_Reddit_Will-Cady_-Presentation_16-1-scaled.jpg",
+        "stages": [
+          "Start Creating",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Cady argues that humanity should remain central to AI-era business and leadership.",
+          "His work connects organizational change with human connection and meaning.",
+          "AI adoption is also a design choice about what kind of work culture institutions create."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-20-ai-opportunity-meets-the-accountability-gap": {
     "slug": "2026-07-20-ai-opportunity-meets-the-accountability-gap",
     "date": "2026-07-20",
