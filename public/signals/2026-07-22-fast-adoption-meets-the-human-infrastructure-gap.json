@@ -1,0 +1,100 @@
+{
+  "slug": "2026-07-22-fast-adoption-meets-the-human-infrastructure-gap",
+  "date": "2026-07-22",
+  "title": "Fast Adoption Meets The Human Infrastructure Gap",
+  "pattern": "Today's five stories show AI adoption moving faster than the human infrastructure needed to make it valuable and fair. ET Brand World Summit leaders put judgment and cultural insight above frictionless creative execution; Yahoo's job charts test replacement claims against actual role exposure; SOCAN and Musical AI are building consent, attribution, and compensation into generative music; Sprout finds daily AI use far ahead of role-specific training in the Philippines; and Michael Edmondson argues that human capability ultimately determines technology's impact. The tension is whether institutions will merely distribute powerful tools or build the skills, rights, and decision-making authority people need to direct them.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Discover AI's Power",
+    "Start Creating"
+  ],
+  "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-132554642,imgsize-365701,width-1200,height=627,overlay-etbrandequity,resizemode-75/marketing/bws-2026-how-ai-is-reshaping-creative-ideation.jpg",
+  "stories": [
+    {
+      "title": "Creative Leaders Move Human Judgment Upstream",
+      "url": "https://brandequity.economictimes.indiatimes.com/news/marketing/bws-2026-how-ai-is-reshaping-creative-ideation/132554642",
+      "source": "brandequity.economictimes.indiatimes.com",
+      "published": "2026-07-22T01:52:00+00:00",
+      "summary": "At ET Brand World Summit 2026, industry leaders described AI as a co-creator that removes execution barriers and accelerates idea production without replacing human creativity. Their message moves creative value upstream: when production becomes easier, agencies must invest in people whose insight, judgment, and cultural awareness determine which ideas deserve to exist and whether they connect.",
+      "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-132554642,imgsize-365701,width-1200,height=627,overlay-etbrandequity,resizemode-75/marketing/bws-2026-how-ai-is-reshaping-creative-ideation.jpg",
+      "stages": [
+        "Start Creating",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Summit leaders framed AI as a co-creator that accelerates ideation and execution.",
+        "Agencies were urged to invest in their people as well as AI tools.",
+        "Human insight and judgment remain essential for culturally relevant creative work."
+      ]
+    },
+    {
+      "title": "Job Exposure Is Not The Same As Replacement",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-help-job-replace-230447221.html",
+      "source": "finance.yahoo.com",
+      "published": "2026-07-22T01:13:00+00:00",
+      "summary": "Yahoo examines which roles appear most affected by AI and contrasts sweeping replacement claims from AI companies with evidence visible in labor-market charts. The distinction matters: exposure describes tasks and roles under pressure, not a predetermined human outcome. Workers need a clearer view of changing work so they can separate identity from a job wrapper and build portable value before institutions redraw it.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The article compares AI companies' replacement claims with observed labor-market patterns.",
+        "Different roles face different degrees of AI exposure.",
+        "Task exposure should not be treated as proof that an entire occupation will disappear."
+      ]
+    },
+    {
+      "title": "Music Rights Infrastructure Catches Up To AI",
+      "url": "https://www.aol.com/articles/socan-announces-collaboration-musical-ai-142500000.html",
+      "source": "aol.com",
+      "published": "2026-07-21T07:27:00+00:00",
+      "summary": "SOCAN and Musical AI will explore consent, attribution, and reporting infrastructure for generative music so songwriters, composers, and publishers can control use and receive credit and compensation. Their opt-in approach treats creator agency as system architecture, not an afterthought—an important model for preserving human value when AI outputs draw on creative work at scale.",
+      "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
+      "stages": [
+        "Start Creating",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "SOCAN and Musical AI are exploring consent, attribution, and reporting infrastructure.",
+        "The collaboration says creators should opt in to AI uses of their work.",
+        "Attribution is intended to support licensing, accountability, and compensation."
+      ]
+    },
+    {
+      "title": "Daily AI Use Outruns Workplace Training",
+      "url": "https://www.sunstar.com.ph/davao/78-of-filipinos-use-ai-daily-only-35-trained",
+      "source": "sunstar.com.ph",
+      "published": "2026-07-20T09:48:00+00:00",
+      "summary": "Sprout's State of HR 2026 study of more than 3,500 Philippine employees found 78% use AI daily, but only 35% receive role-specific training. That adoption-enablement gap leaves people improvising through a structural transition. Leaders must redesign work, pair AI skill with domain expertise, and protect the judgment that erodes when too much thinking is outsourced.",
+      "imageUrl": "https://cf-images.assettype.com/sunstar%2Fimport%2Fuploads%2Fimages%2F2019%2F06%2F17%2F153763.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The study covered more than 3,500 employees across 13 industries.",
+        "Seventy-eight percent reported daily AI use, while 35% received role-specific training.",
+        "Speakers emphasized domain expertise, job redesign, and human judgment."
+      ]
+    },
+    {
+      "title": "Human Capability Determines AI's Direction",
+      "url": "https://www.forbes.com/sites/michaeledmondson/2026/07/21/ai-will-shape-our-future-human-capability-will-determine-it/",
+      "source": "forbes.com",
+      "published": "2026-07-21T03:15:00+00:00",
+      "summary": "Michael Edmondson argues that technology shapes society, but human choices determine its consequences, making human capability the decisive advantage in the AI era. That frame ties today's stories together: tools can accelerate output, but judgment, learning, rights, and institutional design decide whether adoption expands human agency or simply rearranges people around the technology.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5bd3d06addc517fda4e62d/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Technology changes society, but human choices shape the result.",
+        "Human capability is presented as the durable competitive advantage in the AI era.",
+        "Institutions still decide whether AI strengthens or weakens human agency."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
