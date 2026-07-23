@@ -1,0 +1,101 @@
+{
+  "slug": "2026-07-23-agents-cross-the-trust-and-purpose-line",
+  "date": "2026-07-23",
+  "title": "Agents Cross The Trust And Purpose Line",
+  "pattern": "Today's five stories show agents crossing from assistance into consequential action. CareerBoom applies for jobs on a candidate's behalf, Ushur promises enterprise agents that finish customer workflows, and password-capable agents expand the security boundary, while OpenAI's Leah Belsky argues schools must form citizens with agency and judgment and international students steer costly degree choices toward AI resilience. The human tension is no longer whether AI can do the work, but whether people retain enough purpose, judgment, and control to decide which work should be delegated and remain accountable for what follows.",
+  "stages": [
+    "Unhook Identity",
+    "Find Your Purpose",
+    "Discover AI's Power",
+    "Reclaim Value"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5ce59feb67be3ffdc4caf8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "CareerBoom Automates The Job Application",
+      "url": "https://markets.businessinsider.com/news/stocks/careerboom-launches-ai-auto-apply-agent-to-find-tailor-and-submit-job-applications-1036356096",
+      "source": "markets.businessinsider.com",
+      "published": "2026-07-22T21:37:00+00:00",
+      "summary": "CareerBoom's Auto Apply Agent searches new listings, matches roles, tailors applications, and submits them for the candidate. It turns job seeking into an agent-managed workflow, but also raises a purpose question: when applications become abundant and automated, candidates must become clearer about the work they actually want and the value they can defend once hired.",
+      "imageUrl": "https://ml.globenewswire.com/Resource/Download/4f798c22-6165-4c2d-83a0-217dc4bf964a/gsadfd.png",
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "The agent searches listings, matches suitable roles, and tailors each application.",
+        "Applications can be submitted on the candidate's behalf.",
+        "Automation increases the need for deliberate career direction rather than indiscriminate volume."
+      ]
+    },
+    {
+      "title": "Schools Must Form Citizens, Not Operators",
+      "url": "https://www.forbes.com/sites/rayravaglia/2026/07/23/ai-in-education-forming-citizens-when-ai-can-do-the-work/",
+      "source": "forbes.com",
+      "published": "2026-07-23T04:00:00+00:00",
+      "summary": "OpenAI education leader Leah Belsky argues that increasingly capable workplace AI raises the stakes for schools: education must cultivate agency, judgment, and citizenship rather than train students only to execute tasks. If machines can perform more of the visible work, human value shifts toward deciding what matters, evaluating consequences, and participating responsibly in institutions.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5ce59feb67be3ffdc4caf8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Reclaim Value",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "The article connects more capable workplace AI to a broader educational mission.",
+        "Agency, judgment, and citizenship are treated as core outcomes, not optional soft skills.",
+        "Education must prepare people to direct consequential systems rather than merely operate tools."
+      ]
+    },
+    {
+      "title": "Ushur Agents Promise To Finish Workflows",
+      "url": "https://markets.businessinsider.com/news/stocks/ushur-launches-the-ushur-agentic-platform-ai-agents-that-finish-the-job-1036351335",
+      "source": "markets.businessinsider.com",
+      "published": "2026-07-22T02:00:00+00:00",
+      "summary": "Ushur introduced an agentic platform for building and operating enterprise agents intended to complete customer-facing work, not merely answer questions. Moving from recommendation to execution makes workflow design, escalation rules, and human accountability more important: the durable job becomes specifying outcomes and supervising the system when real people bear the consequences.",
+      "imageUrl": "https://ml.globenewswire.com/media/b9d184c4-00e8-46a0-aa27-28eb981d6117/small/ushur-logo-hi-res.png",
+      "stages": [
+        "Discover AI's Power",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The platform is designed for building and operating enterprise AI agents.",
+        "Ushur positions the agents around completing customer workflows rather than stopping at assistance.",
+        "Execution increases the importance of escalation design and accountable human oversight."
+      ]
+    },
+    {
+      "title": "Students Hedge Their Futures With Technical Degrees",
+      "url": "https://www.digitaljournal.com/article/ai-is-reshaping-international-education-as-students-pivot-toward-technology-focused-degrees/",
+      "source": "digitaljournal.com",
+      "published": "2026-07-22T21:14:18+00:00",
+      "summary": "International students are increasingly choosing AI, data science, analytics, and engineering programs, often combining technical study with management. Open Doors data cited by Digital Journal put 57% of international students in U.S. STEM fields. The pivot is a costly wager on career resilience, revealing how quickly technological anxiety can reshape identity and purpose before students enter the workforce.",
+      "imageUrl": "https://www.digitaljournal.com/wp-content/uploads/2025/04/7685ed067a7cd7d572b28a11da63159789e56cba.jpg",
+      "stages": [
+        "Find Your Purpose",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Fifty-seven percent of international students in the United States are enrolled in STEM-related disciplines.",
+        "Applicants are showing more interest in AI, data science, analytics, and blended technical-management paths.",
+        "Students are evaluating degrees for long-term resilience as well as immediate employability."
+      ]
+    },
+    {
+      "title": "Password Access Expands The Agent Trust Boundary",
+      "url": "https://www.forbes.com/sites/rachelwells/2026/07/22/ai-agents-can-now-use-your-password-is-agentic-ai-going-too-far/",
+      "source": "forbes.com",
+      "published": "2026-07-22T07:23:00+00:00",
+      "summary": "Forbes examines the professional risk created when agents can use credentials, against the backdrop of a security breach involving Hugging Face and OpenAI. Giving an agent the ability to authenticate and act expands both its usefulness and its blast radius. People need practical AI literacy, permission boundaries, and the confidence to withhold delegation when convenience outruns control.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a60af932240beb0fb88b093/0x0.jpg?format=jpg&crop=1743,979,x0,y24,safe&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Discover AI's Power",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Password-capable agents can authenticate and act across services for a user.",
+        "The article connects that capability to security risk following a breach involving Hugging Face and OpenAI.",
+        "Useful delegation requires explicit permission boundaries and retained human accountability."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
