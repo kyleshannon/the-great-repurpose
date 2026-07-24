@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-07-24-automation-claims-meet-the-confidence-gap",
+    "date": "2026-07-24",
+    "title": "Automation Claims Meet The Confidence Gap",
+    "pattern": "Today's five stories expose a widening gap between what organizations say AI can automate and what people can confidently absorb. OpenAI says Presence resolves 75% of its own inbound support issues, while Google's ATLAS study finds AI spread across most occupations but used for only about one-fifth of a typical job's tasks. Patreon cuts 93 people while insisting AI neither caused the restructuring nor replaces human creativity, and a Robert Walters survey finds Singapore workers already using AI widely while fearing displacement and skills obsolescence. The human tension is that institutions can redesign work faster than they can prove the technology, explain the choices, or help people build a durable sense of value beyond the role being changed.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/07/4200685-0-61569700-1784812733-shutterstock_2560810077.jpg?quality=50&strip=all&w=1024"
+  },
+  {
     "slug": "2026-07-23-agents-cross-the-trust-and-purpose-line",
     "date": "2026-07-23",
     "title": "Agents Cross The Trust And Purpose Line",

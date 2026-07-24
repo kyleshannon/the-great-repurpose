@@ -1,0 +1,100 @@
+{
+  "slug": "2026-07-24-automation-claims-meet-the-confidence-gap",
+  "date": "2026-07-24",
+  "title": "Automation Claims Meet The Confidence Gap",
+  "pattern": "Today's five stories expose a widening gap between what organizations say AI can automate and what people can confidently absorb. OpenAI says Presence resolves 75% of its own inbound support issues, while Google's ATLAS study finds AI spread across most occupations but used for only about one-fifth of a typical job's tasks. Patreon cuts 93 people while insisting AI neither caused the restructuring nor replaces human creativity, and a Robert Walters survey finds Singapore workers already using AI widely while fearing displacement and skills obsolescence. The human tension is that institutions can redesign work faster than they can prove the technology, explain the choices, or help people build a durable sense of value beyond the role being changed.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/07/4200685-0-61569700-1784812733-shutterstock_2560810077.jpg?quality=50&strip=all&w=1024",
+  "stories": [
+    {
+      "title": "OpenAI Presence Automates Frontline Support",
+      "url": "https://www.computerworld.com/article/4200685/openai-presence-raises-new-questions-about-enterprise-automation-and-jobs-2.html",
+      "source": "computerworld.com",
+      "published": "2026-07-23T04:15:00+00:00",
+      "summary": "OpenAI says its Presence voice and chat agents resolve 75% of inbound issues in the company's English-language phone support channel. Analysts caution that fragmented systems, compliance demands, and integration costs will lower early automation rates elsewhere, making slower hiring and redesigned roles more likely than immediate mass layoffs. Human value moves toward complex cases, empathy, escalation, governance, and accountable judgment.",
+      "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/07/4200685-0-61569700-1784812733-shutterstock_2560810077.jpg?quality=50&strip=all&w=1024",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Presence can answer questions, operate approved IT systems, and transfer cases when human involvement is required.",
+        "OpenAI reports a 75% resolution rate in its own support deployment, but analysts warn that legacy systems and governance will constrain results elsewhere.",
+        "The likely first workforce effect is slower hiring and role redesign, with people handling complex cases, relationships, and accountability."
+      ]
+    },
+    {
+      "title": "Patreon Cuts Ninety-Three Jobs",
+      "url": "https://www.firstpost.com/tech/patreon-layoffs-ceo-says-ai-isnt-replacing-workers-as-company-cuts-20-jobs-14033540.html",
+      "source": "firstpost.com",
+      "published": "2026-07-23T21:36:00+00:00",
+      "summary": "Patreon is eliminating 93 jobs, about 20% of its workforce, in its largest reduction since 2022. CEO Jack Conte says the company is flattening its structure and narrowing priorities as the creator economy changes, while denying that AI is replacing the affected employees. The distinction matters, but workers still experience the same identity rupture when strategy changes faster than their role's promised future.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The reduction affects 93 employees, or roughly one-fifth of Patreon's workforce.",
+        "Patreon says it is flattening the organization, refocusing teams, and adapting its cost structure.",
+        "Even when leaders deny direct AI replacement, restructuring forces workers to separate durable value from a disappearing role."
+      ]
+    },
+    {
+      "title": "Patreon Defends Human Creative Judgment",
+      "url": "https://www.financialexpress.com/world-news/us-news/ai-not-a-replacement-for-humans-patreon-announces-20-staff-cuts-in-painful-update-to-employees/4301083/",
+      "source": "financialexpress.com",
+      "published": "2026-07-23T21:55:00+00:00",
+      "summary": "A second report on Patreon's cuts centers Jack Conte's claim that AI cannot substitute for employees' creativity, judgment, detail orientation, craftsmanship, or the human connection creators need. That defense sits uneasily beside a 20% workforce reduction. The deeper signal is that naming human value is not enough; organizations must design structures, decisions, and economic commitments that actually preserve it.",
+      "imageUrl": "https://images.financialexpressdigital.com/2026/07/patreon-layoffs-jack-conte.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Conte says AI did not cause the cuts and is not a substitute for human creativity.",
+        "He specifically identifies judgment, craftsmanship, detail orientation, and human connection as irreplaceable.",
+        "The contradiction between that language and the workforce reduction tests whether stated human values shape real organizational choices."
+      ]
+    },
+    {
+      "title": "Google Finds Broad But Shallow AI Use",
+      "url": "https://www.ibtimes.com/ai-was-supposed-replace-workers-googles-biggest-study-yet-says-thats-not-whats-happening-3805654",
+      "source": "ibtimes.com",
+      "published": "2026-07-24T09:51:02+00:00",
+      "summary": "Google's ATLAS study analyzed 14.65 million de-identified Gemini interactions and found workplace AI use across 68% of occupations representing 90% of U.S. employment. Yet AI touched only about 21% of tasks in a typical job, with assistance more common than full automation. The evidence argues for learning to direct AI without confusing widespread use with the disappearance of whole professions.",
+      "imageUrl": "https://d.ibtimes.com/en/full/4651609/office-workers.jpg",
+      "stages": [
+        "Discover AI's Power",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "ATLAS examined 14.65 million de-identified interactions across Gemini products during two weeks in April.",
+        "Workplace use appeared in 68% of occupations covering 90% of U.S. employment.",
+        "AI was used for about 21% of tasks in a typical job, showing broad adoption without equivalent whole-job automation."
+      ]
+    },
+    {
+      "title": "Singapore Workers Use AI Without Confidence",
+      "url": "https://www.hcamag.com/asia/specialisation/hr-technology/singapore-professionals-concerned-about-ais-job-displacement-potential/583575",
+      "source": "hcamag.com",
+      "published": "2026-07-24T15:18:15+00:00",
+      "summary": "A Robert Walters report finds 89% of Singapore professionals already use AI at work, but only 59% feel confident they can keep their skills current. Forty-eight percent fear displacement, while 41% worry their skills will become obsolete. Access alone is not readiness: employers need transparent role redesign, reskilling paths, and a credible account of how people will continue creating value.",
+      "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/039/0365_639204679558112504.png",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Eighty-nine percent of surveyed Singapore professionals already use AI at work.",
+        "Only 59% are confident they can keep their skills current as their roles change.",
+        "The report urges employers to pair responsible adoption with reskilling and roles that combine automation with higher-value human contribution."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
