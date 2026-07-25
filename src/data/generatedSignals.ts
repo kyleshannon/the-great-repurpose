@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-25-ai-cuts-meet-the-skills-price-signal",
+    "date": "2026-07-25",
+    "title": "AI Cuts Meet The Skills Price Signal",
+    "pattern": "Today's five stories show the labor market sending two signals at once: AI is erasing familiar role structures while raising the price of people who can direct it. Two reports on Uber's 10% customer-service reduction reveal both the immediate disruption and the company's simultaneous hiring for technical roles; new freelance data finds AI projects paying 2.5 times more than other work; Unite.AI documents the costly boomerang when Ford, Commonwealth Bank, and Klarna restore human expertise; and TechWolf with WTW proposes a shared skills-data layer for workforce decisions. The human tension is whether people can translate durable judgment, context, and relationships into visible skills before institutions reduce them to either a cost to cut or a premium capability to buy.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a639125da626858fbd7dec4/0x0.jpg?format=jpg&crop=1961,1103,x68,y105,safe&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-07-24-automation-claims-meet-the-confidence-gap",
     "date": "2026-07-24",
     "title": "Automation Claims Meet The Confidence Gap",
@@ -541,6 +553,106 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-25-ai-cuts-meet-the-skills-price-signal": {
+    "slug": "2026-07-25-ai-cuts-meet-the-skills-price-signal",
+    "date": "2026-07-25",
+    "title": "AI Cuts Meet The Skills Price Signal",
+    "pattern": "Today's five stories show the labor market sending two signals at once: AI is erasing familiar role structures while raising the price of people who can direct it. Two reports on Uber's 10% customer-service reduction reveal both the immediate disruption and the company's simultaneous hiring for technical roles; new freelance data finds AI projects paying 2.5 times more than other work; Unite.AI documents the costly boomerang when Ford, Commonwealth Bank, and Klarna restore human expertise; and TechWolf with WTW proposes a shared skills-data layer for workforce decisions. The human tension is whether people can translate durable judgment, context, and relationships into visible skills before institutions reduce them to either a cost to cut or a premium capability to buy.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a639125da626858fbd7dec4/0x0.jpg?format=jpg&crop=1961,1103,x68,y105,safe&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "AI Freelance Work Commands A Premium",
+        "url": "https://www.forbes.com/sites/rachelwells/2026/07/24/ai-freelance-jobs-pay-25x-more-than-non-ai-jobs-new-data-finds/",
+        "source": "forbes.com",
+        "published": "2026-07-23T23:05:00+00:00",
+        "summary": "New freelance-market data cited by Forbes tracks $8.27 million spent across 76,925 AI projects during the past year and finds those projects paying 2.5 times more than non-AI work. The premium is a live market signal: workers gain leverage when they can turn AI fluency into a demonstrable service, but durable value still depends on defining the problem and judging the result.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a639125da626858fbd7dec4/0x0.jpg?format=jpg&crop=1961,1103,x68,y105,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Reclaim Value",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "The dataset covers 76,925 AI projects and $8.27 million in freelance spending over the past year.",
+          "AI-related freelance projects paid 2.5 times more than projects without an AI component.",
+          "The opportunity favors people who can package AI capability around a concrete client problem rather than treating a job title as their only proof of value."
+        ]
+      },
+      {
+        "title": "Uber Makes AI A Layoff Rationale",
+        "url": "https://finance.yahoo.com/technology/ai/articles/uber-ai-layoffs-more-american-152342891.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-07-24T08:23:00+00:00",
+        "summary": "Uber cut 10% of its community operations team, which supports riders, drivers, and delivery partners, while saying it needs simpler operations to make fuller use of AI. It is the company's clearest direct link between AI and job reductions. For affected workers, the risk is not an abstract future wave but an immediate rupture between identity, institutional promises, and the work now deemed automatable.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The reduction affects 10% of Uber's customer-service organization, also known as community operations.",
+          "Uber says organizational complexity and siloed processes are preventing it from scaling AI effectively.",
+          "The decision turns AI from a productivity narrative into an explicit rationale for restructuring human roles."
+        ]
+      },
+      {
+        "title": "Uber Cuts Support While Technical Hiring Continues",
+        "url": "https://www.financialexpress.com/world-news/us-news/ai-shake-up-uber-trims-10-of-customer-service-jobs-in-second-layoff-in-two-months/4300560/",
+        "source": "financialexpress.com",
+        "published": "2026-07-23T06:09:00+00:00",
+        "summary": "A second account of Uber's restructuring adds the labor-market contradiction: the company is cutting customer-service roles and requiring some remote employees to relocate, yet it continues recruiting for more than 500 positions, including engineers supporting robotaxi partnerships. The workforce is being recomposed rather than simply reduced, making the urgent human task translating experience into capabilities that remain valuable across changing role boundaries.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The customer-service cut is Uber's second workforce reduction in less than two months.",
+          "Remote employees in the affected group were also directed to relocate to designated office hubs.",
+          "More than 500 open roles remain, showing that AI-driven restructuring shifts the skills mix even as it removes existing jobs."
+        ]
+      },
+      {
+        "title": "Automation Reversals Restore Human Expertise",
+        "url": "https://www.unite.ai/companies-are-beginning-to-rehire-after-ai-layoffs/",
+        "source": "unite.ai",
+        "published": "2026-07-20T15:56:11+00:00",
+        "summary": "Unite.AI describes an “AI boomerang” in which automation cuts are followed by rehiring after systems encounter ambiguity, quality problems, and emotionally complex customer interactions. It points to Ford restoring experienced engineers, Commonwealth Bank reversing 45 customer-service replacements, and Klarna rebuilding human support. The reversals expose judgment, institutional knowledge, accountability, and reassurance as operational assets—not sentimental extras.",
+        "imageUrl": "https://www.unite.ai/wp-content/uploads/2026/07/ChatGPT-Image-Jul-20-2026-10_53_18-AM.png",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Ford reportedly rehired experienced engineers after automated systems struggled with complex manufacturing quality issues.",
+          "Commonwealth Bank restored 45 customer-service roles after an AI voice bot failed to absorb unpredictable demand.",
+          "Klarna is rebuilding human support around complex cases, illustrating why context and reassurance remain essential parts of the service."
+        ]
+      },
+      {
+        "title": "TechWolf And WTW Map Workforce Skills",
+        "url": "https://markets.businessinsider.com/news/stocks/techwolf-and-wtw-partner-to-turn-skills-and-workforce-data-into-ai-driven-business-impact-1036356700",
+        "source": "markets.businessinsider.com",
+        "published": "2026-07-23T01:00:00+00:00",
+        "summary": "TechWolf and WTW are partnering to combine workforce advisory with data on employee skills, changing work, and labor-market demand. Their aim is to give leaders a shared evidence layer for redesigning roles and directing investment as AI alters tasks. The promise is better workforce decisions; the human test is whether skills intelligence expands people's mobility and agency or merely makes reductions easier to calculate.",
+        "imageUrl": "https://ml.globenewswire.com/media/d60448c5-44c1-4061-a525-161810e55c26/small/wtw-jpg.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The partnership joins TechWolf's skills and work intelligence with WTW's workforce transformation and advisory capabilities.",
+          "The combined approach is intended to connect internal skills, changing job content, and external labor-market signals.",
+          "Useful skills data should help people navigate into redesigned work, not only help institutions identify which roles to remove."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-24-automation-claims-meet-the-confidence-gap": {
     "slug": "2026-07-24-automation-claims-meet-the-confidence-gap",
     "date": "2026-07-24",
