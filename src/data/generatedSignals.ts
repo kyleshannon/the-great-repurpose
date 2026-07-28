@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-28-automation-advances-while-human-confidence-retreats",
+    "date": "2026-07-28",
+    "title": "Automation Advances While Human Confidence Retreats",
+    "pattern": "Today's five stories show automation advancing faster than institutions can explain what human contribution remains worth. AutoRev is putting agents on calls, estimates, and booking; Financial Express argues creative value is migrating toward expression and judgment; The Guardian finds no broad jobs apocalypse yet; Memeburn finds concentrated damage among young workers alongside AI-washed layoffs; and the Miami Herald reports that layoff anxiety is already draining employee engagement. The human tension is whether people can reclaim agency, taste, and trusted judgment before uncertainty makes them disengage from work that still needs them.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+  },
+  {
     "slug": "2026-07-25-ai-cuts-meet-the-skills-price-signal",
     "date": "2026-07-25",
     "title": "AI Cuts Meet The Skills Price Signal",
@@ -553,6 +565,106 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-28-automation-advances-while-human-confidence-retreats": {
+    "slug": "2026-07-28-automation-advances-while-human-confidence-retreats",
+    "date": "2026-07-28",
+    "title": "Automation Advances While Human Confidence Retreats",
+    "pattern": "Today's five stories show automation advancing faster than institutions can explain what human contribution remains worth. AutoRev is putting agents on calls, estimates, and booking; Financial Express argues creative value is migrating toward expression and judgment; The Guardian finds no broad jobs apocalypse yet; Memeburn finds concentrated damage among young workers alongside AI-washed layoffs; and the Miami Herald reports that layoff anxiety is already draining employee engagement. The human tension is whether people can reclaim agency, taste, and trusted judgment before uncertainty makes them disengage from work that still needs them.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+    "stories": [
+      {
+        "title": "AutoRev Agents Take On Front-Office Work",
+        "url": "https://www.lawnandlandscape.com/news/autorev-launches-ai-agents-for-front-office-work/",
+        "source": "lawnandlandscape.com",
+        "published": "",
+        "summary": "AutoRev has launched AI agents for lawn and landscape businesses that answer after-hours calls, follow up with leads, build and price estimates, and book jobs. This is automation moving from a generic assistant into the commercial front office; the durable human role shifts toward setting standards, handling exceptions, and remaining accountable for promises the system makes.",
+        "imageUrl": "",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The agents cover lead follow-up, estimating, pricing, scheduling, and after-hours calls.",
+          "Small service businesses can now automate a connected customer journey rather than a single isolated task.",
+          "Human value moves toward supervision, exception handling, relationship judgment, and accountability for the outcome."
+        ]
+      },
+      {
+        "title": "Creative Value Moves Beyond Mere Production",
+        "url": "https://www.financialexpress.com/opinion/creative-economy-faces-ai-reckoning-as-technology-redefines-skills-and-value/4303851/",
+        "source": "financialexpress.com",
+        "published": "",
+        "summary": "Financial Express argues that AI is renegotiating what society pays for in creative work, much as photography pushed painting beyond representation and digital audio changed where musicianship earned value. As production becomes easier, creators must make taste, point of view, relationship, and meaning visible—the human choices that determine what deserves to exist.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "Earlier technologies changed the basis of creative compensation without eliminating creative practice.",
+          "Generative AI lowers the cost of production and increases the importance of selection, expression, and context.",
+          "Creators gain leverage by articulating the judgment and meaning behind the artifact, not only the labor used to produce it."
+        ]
+      },
+      {
+        "title": "The Broad Jobs Apocalypse Remains Unproven",
+        "url": "https://www.theguardian.com/technology/2026/jul/25/ai-jobs-apocalypse-human-labor",
+        "source": "theguardian.com",
+        "published": "2026-07-25T13:00:00+00:00",
+        "summary": "The Guardian points to Anthropic research finding no systematic unemployment increase among highly exposed workers since late 2022 and says real deployment remains far below technical feasibility. AI may still transform work, but imperfect systems can increase the value of complementary human tasks. The wiser response is neither denial nor apocalypse thinking, but preparation grounded in what the technology can reliably do.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Anthropic found no systematic unemployment increase among highly exposed workers since late 2022.",
+          "Actual AI deployment remains a fraction of what current models could theoretically perform.",
+          "When automation cannot complete every part of a workflow reliably, the remaining human tasks can become more valuable."
+        ]
+      },
+      {
+        "title": "Entry-Level Workers Absorb The Early Damage",
+        "url": "https://memeburn.com/ai-job-displacement-2026-who-is-really-at-risk/",
+        "source": "memeburn.com",
+        "published": "2026-07-25T00:00:00+00:00",
+        "summary": "Memeburn reports ADP and Stanford data showing employment for 22-to-25-year-olds in AI-exposed occupations down about 13% since late 2022, even as employment across all exposed workers changed only slightly. It also warns that companies often dress ordinary cost cutting in AI language. The real danger is a narrowing entry ramp that removes the tasks through which people once built judgment.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The cited payroll dataset covers 4.6 million workers across 25,000 firms.",
+          "The decline is concentrated among workers aged 22 to 25 rather than evenly distributed across exposed occupations.",
+          "Automating junior tasks can erase the apprenticeship path people need to develop the senior judgment organizations still value."
+        ]
+      },
+      {
+        "title": "Layoff Anxiety Erodes Employee Engagement",
+        "url": "https://www.miamiherald.com/news/business/article316625232.html",
+        "source": "miamiherald.com",
+        "published": "",
+        "summary": "The Miami Herald reports that AI-related layoff anxiety is contributing to employee disengagement as workers question whether effort still matters under persistent job insecurity. Even before automation removes a role, uncertainty can damage trust and performance. Leaders must explain how work is changing and where human contribution remains consequential, while workers need an identity larger than institutional reassurance.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Fear of AI-related layoffs can reduce engagement before any formal workforce decision occurs.",
+          "Workers who see their effort as pointless are less able to learn, adapt, or contribute during the transition.",
+          "Clarity about changing roles and durable human value is an operational need, not merely a morale initiative."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-25-ai-cuts-meet-the-skills-price-signal": {
     "slug": "2026-07-25-ai-cuts-meet-the-skills-price-signal",
     "date": "2026-07-25",

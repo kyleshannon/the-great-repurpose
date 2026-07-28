@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-07-28-automation-advances-while-human-confidence-retreats",
+    "date": "2026-07-28",
+    "title": "Automation Advances While Human Confidence Retreats",
+    "pattern": "Today's five stories show automation advancing faster than institutions can explain what human contribution remains worth. AutoRev is putting agents on calls, estimates, and booking; Financial Express argues creative value is migrating toward expression and judgment; The Guardian finds no broad jobs apocalypse yet; Memeburn finds concentrated damage among young workers alongside AI-washed layoffs; and the Miami Herald reports that layoff anxiety is already draining employee engagement. The human tension is whether people can reclaim agency, taste, and trusted judgment before uncertainty makes them disengage from work that still needs them.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+  },
+  {
     "slug": "2026-07-25-ai-cuts-meet-the-skills-price-signal",
     "date": "2026-07-25",
     "title": "AI Cuts Meet The Skills Price Signal",
