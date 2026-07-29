@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-29-reskilling-promises-meet-the-judgment-reality",
+    "date": "2026-07-29",
+    "title": "Reskilling Promises Meet The Judgment Reality",
+    "pattern": "Today's five stories test whether the reskilling promise is keeping pace with the work people will actually inherit. Andrew Ng and Coursera are putting $100 million behind LearnVector's personal AI tutors; Daron Acemoglu argues for pro-worker AI rather than another automation-first economy; Inc. warns that companies are rehiring judgment they cut too quickly; The Conference Board finds employers teaching today's tools more often than tomorrow's roles; and Google's analysis of nearly 15 million Gemini interactions finds broad assistance but little full automation. The human tension is whether institutions will help people build adaptable judgment and agency, or merely teach them to chase the latest tool while the shape of work keeps moving.",
+    "stages": [
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://media.assettype.com/outlookbusiness/2026-07-29/u2m5tkqx/Untitled-design-32.jpg?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100"
+  },
+  {
     "slug": "2026-07-28-automation-advances-while-human-confidence-retreats",
     "date": "2026-07-28",
     "title": "Automation Advances While Human Confidence Retreats",
@@ -565,6 +577,106 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-29-reskilling-promises-meet-the-judgment-reality": {
+    "slug": "2026-07-29-reskilling-promises-meet-the-judgment-reality",
+    "date": "2026-07-29",
+    "title": "Reskilling Promises Meet The Judgment Reality",
+    "pattern": "Today's five stories test whether the reskilling promise is keeping pace with the work people will actually inherit. Andrew Ng and Coursera are putting $100 million behind LearnVector's personal AI tutors; Daron Acemoglu argues for pro-worker AI rather than another automation-first economy; Inc. warns that companies are rehiring judgment they cut too quickly; The Conference Board finds employers teaching today's tools more often than tomorrow's roles; and Google's analysis of nearly 15 million Gemini interactions finds broad assistance but little full automation. The human tension is whether institutions will help people build adaptable judgment and agency, or merely teach them to chase the latest tool while the shape of work keeps moving.",
+    "stages": [
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://media.assettype.com/outlookbusiness/2026-07-29/u2m5tkqx/Untitled-design-32.jpg?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100",
+    "stories": [
+      {
+        "title": "Coursera Backs Andrew Ng's AI Tutor",
+        "url": "https://www.outlookbusiness.com/corporate/coursera-co-founder-stakes-100-mn-on-ai-reskilling-weeks-after-firm-announces-job-cuts",
+        "source": "outlookbusiness.com",
+        "published": "2026-07-29T07:23:17.036000+00:00",
+        "summary": "Coursera is investing $100 million for roughly a one-third stake in LearnVector, Andrew Ng's new company building personal AI tutors for adult learners. Its planned 2027 products will adapt instruction until a learner can demonstrate mastery. The bet treats learning as durable human infrastructure, but it also places responsibility on workers to keep remaking their skills as roles change.",
+        "imageUrl": "https://media.assettype.com/outlookbusiness/2026-07-29/u2m5tkqx/Untitled-design-32.jpg?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Coursera's $100 million investment represents about one-third ownership of LearnVector.",
+          "LearnVector plans AI tutors that adapt, practice, and verify mastery rather than simply answer prompts.",
+          "The first products are targeted for early 2027 and focus on workers and adult learners."
+        ]
+      },
+      {
+        "title": "Acemoglu Calls For Pro-Worker AI",
+        "url": "https://www.theatlantic.com/ideas/2026/07/ai-automation-productivity-workers/688083/",
+        "source": "theatlantic.com",
+        "published": "2026-07-28T11:30:00+00:00",
+        "summary": "Economist Daron Acemoglu argues that four decades of automation raised productivity while weakening shared prosperity, and that generative AI could repeat the pattern. His alternative is pro-worker AI: systems designed to expand human capability and create new tasks rather than imitate and replace people. That makes the direction of investment and policy a choice about dignity and agency, not technological destiny.",
+        "imageUrl": "https://cdn.theatlantic.com/thumbor/2qcWQdI3MwCRNuWrR9Jm_Le2Wv4=/0x43:2000x1085/1200x625/media/img/mt/2026/07/2026_07_27_Acemoglu_pro_worker_ai_final/original.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Acemoglu connects automation-first digital investment with widening inequality and political instability.",
+          "Pro-worker AI would give people new tasks and stronger capabilities instead of making human parity its goal.",
+          "He calls for more competition, stronger labor advocacy, and investment choices that make augmentation the north star."
+        ]
+      },
+      {
+        "title": "Companies Rediscover The Judgment They Cut",
+        "url": "https://www.inc.com/bernard-coleman/companies-cut-jobs-for-ai-now-theyre-learning-what-they-lost/91380281",
+        "source": "inc.com",
+        "published": "2026-07-28T06:00:00+00:00",
+        "summary": "Inc. columnist Bernard Coleman says some leaders cut roles on AI promises, then quietly recreate those jobs under new titles when the tools cannot handle applied judgment. He points to customer tone, escalation, policy exceptions, and accumulated experience as value that task lists conceal. The lesson is to test what a system can reliably own before removing the person accountable for the whole outcome.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Coleman cites Gartner's prediction that half of AI-linked job cuts will be reversed by 2027.",
+          "Automation can handle repeatable tasks while missing context, exceptions, customer preference, and consequences.",
+          "Leaders should test the technology and price the cost of errors before treating a role as removable."
+        ]
+      },
+      {
+        "title": "Employers Train For Tools, Not Transitions",
+        "url": "https://www.tmcnet.com/usubmit/2026/07/28/10421513.htm",
+        "source": "tmcnet.com",
+        "published": "2026-07-27T17:00:00+00:00",
+        "summary": "New Conference Board research says organizations are emphasizing AI literacy and growth inside current roles while doing far less to prepare employees for future jobs. That mismatch turns training into short-term tool adoption rather than a bridge into new work. Workers need transferable judgment, learning capacity, and visible pathways between roles—not another credential tied to a capability that may soon change.",
+        "imageUrl": "https://mmx.prnewswire.com/media/MS461842/The-Conference-Board-Logo.jpg?id=OA2798320",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Most organizations are concentrating on AI literacy and upskilling for employees' current roles.",
+          "Fewer employers are building the reskilling pathways required for AI-driven movement into different jobs.",
+          "Training has durable value when it builds adaptability and a route forward, not only proficiency with today's tool."
+        ]
+      },
+      {
+        "title": "Google Finds Assistance Outrunning Full Automation",
+        "url": "https://arstechnica.com/ai/2026/07/despite-ai-hype-googles-data-shows-workers-arent-automating-themselves-away/",
+        "source": "arstechnica.com",
+        "published": "2026-07-28T20:20:20+00:00",
+        "summary": "Google's ATLAS study examined 14.65 million de-identified interactions across Gemini, AI Mode, and the Gemini API. AI use appeared across occupations representing most U.S. employment, yet full task automation accounted for less than one in ten workplace prompts and most job tasks remained untouched. The transition is broad but partial, making human orchestration and judgment more immediate than wholesale replacement.",
+        "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1711353151-1152x648.jpg",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The ATLAS study analyzed 14.65 million de-identified interactions collected across Google's consumer and API products.",
+          "AI use spans a broad range of occupations, but it touches only a fraction of the tasks inside most jobs.",
+          "Fewer than 10% of workplace prompts represented full task automation, with collaboration and assistance more common."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-28-automation-advances-while-human-confidence-retreats": {
     "slug": "2026-07-28-automation-advances-while-human-confidence-retreats",
     "date": "2026-07-28",
