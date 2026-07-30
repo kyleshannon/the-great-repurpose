@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-07-30-ai-redraws-roles-before-work-catches-up",
+    "date": "2026-07-30",
+    "title": "AI Redraws Roles Before Work Catches Up",
+    "pattern": "Visa is cutting 7% of its staff as AI-enabled efficiency expands, while Microsoft’s $2.5 billion investment in human expertise argues that capable systems still depend on people who know what good looks like. OpenAI’s task-crossover data, five startups rebuilding trust around agents, and Born Social’s creator community show the deeper shift: roles are stretching and recombining faster than organizations can redesign accountability, value, and belonging.",
+    "stages": [
+      "Discover AI's Power",
+      "Reclaim Value",
+      "Unhook Identity",
+      "Start Creating"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a69e5a81ae7df62bd92a6c3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-07-29-reskilling-promises-meet-the-judgment-reality",
     "date": "2026-07-29",
     "title": "Reskilling Promises Meet The Judgment Reality",
@@ -577,6 +590,107 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-07-30-ai-redraws-roles-before-work-catches-up": {
+    "slug": "2026-07-30-ai-redraws-roles-before-work-catches-up",
+    "date": "2026-07-30",
+    "title": "AI Redraws Roles Before Work Catches Up",
+    "pattern": "Visa is cutting 7% of its staff as AI-enabled efficiency expands, while Microsoft’s $2.5 billion investment in human expertise argues that capable systems still depend on people who know what good looks like. OpenAI’s task-crossover data, five startups rebuilding trust around agents, and Born Social’s creator community show the deeper shift: roles are stretching and recombining faster than organizations can redesign accountability, value, and belonging.",
+    "stages": [
+      "Discover AI's Power",
+      "Reclaim Value",
+      "Unhook Identity",
+      "Start Creating"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a69e5a81ae7df62bd92a6c3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "Microsoft Bets $2.5 Billion On Human Expertise",
+        "url": "https://www.forbes.com/sites/terdawn-deboe/2026/07/29/why-microsoft-just-best-25-billion-on-human-experts-not-ai-alone/",
+        "source": "forbes.com",
+        "published": "2026-07-29T05:00:00+00:00",
+        "summary": "Microsoft’s $2.5 billion investment signals that advanced AI still needs domain experts to supply context, standards, and judgment. The Great Repurpose opportunity is not to compete with the system’s output, but to become the person who can recognize quality and direct the system toward a useful result.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a69e5a81ae7df62bd92a6c3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Microsoft committed $2.5 billion to an approach built around human experts working with AI.",
+          "Expertise remains essential for defining quality, interpreting context, and deciding where AI should be trusted.",
+          "Human value moves upstream from producing every answer to directing and judging increasingly capable systems."
+        ]
+      },
+      {
+        "title": "Five Startups Tackle The AI Agent Trust Gap",
+        "url": "https://venturebeat.com/orchestration/enterprise-ai-agents-cant-talk-to-each-other-cant-be-trusted-with-permissions-and-cant-be-audited-5-startups-are-already-fixing-that",
+        "source": "venturebeat.com",
+        "published": "2026-07-29T20:02:03.613000+00:00",
+        "summary": "Five startups are building infrastructure for agent interoperability, permissions, monitoring, and auditability; one reported reducing cyberattack containment from seven hours to twelve minutes. As agents move into real operations, human judgment becomes more important because someone must define boundaries, interpret exceptions, and remain accountable for what autonomous systems do.",
+        "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/5elxWoo3xiuafOlEJ2rqwC/439218c0037c2510b6e596d5722638d3/Innovation_Showcase.jpg?w=800&q=75",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The startups address interoperability, permissions, observability, and auditing for enterprise agents.",
+          "One company reported cutting cyberattack containment time from seven hours to twelve minutes.",
+          "The emerging job is not merely using agents, but designing and supervising the systems that make their actions trustworthy."
+        ]
+      },
+      {
+        "title": "Visa Says AI Is Enabling A 7% Workforce Cut",
+        "url": "https://www.americanbanker.com/payments/news/visa-layoffs-will-cut-7-of-its-workforce",
+        "source": "americanbanker.com",
+        "published": "2026-07-29T05:12:42.115000+00:00",
+        "summary": "Visa plans to cut 7% of its workforce, with management citing AI-enabled efficiency and faster technology development as part of the rationale. This is the harder side of role redesign: organizations can capture productivity quickly, while people are left to rebuild identity and value after the old structure disappears.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Visa plans to reduce its workforce by 7%.",
+          "Management linked the cuts partly to AI-driven efficiency and faster technology development.",
+          "Productivity gains do not automatically create a humane transition for the people whose roles are removed."
+        ]
+      },
+      {
+        "title": "Born Social Builds A Human Creator Community",
+        "url": "https://www.mediapost.com/publications/article/416774/born-social-launches-born-creator-community-to-sca.html",
+        "source": "mediapost.com",
+        "published": "2026-07-24T17:00:00+00:00",
+        "summary": "Born Social is creating a community to streamline creator onboarding and selection while pushing back against feeds flooded with AI-generated material. The move reinforces a growing creative premium on human relationships, taste, and trusted identity—the things that make work worth choosing rather than merely easy to generate.",
+        "imageUrl": "https://s3.amazonaws.com/media.mediapost.com/dam/cropped/2026/07/23/unnamed_ONB3reA.png",
+        "stages": [
+          "Start Creating",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Born Social’s new community is designed to streamline creator onboarding and selection.",
+          "The initiative explicitly responds to the growth of AI-generated feeds.",
+          "When content becomes abundant, trusted human taste, relationships, and identity become stronger signals of value."
+        ]
+      },
+      {
+        "title": "AI Is Expanding What People Do At Work",
+        "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work/",
+        "source": "openai.com",
+        "published": "2026-07-27T00:00:00+00:00",
+        "summary": "OpenAI’s analysis of more than 800,000 U.S. ChatGPT messages found that 43.5% of occupation-specific AI use involved tasks associated with another occupation. AI is already stretching roles before job descriptions catch up, giving people new territory to claim while also making boundaries, learning paths, and accountability less stable.",
+        "imageUrl": "",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Among non-generic work messages, 43.5% involved tasks associated with an occupation other than the user’s own.",
+          "Task crossover was especially high among customer experience, design, human resources, legal, and marketing workers.",
+          "AI is reorganizing who does what before conventional job titles and labor statistics can register the change."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-07-29-reskilling-promises-meet-the-judgment-reality": {
     "slug": "2026-07-29-reskilling-promises-meet-the-judgment-reality",
     "date": "2026-07-29",
