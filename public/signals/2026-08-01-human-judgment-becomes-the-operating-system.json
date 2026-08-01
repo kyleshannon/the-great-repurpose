@@ -1,0 +1,100 @@
+{
+  "slug": "2026-08-01-human-judgment-becomes-the-operating-system",
+  "date": "2026-08-01",
+  "title": "Human Judgment Becomes The Operating System",
+  "pattern": "Visa is cutting 2,600 roles as AI speeds parts of product and technology work, while ADP argues that jobs are being recomposed around deeper thinking rather than simply erased. A workforce survey, Forbes’ call to measure human-AI collaboration, and Onyx’s control plane for 1.1 million agents point to the same tension: as machines execute more of the work, human judgment, accountability, and the power to say no must become part of the operating system.",
+  "stages": [
+    "Reclaim Value",
+    "Discover AI's Power",
+    "Unhook Identity"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/68b9a3deb1db5576bdde29b4/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "Survey Finds Human Talent Still Has The Upper Hand",
+      "url": "https://americanbazaaronline.com/2026/07/28/worried-about-ai-and-layoffs-485323/",
+      "source": "americanbazaaronline.com",
+      "published": "2026-07-28T11:22:26+00:00",
+      "summary": "A new workforce survey finds that employers still prioritize human oversight, specialized expertise, and measurable business value over automation for its own sake. The useful signal is not that workers are safe, but that durable value increasingly comes from knowing when to intervene, how to apply expertise, and what a good outcome actually looks like.",
+      "imageUrl": "https://americanbazaaronline.com/wp-content/uploads/2026/07/Copy-of-Laura_Maffucci_Gray-Background_HIGH-RES-scaled.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The survey suggests employers continue to value human oversight and specialized expertise alongside AI adoption.",
+        "Companies are looking for measurable business outcomes rather than automation as an end in itself.",
+        "Workers gain leverage by making judgment and domain knowledge visible, not by defending every task in an old job description."
+      ]
+    },
+    {
+      "title": "ADP Says AI Is Recombining Jobs At The Task Level",
+      "url": "https://diginomica.com/adp-ceo-maria-black-thinks-were-asking-wrong-questions-about-ai-and-future-work-heres-why",
+      "source": "diginomica.com",
+      "published": "2026-07-31T09:35:01+00:00",
+      "summary": "ADP CEO Maria Black says the better question is how AI changes the bundle of tasks inside a job. Research linking five million postings with nine million payroll records found higher wage premiums for design, development, and analysis than for testing, documentation, monitoring, and support—evidence that deeper thinking and judgment are gaining value as routine work shifts.",
+      "imageUrl": "https://diginomica.com/sites/default/files/images/2026-06/Screenshot%202026-06-24%20at%2021.59.22.png",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "ADP and Stanford researchers analyzed five million job postings linked to nine million workers in payroll data.",
+        "Early IT results show stronger wage premiums for design, development, and analysis than for testing, documentation, monitoring, and support.",
+        "Jobs are bundles of tasks, so workers need to track which capabilities are appreciating rather than treating a title as a permanent identity."
+      ]
+    },
+    {
+      "title": "Leaders Need A Human-AI Collaboration Metric",
+      "url": "https://www.forbes.com/sites/dianehamilton/2026/08/01/why-leaders-should-measure-human-ai-collaboration-over-ai-performance/",
+      "source": "forbes.com",
+      "published": "2026-08-01T00:00:00+00:00",
+      "summary": "Diane Hamilton argues that leaders should measure what people achieve with AI, not only the system’s standalone performance. That changes the management question from whether a model is impressive to whether the human-machine partnership improves decisions, learning, and results—and makes collaboration design a core leadership responsibility.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/68b9a3deb1db5576bdde29b4/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI performance alone does not reveal whether people are producing better work with the system.",
+        "Collaboration metrics can connect AI adoption to human learning, judgment, and concrete outcomes.",
+        "Leaders must design the partnership instead of assuming access to a capable model will create value by itself."
+      ]
+    },
+    {
+      "title": "Onyx Gives Humans A Veto Over Enterprise Agents",
+      "url": "https://thenextweb.com/news/onyx-security-113m-series-b-ai-agent-control-plane",
+      "source": "thenextweb.com",
+      "published": "2026-07-30T11:25:34+00:00",
+      "summary": "Onyx Security raised $113 million for a control plane that inspects agent actions before they reach enterprise systems and blocks unsafe ones at runtime. The company says it already secures 1.1 million agents across 66 million sessions, making the human ability to set boundaries and retain a meaningful veto an operational necessity rather than a philosophical preference.",
+      "imageUrl": "",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Onyx raised a $113 million Series B and says its platform secures more than 1.1 million agents.",
+        "The control plane inspects agent reasoning and actions, blocking risky activity before it takes effect.",
+        "As agents gain authority, humans become more valuable as designers of boundaries, exceptions, and accountability."
+      ]
+    },
+    {
+      "title": "Visa Cuts 2,600 Roles As AI Speeds The Work",
+      "url": "https://analyticsindiamag.com/ai-news/visa-cuts-2600-jobs-in-ai-led-restructuring-tech-product-teams-to-be-affected-report",
+      "source": "analyticsindiamag.com",
+      "published": "2026-07-30T23:19:00+00:00",
+      "summary": "Visa plans to cut roughly 2,600 jobs, about 7% of its workforce, primarily across technology and product teams. AI has helped reduce repetitive work and accelerate product development, though reporting says it was not the sole cause; the human cost shows why efficiency and a humane transition must be managed as separate responsibilities.",
+      "imageUrl": "https://storage.googleapis.com/gpt-engineer-file-uploads/XW65pun0vjQL3xcUmVglEg4ZrsL2/social-images/social-1763560217027-Expert-Panel-discussion-768x512.webp",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "Visa plans to eliminate about 2,600 roles, with technology and product teams carrying most of the reduction.",
+        "AI has reduced repetitive work and sped product development, but was reported as only one factor in the restructuring.",
+        "Organizations can realize efficiency faster than displaced workers can rebuild identity, skills, and economic security."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
