@@ -3,6 +3,20 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-08-04-work-design-becomes-the-human-advantage",
+    "date": "2026-08-04",
+    "title": "Work Design Becomes The Human Advantage",
+    "pattern": "IKEA’s decision to retrain 8,500 workers, Forbes’ call to give agents explicit job descriptions, and Vivasoft’s emphasis on critical thinking all treat AI adoption as a work-design choice rather than an automatic verdict on people. A second Forbes essay warns that discarded employees can become formidable founders, while ArtArch is consolidating creative tools into an AI-native operating system. Together they expose the human advantage institutions must choose to cultivate: clear accountability, transferable judgment, and the agency to turn new capabilities into meaningful work.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://asset.peoplematters.in/images/d538c3ae-2602-4eb5-b79d-3a2d559b6abe.png"
+  },
+  {
     "slug": "2026-08-03-role-compression-meets-the-human-value-test",
     "date": "2026-08-03",
     "title": "Role Compression Meets The Human Value Test",
@@ -629,6 +643,108 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-08-04-work-design-becomes-the-human-advantage": {
+    "slug": "2026-08-04-work-design-becomes-the-human-advantage",
+    "date": "2026-08-04",
+    "title": "Work Design Becomes The Human Advantage",
+    "pattern": "IKEA’s decision to retrain 8,500 workers, Forbes’ call to give agents explicit job descriptions, and Vivasoft’s emphasis on critical thinking all treat AI adoption as a work-design choice rather than an automatic verdict on people. A second Forbes essay warns that discarded employees can become formidable founders, while ArtArch is consolidating creative tools into an AI-native operating system. Together they expose the human advantage institutions must choose to cultivate: clear accountability, transferable judgment, and the agency to turn new capabilities into meaningful work.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://asset.peoplematters.in/images/d538c3ae-2602-4eb5-b79d-3a2d559b6abe.png",
+    "stories": [
+      {
+        "title": "IKEA Retrains 8,500 Workers As AI Takes Tasks",
+        "url": "https://www.peoplematters.in/news/ai-and-emerging-tech/ikea-uses-ai-to-reskill-8500-employees-instead-of-cutting-jobs-51222",
+        "source": "peoplematters.in",
+        "published": "2026-08-03T17:00:00+00:00",
+        "summary": "After deploying its Billie AI assistant, IKEA retrained 8,500 call-centre employees for higher-value customer service and sales work instead of treating automation as a reason to cut them. The choice makes reskilling concrete: preserve people, redesign roles, and move human contribution toward relationships and judgment.",
+        "imageUrl": "https://asset.peoplematters.in/images/d538c3ae-2602-4eb5-b79d-3a2d559b6abe.png",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "IKEA retrained 8,500 call-centre workers after introducing its Billie AI assistant.",
+          "Employees moved toward customer-facing service and sales roles rather than being treated as surplus headcount.",
+          "Organizations shape AI’s human impact through role design, training, and what they choose to value."
+        ]
+      },
+      {
+        "title": "AI Agents Need Jobs With Clear Accountability",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/08/03/ai-agents-need-job-descriptions-before-they-need-more-autonomy/",
+        "source": "forbes.com",
+        "published": "2026-08-03T05:15:00+00:00",
+        "summary": "A Forbes Technology Council essay argues that companies should define an agent’s role before expanding its autonomy: which decisions remain human, which processes are safe to automate, and who owns the result. Agents do not remove management responsibility; they make boundaries, escalation paths, and accountability more important.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6bb548a0b916bfe70a5f5d/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Agent autonomy should follow a defined role, decision boundary, and escalation path.",
+          "Leaders must distinguish safe automation from decisions that still require human judgment.",
+          "Responsibility for an agent’s outcomes remains a human and organizational obligation."
+        ]
+      },
+      {
+        "title": "AI Layoffs Can Create Formidable New Competitors",
+        "url": "https://www.forbes.com/sites/yassprize/2026/08/03/the-hidden-consequence-of-ai-layoffs-companies-are-creating-their-own-toughest-competitors/",
+        "source": "forbes.com",
+        "published": "2026-08-03T09:54:00+00:00",
+        "summary": "A Forbes essay argues that AI-era layoffs can release experienced people who understand real problems, know how institutions work, and can now build with cheaper technology. Durable advantage shifts from holding a corporate role to identifying meaningful problems, earning trust, and turning ideas into action.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a70c51c2fa6e805d7e98bfb/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "Laid-off employees can carry valuable domain knowledge and unmet-customer insight into new ventures.",
+          "Lower technology barriers make it easier for small teams to turn that knowledge into competing products.",
+          "Problem selection, trust, and purposeful action become more durable than attachment to one employer or title."
+        ]
+      },
+      {
+        "title": "Vivasoft CEO Puts Critical Thinking Before Tools",
+        "url": "https://www.thedailystar.net/news/tech-startup/news/ai-transforms-software-jobs-vivasoft-ceo-urges-graduates-master-critical-thinking-4239851",
+        "source": "thedailystar.net",
+        "published": "2026-08-02T17:01:00+00:00",
+        "summary": "As software companies rethink hiring in an AI-shaped industry, Vivasoft CEO Shafiul Hasan Tareq urges graduates to develop critical thinking rather than rely on a static technical toolkit. The message is not to abandon technical skill, but to pair it with judgment and adaptability as tools and job requirements keep changing.",
+        "imageUrl": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/2026-08/Shafiul%20Hasan%20Tareq.jpeg",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "AI is changing how software companies evaluate talent and organize technical work.",
+          "Graduates need critical thinking and adaptability alongside current technical knowledge.",
+          "A durable career identity rests on learning and judgment, not mastery of one toolchain."
+        ]
+      },
+      {
+        "title": "ArtArch Unifies Creative Tools Into One AI Platform",
+        "url": "https://markets.businessinsider.com/news/stocks/artarch-merges-all-products-into-unified-platform-elevates-positioning-to-ai-native-creative-os-1036402965",
+        "source": "markets.businessinsider.com",
+        "published": "2026-08-03T15:42:00+00:00",
+        "summary": "ArtArch is consolidating its creative products into what it calls an AI-native Creative OS, combining multimodel creation, workflow, asset management, and commercial-content tools in one platform. As production capabilities converge, creators gain leverage—but must supply the intent, taste, and direction that a unified tool cannot choose for them.",
+        "imageUrl": "https://ml.globenewswire.com/Resource/Download/292a9948-b34e-437a-a107-4bb5f00f28a9/artarch.jpg",
+        "stages": [
+          "Discover AI's Power",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "ArtArch is merging previously separate products into a unified creative platform.",
+          "The company positions the system around multimodel creation, workflow, asset management, and commercial output.",
+          "Integrated execution raises the value of human intent, taste, and deciding what deserves to be made."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-08-03-role-compression-meets-the-human-value-test": {
     "slug": "2026-08-03-role-compression-meets-the-human-value-test",
     "date": "2026-08-03",
