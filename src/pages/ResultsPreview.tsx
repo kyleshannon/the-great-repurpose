@@ -295,12 +295,9 @@ const ResultsPreview = () => {
     }
 
     setLoading(true);
-    supabase
-      .from("selfcheck_results")
-      .select("id, identity_score, value_score, purpose_score, ai_relationship_score, creative_action_score, lowest_dimension, archetype, ai_interpretation, open_answer, created_at")
-      .eq("id", routeId)
-      .single()
-      .then(({ data, error }) => {
+    (supabase.rpc as any)("get_selfcheck_result", { p_id: routeId })
+      .then(({ data: rows, error }: any) => {
+        const data = Array.isArray(rows) ? rows[0] : rows;
         if (error || !data) {
           navigate("/selfcheck", { replace: true });
           return;
