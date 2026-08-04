@@ -64,48 +64,7 @@ export type Database = {
       }
     }
     Views: {
-      selfcheck_results_public: {
-        Row: {
-          ai_interpretation: string | null
-          ai_relationship_score: number | null
-          archetype: string | null
-          created_at: string | null
-          creative_action_score: number | null
-          id: string | null
-          identity_score: number | null
-          lowest_dimension: string | null
-          open_answer: string | null
-          purpose_score: number | null
-          value_score: number | null
-        }
-        Insert: {
-          ai_interpretation?: string | null
-          ai_relationship_score?: number | null
-          archetype?: string | null
-          created_at?: string | null
-          creative_action_score?: number | null
-          id?: string | null
-          identity_score?: number | null
-          lowest_dimension?: string | null
-          open_answer?: string | null
-          purpose_score?: number | null
-          value_score?: number | null
-        }
-        Update: {
-          ai_interpretation?: string | null
-          ai_relationship_score?: number | null
-          archetype?: string | null
-          created_at?: string | null
-          creative_action_score?: number | null
-          id?: string | null
-          identity_score?: number | null
-          lowest_dimension?: string | null
-          open_answer?: string | null
-          purpose_score?: number | null
-          value_score?: number | null
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Functions: {
       create_selfcheck_result: {
@@ -124,6 +83,22 @@ export type Database = {
         Returns: {
           claim_token: string
           id: string
+        }[]
+      }
+      get_selfcheck_result: {
+        Args: { p_id: string }
+        Returns: {
+          ai_interpretation: string
+          ai_relationship_score: number
+          archetype: string
+          created_at: string
+          creative_action_score: number
+          id: string
+          identity_score: number
+          lowest_dimension: string
+          open_answer: string
+          purpose_score: number
+          value_score: number
         }[]
       }
       set_selfcheck_interpretation: {
