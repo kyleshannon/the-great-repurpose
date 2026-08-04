@@ -1,0 +1,100 @@
+{
+  "slug": "2026-08-03-role-compression-meets-the-human-value-test",
+  "date": "2026-08-03",
+  "title": "Role Compression Meets The Human Value Test",
+  "pattern": "Chime’s 10% workforce cut and CIO’s task-level view show roles being compressed before people have a clear map of what replaces them. Lanier Tech’s robotics studio offers one concrete bridge into advanced manufacturing, while Sandra Currie’s role-redesign argument and Samira Ansari’s call for bigger creative ideas point to the same human test: when AI can execute more tasks, institutions must make judgment, purpose, and creative direction visible—and build real paths for people to develop them.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Find Your Purpose",
+    "Start Creating"
+  ],
+  "imageUrl": "https://www.thehrdigest.com/wp-content/uploads/2026/08/Chime-layoffs-2026.jpg",
+  "stories": [
+    {
+      "title": "Creative Leaders Bet On Bigger Ideas After AI Fear",
+      "url": "https://www.theaustralian.com.au/business/growth-agenda/fear-is-freezing-creativity-but-ai-will-push-big-ideas-back/news-story/cd6a4b06349bffdf5910b30cac969791",
+      "source": "theaustralian.com.au",
+      "published": "2026-08-02T07:00:00+00:00",
+      "summary": "Grey US chief creative officer Samira Ansari says AI panic is easing as brands rediscover the value of ambitious creative ideas after a period dominated by short-term creator marketing. Faster execution does not eliminate creative work; it raises the premium on taste, conviction, and deciding which idea is worth scaling.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "Ansari argues that fear around AI has constrained creative ambition, but that mood is beginning to shift.",
+        "Brands are reconsidering the limits of short-term, creator-led marketing and the value of larger unifying ideas.",
+        "When production becomes cheaper, human value moves upstream into taste, direction, and the courage to choose a meaningful idea."
+      ]
+    },
+    {
+      "title": "Lanier Tech Builds A Robotics Path Into Manufacturing",
+      "url": "https://www.yahoo.com/news/science/articles/ai-robotics-studio-lanier-tech-205716740.html",
+      "source": "yahoo.com",
+      "published": "2026-08-02T13:57:00+00:00",
+      "summary": "Lanier Technical College is opening an AI and robotics studio designed to prepare students for Georgia’s expanding high-tech manufacturing sector. The studio matters because it turns an abstract demand to “reskill” into a visible place where people can practice with the systems reshaping the work.",
+      "imageUrl": "",
+      "stages": [
+        "Find Your Purpose",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The new studio will give students direct experience with AI and robotics used in advanced manufacturing.",
+        "The program connects technical education to a growing regional employment sector rather than offering tool exposure without a destination.",
+        "Transitions become more humane when institutions create concrete bridges from disrupted roles into new capabilities and communities of practice."
+      ]
+    },
+    {
+      "title": "Automating Tasks Does Not Eliminate A Job’s Purpose",
+      "url": "https://www.cio.com/article/4204021/ai-can-do-your-tasks-that-doesnt-mean-it-will-do-your-job.html",
+      "source": "cio.com",
+      "published": "2026-07-31T14:08:00+00:00",
+      "summary": "CIO argues that a job is more than its visible task list: it also contains purpose, judgment, relationships, and responsibility for outcomes. Workers need to separate identity from execution while making those higher-order contributions legible before organizations mistake task automation for the disappearance of the whole role.",
+      "imageUrl": "https://www.cio.com/wp-content/uploads/2026/08/4204021-0-24226100-1785747747-shutterstock_2320153383.jpg?quality=50&strip=all&w=1024",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI can absorb individual tasks without taking over the full purpose and accountability bundled into a job.",
+        "Judgment and impact become easier to value when workers describe outcomes rather than defending a familiar task list.",
+        "Organizations risk hollowing out roles if they automate execution without preserving context, relationships, and responsibility."
+      ]
+    },
+    {
+      "title": "Chime Cuts 10% As AI Supports Smaller Teams",
+      "url": "https://www.thehrdigest.com/chime-layoffs-announced-as-ai-aids-with-a-10-workforce-reduction/",
+      "source": "thehrdigest.com",
+      "published": "2026-08-03T09:06:03+00:00",
+      "summary": "Chime is reducing its workforce by roughly 10% as the fintech company moves toward smaller teams and flatter operations with AI supporting the restructuring. The cut shows how quickly organizations can capture efficiency while leaving workers to absorb the harder questions of identity, security, and where their value travels next.",
+      "imageUrl": "https://www.thehrdigest.com/wp-content/uploads/2026/08/Chime-layoffs-2026.jpg",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Chime’s restructuring reduces the workforce by about 10% and emphasizes smaller, flatter teams.",
+        "AI is described as an aid to the operating model rather than a simple one-for-one replacement mechanism.",
+        "Efficiency arrives at organizational speed, while displaced people must rebuild direction and economic stability at human speed."
+      ]
+    },
+    {
+      "title": "AI Redesigns Roles Around Judgment And Adaptation",
+      "url": "https://www.jamaicaobserver.com/2026/08/03/ai-redefining-roles/",
+      "source": "jamaicaobserver.com",
+      "published": "2026-08-03T05:00:00+00:00",
+      "summary": "Sandra Currie frames AI as a force redefining roles rather than merely erasing them, putting pressure on people and employers to reconsider what the human contribution is. The practical challenge is to redesign work around judgment, adaptability, and responsibility instead of preserving old titles while their substance changes underneath them.",
+      "imageUrl": "https://www.jamaicaobserver.com/jamaicaobserver/news/wp-content/uploads/sites/4/2026/08/image_1-21.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The article treats AI as a catalyst for role redesign, not only as a forecast of job disappearance.",
+        "Workers need a clearer account of which human capabilities remain valuable as routine execution shifts to machines.",
+        "Employers share responsibility for redesigning roles and development paths rather than placing the full burden of adaptation on individuals."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}

@@ -1,5 +1,32 @@
 [
   {
+    "slug": "2026-08-03-role-compression-meets-the-human-value-test",
+    "date": "2026-08-03",
+    "title": "Role Compression Meets The Human Value Test",
+    "pattern": "Chime’s 10% workforce cut and CIO’s task-level view show roles being compressed before people have a clear map of what replaces them. Lanier Tech’s robotics studio offers one concrete bridge into advanced manufacturing, while Sandra Currie’s role-redesign argument and Samira Ansari’s call for bigger creative ideas point to the same human test: when AI can execute more tasks, institutions must make judgment, purpose, and creative direction visible—and build real paths for people to develop them.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Start Creating"
+    ],
+    "imageUrl": "https://www.thehrdigest.com/wp-content/uploads/2026/08/Chime-layoffs-2026.jpg"
+  },
+  {
+    "slug": "2026-08-02-from-ai-slop-to-accountable-work",
+    "date": "2026-08-02",
+    "title": "From AI Slop To Accountable Work",
+    "pattern": "The stories point to a harder stage of AI adoption: platforms are trying to curb low-value synthetic content while workplaces are learning that automation changes task lists faster than it changes responsibility. The useful response is neither panic nor passive adoption. It is to make human judgment, oversight, and a path to new capability visible wherever AI changes the work.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6dda25b9bad10d8e16144c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-08-01-human-judgment-becomes-the-operating-system",
     "date": "2026-08-01",
     "title": "Human Judgment Becomes The Operating System",

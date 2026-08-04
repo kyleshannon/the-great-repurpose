@@ -3,6 +3,33 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-08-03-role-compression-meets-the-human-value-test",
+    "date": "2026-08-03",
+    "title": "Role Compression Meets The Human Value Test",
+    "pattern": "Chime’s 10% workforce cut and CIO’s task-level view show roles being compressed before people have a clear map of what replaces them. Lanier Tech’s robotics studio offers one concrete bridge into advanced manufacturing, while Sandra Currie’s role-redesign argument and Samira Ansari’s call for bigger creative ideas point to the same human test: when AI can execute more tasks, institutions must make judgment, purpose, and creative direction visible—and build real paths for people to develop them.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Start Creating"
+    ],
+    "imageUrl": "https://www.thehrdigest.com/wp-content/uploads/2026/08/Chime-layoffs-2026.jpg"
+  },
+  {
+    "slug": "2026-08-02-from-ai-slop-to-accountable-work",
+    "date": "2026-08-02",
+    "title": "From AI Slop To Accountable Work",
+    "pattern": "The stories point to a harder stage of AI adoption: platforms are trying to curb low-value synthetic content while workplaces are learning that automation changes task lists faster than it changes responsibility. The useful response is neither panic nor passive adoption. It is to make human judgment, oversight, and a path to new capability visible wherever AI changes the work.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6dda25b9bad10d8e16144c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-08-01-human-judgment-becomes-the-operating-system",
     "date": "2026-08-01",
     "title": "Human Judgment Becomes The Operating System",
@@ -602,6 +629,211 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-08-03-role-compression-meets-the-human-value-test": {
+    "slug": "2026-08-03-role-compression-meets-the-human-value-test",
+    "date": "2026-08-03",
+    "title": "Role Compression Meets The Human Value Test",
+    "pattern": "Chime’s 10% workforce cut and CIO’s task-level view show roles being compressed before people have a clear map of what replaces them. Lanier Tech’s robotics studio offers one concrete bridge into advanced manufacturing, while Sandra Currie’s role-redesign argument and Samira Ansari’s call for bigger creative ideas point to the same human test: when AI can execute more tasks, institutions must make judgment, purpose, and creative direction visible—and build real paths for people to develop them.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Start Creating"
+    ],
+    "imageUrl": "https://www.thehrdigest.com/wp-content/uploads/2026/08/Chime-layoffs-2026.jpg",
+    "stories": [
+      {
+        "title": "Creative Leaders Bet On Bigger Ideas After AI Fear",
+        "url": "https://www.theaustralian.com.au/business/growth-agenda/fear-is-freezing-creativity-but-ai-will-push-big-ideas-back/news-story/cd6a4b06349bffdf5910b30cac969791",
+        "source": "theaustralian.com.au",
+        "published": "2026-08-02T07:00:00+00:00",
+        "summary": "Grey US chief creative officer Samira Ansari says AI panic is easing as brands rediscover the value of ambitious creative ideas after a period dominated by short-term creator marketing. Faster execution does not eliminate creative work; it raises the premium on taste, conviction, and deciding which idea is worth scaling.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "Ansari argues that fear around AI has constrained creative ambition, but that mood is beginning to shift.",
+          "Brands are reconsidering the limits of short-term, creator-led marketing and the value of larger unifying ideas.",
+          "When production becomes cheaper, human value moves upstream into taste, direction, and the courage to choose a meaningful idea."
+        ]
+      },
+      {
+        "title": "Lanier Tech Builds A Robotics Path Into Manufacturing",
+        "url": "https://www.yahoo.com/news/science/articles/ai-robotics-studio-lanier-tech-205716740.html",
+        "source": "yahoo.com",
+        "published": "2026-08-02T13:57:00+00:00",
+        "summary": "Lanier Technical College is opening an AI and robotics studio designed to prepare students for Georgia’s expanding high-tech manufacturing sector. The studio matters because it turns an abstract demand to “reskill” into a visible place where people can practice with the systems reshaping the work.",
+        "imageUrl": "",
+        "stages": [
+          "Find Your Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The new studio will give students direct experience with AI and robotics used in advanced manufacturing.",
+          "The program connects technical education to a growing regional employment sector rather than offering tool exposure without a destination.",
+          "Transitions become more humane when institutions create concrete bridges from disrupted roles into new capabilities and communities of practice."
+        ]
+      },
+      {
+        "title": "Automating Tasks Does Not Eliminate A Job’s Purpose",
+        "url": "https://www.cio.com/article/4204021/ai-can-do-your-tasks-that-doesnt-mean-it-will-do-your-job.html",
+        "source": "cio.com",
+        "published": "2026-07-31T14:08:00+00:00",
+        "summary": "CIO argues that a job is more than its visible task list: it also contains purpose, judgment, relationships, and responsibility for outcomes. Workers need to separate identity from execution while making those higher-order contributions legible before organizations mistake task automation for the disappearance of the whole role.",
+        "imageUrl": "https://www.cio.com/wp-content/uploads/2026/08/4204021-0-24226100-1785747747-shutterstock_2320153383.jpg?quality=50&strip=all&w=1024",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AI can absorb individual tasks without taking over the full purpose and accountability bundled into a job.",
+          "Judgment and impact become easier to value when workers describe outcomes rather than defending a familiar task list.",
+          "Organizations risk hollowing out roles if they automate execution without preserving context, relationships, and responsibility."
+        ]
+      },
+      {
+        "title": "Chime Cuts 10% As AI Supports Smaller Teams",
+        "url": "https://www.thehrdigest.com/chime-layoffs-announced-as-ai-aids-with-a-10-workforce-reduction/",
+        "source": "thehrdigest.com",
+        "published": "2026-08-03T09:06:03+00:00",
+        "summary": "Chime is reducing its workforce by roughly 10% as the fintech company moves toward smaller teams and flatter operations with AI supporting the restructuring. The cut shows how quickly organizations can capture efficiency while leaving workers to absorb the harder questions of identity, security, and where their value travels next.",
+        "imageUrl": "https://www.thehrdigest.com/wp-content/uploads/2026/08/Chime-layoffs-2026.jpg",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Chime’s restructuring reduces the workforce by about 10% and emphasizes smaller, flatter teams.",
+          "AI is described as an aid to the operating model rather than a simple one-for-one replacement mechanism.",
+          "Efficiency arrives at organizational speed, while displaced people must rebuild direction and economic stability at human speed."
+        ]
+      },
+      {
+        "title": "AI Redesigns Roles Around Judgment And Adaptation",
+        "url": "https://www.jamaicaobserver.com/2026/08/03/ai-redefining-roles/",
+        "source": "jamaicaobserver.com",
+        "published": "2026-08-03T05:00:00+00:00",
+        "summary": "Sandra Currie frames AI as a force redefining roles rather than merely erasing them, putting pressure on people and employers to reconsider what the human contribution is. The practical challenge is to redesign work around judgment, adaptability, and responsibility instead of preserving old titles while their substance changes underneath them.",
+        "imageUrl": "https://www.jamaicaobserver.com/jamaicaobserver/news/wp-content/uploads/sites/4/2026/08/image_1-21.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The article treats AI as a catalyst for role redesign, not only as a forecast of job disappearance.",
+          "Workers need a clearer account of which human capabilities remain valuable as routine execution shifts to machines.",
+          "Employers share responsibility for redesigning roles and development paths rather than placing the full burden of adaptation on individuals."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-08-02-from-ai-slop-to-accountable-work": {
+    "slug": "2026-08-02-from-ai-slop-to-accountable-work",
+    "date": "2026-08-02",
+    "title": "From AI Slop To Accountable Work",
+    "pattern": "The stories point to a harder stage of AI adoption: platforms are trying to curb low-value synthetic content while workplaces are learning that automation changes task lists faster than it changes responsibility. The useful response is neither panic nor passive adoption. It is to make human judgment, oversight, and a path to new capability visible wherever AI changes the work.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6dda25b9bad10d8e16144c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "Platforms Push Back Against Low-Value AI Content",
+        "url": "https://www.forbes.com/sites/gabrielalinzainescu/2026/08/01/snapchat-and-linkedin-launch-new-tools-to-curb-ai-slop-in-feeds/",
+        "source": "forbes.com",
+        "published": "2026-07-31T21:00:00+00:00",
+        "summary": "Snapchat and LinkedIn announced measures aimed at reducing low-quality AI-generated material in users’ feeds. The shift matters because easy production does not create value by itself; as synthetic content proliferates, discernment, taste, and accountability become more visible parts of creative work.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6dda25b9bad10d8e16144c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Discover AI's Power",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "Platforms are beginning to distinguish useful AI-assisted work from repetitive synthetic noise.",
+          "When content becomes cheap, human judgment about what is worth attention becomes more valuable.",
+          "Creative workers can use AI for range and speed without giving up responsibility for meaning."
+        ]
+      },
+      {
+        "title": "Workplace AI Is Still More Assistant Than Replacement",
+        "url": "https://www.business-standard.com/technology/artificial-intelligence/google-study-finds-workplace-ai-acting-more-as-assistant-than-replacement-126073101041_1.html",
+        "source": "business-standard.com",
+        "published": "2026-07-31T03:52:00+00:00",
+        "summary": "A report on Google’s workplace-AI research describes broad use across occupations, with complete task automation representing a smaller share of interactions. That distinction is practical: people need to identify the judgment, relationship, and outcome ownership around a task—not assume that one automated step defines their whole job.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "AI use can spread widely before entire jobs are automated.",
+          "Separating a role from its task list helps make non-routine contributions legible.",
+          "The useful question is what a person now owns, decides, or improves around the automated work."
+        ]
+      },
+      {
+        "title": "AI Agents Need A Named Human Accountable",
+        "url": "https://www.forbes.com/sites/digital-assets/2026/07/30/ai-agents-are-acting-like-employees-who-is-accountable/",
+        "source": "forbes.com",
+        "published": "2026-07-29T21:01:00+00:00",
+        "summary": "As AI agents take on scheduling, records, qualification, and other operational tasks, organizations have to decide who owns the outcome when an agent gets it wrong. The opportunity is not to pretend the agent is an employee; it is to redesign work so supervision, escalation, and responsibility are clear.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6b60d9ec2874705d45ab09/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Agents can execute work, but organizations still need a human owner for outcomes.",
+          "Clear escalation paths prevent automation from becoming an accountability void.",
+          "Supervising and improving an agent can become a meaningful new layer of work."
+        ]
+      },
+      {
+        "title": "The Intelligent Workplace Changes Tasks Before It Changes Jobs",
+        "url": "https://www.itpro.com/technology/artificial-intelligence/the-intelligent-workplace-technologys-next-transformation-of-work",
+        "source": "itpro.com",
+        "published": "2026-07-29T07:00:00+00:00",
+        "summary": "A look at the emerging intelligent workplace argues that assistants and connected platforms are redistributing day-to-day tasks rather than simply erasing whole roles. The human question is whether that recovered time becomes more autonomy, creativity, and collaboration—or merely a denser workload.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Task redistribution is often the first visible effect of workplace AI.",
+          "Technology should support decisions and relationships rather than quietly remove human agency.",
+          "Teams need to choose what meaningful work the saved time is meant to create."
+        ]
+      },
+      {
+        "title": "AI-Exposed Work Raises The Value Of Human Skills",
+        "url": "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-jobs-barometer.html",
+        "source": "pwc.com",
+        "published": "2026-06-15T00:00:00+00:00",
+        "summary": "PwC’s 2026 AI Jobs Barometer reports that AI exposure is shifting employer demand toward judgment, creativity, leadership, and other human-intensive capabilities. That is not a promise that every transition will be easy; it is evidence that people can build a stronger proposition by naming the human work they are prepared to lead.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Find Your Purpose",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "AI exposure is changing which skills employers ask for, not only how many tasks are automated.",
+          "Leadership, creativity, and judgment can become more important as routine execution gets cheaper.",
+          "Workers benefit from translating their experience into visible human capabilities and outcomes."
+        ]
+      }
+    ],
+    "sourceStatus": "recovery"
+  },
   "2026-08-01-human-judgment-becomes-the-operating-system": {
     "slug": "2026-08-01-human-judgment-becomes-the-operating-system",
     "date": "2026-08-01",
