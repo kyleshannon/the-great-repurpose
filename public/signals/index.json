@@ -14,6 +14,46 @@
     "storyCount": 5
   },
   {
+    "slug": "2026-08-07-people-demand-a-say-in-ai",
+    "date": "2026-08-07",
+    "title": "People Demand A Say In AI",
+    "pattern": "Singapore's pledge to help workers navigate AI, Etsy's insistence that a restructuring is not AI-driven, and students' practical use of AI against career anxiety all push back on the idea that technology writes the whole labor story by itself. A creator report and a Forbes call to put humanity at the heart of work add a cultural test: adoption has to leave room for trust, authorship, and honest explanation. The transition gains legitimacy when people are participants with agency, not simply objects of a company's efficiency narrative.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value",
+      "Start Creating",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+  },
+  {
+    "slug": "2026-08-06-judgment-becomes-the-works-infrastructure",
+    "date": "2026-08-06",
+    "title": "Judgment Becomes The Work's Infrastructure",
+    "pattern": "EY sees 15 sectors where AI could create more jobs than it replaces, while marketers and employers are discovering that useful systems need human context and legitimacy, not just faster output. TechRadar's reports on context engineering and applicant-screening backlash, together with new research on warranted reliance, expose a shared design problem: people must be able to understand, challenge, and guide the systems that increasingly shape their work. AI becomes a durable capability only when judgment is built into the infrastructure around it.",
+    "stages": [
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Unhook Identity",
+      "Start Creating"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+  },
+  {
+    "slug": "2026-08-05-the-job-changes-before-the-story",
+    "date": "2026-08-05",
+    "title": "The Job Changes Before The Story",
+    "pattern": "Visa's 2,600-person cut and the World Bank's warning about uneven exposure make job risk feel immediate, while a Forbes essay insists that the larger opportunity is to move people toward judgment and creativity. China's graduate-preparation debate and a security leader's concern about autonomous agents widen the frame: transition is not one event or one industry. The human question is whether education, employers, and governance can give people real agency before a changing job description becomes the whole story of their worth.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+  },
+  {
     "slug": "2026-08-04-work-design-becomes-the-human-advantage",
     "date": "2026-08-04",
     "title": "Work Design Becomes The Human Advantage",

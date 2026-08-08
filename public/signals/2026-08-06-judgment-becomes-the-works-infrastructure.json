@@ -1,0 +1,86 @@
+{
+  "slug": "2026-08-06-judgment-becomes-the-works-infrastructure",
+  "date": "2026-08-06",
+  "title": "Judgment Becomes The Work's Infrastructure",
+  "pattern": "EY sees 15 sectors where AI could create more jobs than it replaces, while marketers and employers are discovering that useful systems need human context and legitimacy, not just faster output. TechRadar's reports on context engineering and applicant-screening backlash, together with new research on warranted reliance, expose a shared design problem: people must be able to understand, challenge, and guide the systems that increasingly shape their work. AI becomes a durable capability only when judgment is built into the infrastructure around it.",
+  "stages": [
+    "Reclaim Value",
+    "Discover AI's Power",
+    "Unhook Identity",
+    "Start Creating"
+  ],
+  "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+  "stories": [
+    {
+      "title": "EY Sees AI Creating Jobs In Fifteen Sectors",
+      "url": "https://www.afr.com/policy/economy/ai-could-create-jobs-not-destroy-them-ey-20260805-p60lkc",
+      "source": "afr.com",
+      "published": "2026-08-05T14:01:00+00:00",
+      "summary": "EY identifies 15 sectors where it expects AI to create more jobs than it replaces, offering a needed counterweight to single-track displacement narratives. The important question is not whether every old job survives unchanged, but whether organizations build credible routes for people to enter the new work, exercise judgment, and share in the upside.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "EY's analysis points to sectors where AI could expand employment rather than only reduce it.",
+        "Job creation depends on how industries organize adoption and access to new roles.",
+        "People need visible pathways into emerging work, not reassurance detached from opportunity."
+      ]
+    },
+    {
+      "title": "AI Marketing Still Needs Human Judgment",
+      "url": "https://www.businessinsider.com/sc/snapchats-ai-marketing-tools-enhance-human-connection",
+      "source": "businessinsider.com",
+      "published": "2026-08-05T17:29:03.289000+00:00",
+      "summary": "Business Insider describes AI marketing tools designed to make work faster while preserving the human connection that gives campaigns relevance. The story makes a broader point about creative work: automated production can multiply options, but people still choose what is true to a community, what deserves attention, and what trust a brand should earn.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value", "Start Creating"],
+      "keyPoints": [
+        "AI tools can accelerate marketing work without deciding what will genuinely connect with people.",
+        "Creative leverage raises the importance of taste, context, and relationship-building.",
+        "Human direction determines whether more output becomes more meaning or simply more noise."
+      ]
+    },
+    {
+      "title": "Context Engineering Becomes A Hiring Challenge",
+      "url": "https://www.techradar.com/pro/why-context-engineering-is-ais-next-hiring-challenge",
+      "source": "techradar.com",
+      "published": "2026-08-05T08:05:41+00:00",
+      "summary": "TechRadar argues that organizations are moving from the short-lived prompt-engineering boom toward the harder work of supplying AI with reliable context. That shift rewards people who understand a business deeply enough to define the data, decisions, and exceptions a system needs—knowledge that cannot be substituted by a clever instruction alone.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value", "Discover AI's Power"],
+      "keyPoints": [
+        "AI systems become fragile when they are built around narrow examples instead of real operating context.",
+        "Context engineering connects domain knowledge to the behavior an organization can actually trust.",
+        "The value of experienced people rises when they can translate messy reality into usable system boundaries."
+      ]
+    },
+    {
+      "title": "Workers Challenge AI Screening In Hiring",
+      "url": "https://www.techradar.com/pro/workers-are-hitting-back-at-employer-plans-to-use-ai-to-screen-job-applications",
+      "source": "techradar.com",
+      "published": "2026-08-06T06:00:00+00:00",
+      "summary": "A YouGov poll reported by TechRadar finds substantial resistance to employers using AI to screen job applications, with many respondents preferring a more human hiring process. The reaction is a reminder that an efficient selection system still needs legitimacy: people must be able to understand how they are judged and feel that their individuality can reach the decision.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "The poll shows public resistance to AI filtering job applicants.",
+        "Hiring systems affect identity and opportunity, not merely administrative efficiency.",
+        "Transparency and meaningful human review help preserve trust in automated decisions."
+      ]
+    },
+    {
+      "title": "High-Stakes AI Needs Warranted Reliance",
+      "url": "https://arxiv.org/abs/2608.05602",
+      "source": "arxiv.org",
+      "published": "2026-08-06T04:53:46+00:00",
+      "summary": "New research proposes evaluating AI in high-stakes workflows by whether people are justified in relying on its outputs, not only whether a model appears accurate or persuasive. That distinction puts human judgment back at the center: professionals need enough visibility, evidence, and recourse to use AI as an input to reasoning rather than as an instruction to obey.",
+      "imageUrl": "",
+      "stages": ["Discover AI's Power", "Reclaim Value"],
+      "keyPoints": [
+        "The research distinguishes warranted reliance from mere confidence or behavioral compliance.",
+        "Accuracy, fairness, and explainability are necessary but do not by themselves justify trust.",
+        "High-stakes work requires people to retain the ability to reason with, question, and override AI."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}

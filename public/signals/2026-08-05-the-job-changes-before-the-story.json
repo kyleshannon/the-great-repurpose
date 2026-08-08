@@ -1,0 +1,86 @@
+{
+  "slug": "2026-08-05-the-job-changes-before-the-story",
+  "date": "2026-08-05",
+  "title": "The Job Changes Before The Story",
+  "pattern": "Visa's 2,600-person cut and the World Bank's warning about uneven exposure make job risk feel immediate, while a Forbes essay insists that the larger opportunity is to move people toward judgment and creativity. China's graduate-preparation debate and a security leader's concern about autonomous agents widen the frame: transition is not one event or one industry. The human question is whether education, employers, and governance can give people real agency before a changing job description becomes the whole story of their worth.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Find Your Purpose",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+  "stories": [
+    {
+      "title": "AI Will Redefine Jobs Before It Replaces Them",
+      "url": "https://www.forbes.com/sites/timbajarin/2026/08/04/why-ai-wont-replace-your-job-it-will-redefine-it/",
+      "source": "forbes.com",
+      "published": "2026-08-03T21:00:00+00:00",
+      "summary": "Tim Bajarin argues that AI's more immediate effect is to redefine work, freeing people from some execution while increasing the value of judgment and creativity. That distinction matters because leaders can either use the transition to strip roles down or deliberately redesign them around contribution people can still own.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value", "Unhook Identity"],
+      "keyPoints": [
+        "The article frames AI as a force that changes jobs before it eliminates them outright.",
+        "Leaders face a choice between treating productivity as labor reduction and moving people toward higher-value work.",
+        "Judgment and creativity become more visible sources of contribution as routine execution changes."
+      ]
+    },
+    {
+      "title": "Preparing Graduates For AI-Shaped Careers",
+      "url": "https://www.chinadaily.com.cn/a/202608/05/WS6a729249a310986e2b469060.html",
+      "source": "chinadaily.com.cn",
+      "published": "2026-08-05T02:30:00+00:00",
+      "summary": "China Daily examines whether education can prepare graduates for a labor market being reshaped by AI, tying career readiness to longer-term economic development. The useful challenge is larger than teaching a tool: people need practice in adapting, making judgments, and finding direction when the first version of a role no longer stays fixed.",
+      "imageUrl": "",
+      "stages": ["Find Your Purpose", "Unhook Identity"],
+      "keyPoints": [
+        "The article connects AI readiness for graduates to the strength of the education system and economy.",
+        "Career preparation has to extend beyond exposure to a particular AI product.",
+        "Adaptability and direction help people navigate work that will continue to change after graduation."
+      ]
+    },
+    {
+      "title": "AI Job Risk Is Uneven Across Countries",
+      "url": "https://www.forbes.com/sites/rachelwells/2026/08/05/world-bank-warns-ai-job-risk-is-3x-higher-in-these-47-countries/",
+      "source": "forbes.com",
+      "published": "2026-08-05T01:59:00+00:00",
+      "summary": "A Forbes report on new World Bank findings highlights that AI-related job exposure is not distributed evenly, with workers in some countries facing much greater risk. Aggregate optimism about productivity therefore cannot substitute for local pathways into new skills, trusted institutions, and roles where people can carry forward real value.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Discover AI's Power"],
+      "keyPoints": [
+        "The World Bank analysis identifies sharp differences in AI-related job exposure across countries.",
+        "A global technology narrative can conceal uneven local consequences for workers and institutions.",
+        "Transitions require concrete routes into renewed capability, not only forecasts about future productivity."
+      ]
+    },
+    {
+      "title": "Visa Cuts Jobs During An AI Workforce Shift",
+      "url": "https://www.analyticsinsight.net/news/visa-layoffs-2600-jobs-cut-as-ai-push-hits-india",
+      "source": "analyticsinsight.net",
+      "published": "2026-08-05T03:46:00+00:00",
+      "summary": "Visa is reported to be cutting 2,600 jobs as it changes its workforce strategy around AI, making the human impact of an efficiency push tangible rather than theoretical. When a role changes faster than the explanation offered to its holder, people need clarity about which business choices are being made and where their experience can travel next.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "The reported workforce cut affects 2,600 jobs as Visa pursues a new strategy around AI.",
+        "Efficiency language does not by itself explain what capabilities an organization intends to preserve or build.",
+        "Workers need a map from a changing role to the knowledge and relationships that remain valuable."
+      ]
+    },
+    {
+      "title": "AI Agents Raise An Identity Governance Test",
+      "url": "https://www.govinfosecurity.com/ai-agents-challenge-identity-governance-a-32417",
+      "source": "govinfosecurity.com",
+      "published": "2026-08-03T17:00:00+00:00",
+      "summary": "GovInfoSecurity explores how AI agents can act through legitimate permissions yet still produce outcomes their creators did not intend. As organizations grant agents more access, identity and accountability cannot be treated as a technical afterthought; people must decide what an agent may do, when it must escalate, and who remains responsible.",
+      "imageUrl": "",
+      "stages": ["Discover AI's Power", "Reclaim Value"],
+      "keyPoints": [
+        "An agent can operate within granted permissions while still taking an unintended action.",
+        "Identity governance needs clear boundaries, oversight, and escalation for autonomous systems.",
+        "Human accountability becomes more important as software gains the ability to act in real systems."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}

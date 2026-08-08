@@ -17,6 +17,46 @@ export const bundledSignalIndex = [
     "storyCount": 5
   },
   {
+    "slug": "2026-08-07-people-demand-a-say-in-ai",
+    "date": "2026-08-07",
+    "title": "People Demand A Say In AI",
+    "pattern": "Singapore's pledge to help workers navigate AI, Etsy's insistence that a restructuring is not AI-driven, and students' practical use of AI against career anxiety all push back on the idea that technology writes the whole labor story by itself. A creator report and a Forbes call to put humanity at the heart of work add a cultural test: adoption has to leave room for trust, authorship, and honest explanation. The transition gains legitimacy when people are participants with agency, not simply objects of a company's efficiency narrative.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value",
+      "Start Creating",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+  },
+  {
+    "slug": "2026-08-06-judgment-becomes-the-works-infrastructure",
+    "date": "2026-08-06",
+    "title": "Judgment Becomes The Work's Infrastructure",
+    "pattern": "EY sees 15 sectors where AI could create more jobs than it replaces, while marketers and employers are discovering that useful systems need human context and legitimacy, not just faster output. TechRadar's reports on context engineering and applicant-screening backlash, together with new research on warranted reliance, expose a shared design problem: people must be able to understand, challenge, and guide the systems that increasingly shape their work. AI becomes a durable capability only when judgment is built into the infrastructure around it.",
+    "stages": [
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Unhook Identity",
+      "Start Creating"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+  },
+  {
+    "slug": "2026-08-05-the-job-changes-before-the-story",
+    "date": "2026-08-05",
+    "title": "The Job Changes Before The Story",
+    "pattern": "Visa's 2,600-person cut and the World Bank's warning about uneven exposure make job risk feel immediate, while a Forbes essay insists that the larger opportunity is to move people toward judgment and creativity. China's graduate-preparation debate and a security leader's concern about autonomous agents widen the frame: transition is not one event or one industry. The human question is whether education, employers, and governance can give people real agency before a changing job description becomes the whole story of their worth.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+  },
+  {
     "slug": "2026-08-04-work-design-becomes-the-human-advantage",
     "date": "2026-08-04",
     "title": "Work Design Becomes The Human Advantage",
@@ -753,6 +793,310 @@ export const bundledSignalsBySlug = {
           "Etsy plans to eliminate about 220 roles, representing roughly 12% of its workforce.",
           "CEO Kruti Patel Goyal characterized the move as a restructuring and said it was not driven by AI.",
           "Clear attribution preserves agency by distinguishing management decisions from supposedly inevitable automation."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-08-07-people-demand-a-say-in-ai": {
+    "slug": "2026-08-07-people-demand-a-say-in-ai",
+    "date": "2026-08-07",
+    "title": "People Demand A Say In AI",
+    "pattern": "Singapore's pledge to help workers navigate AI, Etsy's insistence that a restructuring is not AI-driven, and students' practical use of AI against career anxiety all push back on the idea that technology writes the whole labor story by itself. A creator report and a Forbes call to put humanity at the heart of work add a cultural test: adoption has to leave room for trust, authorship, and honest explanation. The transition gains legitimacy when people are participants with agency, not simply objects of a company's efficiency narrative.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value",
+      "Start Creating",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+    "stories": [
+      {
+        "title": "Singapore Pledges AI Support For Worried Workers",
+        "url": "https://www.theedgesingapore.com/news/singapore-economy/singapore-ensure-ai-helps-workers-worried-about-jobs-pm-says",
+        "source": "theedgesingapore.com",
+        "published": "2026-08-07T22:59:00+00:00",
+        "summary": "Singapore's prime minister says the country will work to ensure AI helps workers who are worried about jobs, bringing public responsibility into a debate often left to individual resilience. The promise matters only if it becomes training, mobility, and a voice for people whose work is changing—not a request that they accept uncertainty alone.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "Singapore frames AI adoption as a worker-transition challenge as well as an economic opportunity.",
+          "Public commitments need to turn into practical support, mobility, and credible worker participation.",
+          "People retain more agency when the future of work is treated as a shared design problem."
+        ]
+      },
+      {
+        "title": "Young Creators Show Resistance To AI",
+        "url": "https://markets.businessinsider.com/news/stocks/uppbeat-publishes-creator-report-2026-finding-the-youngest-creators-are-the-most-resistant-to-ai-1036414387",
+        "source": "markets.businessinsider.com",
+        "published": "2026-08-05T05:46:00+00:00",
+        "summary": "Uppbeat's 2026 creator report finds its youngest creators are the most resistant to AI, signaling that adoption is also a question of authorship and cultural trust. Creators are not merely choosing a faster production method; they are deciding what kinds of labor, originality, and relationship with an audience they want their work to represent.",
+        "imageUrl": "",
+        "stages": [
+          "Start Creating",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The report identifies stronger AI resistance among the youngest creators in its audience.",
+          "Creative adoption involves concerns about authorship, originality, and trust as well as efficiency.",
+          "Creators need agency to decide where AI supports their process and where human expression remains essential."
+        ]
+      },
+      {
+        "title": "Etsy Says Its Layoffs Are Not AI-Driven",
+        "url": "https://www.financialexpress.com/world-news/us-news/etsy-cuts-12-of-workforce-indian-american-ceo-says-layoffs-not-driven-by-ai/4312689/",
+        "source": "financialexpress.com",
+        "published": "2026-08-06T20:55:00+00:00",
+        "summary": "Etsy is cutting about 12% of its workforce as part of a restructuring, while its CEO says the decision is not driven by AI. In a period when automation can become a catch-all explanation for painful choices, honest attribution gives people a better chance to understand what happened and respond to the actual business decision.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Etsy plans to eliminate roughly 220 roles, or about 12% of its workforce.",
+          "The company says the restructuring is not AI-driven.",
+          "Clear explanations distinguish organizational choices from a supposedly inevitable technological outcome."
+        ]
+      },
+      {
+        "title": "Humanity Must Stay At The Heart Of Work",
+        "url": "https://www.forbes.com/sites/sap/2026/08/05/humanity-at-the-heart-of-work-how-ai-can-unleash-the-power-of-people/",
+        "source": "forbes.com",
+        "published": "2026-08-05T08:25:00+00:00",
+        "summary": "A Forbes contribution argues that AI can unleash the power of people when organizations put humanity at the center of how work is redesigned. The aspiration becomes meaningful when it changes whose insight is sought, what contribution is rewarded, and whether people are invited to shape the systems they will be expected to use.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The article makes a case for human-centered choices in AI-enabled work design.",
+          "Technology creates more value when workers can influence how it is introduced and used.",
+          "Humanity in the workplace is expressed through participation, recognition, and purposeful contribution."
+        ]
+      },
+      {
+        "title": "Students Use AI Against Career Anxiety",
+        "url": "https://www.yahoo.com/news/us/articles/college-students-using-ai-fight-115811193.html",
+        "source": "yahoo.com",
+        "published": "2026-08-06T04:58:00+00:00",
+        "summary": "Yahoo reports on college students using AI as they confront fear about a changing job market, turning the technology into a tool for preparation rather than only a symbol of replacement. That use is not a complete answer to career uncertainty, but it shows a more agentic posture: learn the capability, test it against real goals, and keep choosing a direction.",
+        "imageUrl": "",
+        "stages": [
+          "Find Your Purpose",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Students are using AI tools while trying to make sense of an uncertain career landscape.",
+          "Practical experimentation can turn fear about AI into informed capability-building.",
+          "Career agency depends on connecting a tool to a real direction, not simply accumulating AI exposure."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-08-06-judgment-becomes-the-works-infrastructure": {
+    "slug": "2026-08-06-judgment-becomes-the-works-infrastructure",
+    "date": "2026-08-06",
+    "title": "Judgment Becomes The Work's Infrastructure",
+    "pattern": "EY sees 15 sectors where AI could create more jobs than it replaces, while marketers and employers are discovering that useful systems need human context and legitimacy, not just faster output. TechRadar's reports on context engineering and applicant-screening backlash, together with new research on warranted reliance, expose a shared design problem: people must be able to understand, challenge, and guide the systems that increasingly shape their work. AI becomes a durable capability only when judgment is built into the infrastructure around it.",
+    "stages": [
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Unhook Identity",
+      "Start Creating"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+    "stories": [
+      {
+        "title": "EY Sees AI Creating Jobs In Fifteen Sectors",
+        "url": "https://www.afr.com/policy/economy/ai-could-create-jobs-not-destroy-them-ey-20260805-p60lkc",
+        "source": "afr.com",
+        "published": "2026-08-05T14:01:00+00:00",
+        "summary": "EY identifies 15 sectors where it expects AI to create more jobs than it replaces, offering a needed counterweight to single-track displacement narratives. The important question is not whether every old job survives unchanged, but whether organizations build credible routes for people to enter the new work, exercise judgment, and share in the upside.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "EY's analysis points to sectors where AI could expand employment rather than only reduce it.",
+          "Job creation depends on how industries organize adoption and access to new roles.",
+          "People need visible pathways into emerging work, not reassurance detached from opportunity."
+        ]
+      },
+      {
+        "title": "AI Marketing Still Needs Human Judgment",
+        "url": "https://www.businessinsider.com/sc/snapchats-ai-marketing-tools-enhance-human-connection",
+        "source": "businessinsider.com",
+        "published": "2026-08-05T17:29:03.289000+00:00",
+        "summary": "Business Insider describes AI marketing tools designed to make work faster while preserving the human connection that gives campaigns relevance. The story makes a broader point about creative work: automated production can multiply options, but people still choose what is true to a community, what deserves attention, and what trust a brand should earn.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "AI tools can accelerate marketing work without deciding what will genuinely connect with people.",
+          "Creative leverage raises the importance of taste, context, and relationship-building.",
+          "Human direction determines whether more output becomes more meaning or simply more noise."
+        ]
+      },
+      {
+        "title": "Context Engineering Becomes A Hiring Challenge",
+        "url": "https://www.techradar.com/pro/why-context-engineering-is-ais-next-hiring-challenge",
+        "source": "techradar.com",
+        "published": "2026-08-05T08:05:41+00:00",
+        "summary": "TechRadar argues that organizations are moving from the short-lived prompt-engineering boom toward the harder work of supplying AI with reliable context. That shift rewards people who understand a business deeply enough to define the data, decisions, and exceptions a system needs—knowledge that cannot be substituted by a clever instruction alone.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "AI systems become fragile when they are built around narrow examples instead of real operating context.",
+          "Context engineering connects domain knowledge to the behavior an organization can actually trust.",
+          "The value of experienced people rises when they can translate messy reality into usable system boundaries."
+        ]
+      },
+      {
+        "title": "Workers Challenge AI Screening In Hiring",
+        "url": "https://www.techradar.com/pro/workers-are-hitting-back-at-employer-plans-to-use-ai-to-screen-job-applications",
+        "source": "techradar.com",
+        "published": "2026-08-06T06:00:00+00:00",
+        "summary": "A YouGov poll reported by TechRadar finds substantial resistance to employers using AI to screen job applications, with many respondents preferring a more human hiring process. The reaction is a reminder that an efficient selection system still needs legitimacy: people must be able to understand how they are judged and feel that their individuality can reach the decision.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The poll shows public resistance to AI filtering job applicants.",
+          "Hiring systems affect identity and opportunity, not merely administrative efficiency.",
+          "Transparency and meaningful human review help preserve trust in automated decisions."
+        ]
+      },
+      {
+        "title": "High-Stakes AI Needs Warranted Reliance",
+        "url": "https://arxiv.org/abs/2608.05602",
+        "source": "arxiv.org",
+        "published": "2026-08-06T04:53:46+00:00",
+        "summary": "New research proposes evaluating AI in high-stakes workflows by whether people are justified in relying on its outputs, not only whether a model appears accurate or persuasive. That distinction puts human judgment back at the center: professionals need enough visibility, evidence, and recourse to use AI as an input to reasoning rather than as an instruction to obey.",
+        "imageUrl": "",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The research distinguishes warranted reliance from mere confidence or behavioral compliance.",
+          "Accuracy, fairness, and explainability are necessary but do not by themselves justify trust.",
+          "High-stakes work requires people to retain the ability to reason with, question, and override AI."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-08-05-the-job-changes-before-the-story": {
+    "slug": "2026-08-05-the-job-changes-before-the-story",
+    "date": "2026-08-05",
+    "title": "The Job Changes Before The Story",
+    "pattern": "Visa's 2,600-person cut and the World Bank's warning about uneven exposure make job risk feel immediate, while a Forbes essay insists that the larger opportunity is to move people toward judgment and creativity. China's graduate-preparation debate and a security leader's concern about autonomous agents widen the frame: transition is not one event or one industry. The human question is whether education, employers, and governance can give people real agency before a changing job description becomes the whole story of their worth.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+    "stories": [
+      {
+        "title": "AI Will Redefine Jobs Before It Replaces Them",
+        "url": "https://www.forbes.com/sites/timbajarin/2026/08/04/why-ai-wont-replace-your-job-it-will-redefine-it/",
+        "source": "forbes.com",
+        "published": "2026-08-03T21:00:00+00:00",
+        "summary": "Tim Bajarin argues that AI's more immediate effect is to redefine work, freeing people from some execution while increasing the value of judgment and creativity. That distinction matters because leaders can either use the transition to strip roles down or deliberately redesign them around contribution people can still own.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The article frames AI as a force that changes jobs before it eliminates them outright.",
+          "Leaders face a choice between treating productivity as labor reduction and moving people toward higher-value work.",
+          "Judgment and creativity become more visible sources of contribution as routine execution changes."
+        ]
+      },
+      {
+        "title": "Preparing Graduates For AI-Shaped Careers",
+        "url": "https://www.chinadaily.com.cn/a/202608/05/WS6a729249a310986e2b469060.html",
+        "source": "chinadaily.com.cn",
+        "published": "2026-08-05T02:30:00+00:00",
+        "summary": "China Daily examines whether education can prepare graduates for a labor market being reshaped by AI, tying career readiness to longer-term economic development. The useful challenge is larger than teaching a tool: people need practice in adapting, making judgments, and finding direction when the first version of a role no longer stays fixed.",
+        "imageUrl": "",
+        "stages": [
+          "Find Your Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The article connects AI readiness for graduates to the strength of the education system and economy.",
+          "Career preparation has to extend beyond exposure to a particular AI product.",
+          "Adaptability and direction help people navigate work that will continue to change after graduation."
+        ]
+      },
+      {
+        "title": "AI Job Risk Is Uneven Across Countries",
+        "url": "https://www.forbes.com/sites/rachelwells/2026/08/05/world-bank-warns-ai-job-risk-is-3x-higher-in-these-47-countries/",
+        "source": "forbes.com",
+        "published": "2026-08-05T01:59:00+00:00",
+        "summary": "A Forbes report on new World Bank findings highlights that AI-related job exposure is not distributed evenly, with workers in some countries facing much greater risk. Aggregate optimism about productivity therefore cannot substitute for local pathways into new skills, trusted institutions, and roles where people can carry forward real value.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The World Bank analysis identifies sharp differences in AI-related job exposure across countries.",
+          "A global technology narrative can conceal uneven local consequences for workers and institutions.",
+          "Transitions require concrete routes into renewed capability, not only forecasts about future productivity."
+        ]
+      },
+      {
+        "title": "Visa Cuts Jobs During An AI Workforce Shift",
+        "url": "https://www.analyticsinsight.net/news/visa-layoffs-2600-jobs-cut-as-ai-push-hits-india",
+        "source": "analyticsinsight.net",
+        "published": "2026-08-05T03:46:00+00:00",
+        "summary": "Visa is reported to be cutting 2,600 jobs as it changes its workforce strategy around AI, making the human impact of an efficiency push tangible rather than theoretical. When a role changes faster than the explanation offered to its holder, people need clarity about which business choices are being made and where their experience can travel next.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The reported workforce cut affects 2,600 jobs as Visa pursues a new strategy around AI.",
+          "Efficiency language does not by itself explain what capabilities an organization intends to preserve or build.",
+          "Workers need a map from a changing role to the knowledge and relationships that remain valuable."
+        ]
+      },
+      {
+        "title": "AI Agents Raise An Identity Governance Test",
+        "url": "https://www.govinfosecurity.com/ai-agents-challenge-identity-governance-a-32417",
+        "source": "govinfosecurity.com",
+        "published": "2026-08-03T17:00:00+00:00",
+        "summary": "GovInfoSecurity explores how AI agents can act through legitimate permissions yet still produce outcomes their creators did not intend. As organizations grant agents more access, identity and accountability cannot be treated as a technical afterthought; people must decide what an agent may do, when it must escalate, and who remains responsible.",
+        "imageUrl": "",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "An agent can operate within granted permissions while still taking an unintended action.",
+          "Identity governance needs clear boundaries, oversight, and escalation for autonomous systems.",
+          "Human accountability becomes more important as software gains the ability to act in real systems."
         ]
       }
     ],

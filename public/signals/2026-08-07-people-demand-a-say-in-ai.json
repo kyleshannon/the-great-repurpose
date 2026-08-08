@@ -1,0 +1,87 @@
+{
+  "slug": "2026-08-07-people-demand-a-say-in-ai",
+  "date": "2026-08-07",
+  "title": "People Demand A Say In AI",
+  "pattern": "Singapore's pledge to help workers navigate AI, Etsy's insistence that a restructuring is not AI-driven, and students' practical use of AI against career anxiety all push back on the idea that technology writes the whole labor story by itself. A creator report and a Forbes call to put humanity at the heart of work add a cultural test: adoption has to leave room for trust, authorship, and honest explanation. The transition gains legitimacy when people are participants with agency, not simply objects of a company's efficiency narrative.",
+  "stages": [
+    "Unhook Identity",
+    "Find Your Purpose",
+    "Reclaim Value",
+    "Start Creating",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+  "stories": [
+    {
+      "title": "Singapore Pledges AI Support For Worried Workers",
+      "url": "https://www.theedgesingapore.com/news/singapore-economy/singapore-ensure-ai-helps-workers-worried-about-jobs-pm-says",
+      "source": "theedgesingapore.com",
+      "published": "2026-08-07T22:59:00+00:00",
+      "summary": "Singapore's prime minister says the country will work to ensure AI helps workers who are worried about jobs, bringing public responsibility into a debate often left to individual resilience. The promise matters only if it becomes training, mobility, and a voice for people whose work is changing—not a request that they accept uncertainty alone.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Find Your Purpose"],
+      "keyPoints": [
+        "Singapore frames AI adoption as a worker-transition challenge as well as an economic opportunity.",
+        "Public commitments need to turn into practical support, mobility, and credible worker participation.",
+        "People retain more agency when the future of work is treated as a shared design problem."
+      ]
+    },
+    {
+      "title": "Young Creators Show Resistance To AI",
+      "url": "https://markets.businessinsider.com/news/stocks/uppbeat-publishes-creator-report-2026-finding-the-youngest-creators-are-the-most-resistant-to-ai-1036414387",
+      "source": "markets.businessinsider.com",
+      "published": "2026-08-05T05:46:00+00:00",
+      "summary": "Uppbeat's 2026 creator report finds its youngest creators are the most resistant to AI, signaling that adoption is also a question of authorship and cultural trust. Creators are not merely choosing a faster production method; they are deciding what kinds of labor, originality, and relationship with an audience they want their work to represent.",
+      "imageUrl": "",
+      "stages": ["Start Creating", "Reclaim Value"],
+      "keyPoints": [
+        "The report identifies stronger AI resistance among the youngest creators in its audience.",
+        "Creative adoption involves concerns about authorship, originality, and trust as well as efficiency.",
+        "Creators need agency to decide where AI supports their process and where human expression remains essential."
+      ]
+    },
+    {
+      "title": "Etsy Says Its Layoffs Are Not AI-Driven",
+      "url": "https://www.financialexpress.com/world-news/us-news/etsy-cuts-12-of-workforce-indian-american-ceo-says-layoffs-not-driven-by-ai/4312689/",
+      "source": "financialexpress.com",
+      "published": "2026-08-06T20:55:00+00:00",
+      "summary": "Etsy is cutting about 12% of its workforce as part of a restructuring, while its CEO says the decision is not driven by AI. In a period when automation can become a catch-all explanation for painful choices, honest attribution gives people a better chance to understand what happened and respond to the actual business decision.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "Etsy plans to eliminate roughly 220 roles, or about 12% of its workforce.",
+        "The company says the restructuring is not AI-driven.",
+        "Clear explanations distinguish organizational choices from a supposedly inevitable technological outcome."
+      ]
+    },
+    {
+      "title": "Humanity Must Stay At The Heart Of Work",
+      "url": "https://www.forbes.com/sites/sap/2026/08/05/humanity-at-the-heart-of-work-how-ai-can-unleash-the-power-of-people/",
+      "source": "forbes.com",
+      "published": "2026-08-05T08:25:00+00:00",
+      "summary": "A Forbes contribution argues that AI can unleash the power of people when organizations put humanity at the center of how work is redesigned. The aspiration becomes meaningful when it changes whose insight is sought, what contribution is rewarded, and whether people are invited to shape the systems they will be expected to use.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value", "Discover AI's Power"],
+      "keyPoints": [
+        "The article makes a case for human-centered choices in AI-enabled work design.",
+        "Technology creates more value when workers can influence how it is introduced and used.",
+        "Humanity in the workplace is expressed through participation, recognition, and purposeful contribution."
+      ]
+    },
+    {
+      "title": "Students Use AI Against Career Anxiety",
+      "url": "https://www.yahoo.com/news/us/articles/college-students-using-ai-fight-115811193.html",
+      "source": "yahoo.com",
+      "published": "2026-08-06T04:58:00+00:00",
+      "summary": "Yahoo reports on college students using AI as they confront fear about a changing job market, turning the technology into a tool for preparation rather than only a symbol of replacement. That use is not a complete answer to career uncertainty, but it shows a more agentic posture: learn the capability, test it against real goals, and keep choosing a direction.",
+      "imageUrl": "",
+      "stages": ["Find Your Purpose", "Discover AI's Power"],
+      "keyPoints": [
+        "Students are using AI tools while trying to make sense of an uncertain career landscape.",
+        "Practical experimentation can turn fear about AI into informed capability-building.",
+        "Career agency depends on connecting a tool to a real direction, not simply accumulating AI exposure."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
