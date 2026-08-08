@@ -28,7 +28,7 @@ export const bundledSignalIndex = [
       "Start Creating",
       "Discover AI's Power"
     ],
-    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/ae1d0ef3fa6b1bb9b55171652a15d45ab0192690cff01f3ef40370a7d3973b91"
   },
   {
     "slug": "2026-08-06-judgment-becomes-the-works-infrastructure",
@@ -41,7 +41,7 @@ export const bundledSignalIndex = [
       "Unhook Identity",
       "Start Creating"
     ],
-    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+    "imageUrl": "https://cdn.mos.cms.futurecdn.net/8sVBmVE46HZc6Xrp23uhaE-1200-80.jpeg"
   },
   {
     "slug": "2026-08-05-the-job-changes-before-the-story",
@@ -54,7 +54,7 @@ export const bundledSignalIndex = [
       "Find Your Purpose",
       "Discover AI's Power"
     ],
-    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+    "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-08-05%2F3vf4kwbb%2FVisa-Layoffs-2600-Jobs-Cut-as-AI-Push-Hits-India-415.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
   },
   {
     "slug": "2026-08-04-work-design-becomes-the-human-advantage",
@@ -810,7 +810,7 @@ export const bundledSignalsBySlug = {
       "Start Creating",
       "Discover AI's Power"
     ],
-    "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+    "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/ae1d0ef3fa6b1bb9b55171652a15d45ab0192690cff01f3ef40370a7d3973b91",
     "stories": [
       {
         "title": "Singapore Pledges AI Support For Worried Workers",
@@ -818,7 +818,7 @@ export const bundledSignalsBySlug = {
         "source": "theedgesingapore.com",
         "published": "2026-08-07T22:59:00+00:00",
         "summary": "Singapore's prime minister says the country will work to ensure AI helps workers who are worried about jobs, bringing public responsibility into a debate often left to individual resilience. The promise matters only if it becomes training, mobility, and a voice for people whose work is changing—not a request that they accept uncertainty alone.",
-        "imageUrl": "",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/ae1d0ef3fa6b1bb9b55171652a15d45ab0192690cff01f3ef40370a7d3973b91",
         "stages": [
           "Unhook Identity",
           "Find Your Purpose"
@@ -835,7 +835,7 @@ export const bundledSignalsBySlug = {
         "source": "markets.businessinsider.com",
         "published": "2026-08-05T05:46:00+00:00",
         "summary": "Uppbeat's 2026 creator report finds its youngest creators are the most resistant to AI, signaling that adoption is also a question of authorship and cultural trust. Creators are not merely choosing a faster production method; they are deciding what kinds of labor, originality, and relationship with an audience they want their work to represent.",
-        "imageUrl": "",
+        "imageUrl": "https://pressranger.s3.us-west-1.amazonaws.com/3616630/The-Uppbeat-Creator-Report.jpg",
         "stages": [
           "Start Creating",
           "Reclaim Value"
@@ -852,7 +852,7 @@ export const bundledSignalsBySlug = {
         "source": "financialexpress.com",
         "published": "2026-08-06T20:55:00+00:00",
         "summary": "Etsy is cutting about 12% of its workforce as part of a restructuring, while its CEO says the decision is not driven by AI. In a period when automation can become a catch-all explanation for painful choices, honest attribution gives people a better chance to understand what happened and respond to the actual business decision.",
-        "imageUrl": "",
+        "imageUrl": "https://images.financialexpressdigital.com/2026/08/etsyceo.jpg",
         "stages": [
           "Unhook Identity",
           "Reclaim Value"
@@ -869,7 +869,7 @@ export const bundledSignalsBySlug = {
         "source": "forbes.com",
         "published": "2026-08-05T08:25:00+00:00",
         "summary": "A Forbes contribution argues that AI can unleash the power of people when organizations put humanity at the center of how work is redesigned. The aspiration becomes meaningful when it changes whose insight is sought, what contribution is rewarded, and whether people are invited to shape the systems they will be expected to use.",
-        "imageUrl": "",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a68f4445021c4a12e61d24d/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
           "Discover AI's Power"
@@ -886,7 +886,7 @@ export const bundledSignalsBySlug = {
         "source": "yahoo.com",
         "published": "2026-08-06T04:58:00+00:00",
         "summary": "Yahoo reports on college students using AI as they confront fear about a changing job market, turning the technology into a tool for preparation rather than only a symbol of replacement. That use is not a complete answer to career uncertainty, but it shows a more agentic posture: learn the capability, test it against real goals, and keep choosing a direction.",
-        "imageUrl": "",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/681d55f577c338ca0c316a6d3a5070e54f93f9bde3bc70d017d313b6e539ee8e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Ftalker_news_345%2Fa630816e8c4feabc48cb1a93156e817e",
         "stages": [
           "Find Your Purpose",
           "Discover AI's Power"
@@ -911,7 +911,7 @@ export const bundledSignalsBySlug = {
       "Unhook Identity",
       "Start Creating"
     ],
-    "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+    "imageUrl": "https://cdn.mos.cms.futurecdn.net/8sVBmVE46HZc6Xrp23uhaE-1200-80.jpeg",
     "stories": [
       {
         "title": "EY Sees AI Creating Jobs In Fifteen Sectors",
@@ -919,7 +919,7 @@ export const bundledSignalsBySlug = {
         "source": "afr.com",
         "published": "2026-08-05T14:01:00+00:00",
         "summary": "EY identifies 15 sectors where it expects AI to create more jobs than it replaces, offering a needed counterweight to single-track displacement narratives. The important question is not whether every old job survives unchanged, but whether organizations build credible routes for people to enter the new work, exercise judgment, and share in the upside.",
-        "imageUrl": "",
+        "imageUrl": "https://static.ffx.io/images/$zoom_0.138%2C$multiply_4%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/0b2c9717652045cfb3724c2c7daee281e4d1379c",
         "stages": [
           "Unhook Identity",
           "Reclaim Value"
@@ -936,7 +936,7 @@ export const bundledSignalsBySlug = {
         "source": "businessinsider.com",
         "published": "2026-08-05T17:29:03.289000+00:00",
         "summary": "Business Insider describes AI marketing tools designed to make work faster while preserving the human connection that gives campaigns relevance. The story makes a broader point about creative work: automated production can multiply options, but people still choose what is true to a community, what deserves attention, and what trust a brand should earn.",
-        "imageUrl": "",
+        "imageUrl": "https://i.insider.com/6a591afa54f9875261775fc5?width=1200&format=jpeg",
         "stages": [
           "Reclaim Value",
           "Start Creating"
@@ -953,7 +953,7 @@ export const bundledSignalsBySlug = {
         "source": "techradar.com",
         "published": "2026-08-05T08:05:41+00:00",
         "summary": "TechRadar argues that organizations are moving from the short-lived prompt-engineering boom toward the harder work of supplying AI with reliable context. That shift rewards people who understand a business deeply enough to define the data, decisions, and exceptions a system needs—knowledge that cannot be substituted by a clever instruction alone.",
-        "imageUrl": "",
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/PAztEScphfxGJfYno5NjrL-1200-80.jpg",
         "stages": [
           "Reclaim Value",
           "Discover AI's Power"
@@ -970,7 +970,7 @@ export const bundledSignalsBySlug = {
         "source": "techradar.com",
         "published": "2026-08-06T06:00:00+00:00",
         "summary": "A YouGov poll reported by TechRadar finds substantial resistance to employers using AI to screen job applications, with many respondents preferring a more human hiring process. The reaction is a reminder that an efficient selection system still needs legitimacy: people must be able to understand how they are judged and feel that their individuality can reach the decision.",
-        "imageUrl": "",
+        "imageUrl": "https://cdn.mos.cms.futurecdn.net/8sVBmVE46HZc6Xrp23uhaE-1200-80.jpeg",
         "stages": [
           "Unhook Identity",
           "Reclaim Value"
@@ -987,7 +987,7 @@ export const bundledSignalsBySlug = {
         "source": "arxiv.org",
         "published": "2026-08-06T04:53:46+00:00",
         "summary": "New research proposes evaluating AI in high-stakes workflows by whether people are justified in relying on its outputs, not only whether a model appears accurate or persuasive. That distinction puts human judgment back at the center: professionals need enough visibility, evidence, and recourse to use AI as an input to reasoning rather than as an instruction to obey.",
-        "imageUrl": "",
+        "imageUrl": "https://arxiv.org/html/2608.05602v1/x1.png",
         "stages": [
           "Discover AI's Power",
           "Reclaim Value"
@@ -1012,7 +1012,7 @@ export const bundledSignalsBySlug = {
       "Find Your Purpose",
       "Discover AI's Power"
     ],
-    "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+    "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-08-05%2F3vf4kwbb%2FVisa-Layoffs-2600-Jobs-Cut-as-AI-Push-Hits-India-415.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
     "stories": [
       {
         "title": "AI Will Redefine Jobs Before It Replaces Them",
@@ -1020,7 +1020,7 @@ export const bundledSignalsBySlug = {
         "source": "forbes.com",
         "published": "2026-08-03T21:00:00+00:00",
         "summary": "Tim Bajarin argues that AI's more immediate effect is to redefine work, freeing people from some execution while increasing the value of judgment and creativity. That distinction matters because leaders can either use the transition to strip roles down or deliberately redesign them around contribution people can still own.",
-        "imageUrl": "",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a70ebf6ce1ea4adadd360ad/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
           "Unhook Identity"
@@ -1037,7 +1037,7 @@ export const bundledSignalsBySlug = {
         "source": "chinadaily.com.cn",
         "published": "2026-08-05T02:30:00+00:00",
         "summary": "China Daily examines whether education can prepare graduates for a labor market being reshaped by AI, tying career readiness to longer-term economic development. The useful challenge is larger than teaching a tool: people need practice in adapting, making judgments, and finding direction when the first version of a role no longer stays fixed.",
-        "imageUrl": "",
+        "imageUrl": "https://www.hw.ac.uk/image-library/programmeBanners/6-1635.xd285abbf.jpg?f=webp&fit=crop&h=672&q=75&w=1920",
         "stages": [
           "Find Your Purpose",
           "Unhook Identity"
@@ -1054,7 +1054,7 @@ export const bundledSignalsBySlug = {
         "source": "forbes.com",
         "published": "2026-08-05T01:59:00+00:00",
         "summary": "A Forbes report on new World Bank findings highlights that AI-related job exposure is not distributed evenly, with workers in some countries facing much greater risk. Aggregate optimism about productivity therefore cannot substitute for local pathways into new skills, trusted institutions, and roles where people can carry forward real value.",
-        "imageUrl": "",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a72f87f1a56cc2b53c43fe3/0x0.jpg?format=jpg&crop=1335,751,x0,y54,safe&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
           "Discover AI's Power"
@@ -1071,7 +1071,7 @@ export const bundledSignalsBySlug = {
         "source": "analyticsinsight.net",
         "published": "2026-08-05T03:46:00+00:00",
         "summary": "Visa is reported to be cutting 2,600 jobs as it changes its workforce strategy around AI, making the human impact of an efficiency push tangible rather than theoretical. When a role changes faster than the explanation offered to its holder, people need clarity about which business choices are being made and where their experience can travel next.",
-        "imageUrl": "",
+        "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-08-05%2F3vf4kwbb%2FVisa-Layoffs-2600-Jobs-Cut-as-AI-Push-Hits-India-415.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
         "stages": [
           "Unhook Identity",
           "Reclaim Value"
@@ -1088,7 +1088,7 @@ export const bundledSignalsBySlug = {
         "source": "govinfosecurity.com",
         "published": "2026-08-03T17:00:00+00:00",
         "summary": "GovInfoSecurity explores how AI agents can act through legitimate permissions yet still produce outcomes their creators did not intend. As organizations grant agents more access, identity and accountability cannot be treated as a technical afterthought; people must decide what an agent may do, when it must escalate, and who remains responsible.",
-        "imageUrl": "",
+        "imageUrl": "https://ismg-cdn.nyc3.cdn.digitaloceanspaces.com/articles/ai-agents-challenge-identity-governance-image_large-10-a-32417.jpg",
         "stages": [
           "Discover AI's Power",
           "Reclaim Value"
