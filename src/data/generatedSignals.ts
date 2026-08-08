@@ -3,6 +3,20 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-08-08-layoff-narratives-collide-with-the-purpose-question",
+    "date": "2026-08-08",
+    "title": "Layoff Narratives Collide With The Purpose Question",
+    "pattern": "Dataquest asks whether companies are replacing people with AI or using AI to explain a broader reset, while Etsy explicitly says its 12% workforce cut is not AI-driven and CBS reports that overall layoffs have fallen to a two-year low. At the same time, the Bank of England sees AI lifting productivity while reducing jobs, and Diane Hamilton argues that the World Economic Forum still has not answered what gives work meaning when execution changes. Together, the stories expose a consequential tension: people need honest evidence about where jobs are going, but they also need a source of purpose that no corporate explanation or labor statistic can supply.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://img-cdn.publive.online/fit-in/1200x675/dq/media/media_files/2026/08/08/ai-layoffs-2026-08-08-15-03-35.png",
+    "storyCount": 5
+  },
+  {
     "slug": "2026-08-04-work-design-becomes-the-human-advantage",
     "date": "2026-08-04",
     "title": "Work Design Becomes The Human Advantage",
@@ -643,6 +657,107 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-08-08-layoff-narratives-collide-with-the-purpose-question": {
+    "slug": "2026-08-08-layoff-narratives-collide-with-the-purpose-question",
+    "date": "2026-08-08",
+    "title": "Layoff Narratives Collide With The Purpose Question",
+    "pattern": "Dataquest asks whether companies are replacing people with AI or using AI to explain a broader reset, while Etsy explicitly says its 12% workforce cut is not AI-driven and CBS reports that overall layoffs have fallen to a two-year low. At the same time, the Bank of England sees AI lifting productivity while reducing jobs, and Diane Hamilton argues that the World Economic Forum still has not answered what gives work meaning when execution changes. Together, the stories expose a consequential tension: people need honest evidence about where jobs are going, but they also need a source of purpose that no corporate explanation or labor statistic can supply.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://img-cdn.publive.online/fit-in/1200x675/dq/media/media_files/2026/08/08/ai-layoffs-2026-08-08-15-03-35.png",
+    "stories": [
+      {
+        "title": "AI Layoff Claims Mask A Wider Business Reset",
+        "url": "https://www.dqindia.com/data-and-ai/ai-layoffs-2026-real-reasons-behind-job-cuts-12241995",
+        "source": "dqindia.com",
+        "published": "2026-08-08T02:35:00+00:00",
+        "summary": "Dataquest examines whether 2026 job cuts represent direct replacement by AI or a broader wave of restructuring, cost pressure, and strategic reset that companies increasingly explain through automation. The distinction matters because people cannot make grounded career decisions when AI becomes a catch-all story for choices that also reflect leadership, markets, and organizational design.",
+        "imageUrl": "https://img-cdn.publive.online/fit-in/1200x675/dq/media/media_files/2026/08/08/ai-layoffs-2026-08-08-15-03-35.png",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The article separates direct AI substitution from cost cutting and broader corporate restructuring.",
+          "AI can become a convenient public explanation even when several business forces shape a layoff decision.",
+          "Workers need evidence about changing tasks and capabilities, not a single technological narrative for every cut."
+        ]
+      },
+      {
+        "title": "US Layoffs Fall To A Two-Year Low",
+        "url": "https://www.cbsnews.com/news/july-layoffs-drop-two-year-low/",
+        "source": "cbsnews.com",
+        "published": "2026-08-06T08:23:00+00:00",
+        "summary": "CBS News reports that announced job cuts fell to a two-year low even as public anxiety about AI displacement and economic shocks remained intense. One economist said recently laid-off workers were finding jobs about as quickly as the economy created them, a reminder that vivid disruption stories can outrun the aggregate evidence people use to understand their prospects.",
+        "imageUrl": null,
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Announced job cuts dropped to their lowest level in two years despite persistent anxiety about AI and the economy.",
+          "The labor market can contain painful individual displacement without confirming a universal collapse in employment.",
+          "People need to separate real transition risk from narratives that turn every labor signal into an identity-level threat."
+        ]
+      },
+      {
+        "title": "AI Changes Work Before Purpose Has An Answer",
+        "url": "https://www.forbes.com/sites/dianehamilton/2026/08/07/what-the-world-economic-forum-left-unanswered-about-ai-and-purpose/",
+        "source": "forbes.com",
+        "published": "2026-08-07T00:00:00+00:00",
+        "summary": "Diane Hamilton argues that the World Economic Forum has raised the question of where purpose goes when AI changes work without fully answering it, and offers a four-part framework for the gap. The deeper challenge is not preserving every old task; it is helping people locate meaning, contribution, and agency somewhere more durable than the job description AI is rearranging.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a71eb8aa07f89bd69ed9759/0x0.jpg?format=jpg&crop=3150,1805,x450,y10,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "The World Economic Forum's future-of-work discussion leaves the meaning of purpose under automation unresolved.",
+          "Hamilton proposes a four-part framework for thinking about purpose as AI changes roles and organizations.",
+          "Purpose must become more durable than a task bundle or title if people are to retain agency through transition."
+        ]
+      },
+      {
+        "title": "UK Productivity Gains Arrive With Job Losses",
+        "url": "https://www.straitstimes.com/business/ai-is-boosting-uk-productivity-and-harming-jobs-says-bank-of-england",
+        "source": "straitstimes.com",
+        "published": "2026-08-06T11:56:00+00:00",
+        "summary": "A Bank of England report finds early signs that UK firms are moving beyond AI experiments and using the technology as a driver of growth, while employment effects are already turning negative. Productivity and job security can therefore diverge: institutions may capture more output while people still need deliberate pathways into the judgment, relationships, and responsibilities that remain valuable.",
+        "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/d33a7f369622bc089d7fae9714ae647c805194140cf4c9f850122f235d155449",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "The Bank of England sees early evidence that UK firms are using AI for growth rather than only experimentation.",
+          "The same evidence points to productivity gains and negative employment effects occurring together.",
+          "Higher output does not automatically produce a humane transition; role design and pathways into new value still matter."
+        ]
+      },
+      {
+        "title": "Etsy Says Its Workforce Cut Is Not AI-Driven",
+        "url": "https://www.financialexpress.com/world-news/us-news/etsy-cuts-12-of-workforce-indian-american-ceo-says-layoffs-not-driven-by-ai/4312689/",
+        "source": "financialexpress.com",
+        "published": "2026-08-06T20:55:00+00:00",
+        "summary": "Etsy is cutting roughly 12% of its workforce—about 220 employees—as part of a restructuring intended to improve efficiency, while CEO Kruti Patel Goyal says the decision was not driven by AI. The explicit denial matters in a climate where automation is often treated as the default cause: honest attribution helps workers respond to the actual business choice rather than an imagined technological inevitability.",
+        "imageUrl": null,
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Etsy plans to eliminate about 220 roles, representing roughly 12% of its workforce.",
+          "CEO Kruti Patel Goyal characterized the move as a restructuring and said it was not driven by AI.",
+          "Clear attribution preserves agency by distinguishing management decisions from supposedly inevitable automation."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-08-04-work-design-becomes-the-human-advantage": {
     "slug": "2026-08-04-work-design-becomes-the-human-advantage",
     "date": "2026-08-04",
