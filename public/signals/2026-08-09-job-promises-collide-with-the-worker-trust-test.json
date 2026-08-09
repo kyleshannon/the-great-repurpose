@@ -1,0 +1,102 @@
+{
+  "slug": "2026-08-09-job-promises-collide-with-the-worker-trust-test",
+  "date": "2026-08-09",
+  "title": "Job Promises Collide With The Worker Trust Test",
+  "pattern": "Erika Donalds argues that education should prepare students for an emerging AI job boom, while Australian modelling projects 44,000 additional jobs and a $116 billion economic lift. Yet 24/7 Wall St. points to Oracle and Microsoft cuts as evidence of a historic tech-sector layoff wave, and Challenger data reported by AOL says AI was cited in one-third of July job cuts even as total layoffs reached a two-year low. Singapore's Lawrence Wong puts the real test in public terms: productivity gains must help workers who fear being left behind. Together, the stories show that forecasts alone cannot earn trust; institutions must connect AI growth to credible pathways through which people can learn, contribute, and share in the value created.",
+  "stages": [
+    "Unhook Identity",
+    "Find Your Purpose",
+    "Reclaim Value",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "https://apicms.thestar.com.my/uploads/images/2026/08/09/4050790.jpg",
+  "stories": [
+    {
+      "title": "Education Must Prepare Students For The AI Job Boom",
+      "url": "https://townhall.com/columnists/erikadonalds/2026/08/08/the-ai-job-boom-is-just-getting-started-n2680905",
+      "source": "townhall.com",
+      "published": "2026-08-08T06:01:00+00:00",
+      "summary": "Erika Donalds argues that AI is creating new career opportunities and that education systems must prepare students to pursue them. The useful test is not whether schools add more tool exposure, but whether learners gain the judgment, adaptability, and direction required to turn technological change into work they can value and shape.",
+      "imageUrl": "https://media.townhall.com/cdn/hodl/2023/264/d663869e-6905-474c-9914-e6c5bccf93d6-1200x630.jpg",
+      "stages": [
+        "Find Your Purpose",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "The column presents AI as a source of expanding career opportunity rather than only a displacement threat.",
+        "Education must prepare students for changing roles instead of training them solely for yesterday's job descriptions.",
+        "A credible opportunity story requires pathways that build judgment, adaptability, and direction alongside technical fluency."
+      ]
+    },
+    {
+      "title": "Tech Layoffs Reach A Twenty-Year High",
+      "url": "https://247wallst.com/investing/2026/08/08/ai-is-hollowing-out-tech-sector-jobs-oracle-and-microsoft-help-push-layoff-rate-to-20-year-high/",
+      "source": "247wallst.com",
+      "published": "2026-08-08T15:38:36+00:00",
+      "summary": "24/7 Wall St. argues that heavy AI investment at Oracle, Microsoft, and other technology companies is coinciding with a sector layoff rate at a twenty-year high. Whatever share of the cuts is directly caused by automation, workers experience the contradiction now: enormous spending on future capability arriving alongside shrinking security in the organizations building it.",
+      "imageUrl": "https://247wallst.com/wp-content/uploads/2025/07/shutterstock-2005053044-huge-licensed-scaled.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The article links major AI capital spending with workforce reductions across large technology companies.",
+        "It describes the technology sector's layoff rate as the highest in twenty years.",
+        "Workers need a clearer account of how investment, automation, and restructuring change the value expected from human roles."
+      ]
+    },
+    {
+      "title": "Singapore Pledges AI Gains Will Reach Workers",
+      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/09/singapore-to-ensure-ai-helps-workers-worried-about-jobs-pm-wong-says",
+      "source": "thestar.com.my",
+      "published": "2026-08-09T11:47:00+00:00",
+      "summary": "Prime Minister Lawrence Wong says Singapore will pursue AI-driven productivity while ensuring the technology helps workers who are worried about their jobs. That promise makes distribution—not adoption—the central public test: productivity gains become socially credible only when people can see how training, role redesign, and shared prosperity include them in the transition.",
+      "imageUrl": "https://apicms.thestar.com.my/uploads/images/2026/08/09/4050790.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "Singapore is using AI to pursue higher productivity while publicly acknowledging worker anxiety about jobs.",
+        "Wong frames government responsibility around ensuring that the technology benefits workers rather than bypassing them.",
+        "Trust depends on visible pathways from national productivity gains to training, redesigned roles, and shared value."
+      ]
+    },
+    {
+      "title": "Australian Modelling Projects 44,000 AI-Enabled Jobs",
+      "url": "https://www.heraldsun.com.au/news/breaking-news/artificial-intelligence-could-create-44k-jobs-deliver-116bn-economic-boost/news-story/51ec0be0d047a466104165896c4a7177",
+      "source": "heraldsun.com.au",
+      "published": "2026-08-06T05:22:00+00:00",
+      "summary": "Australian modelling projects that AI could add as much as 3.6% to GDP, create up to 44,000 jobs, and deliver a $116 billion economic boost over the coming decade. The forecast offers a growth case, but its human meaning depends on whether institutions turn aggregate gains into accessible roles and capabilities rather than assuming opportunity will distribute itself.",
+      "imageUrl": null,
+      "stages": [
+        "Reclaim Value",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "The modelling projects up to 3.6% additional GDP from AI over the coming decade.",
+        "It estimates as many as 44,000 additional jobs and a $116 billion economic benefit.",
+        "Aggregate growth becomes meaningful to people only when new roles and learning pathways are genuinely accessible."
+      ]
+    },
+    {
+      "title": "AI Leads Layoff Reasons As Total Cuts Fall",
+      "url": "https://www.aol.com/articles/july-layoffs-drop-lowest-level-211417000.html",
+      "source": "aol.com",
+      "published": "2026-08-06T14:14:00+00:00",
+      "summary": "AOL reports Challenger data showing July layoffs fell to their lowest level in two years, while AI was cited in 33% of the month's job cuts and led stated reasons for a fifth consecutive month. The mixed signal resists easy panic or optimism: overall labor conditions can improve while automation still concentrates disruption on particular people and roles.",
+      "imageUrl": "https://hermes.media.static.aol.com/media/2026/08/06/f69ffe2e-ba5f-3cb5-9994-689267c143c9/57be08f0-2da4-48c9-af57-b882d90401e0.png",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "July's announced layoffs fell to the lowest level in two years.",
+        "AI was cited in 33% of July job cuts and remained the leading stated reason for a fifth month.",
+        "Aggregate improvement can coexist with concentrated disruption that demands targeted pathways for affected workers."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}

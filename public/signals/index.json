@@ -1,5 +1,19 @@
 [
   {
+    "slug": "2026-08-09-job-promises-collide-with-the-worker-trust-test",
+    "date": "2026-08-09",
+    "title": "Job Promises Collide With The Worker Trust Test",
+    "pattern": "Erika Donalds argues that education should prepare students for an emerging AI job boom, while Australian modelling projects 44,000 additional jobs and a $116 billion economic lift. Yet 24/7 Wall St. points to Oracle and Microsoft cuts as evidence of a historic tech-sector layoff wave, and Challenger data reported by AOL says AI was cited in one-third of July job cuts even as total layoffs reached a two-year low. Singapore's Lawrence Wong puts the real test in public terms: productivity gains must help workers who fear being left behind. Together, the stories show that forecasts alone cannot earn trust; institutions must connect AI growth to credible pathways through which people can learn, contribute, and share in the value created.",
+    "stages": [
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Reclaim Value",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://apicms.thestar.com.my/uploads/images/2026/08/09/4050790.jpg",
+    "storyCount": 5
+  },
+  {
     "slug": "2026-08-08-layoff-narratives-collide-with-the-purpose-question",
     "date": "2026-08-08",
     "title": "Layoff Narratives Collide With The Purpose Question",
