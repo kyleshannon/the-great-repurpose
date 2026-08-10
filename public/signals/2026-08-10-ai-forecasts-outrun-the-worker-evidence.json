@@ -1,0 +1,101 @@
+{
+  "slug": "2026-08-10-ai-forecasts-outrun-the-worker-evidence",
+  "date": "2026-08-10",
+  "title": "AI Forecasts Outrun The Worker Evidence",
+  "pattern": "Mark Cuban identifies five job categories where openings may shrink, while IIT Madras director V. Kamakoti argues that AI will ultimately create more jobs than it removes if India invests in upskilling. Michael Kratsios calls AI an easy scapegoat for technology layoffs, even as American Bazaar catalogs cuts across Amazon, Meta, Oracle, Microsoft, and other major employers. HR Dive adds a crucial reality check: most executives still expect AI productivity gains to arrive in the future. Together, the stories show forecasts racing ahead of evidence; workers are being asked to reorganize skills, identity, and trust before institutions can clearly prove which losses, gains, and productivity claims AI is actually causing.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Discover AI's Power",
+    "Find Your Purpose"
+  ],
+  "imageUrl": "https://hermes.media.static.aol.com/media/2026/08/09/a25f42a4-e854-3889-b9e9-f477a5745c30/2d8bea54-e198-4267-b497-a744c0c909b1.jpg",
+  "stories": [
+    {
+      "title": "Mark Cuban Names Five Roles Facing Hiring Pressure",
+      "url": "https://www.aol.com/articles/mark-cuban-says-5-types-114200000.html",
+      "source": "aol.com",
+      "published": "2026-08-09T04:43:00+00:00",
+      "summary": "Mark Cuban says AI is unlikely to erase employment overnight, but five categories of work face fewer openings and slower hiring as companies automate tasks. The distinction matters: disruption can arrive through a narrowing doorway rather than a dramatic mass replacement, requiring people to recognize which parts of their role remain scarce and valuable.",
+      "imageUrl": "https://hermes.media.static.aol.com/media/2026/08/09/a25f42a4-e854-3889-b9e9-f477a5745c30/2d8bea54-e198-4267-b497-a744c0c909b1.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Cuban frames AI disruption as slower hiring and fewer openings rather than an overnight elimination of all jobs.",
+        "The pressure concentrates in five categories where more tasks can be absorbed by AI systems.",
+        "Workers need to separate durable judgment and relationship value from the tasks a job title currently bundles together."
+      ]
+    },
+    {
+      "title": "IIT Madras Director Expects AI To Create Jobs",
+      "url": "https://yourstory.com/ai-story/ai-jobs-iit-madras-v-kamakoti-employment",
+      "source": "yourstory.com",
+      "published": "2026-08-09T17:00:00+00:00",
+      "summary": "IIT Madras director V. Kamakoti argues that AI will create more jobs than it cuts and says India must respond by upskilling people. His optimism places responsibility on education and industry: new work becomes a human opportunity only when people can build relevant capabilities and participate as creators, not merely wait for aggregate growth to reach them.",
+      "imageUrl": "https://images.yourstory.com/cs/2/6db16ae008d911e9bb473d9d98ed1e05/Untitleddesign35-1782727885343.jpg",
+      "stages": [
+        "Discover AI's Power",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "Kamakoti expects AI-led job creation to exceed the employment it displaces.",
+        "He identifies upskilling as essential to converting technological growth into accessible work.",
+        "The opportunity depends on people gaining the capability and agency to create new roles and ventures."
+      ]
+    },
+    {
+      "title": "White House Adviser Calls AI A Layoff Scapegoat",
+      "url": "https://www.firstpost.com/tech/white-house-ai-adviser-questions-whether-tech-layoffs-are-really-ai-driven-14037110.html",
+      "source": "firstpost.com",
+      "published": "2026-08-09T20:47:00+00:00",
+      "summary": "White House science and technology adviser Michael Kratsios questions whether companies are attributing planned technology layoffs to AI because it offers a convenient explanation. The claim raises an accountability test: workers cannot navigate a transition honestly when leaders blur automation, cost cutting, restructuring, and strategic correction into one inevitable technological story.",
+      "imageUrl": "https://americanbazaaronline.com/wp-content/uploads/2026/07/Meta-layoffs-visa-employees.png",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Kratsios argues that AI may be used to explain layoffs companies had already planned.",
+        "Technology firms are restructuring while simultaneously increasing investment in AI capability.",
+        "Honest attribution is necessary for workers to understand what is changing and how they can respond."
+      ]
+    },
+    {
+      "title": "The 2026 Layoff Ledger Spans Big Tech",
+      "url": "https://americanbazaaronline.com/2026/08/09/major-layoffs-of-2026-amazon-meta-oracle-microsoft-and-more/",
+      "source": "americanbazaaronline.com",
+      "published": "2026-08-09T23:10:22+00:00",
+      "summary": "American Bazaar catalogs twenty major layoffs announced or carried out through August, including cuts at Amazon, Meta, Oracle, Microsoft, and Etsy. The breadth makes displacement tangible but does not prove one common cause. People need company-specific explanations and transition pathways, not a single AI narrative imposed on every restructuring decision.",
+      "imageUrl": null,
+      "stages": [
+        "Unhook Identity",
+        "Find Your Purpose"
+      ],
+      "keyPoints": [
+        "The article tracks twenty major workforce reductions announced or carried out during 2026 through August.",
+        "The list includes Amazon, Meta, Oracle, Microsoft, Etsy, and other large employers.",
+        "A broad layoff ledger reveals the scale of uncertainty but cannot substitute for evidence about each company's motives."
+      ]
+    },
+    {
+      "title": "Most AI Productivity Gains Remain Future Promises",
+      "url": "https://www.hrdive.com/news/corporate-conversations-about-ai-productivity-are-mostly-focused-on-future/827308/",
+      "source": "hrdive.com",
+      "published": "2026-08-07T04:01:00+00:00",
+      "summary": "HR Dive reports that most executives discuss AI productivity as a benefit they expect to realize later, according to new research on corporate performance claims. That timing gap is consequential: organizations are changing roles and expectations now, while much of the promised value remains prospective. Responsible adoption requires measurable gains and transparent human consequences.",
+      "imageUrl": null,
+      "stages": [
+        "Reclaim Value",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "Most executive discussion of AI productivity centers on gains expected in the future.",
+        "Organizations may change work before they can demonstrate the performance benefits used to justify that change.",
+        "Credible adoption requires evidence that connects AI investment to measurable value and transparent effects on people."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
