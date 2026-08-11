@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-08-11-the-human-premium-needs-a-pathway",
+    "date": "2026-08-11",
+    "title": "The Human Premium Needs A Pathway",
+    "pattern": "Forbes describes both roles becoming harder to replace and five human capabilities gaining value, while The Sydney Morning Herald shows graduates entering a tighter market where degrees offer less certainty. Inc. finds fast-growing companies still hiring despite the layoff narrative, and Benevolve's Manisha Goel argues that enterprise transformation must begin with people rather than technology. Together, the stories expose the gap between naming a human premium and making it reachable: judgment, communication, adaptability, and trust matter more, but people still need visible entry points, practice, and work redesign that turn those qualities into livelihoods.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7756eb7e802fb3f9739e7c/0x0.jpg?format=jpg&crop=1356,763,x0,y68,safe&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-08-10-ai-forecasts-outrun-the-worker-evidence",
     "date": "2026-08-10",
     "title": "AI Forecasts Outrun The Worker Evidence",
@@ -725,6 +738,107 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-08-11-the-human-premium-needs-a-pathway": {
+    "slug": "2026-08-11-the-human-premium-needs-a-pathway",
+    "date": "2026-08-11",
+    "title": "The Human Premium Needs A Pathway",
+    "pattern": "Forbes describes both roles becoming harder to replace and five human capabilities gaining value, while The Sydney Morning Herald shows graduates entering a tighter market where degrees offer less certainty. Inc. finds fast-growing companies still hiring despite the layoff narrative, and Benevolve's Manisha Goel argues that enterprise transformation must begin with people rather than technology. Together, the stories expose the gap between naming a human premium and making it reachable: judgment, communication, adaptability, and trust matter more, but people still need visible entry points, practice, and work redesign that turn those qualities into livelihoods.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7756eb7e802fb3f9739e7c/0x0.jpg?format=jpg&crop=1356,763,x0,y68,safe&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "AI Reorganizes Work Around Hard-To-Replace Roles",
+        "url": "https://www.forbes.com/sites/bryanrobinson/2026/08/10/ai-is-making-these-jobs-irreplaceable-as-hiring-rates-plunge-24/",
+        "source": "forbes.com",
+        "published": "2026-08-10T10:28:00+00:00",
+        "summary": "Forbes reports that hiring rates have fallen 24 percent even as AI reorganizes work around roles that remain difficult to replace. The useful distinction is between a job title and the human value inside it: workers need to identify where they exercise judgment, build trust, and coordinate people rather than assume every task in the old wrapper has equal durability.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a75f755fd217ed9b368f92e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The reported 24 percent hiring decline shows disruption arriving through fewer openings as well as layoffs.",
+          "AI is reorganizing the workforce unevenly, increasing the importance of roles with hard-to-replace human responsibilities.",
+          "People need to separate their durable contribution from the job title and task bundle that currently contains it."
+        ]
+      },
+      {
+        "title": "Graduate Careers Lose Their Reliable First Step",
+        "url": "https://www.smh.com.au/national/ai-is-cutting-graduate-jobs-these-are-the-skills-young-people-will-need-20260326-p5ziyq.html",
+        "source": "smh.com.au",
+        "published": "2026-08-11T09:30:00+00:00",
+        "summary": "The Sydney Morning Herald describes a more competitive graduate market shaped by cooling demand, employer adoption of AI, rising education costs, and skepticism about the return on a degree. Young people are being asked to demonstrate adaptable human capability before many have had a first workplace in which to develop it, making apprenticeships and visible skills pathways newly urgent.",
+        "imageUrl": "https://static.ffx.io/images/$zoom_0.16214974735875057%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_62/t_crop_custom/q_86%2Cf_auto/9586ff12536490f6f593f9675e4d4d979b00b076",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "Graduate prospects are becoming more competitive and uncertain as the labor market cools and employers adopt AI.",
+          "Rising education costs are intensifying questions about whether a degree still provides a dependable route into work.",
+          "Institutions need new ways for young people to practice judgment, communication, and adaptability before employers demand proof of them."
+        ]
+      },
+      {
+        "title": "Five Human Capabilities Gain Career Value",
+        "url": "https://www.forbes.com/sites/bryanrobinson/2026/08/10/ai-is-creating-a-human-premium-5-career-skills-suddenly-worth-more/",
+        "source": "forbes.com",
+        "published": "2026-08-09T21:00:00+00:00",
+        "summary": "Forbes identifies five human capabilities that employers increasingly value because AI struggles to reproduce them reliably. The larger signal is not that people can retreat into a vague category of soft skills; it is that judgment, communication, curiosity, adaptability, and relationship-building must become observable contributions that people deliberately strengthen and organizations know how to reward.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7756eb7e802fb3f9739e7c/0x0.jpg?format=jpg&crop=1356,763,x0,y68,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Reclaim Value",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "Employers are placing greater weight on capabilities that remain difficult for AI to replicate.",
+          "The human premium depends on demonstrated judgment, communication, curiosity, adaptability, and relationships rather than a generic claim of being human.",
+          "Workers and employers both need clearer ways to develop, witness, and reward these capabilities."
+        ]
+      },
+      {
+        "title": "Fast-Growing Companies Complicate The Layoff Story",
+        "url": "https://www.inc.com/kaylawebster/ai-layoffs-fast-growing-companies-hiring-talent/91382822",
+        "source": "inc.com",
+        "published": "2026-08-11T03:59:00+00:00",
+        "summary": "Inc. reports that companies on its fast-growth list are hiring even while AI remains a common explanation for layoffs elsewhere in corporate America. The contrast warns against treating the labor market as one inevitable automation story: opportunity is moving across firms and sectors, and people need better signals about where growth, responsibility, and meaningful contribution are actually emerging.",
+        "imageUrl": null,
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "Fast-growing companies continue to add talent despite widespread headlines connecting AI with job cuts.",
+          "Hiring and displacement are happening simultaneously across different companies and business models.",
+          "Workers need specific market signals and portable capabilities instead of a single story about AI eliminating work."
+        ]
+      },
+      {
+        "title": "Enterprise AI Transformation Starts With People",
+        "url": "https://www.analyticsinsight.net/artificial-intelligence/the-real-ai-transformation-starts-with-people-not-technology-benevolves-manisha-goel",
+        "source": "analyticsinsight.net",
+        "published": "2026-08-10T23:16:00+00:00",
+        "summary": "Benevolve co-founder Manisha Goel argues that enterprise AI transformation starts with people rather than larger models or more technology. Adoption becomes durable when leaders redesign work, build capability, and include employees in the change. That turns AI from an installation project into a question of agency: who understands the system, shapes its use, and remains accountable for outcomes.",
+        "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-08-11%2F4jtmxd6o%2F%E2%80%98The-Real-AI-Transformation-Starts-with-People-Not-Technology%E2%80%99-Benevolve%E2%80%99s-Manisha-Goel.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Goel places people and organizational capability ahead of technology in successful AI transformation.",
+          "Durable adoption requires work redesign and employee participation, not simply access to larger models.",
+          "Human agency and accountability determine whether enterprise AI creates usable value."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-08-10-ai-forecasts-outrun-the-worker-evidence": {
     "slug": "2026-08-10-ai-forecasts-outrun-the-worker-evidence",
     "date": "2026-08-10",
