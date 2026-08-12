@@ -1,0 +1,101 @@
+{
+  "slug": "2026-08-12-work-becomes-ais-training-ground",
+  "date": "2026-08-12",
+  "title": "Work Becomes AI's Training Ground",
+  "pattern": "Business Insider traces Google, Meta, and Mechanize's race to train agents inside realistic work environments, while Skan AI raises $63 million to map how employees actually move through enterprise systems. Forbes argues that every agent now needs named management and accountability; Oracle pairs billions in AI infrastructure spending with reported job cuts; and higher education is pressed to make its AI boundaries visible. Together, the stories show work becoming both the training data and the proving ground for AI—and make human oversight, consent, and judgment more valuable precisely as machines learn the workflow.",
+  "stages": [
+    "Discover AI's Power",
+    "Unhook Identity",
+    "Reclaim Value",
+    "Find Your Purpose"
+  ],
+  "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/3WDoD2ymJo193EQQiyjPZc/10a7a431875f094f56d874bfa72cb9b0/Nuneybits_Vector_art_of_bank_towers_feeding_glowing_process_map_2465961e-61fe-473e-aaec-8071e4adbfcc.webp?w=800&q=75",
+  "stories": [
+    {
+      "title": "AI's Next Data Grab Is How Work Gets Done",
+      "url": "https://www.businessinsider.com/ai-next-data-grab-work-reinforcement-learning-environments-google-meta-2026-8",
+      "source": "businessinsider.com",
+      "published": "2026-08-12T09:00:02.431000+00:00",
+      "summary": "Business Insider reports that the next AI race is moving beyond chatbot conversations toward environments that teach agents how real jobs are performed, citing Google, Meta, and Mechanize. When everyday workflows become training material, workers are no longer merely using AI; their tacit knowledge is shaping it, raising urgent questions about consent, credit, and who controls the resulting capability.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "AI developers are seeking realistic work environments that can teach agents to complete jobs rather than only answer questions.",
+        "Google, Meta, and Mechanize illustrate the competition to turn human workflows into reinforcement-learning environments.",
+        "Workers' tacit knowledge becomes strategically valuable when their actions supply the examples agents learn to reproduce."
+      ]
+    },
+    {
+      "title": "Every AI Agent Needs A Named Manager",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/08/11/why-your-ai-agent-needs-a-manager/",
+      "source": "forbes.com",
+      "published": "2026-08-10T21:00:00+00:00",
+      "summary": "Forbes argues that an AI agent becomes an unmanaged worker when nobody can say who authorized it, what data it touched, or how to reverse its actions. The management problem is therefore human, not merely technical: organizations need clear ownership, boundaries, monitoring, and rollback authority so automation expands capability without dissolving accountability.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/691caa4b92349bc97f986494/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Agent governance starts with a named human who can explain its authority, data access, and actions.",
+        "Organizations need practical rollback and escalation paths before agents operate across business systems.",
+        "Accountability becomes a core human contribution when execution is delegated to autonomous software."
+      ]
+    },
+    {
+      "title": "Skan AI Maps The Hidden Structure Of Work",
+      "url": "https://venturebeat.com/data/skan-ai-raises-63-million-betting-that-watching-how-employees-actually-work-is-the-missing-layer-of-enterprise-ai",
+      "source": "venturebeat.com",
+      "published": "2026-08-12T11:00:00+00:00",
+      "summary": "VentureBeat reports that Skan AI raised $63 million in Series C funding to build a context graph of work by observing how employees navigate enterprise software. The bet is that AI cannot transform operations it does not understand. That makes the messy, invisible coordination people perform both valuable source material and a domain that requires transparent limits on workplace observation.",
+      "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/3WDoD2ymJo193EQQiyjPZc/10a7a431875f094f56d874bfa72cb9b0/Nuneybits_Vector_art_of_bank_towers_feeding_glowing_process_map_2465961e-61fe-473e-aaec-8071e4adbfcc.webp?w=800&q=75",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Skan AI raised $63 million to expand technology that observes workflows across enterprise software.",
+        "Its context graph aims to reveal the actual process behind work rather than rely on formal process documentation.",
+        "Mapping tacit coordination can enable better automation, but it also makes transparency and worker agency essential."
+      ]
+    },
+    {
+      "title": "Oracle Funds AI Growth Alongside More Job Cuts",
+      "url": "https://www.peoplematters.in/news/ai-and-emerging-tech/oracle-bets-billions-on-ai-infrastructure-while-preparing-for-more-job-cuts-51374",
+      "source": "peoplematters.in",
+      "published": "2026-08-11T17:00:00+00:00",
+      "summary": "People Matters reports that Oracle is preparing additional job cuts while committing billions to AI infrastructure. The juxtaposition makes capital allocation visible: firms can invest aggressively in machine capacity while reducing the human systems that carried their prior work. Workers need more than an automation explanation; they need credible accounts of which contributions remain valuable and how displaced capability can move into new work.",
+      "imageUrl": "https://asset.peoplematters.in/images/979233ca-2583-4b1d-bd03-9e07a32a92a1.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Oracle's reported workforce reductions are unfolding alongside billions in AI infrastructure investment.",
+        "Technology spending and job cuts reveal how quickly companies can redirect resources before explaining a new human operating model.",
+        "People need portable language for their value when the organization changes the role wrapper around their work."
+      ]
+    },
+    {
+      "title": "Higher Education Must Make AI Boundaries Visible",
+      "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/08/11/ai-transparency-a-competitive-advantage-in-higher-education/",
+      "source": "forbes.com",
+      "published": "2026-08-10T21:00:00+00:00",
+      "summary": "Forbes argues that colleges and universities have a responsibility to show students how AI is used and where its boundaries lie. Transparency can become a competitive advantage because students need more than tool access: they need practice deciding when AI helps, when it distorts learning, and which judgments they must still be able to make for themselves.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a79f11ccb85802184fa1982/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Find Your Purpose",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "Institutions should clearly disclose how AI participates in teaching, assessment, and student services.",
+        "Visible boundaries help students distinguish genuine learning from merely producing an acceptable output.",
+        "Education's durable role is to develop judgment about when and why to use AI, not only competence with the tools."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}

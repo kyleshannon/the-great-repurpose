@@ -1,5 +1,18 @@
 [
   {
+    "slug": "2026-08-12-work-becomes-ais-training-ground",
+    "date": "2026-08-12",
+    "title": "Work Becomes AI's Training Ground",
+    "pattern": "Business Insider traces Google, Meta, and Mechanize's race to train agents inside realistic work environments, while Skan AI raises $63 million to map how employees actually move through enterprise systems. Forbes argues that every agent now needs named management and accountability; Oracle pairs billions in AI infrastructure spending with reported job cuts; and higher education is pressed to make its AI boundaries visible. Together, the stories show work becoming both the training data and the proving ground for AI—and make human oversight, consent, and judgment more valuable precisely as machines learn the workflow.",
+    "stages": [
+      "Discover AI's Power",
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose"
+    ],
+    "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/3WDoD2ymJo193EQQiyjPZc/10a7a431875f094f56d874bfa72cb9b0/Nuneybits_Vector_art_of_bank_towers_feeding_glowing_process_map_2465961e-61fe-473e-aaec-8071e4adbfcc.webp?w=800&q=75"
+  },
+  {
     "slug": "2026-08-11-the-human-premium-needs-a-pathway",
     "date": "2026-08-11",
     "title": "The Human Premium Needs A Pathway",
