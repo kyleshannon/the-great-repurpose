@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-08-13-reskilling-promises-meet-the-layoff-ledger",
+    "date": "2026-08-13",
+    "title": "Reskilling Promises Meet The Layoff Ledger",
+    "pattern": "A report on India's global capability centers says nearly half their workers may need major reskilling, while Forbes and Tata Sons chairman N. Chandrasekaran frame AI as a way to scale human judgment and lift people into higher-value work. AOL's list of exposed white-collar roles and Oracle's reported cuts show the other side of that promise: companies can remove today's jobs faster than they build credible pathways into tomorrow's. Together, the stories make reskilling a question of agency and institutional responsibility—not a slogan workers should be left to solve alone.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
+  },
+  {
     "slug": "2026-08-12-work-becomes-ais-training-ground",
     "date": "2026-08-12",
     "title": "Work Becomes AI's Training Ground",
@@ -751,6 +764,107 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-08-13-reskilling-promises-meet-the-layoff-ledger": {
+    "slug": "2026-08-13-reskilling-promises-meet-the-layoff-ledger",
+    "date": "2026-08-13",
+    "title": "Reskilling Promises Meet The Layoff Ledger",
+    "pattern": "A report on India's global capability centers says nearly half their workers may need major reskilling, while Forbes and Tata Sons chairman N. Chandrasekaran frame AI as a way to scale human judgment and lift people into higher-value work. AOL's list of exposed white-collar roles and Oracle's reported cuts show the other side of that promise: companies can remove today's jobs faster than they build credible pathways into tomorrow's. Together, the stories make reskilling a question of agency and institutional responsibility—not a slogan workers should be left to solve alone.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+    "stories": [
+      {
+        "title": "Nearly Half Of GCC Workers May Need Reskilling",
+        "url": "https://www.business-standard.com/industry/news/with-ai-in-picture-nearly-half-of-gcc-workers-may-need-reskilling-report-126081201908_1.html",
+        "source": "business-standard.com",
+        "published": "2026-08-12T15:35:11+00:00",
+        "summary": "Business Standard reports that nearly 46% of India's global capability center workforce may need substantial upskilling or reskilling within three years as AI changes jobs, skills, and business models. The number turns adaptation from personal advice into an organizational design challenge: employers must create real learning routes while workers separate their durable capabilities from the roles being rewritten.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Nearly 46% of India's GCC workforce may require major skill development within the next three years.",
+          "AI is reshaping job definitions and business models, not merely adding a new software tool to existing roles.",
+          "Reskilling at this scale requires employer-backed pathways, practice, and mobility rather than individual responsibility alone."
+        ]
+      },
+      {
+        "title": "AI Scale Should Expand Human Judgment",
+        "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/08/12/ai-isnt-replacing-how-we-work-its-redefining-how-we-scale/",
+        "source": "forbes.com",
+        "published": "2026-08-12T04:15:00+00:00",
+        "summary": "Forbes argues that AI's more meaningful promise is not a smaller payroll but more time for people to exercise judgment, solve harder problems, and create value. That is a useful test for any deployment: scale is genuinely human-centered only when reclaimed time becomes greater agency and better work, not an invisible demand for more output from fewer people.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "The article defines AI scale as expanding people's capacity rather than simply reducing headcount.",
+          "Judgment, difficult problem-solving, and value creation are the human contributions automation should make more available.",
+          "Organizations should measure whether AI improves the quality and agency of work, not only its volume or cost."
+        ]
+      },
+      {
+        "title": "Tata Chairman Says AI Can Lift Skills",
+        "url": "https://www.moneycontrol.com/education/quote-of-the-day-by-n-chandrasekaran-ai-will-empower-more-people-with-little-or-no-skill-so-that-they-can-what-the-tata-sons-chairman-says-about-jobs-skills-and-india-s-ai-future-article-14002896.html",
+        "source": "moneycontrol.com",
+        "published": "2026-08-12T00:10:00+00:00",
+        "summary": "Moneycontrol revisits Tata Sons chairman N. Chandrasekaran's argument that AI can help people with limited formal skills perform higher-level work and open new opportunities in India. The optimistic case matters because it treats technology as capability infrastructure—but empowerment becomes real only when people receive access, confidence, and a fair share of the value their amplified work creates.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Chandrasekaran argues that AI can raise the productive capacity of people with little formal training.",
+          "He connects broader capability to higher-level work, entrepreneurship, and new opportunity in India.",
+          "Access and shared economic value determine whether AI amplification becomes genuine worker empowerment."
+        ]
+      },
+      {
+        "title": "White-Collar Safety Is Losing Its Meaning",
+        "url": "https://www.aol.com/articles/12-white-collar-jobs-everyone-170500000.html",
+        "source": "aol.com",
+        "published": "2026-08-11T10:04:00+00:00",
+        "summary": "AOL catalogs a dozen white-collar occupations once treated as relatively secure but now exposed as AI absorbs routine analysis, coordination, and content work. Lists like this can overstate certainty, yet the deeper signal is sound: status and credentials no longer guarantee insulation. People need to identify the judgment, trust, and context they contribute beyond a familiar job title.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "AI exposure now reaches office roles that workers once considered protected from automation.",
+          "Routine cognitive tasks can be vulnerable even when they sit inside prestigious or credentialed occupations.",
+          "Career resilience increasingly depends on articulating human value beyond the title and task bundle of a current role."
+        ]
+      },
+      {
+        "title": "Oracle's AI Spending Carries A Human Cost",
+        "url": "https://www.ibtimes.co.uk/oracle-job-cuts-ai-investment-1813968",
+        "source": "ibtimes.co.uk",
+        "published": "2026-08-13T06:44:43+00:00",
+        "summary": "IBTimes reports that Oracle may make further job cuts as it directs billions toward AI infrastructure, following a major restructuring and substantial severance costs. The story puts a human ledger beside the capital one: an AI strategy is incomplete when investment plans are precise but the pathway for affected people is vague, abrupt, or treated as somebody else's problem.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Oracle's workforce reductions are unfolding alongside aggressive investment in cloud and AI infrastructure.",
+          "Company filings have warned that deeper AI adoption may contribute to further workforce reductions.",
+          "Responsible transformation requires a human transition plan as concrete as the technology and capital plan."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-08-12-work-becomes-ais-training-ground": {
     "slug": "2026-08-12-work-becomes-ais-training-ground",
     "date": "2026-08-12",
