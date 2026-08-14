@@ -1,0 +1,101 @@
+{
+  "slug": "2026-08-14-the-paycheck-changes-before-the-job",
+  "date": "2026-08-14",
+  "title": "The Paycheck Changes Before The Job",
+  "pattern": "Goldman Sachs sees limited economy-wide job loss in India even as services roles face greater exposure, while new wage data suggests AI can reduce workers' earnings without eliminating their positions. Layoff reports and rumors around major technology companies keep anxiety high, but two AI-enabled small businesses show a different path: individuals can also use the same capability to build creator-scale operations. Together, the stories reveal that AI is redistributing income, confidence, and leverage before the job count tells the full story.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Start Creating",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7ee6e4e281d4658c13262a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "India's Job Picture Splits Along Task Lines",
+      "url": "https://www.freepressjournal.in/business/goldman-sachs-says-ai-unlikely-to-cause-widespread-job-losses-in-india-services-sector-faces-risk",
+      "source": "freepressjournal.in",
+      "published": "2026-08-14T04:04:00+00:00",
+      "summary": "Goldman Sachs economist Santanu Sengupta argues that India is unlikely to experience widespread AI-driven job losses because much of its workforce performs physical and mechanical work, while IT and call-center roles face more substitution risk. The distinction shifts attention from dramatic national forecasts to the task mix inside each role—and to whether productivity gains create mobility for the people most exposed.",
+      "imageUrl": "https://media.assettype.com/freepressjournal/2026-03-14/j1q45ex0/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Queen-Of-All-Mayhem-2026-03-14T063422.412.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Discover AI's Power"
+      ],
+      "keyPoints": [
+        "Goldman Sachs expects India's concentration of physical and mechanical work to limit economy-wide AI job losses.",
+        "Services roles, especially in IT and call centers, face greater substitution risk than the workforce as a whole.",
+        "Task-level exposure is more useful than a single headline forecast for understanding who needs a transition pathway."
+      ]
+    },
+    {
+      "title": "Tech Layoff Claims Put AI On Trial",
+      "url": "https://www.livemint.com/companies/news/tech-layoffs-2026-ai-drives-mass-job-cuts-1-25-000-tech-majors-like-meta-microsoft-take-lead-11786700857349.html",
+      "source": "livemint.com",
+      "published": "2026-08-14T10:48:34+00:00",
+      "summary": "LiveMint reports that 2026 technology layoffs are increasingly being attributed to AI rather than only to budget corrections, pointing to cuts at companies including Meta and Microsoft. Attribution remains contested, but the human consequence is immediate: workers are being asked to absorb strategic ambiguity while separating their identity and value from roles companies can restructure quickly.",
+      "imageUrl": "https://www.livemint.com/lm-img/img/2026/08/14/1600x900/logo/pexels-photo-14606305_1786700800420_1786700851951_fba763fe-5547-4f94-9693-2136eb1f9c25.jpeg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The report links the year's large technology-sector cuts increasingly to AI-led restructuring.",
+        "Budget correction, strategy shifts, and automation can overlap, making simple explanations unreliable.",
+        "Workers need credible transition support even when employers cannot—or will not—separate the causes cleanly."
+      ]
+    },
+    {
+      "title": "AI Exposure Is Quietly Compressing Wages",
+      "url": "https://www.inc.com/bruce-crumley/ai-isnt-taking-your-job-its-silently-shrinking-your-paycheck/91389581",
+      "source": "inc.com",
+      "published": "2026-08-12T09:43:00+00:00",
+      "summary": "Inc. highlights workplace data indicating that AI exposure is suppressing wages for nearly six million workers even when their jobs remain intact, with higher earners potentially next. This is a quieter form of disruption than layoffs: the role survives while bargaining power and income erode, making it essential for people to identify and demonstrate value that automation does not commoditize.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The cited data connects AI exposure to wage pressure affecting nearly six million workers.",
+        "Economic disruption can arrive through reduced earnings rather than a visible elimination of jobs.",
+        "Career resilience depends on strengthening scarce judgment, trust, context, and relationship value."
+      ]
+    },
+    {
+      "title": "Small Businesses Reach Creator-Scale Output",
+      "url": "https://www.forbes.com/sites/terdawn-deboe/2026/08/14/top-creators-earned-1-billion-2-small-businesses-ran-the-same-play/",
+      "source": "forbes.com",
+      "published": "2026-08-14T04:00:00+00:00",
+      "summary": "Forbes contrasts the studios behind the top 50 creators' $1.02 billion in earnings with two small business owners who used AI to produce at creator scale without teams. The opportunity is not effortless content volume; it is giving a person with taste, a clear point of view, and customer knowledge enough leverage to operate like a much larger organization.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7ee6e4e281d4658c13262a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Start Creating",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The top 50 creators earned a combined $1.02 billion with production organizations supporting them.",
+        "Two small business owners used AI to achieve creator-scale output without building conventional teams.",
+        "AI leverage becomes durable when it amplifies a distinct point of view and real customer understanding."
+      ]
+    },
+    {
+      "title": "Oracle Rumors Show The Cost Of Uncertainty",
+      "url": "https://www.thehrdigest.com/rumors-of-oracle-layoffs-spark-another-round-of-anxiety-among-the-workforce/",
+      "source": "thehrdigest.com",
+      "published": "2026-08-13T09:21:12+00:00",
+      "summary": "The HR Digest reports renewed rumors of Oracle layoffs while emphasizing that the scale and details remain unclear. The uncertainty itself is part of the story: when workers must plan around incomplete information, anxiety consumes attention and trust. Organizations navigating AI-era restructuring owe people timely clarity, not just a final headcount decision.",
+      "imageUrl": "https://www.thehrdigest.com/wp-content/uploads/2026/08/Oracle-layoffs-rumors.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Reports suggest additional Oracle reductions may be coming, but the expected scale remains unconfirmed.",
+        "Uncertainty can damage workforce confidence before any formal restructuring is announced.",
+        "Transparent communication is part of responsible transformation because it preserves agency and trust."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
