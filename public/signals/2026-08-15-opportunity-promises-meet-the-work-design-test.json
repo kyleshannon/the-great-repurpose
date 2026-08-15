@@ -1,0 +1,100 @@
+{
+  "slug": "2026-08-15-opportunity-promises-meet-the-work-design-test",
+  "date": "2026-08-15",
+  "title": "Opportunity Promises Meet The Work Design Test",
+  "pattern": "Singapore promises to use AI for productivity and better jobs, while Mark Zuckerberg predicts superintelligence agents will help small businesses thrive. Brix is already placing a proactive agent into recruiting, yet Forbes finds that employers' enthusiasm for skills-based hiring rarely changes who actually gets hired, and Oracle workers face another reported round of cuts. Together, the stories turn optimistic employment claims into a work-design test: institutions must show how AI expands people's agency and pathways, not simply ask workers to trust that opportunity will follow disruption.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Discover AI's Power"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7a264ce63c53e5b623df4e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "Singapore Puts Better Jobs Behind Its AI Promise",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-08/singapore-to-ensure-ai-helps-workers-worried-about-jobs-pm-says",
+      "source": "bloomberg.com",
+      "published": "2026-08-08T04:13:00+00:00",
+      "summary": "Singapore's government says it will use AI to raise productivity and create better jobs while addressing workers' anxiety about displacement. The commitment recognizes that adoption needs a social bargain: people should be able to see how national gains become mobility, skills, and agency rather than being asked to absorb uncertainty on faith.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Singapore is framing AI adoption around both higher productivity and better employment outcomes.",
+        "Worker anxiety is treated as a policy issue, not merely resistance to technology.",
+        "The promise becomes credible only when people can see concrete pathways from disruption to opportunity."
+      ]
+    },
+    {
+      "title": "Zuckerberg Bets Small Business Will Gain Leverage",
+      "url": "https://www.freepressjournal.in/world/meta-ceo-mark-zuckerberg-says-ai-wont-eliminate-jobs-predicts-small-businesses-will-thrive-with-superintelligence-agents",
+      "source": "freepressjournal.in",
+      "published": "2026-08-13T08:04:00+00:00",
+      "summary": "Mark Zuckerberg argues that AI will not eliminate employment overall and that superintelligence agents will give small companies capabilities once reserved for larger organizations. His optimism contrasts with Dario Amodei's warning about entry-level white-collar work, making the real question who gains the tools, judgment, and market access to turn leverage into livelihoods.",
+      "imageUrl": "https://media.assettype.com/freepressjournal/2026-08-13/sawnn5ki/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Queen-Of-All-Mayhem-2026-08-13T203224.687.jpg",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Zuckerberg expects AI agents to expand the productive capacity of small businesses.",
+        "The forecast conflicts with warnings that entry-level white-collar roles could contract sharply.",
+        "Broad access to capability does not guarantee broad access to customers, income, or durable work."
+      ]
+    },
+    {
+      "title": "Brix Turns Recruiting Work Into An Agent Role",
+      "url": "https://markets.businessinsider.com/news/currencies/brix-launches-proactive-ai-workforce-agent-amid-hiring-struggles-at-ai-startups-1036460743",
+      "source": "markets.businessinsider.com",
+      "published": "2026-08-14T07:42:00+00:00",
+      "summary": "Brix launched a proactive workforce agent for AI startups, with cofounder Katherine Duan arguing that hiring's bottleneck is not simply the supply of candidates. Moving from a tool that assists recruiters to an agent that initiates work raises the value of human role definition, judgment, and accountability: someone still has to decide what good hiring means.",
+      "imageUrl": "https://app.financewire.com/storage/uploads/users/mawra_bi_1786708397AJTbwIhA8a.jpg",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Brix positions its product as a proactive workforce agent rather than a passive recruiting tool.",
+        "The company says hiring struggles at AI startups cannot be reduced to candidate supply alone.",
+        "Delegating recruiting actions makes human criteria, oversight, and accountability more consequential."
+      ]
+    },
+    {
+      "title": "Skills-Based Hiring Barely Changes The Hires",
+      "url": "https://www.forbes.com/sites/terdawn-deboe/2026/08/10/employers-are-hiring-for-skills-over-degrees-now-ai-is-why/",
+      "source": "forbes.com",
+      "published": "2026-08-09T21:00:00+00:00",
+      "summary": "Forbes reports that 70 percent of employers say they hire for skills rather than degrees, while Harvard research found the change affected fewer than one in 700 hires. The gap exposes a recurring transition problem: organizations can update the language of value faster than their systems recognize it, leaving workers to acquire new skills without a reliable route into opportunity.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7a264ce63c53e5b623df4e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Seventy percent of employers say skills now matter more than degree credentials.",
+        "Harvard researchers found that removing degree requirements changed fewer than one in 700 actual hires.",
+        "A new definition of value matters only when hiring systems and pathways put it into practice."
+      ]
+    },
+    {
+      "title": "Oracle Workers Face Another Round Of Uncertainty",
+      "url": "https://americanbazaaronline.com/2026/08/12/oracle-employees-face-new-layoff-threat-months-after-job-cuts-486255/",
+      "source": "americanbazaaronline.com",
+      "published": "2026-08-12T16:09:49+00:00",
+      "summary": "American Bazaar reports that Oracle employees face the possibility of another layoff round only months after March cuts as the company looks to reduce payroll. Even before the final scope is clear, repeated uncertainty forces workers to plan around decisions they cannot see, underscoring why responsible AI-era restructuring requires transparency and credible transition support.",
+      "imageUrl": "https://americanbazaaronline.com/wp-content/uploads/2026/04/Oracle-Layoff.png",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Oracle employees reportedly face another potential reduction after cuts earlier in the year.",
+        "The company is described as seeking lower payroll costs, while the new round's scope remains uncertain.",
+        "Repeated ambiguity erodes trust and leaves workers carrying the burden of organizational transition."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
