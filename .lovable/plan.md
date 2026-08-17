@@ -45,21 +45,25 @@ This extends the already-approved plan (Homepage Copy Refresh + Brand Rebrand) w
 
 ## Part B: Photography
 
-All ten uploads share the same visual language — intimate editorial portraits shot through vivid bokeh in exactly the brand palette. They become the site's image system.
+Eighteen uploads now share the same visual language — intimate editorial portraits shot through vivid bokeh in exactly the brand palette. They become the site's image system.
 
 ### Hero
 The group portrait (older woman with silver hair, faces around her in hot pink / green / orange) replaces the current hero image. It's the strongest match for "a movement for human potential in the age of AI."
 
 ### Editorial placements
-- **Woman in glasses at a wall of pinned images** → the "Reclaim Yourself" transformation card.
-- **Woman in glasses lit by pink/green screen glow** → the "Conquer AI" card.
-- **Bearded man in knit cap drawing at his desk** → the "Relaunch Yourself" card.
-- **Man in his 30s writing through pink/teal bokeh** → the "steam engine / Just imagine" band.
-- **Woman with a colleague blurred behind her** → the Five Stages section.
+- **Man seen from behind at a wall of pinned images** → opening of the "Who am I now?" block; the back-turned figure reads as the moment before the turn.
+- **Young Black man at a laptop, magenta/teal light, hand at temple** → the layoff / rewritten-resume framing.
+- **Woman at a desk in the evening with handwritten pages** → the "something just isn't right" moment.
+- **Two people seated close in serious conversation** → the "not a self-help program" bridge line.
+- **Woman in her 40s leaning over a worktable of prints** → "Reclaim Yourself" card.
+- **Two professionals side by side at a screen (pink/teal hair, bearded man)** → "Conquer AI" card.
+- **Two professionals leaning over a large table of colorful work** → "Relaunch Yourself" card.
+- **Small group of three around a laptop through heavy bokeh** → the Five Stages section.
+- **Woman in glasses at a wall of pinned images** → the "steam engine / Just imagine" band.
 - **Woman resting her chin on her hand** → the 10 Repurpose Profiles intro.
 - **Asian woman in a studio with green and magenta light** → the Daily Signal teaser.
-- **Black man at a laptop, teal rim light** → the "Who am I now?" moment in the hero copy block.
 - **Silver-haired person in profile against rainbow bokeh** → the About page and quote-block pairing.
+- Remaining portraits held as a library for the Profiles pages, Phases page, and section dividers.
 
 ### Technical handling
 - Every image goes to CDN storage via the assets pipeline as a `.asset.json` pointer, not committed as a binary. Keeps the repo light and delivery fast.
