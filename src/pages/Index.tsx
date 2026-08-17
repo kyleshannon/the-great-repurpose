@@ -353,26 +353,24 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-4 mb-12">
               {phases.map((phase, i) => {
                 const { Icon } = stageIcons[i];
-                const colorClass = `text-${phase.color}`;
-                const bgClass = `bg-${phase.color}/5`;
-                const borderClass = `border-${phase.color}/20`;
+                const colors = colorMap[phase.color];
                 return (
                   <ScrollFadeUp key={phase.number} delay={i * 80}>
                     <Link
                       to={`/phases#${phase.name.toLowerCase().replace(/\s+/g, "-")}`}
-                      className={`group flex gap-5 p-6 rounded-xl border ${borderClass} ${bgClass} hover:border-${phase.color}/40 transition-colors h-full`}
+                      className={`group flex gap-5 p-6 rounded-xl border ${colors.border} ${colors.bg} ${colors.hoverBorder} transition-colors h-full`}
                     >
-                      <div className={`shrink-0 ${colorClass}`}>
+                      <div className={`shrink-0 ${colors.text}`}>
                         <Icon className="w-10 h-10" />
                       </div>
                       <div>
                         <div className="flex items-baseline gap-3 mb-1">
-                          <span className={`font-sans text-xs uppercase tracking-widest font-semibold ${colorClass}`}>
+                          <span className={`font-sans text-xs uppercase tracking-widest font-semibold ${colors.text}`}>
                             {phase.number}
                           </span>
                           <h3 className="font-display text-aubergine text-xl">{phase.name}</h3>
                         </div>
-                        <p className={`font-body ${colorClass} italic text-base mb-2`}>"{phase.tagline}"</p>
+                        <p className={`font-body ${colors.text} italic text-base mb-2`}>"{phase.tagline}"</p>
                         <p className="font-body text-aubergine/70 text-sm leading-relaxed">{phase.description}</p>
                       </div>
                     </Link>
