@@ -41,11 +41,11 @@ const SignalDetail = () => {
 
   if (signal === undefined) {
     return (
-      <div className="min-h-screen bg-navy text-cream">
+      <div className="min-h-screen bg-aubergine text-soft-white">
         <Navigation />
         <main id="main-content" className="pt-32 pb-20 px-6">
           <div className="max-w-3xl mx-auto">
-            <p className="font-sans text-cream/60">Loading Signal…</p>
+            <p className="font-sans text-soft-white/60">Loading Signal…</p>
           </div>
         </main>
         <Footer />
@@ -55,7 +55,7 @@ const SignalDetail = () => {
 
   if (!signal) {
     return (
-      <div className="min-h-screen bg-navy text-cream">
+      <div className="min-h-screen bg-aubergine text-soft-white">
         <Helmet>
           <title>Signal not found — Daily Signal</title>
           <meta name="robots" content="noindex" />
@@ -63,8 +63,8 @@ const SignalDetail = () => {
         <Navigation />
         <main id="main-content" className="pt-32 pb-20 px-6">
           <div className="max-w-3xl mx-auto">
-            <h1 className="font-serif text-cream text-4xl mb-4">Signal not found</h1>
-            <Link to="/signals" className="text-coral hover:underline font-sans">
+            <h1 className="font-display text-soft-white text-4xl mb-4">Signal not found</h1>
+            <Link to="/signals" className="text-indigo hover:underline font-sans">
               Return to the Daily Signal archive
             </Link>
           </div>
@@ -96,7 +96,7 @@ const SignalDetail = () => {
   };
 
   return (
-    <div className="min-h-screen bg-navy text-cream">
+    <div className="min-h-screen bg-aubergine text-soft-white">
       <Helmet>
         <title>{signal.title} — Daily Signal</title>
         <meta name="description" content={description} />
@@ -112,34 +112,34 @@ const SignalDetail = () => {
       <Navigation />
       <main id="main-content">
         <article>
-          <section className="bg-navy constellation-bg pt-32 pb-16 px-6">
+          <section className="bg-aubergine constellation-bg pt-32 pb-16 px-6">
             <div className="max-w-4xl mx-auto">
               <ScrollFadeUp>
                 <Link
                   to="/signals"
-                  className="font-sans text-coral text-xs uppercase tracking-widest font-medium hover:underline"
+                  className="font-sans text-indigo text-xs uppercase tracking-widest font-medium hover:underline"
                 >
                   Daily Signal
                 </Link>
-                <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mt-5 mb-5">
+                <h1 className="font-display text-soft-white text-4xl md:text-5xl leading-tight mt-5 mb-5">
                   {signal.title}
                 </h1>
-                <p className="font-sans text-cream/60 text-base">
+                <p className="font-sans text-soft-white/60 text-base">
                   {formatSignalDate(signal.date, { weekday: "long" })}
                 </p>
               </ScrollFadeUp>
             </div>
           </section>
 
-          <section className="bg-cream py-14 md:py-20 px-6">
+          <section className="bg-soft-white py-14 md:py-20 px-6">
             <div className="max-w-4xl mx-auto">
               {signal.pattern && (
                 <ScrollFadeUp>
-                  <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-4">
+                  <p className="font-sans text-indigo text-xs uppercase tracking-widest font-medium mb-4">
                     Pattern of the Day
                   </p>
-                  <blockquote className="border-l-4 border-coral bg-navy/5 pl-6 pr-6 py-5 mb-12 rounded-r-lg">
-                    <p className="font-serif text-navy text-2xl italic leading-relaxed">
+                  <blockquote className="border-l-4 border-indigo bg-aubergine/5 pl-6 pr-6 py-5 mb-12 rounded-r-lg">
+                    <p className="font-display text-aubergine text-2xl italic leading-relaxed">
                       {signal.pattern}
                     </p>
                   </blockquote>
@@ -155,12 +155,12 @@ const SignalDetail = () => {
                           <Link
                             to={getStagePath(stage)}
                             title={getStageDefinition(stage)}
-                            className="font-sans text-xs uppercase tracking-widest text-navy/65 border border-navy/15 rounded-full px-3 py-1 hover:border-coral hover:text-coral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/70 transition-colors"
+                            className="font-sans text-xs uppercase tracking-widest text-aubergine/65 border border-aubergine/15 rounded-full px-3 py-1 hover:border-indigo hover:text-indigo focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo/70 transition-colors"
                           >
                             {stage}
                           </Link>
                         </TooltipTrigger>
-                        <TooltipContent className="max-w-xs border-coral/30 bg-navy px-4 py-3 font-sans text-sm leading-relaxed text-cream">
+                        <TooltipContent className="max-w-xs border-indigo/30 bg-aubergine px-4 py-3 font-sans text-sm leading-relaxed text-soft-white">
                           {getStageDefinition(stage)}
                         </TooltipContent>
                       </Tooltip>
@@ -170,13 +170,13 @@ const SignalDetail = () => {
               )}
 
               <ScrollFadeUp delay={120}>
-                <h2 className="font-serif text-navy text-3xl mb-8">Five Stories</h2>
+                <h2 className="font-display text-aubergine text-3xl mb-8">Five Stories</h2>
               </ScrollFadeUp>
 
               <div className="space-y-8">
                 {signal.stories.map((story, index) => (
                   <ScrollFadeUp key={`${story.url}-${index}`} delay={(index % 5) * 60}>
-                    <div className="group rounded-lg border border-navy/10 bg-navy/[0.03] p-5 transition-colors hover:border-coral/70">
+                    <div className="group rounded-lg border border-aubergine/10 bg-aubergine/[0.03] p-5 transition-colors hover:border-indigo/70">
                       <div className="grid gap-5 md:grid-cols-[180px_1fr]">
                         <a
                           href={story.url}
@@ -194,26 +194,26 @@ const SignalDetail = () => {
                               image.dataset.fallbackApplied = "true";
                               image.src = fallbackSignalImage;
                             }}
-                            className="h-36 w-full rounded-md object-cover bg-navy/10 transition-opacity hover:opacity-90"
+                            className="h-36 w-full rounded-md object-cover bg-aubergine/10 transition-opacity hover:opacity-90"
                           />
                         </a>
                         <div>
-                          <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-2">
+                          <p className="font-sans text-indigo text-xs uppercase tracking-widest font-medium mb-2">
                             {String(index + 1).padStart(2, "0")}
                           </p>
                           <a href={story.url} target="_blank" rel="noopener noreferrer">
-                            <h3 className="font-serif text-navy text-xl md:text-2xl leading-snug mb-2 hover:text-coral transition-colors">
+                            <h3 className="font-display text-aubergine text-xl md:text-2xl leading-snug mb-2 hover:text-indigo transition-colors">
                               {story.title}
                             </h3>
                           </a>
-                          <p className="font-sans text-navy/45 text-sm mb-3">{story.source}</p>
+                          <p className="font-sans text-aubergine/45 text-sm mb-3">{story.source}</p>
                           {story.summary && (
-                            <p className="font-sans text-navy/70 text-base leading-relaxed mb-4">
+                            <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-4">
                               {story.summary}
                             </p>
                           )}
                           {story.keyPoints.length > 0 && (
-                            <ul className="font-sans text-navy/65 text-sm leading-relaxed space-y-1 mb-4 list-disc pl-5">
+                            <ul className="font-sans text-aubergine/65 text-sm leading-relaxed space-y-1 mb-4 list-disc pl-5">
                               {story.keyPoints.map((point) => (
                                 <li key={point}>{point}</li>
                               ))}
@@ -227,12 +227,12 @@ const SignalDetail = () => {
                                     <Link
                                       to={getStagePath(stage)}
                                       title={getStageDefinition(stage)}
-                                      className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1 hover:border-coral hover:text-coral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/70 transition-colors"
+                                      className="font-sans text-[10px] uppercase tracking-widest text-aubergine/55 border border-aubergine/15 rounded-full px-2.5 py-1 hover:border-indigo hover:text-indigo focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo/70 transition-colors"
                                     >
                                       {stage}
                                     </Link>
                                   </TooltipTrigger>
-                                  <TooltipContent className="max-w-xs border-coral/30 bg-navy px-4 py-3 font-sans text-sm leading-relaxed text-cream">
+                                  <TooltipContent className="max-w-xs border-indigo/30 bg-aubergine px-4 py-3 font-sans text-sm leading-relaxed text-soft-white">
                                     {getStageDefinition(stage)}
                                   </TooltipContent>
                                 </Tooltip>
@@ -243,7 +243,7 @@ const SignalDetail = () => {
                             href={story.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 font-sans text-sm text-coral hover:underline"
+                            className="inline-flex items-center gap-2 font-sans text-sm text-indigo hover:underline"
                           >
                             Read source <ExternalLink size={14} aria-hidden="true" />
                           </a>
@@ -258,10 +258,10 @@ const SignalDetail = () => {
         </article>
 
         {related.length > 0 && (
-          <section className="bg-navy constellation-bg py-16 px-6">
+          <section className="bg-aubergine constellation-bg py-16 px-6">
             <div className="max-w-4xl mx-auto">
               <ScrollFadeUp>
-                <h2 className="font-serif text-cream text-2xl md:text-3xl mb-8">
+                <h2 className="font-display text-soft-white text-2xl md:text-3xl mb-8">
                   Related Briefings
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -269,12 +269,12 @@ const SignalDetail = () => {
                     <Link
                       key={item.slug}
                       to={`/signals/${item.slug}`}
-                      className="border border-cream/10 rounded-lg p-5 hover:border-coral/60 transition-colors bg-cream/[0.03]"
+                      className="border border-soft-white/10 rounded-lg p-5 hover:border-indigo/60 transition-colors bg-soft-white/[0.03]"
                     >
-                      <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-3">
+                      <p className="font-sans text-indigo text-xs uppercase tracking-widest font-medium mb-3">
                         {formatSignalDate(item.date)}
                       </p>
-                      <h3 className="font-serif text-cream text-lg leading-snug">
+                      <h3 className="font-display text-soft-white text-lg leading-snug">
                         {item.title}
                       </h3>
                     </Link>

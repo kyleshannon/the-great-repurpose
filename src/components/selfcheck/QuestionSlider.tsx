@@ -86,12 +86,12 @@ export default function QuestionSlider({
       <div
         className="w-full h-2.5 rounded-full"
         style={{
-          background: `linear-gradient(to right, hsl(145 25% 50%), hsl(40 25% 90%))`,
+          background: `linear-gradient(to right, hsl(var(--aubergine) / 0.4), hsl(var(--indigo) / 0.6))`,
         }}
       />
       {/* Thumb */}
       <div
-        className="absolute w-6 h-6 rounded-full bg-coral glow-coral-sm pointer-events-none"
+        className="absolute w-6 h-6 rounded-full bg-indigo glow-indigo-sm pointer-events-none"
         style={{
           left: `calc(${pct}% - 12px)`,
           top: "50%",

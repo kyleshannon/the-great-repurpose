@@ -19,11 +19,11 @@ import { generateReportPDF } from "@/lib/generateReport";
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
 
 const dimensionMeta: Record<DimensionKey, { label: string; stage: string }> = {
-  identity:        { label: "Unhook Identity",     stage: "Stage 1 — Disorientation" },
-  value:           { label: "Reclaim Value",       stage: "Stage 2 — Excavation" },
-  purpose:         { label: "Find Your Purpose",   stage: "Stage 3 — Reorientation" },
-  ai_relationship: { label: "Discover AI's Power", stage: "Stage 4 — Reckoning" },
-  creative_action: { label: "Start Creating",      stage: "Stage 5 — Authorship" },
+  identity:        { label: "Unhook Identity",     stage: "I'm not my job." },
+  value:           { label: "Reclaim Value",       stage: "Here's Who I Am." },
+  purpose:         { label: "Discover Purpose",    stage: "What matters to me." },
+  ai_relationship: { label: "Become AI Ready",     stage: "Understand AI's power to amplify your ideas." },
+  creative_action: { label: "Relaunch Yourself",   stage: "Turn who you are into work, opportunity, and income." },
 };
 
 const dimensionOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];
@@ -76,15 +76,15 @@ function InterpretationRenderer({ text, streaming }: { text: string; streaming: 
       {sections.map((section, i) => (
         <div key={i}>
           {section.title && (
-            <h3 className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
+            <h3 className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
               {section.title}
             </h3>
           )}
-          <div className="font-sans text-cream/80 text-base leading-relaxed space-y-4">
+          <div className="font-sans text-soft-white/80 text-base leading-relaxed space-y-4">
             {section.body.split("\n\n").filter(Boolean).map((para, j) => (
               <p key={j} dangerouslySetInnerHTML={{
                 __html: para
-                  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-coral hover:underline">$1</a>')
+                  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-indigo hover:underline">$1</a>')
                   .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
               }} />
             ))}
@@ -92,7 +92,7 @@ function InterpretationRenderer({ text, streaming }: { text: string; streaming: 
         </div>
       ))}
       {streaming && (
-        <span className="inline-block w-2 h-4 bg-coral animate-pulse ml-1" />
+        <span className="inline-block w-2 h-4 bg-indigo animate-pulse ml-1" />
       )}
     </div>
   );
@@ -104,11 +104,11 @@ function GeneratingIndicator() {
   return (
     <div className="flex flex-col items-center gap-4 py-12">
       <div className="flex gap-1.5">
-        <span className="w-2 h-2 rounded-full bg-coral animate-bounce" style={{ animationDelay: "0ms" }} />
-        <span className="w-2 h-2 rounded-full bg-coral animate-bounce" style={{ animationDelay: "150ms" }} />
-        <span className="w-2 h-2 rounded-full bg-coral animate-bounce" style={{ animationDelay: "300ms" }} />
+        <span className="w-2 h-2 rounded-full bg-indigo animate-bounce" style={{ animationDelay: "0ms" }} />
+        <span className="w-2 h-2 rounded-full bg-indigo animate-bounce" style={{ animationDelay: "150ms" }} />
+        <span className="w-2 h-2 rounded-full bg-indigo animate-bounce" style={{ animationDelay: "300ms" }} />
       </div>
-      <p className="font-sans text-cream/50 text-sm">Writing your report…</p>
+      <p className="font-sans text-soft-white/50 text-sm">Writing your report…</p>
     </div>
   );
 }
@@ -208,9 +208,9 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
   };
 
   return (
-    <div className="border border-cream/10 rounded-xl p-8 text-center bg-cream/[0.03]">
-      <h2 className="font-serif text-cream text-xl mb-2">Your full Great Repurpose Profile is ready.</h2>
-      <p className="font-sans text-cream/50 text-sm mb-6 max-w-md mx-auto">
+    <div className="border border-soft-white/10 rounded-xl p-8 text-center bg-soft-white/[0.03]">
+      <h2 className="font-display text-soft-white text-xl mb-2">Your full Great Repurpose Profile is ready.</h2>
+      <p className="font-sans text-soft-white/50 text-sm mb-6 max-w-md mx-auto">
         We'll show you what your profile means, where you're strongest, what to watch out for — and the one thing that would help you most right now.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -222,17 +222,17 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
-          className="flex-1 bg-navy border border-cream/20 text-cream placeholder:text-cream/40 rounded-lg px-4 py-3 font-sans text-base focus:outline-none focus:border-coral transition-colors"
+          className="flex-1 bg-aubergine border border-soft-white/20 text-soft-white placeholder:text-soft-white/40 rounded-lg px-4 py-3 font-sans text-base focus:outline-none focus:border-indigo transition-colors"
         />
         <button
           type="submit"
           disabled={submitting}
-          className="bg-coral text-cream font-sans font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
+          className="bg-indigo text-soft-white font-sans font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
         >
           {submitting ? "Saving..." : "Show Me →"}
         </button>
       </form>
-      <p className="text-cream/40 text-xs mt-4 font-sans max-w-md mx-auto leading-relaxed">
+      <p className="text-soft-white/40 text-xs mt-4 font-sans max-w-md mx-auto leading-relaxed">
         By submitting your email, you agree to receive emails from The AI Salon. You can unsubscribe at any time.
       </p>
     </div>
@@ -354,8 +354,8 @@ const ResultsPreview = () => {
 
   if (loading || !scores || !archetype) {
     return (
-      <div className="min-h-screen bg-navy text-cream flex items-center justify-center">
-        <p className="font-sans text-cream/50">Loading your results…</p>
+      <div className="min-h-screen bg-aubergine text-soft-white flex items-center justify-center">
+        <p className="font-sans text-soft-white/50">Loading your results…</p>
       </div>
     );
   }
@@ -494,21 +494,21 @@ const ResultsPreview = () => {
   );
 
   return (
-    <div className="min-h-screen bg-navy text-cream">
+    <div className="min-h-screen bg-aubergine text-soft-white">
       <Navigation />
       <main id="main-content">
 
       {!submitted ? (
         /* ── Pre-email: simple prompt + email gate ── */
-        <section className="bg-navy min-h-screen flex items-center justify-center px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-16">
+        <section className="bg-aubergine min-h-screen flex items-center justify-center px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-16">
           <div className="max-w-2xl mx-auto w-full text-center">
-            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">
+            <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">
               Your Results
             </p>
-            <h1 className="font-serif text-cream text-4xl md:text-5xl mb-4">
+            <h1 className="font-display text-soft-white text-4xl md:text-5xl mb-4">
               Your Great Repurpose Report is ready.
             </h1>
-            <p className="font-sans text-cream/60 text-base mb-10">
+            <p className="font-sans text-soft-white/60 text-base mb-10">
               Enter your email to unlock your personalized report — including your Great Repurpose Profile, where you stand across the five dimensions, and what to do next.
             </p>
 
@@ -521,25 +521,25 @@ const ResultsPreview = () => {
           <div ref={reportRef}>
 
           {/* ── Archetype hero + radar ── */}
-          <section className="bg-navy pt-20 md:pt-28 pb-8 md:pb-12 px-4 md:px-6">
+          <section className="bg-aubergine pt-20 md:pt-28 pb-8 md:pb-12 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-3">Your Great Repurpose Profile</p>
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">Your Great Repurpose Profile</p>
               {(() => {
                 const cat = categories[archetype.category];
                 const isAmplifier = archetype.category === "capstone";
                 return (
                   <>
-                    <h1 className="font-serif text-cream text-3xl md:text-4xl leading-tight mb-3">
+                    <h1 className="font-display text-soft-white text-3xl md:text-4xl leading-tight mb-3">
                       {isAmplifier ? (
                         <>You've made it through. <span className="block md:inline">Meet <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
                       ) : (
                         <>You're a <span className="font-semibold">{cat.label}</span>. <span className="block md:inline">Specifically: <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
                       )}
                     </h1>
-                    <p className="font-sans text-cream/60 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-3">
+                    <p className="font-sans text-soft-white/60 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-3">
                       {cat.description}
                     </p>
-                    <p className="font-serif text-cream/70 text-lg italic mb-10">
+                    <p className="font-display text-soft-white/70 text-lg italic mb-10">
                       {archetype.tagline}
                     </p>
                   </>
@@ -563,44 +563,44 @@ const ResultsPreview = () => {
                   />
                 </RadarChart>
               </ResponsiveContainer>
-              <p className="text-cream/40 text-xs font-sans mt-2">Your shape across the five dimensions</p>
+              <p className="text-soft-white/40 text-xs font-sans mt-2">Your shape across the five dimensions</p>
             </div>
           </section>
 
 
           {/* ── About this profile (static description) ── */}
-          <section className="bg-navy py-12 md:py-16 px-6">
+          <section className="bg-aubergine py-12 md:py-16 px-6">
             <div className="max-w-2xl mx-auto">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
                 About {archetype.name}
               </p>
-              <p className="font-sans text-cream/80 text-base leading-relaxed mb-4">
+              <p className="font-sans text-soft-white/80 text-base leading-relaxed mb-4">
                 {archetype.description}
               </p>
-              <p className="font-sans text-cream/60 text-base leading-relaxed italic">
+              <p className="font-sans text-soft-white/60 text-base leading-relaxed italic">
                 {archetype.vulnerability}
               </p>
             </div>
           </section>
 
           {/* ── Primary recommendation (inside dark report) ── */}
-          <section className="bg-navy py-12 md:py-16 px-6">
+          <section className="bg-aubergine py-12 md:py-16 px-6">
             <div className="max-w-2xl mx-auto">
-              <div className="border border-cream/10 rounded-xl p-8 md:p-10 bg-cream/[0.03]">
-                <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4">
+              <div className="border border-soft-white/10 rounded-xl p-8 md:p-10 bg-soft-white/[0.03]">
+                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
                   Recommended for You
                 </p>
-                <h3 className="font-serif text-cream text-xl md:text-2xl mb-3">
+                <h3 className="font-display text-soft-white text-xl md:text-2xl mb-3">
                   {archetype.salonEntry.activity}
                 </h3>
-                <p className="font-sans text-cream/60 text-base leading-relaxed mb-6">
+                <p className="font-sans text-soft-white/60 text-base leading-relaxed mb-6">
                   {archetype.salonEntry.body}
                 </p>
                 <a
                   href={archetype.salonEntry.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block border border-coral text-coral font-sans text-sm font-medium px-8 py-3 rounded-full hover:bg-coral hover:text-cream transition-colors"
+                  className="inline-block border border-indigo text-indigo font-sans text-sm font-medium px-8 py-3 rounded-full hover:bg-indigo hover:text-soft-white transition-colors"
                 >
                   {archetype.salonEntry.activity} →
                 </a>
@@ -609,14 +609,14 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── AI-Generated Narrative Report ── */}
-          <section className="bg-navy py-12 md:py-16 px-6 border-t border-cream/5">
+          <section className="bg-aubergine py-12 md:py-16 px-6 border-t border-soft-white/5">
             <div className="max-w-2xl mx-auto">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6">
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-6">
                 Your Personalized Report
               </p>
 
               {streamError ? (
-                <p className="font-sans text-cream/60 text-base text-center">{streamError}</p>
+                <p className="font-sans text-soft-white/60 text-base text-center">{streamError}</p>
               ) : !interpretationText && streaming ? (
                 <GeneratingIndicator />
               ) : interpretationText ? (
@@ -631,9 +631,9 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── Dimension breakdown (collapsible) ── */}
-          <section className="bg-navy py-12 px-6 border-t border-cream/5">
+          <section className="bg-aubergine py-12 px-6 border-t border-soft-white/5">
             <div className="max-w-4xl mx-auto">
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-6 text-center">
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-6 text-center">
                 Dimension by Dimension
               </p>
               <div className="space-y-3">
@@ -641,31 +641,31 @@ const ResultsPreview = () => {
                   const score = scores[dim];
                   const isOpen = expandedDims.has(dim);
                   return (
-                    <div key={dim} className="border border-cream/10 rounded-lg bg-cream/[0.03]">
+                    <div key={dim} className="border border-soft-white/10 rounded-lg bg-soft-white/[0.03]">
                       <button
                         onClick={() => toggleDim(dim)}
                         className="w-full flex items-center justify-between p-6 text-left"
                       >
                         <div>
-                          <p className="font-sans text-sm uppercase tracking-widest text-coral font-medium">
+                          <p className="font-sans text-sm uppercase tracking-widest text-indigo font-medium">
                             {dimensionMeta[dim].label}
                           </p>
-                          <p className="font-sans text-xs text-cream/40">
+                          <p className="font-sans text-xs text-soft-white/40">
                             {dimensionMeta[dim].stage}
                           </p>
                         </div>
                         <div className="flex items-center gap-3">
-                          <p className="font-serif text-2xl font-bold text-cream">
+                          <p className="font-display text-2xl font-bold text-soft-white">
                             {score.toFixed(1)}
                           </p>
                           <ChevronDown
-                            className={`w-4 h-4 text-cream/40 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                            className={`w-4 h-4 text-soft-white/40 transition-transform ${isOpen ? "rotate-180" : ""}`}
                           />
                         </div>
                       </button>
                       {isOpen && (
                         <div className="px-6 pb-6">
-                          <div className="relative h-2 bg-cream/10 rounded-full mb-4 overflow-hidden">
+                          <div className="relative h-2 bg-soft-white/10 rounded-full mb-4 overflow-hidden">
                             <div
                               className="absolute inset-y-0 left-0 rounded-full"
                               style={{
@@ -674,7 +674,7 @@ const ResultsPreview = () => {
                               }}
                             />
                           </div>
-                          <p className="font-sans text-sm text-cream/60">
+                          <p className="font-sans text-sm text-soft-white/60">
                             Score: {score.toFixed(1)} / 10
                           </p>
                         </div>
@@ -692,12 +692,12 @@ const ResultsPreview = () => {
           {/* ── Secondary recommendations (light section) ── */}
 
           {/* Secondary recommendations with descriptions */}
-          <section className="bg-cream py-16 px-6">
+          <section className="bg-soft-white py-16 px-6">
             <div className="max-w-4xl mx-auto">
-              <p className="font-sans text-navy/70 text-base leading-relaxed mb-4 text-center max-w-lg mx-auto">
+              <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-4 text-center max-w-lg mx-auto">
                 Making this transition on your own isn't the move. Here are some other ways to get involved with the AI Salon community.
               </p>
-              <p className="text-coral font-sans text-xs uppercase tracking-widest mb-8 text-center">Also worth exploring</p>
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-8 text-center">Also worth exploring</p>
               <div className="space-y-4">
                 {secondaryActivities.map(({ label, desc, href }) => (
                   <a
@@ -705,10 +705,10 @@ const ResultsPreview = () => {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block border border-navy/20 rounded-lg p-6 hover:border-coral/40 transition-colors group"
+                    className="block border border-aubergine/20 rounded-lg p-6 hover:border-indigo/40 transition-colors group"
                   >
-                    <h3 className="font-serif text-navy text-base mb-1 group-hover:text-coral transition-colors">{label}</h3>
-                    <p className="font-sans text-navy/60 text-sm">{desc}</p>
+                    <h3 className="font-display text-aubergine text-base mb-1 group-hover:text-indigo transition-colors">{label}</h3>
+                    <p className="font-sans text-aubergine/60 text-sm">{desc}</p>
                   </a>
                 ))}
               </div>
@@ -716,40 +716,40 @@ const ResultsPreview = () => {
           </section>
 
           {/* Share + Download */}
-          <section className="bg-navy py-16 px-6">
+          <section className="bg-aubergine py-16 px-6">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-serif text-cream text-2xl mb-3">Share your Great Repurpose Profile.</h2>
-              <p className="font-sans text-cream/50 text-sm mb-4 whitespace-pre-line max-w-md mx-auto">
+              <h2 className="font-display text-soft-white text-2xl mb-3">Share your Great Repurpose Profile.</h2>
+              <p className="font-sans text-soft-white/50 text-sm mb-4 whitespace-pre-line max-w-md mx-auto">
                 {shareText}
               </p>
-               <Link to="/types" className="inline-block text-coral font-sans text-sm hover:underline mb-8">
+               <Link to="/types" className="inline-block text-indigo font-sans text-sm hover:underline mb-8">
                  Explore all 10 Great Repurpose Profiles →
               </Link>
               <div className="flex flex-wrap justify-center gap-4">
                 <button
                   onClick={handleDownloadPDF}
                   disabled={generating}
-                  className="bg-coral text-cream font-sans text-sm font-medium px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
+                  className="bg-indigo text-soft-white font-sans text-sm font-medium px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
                 >
                   {generating ? "Generating…" : "Download PDF Report"}
                 </button>
                 {resultUrl && (
                   <button
                     onClick={handleCopyLink}
-                    className="border border-cream/20 text-cream font-sans text-sm px-6 py-3 rounded-full hover:border-cream/60 transition-colors"
+                    className="border border-soft-white/20 text-soft-white font-sans text-sm px-6 py-3 rounded-full hover:border-soft-white/60 transition-colors"
                   >
                     {copied ? "Copied ✓" : "Copy Link"}
                   </button>
                 )}
                 <button
                   onClick={handleShareLinkedIn}
-                  className="border border-cream/20 text-cream font-sans text-sm px-6 py-3 rounded-full hover:border-cream/60 transition-colors"
+                  className="border border-soft-white/20 text-soft-white font-sans text-sm px-6 py-3 rounded-full hover:border-soft-white/60 transition-colors"
                 >
                   Share on LinkedIn
                 </button>
                 <button
                   onClick={handleShareX}
-                  className="border border-cream/20 text-cream font-sans text-sm px-6 py-3 rounded-full hover:border-cream/60 transition-colors"
+                  className="border border-soft-white/20 text-soft-white font-sans text-sm px-6 py-3 rounded-full hover:border-soft-white/60 transition-colors"
                 >
                   Share on X
                 </button>

@@ -34,9 +34,9 @@ export type SignalIndexEntry = Pick<
 export const canonicalStages = [
   "Unhook Identity",
   "Reclaim Value",
-  "Find Your Purpose",
-  "Discover AI's Power",
-  "Start Creating",
+  "Discover Purpose",
+  "Become AI Ready",
+  "Relaunch Yourself",
 ] as const;
 
 export const fallbackSignalImagePath = "/signals/tgr-signal-thumbnail.jpg";

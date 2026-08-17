@@ -10,11 +10,11 @@ const DIVIDER = [60, 62, 64] as const;     // subtle line
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
 
 const dimensionLabels: Record<DimensionKey, { label: string; stage: string }> = {
-  identity:        { label: "Unhook Identity",     stage: "Stage 1 — Disorientation" },
-  value:           { label: "Reclaim Value",       stage: "Stage 2 — Excavation" },
-  purpose:         { label: "Find Your Purpose",   stage: "Stage 3 — Reorientation" },
-  ai_relationship: { label: "Discover AI's Power", stage: "Stage 4 — Reckoning" },
-  creative_action: { label: "Start Creating",      stage: "Stage 5 — Authorship" },
+  identity:        { label: "Unhook Identity",     stage: "I'm not my job." },
+  value:           { label: "Reclaim Value",       stage: "Here's Who I Am." },
+  purpose:         { label: "Discover Purpose",    stage: "What matters to me." },
+  ai_relationship: { label: "Become AI Ready",     stage: "Understand AI's power to amplify your ideas." },
+  creative_action: { label: "Relaunch Yourself",   stage: "Turn who you are into work, opportunity, and income." },
 };
 
 const dimOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];

@@ -1,81 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Figtree:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-
 @layer base {
   :root {
-    /* The Great Repurpose Design System — Olive + Sage */
-    --background: 70 10% 10%;           /* Dark olive-black */
-    --foreground: 40 25% 90%;           /* Warm cream */
+    /* The Great Repurpose Design System — Brand Board 2026 */
+    --background: 0 4% 95%;            /* Soft White #F4F3F3 */
+    --foreground: 223 96% 10%;         /* Aubergine-Black #010F32 */
 
-    --card: 70 10% 13%;
-    --card-foreground: 40 25% 90%;
+    --card: 0 0% 98%;
+    --card-foreground: 223 96% 10%;
 
-    --popover: 70 10% 10%;
-    --popover-foreground: 40 25% 90%;
+    --popover: 0 4% 95%;
+    --popover-foreground: 223 96% 10%;
 
-    --primary: 145 25% 50%;             /* Sage green */
-    --primary-foreground: 70 10% 10%;
+    --primary: 234 84% 51%;            /* Electric Indigo #192EEB */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 70 10% 16%;
-    --secondary-foreground: 40 25% 90%;
+    --secondary: 0 0% 92%;
+    --secondary-foreground: 223 96% 10%;
 
-    --muted: 70 10% 16%;
-    --muted-foreground: 40 15% 65%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 223 40% 35%;
 
-    --accent: 145 25% 50%;
-    --accent-foreground: 70 10% 10%;
+    --accent: 179 94% 37%;             /* Aqua #06B5B2 */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 40 25% 90%;
+    --destructive: 7 95% 59%;          /* Poppy #FA4B35 */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 70 10% 20%;
-    --input: 70 10% 16%;
-    --ring: 145 25% 50%;
+    --border: 223 40% 88%;
+    --input: 223 40% 88%;
+    --ring: 234 84% 51%;
 
-    --radius: 0.375rem;
+    --radius: 0.5rem;
 
     /* Brand tokens */
-    --navy: 70 10% 10%;                 /* Dark olive-black */
-    --cream: 40 25% 90%;                /* Warm cream */
-    --coral: 145 25% 50%;               /* Sage green (replaces coral) */
-    --sage: 145 25% 50%;                /* Sage green */
-    --sage-light: 145 20% 65%;          /* Lighter sage */
-    --mint: 155 20% 55%;                /* Muted sage-mint */
-    --periwinkle: 145 15% 70%;          /* Muted green-gray */
-    --amber: 45 40% 55%;                /* Warm muted gold */
+    --indigo: 234 84% 51%;             /* Electric Indigo — Trust · Vision · Future */
+    --aqua: 179 94% 37%;               /* Aqua — Clarity · Flow · Renewal */
+    --orchid: 271 51% 55%;             /* Orchid — Imagination · Depth */
+    --citrus: 44 84% 54%;              /* Citrus — Optimism · Energy */
+    --poppy: 7 95% 59%;                /* Poppy — Courage · Momentum */
+    --soft-white: 0 4% 95%;            /* Soft White — Space · Balance · Calm */
+    --aubergine: 223 96% 10%;          /* Aubergine-Black — Authority · Clarity · Depth */
+
+    /* Legacy aliases — remapped so existing classes keep resolving */
+    --navy: var(--aubergine);
+    --cream: var(--soft-white);
+    --coral: var(--indigo);
+    --sage: var(--aqua);
+    --sage-light: 179 50% 55%;
+    --mint: var(--aqua);
+    --periwinkle: var(--orchid);
+    --amber: var(--citrus);
+    --amber-brand: var(--citrus);
 
     /* Sidebar */
-    --sidebar-background: 70 10% 8%;
-    --sidebar-foreground: 40 25% 90%;
-    --sidebar-primary: 145 25% 50%;
-    --sidebar-primary-foreground: 70 10% 10%;
-    --sidebar-accent: 70 10% 14%;
-    --sidebar-accent-foreground: 40 25% 90%;
-    --sidebar-border: 70 10% 18%;
-    --sidebar-ring: 145 25% 50%;
+    --sidebar-background: 223 96% 10%;
+    --sidebar-foreground: 0 4% 95%;
+    --sidebar-primary: 234 84% 51%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 223 50% 16%;
+    --sidebar-accent-foreground: 0 4% 95%;
+    --sidebar-border: 223 40% 18%;
+    --sidebar-ring: 234 84% 51%;
   }
 
-  .light {
-    --background: 40 25% 90%;
-    --foreground: 70 10% 10%;
-    --card: 40 25% 94%;
-    --card-foreground: 70 10% 10%;
-    --popover: 40 25% 90%;
-    --popover-foreground: 70 10% 10%;
-    --primary: 145 25% 50%;
-    --primary-foreground: 40 25% 94%;
-    --secondary: 40 15% 82%;
-    --secondary-foreground: 70 10% 10%;
-    --muted: 40 15% 82%;
-    --muted-foreground: 70 10% 40%;
-    --accent: 40 15% 82%;
-    --accent-foreground: 70 10% 10%;
-    --border: 40 15% 78%;
-    --input: 40 15% 78%;
-    --ring: 145 25% 50%;
+  .dark {
+    --background: 223 96% 10%;
+    --foreground: 0 4% 95%;
+    --card: 223 50% 13%;
+    --card-foreground: 0 4% 95%;
+    --popover: 223 96% 10%;
+    --popover-foreground: 0 4% 95%;
+    --primary: 234 84% 51%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 223 40% 16%;
+    --secondary-foreground: 0 4% 95%;
+    --muted: 223 40% 16%;
+    --muted-foreground: 0 4% 70%;
+    --accent: 179 94% 37%;
+    --accent-foreground: 0 0% 100%;
+    --border: 223 40% 20%;
+    --input: 223 40% 20%;
+    --ring: 234 84% 51%;
+
+    --sidebar-background: 223 96% 8%;
+    --sidebar-foreground: 0 4% 95%;
+    --sidebar-primary: 234 84% 51%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 223 40% 14%;
+    --sidebar-accent-foreground: 0 4% 95%;
+    --sidebar-border: 223 40% 18%;
+    --sidebar-ring: 234 84% 51%;
   }
 }
 
@@ -86,19 +105,21 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Figtree', 'Inter', sans-serif;
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.65;
   }
 
   h1, h2, h3, h4 {
-    font-family: Georgia, 'Times New Roman', serif;
-    line-height: 1.2;
+    font-family: 'Space Grotesk', 'PP Neue Montreal', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 
   /* Skip to content link */
   .skip-to-content {
-    @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-coral focus:text-cream focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-sans;
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-indigo focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-sans;
   }
 
   /* Focus visible styles for all interactive elements */
@@ -108,86 +129,77 @@
   select:focus-visible,
   textarea:focus-visible,
   [tabindex]:focus-visible {
-    outline: 2px solid hsl(var(--coral));
+    outline: 2px solid hsl(var(--indigo));
     outline-offset: 2px;
   }
 }
 
 @layer utilities {
-  .font-serif {
-    font-family: Georgia, 'Times New Roman', serif;
+  .font-display {
+    font-family: 'Space Grotesk', 'PP Neue Montreal', sans-serif;
   }
 
-  .font-sans {
-    font-family: 'Inter', sans-serif;
+  .font-body {
+    font-family: 'Figtree', 'Inter', sans-serif;
   }
 
-  .text-navy {
-    color: hsl(var(--navy));
-  }
+  /* Brand colors */
+  .text-indigo { color: hsl(var(--indigo)); }
+  .bg-indigo { background-color: hsl(var(--indigo)); }
+  .bg-indigo\/5 { background-color: hsl(var(--indigo) / 0.05); }
+  .text-aqua { color: hsl(var(--aqua)); }
+  .bg-aqua { background-color: hsl(var(--aqua)); }
+  .bg-aqua\/5 { background-color: hsl(var(--aqua) / 0.05); }
+  .text-orchid { color: hsl(var(--orchid)); }
+  .bg-orchid { background-color: hsl(var(--orchid)); }
+  .bg-orchid\/5 { background-color: hsl(var(--orchid) / 0.05); }
+  .text-citrus { color: hsl(var(--citrus)); }
+  .bg-citrus { background-color: hsl(var(--citrus)); }
+  .bg-citrus\/5 { background-color: hsl(var(--citrus) / 0.05); }
+  .text-poppy { color: hsl(var(--poppy)); }
+  .bg-poppy { background-color: hsl(var(--poppy)); }
+  .bg-poppy\/5 { background-color: hsl(var(--poppy) / 0.05); }
+  .text-soft-white { color: hsl(var(--soft-white)); }
+  .bg-soft-white { background-color: hsl(var(--soft-white)); }
+  .text-aubergine { color: hsl(var(--aubergine)); }
+  .bg-aubergine { background-color: hsl(var(--aubergine)); }
 
-  .bg-navy {
-    background-color: hsl(var(--navy));
-  }
+  /* Legacy aliases */
+  .text-navy { color: hsl(var(--aubergine)); }
+  .bg-navy { background-color: hsl(var(--aubergine)); }
+  .text-cream { color: hsl(var(--soft-white)); }
+  .bg-cream { background-color: hsl(var(--soft-white)); }
+  .text-coral { color: hsl(var(--indigo)); }
+  .bg-coral { background-color: hsl(var(--indigo)); }
+  .text-sage { color: hsl(var(--aqua)); }
+  .bg-sage { background-color: hsl(var(--aqua)); }
+  .text-mint { color: hsl(var(--aqua)); }
+  .text-periwinkle { color: hsl(var(--orchid)); }
+  .text-amber-brand { color: hsl(var(--citrus)); }
 
-  .text-cream {
-    color: hsl(var(--cream));
-  }
+  .border-indigo { border-color: hsl(var(--indigo)); }
+  .border-aqua { border-color: hsl(var(--aqua)); }
+  .border-orchid { border-color: hsl(var(--orchid)); }
+  .border-citrus { border-color: hsl(var(--citrus)); }
+  .border-poppy { border-color: hsl(var(--poppy)); }
+  .border-aubergine { border-color: hsl(var(--aubergine)); }
+  .border-coral { border-color: hsl(var(--indigo)); }
+  .border-mint { border-color: hsl(var(--aqua)); }
+  .border-periwinkle { border-color: hsl(var(--orchid)); }
+  .border-amber-brand { border-color: hsl(var(--citrus)); }
 
-  .bg-cream {
-    background-color: hsl(var(--cream));
+  .glow-indigo {
+    box-shadow: 0 0 20px hsl(var(--indigo) / 0.3), 0 0 40px hsl(var(--indigo) / 0.15);
   }
-
-  .text-coral {
-    color: hsl(var(--coral));
+  .glow-indigo-sm {
+    box-shadow: 0 0 10px hsl(var(--indigo) / 0.3);
   }
-
-  .bg-coral {
-    background-color: hsl(var(--coral));
-  }
-
-  .text-mint {
-    color: hsl(var(--mint));
-  }
-
-  .text-periwinkle {
-    color: hsl(var(--periwinkle));
-  }
-
-  .text-amber-brand {
-    color: hsl(var(--amber));
-  }
-
-  .border-coral {
-    border-color: hsl(var(--coral));
-  }
-
-  .border-mint {
-    border-color: hsl(var(--mint));
-  }
-
-  .border-periwinkle {
-    border-color: hsl(var(--periwinkle));
-  }
-
-  .border-amber-brand {
-    border-color: hsl(var(--amber));
-  }
-
-  .glow-coral {
-    box-shadow: 0 0 20px hsl(var(--sage) / 0.3), 0 0 40px hsl(var(--sage) / 0.15);
-  }
-
-  .glow-coral-sm {
-    box-shadow: 0 0 10px hsl(var(--sage) / 0.3);
-  }
-
-  .pulse-coral {
-    animation: pulse-sage 3s ease-in-out infinite;
+  .pulse-indigo {
+    animation: pulse-indigo 3s ease-in-out infinite;
   }
 
   .constellation-bg {
-    background-image: radial-gradient(circle, hsl(var(--cream) / 0.06) 1px, transparent 1px);
+    background-image: radial-gradient(circle, hsl(var(--aubergine) / 0.04) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 
@@ -209,18 +221,18 @@
       transition: none;
     }
 
-    .pulse-coral {
+    .pulse-indigo {
       animation: none;
     }
   }
 }
 
-@keyframes pulse-sage {
+@keyframes pulse-indigo {
   0%, 100% {
-    box-shadow: 0 0 15px hsl(var(--sage) / 0.2), 0 0 30px hsl(var(--sage) / 0.1);
+    box-shadow: 0 0 15px hsl(var(--indigo) / 0.2), 0 0 30px hsl(var(--indigo) / 0.1);
   }
   50% {
-    box-shadow: 0 0 25px hsl(var(--sage) / 0.35), 0 0 50px hsl(var(--sage) / 0.15);
+    box-shadow: 0 0 25px hsl(var(--indigo) / 0.35), 0 0 50px hsl(var(--indigo) / 0.15);
   }
 }
 
