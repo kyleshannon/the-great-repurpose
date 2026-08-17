@@ -11,10 +11,10 @@ export default function StepDots({ total, current }: StepDotsProps) {
           key={i}
           className={`rounded-full transition-all duration-300 ${
             i < current
-              ? "w-2 h-2 bg-coral"
+              ? "w-2 h-2 bg-indigo"
               : i === current
-              ? "w-2.5 h-2.5 bg-coral glow-coral-sm"
-              : "w-2 h-2 bg-cream/20"
+              ? "w-2.5 h-2.5 bg-indigo glow-indigo-sm"
+              : "w-2 h-2 bg-soft-white/20"
           }`}
         />
       ))}
