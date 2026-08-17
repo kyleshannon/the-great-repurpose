@@ -14,6 +14,14 @@ import twoProfessionalsTableAsset from "@/assets/two-professionals-table.png.ass
 import smallGroupLaptopAsset from "@/assets/small-group-laptop.png.asset.json";
 import twoPeopleConversationAsset from "@/assets/two-people-conversation.png.asset.json";
 
+const colorMap: Record<string, { text: string; bg: string; border: string; hoverBorder: string }> = {
+  indigo: { text: "text-indigo", bg: "bg-indigo/5", border: "border-indigo/20", hoverBorder: "hover:border-indigo/40" },
+  aqua: { text: "text-aqua", bg: "bg-aqua/5", border: "border-aqua/20", hoverBorder: "hover:border-aqua/40" },
+  orchid: { text: "text-orchid", bg: "bg-orchid/5", border: "border-orchid/20", hoverBorder: "hover:border-orchid/40" },
+  citrus: { text: "text-citrus", bg: "bg-citrus/5", border: "border-citrus/20", hoverBorder: "hover:border-citrus/40" },
+  poppy: { text: "text-poppy", bg: "bg-poppy/5", border: "border-poppy/20", hoverBorder: "hover:border-poppy/40" },
+};
+
 const phases = [
   {
     number: "01",
