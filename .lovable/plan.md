@@ -90,17 +90,18 @@ Replaces everything from the hero down to the 10 Profiles section. The Profiles 
 
 4. **Bridge to the Profiles** — replaces "Name the Crisis," "Three Faces of Disruption," and "Everyone else is selling you a course." Carries the catalyst line, the "not a self-help program" line, the "Whole You, Amplified by AI" framing, and closes with "Find out which Repurpose Profile you are by answering a handful of very simple questions."
 
-The Five Stages section stays in place with current copy, restyled to the new palette, pending the new stage copy.
+The Five Stages section is rewritten with the new stage names, taglines, and accent colors.
 
 ## Files to edit
 - `src/index.css`, `tailwind.config.ts` — tokens, fonts, base styles.
-- `src/assets/*.asset.json` — new CDN pointers for the ten photographs.
+- `src/assets/*.asset.json` — new CDN pointers for the eighteen photographs.
+- `src/components/BrandIcons.tsx` — new inline SVG icon set.
 - `src/pages/Index.tsx` — homepage rewrite.
 - `src/components/Navigation.tsx`, `Footer.tsx`, `SignalTeaser.tsx` — restyle.
-- `src/pages/Phases.tsx`, `TgrTypes.tsx`, `About.tsx`, `SelfCheck.tsx`, `ResultsPreview.tsx`, `Signals.tsx`, `SignalDetail.tsx` — inherit tokens, spot-fix anything that breaks against a light background.
+- `src/pages/Phases.tsx` and the stage copy in the assessment, report prompt, and PDF — new stage names and taglines.
+- `src/pages/TgrTypes.tsx`, `About.tsx`, `SelfCheck.tsx`, `ResultsPreview.tsx`, `Signals.tsx`, `SignalDetail.tsx` — inherit tokens, spot-fix anything that breaks against a light background.
 - `index.html` — hero preload swap.
-- `mem://style/visual-direction`, `mem://features/homepage-content` — record the new brand and section order.
+- `mem://style/visual-direction`, `mem://features/homepage-content` — record the new brand, stage names, and section order.
 
 ## Out of scope
-- Assessment scoring, archetype matching, and backend logic are untouched.
-- Stage 5 rename and new stage copy held for a follow-up.
+- Assessment scoring and archetype matching logic are untouched; only stage-name strings change.
