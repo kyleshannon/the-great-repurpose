@@ -146,14 +146,19 @@
   /* Brand colors */
   .text-indigo { color: hsl(var(--indigo)); }
   .bg-indigo { background-color: hsl(var(--indigo)); }
+  .bg-indigo\/5 { background-color: hsl(var(--indigo) / 0.05); }
   .text-aqua { color: hsl(var(--aqua)); }
   .bg-aqua { background-color: hsl(var(--aqua)); }
+  .bg-aqua\/5 { background-color: hsl(var(--aqua) / 0.05); }
   .text-orchid { color: hsl(var(--orchid)); }
   .bg-orchid { background-color: hsl(var(--orchid)); }
+  .bg-orchid\/5 { background-color: hsl(var(--orchid) / 0.05); }
   .text-citrus { color: hsl(var(--citrus)); }
   .bg-citrus { background-color: hsl(var(--citrus)); }
+  .bg-citrus\/5 { background-color: hsl(var(--citrus) / 0.05); }
   .text-poppy { color: hsl(var(--poppy)); }
   .bg-poppy { background-color: hsl(var(--poppy)); }
+  .bg-poppy\/5 { background-color: hsl(var(--poppy) / 0.05); }
   .text-soft-white { color: hsl(var(--soft-white)); }
   .bg-soft-white { background-color: hsl(var(--soft-white)); }
   .text-aubergine { color: hsl(var(--aubergine)); }
