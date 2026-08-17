@@ -147,13 +147,13 @@ const SelfCheck = () => {
   };
 
   return (
-    <main className="min-h-screen bg-navy flex flex-col relative overflow-hidden">
+    <main className="min-h-screen bg-aubergine flex flex-col relative overflow-hidden">
       <Navigation />
       {/* Top bar */}
       <div className="flex items-center justify-between px-5 pt-5 pb-3">
         <button
           onClick={handleBack}
-          className="w-10 h-10 flex items-center justify-center rounded-full text-cream/50 hover:text-cream hover:bg-cream/5 transition-all"
+          className="w-10 h-10 flex items-center justify-center rounded-full text-soft-white/50 hover:text-soft-white hover:bg-soft-white/5 transition-all"
           aria-label={currentQ === 0 ? "Go home" : "Previous question"}
         >
           <ChevronLeft size={20} />
@@ -167,10 +167,10 @@ const SelfCheck = () => {
         {/* Intro blurb on Q1 only */}
         {currentQ === 0 && (
           <div className="text-center mb-8 max-w-lg">
-            <h1 className="font-serif text-cream text-2xl md:text-3xl leading-tight mb-2">
+            <h1 className="font-display text-soft-white text-2xl md:text-3xl leading-tight mb-2">
               Find Your Great Repurpose Profile
             </h1>
-            <p className="font-sans text-cream/50 text-sm">
+            <p className="font-sans text-soft-white/50 text-sm">
               7 questions about moments you'll recognize. Then we'll show you where you are — and what you're building toward.
             </p>
           </div>
@@ -180,24 +180,24 @@ const SelfCheck = () => {
           /* Open-ended question */
           <div
             key="open-ended"
-            className={`w-full max-w-xl border border-cream/10 rounded-2xl bg-cream/[0.03] backdrop-blur-sm p-6 md:p-8 selfcheck-card-enter ${
+            className={`w-full max-w-xl border border-soft-white/10 rounded-2xl bg-soft-white/[0.03] backdrop-blur-sm p-6 md:p-8 selfcheck-card-enter ${
               slideDirection === "right" ? "selfcheck-slide-right" : "selfcheck-slide-left"
             }`}
           >
-            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4 text-center">
+            <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4 text-center">
               One more thing
             </p>
-            <p className="font-serif text-cream text-lg md:text-xl italic text-center mb-8 leading-snug">
+            <p className="font-display text-soft-white text-lg md:text-xl italic text-center mb-8 leading-snug">
               What's the thing you keep thinking about but haven't started yet?
             </p>
             <textarea
               value={openAnswer}
               onChange={(e) => setOpenAnswer(e.target.value)}
               placeholder="A sentence or two is plenty."
-              className="w-full bg-navy border border-cream/20 text-cream placeholder:text-cream/30 rounded-lg px-4 py-3 font-sans text-base leading-relaxed focus:outline-none focus:border-coral transition-colors resize-none min-h-[120px]"
+              className="w-full bg-aubergine border border-soft-white/20 text-soft-white placeholder:text-soft-white/30 rounded-lg px-4 py-3 font-sans text-base leading-relaxed focus:outline-none focus:border-indigo transition-colors resize-none min-h-[120px]"
               rows={4}
             />
-            <p className="text-cream/40 text-xs font-sans mt-3 text-center">
+            <p className="text-soft-white/40 text-xs font-sans mt-3 text-center">
               There's no wrong answer. This helps us make your results personal.
             </p>
           </div>
@@ -206,22 +206,22 @@ const SelfCheck = () => {
           <div
             key={questions[currentQ].id}
             ref={contentRef}
-            className={`w-full max-w-xl border border-cream/10 rounded-2xl bg-cream/[0.03] backdrop-blur-sm p-6 md:p-8 selfcheck-card-enter ${
+            className={`w-full max-w-xl border border-soft-white/10 rounded-2xl bg-soft-white/[0.03] backdrop-blur-sm p-6 md:p-8 selfcheck-card-enter ${
               slideDirection === "right" ? "selfcheck-slide-right" : "selfcheck-slide-left"
             }`}
           >
-            <p className="text-coral font-sans text-xs uppercase tracking-widest mb-4 text-center">
+            <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4 text-center">
               Question {currentQ + 1} of {questions.length}
             </p>
-            <p className="font-serif text-cream text-lg md:text-xl italic text-center mb-8 leading-snug">
+            <p className="font-display text-soft-white text-lg md:text-xl italic text-center mb-8 leading-snug">
               "{questions[currentQ].context}"
             </p>
             <div className="mb-2">
               <div className="flex justify-between gap-4 md:gap-6 mb-5">
-                <p className="font-sans text-cream/60 text-xs leading-snug text-left max-w-[48%] md:max-w-[45%]">
+                <p className="font-sans text-soft-white/60 text-xs leading-snug text-left max-w-[48%] md:max-w-[45%]">
                   {questions[currentQ].left}
                 </p>
-                <p className="font-sans text-cream/60 text-xs leading-snug text-right max-w-[48%] md:max-w-[45%]">
+                <p className="font-sans text-soft-white/60 text-xs leading-snug text-right max-w-[48%] md:max-w-[45%]">
                   {questions[currentQ].right}
                 </p>
               </div>
@@ -240,14 +240,14 @@ const SelfCheck = () => {
       </div>
 
       {/* Fixed bottom action bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-navy/90 backdrop-blur-md border-t border-cream/5 px-5 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] flex flex-col items-center gap-2">
+      <div className="fixed bottom-0 left-0 right-0 bg-aubergine/90 backdrop-blur-md border-t border-soft-white/5 px-5 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] flex flex-col items-center gap-2">
         <button
           onClick={handleNext}
           disabled={!touched}
           className={`font-sans font-medium text-base px-10 py-3.5 rounded-full transition-all duration-300 w-full max-w-xs ${
             touched
-              ? "bg-coral text-cream pulse-coral hover:opacity-90"
-              : "bg-cream/10 text-cream/20 cursor-not-allowed"
+              ? "bg-indigo text-soft-white pulse-indigo hover:opacity-90"
+              : "bg-soft-white/10 text-soft-white/20 cursor-not-allowed"
           }`}
         >
           {isOpenEndedStep ? "See My Profile →" : "Next →"}
@@ -255,13 +255,13 @@ const SelfCheck = () => {
         {isOpenEndedStep && (
           <button
             onClick={handleSkipOpenEnded}
-            className="text-cream/40 text-xs font-sans hover:text-cream/60 transition-colors"
+            className="text-soft-white/40 text-xs font-sans hover:text-soft-white/60 transition-colors"
           >
             Skip this question
           </button>
         )}
         {currentQ === 0 && (
-          <p className="text-cream/30 text-xs font-sans">Takes about 2 minutes. There are no wrong answers.</p>
+          <p className="text-soft-white/30 text-xs font-sans">Takes about 2 minutes. There are no wrong answers.</p>
         )}
       </div>
     </main>

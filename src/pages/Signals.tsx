@@ -63,7 +63,7 @@ const Signals = () => {
   }, [sortedSignals.length, hasMore]);
 
   return (
-    <div className="min-h-screen bg-navy text-cream">
+    <div className="min-h-screen bg-aubergine text-soft-white">
       <Helmet>
         <title>Daily Signal — AI news through The Great Repurpose lens</title>
         <meta
@@ -82,13 +82,13 @@ const Signals = () => {
       </Helmet>
       <Navigation />
       <main id="main-content">
-        <section className="bg-navy constellation-bg pt-32 pb-16 px-6">
+        <section className="bg-aubergine constellation-bg pt-32 pb-16 px-6">
           <div className="max-w-5xl mx-auto">
             <ScrollFadeUp>
-              <h1 className="font-serif text-cream text-4xl md:text-5xl leading-tight mb-5">
+              <h1 className="font-display text-soft-white text-4xl md:text-5xl leading-tight mb-5">
                 The Daily Signal
               </h1>
-              <p className="font-sans text-cream/70 text-lg md:text-xl leading-relaxed max-w-3xl">
+              <p className="font-sans text-soft-white/70 text-lg md:text-xl leading-relaxed max-w-3xl">
                 Five-story briefings that read the AI news through work, identity,
                 value, purpose, capability, and human agency.
               </p>
@@ -96,24 +96,24 @@ const Signals = () => {
           </div>
         </section>
 
-        <section className="bg-cream px-6 py-12 md:py-16">
+        <section className="bg-soft-white px-6 py-12 md:py-16">
           <div className="max-w-5xl mx-auto">
             {error ? (
-              <div className="rounded-lg border border-navy/10 p-8 text-center">
-                <p className="font-serif text-navy text-2xl mb-2">Couldn't load the Daily Signal</p>
-                <p className="font-sans text-navy/60 text-base">{error}</p>
+              <div className="rounded-lg border border-aubergine/10 p-8 text-center">
+                <p className="font-display text-aubergine text-2xl mb-2">Couldn't load the Daily Signal</p>
+                <p className="font-sans text-aubergine/60 text-base">{error}</p>
               </div>
             ) : !signals ? (
-              <div className="rounded-lg border border-navy/10 p-8 text-center">
-                <p className="font-sans text-navy/60 text-base">Loading the Daily Signal…</p>
+              <div className="rounded-lg border border-aubergine/10 p-8 text-center">
+                <p className="font-sans text-aubergine/60 text-base">Loading the Daily Signal…</p>
               </div>
             ) : visibleSignals.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {visibleSignals.map((signal, index) => (
                   <ScrollFadeUp key={signal.slug} delay={(index % PAGE_SIZE) * 45}>
-                    <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-navy/10 bg-navy/[0.03] transition-colors hover:border-coral/70">
+                    <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-aubergine/10 bg-aubergine/[0.03] transition-colors hover:border-indigo/70">
                       {signal.imageUrl && (
-                        <div className="aspect-[16/10] overflow-hidden bg-navy/10">
+                        <div className="aspect-[16/10] overflow-hidden bg-aubergine/10">
                           <Link to={`/signals/${signal.slug}`} aria-label={`Read ${signal.title}`}>
                             <img
                               src={signal.imageUrl}
@@ -132,14 +132,14 @@ const Signals = () => {
                       )}
                       <div className="flex flex-1 flex-col p-6">
                         <Link to={`/signals/${signal.slug}`} className="block">
-                          <p className="font-sans text-coral text-xs uppercase tracking-widest font-medium mb-3">
+                          <p className="font-sans text-indigo text-xs uppercase tracking-widest font-medium mb-3">
                             {formatSignalDate(signal.date)}
                           </p>
-                          <h3 className="font-serif text-navy text-2xl leading-snug mb-4 transition-colors hover:text-coral">
+                          <h3 className="font-display text-aubergine text-2xl leading-snug mb-4 transition-colors hover:text-indigo">
                             {signal.title}
                           </h3>
                           {signal.pattern && (
-                            <p className="font-sans text-navy/70 text-base leading-relaxed mb-5">
+                            <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-5">
                               {signal.pattern}
                             </p>
                           )}
@@ -151,12 +151,12 @@ const Signals = () => {
                                 <Link
                                   to={getStagePath(stage)}
                                   title={getStageDefinition(stage)}
-                                  className="font-sans text-[10px] uppercase tracking-widest text-navy/55 border border-navy/15 rounded-full px-2.5 py-1 transition-colors hover:border-coral hover:text-coral focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral/70"
+                                  className="font-sans text-[10px] uppercase tracking-widest text-aubergine/55 border border-aubergine/15 rounded-full px-2.5 py-1 transition-colors hover:border-indigo hover:text-indigo focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo/70"
                                 >
                                   {stage}
                                 </Link>
                               </TooltipTrigger>
-                              <TooltipContent className="max-w-xs border-coral/30 bg-navy px-4 py-3 font-sans text-sm leading-relaxed text-cream">
+                              <TooltipContent className="max-w-xs border-indigo/30 bg-aubergine px-4 py-3 font-sans text-sm leading-relaxed text-soft-white">
                                 {getStageDefinition(stage)}
                               </TooltipContent>
                             </Tooltip>
@@ -168,9 +168,9 @@ const Signals = () => {
                 ))}
               </div>
             ) : (
-              <div className="rounded-lg border border-navy/10 p-8 text-center">
-                <p className="font-serif text-navy text-2xl mb-2">No briefings found</p>
-                <p className="font-sans text-navy/60 text-base">
+              <div className="rounded-lg border border-aubergine/10 p-8 text-center">
+                <p className="font-display text-aubergine text-2xl mb-2">No briefings found</p>
+                <p className="font-sans text-aubergine/60 text-base">
                   Try a different stage filter or return to the full archive.
                 </p>
               </div>
