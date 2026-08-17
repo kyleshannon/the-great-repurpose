@@ -2,19 +2,19 @@
 
 This extends the already-approved plan (Homepage Copy Refresh + Brand Rebrand) with the photography now uploaded. Everything below is the full scope of the build.
 
-## Part A: Brand system (from the moodboard)
+## Part A: Brand system (from the brand board)
 
 ### Color tokens — replace in `src/index.css` and `tailwind.config.ts`
 
-| Role | Name | Hex |
-|---|---|---|
-| Primary | Electric Indigo | `#3747E5` |
-| Primary | Aqua | `#44C9C2` |
-| Secondary | Orchid | `#8F3DDF` |
-| Secondary | Citrus | `#FFB55A` |
-| Secondary | Poppy | `#FF7056` |
-| Background | Soft White | `#FCFAFE` |
-| Text | Aubergine-Black | `#1B2034` |
+| Role | Name | Hex | Meaning |
+|---|---|---|---|
+| Primary | Electric Indigo | `#192EEB` | Trust · Vision · Future |
+| Primary | Aqua | `#06B5B2` | Clarity · Flow · Renewal |
+| Secondary | Orchid | `#8D51C7` | Imagination · Depth |
+| Secondary | Citrus | `#ECB626` | Optimism · Energy |
+| Secondary | Poppy | `#FA4B35` | Courage · Momentum |
+| Background | Soft White | `#F4F3F3` | Space · Balance · Calm |
+| Text | Aubergine-Black | `#010F32` | Authority · Clarity · Depth |
 
 - Page background flips from dark olive to Soft White; body text becomes Aubergine-Black.
 - Dark bands (hero, quote blocks, nav) use Aubergine-Black with Soft White text.
@@ -22,26 +22,30 @@ This extends the already-approved plan (Homepage Copy Refresh + Brand Rebrand) w
 - All values stay HSL in CSS variables, matching the existing pattern.
 
 ### Typography
-- Headings: PP Neue Montreal (bold, editorial). Google-font fallback until licensed files are provided.
-- Body: Halyard Display (medium, clean). Fallback: Figtree.
+- Headings: PP Neue Montreal (bold, expressive, editorial). Google-font fallback until licensed files are provided.
+- Body: Halyard Display (medium, clean, readable). Fallback: Figtree.
 - Replaces the current Inter + serif pairing.
 
 ### Components restyled
 - **Navigation**: Aubergine bar, uppercase tracked links, Aqua pill CTA.
-- **CTA buttons**: filled Indigo (primary), filled Aqua (secondary), outlined Aubergine (tertiary) — all pill-shaped with a trailing arrow.
+- **CTA buttons**: filled Indigo ("Get Your Repurpose Profile →"), filled Aqua ("Start Free Assessment →"), outlined Aubergine ("Explore The Five Stages →") — all pill-shaped, uppercase, trailing arrow.
 - **Quote block**: oversized Aqua quotation mark, Soft White card, short Aqua rule.
 - **Stage modules**: numbered `01`–`05` in the stage's accent color, italic tagline, paired portrait.
-- **Cards**: light card, thin border, image top or right, "Read more →" link.
+- **Cards**: light card, thin border, image right, "Read more →" link.
+- **Color-in-application panels**: full-bleed color blocks with a portrait alongside, icon + short meaning line.
 - Retire `constellation-bg` in favor of flat color bands and image-backed color panels.
 
-### Five Stages color mapping
-1. Unhook Identity — Indigo
-2. Reclaim Value — Aqua
-3. Find Your Purpose — Orchid
-4. Discover AI's Power — Citrus
-5. Start Creating — Poppy
+### Brand icons
+The board's five marks — imagination (burst), possibility (infinity loop), creativity (circle-in-square), discovery (eye), human guts (heart) — get built as inline SVG components and reused on the stage modules and color panels.
 
-(The moodboard renames stage 5 to "Build What's Next." Holding that rename until confirmed, since the name appears in the assessment, the AI report prompt, and the PDF.)
+### Five Stages — new names, taglines, colors
+1. **Unhook Identity** — "I'm not my job." — Indigo
+2. **Reclaim Value** — "Here's Who I Am." — Aqua
+3. **Discover Purpose** — "What matters to me." — Orchid
+4. **Become AI Ready** — "Understand AI's power to amplify your ideas." — Citrus
+5. **Relaunch Yourself** — "Turn who you are into work, opportunity, and income." — Poppy
+
+These names now replace the current stage copy everywhere it appears: the Phases page, the homepage stages section, the assessment, the AI report prompt, and the PDF export.
 
 ## Part B: Photography
 
