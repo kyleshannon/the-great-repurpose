@@ -43,13 +43,13 @@ export function Navigation() {
         aria-label="Main navigation"
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled || location.pathname !== "/"
-            ? "bg-navy shadow-lg"
+            ? "bg-aubergine shadow-lg"
             : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="font-serif text-cream text-lg tracking-tight hover:opacity-80 transition-opacity">
+          <Link to="/" className="font-display text-soft-white text-lg tracking-tight hover:opacity-80 transition-opacity">
             The Great Repurpose
           </Link>
 
@@ -59,19 +59,19 @@ export function Navigation() {
               <Link
                 key={to}
                 to={to}
-                className="text-cream/80 hover:text-cream text-xs uppercase tracking-widest font-sans transition-colors relative group"
+                className="text-soft-white/80 hover:text-soft-white text-xs uppercase tracking-widest font-sans transition-colors relative group"
               >
                 {label}
-                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-coral group-hover:w-full transition-all duration-300" aria-hidden="true" />
+                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-indigo group-hover:w-full transition-all duration-300" aria-hidden="true" />
               </Link>
             ))}
             {showReportLink && (
               <Link
                 to={reportUrl}
-                className="text-coral hover:text-cream text-xs uppercase tracking-widest font-sans transition-colors relative group"
+                className="text-indigo hover:text-soft-white text-xs uppercase tracking-widest font-sans transition-colors relative group"
               >
                 Your Report
-                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-coral group-hover:w-full transition-all duration-300" aria-hidden="true" />
+                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-indigo group-hover:w-full transition-all duration-300" aria-hidden="true" />
               </Link>
             )}
           </div>
@@ -79,14 +79,14 @@ export function Navigation() {
           {/* Desktop CTA */}
           <Link
             to="/selfcheck"
-            className="hidden md:inline-flex items-center gap-2 bg-coral text-cream text-sm font-sans font-medium px-5 py-2.5 rounded-full pulse-coral hover:opacity-90 transition-opacity"
+            className="hidden md:inline-flex items-center gap-2 bg-indigo text-white text-sm font-sans font-medium px-5 py-2.5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
           >
             What's Your Repurpose Profile?
           </Link>
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden text-cream p-1"
+            className="md:hidden text-soft-white p-1"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
@@ -99,12 +99,12 @@ export function Navigation() {
 
       {/* Mobile overlay */}
       {mobileOpen && (
-        <div id="mobile-nav" role="dialog" aria-label="Mobile navigation" className="fixed inset-0 z-40 bg-navy flex flex-col items-center justify-center gap-8">
+        <div id="mobile-nav" role="dialog" aria-label="Mobile navigation" className="fixed inset-0 z-40 bg-aubergine flex flex-col items-center justify-center gap-8">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
               to={to}
-              className="text-cream text-2xl font-serif tracking-wide hover:text-coral transition-colors"
+              className="text-soft-white text-2xl font-display tracking-wide hover:text-indigo transition-colors"
             >
               {label}
             </Link>
@@ -112,14 +112,14 @@ export function Navigation() {
           {showReportLink && (
             <Link
               to={reportUrl}
-              className="text-coral text-2xl font-serif tracking-wide hover:text-cream transition-colors"
+              className="text-indigo text-2xl font-display tracking-wide hover:text-soft-white transition-colors"
             >
               Your Report
             </Link>
           )}
           <Link
             to="/selfcheck"
-            className="mt-4 bg-coral text-cream text-base font-sans font-medium px-8 py-3 rounded-full pulse-coral hover:opacity-90 transition-opacity"
+            className="mt-4 bg-indigo text-white text-base font-sans font-medium px-8 py-3 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
           >
             What's Your Repurpose Profile? →
           </Link>
