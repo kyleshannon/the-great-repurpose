@@ -10,7 +10,7 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7a264ce63c53e5b623df4e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -22,8 +22,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Start Creating",
-      "Discover AI's Power"
+      "Relaunch Yourself",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7ee6e4e281d4658c13262a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -35,8 +35,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
   },
@@ -46,10 +46,10 @@ export const bundledSignalIndex = [
     "title": "Work Becomes AI's Training Ground",
     "pattern": "Business Insider traces Google, Meta, and Mechanize's race to train agents inside realistic work environments, while Skan AI raises $63 million to map how employees actually move through enterprise systems. Forbes argues that every agent now needs named management and accountability; Oracle pairs billions in AI infrastructure spending with reported job cuts; and higher education is pressed to make its AI boundaries visible. Together, the stories show work becoming both the training data and the proving ground for AI—and make human oversight, consent, and judgment more valuable precisely as machines learn the workflow.",
     "stages": [
-      "Discover AI's Power",
+      "Become AI Ready",
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/3WDoD2ymJo193EQQiyjPZc/10a7a431875f094f56d874bfa72cb9b0/Nuneybits_Vector_art_of_bank_towers_feeding_glowing_process_map_2465961e-61fe-473e-aaec-8071e4adbfcc.webp?w=800&q=75"
   },
@@ -61,8 +61,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Reclaim Value",
       "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7756eb7e802fb3f9739e7c/0x0.jpg?format=jpg&crop=1356,763,x0,y68,safe&height=900&width=1600&fit=bounds"
   },
@@ -74,8 +74,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Find Your Purpose"
+      "Become AI Ready",
+      "Discover Purpose"
     ],
     "imageUrl": "https://hermes.media.static.aol.com/media/2026/08/09/a25f42a4-e854-3889-b9e9-f477a5745c30/2d8bea54-e198-4267-b497-a744c0c909b1.jpg",
     "storyCount": 5
@@ -87,9 +87,9 @@ export const bundledSignalIndex = [
     "pattern": "Erika Donalds argues that education should prepare students for an emerging AI job boom, while Australian modelling projects 44,000 additional jobs and a $116 billion economic lift. Yet 24/7 Wall St. points to Oracle and Microsoft cuts as evidence of a historic tech-sector layoff wave, and Challenger data reported by AOL says AI was cited in one-third of July job cuts even as total layoffs reached a two-year low. Singapore's Lawrence Wong puts the real test in public terms: productivity gains must help workers who fear being left behind. Together, the stories show that forecasts alone cannot earn trust; institutions must connect AI growth to credible pathways through which people can learn, contribute, and share in the value created.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://apicms.thestar.com.my/uploads/images/2026/08/09/4050790.jpg",
     "storyCount": 5
@@ -101,9 +101,9 @@ export const bundledSignalIndex = [
     "pattern": "Dataquest asks whether companies are replacing people with AI or using AI to explain a broader reset, while Etsy explicitly says its 12% workforce cut is not AI-driven and CBS reports that overall layoffs have fallen to a two-year low. At the same time, the Bank of England sees AI lifting productivity while reducing jobs, and Diane Hamilton argues that the World Economic Forum still has not answered what gives work meaning when execution changes. Together, the stories expose a consequential tension: people need honest evidence about where jobs are going, but they also need a source of purpose that no corporate explanation or labor statistic can supply.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://img-cdn.publive.online/fit-in/1200x675/dq/media/media_files/2026/08/08/ai-layoffs-2026-08-08-15-03-35.png",
     "storyCount": 5
@@ -115,10 +115,10 @@ export const bundledSignalIndex = [
     "pattern": "Singapore's pledge to help workers navigate AI, Etsy's insistence that a restructuring is not AI-driven, and students' practical use of AI against career anxiety all push back on the idea that technology writes the whole labor story by itself. A creator report and a Forbes call to put humanity at the heart of work add a cultural test: adoption has to leave room for trust, authorship, and honest explanation. The transition gains legitimacy when people are participants with agency, not simply objects of a company's efficiency narrative.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Start Creating",
-      "Discover AI's Power"
+      "Relaunch Yourself",
+      "Become AI Ready"
     ],
     "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/ae1d0ef3fa6b1bb9b55171652a15d45ab0192690cff01f3ef40370a7d3973b91"
   },
@@ -129,9 +129,9 @@ export const bundledSignalIndex = [
     "pattern": "EY sees 15 sectors where AI could create more jobs than it replaces, while marketers and employers are discovering that useful systems need human context and legitimacy, not just faster output. TechRadar's reports on context engineering and applicant-screening backlash, together with new research on warranted reliance, expose a shared design problem: people must be able to understand, challenge, and guide the systems that increasingly shape their work. AI becomes a durable capability only when judgment is built into the infrastructure around it.",
     "stages": [
       "Reclaim Value",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Unhook Identity",
-      "Start Creating"
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://cdn.mos.cms.futurecdn.net/8sVBmVE46HZc6Xrp23uhaE-1200-80.jpeg"
   },
@@ -143,8 +143,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-08-05%2F3vf4kwbb%2FVisa-Layoffs-2600-Jobs-Cut-as-AI-Push-Hits-India-415.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
   },
@@ -156,9 +156,9 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power",
-      "Start Creating"
+      "Discover Purpose",
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://asset.peoplematters.in/images/d538c3ae-2602-4eb5-b79d-3a2d559b6abe.png"
   },
@@ -170,8 +170,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Start Creating"
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://www.thehrdigest.com/wp-content/uploads/2026/08/Chime-layoffs-2026.jpg"
   },
@@ -183,9 +183,9 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power",
-      "Start Creating"
+      "Discover Purpose",
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6dda25b9bad10d8e16144c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -196,7 +196,7 @@ export const bundledSignalIndex = [
     "pattern": "Visa is cutting 2,600 roles as AI speeds parts of product and technology work, while ADP argues that jobs are being recomposed around deeper thinking rather than simply erased. A workforce survey, Forbes’ call to measure human-AI collaboration, and Onyx’s control plane for 1.1 million agents point to the same tension: as machines execute more of the work, human judgment, accountability, and the power to say no must become part of the operating system.",
     "stages": [
       "Reclaim Value",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Unhook Identity"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/68b9a3deb1db5576bdde29b4/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
@@ -207,10 +207,10 @@ export const bundledSignalIndex = [
     "title": "AI Redraws Roles Before Work Catches Up",
     "pattern": "Visa is cutting 7% of its staff as AI-enabled efficiency expands, while Microsoft’s $2.5 billion investment in human expertise argues that capable systems still depend on people who know what good looks like. OpenAI’s task-crossover data, five startups rebuilding trust around agents, and Born Social’s creator community show the deeper shift: roles are stretching and recombining faster than organizations can redesign accountability, value, and belonging.",
     "stages": [
-      "Discover AI's Power",
+      "Become AI Ready",
       "Reclaim Value",
       "Unhook Identity",
-      "Start Creating"
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a69e5a81ae7df62bd92a6c3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -221,7 +221,7 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories test whether the reskilling promise is keeping pace with the work people will actually inherit. Andrew Ng and Coursera are putting $100 million behind LearnVector's personal AI tutors; Daron Acemoglu argues for pro-worker AI rather than another automation-first economy; Inc. warns that companies are rehiring judgment they cut too quickly; The Conference Board finds employers teaching today's tools more often than tomorrow's roles; and Google's analysis of nearly 15 million Gemini interactions finds broad assistance but little full automation. The human tension is whether institutions will help people build adaptable judgment and agency, or merely teach them to chase the latest tool while the shape of work keeps moving.",
     "stages": [
       "Reclaim Value",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Unhook Identity"
     ],
     "imageUrl": "https://media.assettype.com/outlookbusiness/2026-07-29/u2m5tkqx/Untitled-design-32.jpg?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100"
@@ -234,7 +234,7 @@ export const bundledSignalIndex = [
     "stages": [
       "Reclaim Value",
       "Unhook Identity",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
   },
@@ -246,7 +246,7 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a639125da626858fbd7dec4/0x0.jpg?format=jpg&crop=1961,1103,x68,y105,safe&height=900&width=1600&fit=bounds"
   },
@@ -258,7 +258,7 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/07/4200685-0-61569700-1784812733-shutterstock_2560810077.jpg?quality=50&strip=all&w=1024"
   },
@@ -269,8 +269,8 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show agents crossing from assistance into consequential action. CareerBoom applies for jobs on a candidate's behalf, Ushur promises enterprise agents that finish customer workflows, and password-capable agents expand the security boundary, while OpenAI's Leah Belsky argues schools must form citizens with agency and judgment and international students steer costly degree choices toward AI resilience. The human tension is no longer whether AI can do the work, but whether people retain enough purpose, judgment, and control to decide which work should be delegated and remain accountable for what follows.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power",
+      "Discover Purpose",
+      "Become AI Ready",
       "Reclaim Value"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5ce59feb67be3ffdc4caf8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
@@ -283,8 +283,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-132554642,imgsize-365701,width-1200,height=627,overlay-etbrandequity,resizemode-75/marketing/bws-2026-how-ai-is-reshaping-creative-ideation.jpg"
   },
@@ -295,9 +295,9 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show that AI growth no longer guarantees people a secure place inside the value it creates. Intel's AI business is expanding while the company continues cutting jobs—including inside its Data Center and AI Group—while Netchex is bringing agents to deskless HR, YouTube is withholding monetization from repetitive AI content, and Will Cady argues that business must deliberately preserve humanity. The tension is no longer whether AI can produce growth or output; it is whether institutions will design that progress around human agency, trusted judgment, and work worth doing.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Reclaim Value",
-      "Start Creating"
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://data.ibtimes.sg/en/full/93281/intel.jpg?w=1200&h=630?q=60"
   },
@@ -309,9 +309,9 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Find Your Purpose",
-      "Start Creating"
+      "Become AI Ready",
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5d35f8df9431e0619bb4ec/0x0.jpg?format=jpg&crop=2960,1663,x0,y0,safe&height=900&width=1600&fit=bounds"
   },
@@ -321,9 +321,9 @@ export const bundledSignalIndex = [
     "title": "Creators Keep The Chair As Agents Take The Search",
     "pattern": "Today's five stories show AI moving deeper into the machinery of making and finding work without settling who should remain in charge. CapCut compresses creative production, a recruitment agent offers to hunt for jobs, and Netflix says AI touched 300 titles while creators kept the lead; Upwork's freelance index and the warning of a white-collar exodus reveal the other half of the bargain. The pattern is not simply more automation—it is a negotiation over whether people gain leverage to direct the system or lose agency inside workflows designed around them.",
     "stages": [
-      "Start Creating",
+      "Relaunch Yourself",
       "Unhook Identity",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Reclaim Value"
     ],
     "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/07/20260717092550_Netflix.png"
@@ -335,7 +335,7 @@ export const bundledSignalIndex = [
     "pattern": "Today's stories move the AI work conversation from headline job counts to the terms on which people are kept, ranked, or represented. Meta's layoffs and discrimination allegations show the governance cost of automated decisions; the productivity and white-collar stories show that efficiency alone does not explain—or sustain—human contribution. The deeper pattern is that AI transition demands more than new tools: it asks institutions to make accountability, agency, and durable human value visible.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://data.ibtimes.sg/en/full/93078/us.jpg?w=1200&h=630?q=60"
   },
@@ -346,9 +346,9 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories expose a feedback loop hiding inside the AI jobs debate. Wells Fargo's 79,000-job contraction sits beside Cisco's and Jensen Huang's claims that deeper AI use can create work, while Forbes reports that some companies are already rehiring people after automation stripped out judgment they still needed. Outlook India's focus on human thinking makes the deeper pattern clear: the organizations learning fastest are discovering that efficiency can remove a role faster than it can replace the context, accountability, and discernment inside it.",
     "stages": [
       "Unhook Identity",
-      "Start Creating",
+      "Relaunch Yourself",
       "Reclaim Value",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a593cb030f01f60b0533bd9/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -359,10 +359,10 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show the AI transition splitting into two competing paths. AOL's list of exposed office roles, JPMorgan's 40% departmental cuts, and Sprout Social's 20% workforce reduction treat work as capacity to remove; Cognizant's 1,500-graduate plan and a new creator-tool stack treat it as capability to build. The deeper pattern is that institutions are redesigning the first rung of work in real time—and the human outcome depends on whether AI becomes an excuse to erase roles or an apprenticeship for judgment, agency, and creation.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Start Creating"
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
   },
@@ -374,7 +374,7 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://image.cnbcfm.com/api/v1/image/108297760-1777307207308-108297760-1777307153926-gettyimages-2267943764-Zuckerberg_182_032626.jpeg?v=1780690805&w=1920&h=1080"
   },
@@ -386,8 +386,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Find Your Purpose"
+      "Become AI Ready",
+      "Discover Purpose"
     ],
     "imageUrl": "https://image.cnbcfm.com/api/v1/image/108217469-1761596968439-gettyimages-2221389323-AFP_63TY9KL.jpeg?v=1761597002&w=1920&h=1080"
   },
@@ -399,7 +399,7 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5472bb97e75b48bdf6c70b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -410,7 +410,7 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show schools trying to prepare people for a human-centered AI economy while the places where those qualities are learned and rewarded are coming apart. Forbes argues for emotional education and maps degree choices for AI careers, Psychology Today says remote work is stripping junior workers of apprenticeship, and two reports place an Xbox executive on the Federal Reserve's AI-and-jobs task force just after 3,200 layoffs. The pattern is that empathy, judgment, and direction are becoming more valuable at the same moment that credentials, entry-level practice, and institutional trust are becoming less reliable paths for developing them.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5205e8a09a80202929b872/0x0.jpg?format=jpg&crop=3642,2049,x0,y123,safe&height=900&width=1600&fit=bounds"
   },
@@ -421,8 +421,8 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories expose a broken handoff between preparing for an AI career and finding a first place to practice it. Forbes maps the degrees meant to future-proof students, Psychology Today argues remote work is erasing the apprenticeship that turns education into judgment, and two reports put an Xbox executive on the Federal Reserve's AI-and-jobs task force just after 3,200 layoffs. With Forbes also describing agents as workers already entering the org chart, the pattern is that people are being told to choose the right credential while both the entry rung and the shape of the workforce are being redesigned beneath them.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds"
   },
@@ -433,8 +433,8 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show workers being asked to adapt before institutions can explain what adaptation will protect. AOL finds many workers over 60 unconcerned about AI even as age bias and automation narrow their options; Sri Lanka is confronting white-collar exposure; and an Xbox executive is joining a Federal Reserve AI-and-jobs task force after 3,200 layoffs. North Texas colleges are teaching students to use AI across careers while Digital Journal argues that jobs themselves are fluid, making the pattern a widening lag between lived workforce disruption and the systems meant to help people navigate it.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power",
-      "Find Your Purpose"
+      "Become AI Ready",
+      "Discover Purpose"
     ],
     "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/06/20260608074948_Xbox-CEO-Asha-Sharma.png"
   },
@@ -445,9 +445,9 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show education becoming an AI-economy bet while the value of learning shifts beyond tool fluency. Forbes sees investment opportunity in lifelong training, Herald Business calls for restoring youth skills ladders, and North Texas colleges are adding AI classes for job seekers; meanwhile, gaming keeps creativity and judgment in human hands, and Digital Journal argues that jobs themselves are moving targets. The pattern is a race to teach AI skills before schools and employers can define the adaptable identity, taste, and direction those skills are meant to serve.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-07-09/bidq3q1x/SPARQ2promptJPEGscaled75.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=230,0,2393,1595"
   },
@@ -458,10 +458,10 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show the career ladder being rebuilt while AI agents move straight into the workplace. Forbes argues that education, employers, and credentials need a connected transition system; Herald Business calls for restoring youth skills ladders; Fast Company asks whether the first rung still exists; SK On is training employees to build agents across business functions; and Cannes Lions puts human connection back at the center of AI-shaped creative work. The pattern is a widening gap between institutions trying to prepare people for work and companies already teaching workers to create with agents inside the work itself.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/07/07/news-p.v1.20260707.33244d1138cb48d58e24a5fcd2419126_R.png"
   },
@@ -472,9 +472,9 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show AI turning the career ladder into a redesign problem before workers, students, and institutions have agreed on the new rungs. Microsoft says AI is not replacing workers while 4,800 jobs disappear, Forbes points to education-to-job transition systems, Herald Business argues for restoring youth skills ladders, Fast Company asks whether the first rung still exists, and healthcare reporting shows roles being reshaped rather than simply erased. The pattern is not one company cutting jobs; it is the collapse of job title, credential, and first-step certainty as reliable containers for human value.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://thelogicalindian.com/wp-content/uploads/2026/07/Copy-of-Social-Thumbnail-Template-39-1.jpg"
   },
@@ -485,7 +485,7 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show the credential market trying to prove it still maps to work while AI breaks jobs into role-level risk and opportunity. Forbes points to P-TECH-style education-to-job systems and healthcare roles being reshaped instead of erased; GMAC data says MBAs still have demand, while 24/7 Wall St. reports AI-investing companies adding jobs with a catch and OK Diario names language-heavy professions facing direct exposure. The pattern is not degrees versus AI; it is whether credentials, employers, and workers can translate human judgment into new roles fast enough.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
@@ -497,7 +497,7 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show the old credential bargain being stress-tested by AI before students and institutions have a clean replacement. OK Diario names language-heavy white-collar roles as exposed, Forbes points to education-to-job systems and healthcare roles being redesigned rather than simply erased, and The Week plus AOL show graduates and students already adjusting majors around employability. The deeper pattern is not just job loss; it is the collapse of degree-as-shelter and the rise of demonstrable judgment, applied skill, and purpose as the new proof of value.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value"
     ],
     "imageUrl": "https://okdiario.com/techy/en/wp-content/uploads/2026/07/ai-job-market-impact-2030.jpg"
@@ -510,8 +510,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://baptistnews.com/wp-content/uploads/2026/07/shutterstock_2229125163.jpg"
   },
@@ -522,8 +522,8 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show AI turning job security into a contest over what still counts as protected human judgment. Forbes frames healthcare disruption as role-by-role rather than wholesale replacement, GMAC and the Freedom Institute sell credentials and AI-ready education as shields, and BMS is taking worker surveillance and platform protections to BRICS while the jobs-report story argues value is shifting toward qualities that resist commoditization.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a44260badfeba28839f0a92/0x0.jpg?format=jpg&crop=1627,1084,x0,y0,safe&height=900&width=1600&fit=bounds"
   },
@@ -534,8 +534,8 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories put workforce readiness between institutional promises and worker protection. GMAC says MBA graduates remain in demand, the Freedom Institute sells AI-personalized career readiness, and Forbes argues organizations still decide how jobs change. But AvePoint, Kyndryl, and BMS expose the pressure underneath: agents are entering routine work faster than roles, controls, surveillance rules, and platform-worker protections can catch up.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a442534b7d5da8de0b45c9a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -546,9 +546,9 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show the labor market splitting between credentials, agents, and human data. GMAC says MBA graduates are still in demand, while Microsoft prepares cuts in sales, consulting, and Xbox as AI spending rises; AvePoint and Kyndryl show agents arriving faster than jobs can be redesigned. PwC's two-track market and the VLGE-Protege training-data deal make the daily tension plain: institutions still want human judgment, but they are also turning behavior, adaptability, and AI fluency into the new price of staying valuable.",
     "stages": [
       "Unhook Identity",
-      "Start Creating",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Relaunch Yourself",
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4291319d4dff266b92597b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -558,10 +558,10 @@ export const bundledSignalIndex = [
     "title": "Serkis, CapCut, And The Human Control Test",
     "pattern": "Today's five stories move the fight over AI from jobs alone into control over creation. Andy Serkis argues human creativity must evolve alongside AI, CapCut packages short-drama production into a single AI dashboard, and ZDNet treats agents as colleagues people must learn to direct. The harder stakes sit underneath: Memeburn asks who pays to retrain millions, while VLGE and Protege turn human behavior inside virtual worlds into training data, making human judgment both the product and the scarce skill.",
     "stages": [
-      "Start Creating",
+      "Relaunch Yourself",
       "Reclaim Value",
       "Unhook Identity",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://www.zdnet.com/a/img/resize/e21ae17f217fc6ddbd281a9b92c2029448ae9afd/2026/06/29/e43bae81-9868-4e20-b973-02744ecfcaa1/gettyimages-1165984977-cropped.jpg?auto=webp&fit=crop&height=675&width=1200"
   },
@@ -573,7 +573,7 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-layoffs-2026_-major-tech-firms-cutting-jobs-as-AI-rises.jpg"
   },
@@ -585,7 +585,7 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg"
   },
@@ -596,8 +596,8 @@ export const bundledSignalIndex = [
     "pattern": "Today's five stories show AI pressure moving from broad workforce anxiety into task-level redesign. Forbes argues leaders need to classify the work inside jobs, AI builders are openly funding research into displacement, and Meta, Robinhood, Walmart, and Oracle appear in a layoff tracker tied to AI investment. HR Dive and Dell point to the next human stake: entry-level workers and enterprise teams will be judged by how well they supervise, direct, and redesign work with agents in the loop.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -609,8 +609,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Start Creating",
-      "Discover AI's Power"
+      "Relaunch Yourself",
+      "Become AI Ready"
     ],
     "imageUrl": "https://helios-i.mashable.com/imagery/articles/02Wagdh5MgvJQDkCMBsPbFd/hero-image.fill.size_1200x675.v1782433043.jpg"
   },
@@ -621,7 +621,7 @@ export const bundledSignalIndex = [
     "pattern": "The five stories point to a labor market learning two truths at once: agents are becoming infrastructure, and careers now have to outlast any one employer's redesign. Oracle cuts and broader tech restructuring show old roles being rewritten, while PwC and the 100-year career frame point to renewal rather than simple replacement. The durable move is to build portable judgment, not just defend a job title.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Reclaim Value"
     ],
     "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg"
@@ -634,8 +634,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Find Your Purpose"
+      "Become AI Ready",
+      "Discover Purpose"
     ],
     "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/06/4188067-0-04562000-1782298982-future-ready-IT-workforce-shutterstock_2677450619.jpg?quality=50&strip=all&w=1024"
   },
@@ -646,10 +646,10 @@ export const bundledSignalIndex = [
     "pattern": "Today's stories split the AI transition between fear and agency: students worry about jobs, Oracle cuts roles, and AI begins shaping even how young people discover universities. At the same time, Picsart's creator economy story shows value moving toward people who can claim audience, voice, and leverage. Purpose formation now has to happen earlier and more deliberately than the old career path required.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/04/20260401082814_MixCollage-01-Apr-2026-01-53-PM-7018.jpg"
   },
@@ -661,8 +661,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds"
   },
@@ -674,8 +674,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/NewCore-Raises-66M-To-Give-AI-Agents-Work-Identities-In-2026-1024x576.png"
   },
@@ -687,8 +687,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://www.digitaltrends.com/tachyon/2026/06/AdobeStock_567681994.jpg?resize=1200%2C630"
   },
@@ -700,9 +700,9 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power",
-      "Start Creating"
+      "Discover Purpose",
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://s.hdnux.com/photos/01/66/47/07/31093195/3/rawImage.jpg"
   },
@@ -714,8 +714,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Start Creating"
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://cdn.govexec.com/media/img/cd/2026/06/17/NGA_AOP_image_1-1/open-graph.png"
   },
@@ -727,8 +727,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/06/4185559-0-48713800-1781610470-youtube-thumbnail-uPpd9EJ4iNI_55eb26.jpg?quality=50&strip=all&w=1024"
   },
@@ -740,9 +740,9 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Find Your Purpose",
-      "Start Creating"
+      "Become AI Ready",
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://media.assettype.com/outlookbusiness/2026-04-24/zfplh735/5.png?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
   },
@@ -754,8 +754,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Reclaim Value",
       "Unhook Identity",
-      "Find Your Purpose",
-      "Start Creating"
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt7f9b16d39bc44ab3/6a22353270c5a9918127c424/AI-Changing-Human.jpg?branch=production&width=1200&quality=75&auto=webp&crop=1200:675&height=675"
   },
@@ -766,8 +766,8 @@ export const bundledSignalIndex = [
     "pattern": "The old guard of creative ownership is fighting back. Adobe's Creator Act, the creator economy conversation, and the rise of AI agents all point to the same inflection point: human creators are demanding legal, technical, and economic guardrails over their work. The Great Repurpose is not just about adapting to AI. It is about asserting who owns the output and who gets to decide.",
     "stages": [
       "Reclaim Value",
-      "Start Creating",
-      "Discover AI's Power",
+      "Relaunch Yourself",
+      "Become AI Ready",
       "Unhook Identity"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a20a739ac75b76282f7cc99/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds"
@@ -780,9 +780,9 @@ export const bundledSignalIndex = [
     "stages": [
       "Reclaim Value",
       "Unhook Identity",
-      "Find Your Purpose",
-      "Start Creating",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Relaunch Yourself",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   }
@@ -797,7 +797,7 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7a264ce63c53e5b623df4e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -826,7 +826,7 @@ export const bundledSignalsBySlug = {
         "summary": "Mark Zuckerberg argues that AI will not eliminate employment overall and that superintelligence agents will give small companies capabilities once reserved for larger organizations. His optimism contrasts with Dario Amodei's warning about entry-level white-collar work, making the real question who gains the tools, judgment, and market access to turn leverage into livelihoods.",
         "imageUrl": "https://media.assettype.com/freepressjournal/2026-08-13/sawnn5ki/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Queen-Of-All-Mayhem-2026-08-13T203224.687.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -843,7 +843,7 @@ export const bundledSignalsBySlug = {
         "summary": "Brix launched a proactive workforce agent for AI startups, with cofounder Katherine Duan arguing that hiring's bottleneck is not simply the supply of candidates. Moving from a tool that assists recruiters to an agent that initiates work raises the value of human role definition, judgment, and accountability: someone still has to decide what good hiring means.",
         "imageUrl": "https://app.financewire.com/storage/uploads/users/mawra_bi_1786708397AJTbwIhA8a.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -897,8 +897,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Start Creating",
-      "Discover AI's Power"
+      "Relaunch Yourself",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7ee6e4e281d4658c13262a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -911,7 +911,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://media.assettype.com/freepressjournal/2026-03-14/j1q45ex0/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Queen-Of-All-Mayhem-2026-03-14T063422.412.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Goldman Sachs expects India's concentration of physical and mechanical work to limit economy-wide AI job losses.",
@@ -961,7 +961,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes contrasts the studios behind the top 50 creators' $1.02 billion in earnings with two small business owners who used AI to produce at creator scale without teams. The opportunity is not effortless content volume; it is giving a person with taste, a clear point of view, and customer knowledge enough leverage to operate like a much larger organization.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7ee6e4e281d4658c13262a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -998,8 +998,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
     "stories": [
@@ -1029,7 +1029,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "The article defines AI scale as expanding people's capacity rather than simply reducing headcount.",
@@ -1046,7 +1046,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Chandrasekaran argues that AI can raise the productive capacity of people with little formal training.",
@@ -1063,7 +1063,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI exposure now reaches office roles that workers once considered protected from automation.",
@@ -1097,10 +1097,10 @@ export const bundledSignalsBySlug = {
     "title": "Work Becomes AI's Training Ground",
     "pattern": "Business Insider traces Google, Meta, and Mechanize's race to train agents inside realistic work environments, while Skan AI raises $63 million to map how employees actually move through enterprise systems. Forbes argues that every agent now needs named management and accountability; Oracle pairs billions in AI infrastructure spending with reported job cuts; and higher education is pressed to make its AI boundaries visible. Together, the stories show work becoming both the training data and the proving ground for AI—and make human oversight, consent, and judgment more valuable precisely as machines learn the workflow.",
     "stages": [
-      "Discover AI's Power",
+      "Become AI Ready",
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/3WDoD2ymJo193EQQiyjPZc/10a7a431875f094f56d874bfa72cb9b0/Nuneybits_Vector_art_of_bank_towers_feeding_glowing_process_map_2465961e-61fe-473e-aaec-8071e4adbfcc.webp?w=800&q=75",
     "stories": [
@@ -1113,7 +1113,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI developers are seeking realistic work environments that can teach agents to complete jobs rather than only answer questions.",
@@ -1129,7 +1129,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes argues that an AI agent becomes an unmanaged worker when nobody can say who authorized it, what data it touched, or how to reverse its actions. The management problem is therefore human, not merely technical: organizations need clear ownership, boundaries, monitoring, and rollback authority so automation expands capability without dissolving accountability.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/691caa4b92349bc97f986494/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1146,7 +1146,7 @@ export const bundledSignalsBySlug = {
         "summary": "VentureBeat reports that Skan AI raised $63 million in Series C funding to build a context graph of work by observing how employees navigate enterprise software. The bet is that AI cannot transform operations it does not understand. That makes the messy, invisible coordination people perform both valuable source material and a domain that requires transparent limits on workplace observation.",
         "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/3WDoD2ymJo193EQQiyjPZc/10a7a431875f094f56d874bfa72cb9b0/Nuneybits_Vector_art_of_bank_towers_feeding_glowing_process_map_2465961e-61fe-473e-aaec-8071e4adbfcc.webp?w=800&q=75",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1180,8 +1180,8 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes argues that colleges and universities have a responsibility to show students how AI is used and where its boundaries lie. Transparency can become a competitive advantage because students need more than tool access: they need practice deciding when AI helps, when it distorts learning, and which judgments they must still be able to make for themselves.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a79f11ccb85802184fa1982/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Find Your Purpose",
-          "Discover AI's Power"
+          "Discover Purpose",
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Institutions should clearly disclose how AI participates in teaching, assessment, and student services.",
@@ -1200,8 +1200,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Reclaim Value",
       "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7756eb7e802fb3f9739e7c/0x0.jpg?format=jpg&crop=1356,763,x0,y68,safe&height=900&width=1600&fit=bounds",
     "stories": [
@@ -1231,7 +1231,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://static.ffx.io/images/$zoom_0.16214974735875057%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_62/t_crop_custom/q_86%2Cf_auto/9586ff12536490f6f593f9675e4d4d979b00b076",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Graduate prospects are becoming more competitive and uncertain as the labor market cools and employers adopt AI.",
@@ -1248,7 +1248,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7756eb7e802fb3f9739e7c/0x0.jpg?format=jpg&crop=1356,763,x0,y68,safe&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Employers are placing greater weight on capabilities that remain difficult for AI to replicate.",
@@ -1265,7 +1265,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": null,
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Fast-growing companies continue to add talent despite widespread headlines connecting AI with job cuts.",
@@ -1281,7 +1281,7 @@ export const bundledSignalsBySlug = {
         "summary": "Benevolve co-founder Manisha Goel argues that enterprise AI transformation starts with people rather than larger models or more technology. Adoption becomes durable when leaders redesign work, build capability, and include employees in the change. That turns AI from an installation project into a question of agency: who understands the system, shapes its use, and remains accountable for outcomes.",
         "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-08-11%2F4jtmxd6o%2F%E2%80%98The-Real-AI-Transformation-Starts-with-People-Not-Technology%E2%80%99-Benevolve%E2%80%99s-Manisha-Goel.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1301,8 +1301,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Find Your Purpose"
+      "Become AI Ready",
+      "Discover Purpose"
     ],
     "imageUrl": "https://hermes.media.static.aol.com/media/2026/08/09/a25f42a4-e854-3889-b9e9-f477a5745c30/2d8bea54-e198-4267-b497-a744c0c909b1.jpg",
     "stories": [
@@ -1331,8 +1331,8 @@ export const bundledSignalsBySlug = {
         "summary": "IIT Madras director V. Kamakoti argues that AI will create more jobs than it cuts and says India must respond by upskilling people. His optimism places responsibility on education and industry: new work becomes a human opportunity only when people can build relevant capabilities and participate as creators, not merely wait for aggregate growth to reach them.",
         "imageUrl": "https://images.yourstory.com/cs/2/6db16ae008d911e9bb473d9d98ed1e05/Untitleddesign35-1782727885343.jpg",
         "stages": [
-          "Discover AI's Power",
-          "Start Creating"
+          "Become AI Ready",
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Kamakoti expects AI-led job creation to exceed the employment it displaces.",
@@ -1366,7 +1366,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": null,
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The article tracks twenty major workforce reductions announced or carried out during 2026 through August.",
@@ -1383,7 +1383,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": null,
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Most executive discussion of AI productivity centers on gains expected in the future.",
@@ -1401,9 +1401,9 @@ export const bundledSignalsBySlug = {
     "pattern": "Erika Donalds argues that education should prepare students for an emerging AI job boom, while Australian modelling projects 44,000 additional jobs and a $116 billion economic lift. Yet 24/7 Wall St. points to Oracle and Microsoft cuts as evidence of a historic tech-sector layoff wave, and Challenger data reported by AOL says AI was cited in one-third of July job cuts even as total layoffs reached a two-year low. Singapore's Lawrence Wong puts the real test in public terms: productivity gains must help workers who fear being left behind. Together, the stories show that forecasts alone cannot earn trust; institutions must connect AI growth to credible pathways through which people can learn, contribute, and share in the value created.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://apicms.thestar.com.my/uploads/images/2026/08/09/4050790.jpg",
     "stories": [
@@ -1415,8 +1415,8 @@ export const bundledSignalsBySlug = {
         "summary": "Erika Donalds argues that AI is creating new career opportunities and that education systems must prepare students to pursue them. The useful test is not whether schools add more tool exposure, but whether learners gain the judgment, adaptability, and direction required to turn technological change into work they can value and shape.",
         "imageUrl": "https://media.townhall.com/cdn/hodl/2023/264/d663869e-6905-474c-9914-e6c5bccf93d6-1200x630.jpg",
         "stages": [
-          "Find Your Purpose",
-          "Discover AI's Power"
+          "Discover Purpose",
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The column presents AI as a source of expanding career opportunity rather than only a displacement threat.",
@@ -1451,7 +1451,7 @@ export const bundledSignalsBySlug = {
         "stages": [
           "Unhook Identity",
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Singapore is using AI to pursue higher productivity while publicly acknowledging worker anxiety about jobs.",
@@ -1468,7 +1468,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": null,
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The modelling projects up to 3.6% additional GDP from AI over the coming decade.",
@@ -1503,9 +1503,9 @@ export const bundledSignalsBySlug = {
     "pattern": "Dataquest asks whether companies are replacing people with AI or using AI to explain a broader reset, while Etsy explicitly says its 12% workforce cut is not AI-driven and CBS reports that overall layoffs have fallen to a two-year low. At the same time, the Bank of England sees AI lifting productivity while reducing jobs, and Diane Hamilton argues that the World Economic Forum still has not answered what gives work meaning when execution changes. Together, the stories expose a consequential tension: people need honest evidence about where jobs are going, but they also need a source of purpose that no corporate explanation or labor statistic can supply.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://img-cdn.publive.online/fit-in/1200x675/dq/media/media_files/2026/08/08/ai-layoffs-2026-08-08-15-03-35.png",
     "stories": [
@@ -1518,7 +1518,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://img-cdn.publive.online/fit-in/1200x675/dq/media/media_files/2026/08/08/ai-layoffs-2026-08-08-15-03-35.png",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The article separates direct AI substitution from cost cutting and broader corporate restructuring.",
@@ -1551,7 +1551,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a71eb8aa07f89bd69ed9759/0x0.jpg?format=jpg&crop=3150,1805,x450,y10,safe&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The World Economic Forum's future-of-work discussion leaves the meaning of purpose under automation unresolved.",
@@ -1569,7 +1569,7 @@ export const bundledSignalsBySlug = {
         "stages": [
           "Unhook Identity",
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The Bank of England sees early evidence that UK firms are using AI for growth rather than only experimentation.",
@@ -1604,10 +1604,10 @@ export const bundledSignalsBySlug = {
     "pattern": "Singapore's pledge to help workers navigate AI, Etsy's insistence that a restructuring is not AI-driven, and students' practical use of AI against career anxiety all push back on the idea that technology writes the whole labor story by itself. A creator report and a Forbes call to put humanity at the heart of work add a cultural test: adoption has to leave room for trust, authorship, and honest explanation. The transition gains legitimacy when people are participants with agency, not simply objects of a company's efficiency narrative.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Start Creating",
-      "Discover AI's Power"
+      "Relaunch Yourself",
+      "Become AI Ready"
     ],
     "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/ae1d0ef3fa6b1bb9b55171652a15d45ab0192690cff01f3ef40370a7d3973b91",
     "stories": [
@@ -1620,7 +1620,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/ae1d0ef3fa6b1bb9b55171652a15d45ab0192690cff01f3ef40370a7d3973b91",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Singapore frames AI adoption as a worker-transition challenge as well as an economic opportunity.",
@@ -1636,7 +1636,7 @@ export const bundledSignalsBySlug = {
         "summary": "Uppbeat's 2026 creator report finds its youngest creators are the most resistant to AI, signaling that adoption is also a question of authorship and cultural trust. Creators are not merely choosing a faster production method; they are deciding what kinds of labor, originality, and relationship with an audience they want their work to represent.",
         "imageUrl": "https://pressranger.s3.us-west-1.amazonaws.com/3616630/The-Uppbeat-Creator-Report.jpg",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1671,7 +1671,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a68f4445021c4a12e61d24d/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The article makes a case for human-centered choices in AI-enabled work design.",
@@ -1687,8 +1687,8 @@ export const bundledSignalsBySlug = {
         "summary": "Yahoo reports on college students using AI as they confront fear about a changing job market, turning the technology into a tool for preparation rather than only a symbol of replacement. That use is not a complete answer to career uncertainty, but it shows a more agentic posture: learn the capability, test it against real goals, and keep choosing a direction.",
         "imageUrl": "https://s.yimg.com/lo/mysterio/api/681d55f577c338ca0c316a6d3a5070e54f93f9bde3bc70d017d313b6e539ee8e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Ftalker_news_345%2Fa630816e8c4feabc48cb1a93156e817e",
         "stages": [
-          "Find Your Purpose",
-          "Discover AI's Power"
+          "Discover Purpose",
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Students are using AI tools while trying to make sense of an uncertain career landscape.",
@@ -1706,9 +1706,9 @@ export const bundledSignalsBySlug = {
     "pattern": "EY sees 15 sectors where AI could create more jobs than it replaces, while marketers and employers are discovering that useful systems need human context and legitimacy, not just faster output. TechRadar's reports on context engineering and applicant-screening backlash, together with new research on warranted reliance, expose a shared design problem: people must be able to understand, challenge, and guide the systems that increasingly shape their work. AI becomes a durable capability only when judgment is built into the infrastructure around it.",
     "stages": [
       "Reclaim Value",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Unhook Identity",
-      "Start Creating"
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://cdn.mos.cms.futurecdn.net/8sVBmVE46HZc6Xrp23uhaE-1200-80.jpeg",
     "stories": [
@@ -1738,7 +1738,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://i.insider.com/6a591afa54f9875261775fc5?width=1200&format=jpeg",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "AI tools can accelerate marketing work without deciding what will genuinely connect with people.",
@@ -1755,7 +1755,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://cdn.mos.cms.futurecdn.net/PAztEScphfxGJfYno5NjrL-1200-80.jpg",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI systems become fragile when they are built around narrow examples instead of real operating context.",
@@ -1788,7 +1788,7 @@ export const bundledSignalsBySlug = {
         "summary": "New research proposes evaluating AI in high-stakes workflows by whether people are justified in relying on its outputs, not only whether a model appears accurate or persuasive. That distinction puts human judgment back at the center: professionals need enough visibility, evidence, and recourse to use AI as an input to reasoning rather than as an instruction to obey.",
         "imageUrl": "https://arxiv.org/html/2608.05602v1/x1.png",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1808,8 +1808,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-08-05%2F3vf4kwbb%2FVisa-Layoffs-2600-Jobs-Cut-as-AI-Push-Hits-India-415.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
     "stories": [
@@ -1838,7 +1838,7 @@ export const bundledSignalsBySlug = {
         "summary": "China Daily examines whether education can prepare graduates for a labor market being reshaped by AI, tying career readiness to longer-term economic development. The useful challenge is larger than teaching a tool: people need practice in adapting, making judgments, and finding direction when the first version of a role no longer stays fixed.",
         "imageUrl": "https://www.hw.ac.uk/image-library/programmeBanners/6-1635.xd285abbf.jpg?f=webp&fit=crop&h=672&q=75&w=1920",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -1856,7 +1856,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a72f87f1a56cc2b53c43fe3/0x0.jpg?format=jpg&crop=1335,751,x0,y54,safe&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The World Bank analysis identifies sharp differences in AI-related job exposure across countries.",
@@ -1889,7 +1889,7 @@ export const bundledSignalsBySlug = {
         "summary": "GovInfoSecurity explores how AI agents can act through legitimate permissions yet still produce outcomes their creators did not intend. As organizations grant agents more access, identity and accountability cannot be treated as a technical afterthought; people must decide what an agent may do, when it must escalate, and who remains responsible.",
         "imageUrl": "https://ismg-cdn.nyc3.cdn.digitaloceanspaces.com/articles/ai-agents-challenge-identity-governance-image_large-10-a-32417.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1909,9 +1909,9 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power",
-      "Start Creating"
+      "Discover Purpose",
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://asset.peoplematters.in/images/d538c3ae-2602-4eb5-b79d-3a2d559b6abe.png",
     "stories": [
@@ -1941,7 +1941,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6bb548a0b916bfe70a5f5d/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Agent autonomy should follow a defined role, decision boundary, and escalation path.",
@@ -1958,7 +1958,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a70c51c2fa6e805d7e98bfb/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Laid-off employees can carry valuable domain knowledge and unmet-customer insight into new ventures.",
@@ -1975,7 +1975,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://www.thedailystar.net/sites/default/files/styles/social_share/public/2026-08/Shafiul%20Hasan%20Tareq.jpeg",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "AI is changing how software companies evaluate talent and organize technical work.",
@@ -1991,8 +1991,8 @@ export const bundledSignalsBySlug = {
         "summary": "ArtArch is consolidating its creative products into what it calls an AI-native Creative OS, combining multimodel creation, workflow, asset management, and commercial-content tools in one platform. As production capabilities converge, creators gain leverage—but must supply the intent, taste, and direction that a unified tool cannot choose for them.",
         "imageUrl": "https://ml.globenewswire.com/Resource/Download/292a9948-b34e-437a-a107-4bb5f00f28a9/artarch.jpg",
         "stages": [
-          "Discover AI's Power",
-          "Start Creating"
+          "Become AI Ready",
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "ArtArch is merging previously separate products into a unified creative platform.",
@@ -2011,8 +2011,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Start Creating"
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://www.thehrdigest.com/wp-content/uploads/2026/08/Chime-layoffs-2026.jpg",
     "stories": [
@@ -2025,7 +2025,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Ansari argues that fear around AI has constrained creative ambition, but that mood is beginning to shift.",
@@ -2041,7 +2041,7 @@ export const bundledSignalsBySlug = {
         "summary": "Lanier Technical College is opening an AI and robotics studio designed to prepare students for Georgia’s expanding high-tech manufacturing sector. The studio matters because it turns an abstract demand to “reskill” into a visible place where people can practice with the systems reshaping the work.",
         "imageUrl": "",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -2111,9 +2111,9 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power",
-      "Start Creating"
+      "Discover Purpose",
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6dda25b9bad10d8e16144c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -2125,8 +2125,8 @@ export const bundledSignalsBySlug = {
         "summary": "Snapchat and LinkedIn announced measures aimed at reducing low-quality AI-generated material in users’ feeds. The shift matters because easy production does not create value by itself; as synthetic content proliferates, discernment, taste, and accountability become more visible parts of creative work.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6dda25b9bad10d8e16144c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Discover AI's Power",
-          "Start Creating"
+          "Become AI Ready",
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Platforms are beginning to distinguish useful AI-assisted work from repetitive synthetic noise.",
@@ -2144,7 +2144,7 @@ export const bundledSignalsBySlug = {
         "stages": [
           "Unhook Identity",
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI use can spread widely before entire jobs are automated.",
@@ -2160,7 +2160,7 @@ export const bundledSignalsBySlug = {
         "summary": "As AI agents take on scheduling, records, qualification, and other operational tasks, organizations have to decide who owns the outcome when an agent gets it wrong. The opportunity is not to pretend the agent is an employee; it is to redesign work so supervision, escalation, and responsibility are clear.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a6b60d9ec2874705d45ab09/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2178,8 +2178,8 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose",
-          "Discover AI's Power"
+          "Discover Purpose",
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Task redistribution is often the first visible effect of workplace AI.",
@@ -2196,8 +2196,8 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Reclaim Value",
-          "Find Your Purpose",
-          "Start Creating"
+          "Discover Purpose",
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "AI exposure is changing which skills employers ask for, not only how many tasks are automated.",
@@ -2215,7 +2215,7 @@ export const bundledSignalsBySlug = {
     "pattern": "Visa is cutting 2,600 roles as AI speeds parts of product and technology work, while ADP argues that jobs are being recomposed around deeper thinking rather than simply erased. A workforce survey, Forbes’ call to measure human-AI collaboration, and Onyx’s control plane for 1.1 million agents point to the same tension: as machines execute more of the work, human judgment, accountability, and the power to say no must become part of the operating system.",
     "stages": [
       "Reclaim Value",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Unhook Identity"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/68b9a3deb1db5576bdde29b4/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
@@ -2262,7 +2262,7 @@ export const bundledSignalsBySlug = {
         "summary": "Diane Hamilton argues that leaders should measure what people achieve with AI, not only the system’s standalone performance. That changes the management question from whether a model is impressive to whether the human-machine partnership improves decisions, learning, and results—and makes collaboration design a core leadership responsibility.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/68b9a3deb1db5576bdde29b4/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2279,7 +2279,7 @@ export const bundledSignalsBySlug = {
         "summary": "Onyx Security raised $113 million for a control plane that inspects agent actions before they reach enterprise systems and blocks unsafe ones at runtime. The company says it already secures 1.1 million agents across 66 million sessions, making the human ability to set boundaries and retain a meaningful veto an operational necessity rather than a philosophical preference.",
         "imageUrl": "",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2297,7 +2297,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://storage.googleapis.com/gpt-engineer-file-uploads/XW65pun0vjQL3xcUmVglEg4ZrsL2/social-images/social-1763560217027-Expert-Panel-discussion-768x512.webp",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Visa plans to eliminate about 2,600 roles, with technology and product teams carrying most of the reduction.",
@@ -2314,10 +2314,10 @@ export const bundledSignalsBySlug = {
     "title": "AI Redraws Roles Before Work Catches Up",
     "pattern": "Visa is cutting 7% of its staff as AI-enabled efficiency expands, while Microsoft’s $2.5 billion investment in human expertise argues that capable systems still depend on people who know what good looks like. OpenAI’s task-crossover data, five startups rebuilding trust around agents, and Born Social’s creator community show the deeper shift: roles are stretching and recombining faster than organizations can redesign accountability, value, and belonging.",
     "stages": [
-      "Discover AI's Power",
+      "Become AI Ready",
       "Reclaim Value",
       "Unhook Identity",
-      "Start Creating"
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a69e5a81ae7df62bd92a6c3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -2330,7 +2330,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a69e5a81ae7df62bd92a6c3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Microsoft committed $2.5 billion to an approach built around human experts working with AI.",
@@ -2346,7 +2346,7 @@ export const bundledSignalsBySlug = {
         "summary": "Five startups are building infrastructure for agent interoperability, permissions, monitoring, and auditability; one reported reducing cyberattack containment from seven hours to twelve minutes. As agents move into real operations, human judgment becomes more important because someone must define boundaries, interpret exceptions, and remain accountable for what autonomous systems do.",
         "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/5elxWoo3xiuafOlEJ2rqwC/439218c0037c2510b6e596d5722638d3/Innovation_Showcase.jpg?w=800&q=75",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2380,7 +2380,7 @@ export const bundledSignalsBySlug = {
         "summary": "Born Social is creating a community to streamline creator onboarding and selection while pushing back against feeds flooded with AI-generated material. The move reinforces a growing creative premium on human relationships, taste, and trusted identity—the things that make work worth choosing rather than merely easy to generate.",
         "imageUrl": "https://s3.amazonaws.com/media.mediapost.com/dam/cropped/2026/07/23/unnamed_ONB3reA.png",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2397,7 +2397,7 @@ export const bundledSignalsBySlug = {
         "summary": "OpenAI’s analysis of more than 800,000 U.S. ChatGPT messages found that 43.5% of occupation-specific AI use involved tasks associated with another occupation. AI is already stretching roles before job descriptions catch up, giving people new territory to claim while also making boundaries, learning paths, and accountability less stable.",
         "imageUrl": "",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2416,7 +2416,7 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories test whether the reskilling promise is keeping pace with the work people will actually inherit. Andrew Ng and Coursera are putting $100 million behind LearnVector's personal AI tutors; Daron Acemoglu argues for pro-worker AI rather than another automation-first economy; Inc. warns that companies are rehiring judgment they cut too quickly; The Conference Board finds employers teaching today's tools more often than tomorrow's roles; and Google's analysis of nearly 15 million Gemini interactions finds broad assistance but little full automation. The human tension is whether institutions will help people build adaptable judgment and agency, or merely teach them to chase the latest tool while the shape of work keeps moving.",
     "stages": [
       "Reclaim Value",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Unhook Identity"
     ],
     "imageUrl": "https://media.assettype.com/outlookbusiness/2026-07-29/u2m5tkqx/Untitled-design-32.jpg?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100",
@@ -2429,7 +2429,7 @@ export const bundledSignalsBySlug = {
         "summary": "Coursera is investing $100 million for roughly a one-third stake in LearnVector, Andrew Ng's new company building personal AI tutors for adult learners. Its planned 2027 products will adapt instruction until a learner can demonstrate mastery. The bet treats learning as durable human infrastructure, but it also places responsibility on workers to keep remaking their skills as roles change.",
         "imageUrl": "https://media.assettype.com/outlookbusiness/2026-07-29/u2m5tkqx/Untitled-design-32.jpg?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2447,7 +2447,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://cdn.theatlantic.com/thumbor/2qcWQdI3MwCRNuWrR9Jm_Le2Wv4=/0x43:2000x1085/1200x625/media/img/mt/2026/07/2026_07_27_Acemoglu_pro_worker_ai_final/original.jpg",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Acemoglu connects automation-first digital investment with widening inequality and political instability.",
@@ -2497,7 +2497,7 @@ export const bundledSignalsBySlug = {
         "summary": "Google's ATLAS study examined 14.65 million de-identified interactions across Gemini, AI Mode, and the Gemini API. AI use appeared across occupations representing most U.S. employment, yet full task automation accounted for less than one in ten workplace prompts and most job tasks remained untouched. The transition is broad but partial, making human orchestration and judgment more immediate than wholesale replacement.",
         "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1711353151-1152x648.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2517,7 +2517,7 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Reclaim Value",
       "Unhook Identity",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
     "stories": [
@@ -2529,7 +2529,7 @@ export const bundledSignalsBySlug = {
         "summary": "AutoRev has launched AI agents for lawn and landscape businesses that answer after-hours calls, follow up with leads, build and price estimates, and book jobs. This is automation moving from a generic assistant into the commercial front office; the durable human role shifts toward setting standards, handling exceptions, and remaining accountable for promises the system makes.",
         "imageUrl": "",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2547,7 +2547,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Earlier technologies changed the basis of creative compensation without eliminating creative practice.",
@@ -2564,7 +2564,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Anthropic found no systematic unemployment increase among highly exposed workers since late 2022.",
@@ -2617,7 +2617,7 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a639125da626858fbd7dec4/0x0.jpg?format=jpg&crop=1961,1103,x68,y105,safe&height=900&width=1600&fit=bounds",
     "stories": [
@@ -2630,7 +2630,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a639125da626858fbd7dec4/0x0.jpg?format=jpg&crop=1961,1103,x68,y105,safe&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "The dataset covers 76,925 AI projects and $8.27 million in freelance spending over the past year.",
@@ -2647,7 +2647,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The reduction affects 10% of Uber's customer-service organization, also known as community operations.",
@@ -2681,7 +2681,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://www.unite.ai/wp-content/uploads/2026/07/ChatGPT-Image-Jul-20-2026-10_53_18-AM.png",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Ford reportedly rehired experienced engineers after automated systems struggled with complex manufacturing quality issues.",
@@ -2698,7 +2698,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://ml.globenewswire.com/media/d60448c5-44c1-4061-a525-161810e55c26/small/wtw-jpg.jpg",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The partnership joins TechWolf's skills and work intelligence with WTW's workforce transformation and advisory capabilities.",
@@ -2717,7 +2717,7 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/07/4200685-0-61569700-1784812733-shutterstock_2560810077.jpg?quality=50&strip=all&w=1024",
     "stories": [
@@ -2729,7 +2729,7 @@ export const bundledSignalsBySlug = {
         "summary": "OpenAI says its Presence voice and chat agents resolve 75% of inbound issues in the company's English-language phone support channel. Analysts caution that fragmented systems, compliance demands, and integration costs will lower early automation rates elsewhere, making slower hiring and redesigned roles more likely than immediate mass layoffs. Human value moves toward complex cases, empathy, escalation, governance, and accountable judgment.",
         "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/07/4200685-0-61569700-1784812733-shutterstock_2560810077.jpg?quality=50&strip=all&w=1024",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2780,7 +2780,7 @@ export const bundledSignalsBySlug = {
         "summary": "Google's ATLAS study analyzed 14.65 million de-identified Gemini interactions and found workplace AI use across 68% of occupations representing 90% of U.S. employment. Yet AI touched only about 21% of tasks in a typical job, with assistance more common than full automation. The evidence argues for learning to direct AI without confusing widespread use with the disappearance of whole professions.",
         "imageUrl": "https://d.ibtimes.com/en/full/4651609/office-workers.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -2816,8 +2816,8 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show agents crossing from assistance into consequential action. CareerBoom applies for jobs on a candidate's behalf, Ushur promises enterprise agents that finish customer workflows, and password-capable agents expand the security boundary, while OpenAI's Leah Belsky argues schools must form citizens with agency and judgment and international students steer costly degree choices toward AI resilience. The human tension is no longer whether AI can do the work, but whether people retain enough purpose, judgment, and control to decide which work should be delegated and remain accountable for what follows.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power",
+      "Discover Purpose",
+      "Become AI Ready",
       "Reclaim Value"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5ce59feb67be3ffdc4caf8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
@@ -2831,7 +2831,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://ml.globenewswire.com/Resource/Download/4f798c22-6165-4c2d-83a0-217dc4bf964a/gsadfd.png",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The agent searches listings, matches suitable roles, and tailors each application.",
@@ -2848,7 +2848,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5ce59feb67be3ffdc4caf8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The article connects more capable workplace AI to a broader educational mission.",
@@ -2864,7 +2864,7 @@ export const bundledSignalsBySlug = {
         "summary": "Ushur introduced an agentic platform for building and operating enterprise agents intended to complete customer-facing work, not merely answer questions. Moving from recommendation to execution makes workflow design, escalation rules, and human accountability more important: the durable job becomes specifying outcomes and supervising the system when real people bear the consequences.",
         "imageUrl": "https://ml.globenewswire.com/media/b9d184c4-00e8-46a0-aa27-28eb981d6117/small/ushur-logo-hi-res.png",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -2881,7 +2881,7 @@ export const bundledSignalsBySlug = {
         "summary": "International students are increasingly choosing AI, data science, analytics, and engineering programs, often combining technical study with management. Open Doors data cited by Digital Journal put 57% of international students in U.S. STEM fields. The pivot is a costly wager on career resilience, revealing how quickly technological anxiety can reshape identity and purpose before students enter the workforce.",
         "imageUrl": "https://www.digitaljournal.com/wp-content/uploads/2025/04/7685ed067a7cd7d572b28a11da63159789e56cba.jpg",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -2898,7 +2898,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes examines the professional risk created when agents can use credentials, against the backdrop of a security breach involving Hugging Face and OpenAI. Giving an agent the ability to authenticate and act expands both its usefulness and its blast radius. People need practical AI literacy, permission boundaries, and the confidence to withhold delegation when convenience outruns control.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a60af932240beb0fb88b093/0x0.jpg?format=jpg&crop=1743,979,x0,y24,safe&height=900&width=1600&fit=bounds",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -2918,8 +2918,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-132554642,imgsize-365701,width-1200,height=627,overlay-etbrandequity,resizemode-75/marketing/bws-2026-how-ai-is-reshaping-creative-ideation.jpg",
     "stories": [
@@ -2931,7 +2931,7 @@ export const bundledSignalsBySlug = {
         "summary": "At ET Brand World Summit 2026, industry leaders described AI as a co-creator that removes execution barriers and accelerates idea production without replacing human creativity. Their message moves creative value upstream: when production becomes easier, agencies must invest in people whose insight, judgment, and cultural awareness determine which ideas deserve to exist and whether they connect.",
         "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-132554642,imgsize-365701,width-1200,height=627,overlay-etbrandequity,resizemode-75/marketing/bws-2026-how-ai-is-reshaping-creative-ideation.jpg",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2964,7 +2964,7 @@ export const bundledSignalsBySlug = {
         "summary": "SOCAN and Musical AI will explore consent, attribution, and reporting infrastructure for generative music so songwriters, composers, and publishers can control use and receive credit and compensation. Their opt-in approach treats creator agency as system architecture, not an afterthought—an important model for preserving human value when AI outputs draw on creative work at scale.",
         "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2981,7 +2981,7 @@ export const bundledSignalsBySlug = {
         "summary": "Sprout's State of HR 2026 study of more than 3,500 Philippine employees found 78% use AI daily, but only 35% receive role-specific training. That adoption-enablement gap leaves people improvising through a structural transition. Leaders must redesign work, pair AI skill with domain expertise, and protect the judgment that erodes when too much thinking is outsourced.",
         "imageUrl": "https://cf-images.assettype.com/sunstar%2Fimport%2Fuploads%2Fimages%2F2019%2F06%2F17%2F153763.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -2998,7 +2998,7 @@ export const bundledSignalsBySlug = {
         "summary": "Michael Edmondson argues that technology shapes society, but human choices determine its consequences, making human capability the decisive advantage in the AI era. That frame ties today's stories together: tools can accelerate output, but judgment, learning, rights, and institutional design decide whether adoption expands human agency or simply rearranges people around the technology.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5bd3d06addc517fda4e62d/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -3017,9 +3017,9 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show that AI growth no longer guarantees people a secure place inside the value it creates. Intel's AI business is expanding while the company continues cutting jobs—including inside its Data Center and AI Group—while Netchex is bringing agents to deskless HR, YouTube is withholding monetization from repetitive AI content, and Will Cady argues that business must deliberately preserve humanity. The tension is no longer whether AI can produce growth or output; it is whether institutions will design that progress around human agency, trusted judgment, and work worth doing.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Reclaim Value",
-      "Start Creating"
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://data.ibtimes.sg/en/full/93281/intel.jpg?w=1200&h=630?q=60",
     "stories": [
@@ -3048,7 +3048,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes reports that payroll and HR provider Netchex acquired startup Mesh to introduce AI agents for deskless workers in industries including hospitality and leisure. Bringing agents into everyday employment systems could make support more accessible, but it also makes human oversight essential wherever automated workflows touch pay, benefits, scheduling, or other consequential needs.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5a50bcda04814bfac55a6e/0x0.jpg?format=jpg&crop=1929,904,x0,y189,safe&height=900&width=1600&fit=bounds",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -3081,7 +3081,7 @@ export const bundledSignalsBySlug = {
         "summary": "Mashable explains YouTube's effort to deny monetization to repetitive videos, rage bait, and low-value AI characters rather than treating all AI-assisted creation alike. The distinction creates a practical market signal for creators: abundant generation makes intention, originality, editorial judgment, and genuine audience value more—not less—important.",
         "imageUrl": "https://helios-i.mashable.com/imagery/articles/04gCEt15pxtaJmidJJEX7tu/hero-image.fill.size_1200x675.v1784576316.jpg",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -3098,7 +3098,7 @@ export const bundledSignalsBySlug = {
         "summary": "Los Angeles Magazine profiles Will Cady's argument that AI-era leadership and the future of work need more humanity, not simply more technical capacity. His HEAL MVMNT framing supplies the choice running beneath today's other stories: organizations can use AI to extract more output, or deliberately build cultures where people retain connection, agency, and meaning.",
         "imageUrl": "https://lamag.com/wp-content/uploads/2026/07/SGCC2024_Reddit_Will-Cady_-Presentation_16-1-scaled.jpg",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -3118,9 +3118,9 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Find Your Purpose",
-      "Start Creating"
+      "Become AI Ready",
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5d35f8df9431e0619bb4ec/0x0.jpg?format=jpg&crop=2960,1663,x0,y0,safe&height=900&width=1600&fit=bounds",
     "stories": [
@@ -3150,7 +3150,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://media.assettype.com/freepressjournal/2022-11/602a4f8b-383b-496a-9e38-b715fdb7f1ea/Meta_May_Shut_Down_Facebook_and_Instagram_in_Europe_800x420.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The court allowed layoffs involving 26 Meta employees to continue.",
@@ -3166,7 +3166,7 @@ export const bundledSignalsBySlug = {
         "summary": "Investopedia reports that new graduates remain confident about first-job prospects in healthcare, education, STEM, and finance despite a difficult labor market. Their optimism is a useful counterweight to displacement headlines, but confidence becomes durable only when institutions provide visible entry points where young workers can build judgment, relationships, and real responsibility.",
         "imageUrl": "https://www.investopedia.com/thmb/KlztX6889baeQ7-z8jWdyCEheD4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2156935520-0b1e9463c8624c1d9ddb449167331969.jpg",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -3184,7 +3184,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The employees say AI-assisted evaluations unfairly affected workers who took medical or family leave.",
@@ -3200,7 +3200,7 @@ export const bundledSignalsBySlug = {
         "summary": "CNET reports that Netflix used generative AI in production workflows across roughly 300 titles this year. The scale shows that AI-assisted creation is becoming ordinary infrastructure; the human test is whether creators remain clearly empowered to set intention, exercise taste, and take responsibility for what reaches an audience.",
         "imageUrl": "https://www.cnet.com/wp-content/uploads/sites/2/netflix-brazil70.jpg",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -3218,9 +3218,9 @@ export const bundledSignalsBySlug = {
     "title": "Creators Keep The Chair As Agents Take The Search",
     "pattern": "Today's five stories show AI moving deeper into the machinery of making and finding work without settling who should remain in charge. CapCut compresses creative production, a recruitment agent offers to hunt for jobs, and Netflix says AI touched 300 titles while creators kept the lead; Upwork's freelance index and the warning of a white-collar exodus reveal the other half of the bargain. The pattern is not simply more automation—it is a negotiation over whether people gain leverage to direct the system or lose agency inside workflows designed around them.",
     "stages": [
-      "Start Creating",
+      "Relaunch Yourself",
       "Unhook Identity",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Reclaim Value"
     ],
     "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/07/20260717092550_Netflix.png",
@@ -3233,7 +3233,7 @@ export const bundledSignalsBySlug = {
         "summary": "A software-industry roundup recognizes CapCut for accelerating video and image workflows with AI. The practical gain is faster execution, but the human work moves upstream: creators still have to choose the idea, direct the system, judge the result, and decide what is worth putting into the world.",
         "imageUrl": "https://images.tmcnet.com/tmc/world.jpg",
         "stages": [
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "CapCut is highlighted for using AI to speed video and image production workflows.",
@@ -3249,7 +3249,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The service acts as a virtual talent agent and charges job seekers for its recruitment assistance.",
@@ -3265,7 +3265,7 @@ export const bundledSignalsBySlug = {
         "summary": "Netflix says AI-powered visual effects contributed to 300 titles while creators continued to lead the process. That distinction offers a concrete model for augmentation: technology can expand what a team can make without becoming the author of the intention, taste, and meaning that hold the work together.",
         "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/07/20260717092550_Netflix.png",
         "stages": [
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Netflix reports that AI-powered visual effects were used across 300 titles.",
@@ -3315,7 +3315,7 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's stories move the AI work conversation from headline job counts to the terms on which people are kept, ranked, or represented. Meta's layoffs and discrimination allegations show the governance cost of automated decisions; the productivity and white-collar stories show that efficiency alone does not explain—or sustain—human contribution. The deeper pattern is that AI transition demands more than new tools: it asks institutions to make accountability, agency, and durable human value visible.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://data.ibtimes.sg/en/full/93078/us.jpg?w=1200&h=630?q=60",
     "stories": [
@@ -3343,7 +3343,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://gizmodo.com/app/uploads/2025/08/GettyImages-2229210608-1200x675.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The proposed agent searches for work on a candidate's behalf and charges after placement.",
@@ -3360,7 +3360,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The lawsuit claims Meta used AI to identify workers with disabilities or medical leave for layoffs.",
@@ -3407,9 +3407,9 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories expose a feedback loop hiding inside the AI jobs debate. Wells Fargo's 79,000-job contraction sits beside Cisco's and Jensen Huang's claims that deeper AI use can create work, while Forbes reports that some companies are already rehiring people after automation stripped out judgment they still needed. Outlook India's focus on human thinking makes the deeper pattern clear: the organizations learning fastest are discovering that efficiency can remove a role faster than it can replace the context, accountability, and discernment inside it.",
     "stages": [
       "Unhook Identity",
-      "Start Creating",
+      "Relaunch Yourself",
       "Reclaim Value",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a593cb030f01f60b0533bd9/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -3422,7 +3422,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://thesiliconreview.com/story_image_upload/article/Cisco_2026-07-16_12-53-08.webp",
         "stages": [
           "Unhook Identity",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Cisco frames AI adoption as a possible engine of job creation rather than only displacement.",
@@ -3472,7 +3472,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Huang argues that AI-driven productivity creates room to pursue more opportunities rather than simply remove workers.",
@@ -3489,7 +3489,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://cf-images.assettype.com/outlookindia/2026-07-14/w98e7gve/jitinchawla120260803.jpg?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The column frames job transformation as broader than outright replacement.",
@@ -3507,10 +3507,10 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show the AI transition splitting into two competing paths. AOL's list of exposed office roles, JPMorgan's 40% departmental cuts, and Sprout Social's 20% workforce reduction treat work as capacity to remove; Cognizant's 1,500-graduate plan and a new creator-tool stack treat it as capability to build. The deeper pattern is that institutions are redesigning the first rung of work in real time—and the human outcome depends on whether AI becomes an excuse to erase roles or an apprenticeship for judgment, agency, and creation.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Start Creating"
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
     "stories": [
@@ -3539,7 +3539,7 @@ export const bundledSignalsBySlug = {
         "summary": "Cognizant plans to hire 1,500 U.S. college graduates through university partnerships, apprenticeships, and frontier-engineering programs. At a moment when many companies are shrinking entry-level pathways, the plan offers a different model: use the first rung of work to develop people alongside AI rather than demanding finished expertise before they arrive.",
         "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -3573,7 +3573,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Sprout Social has begun notifying employees as it eliminates one-fifth of its workforce.",
@@ -3589,8 +3589,8 @@ export const bundledSignalsBySlug = {
         "summary": "TMCnet surveys AI tools for digital creators, highlighting CapCut for video and visual production. The list shows creation becoming more accessible and more automated at once, pushing human value upstream from operating software toward taste, intent, selection, and the courage to decide what is worth making.",
         "imageUrl": "https://images.tmcnet.com/tmc/world.jpg",
         "stages": [
-          "Start Creating",
-          "Discover AI's Power"
+          "Relaunch Yourself",
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI-assisted video and visual tools are lowering the technical barrier to producing polished content.",
@@ -3609,7 +3609,7 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://image.cnbcfm.com/api/v1/image/108297760-1777307207308-108297760-1777307153926-gettyimages-2267943764-Zuckerberg_182_032626.jpeg?v=1780690805&w=1920&h=1080",
     "stories": [
@@ -3638,7 +3638,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a552ce8a580febfe0577c13/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Generative tools are driving the marginal cost of creative production toward zero.",
@@ -3672,7 +3672,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://cdn-res.keymedia.com/cms/images/in/deni_639093387782762277.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Agentic AI is moving from research support into core banking workflows across trading, treasury, and wealth management.",
@@ -3707,8 +3707,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Find Your Purpose"
+      "Become AI Ready",
+      "Discover Purpose"
     ],
     "imageUrl": "https://image.cnbcfm.com/api/v1/image/108217469-1761596968439-gettyimages-2221389323-AFP_63TY9KL.jpeg?v=1761597002&w=1920&h=1080",
     "stories": [
@@ -3754,7 +3754,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://assets.thehansindia.com/h-upload/2026/07/14/1677341-memory.jpg",
         "stages": [
           "Reclaim Value",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Persistent memory and richer context could make AI systems more useful for consequential decisions.",
@@ -3771,7 +3771,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4eed08874209de3bb6a1ba/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Agentic AI renews fears of worker replacement while creating a competing model of human-machine collaboration.",
@@ -3788,7 +3788,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://cdn-res.keymedia.com/cms/images/in/deni_639093387782762277.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Banks are deploying agents across trading, treasury, and wealth-management workflows.",
@@ -3807,7 +3807,7 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5472bb97e75b48bdf6c70b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -3820,7 +3820,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5472bb97e75b48bdf6c70b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Enterprise AI returns depend on organizational readiness, operating change, and human leadership as much as the underlying tools.",
@@ -3837,7 +3837,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "AI-specific majors now compete with computer science, engineering, mathematics, and other established routes into the field.",
@@ -3900,7 +3900,7 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show schools trying to prepare people for a human-centered AI economy while the places where those qualities are learned and rewarded are coming apart. Forbes argues for emotional education and maps degree choices for AI careers, Psychology Today says remote work is stripping junior workers of apprenticeship, and two reports place an Xbox executive on the Federal Reserve's AI-and-jobs task force just after 3,200 layoffs. The pattern is that empathy, judgment, and direction are becoming more valuable at the same moment that credentials, entry-level practice, and institutional trust are becoming less reliable paths for developing them.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5205e8a09a80202929b872/0x0.jpg?format=jpg&crop=3642,2049,x0,y123,safe&height=900&width=1600&fit=bounds",
     "stories": [
@@ -3912,7 +3912,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes argues that empathy, communication, and emotional intelligence become more important as AI absorbs more technical and repeatable work. The TGR question is whether schools can help people name and develop those durable human capacities before the labor market forces them to discover their value through disruption.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5205e8a09a80202929b872/0x0.jpg?format=jpg&crop=3642,2049,x0,y123,safe&height=900&width=1600&fit=bounds",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -3929,7 +3929,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "AI-specific majors now compete with computer science, engineering, mathematics, and other established routes into the field.",
@@ -3960,7 +3960,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-07/pexels-wendelinjacober-1411394.jpg?h=e2ba213a&itok=5eGI9hgw",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Remote work can strip junior employees of proximity-based mentoring, observation, and relationship building.",
@@ -3992,8 +3992,8 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories expose a broken handoff between preparing for an AI career and finding a first place to practice it. Forbes maps the degrees meant to future-proof students, Psychology Today argues remote work is erasing the apprenticeship that turns education into judgment, and two reports put an Xbox executive on the Federal Reserve's AI-and-jobs task force just after 3,200 layoffs. With Forbes also describing agents as workers already entering the org chart, the pattern is that people are being told to choose the right credential while both the entry rung and the shape of the workforce are being redesigned beneath them.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds",
     "stories": [
@@ -4006,7 +4006,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "AI-specific majors now compete with computer science, engineering, mathematics, and other established routes into the field.",
@@ -4037,7 +4037,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-07/pexels-wendelinjacober-1411394.jpg?h=e2ba213a&itok=5eGI9hgw",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Remote work can strip junior employees of proximity-based mentoring, observation, and relationship building.",
@@ -4068,7 +4068,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/66e8ad9143dea9f7185cc9ad/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI agents are already performing work inside organizations before many companies have formally defined their place.",
@@ -4085,8 +4085,8 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show workers being asked to adapt before institutions can explain what adaptation will protect. AOL finds many workers over 60 unconcerned about AI even as age bias and automation narrow their options; Sri Lanka is confronting white-collar exposure; and an Xbox executive is joining a Federal Reserve AI-and-jobs task force after 3,200 layoffs. North Texas colleges are teaching students to use AI across careers while Digital Journal argues that jobs themselves are fluid, making the pattern a widening lag between lived workforce disruption and the systems meant to help people navigate it.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power",
-      "Find Your Purpose"
+      "Become AI Ready",
+      "Discover Purpose"
     ],
     "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/06/20260608074948_Xbox-CEO-Asha-Sharma.png",
     "stories": [
@@ -4099,7 +4099,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Many workers over 60 remain relatively unconcerned about AI-driven job loss.",
@@ -4116,7 +4116,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://bmkltsly13vb.compat.objectstorage.ap-singapore-1.oraclecloud.com/cdn.sg.dailymirror.lk/assets/uploads/image_9143b3aafa.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Generative AI is becoming embedded in Sri Lanka's everyday white-collar work.",
@@ -4149,7 +4149,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://s.hdnux.com/photos/01/66/61/72/31137445/3/rawImage.jpg",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "TCU, SMU, and UNT are adding AI offerings tied to career preparation.",
@@ -4166,7 +4166,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://www.digitaljournal.com/wp-content/uploads/2026/06/e66c98b257127bf2cf8aafa3b5064fdfc6656f4c.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Jobs change as their tasks, objectives, and priorities are reorganized.",
@@ -4184,9 +4184,9 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show education becoming an AI-economy bet while the value of learning shifts beyond tool fluency. Forbes sees investment opportunity in lifelong training, Herald Business calls for restoring youth skills ladders, and North Texas colleges are adding AI classes for job seekers; meanwhile, gaming keeps creativity and judgment in human hands, and Digital Journal argues that jobs themselves are moving targets. The pattern is a race to teach AI skills before schools and employers can define the adaptable identity, taste, and direction those skills are meant to serve.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-07-09/bidq3q1x/SPARQ2promptJPEGscaled75.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=230,0,2393,1595",
     "stories": [
@@ -4198,7 +4198,7 @@ export const bundledSignalsBySlug = {
         "summary": "Education stocks may benefit as AI reshapes workforce training, lifelong learning, career education and global demand for new human capital skills.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4e9bfe260d403d45702102/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -4231,7 +4231,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://s.hdnux.com/photos/01/66/61/72/31137445/3/rawImage.jpg",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "As students confront an uncertain job market, TCU, SMU and UNT are launching AI offerings focused on how to leverage the technology across careers.",
@@ -4247,7 +4247,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-07-09/bidq3q1x/SPARQ2promptJPEGscaled75.jpg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=230,0,2393,1595",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "As AI reshapes game development, automation is streamlining production while leaving creativity, storytelling and human judgement firmly in the hands of creators.",
@@ -4263,7 +4263,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://www.digitaljournal.com/wp-content/uploads/2026/06/e66c98b257127bf2cf8aafa3b5064fdfc6656f4c.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Tasks change, objectives change, and priorities change.",
@@ -4281,10 +4281,10 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show the career ladder being rebuilt while AI agents move straight into the workplace. Forbes argues that education, employers, and credentials need a connected transition system; Herald Business calls for restoring youth skills ladders; Fast Company asks whether the first rung still exists; SK On is training employees to build agents across business functions; and Cannes Lions puts human connection back at the center of AI-shaped creative work. The pattern is a widening gap between institutions trying to prepare people for work and companies already teaching workers to create with agents inside the work itself.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/07/07/news-p.v1.20260707.33244d1138cb48d58e24a5fcd2419126_R.png",
     "stories": [
@@ -4297,7 +4297,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Workforce transition needs connected systems, not isolated reskilling slogans.",
@@ -4330,8 +4330,8 @@ export const bundledSignalsBySlug = {
         "summary": "SK On is moving AI from experimentation into operations by deploying agents across business functions and training employees through an internal AI Agent Bootcamp. This is the worker-facing version of the transition: people are being asked to design, direct, and collaborate with agents inside everyday business systems.",
         "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/07/08/news-p.v1.20251105.e959970a23584ae5b76cd292a264cfd7_R.jpg",
         "stages": [
-          "Discover AI's Power",
-          "Start Creating"
+          "Become AI Ready",
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "SK On is deploying AI agents broadly across business functions rather than keeping AI in a lab.",
@@ -4364,7 +4364,7 @@ export const bundledSignalsBySlug = {
         "summary": "Fast Company asks whether the first rung of the career ladder is still available as students and graduates try to enter a labor market being redrawn by AI. The story turns the abstract future-of-work debate into a personal question: how do people find direction when the old opening moves are less reliable?",
         "imageUrl": "",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -4383,9 +4383,9 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show AI turning the career ladder into a redesign problem before workers, students, and institutions have agreed on the new rungs. Microsoft says AI is not replacing workers while 4,800 jobs disappear, Forbes points to education-to-job transition systems, Herald Business argues for restoring youth skills ladders, Fast Company asks whether the first rung still exists, and healthcare reporting shows roles being reshaped rather than simply erased. The pattern is not one company cutting jobs; it is the collapse of job title, credential, and first-step certainty as reliable containers for human value.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://thelogicalindian.com/wp-content/uploads/2026/07/Copy-of-Social-Thumbnail-Template-39-1.jpg",
     "stories": [
@@ -4398,7 +4398,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://thelogicalindian.com/wp-content/uploads/2026/07/Copy-of-Social-Thumbnail-Template-39-1.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Microsoft cut 4,800 jobs while arguing AI is reshaping work rather than simply replacing workers.",
@@ -4415,7 +4415,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The transition requires education-to-job systems that connect credentials to real employer demand.",
@@ -4448,7 +4448,7 @@ export const bundledSignalsBySlug = {
         "summary": "Fast Company names the anxiety under the whole issue: students are asking whether the first rung of the career ladder is still there. That is not just a labor-market question; it is an identity question arriving before a career has even begun.",
         "imageUrl": "",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -4483,7 +4483,7 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show the credential market trying to prove it still maps to work while AI breaks jobs into role-level risk and opportunity. Forbes points to P-TECH-style education-to-job systems and healthcare roles being reshaped instead of erased; GMAC data says MBAs still have demand, while 24/7 Wall St. reports AI-investing companies adding jobs with a catch and OK Diario names language-heavy professions facing direct exposure. The pattern is not degrees versus AI; it is whether credentials, employers, and workers can translate human judgment into new roles fast enough.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
@@ -4497,7 +4497,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The story pushes beyond generic retraining into systems that connect learning, employers, credentials, and roles.",
@@ -4531,7 +4531,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://okdiario.com/techy/en/wp-content/uploads/2026/07/ai-job-market-impact-2030.jpg",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The risk list centers on knowledge and language roles rather than factory automation.",
@@ -4548,7 +4548,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview- copy_2026-07-01_10-41-24.webp",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The GMAC framing suggests business leadership credentials still have labor-market pull.",
@@ -4583,7 +4583,7 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show the old credential bargain being stress-tested by AI before students and institutions have a clean replacement. OK Diario names language-heavy white-collar roles as exposed, Forbes points to education-to-job systems and healthcare roles being redesigned rather than simply erased, and The Week plus AOL show graduates and students already adjusting majors around employability. The deeper pattern is not just job loss; it is the collapse of degree-as-shelter and the rise of demonstrable judgment, applied skill, and purpose as the new proof of value.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value"
     ],
     "imageUrl": "https://okdiario.com/techy/en/wp-content/uploads/2026/07/ai-job-market-impact-2030.jpg",
@@ -4597,7 +4597,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://okdiario.com/techy/en/wp-content/uploads/2026/07/ai-job-market-impact-2030.jpg",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The story frames AI exposure around language and knowledge work instead of industrial automation.",
@@ -4614,7 +4614,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The piece treats AI transition as a system design problem across education, employers, and credentials.",
@@ -4664,7 +4664,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Students are adjusting major choices in response to AI's perceived effect on future jobs.",
@@ -4683,8 +4683,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://baptistnews.com/wp-content/uploads/2026/07/shutterstock_2229125163.jpg",
     "stories": [
@@ -4697,7 +4697,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://okdiario.com/techy/en/wp-content/uploads/2026/07/ai-job-market-impact-2030.jpg",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The risk list centers on white-collar language work rather than factory automation.",
@@ -4714,7 +4714,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The piece calls for a workforce transition system, not isolated reskilling advice.",
@@ -4764,7 +4764,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview- copy_2026-07-02_13-11-45.webp",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Cisco is presented as deploying AI agents broadly across its 90,000-person workforce.",
@@ -4782,8 +4782,8 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show AI turning job security into a contest over what still counts as protected human judgment. Forbes frames healthcare disruption as role-by-role rather than wholesale replacement, GMAC and the Freedom Institute sell credentials and AI-ready education as shields, and BMS is taking worker surveillance and platform protections to BRICS while the jobs-report story argues value is shifting toward qualities that resist commoditization.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a44260badfeba28839f0a92/0x0.jpg?format=jpg&crop=1627,1084,x0,y0,safe&height=900&width=1600&fit=bounds",
     "stories": [
@@ -4812,7 +4812,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview-%20copy_2026-07-01_10-41-24.webp",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Employer demand for MBA graduates reportedly remains strong despite anxiety about AI disruption.",
@@ -4828,7 +4828,7 @@ export const bundledSignalsBySlug = {
         "summary": "The Freedom Institute is positioning AI-personalized education around workforce readiness, not just better coursework. That matters because learners need direction and adaptability before the labor market tells them which version of themselves is still useful.",
         "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/CqUC39NlcCczdNcC5rKEoyqgqXu2/1782919227399-0.png",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -4846,7 +4846,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "BMS is bringing workplace surveillance, job losses, platform-worker rights, and ethical AI to the BRICS labor agenda.",
@@ -4880,8 +4880,8 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories put workforce readiness between institutional promises and worker protection. GMAC says MBA graduates remain in demand, the Freedom Institute sells AI-personalized career readiness, and Forbes argues organizations still decide how jobs change. But AvePoint, Kyndryl, and BMS expose the pressure underneath: agents are entering routine work faster than roles, controls, surveillance rules, and platform-worker protections can catch up.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a442534b7d5da8de0b45c9a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -4894,7 +4894,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview-%20copy_2026-07-01_10-41-24.webp",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "GMAC reports continued employer demand for MBA graduates despite anxiety about AI disruption.",
@@ -4910,7 +4910,7 @@ export const bundledSignalsBySlug = {
         "summary": "The Freedom Institute frames AI-personalized education as a route to career readiness, not just better coursework. That matters because schools are being asked to prepare people for a labor market where roles shift faster than traditional pathways can update.",
         "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/CqUC39NlcCczdNcC5rKEoyqgqXu2/1782919227399-0.png",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -4928,7 +4928,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI agents are already becoming part of routine employee workflows.",
@@ -4945,7 +4945,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "BMS is centering labor protections, surveillance, job loss, and platform-worker rights ahead of the BRICS Trade Union Forum.",
@@ -4979,9 +4979,9 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show the labor market splitting between credentials, agents, and human data. GMAC says MBA graduates are still in demand, while Microsoft prepares cuts in sales, consulting, and Xbox as AI spending rises; AvePoint and Kyndryl show agents arriving faster than jobs can be redesigned. PwC's two-track market and the VLGE-Protege training-data deal make the daily tension plain: institutions still want human judgment, but they are also turning behavior, adaptability, and AI fluency into the new price of staying valuable.",
     "stages": [
       "Unhook Identity",
-      "Start Creating",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Relaunch Yourself",
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4291319d4dff266b92597b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -4994,7 +4994,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://thesiliconreview.com/story_image_upload/article/thesiliconreview-%20copy_2026-07-01_10-41-24.webp",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "GMAC reports continued employer demand for MBA graduates despite anxiety about AI disruption.",
@@ -5011,7 +5011,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI agents are already becoming part of routine employee workflows.",
@@ -5027,7 +5027,7 @@ export const bundledSignalsBySlug = {
         "summary": "VLGE and Protege are treating natural human behavior in virtual environments as training data. The story shifts human value from output alone to the behavioral patterns, context, and judgment that AI systems still need to learn from.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4291319d4dff266b92597b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "The VLGE-Protege partnership uses human behavior in virtual environments to build AI training sets.",
@@ -5044,7 +5044,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "PwC finds a widening divide between companies and roles more exposed to AI and those less exposed.",
@@ -5077,10 +5077,10 @@ export const bundledSignalsBySlug = {
     "title": "Serkis, CapCut, And The Human Control Test",
     "pattern": "Today's five stories move the fight over AI from jobs alone into control over creation. Andy Serkis argues human creativity must evolve alongside AI, CapCut packages short-drama production into a single AI dashboard, and ZDNet treats agents as colleagues people must learn to direct. The harder stakes sit underneath: Memeburn asks who pays to retrain millions, while VLGE and Protege turn human behavior inside virtual worlds into training data, making human judgment both the product and the scarce skill.",
     "stages": [
-      "Start Creating",
+      "Relaunch Yourself",
       "Reclaim Value",
       "Unhook Identity",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://www.zdnet.com/a/img/resize/e21ae17f217fc6ddbd281a9b92c2029448ae9afd/2026/06/29/e43bae81-9868-4e20-b973-02744ecfcaa1/gettyimages-1165984977-cropped.jpg?auto=webp&fit=crop&height=675&width=1200",
     "stories": [
@@ -5092,7 +5092,7 @@ export const bundledSignalsBySlug = {
         "summary": "Andy Serkis frames AI in entertainment as a creative evolution rather than a simple replacement story. The useful signal is agency: creators still have to decide how the tools are used, what human performance contributes, and where authorship stays anchored.",
         "imageUrl": "http://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/51ce6099e4b0d911b4489b79/6a32d18ad46573512daf1b73/1782768674845/Andy+Serkis+on+AI+and+the+Future+of+Storytelling-+%E2%80%9CHuman+Creativity+Will+Evolve+Alongside+It%E2%80%9D.jpg?format=1500w",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -5126,7 +5126,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes points to a partnership between VLGE and Protege using human behavior in virtual environments as AI training data. That makes the value question sharper: human action, taste, and context become raw material for systems that may later automate parts of creation.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a4291319d4dff266b92597b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "VLGE and Protege are treating natural human behavior in virtual worlds as training signal.",
@@ -5142,7 +5142,7 @@ export const bundledSignalsBySlug = {
         "summary": "CapCut's Director Mode shows AI creation moving into bundled production dashboards. The opportunity is faster output, but the human advantage shifts upstream into taste, story judgment, direction, and deciding what deserves to be made.",
         "imageUrl": "https://ml.globenewswire.com/Resource/Download/ff9b16b9-9b21-4120-8733-7105417e9851/c1.png",
         "stages": [
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "CapCut is packaging AI short-drama production into a single creative workflow.",
@@ -5159,7 +5159,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://www.zdnet.com/a/img/resize/e21ae17f217fc6ddbd281a9b92c2029448ae9afd/2026/06/29/e43bae81-9868-4e20-b973-02744ecfcaa1/gettyimages-1165984977-cropped.jpg?auto=webp&fit=crop&height=675&width=1200",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Agentic systems are being framed as collaborators that require clear direction and management.",
@@ -5178,7 +5178,7 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-layoffs-2026_-major-tech-firms-cutting-jobs-as-AI-rises.jpg",
     "stories": [
@@ -5239,7 +5239,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes profiles Justin Spelhaug and Microsoft's $4 billion education AI effort, with a clear admission that student job fear is rational. The answer offered is not only technical training; it is helping learners develop the human-centered judgment that can travel across a shifting labor market.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -5276,7 +5276,7 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg",
     "stories": [
@@ -5354,7 +5354,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The tracker connects layoffs, AI investment, over-hiring, and automation pressure.",
@@ -5372,8 +5372,8 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's five stories show AI pressure moving from broad workforce anxiety into task-level redesign. Forbes argues leaders need to classify the work inside jobs, AI builders are openly funding research into displacement, and Meta, Robinhood, Walmart, and Oracle appear in a layoff tracker tied to AI investment. HR Dive and Dell point to the next human stake: entry-level workers and enterprise teams will be judged by how well they supervise, direct, and redesign work with agents in the loop.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -5402,7 +5402,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3e90a7a62c2be2656d5939/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Unhook Identity",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "The displacement conversation is no longer only coming from critics; it is being acknowledged inside the AI industry.",
@@ -5419,7 +5419,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The tracker links layoffs to heavy AI investment, raising the accountability question behind corporate automation claims.",
@@ -5436,7 +5436,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "HR leaders may need early-career workers who can monitor and direct AI systems, not just complete narrow starter tasks.",
@@ -5452,7 +5452,7 @@ export const bundledSignalsBySlug = {
         "summary": "SiliconANGLE reports on Dell's view that autonomous agents are becoming part of enterprise operating reality. The story connects job redesign to infrastructure, AI factories, data centers, and capital planning.",
         "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -5472,8 +5472,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Start Creating",
-      "Discover AI's Power"
+      "Relaunch Yourself",
+      "Become AI Ready"
     ],
     "imageUrl": "https://helios-i.mashable.com/imagery/articles/02Wagdh5MgvJQDkCMBsPbFd/hero-image.fill.size_1200x675.v1782433043.jpg",
     "stories": [
@@ -5485,7 +5485,7 @@ export const bundledSignalsBySlug = {
         "summary": "Dell's AI infrastructure story is not just about faster data centers. It points to a work system where autonomous agents become part of operations, which means people need to understand where authority, accountability, and judgment sit when software starts doing more of the work.",
         "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -5519,7 +5519,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://bl-i.thgim.com/public/incoming/kh8tmf/article71149367.ece/alternates/LANDSCAPE_1200/IMG_bl03_Think2_Work_2_1_9SCOF6EL.jpg",
         "stages": [
           "Unhook Identity",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Goldman Sachs expects AI to reshape labor markets without producing one uniform jobs collapse.",
@@ -5553,7 +5553,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://helios-i.mashable.com/imagery/articles/02Wagdh5MgvJQDkCMBsPbFd/hero-image.fill.size_1200x675.v1782433043.jpg",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Roberto Blake argues that AI can help working-class creators compete while still centering human value.",
@@ -5571,7 +5571,7 @@ export const bundledSignalsBySlug = {
     "pattern": "The five stories point to a labor market learning two truths at once: agents are becoming infrastructure, and careers now have to outlast any one employer's redesign. Oracle cuts and broader tech restructuring show old roles being rewritten, while PwC and the 100-year career frame point to renewal rather than simple replacement. The durable move is to build portable judgment, not just defend a job title.",
     "stages": [
       "Unhook Identity",
-      "Discover AI's Power",
+      "Become AI Ready",
       "Reclaim Value"
     ],
     "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg",
@@ -5584,7 +5584,7 @@ export const bundledSignalsBySlug = {
         "summary": "Dell's AI work points to a practical shift: autonomous agents are moving from demo layer into the operating model of companies. That matters because job design, capital spending, and human leverage start changing once agents can take on pieces of real enterprise work.",
         "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -5669,8 +5669,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Find Your Purpose"
+      "Become AI Ready",
+      "Discover Purpose"
     ],
     "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/06/4188067-0-04562000-1782298982-future-ready-IT-workforce-shutterstock_2677450619.jpg?quality=50&strip=all&w=1024",
     "stories": [
@@ -5699,7 +5699,7 @@ export const bundledSignalsBySlug = {
         "summary": "A Dubai forum puts agentic AI inside the operating model of work, not outside it as a novelty. The story matters because governments and HR leaders are now treating skills, roles, and human judgment as active design problems.",
         "imageUrl": "https://imgengine.khaleejtimes.com/khaleejtimes-english/2026-06-23/v1mmkcze/Agentic-AI-forum.jpeg?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=0,0,7008,4672",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -5716,7 +5716,7 @@ export const bundledSignalsBySlug = {
         "summary": "Microsoft's education AI lead names the fear students already feel: the labor market is changing faster than credentials can explain. The deeper signal is that purpose and adaptable judgment are becoming career infrastructure, not soft extras.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -5767,10 +5767,10 @@ export const bundledSignalsBySlug = {
     "pattern": "Today's stories split the AI transition between fear and agency: students worry about jobs, Oracle cuts roles, and AI begins shaping even how young people discover universities. At the same time, Picsart's creator economy story shows value moving toward people who can claim audience, voice, and leverage. Purpose formation now has to happen earlier and more deliberately than the old career path required.",
     "stages": [
       "Unhook Identity",
-      "Find Your Purpose",
+      "Discover Purpose",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/04/20260401082814_MixCollage-01-Apr-2026-01-53-PM-7018.jpg",
     "stories": [
@@ -5782,7 +5782,7 @@ export const bundledSignalsBySlug = {
         "summary": "Microsoft's education AI lead is naming the anxiety students already feel: the labor market is changing faster than credentials can explain. The signal is that purpose and adaptable human judgment are becoming career infrastructure, not soft extras.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
@@ -5831,8 +5831,8 @@ export const bundledSignalsBySlug = {
         "summary": "University discovery is moving into AI-shaped environments where institutions have less control over what students see. That changes how young people form direction, compare options, and start creating a path before the old gatekeepers can fully explain it.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/690b77abd9e6e29d8223ff9a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Find Your Purpose",
-          "Start Creating"
+          "Discover Purpose",
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Students are still researching schools, but more of that search now happens in AI-mediated spaces.",
@@ -5849,7 +5849,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/06/PicsArt-TechCrunch-2039938-Custom-Sponsored-Article-1200x1200-1.jpg?w=1200",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The creator economy is described as a $252 billion industry, but many creators still do not share meaningfully in the upside.",
@@ -5868,8 +5868,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3908e60d0b184acc61cf8a/0x0.jpg?format=jpg&crop=4048,2275,x0,y0,safe&height=900&width=1600&fit=bounds",
     "stories": [
@@ -5886,7 +5886,7 @@ export const bundledSignalsBySlug = {
           "Source signal: forbes.com is connecting this story to ai agents workplace jobs."
         ],
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ]
       },
@@ -5920,7 +5920,7 @@ export const bundledSignalsBySlug = {
           "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
         ],
         "stages": [
-          "Discover AI's Power"
+          "Become AI Ready"
         ]
       },
       {
@@ -5966,8 +5966,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/NewCore-Raises-66M-To-Give-AI-Agents-Work-Identities-In-2026-1024x576.png",
     "stories": [
@@ -5984,7 +5984,7 @@ export const bundledSignalsBySlug = {
           "Source signal: digitaltrends.com is connecting this story to ai agents workplace jobs."
         ],
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ]
       },
@@ -6001,7 +6001,7 @@ export const bundledSignalsBySlug = {
           "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
         ],
         "stages": [
-          "Discover AI's Power"
+          "Become AI Ready"
         ]
       },
       {
@@ -6018,7 +6018,7 @@ export const bundledSignalsBySlug = {
         ],
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ]
       },
       {
@@ -6063,8 +6063,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://www.digitaltrends.com/tachyon/2026/06/AdobeStock_567681994.jpg?resize=1200%2C630",
     "stories": [
@@ -6081,7 +6081,7 @@ export const bundledSignalsBySlug = {
           "Source signal: digitaltrends.com is connecting this story to ai agents workplace jobs."
         ],
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ]
       },
@@ -6130,7 +6130,7 @@ export const bundledSignalsBySlug = {
         ],
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ]
       },
       {
@@ -6146,7 +6146,7 @@ export const bundledSignalsBySlug = {
           "For TGR, the signal is that human taste and judgment still create value when AI makes output abundant."
         ],
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ]
       }
@@ -6161,9 +6161,9 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power",
-      "Start Creating"
+      "Discover Purpose",
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://s.hdnux.com/photos/01/66/47/07/31093195/3/rawImage.jpg",
     "stories": [
@@ -6181,7 +6181,7 @@ export const bundledSignalsBySlug = {
         ],
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ]
       },
       {
@@ -6198,7 +6198,7 @@ export const bundledSignalsBySlug = {
         ],
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ]
       },
       {
@@ -6215,7 +6215,7 @@ export const bundledSignalsBySlug = {
         ],
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ]
       },
       {
@@ -6231,8 +6231,8 @@ export const bundledSignalsBySlug = {
           "TGR relevance: the story helps show where AI is changing work, value, agency, or creation."
         ],
         "stages": [
-          "Find Your Purpose",
-          "Start Creating"
+          "Discover Purpose",
+          "Relaunch Yourself"
         ]
       },
       {
@@ -6261,8 +6261,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Start Creating"
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://cdn.govexec.com/media/img/cd/2026/06/17/NGA_AOP_image_1-1/open-graph.png",
     "stories": [
@@ -6292,7 +6292,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a30d0afa8d3ddcf046cccc3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Adobe research says 87% of creators report AI is accelerating growth while making creativity and judgment more valuable.",
@@ -6309,7 +6309,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/037/0391_639172613132434169.png",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Recruitment experts say AI literacy is now a baseline expectation for graduates entering the workforce.",
@@ -6342,7 +6342,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a311e87a5a0ca492480343a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "A 2026 survey of 16,000 creators shows voice and judgment, not volume, are now the scarce asset.",
@@ -6361,8 +6361,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/06/4185559-0-48713800-1781610470-youtube-thumbnail-uPpd9EJ4iNI_55eb26.jpg?quality=50&strip=all&w=1024",
     "stories": [
@@ -6374,8 +6374,8 @@ export const bundledSignalsBySlug = {
         "summary": "This matters because the capability curve is moving from novelty into operating reality. As AI agents begin touching enterprise data, APIs, and workflows, the human question shifts from whether the tools work to who has judgment, authority, and accountability over what they do.",
         "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/06/4185559-0-48713800-1781610470-youtube-thumbnail-uPpd9EJ4iNI_55eb26.jpg?quality=50&strip=all&w=1024",
         "stages": [
-          "Discover AI's Power",
-          "Start Creating"
+          "Become AI Ready",
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "AI agents are rapidly evolving from productivity assistants into autonomous systems capable of accessing enterprise data, APIs, applications, and business processes.",
@@ -6392,7 +6392,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a30d0afa8d3ddcf046cccc3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Adobe research shows creators say AI is accelerating growth while making creativity and judgment more valuable.",
@@ -6409,7 +6409,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "The article argues that every agent should have one clear job, with a defined input, output, and constraint.",
@@ -6442,7 +6442,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a311e87a5a0ca492480343a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "A 2026 survey of 16,000 creators shows voice and judgment, not volume, are now the scarce asset.",
@@ -6461,9 +6461,9 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Find Your Purpose",
-      "Start Creating"
+      "Become AI Ready",
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://media.assettype.com/outlookbusiness/2026-04-24/zfplh735/5.png?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
     "stories": [
@@ -6492,13 +6492,13 @@ export const bundledSignalsBySlug = {
         "summary": "A more capable Siri would put AI assistance deeper into the daily rhythm of ordinary users. The signal is mainstreaming: AI becomes less like a destination app and more like an always-available layer between intention and action.",
         "imageUrl": "https://www.apple.com/newsroom/images/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/tile/Apple-Siri-AI-hero-260608-lp.jpg.og.jpg?202606121954",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
           "Apple-style integration can make AI feel normal to people who never went looking for it.",
           "The assistant layer will shape how people search, decide, communicate, and create.",
-          "This is Discover AI's Power with a human-agency question attached: who is steering the assistant?"
+          "This is Become AI Ready with a human-agency question attached: who is steering the assistant?"
         ]
       },
       {
@@ -6509,13 +6509,13 @@ export const bundledSignalsBySlug = {
         "summary": "Microsoft framing AI and jobs for the next generation points to the education gap underneath the labor story. Young people do not just need tool familiarity. They need a way to build identity, judgment, and purpose in a market that keeps shifting.",
         "imageUrl": "https://blogs.microsoft.com/wp-content/uploads/sites/5/2026/06/BANNERS_BRAD_POSTA-1024x576.png",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Unhook Identity"
         ],
         "keyPoints": [
           "The next generation is entering work at the same time AI is rewriting entry-level assumptions.",
           "Education has to prepare people for judgment and adaptability, not only technical fluency.",
-          "TGR relevance: Find Your Purpose becomes a workforce skill, not a luxury."
+          "TGR relevance: Discover Purpose becomes a workforce skill, not a luxury."
         ]
       },
       {
@@ -6526,13 +6526,13 @@ export const bundledSignalsBySlug = {
         "summary": "The creative story gives the day its counterweight: even as AI pressures jobs, it can also move people toward higher-order creative judgment. The opportunity is real, but only for people willing to claim the directing role.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
           "AI can make execution cheaper while increasing the value of taste and direction.",
           "Creatives need to move upstream into intent, framing, and quality judgment.",
-          "This is Start Creating from a reclaimed sense of value."
+          "This is Relaunch Yourself from a reclaimed sense of value."
         ]
       },
       {
@@ -6543,13 +6543,13 @@ export const bundledSignalsBySlug = {
         "summary": "When a major bank treats AI as core infrastructure, the workplace shift becomes structural. AI is no longer an innovation budget experiment. It is part of how the institution expects work to happen.",
         "imageUrl": "https://i.insider.com/699ce38d156648bc16a8c346?width=800&format=jpeg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ],
         "keyPoints": [
           "AI is being funded as foundational business infrastructure, not a side project.",
           "Large institutions are preparing for operating-model change at serious scale.",
-          "TGR relevance: Discover AI's Power now means understanding the systems that will define future work."
+          "TGR relevance: Become AI Ready now means understanding the systems that will define future work."
         ]
       }
     ],
@@ -6563,8 +6563,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Reclaim Value",
       "Unhook Identity",
-      "Find Your Purpose",
-      "Start Creating"
+      "Discover Purpose",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt7f9b16d39bc44ab3/6a22353270c5a9918127c424/AI-Changing-Human.jpg?branch=production&width=1200&quality=75&auto=webp&crop=1200:675&height=675",
     "stories": [
@@ -6577,7 +6577,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://gcp-na-images.contentstack.com/v3/assets/bltea6093859af6183b/blt7f9b16d39bc44ab3/6a22353270c5a9918127c424/AI-Changing-Human.jpg?branch=production&width=1200&quality=75&auto=webp&crop=1200:675&height=675",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "AI influence is becoming personal and cultural, not only professional.",
@@ -6627,13 +6627,13 @@ export const bundledSignalsBySlug = {
         "summary": "Cultural debt is what accumulates when companies adopt AI faster than people can make sense of it. The tool may work, but trust, clarity, and shared purpose can quietly break underneath it.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Find Your Purpose",
+          "Discover Purpose",
           "Reclaim Value"
         ],
         "keyPoints": [
           "Speed-first AI adoption can create hidden organizational costs.",
           "Culture, trust, and meaning need attention alongside efficiency and deployment.",
-          "TGR relevance: Find Your Purpose is not soft. It is how groups stay coherent during acceleration."
+          "TGR relevance: Discover Purpose is not soft. It is how groups stay coherent during acceleration."
         ]
       },
       {
@@ -6644,13 +6644,13 @@ export const bundledSignalsBySlug = {
         "summary": "Creativity is not disappearing. It is moving toward the choices that happen before execution: what to make, why it matters, how it should feel, and when it is good enough to share.",
         "imageUrl": "",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
           "AI shifts creative leverage toward framing, direction, and judgment.",
           "The person with taste and purpose becomes more valuable as execution gets cheaper.",
-          "This is Start Creating after Reclaim Value: use the machine to express more of the human, not less."
+          "This is Relaunch Yourself after Reclaim Value: use the machine to express more of the human, not less."
         ]
       }
     ],
@@ -6663,8 +6663,8 @@ export const bundledSignalsBySlug = {
     "pattern": "The old guard of creative ownership is fighting back. Adobe's Creator Act, the creator economy conversation, and the rise of AI agents all point to the same inflection point: human creators are demanding legal, technical, and economic guardrails over their work. The Great Repurpose is not just about adapting to AI. It is about asserting who owns the output and who gets to decide.",
     "stages": [
       "Reclaim Value",
-      "Start Creating",
-      "Discover AI's Power",
+      "Relaunch Yourself",
+      "Become AI Ready",
       "Unhook Identity"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a20a739ac75b76282f7cc99/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds",
@@ -6677,13 +6677,13 @@ export const bundledSignalsBySlug = {
         "summary": "AI agents shift the conversation from content generation to delegation. If tools can plan and act, then creative control becomes the central question: who sets the intention, who approves the output, and who remains accountable?",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a20a739ac75b76282f7cc99/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
           "AI agents raise the stakes from making assets to managing autonomous workflows.",
           "Creative control depends on human direction, review, and boundaries.",
-          "This is Start Creating with a Reclaim Value backbone: agency sits in judgment, not button-pushing."
+          "This is Relaunch Yourself with a Reclaim Value backbone: agency sits in judgment, not button-pushing."
         ]
       },
       {
@@ -6695,7 +6695,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://blog.adobe.com/en/publish/2026/06/02/media_1b491d2d3d60132a30441b36aba2191fe7fc7a2e5.png?width=1200&format=pjpg&optimize=medium",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "The creator protection conversation is moving into policy and platform design.",
@@ -6711,13 +6711,13 @@ export const bundledSignalsBySlug = {
         "summary": "Upskilling funding is a sign that AI readiness is becoming public infrastructure. The question is whether these programs teach tools in isolation or help people connect AI capability to identity, value, and purpose.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a1cf9180c213ac369150d21/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Unhook Identity"
         ],
         "keyPoints": [
           "Government-backed AI training signals that readiness is now a workforce priority.",
           "Tool training is useful, but incomplete without a human framework for change.",
-          "This is Discover AI's Power after Unhook Identity: learn the tools without becoming the tool."
+          "This is Become AI Ready after Unhook Identity: learn the tools without becoming the tool."
         ]
       },
       {
@@ -6728,13 +6728,13 @@ export const bundledSignalsBySlug = {
         "summary": "Small-business AI enthusiasm can hide a harder operational truth: adoption is not the same as impact. The useful question is not whether a company tried AI. It is whether AI changed the quality, economics, or originality of the work.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a1a22a809d983793369bc09/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
           "Self-reported AI success may not match measurable business outcomes.",
           "Small businesses need clearer ways to connect AI use to real value creation.",
-          "TGR relevance: Discover AI's Power requires experimentation, but Reclaim Value tells you what to measure."
+          "TGR relevance: Become AI Ready requires experimentation, but Reclaim Value tells you what to measure."
         ]
       },
       {
@@ -6745,13 +6745,13 @@ export const bundledSignalsBySlug = {
         "summary": "The creator economy signal is reassuring and demanding at the same time: human creativity still matters, but generic output will get cheaper by the day. Creators win by becoming more themselves, not by outsourcing their taste.",
         "imageUrl": "",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
           "The report frames human creativity and control as differentiators in an AI-saturated market.",
           "Creators need to protect their voice while using tools that can multiply output.",
-          "This is Start Creating from a reclaimed center: more output only matters if it carries real taste."
+          "This is Relaunch Yourself from a reclaimed center: more output only matters if it carries real taste."
         ]
       }
     ],
@@ -6765,9 +6765,9 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Reclaim Value",
       "Unhook Identity",
-      "Find Your Purpose",
-      "Start Creating",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Relaunch Yourself",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -6779,13 +6779,13 @@ export const bundledSignalsBySlug = {
         "summary": "This is the cleanest articulation of the creative shift: AI does not remove the need for creativity, it changes where creativity lives. The person who can define the problem, shape the brief, and judge the output becomes more important, not less.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a11204aa488ec8b473b57df/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
           "AI compresses execution, which makes upstream creative judgment more valuable.",
           "The human edge is taste, framing, intent, and the ability to know what good is.",
-          "TGR relevance: Start Creating now means directing systems, not just producing assets by hand."
+          "TGR relevance: Relaunch Yourself now means directing systems, not just producing assets by hand."
         ]
       },
       {
@@ -6797,12 +6797,12 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://i.guim.co.uk/img/media/1fe5f1ddb95275c40b568819f804bd506f87e7b5/1129_0_6630_5304/master/6630.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3Bpb25zLnBuZw&enable=upscale&s=4b31a47b53bb90937f11090168a18996",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "AI could deepen inequality if ownership and opportunity remain concentrated.",
           "The story forces the labor question beyond reskilling slogans.",
-          "This is Unhook Identity plus Find Your Purpose: people need a new foundation, not just a new course link."
+          "This is Unhook Identity plus Discover Purpose: people need a new foundation, not just a new course link."
         ]
       },
       {
@@ -6830,13 +6830,13 @@ export const bundledSignalsBySlug = {
         "summary": "A creative renaissance is possible, but it will not happen automatically because the tools got better. It happens when more people use AI to explore, combine, and express ideas they would not have had the time or means to make before.",
         "imageUrl": "https://cdn.craft.cloud/019d3066-3548-718e-af5b-3333a57196ee/assets/content/uploads/Full_0326_AI_Job_Threats.jpg?fit=contain&height=630&width=1200&s=JaRYTH4Qx4EH_xfmWlTOgNJ7M5CM_PKvnJLuQuw8WH0",
         "stages": [
-          "Discover AI's Power",
-          "Start Creating"
+          "Become AI Ready",
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "AI can expand creative participation if people use it as an instrument rather than a shortcut.",
           "The renaissance depends on human curiosity, taste, and willingness to play.",
-          "This is Discover AI's Power leading into Start Creating."
+          "This is Become AI Ready leading into Relaunch Yourself."
         ]
       },
       {
@@ -6848,12 +6848,12 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a1095d86b6918320ec56b91/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
           "Reclaim Value",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "The story points toward durable skills that automation struggles to absorb cleanly.",
           "People need language for the human layer beneath their current tasks.",
-          "This is Reclaim Value and Find Your Purpose: know what you bring, then aim it somewhere useful."
+          "This is Reclaim Value and Discover Purpose: know what you bring, then aim it somewhere useful."
         ]
       }
     ],
