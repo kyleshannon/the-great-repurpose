@@ -325,8 +325,8 @@ const Index = () => {
         </section>
 
         {/* ── Section 6: The Five Stages ── */}
-        <section className="bg-soft-white py-16 md:py-24 px-6">
-          <div className="max-w-5xl mx-auto">
+        <section className="bg-soft-white py-16 md:py-24">
+          <div className="max-w-5xl mx-auto px-6">
             <ScrollFadeUp>
               <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-3 text-center">
                 Five Stages. One Journey.
@@ -338,35 +338,49 @@ const Index = () => {
                 These are the five phases people actually go through when the work that defined them changes. They don't happen in order. They're not clean. But knowing where you are is the first step toward building what comes next.
               </p>
             </ScrollFadeUp>
+          </div>
 
-            <div className="grid md:grid-cols-2 gap-4 mb-12">
-              {phases.map((phase, i) => {
-                const { Icon } = stageIcons[i];
-                const colors = colorMap[phase.color];
-                return (
-                  <ScrollFadeUp key={phase.number} delay={i * 80}>
-                    <Link
-                      to={`/phases#${phase.name.toLowerCase().replace(/\s+/g, "-")}`}
-                      className={`group flex gap-5 p-6 rounded-xl border ${colors.border} ${colors.bg} ${colors.hoverBorder} transition-colors h-full`}
-                    >
-                      <div className={`shrink-0 ${colors.text}`}>
-                        <Icon className="w-10 h-10" />
+          <div className="mb-16">
+            {phases.map((phase, i) => {
+              const { Icon } = stageIcons[i];
+              const colors = colorMap[phase.color];
+              const image = stageImages[i];
+              const imageRight = i % 2 === 1;
+              return (
+                <ScrollFadeUp key={phase.number}>
+                  <Link
+                    to={`/phases#${phase.name.toLowerCase().replace(/\s+/g, "-")}`}
+                    className={`group block w-full ${i % 2 === 1 ? "bg-soft-white" : colors.bg} border-y border-aubergine/5 transition-colors`}
+                  >
+                    <div className="max-w-5xl mx-auto px-6 py-10 md:py-14 flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                      <div className={`w-full md:w-1/3 shrink-0 ${imageRight ? "md:order-2" : ""}`}>
+                        <img
+                          src={image.url}
+                          alt={image.alt}
+                          loading="lazy"
+                          className="w-full aspect-[4/3] object-cover rounded-lg"
+                        />
                       </div>
-                      <div>
-                        <div className="flex items-baseline gap-3 mb-1">
+                      <div className={`flex-1 ${imageRight ? "md:order-1" : ""}`}>
+                        <div className="flex items-center gap-3 mb-2">
+                          <Icon className={`w-8 h-8 ${colors.text}`} />
                           <span className={`font-sans text-xs uppercase tracking-widest font-semibold ${colors.text}`}>
                             {phase.number}
                           </span>
-                          <h3 className="font-display text-aubergine text-xl">{phase.name}</h3>
                         </div>
-                        <p className={`font-body ${colors.text} italic text-base mb-2`}>"{phase.tagline}"</p>
-                        <p className="font-body text-aubergine/70 text-sm leading-relaxed">{phase.description}</p>
+                        <h3 className="font-display text-aubergine text-2xl md:text-3xl mb-2">{phase.name}</h3>
+                        <p className={`font-body ${colors.text} italic text-lg mb-3`}>"{phase.tagline}"</p>
+                        <p className="font-body text-aubergine/70 text-base leading-relaxed">{phase.description}</p>
                       </div>
-                    </Link>
-                  </ScrollFadeUp>
-                );
-              })}
-            </div>
+                    </div>
+                  </Link>
+                </ScrollFadeUp>
+              );
+            })}
+          </div>
+
+          <div className="max-w-5xl mx-auto px-6">
+
 
             <ScrollFadeUp delay={300}>
               <div className="relative rounded-2xl overflow-hidden">
