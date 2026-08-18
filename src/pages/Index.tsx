@@ -6,7 +6,7 @@ import { SignalTeaser } from "@/components/SignalTeaser";
 import { stageIcons } from "@/components/BrandIcons";
 import heroAsset from "@/assets/hero.png.asset.json";
 import personBehindAsset from "@/assets/person-seen-from-behind.png.asset.json";
-import youngManLaptopAsset from "@/assets/young-black-man-laptop.png.asset.json";
+
 import womanDeskAsset from "@/assets/woman-at-desk.png.asset.json";
 import womanWorktableAsset from "@/assets/woman-worktable.png.asset.json";
 import twoProfessionalsScreenAsset from "@/assets/two-professionals-screen.png.asset.json";
