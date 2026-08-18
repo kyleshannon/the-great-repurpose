@@ -224,60 +224,20 @@ const Index = () => {
                 </div>
               </div>
             </ScrollFadeUp>
-          </div>
-        </section>
 
-        {/* ── Section 4: Three Transformations ── */}
-        <section className="bg-soft-white py-16 md:py-24 px-6">
-          <div className="max-w-5xl mx-auto">
-            <ScrollFadeUp>
-              <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-3 text-center">
-                The Path Through
-              </p>
-              <h2 className="font-display text-aubergine text-3xl md:text-5xl leading-tight mb-4 text-center">
-                Three Transformations
-              </h2>
-              <p className="font-body text-aubergine/70 text-lg leading-relaxed max-w-2xl mx-auto text-center mb-14">
-                The Great Repurpose isn't a course. It's a sequence of shifts that move you from disruption to direction.
-              </p>
-            </ScrollFadeUp>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-14">
-              {transformations.map(({ title, body, image, color }, i) => (
-                <ScrollFadeUp key={title} delay={i * 100}>
-                  <div className="group h-full bg-soft-white border border-aubergine/10 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <img
-                        src={image}
-                        alt=""
-                        loading="lazy"
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <p className={`font-sans text-xs uppercase tracking-[0.2em] font-semibold mb-2 text-${color}`}>
-                        0{i + 1}
-                      </p>
-                      <h3 className="font-display text-aubergine text-2xl mb-3">{title}</h3>
-                      <p className="font-body text-aubergine/70 text-base leading-relaxed">{body}</p>
-                    </div>
-                  </div>
-                </ScrollFadeUp>
-              ))}
-            </div>
-
-            <ScrollFadeUp delay={300}>
-              <div className="max-w-3xl mx-auto text-center">
-                <p className="font-display text-aubergine text-2xl md:text-3xl leading-tight mb-6">
+            <ScrollFadeUp delay={500}>
+              <div className="max-w-3xl mx-auto text-center mt-16">
+                <p className="font-display text-soft-white text-2xl md:text-3xl leading-tight mb-6">
                   AI is a force multiplier for people who know what matters.
                 </p>
-                <p className="font-body text-aubergine/70 text-lg leading-relaxed">
+                <p className="font-body text-soft-white/70 text-lg leading-relaxed">
                   Scalable judgment. Expansive creativity. The ability to see what others miss — and to act on it at a scale that was never possible before.
                 </p>
               </div>
             </ScrollFadeUp>
           </div>
         </section>
+
 
         {/* ── Section 5: Bridge to Profiles ── */}
         <section className="bg-aubergine py-16 md:py-24 px-6">
