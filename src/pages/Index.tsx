@@ -6,7 +6,7 @@ import { SignalTeaser } from "@/components/SignalTeaser";
 import { stageIcons } from "@/components/BrandIcons";
 import heroAsset from "@/assets/hero.png.asset.json";
 import personBehindAsset from "@/assets/person-seen-from-behind.png.asset.json";
-import youngManLaptopAsset from "@/assets/young-black-man-laptop.png.asset.json";
+
 import womanDeskAsset from "@/assets/woman-at-desk.png.asset.json";
 import womanWorktableAsset from "@/assets/woman-worktable.png.asset.json";
 import twoProfessionalsScreenAsset from "@/assets/two-professionals-screen.png.asset.json";
@@ -83,26 +83,14 @@ const profileGroups = [
   },
 ];
 
-const transformations = [
-  {
-    title: "Reclaim Yourself",
-    body: "Find the human underneath the job title. Your taste, judgment, and perspective didn't disappear — they were buried under the tasks.",
-    image: womanWorktableAsset.url,
-    color: "indigo",
-  },
-  {
-    title: "Conquer AI",
-    body: "Explore what AI makes possible for you. Not as a threat. As an instrument that amplifies the value only you can bring.",
-    image: twoProfessionalsScreenAsset.url,
-    color: "aqua",
-  },
-  {
-    title: "Relaunch Yourself",
-    body: "Integrate the new you, amplify your value, and introduce yourself to the world. Turn who you are into work, opportunity, and income.",
-    image: twoProfessionalsTableAsset.url,
-    color: "poppy",
-  },
+const stageImages = [
+  { url: personBehindAsset.url, alt: "A person seen from behind before a wall of vibrant pinned images" },
+  { url: womanWorktableAsset.url, alt: "A woman leaning over a worktable covered in prints" },
+  { url: womanDeskAsset.url, alt: "A woman at her desk in the evening with handwritten pages" },
+  { url: twoProfessionalsScreenAsset.url, alt: "Two professionals side by side working at a screen" },
+  { url: twoProfessionalsTableAsset.url, alt: "Two professionals leaning over a large table of colorful work" },
 ];
+
 
 const fearQuotes = [
   { text: "AI will take my job.", source: "The layoff headline" },
@@ -118,33 +106,33 @@ const Index = () => {
       <main id="main-content">
 
         {/* ── Section 1: Hero ── */}
-        <section className="relative bg-aubergine overflow-hidden">
-          <div className="relative w-full min-h-[85vh] md:min-h-[80vh] flex items-end">
+        <section className="relative bg-aubergine overflow-hidden w-full">
+          <div className="relative w-full min-h-[80vh] md:min-h-[85vh] flex items-end">
             <img
               src={heroAsset.url}
               alt="A diverse group of people standing together, faces turned toward the future"
-              className="absolute inset-0 w-full h-full object-cover object-top"
+              className="absolute inset-0 w-full h-full object-cover object-center"
               fetchPriority="high"
               decoding="async"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-aubergine via-aubergine/70 to-aubergine/20" />
-            <div className="relative w-full px-6 pb-12 md:pb-20 pt-32">
-              <div className="max-w-5xl mx-auto">
+            <div className="absolute inset-0 bg-gradient-to-tr from-aubergine via-aubergine/55 to-transparent" />
+            <div className="relative w-full px-6 md:px-10 lg:px-16 pb-12 md:pb-16 pt-32">
+              <div className="max-w-xl">
                 <ScrollFadeUp>
-                  <p className="font-sans text-aqua text-xs uppercase tracking-[0.2em] font-semibold mb-4">
+                  <p className="font-sans text-aqua text-[0.7rem] uppercase tracking-[0.2em] font-semibold mb-3">
                     Reclaiming Agency, Meaning, and Value in the Age of AI
                   </p>
-                  <h1 className="font-display text-soft-white text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-6 max-w-4xl">
+                  <h1 className="font-display text-soft-white text-3xl md:text-4xl lg:text-5xl leading-[1.05] mb-4">
                     You weren't meant to be replaced.
                     <br />
                     <span className="text-aqua">You were meant to Repurpose.</span>
                   </h1>
-                  <p className="font-body text-soft-white/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-8">
+                  <p className="font-body text-soft-white/80 text-base md:text-lg max-w-md leading-relaxed mb-6">
                     The Great Repurpose is a movement for people navigating the human side of reinvention — so you can create meaningful value in an AI-shaped world.
                   </p>
                   <Link
                     to="/selfcheck"
-                    className="inline-flex items-center gap-2 bg-indigo text-white font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
+                    className="inline-flex items-center gap-2 bg-indigo text-white font-sans font-semibold text-sm uppercase tracking-widest px-7 py-3.5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
                   >
                     Get Your Repurpose Profile →
                   </Link>
@@ -153,6 +141,7 @@ const Index = () => {
             </div>
           </div>
         </section>
+
 
         {/* ── Section 2: The real question ── */}
         <section className="bg-soft-white py-16 md:py-24 px-6">
@@ -235,60 +224,20 @@ const Index = () => {
                 </div>
               </div>
             </ScrollFadeUp>
-          </div>
-        </section>
 
-        {/* ── Section 4: Three Transformations ── */}
-        <section className="bg-soft-white py-16 md:py-24 px-6">
-          <div className="max-w-5xl mx-auto">
-            <ScrollFadeUp>
-              <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-3 text-center">
-                The Path Through
-              </p>
-              <h2 className="font-display text-aubergine text-3xl md:text-5xl leading-tight mb-4 text-center">
-                Three Transformations
-              </h2>
-              <p className="font-body text-aubergine/70 text-lg leading-relaxed max-w-2xl mx-auto text-center mb-14">
-                The Great Repurpose isn't a course. It's a sequence of shifts that move you from disruption to direction.
-              </p>
-            </ScrollFadeUp>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-14">
-              {transformations.map(({ title, body, image, color }, i) => (
-                <ScrollFadeUp key={title} delay={i * 100}>
-                  <div className="group h-full bg-soft-white border border-aubergine/10 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <img
-                        src={image}
-                        alt=""
-                        loading="lazy"
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <p className={`font-sans text-xs uppercase tracking-[0.2em] font-semibold mb-2 text-${color}`}>
-                        0{i + 1}
-                      </p>
-                      <h3 className="font-display text-aubergine text-2xl mb-3">{title}</h3>
-                      <p className="font-body text-aubergine/70 text-base leading-relaxed">{body}</p>
-                    </div>
-                  </div>
-                </ScrollFadeUp>
-              ))}
-            </div>
-
-            <ScrollFadeUp delay={300}>
-              <div className="max-w-3xl mx-auto text-center">
-                <p className="font-display text-aubergine text-2xl md:text-3xl leading-tight mb-6">
+            <ScrollFadeUp delay={500}>
+              <div className="max-w-3xl mx-auto text-center mt-16">
+                <p className="font-display text-soft-white text-2xl md:text-3xl leading-tight mb-6">
                   AI is a force multiplier for people who know what matters.
                 </p>
-                <p className="font-body text-aubergine/70 text-lg leading-relaxed">
+                <p className="font-body text-soft-white/70 text-lg leading-relaxed">
                   Scalable judgment. Expansive creativity. The ability to see what others miss — and to act on it at a scale that was never possible before.
                 </p>
               </div>
             </ScrollFadeUp>
           </div>
         </section>
+
 
         {/* ── Section 5: Bridge to Profiles ── */}
         <section className="bg-aubergine py-16 md:py-24 px-6">
@@ -300,7 +249,8 @@ const Index = () => {
                     This is not a self-help program
                   </p>
                   <h2 className="font-display text-soft-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
-                    It's a map for the moment you're in.
+                    The Five Stages of The Great Repurpose
+
                   </h2>
                 </ScrollFadeUp>
                 <div className="font-body text-soft-white/80 text-lg leading-relaxed space-y-5">
@@ -336,8 +286,8 @@ const Index = () => {
         </section>
 
         {/* ── Section 6: The Five Stages ── */}
-        <section className="bg-soft-white py-16 md:py-24 px-6">
-          <div className="max-w-5xl mx-auto">
+        <section className="bg-soft-white py-16 md:py-24">
+          <div className="max-w-5xl mx-auto px-6">
             <ScrollFadeUp>
               <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-3 text-center">
                 Five Stages. One Journey.
@@ -349,35 +299,49 @@ const Index = () => {
                 These are the five phases people actually go through when the work that defined them changes. They don't happen in order. They're not clean. But knowing where you are is the first step toward building what comes next.
               </p>
             </ScrollFadeUp>
+          </div>
 
-            <div className="grid md:grid-cols-2 gap-4 mb-12">
-              {phases.map((phase, i) => {
-                const { Icon } = stageIcons[i];
-                const colors = colorMap[phase.color];
-                return (
-                  <ScrollFadeUp key={phase.number} delay={i * 80}>
-                    <Link
-                      to={`/phases#${phase.name.toLowerCase().replace(/\s+/g, "-")}`}
-                      className={`group flex gap-5 p-6 rounded-xl border ${colors.border} ${colors.bg} ${colors.hoverBorder} transition-colors h-full`}
-                    >
-                      <div className={`shrink-0 ${colors.text}`}>
-                        <Icon className="w-10 h-10" />
+          <div className="mb-16">
+            {phases.map((phase, i) => {
+              const { Icon } = stageIcons[i];
+              const colors = colorMap[phase.color];
+              const image = stageImages[i];
+              const imageRight = i % 2 === 1;
+              return (
+                <ScrollFadeUp key={phase.number}>
+                  <Link
+                    to={`/phases#${phase.name.toLowerCase().replace(/\s+/g, "-")}`}
+                    className={`group block w-full ${i % 2 === 1 ? "bg-soft-white" : colors.bg} border-y border-aubergine/5 transition-colors`}
+                  >
+                    <div className="max-w-5xl mx-auto px-6 py-10 md:py-14 flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                      <div className={`w-full md:w-1/3 shrink-0 ${imageRight ? "md:order-2" : ""}`}>
+                        <img
+                          src={image.url}
+                          alt={image.alt}
+                          loading="lazy"
+                          className="w-full aspect-[4/3] object-cover rounded-lg"
+                        />
                       </div>
-                      <div>
-                        <div className="flex items-baseline gap-3 mb-1">
+                      <div className={`flex-1 ${imageRight ? "md:order-1" : ""}`}>
+                        <div className="flex items-center gap-3 mb-2">
+                          <Icon className={`w-8 h-8 ${colors.text}`} />
                           <span className={`font-sans text-xs uppercase tracking-widest font-semibold ${colors.text}`}>
                             {phase.number}
                           </span>
-                          <h3 className="font-display text-aubergine text-xl">{phase.name}</h3>
                         </div>
-                        <p className={`font-body ${colors.text} italic text-base mb-2`}>"{phase.tagline}"</p>
-                        <p className="font-body text-aubergine/70 text-sm leading-relaxed">{phase.description}</p>
+                        <h3 className="font-display text-aubergine text-2xl md:text-3xl mb-2">{phase.name}</h3>
+                        <p className={`font-body ${colors.text} italic text-lg mb-3`}>"{phase.tagline}"</p>
+                        <p className="font-body text-aubergine/70 text-base leading-relaxed">{phase.description}</p>
                       </div>
-                    </Link>
-                  </ScrollFadeUp>
-                );
-              })}
-            </div>
+                    </div>
+                  </Link>
+                </ScrollFadeUp>
+              );
+            })}
+          </div>
+
+          <div className="max-w-5xl mx-auto px-6">
+
 
             <ScrollFadeUp delay={300}>
               <div className="relative rounded-2xl overflow-hidden">
