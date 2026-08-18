@@ -188,37 +188,47 @@ const Index = () => {
 
         {/* ── Section 3: Steam engine band ── */}
         <section className="bg-aubergine py-16 md:py-24 px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto space-y-10">
             <ScrollFadeUp>
-              <p className="font-body text-soft-white/70 text-lg leading-relaxed mb-12">
+              <p className="font-body text-soft-white/70 text-lg leading-relaxed">
                 A century and a half ago, the steam engine didn't just change how things were made. It changed what it meant to be valuable. Strength, endurance, and craft that had defined human work for millennia were suddenly commodities. The people who thrived weren't the ones who out-muscled the machine. They were the ones who learned to work with it — and found the layer of value the machine couldn't reach.
               </p>
             </ScrollFadeUp>
 
-            <div className="space-y-6 mb-16">
-              {fearQuotes.map(({ text, source }, i) => (
-                <ScrollFadeUp key={text} delay={i * 80}>
-                  <blockquote className="border-l-4 border-indigo pl-6">
-                    <p className="font-display text-soft-white text-2xl md:text-3xl leading-tight mb-2">
-                      "{text}"
-                    </p>
-                    <cite className="font-sans text-soft-white/50 text-sm not-italic">
-                      {source}
-                    </cite>
-                  </blockquote>
-                </ScrollFadeUp>
-              ))}
-            </div>
+            <ScrollFadeUp delay={100}>
+              <div className="grid md:grid-cols-5 gap-8 md:gap-10 items-center">
+                <div className="md:col-span-3 space-y-5">
+                  {fearQuotes.map(({ text, source }, i) => (
+                    <blockquote key={text} className="border-l-2 border-indigo/60 pl-5">
+                      <p className="font-display text-soft-white text-lg md:text-xl italic leading-snug mb-1">
+                        "{text}"
+                      </p>
+                      <cite className="font-sans text-soft-white/50 text-xs not-italic tracking-wide uppercase">
+                        {source}
+                      </cite>
+                    </blockquote>
+                  ))}
+                </div>
+                <div className="md:col-span-2">
+                  <img
+                    src={smallGroupLaptopAsset.url}
+                    alt="A small group gathered around a laptop in conversation"
+                    className="w-full rounded-lg object-cover aspect-[4/3] opacity-90"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </ScrollFadeUp>
 
-            <ScrollFadeUp delay={400}>
-              <div className="bg-soft-white/5 border border-soft-white/10 rounded-2xl p-8 md:p-12">
-                <p className="font-sans text-aqua text-xs uppercase tracking-[0.2em] font-semibold mb-4">
+            <ScrollFadeUp delay={200}>
+              <div className="max-w-3xl">
+                <p className="font-sans text-aqua text-xs uppercase tracking-[0.2em] font-semibold mb-3">
                   Just imagine
                 </p>
-                <h3 className="font-display text-soft-white text-2xl md:text-3xl leading-tight mb-6">
+                <h3 className="font-display text-soft-white text-xl md:text-2xl leading-tight mb-4">
                   What if the same technology that's disrupting your work could become the most powerful tool you've ever touched?
                 </h3>
-                <div className="font-body text-soft-white/80 text-lg leading-relaxed space-y-4">
+                <div className="font-body text-soft-white/80 text-base leading-relaxed space-y-3">
                   <p>You could be excellent at anything you set your mind to.</p>
                   <p>You could become a ten-person team.</p>
                   <p>You could start the business you've dreamed of.</p>
@@ -226,12 +236,12 @@ const Index = () => {
               </div>
             </ScrollFadeUp>
 
-            <ScrollFadeUp delay={500}>
-              <div className="max-w-3xl mx-auto text-center mt-16">
-                <p className="font-display text-soft-white text-2xl md:text-3xl leading-tight mb-6">
+            <ScrollFadeUp delay={300}>
+              <div className="max-w-3xl pt-4 border-t border-soft-white/10">
+                <p className="font-display text-soft-white text-xl md:text-2xl leading-tight mb-3">
                   AI is a force multiplier for people who know what matters.
                 </p>
-                <p className="font-body text-soft-white/70 text-lg leading-relaxed">
+                <p className="font-body text-soft-white/70 text-base leading-relaxed">
                   Scalable judgment. Expansive creativity. The ability to see what others miss — and to act on it at a scale that was never possible before.
                 </p>
               </div>
