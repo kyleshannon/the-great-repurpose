@@ -83,26 +83,14 @@ const profileGroups = [
   },
 ];
 
-const transformations = [
-  {
-    title: "Reclaim Yourself",
-    body: "Find the human underneath the job title. Your taste, judgment, and perspective didn't disappear — they were buried under the tasks.",
-    image: womanWorktableAsset.url,
-    color: "indigo",
-  },
-  {
-    title: "Conquer AI",
-    body: "Explore what AI makes possible for you. Not as a threat. As an instrument that amplifies the value only you can bring.",
-    image: twoProfessionalsScreenAsset.url,
-    color: "aqua",
-  },
-  {
-    title: "Relaunch Yourself",
-    body: "Integrate the new you, amplify your value, and introduce yourself to the world. Turn who you are into work, opportunity, and income.",
-    image: twoProfessionalsTableAsset.url,
-    color: "poppy",
-  },
+const stageImages = [
+  { url: personBehindAsset.url, alt: "A person seen from behind before a wall of vibrant pinned images" },
+  { url: womanWorktableAsset.url, alt: "A woman leaning over a worktable covered in prints" },
+  { url: womanDeskAsset.url, alt: "A woman at her desk in the evening with handwritten pages" },
+  { url: twoProfessionalsScreenAsset.url, alt: "Two professionals side by side working at a screen" },
+  { url: twoProfessionalsTableAsset.url, alt: "Two professionals leaning over a large table of colorful work" },
 ];
+
 
 const fearQuotes = [
   { text: "AI will take my job.", source: "The layoff headline" },
