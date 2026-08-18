@@ -106,33 +106,33 @@ const Index = () => {
       <main id="main-content">
 
         {/* ── Section 1: Hero ── */}
-        <section className="relative bg-aubergine overflow-hidden">
-          <div className="relative w-full min-h-[85vh] md:min-h-[80vh] flex items-end">
+        <section className="relative bg-aubergine overflow-hidden w-full">
+          <div className="relative w-full min-h-[80vh] md:min-h-[85vh] flex items-end">
             <img
               src={heroAsset.url}
               alt="A diverse group of people standing together, faces turned toward the future"
-              className="absolute inset-0 w-full h-full object-cover object-top"
+              className="absolute inset-0 w-full h-full object-cover object-center"
               fetchPriority="high"
               decoding="async"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-aubergine via-aubergine/70 to-aubergine/20" />
-            <div className="relative w-full px-6 pb-12 md:pb-20 pt-32">
-              <div className="max-w-5xl mx-auto">
+            <div className="absolute inset-0 bg-gradient-to-tr from-aubergine via-aubergine/55 to-transparent" />
+            <div className="relative w-full px-6 md:px-10 lg:px-16 pb-12 md:pb-16 pt-32">
+              <div className="max-w-xl">
                 <ScrollFadeUp>
-                  <p className="font-sans text-aqua text-xs uppercase tracking-[0.2em] font-semibold mb-4">
+                  <p className="font-sans text-aqua text-[0.7rem] uppercase tracking-[0.2em] font-semibold mb-3">
                     Reclaiming Agency, Meaning, and Value in the Age of AI
                   </p>
-                  <h1 className="font-display text-soft-white text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-6 max-w-4xl">
+                  <h1 className="font-display text-soft-white text-3xl md:text-4xl lg:text-5xl leading-[1.05] mb-4">
                     You weren't meant to be replaced.
                     <br />
                     <span className="text-aqua">You were meant to Repurpose.</span>
                   </h1>
-                  <p className="font-body text-soft-white/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-8">
+                  <p className="font-body text-soft-white/80 text-base md:text-lg max-w-md leading-relaxed mb-6">
                     The Great Repurpose is a movement for people navigating the human side of reinvention — so you can create meaningful value in an AI-shaped world.
                   </p>
                   <Link
                     to="/selfcheck"
-                    className="inline-flex items-center gap-2 bg-indigo text-white font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
+                    className="inline-flex items-center gap-2 bg-indigo text-white font-sans font-semibold text-sm uppercase tracking-widest px-7 py-3.5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
                   >
                     Get Your Repurpose Profile →
                   </Link>
@@ -141,6 +141,7 @@ const Index = () => {
             </div>
           </div>
         </section>
+
 
         {/* ── Section 2: The real question ── */}
         <section className="bg-soft-white py-16 md:py-24 px-6">
