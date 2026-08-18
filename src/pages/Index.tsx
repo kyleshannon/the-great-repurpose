@@ -289,7 +289,8 @@ const Index = () => {
                     This is not a self-help program
                   </p>
                   <h2 className="font-display text-soft-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
-                    It's a map for the moment you're in.
+                    The Five Stages of The Great Repurpose
+
                   </h2>
                 </ScrollFadeUp>
                 <div className="font-body text-soft-white/80 text-lg leading-relaxed space-y-5">
