@@ -126,7 +126,7 @@ const Index = () => {
                     You weren't meant to be replaced.
                     <br />
                     <span className="text-aqua">You were meant to </span>
-                    <span className="text-soft-white">Repurpose.</span>
+                    <span className="text-poppy">Repurpose.</span>
                   </h1>
                   <p className="font-body text-soft-white/80 text-base md:text-lg max-w-md leading-relaxed mb-6">
                     The Great Repurpose is a movement for people navigating the human side of reinvention — so you can create meaningful value in an AI-shaped world.
