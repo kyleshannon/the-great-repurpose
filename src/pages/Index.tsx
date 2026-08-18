@@ -238,6 +238,36 @@ const Index = () => {
           </div>
         </section>
 
+        {/* ── Video ── */}
+        <section className="bg-soft-white py-16 md:py-24 px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <ScrollFadeUp>
+              <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-3">
+                Watch
+              </p>
+              <h2 className="font-display text-aubergine text-3xl md:text-5xl leading-tight mb-6">
+                Experience the Heart of The Great Repurpose
+              </h2>
+              <p className="font-display text-aubergine/80 text-xl md:text-2xl italic leading-snug mb-10">
+                "We didn't ask for this.<br />
+                It's here.<br />
+                The only way forward is through…<br />
+                and you're not alone."
+              </p>
+              <div className="relative w-full overflow-hidden rounded-2xl" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/4vTo0ZdzNYU"
+                  title="The Great Repurpose"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </ScrollFadeUp>
+          </div>
+        </section>
+
 
         {/* ── Section 5: Bridge to Profiles ── */}
         <section className="bg-aubergine py-16 md:py-24 px-6">
