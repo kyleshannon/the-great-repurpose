@@ -1,13 +1,32 @@
 # The Great Repurpose
 
-> Reclaiming agency, meaning, and value in the age of AI. The Great Repurpose names the invisible crisis underneath the AI workforce disruption — and offers a path through it via 10 Repurpose Profiles and 5 stages of transition.
+> Reclaiming agency, meaning, and value in the age of AI. The Great Repurpose names the identity crisis underneath AI workforce disruption and offers a path through it: five stages, ten Repurpose Profiles, and two organizational programs — the Executive Leadership Academy and the TGR Transition Academy.
 
-The Great Repurpose is a movement and self-discovery tool for people whose work and identity are being reshaped by AI. It identifies where you are across five phases (Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, Start Creating) and matches you to one of 10 Repurpose Profiles with a specific next step.
+The Great Repurpose is a movement and a set of programs for people and organizations whose work and identity are being reshaped by AI. Individuals take a free 7-question assessment to find their Repurpose Profile. Organizations engage TGR Academy: leadership training for executives making AI-era workforce decisions, and transition support for employees whose roles have ended.
 
-## Pages
+Founded by Kyle Shannon. Site: https://thegreatrepurpose.com/
 
-- [Home](/): Overview of The Great Repurpose, the crisis it names, and the five stages.
-- [Phases](/phases): Detailed breakdown of the five stages of finding your way through.
-- [Types](/types): The 10 Great Repurpose Profiles, grouped as Identity Seekers (The Unlocker, The Awakener, The Explorer), Direction Finders (The Firestarter, The Translator, The Original), Builders in Motion (The Compass, The Architect, The Catalyst), and The Amplifier — each a real place people find themselves on the journey through the AI transition.
-- [About](/about): About the project and its founder, Kyle Shannon.
-- [Self Check](/selfcheck): 7-question assessment to discover your Repurpose Profile.
+## The five stages
+
+1. Unhook Identity — separate who you are from the title you held.
+2. Reclaim Value — name the value you actually create, independent of a role.
+3. Find Your Purpose — aim that value at something worth building.
+4. Discover AI's Power — develop real, practical AI agency, not another upskilling checklist.
+5. Start Creating — ship work into the world; the relaunch.
+
+## For organizations (TGR Academy)
+
+- [TGR Academy](https://thegreatrepurpose.com/academy): Overview of both programs, who they are for, and how to engage.
+- [Executive Leadership Academy](https://thegreatrepurpose.com/academy/leadership): For CEOs, COOs, CHROs, heads of talent, and workforce transformation leads. An eight-hour immersive workshop plus ninety-minute implementation sessions every two weeks for three months, applied to the real workforce, technology, and organizational decisions already on the table. Four parts: understand the implications of AI, shift your leadership mindset, build executive AI readiness, and find and support your people before defaulting to headcount cuts. Premise: 95% of GenAI pilots show no measurable impact — the gap is leadership, not technology.
+- [TGR Transition Academy](https://thegreatrepurpose.com/academy/transition): Outplacement reimagined for an AI-shaped future. For HR and people teams supporting departing employees. Traditional outplacement polishes resumes for jobs that are disappearing; the Transition Academy moves a cohort through the five stages together — unhooking identity, reclaiming value, and building AI agency to relaunch. Runs standalone or layered onto an existing outplacement vendor. Premise: 70% of the skills used in most jobs will change by 2030.
+
+## For individuals
+
+- [Repurpose Profile assessment](https://thegreatrepurpose.com/selfcheck): Free 7-question, 2-minute self check that scores you across the five stages.
+- [The 10 Repurpose Profiles](https://thegreatrepurpose.com/types): Identity Seekers (The Unlocker, The Awakener, The Explorer), Direction Finders (The Firestarter, The Translator, The Original), Builders in Motion (The Compass, The Architect, The Catalyst), and The Amplifier.
+- [The Five Stages](https://thegreatrepurpose.com/phases): Detailed breakdown of each stage and what the work looks like there.
+
+## Other
+
+- [About](https://thegreatrepurpose.com/about): The project, its philosophy, and founder Kyle Shannon.
+- [Daily Signal](https://thegreatrepurpose.com/signals): Daily briefings on AI news mapped to the five stages. RSS: https://thegreatrepurpose.com/signals.xml
