@@ -120,7 +120,7 @@ const Academy = () => {
                     to={program.href}
                     className="inline-flex items-center gap-2 border border-aubergine/30 text-aubergine font-sans font-semibold text-xs uppercase tracking-widest px-6 py-3 rounded-full hover:bg-aubergine hover:text-soft-white transition-colors"
                   >
-                    See the one-sheet →
+                    Learn more →
                   </Link>
                 </ScrollFadeUp>
               </div>

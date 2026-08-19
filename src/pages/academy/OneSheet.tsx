@@ -39,12 +39,13 @@ export function OneSheet({ html, title, description, canonical }: OneSheetProps)
 
   return (
     <div className="onesheet-root">
+      <Navigation />
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap"
       />
       <style>{`
-        .onesheet-root { background:#010F32; }
+        .onesheet-root { background:#010F32; padding-top:76px; }
         .onesheet-root doc-page, .onesheet-root .page { display:block; }
         .onesheet-root .page {
           max-width: 1040px;
@@ -93,6 +94,7 @@ export function OneSheet({ html, title, description, canonical }: OneSheetProps)
           ← Back to TGR Academy
         </Link>
       </div>
+      <Footer />
     </div>
   );
 }
