@@ -579,7 +579,7 @@ const ResultsPreview = () => {
                   What to work on next
                 </p>
                 <h3 className="font-display text-soft-white text-xl md:text-2xl mb-3">
-                  {dimensionMeta[recommendation.focus].stage}
+                  {dimensionMeta[recommendation.focus].label}
                 </h3>
                 <p className="font-sans text-soft-white/60 text-base leading-relaxed mb-8">
                   {recommendation.body}
