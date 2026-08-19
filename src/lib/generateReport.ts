@@ -251,19 +251,80 @@ export function generateReportPDF(data: ReportData) {
       y += 4;
     }
 
-    // Footer on last page
-    const lastPageCount = doc.getNumberOfPages();
-    for (let p = 1; p <= lastPageCount; p++) {
-      doc.setPage(p);
-      doc.setFont("helvetica", "normal");
-      doc.setFontSize(7);
-      setColor(doc, MUTED);
-      doc.text("TheGreatRepurpose.com", pageWidth / 2, pageHeight - 12, { align: "center" });
+  }
+
+  // ── Subtle Academy CTA block ───────────────────────────────────────────────
+  {
+    const blockHeight = 78;
+    if (y + blockHeight > pageHeight - bottomMargin) {
+      doc.addPage();
+      doc.setFillColor(NAVY[0], NAVY[1], NAVY[2]);
+      doc.rect(0, 0, pageWidth, pageHeight, "F");
+      y = margin;
+    } else {
+      y += 6;
     }
+
+    drawLine(doc, y, pageWidth, margin);
+    y += 10;
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(9);
+    setColor(doc, SAGE);
+    doc.text("CONTINUE THE WORK — THE GREAT REPURPOSE ACADEMY", margin, y);
+    y += 8;
+
+    doc.setFontSize(10);
+    setColor(doc, CREAM);
+    y = renderWrappedText(
+      doc,
+      "Two guided tracks built on the five stages in this report.",
+      margin, y, contentWidth, 4.8, margin, bottomMargin,
+    );
+    y += 5;
+
+    const tracks: { title: string; desc: string; url: string }[] = [
+      {
+        title: "Executive Leadership Academy",
+        desc: "For leaders guiding teams and organizations through the AI transition.",
+        url: "TheGreatRepurpose.com/academy/leadership",
+      },
+      {
+        title: "Transition Academy",
+        desc: "For individuals reclaiming identity, value, and a relaunched path forward.",
+        url: "TheGreatRepurpose.com/academy/transition",
+      },
+    ];
+
+    for (const t of tracks) {
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(10);
+      setColor(doc, CREAM);
+      y = renderWrappedText(doc, t.title, margin, y, contentWidth, 4.8, margin, bottomMargin);
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(9.5);
+      setColor(doc, MUTED);
+      y = renderWrappedText(doc, t.desc, margin, y, contentWidth, 4.6, margin, bottomMargin);
+      setColor(doc, SAGE);
+      doc.setFontSize(9);
+      y = renderWrappedText(doc, t.url, margin, y, contentWidth, 4.6, margin, bottomMargin);
+      y += 5;
+    }
+  }
+
+  // ── Footers on every page ──────────────────────────────────────────────────
+  const totalPages = doc.getNumberOfPages();
+  for (let p = 1; p <= totalPages; p++) {
+    doc.setPage(p);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(7);
+    setColor(doc, MUTED);
+    doc.text("TheGreatRepurpose.com", pageWidth / 2, pageHeight - 12, { align: "center" });
   }
 
   doc.save("great-repurpose-report.pdf");
 }
+
 
 function parseInterpretation(text: string): { title: string; body: string }[] {
   const sections: { title: string; body: string }[] = [];
