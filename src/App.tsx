@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Phases from "./pages/Phases";
 import Academy from "./pages/Academy";
+import AcademyExecutive from "./pages/AcademyExecutive";
+import AcademyTransition from "./pages/AcademyTransition";
 import About from "./pages/About";
 import SelfCheck from "./pages/SelfCheck";
 import ResultsPreview from "./pages/ResultsPreview";
