@@ -16,13 +16,20 @@ const INDIGO = [21, 45, 236] as const;
 const AQUA = [6, 183, 178] as const;
 const ORCHID = [149, 92, 213] as const;
 const CITRUS = [237, 179, 34] as const;
+const CITRUS_TEXT = [166, 118, 6] as const;   // darker citrus for legible text on light bg
 const POPPY = [252, 84, 48] as const;
 
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
 
 const dimensionMeta: Record<
   DimensionKey,
-  { label: string; stage: string; color: readonly [number, number, number]; logo: string }
+  {
+    label: string;
+    stage: string;
+    color: readonly [number, number, number];
+    textColor?: readonly [number, number, number];
+    logo: string;
+  }
 > = {
   identity: { label: "Unhook Identity", stage: "I'm not my job.", color: INDIGO, logo: logoIndigo.url },
   value: { label: "Reclaim Value", stage: "Here's Who I Am.", color: AQUA, logo: logoAqua.url },
@@ -31,6 +38,7 @@ const dimensionMeta: Record<
     label: "Become AI Ready",
     stage: "Understand AI's power to amplify your ideas.",
     color: CITRUS,
+    textColor: CITRUS_TEXT,
     logo: logoCitrus.url,
   },
   creative_action: {
@@ -205,7 +213,7 @@ export async function generateReportPDF(data: ReportData) {
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(13);
-    setColor(doc, meta.color);
+    setColor(doc, meta.textColor ?? meta.color);
     doc.text(score.toFixed(1), pageWidth - margin, y, { align: "right" });
 
     doc.setFont("helvetica", "normal");
@@ -286,7 +294,7 @@ export async function generateReportPDF(data: ReportData) {
 
   // ── Subtle Academy CTA block ───────────────────────────────────────────────
   {
-    const blockHeight = 72;
+    const blockHeight = 54;
     if (y + blockHeight > pageHeight - bottomMargin) {
       doc.addPage();
       paintPage();
@@ -300,7 +308,7 @@ export async function generateReportPDF(data: ReportData) {
     doc.setLineWidth(0.3);
     doc.roundedRect(margin, y, contentWidth, blockHeight, 3, 3, "FD");
 
-    let by = y + 11;
+    let by = y + 9;
     const bx = margin + 8;
     const bw = contentWidth - 16;
 
@@ -308,13 +316,13 @@ export async function generateReportPDF(data: ReportData) {
     doc.setFontSize(8);
     setColor(doc, AQUA);
     doc.text("CONTINUE THE WORK — THE GREAT REPURPOSE ACADEMY", bx, by);
-    by += 7;
+    by += 6;
 
     doc.setFont("helvetica", "normal");
     doc.setFontSize(9.5);
     setColor(doc, MUTED);
     doc.text("Two guided tracks built on the five stages in this report.", bx, by);
-    by += 8;
+    by += 7.5;
 
     const tracks = [
       {
@@ -350,7 +358,7 @@ export async function generateReportPDF(data: ReportData) {
       doc.setFontSize(8.5);
       setColor(doc, AQUA);
       doc.text(t.url, bx + 5, by);
-      by += 9;
+      by += 8;
     }
 
     y += blockHeight + 6;
