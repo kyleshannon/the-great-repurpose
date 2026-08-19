@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function Footer() {
   return (
     <footer className="bg-aubergine constellation-bg" role="contentinfo">
-      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Left — Wordmark */}
         <div>
           <p className="font-display text-soft-white text-xl mb-2">The Great Repurpose</p>
@@ -12,10 +12,10 @@ export function Footer() {
           </p>
         </div>
 
-        {/* Center — Nav */}
+        {/* Right — Nav */}
         <nav aria-label="Footer navigation">
           <p className="text-soft-white/50 text-xs uppercase tracking-widest font-sans mb-4">Navigate</p>
-          <div className="flex flex-col gap-2">
+          <div className="grid grid-cols-2 gap-x-8 gap-y-2">
             {[
               { to: "/", label: "Home" },
               { to: "/phases", label: "The Five Stages" },
@@ -31,26 +31,6 @@ export function Footer() {
             ))}
           </div>
         </nav>
-
-        {/* Right — Community */}
-        <div>
-          <p className="text-soft-white/40 text-xs uppercase tracking-widest font-sans mb-4">Community</p>
-          <div className="flex flex-col gap-2">
-            {[
-              { href: "https://community.thesalon.ai", label: "Community.theSalon.ai" },
-            ].map(({ href, label }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-soft-white/70 hover:text-indigo text-sm font-sans transition-colors"
-              >
-                {label}
-              </a>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Bottom bar */}
