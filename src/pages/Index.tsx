@@ -465,7 +465,7 @@ const Index = () => {
             <ScrollFadeUp delay={300}>
               <Link
                 to="/selfcheck"
-                className="inline-flex items-center gap-2 bg-indigo text-white font-sans font-semibold text-sm uppercase tracking-widest px-10 py-5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-10 py-5 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
               >
                 Get Your Repurpose Profile →
               </Link>
@@ -538,7 +538,7 @@ const Index = () => {
               <div className="text-center">
                 <Link
                   to="/selfcheck"
-                  className="inline-flex items-center gap-2 bg-indigo text-white font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full pulse-indigo hover:opacity-90 transition-opacity mb-4"
+                  className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full pulse-aqua hover:opacity-90 transition-opacity mb-4"
                 >
                   Get Your Repurpose Profile →
                 </Link>
