@@ -54,7 +54,7 @@ export function Navigation() {
             <img
               src={logoAsset.url}
               alt="The Great Repurpose"
-              className="h-7 md:h-8 w-auto"
+              className="h-9 md:h-10 lg:h-11 w-auto"
             />
           </Link>
 
@@ -84,7 +84,7 @@ export function Navigation() {
           {/* Desktop CTA */}
           <Link
             to="/selfcheck"
-            className="hidden md:inline-flex items-center gap-2 shrink-0 whitespace-nowrap bg-indigo text-white text-[11px] xl:text-sm font-sans font-medium px-4 xl:px-5 py-2 xl:py-2.5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
+            className="hidden md:inline-flex items-center gap-2 shrink-0 whitespace-nowrap bg-aqua text-aubergine text-[11px] xl:text-sm font-sans font-semibold px-4 xl:px-5 py-2 xl:py-2.5 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
           >
             Get Profile
           </Link>
@@ -125,7 +125,7 @@ export function Navigation() {
           )}
           <Link
             to="/selfcheck"
-            className="mt-4 bg-indigo text-white text-base font-sans font-medium px-8 py-3 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
+            className="mt-4 bg-aqua text-aubergine text-base font-sans font-semibold px-8 py-3 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
           >
             Get Profile →
           </Link>
