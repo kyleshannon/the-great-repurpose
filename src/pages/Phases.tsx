@@ -3,8 +3,20 @@ import { Link, useLocation } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
-import { stageIcons } from "@/components/BrandIcons";
 import { getStageAnchor } from "@/lib/stages";
+import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
+import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
+import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
+import logoCitrus from "@/assets/tgr-logo-citrus.png.asset.json";
+import logoPoppy from "@/assets/tgr-logo-poppy.png.asset.json";
+
+const stageLogos: Record<string, string> = {
+  indigo: logoIndigo.url,
+  aqua: logoAqua.url,
+  orchid: logoOrchid.url,
+  citrus: logoCitrus.url,
+  poppy: logoPoppy.url,
+};
 
 const stages = [
   {
