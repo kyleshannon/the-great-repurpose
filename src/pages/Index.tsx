@@ -349,10 +349,10 @@ const Index = () => {
                 Five Stages. One Journey.
               </p>
               <h2 className="font-display text-aubergine text-3xl md:text-5xl leading-tight mb-6 text-center">
-                Where are you on the map?
+                Exploring the Five Stages
               </h2>
               <p className="font-body text-aubergine/70 text-lg leading-relaxed max-w-2xl mx-auto text-center mb-14">
-                These are the five phases people actually go through when the work that defined them changes. They don't happen in order. They're not clean. But knowing where you are is the first step toward building what comes next.
+                Here's what each stage actually looks like when the work that defined you changes. They don't happen in order. They're not clean. But knowing where you are is the first step toward building what comes next.
               </p>
             </ScrollFadeUp>
           </div>
