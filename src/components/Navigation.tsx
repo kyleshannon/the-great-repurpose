@@ -58,7 +58,8 @@ export function Navigation() {
           {/* Desktop nav links */}
           <div className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8">
             {navLinks.map(({ to, label }) => {
-              const active = location.pathname === to;
+              const active =
+                location.pathname === to || location.pathname.startsWith(`${to}/`);
               return (
                 <Link
                   key={to}
