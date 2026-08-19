@@ -43,11 +43,7 @@ export function Navigation() {
       </a>
       <nav
         aria-label="Main navigation"
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled || location.pathname !== "/"
-            ? "bg-aubergine shadow-lg"
-            : "bg-aubergine/50"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-aubergine/85 backdrop-blur-sm shadow-lg`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3 lg:gap-6">
           {/* Logo */}
