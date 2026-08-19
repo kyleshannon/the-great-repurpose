@@ -63,26 +63,30 @@ export function Navigation() {
                 <Link
                   key={to}
                   to={to}
-                  className={`${active ? "text-soft-white font-bold" : "text-soft-white/80 hover:text-soft-white font-sans"} text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap transition-colors relative group`}
+                  className={`${active ? "text-soft-white font-bold" : "text-soft-white/80 hover:text-soft-white font-sans"} text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap transition-colors relative`}
                 >
                   {label}
-                  <span
-                    className={`absolute -bottom-0.5 left-0 h-0.5 bg-aqua transition-all duration-300 ${active ? "w-full" : "w-0 group-hover:w-full"}`}
-                    aria-hidden="true"
-                  />
+                  {active && (
+                    <span
+                      className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-aqua"
+                      aria-hidden="true"
+                    />
+                  )}
                 </Link>
               );
             })}
             {showReportLink && (
               <Link
                 to={reportUrl}
-                className={`${location.pathname === reportUrl ? "text-soft-white font-bold" : "text-indigo hover:text-soft-white"} text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap font-sans transition-colors relative group`}
+                className={`${location.pathname === reportUrl ? "text-soft-white font-bold" : "text-indigo hover:text-soft-white font-sans"} text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap transition-colors relative`}
               >
                 Your Report
-                <span
-                  className={`absolute -bottom-0.5 left-0 h-0.5 bg-aqua transition-all duration-300 ${location.pathname === reportUrl ? "w-full" : "w-0 group-hover:w-full"}`}
-                  aria-hidden="true"
-                />
+                {location.pathname === reportUrl && (
+                  <span
+                    className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-aqua"
+                    aria-hidden="true"
+                  />
+                )}
               </Link>
             )}
           </div>
