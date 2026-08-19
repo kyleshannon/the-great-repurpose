@@ -3,7 +3,6 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 import { SignalTeaser } from "@/components/SignalTeaser";
-import { stageIcons } from "@/components/BrandIcons";
 import heroAsset from "@/assets/hero.png.asset.json";
 import personBehindAsset from "@/assets/person-seen-from-behind.png.asset.json";
 
@@ -13,6 +12,20 @@ import twoProfessionalsScreenAsset from "@/assets/two-professionals-screen.png.a
 import twoProfessionalsTableAsset from "@/assets/two-professionals-table.png.asset.json";
 import smallGroupLaptopAsset from "@/assets/small-group-laptop.png.asset.json";
 import twoPeopleConversationAsset from "@/assets/two-people-conversation.png.asset.json";
+
+import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
+import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
+import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
+import logoCitrus from "@/assets/tgr-logo-citrus.png.asset.json";
+import logoPoppy from "@/assets/tgr-logo-poppy.png.asset.json";
+
+const stageLogos: Record<string, string> = {
+  indigo: logoIndigo.url,
+  aqua: logoAqua.url,
+  orchid: logoOrchid.url,
+  citrus: logoCitrus.url,
+  poppy: logoPoppy.url,
+};
 
 const colorMap: Record<string, { text: string; bg: string; border: string; hoverBorder: string }> = {
   indigo: { text: "text-indigo", bg: "bg-indigo/5", border: "border-indigo/20", hoverBorder: "hover:border-indigo/40" },
@@ -310,9 +323,6 @@ const Index = () => {
                           {phase.number}
                         </span>
                         <span className="font-display text-soft-white text-lg md:text-xl">{phase.name}</span>
-                        <span className="font-body text-soft-white/50 text-sm italic hidden sm:inline">
-                          {phase.tagline}
-                        </span>
                       </li>
                     ))}
                   </ol>
@@ -356,7 +366,6 @@ const Index = () => {
 
           <div className="mb-16">
             {phases.map((phase, i) => {
-              const { Icon } = stageIcons[i];
               const colors = colorMap[phase.color];
               const image = stageImages[i];
               const imageRight = i % 2 === 1;
@@ -377,7 +386,12 @@ const Index = () => {
                       </div>
                       <div className={`flex-1 ${imageRight ? "md:order-1" : ""}`}>
                         <div className="flex items-center gap-3 mb-2">
-                          <Icon className={`w-8 h-8 ${colors.text}`} />
+                          <img
+                            src={stageLogos[phase.color]}
+                            alt=""
+                            className="h-10 w-auto"
+                            loading="lazy"
+                          />
                           <span className={`font-sans text-xs uppercase tracking-widest font-semibold ${colors.text}`}>
                             {phase.number}
                           </span>
