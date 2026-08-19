@@ -323,9 +323,6 @@ const Index = () => {
                           {phase.number}
                         </span>
                         <span className="font-display text-soft-white text-lg md:text-xl">{phase.name}</span>
-                        <span className="font-body text-soft-white/50 text-sm italic hidden sm:inline">
-                          {phase.tagline}
-                        </span>
                       </li>
                     ))}
                   </ol>
