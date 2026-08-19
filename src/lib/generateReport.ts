@@ -299,9 +299,29 @@ export async function generateReportPDF(data: ReportData) {
       doc.addPage();
       paintPage();
       y = margin + 4;
+
+      // Closing page header so the CTA never floats alone
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(8);
+      setColor(doc, AQUA);
+      doc.text("WHAT'S NEXT", margin, y);
+      y += 11;
+
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(11);
+      setColor(doc, AUBERGINE);
+      y = renderWrappedText(
+        "The five stages aren't a one-time read. They're a practice — and the work goes further with structure and other people moving through it alongside you.",
+        margin,
+        y,
+        contentWidth,
+        5.4,
+      );
+      y += 8;
     } else {
       y += 6;
     }
+
 
     doc.setFillColor(255, 255, 255);
     doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
