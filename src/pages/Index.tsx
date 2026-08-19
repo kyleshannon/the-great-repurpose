@@ -123,10 +123,10 @@ const Index = () => {
                     Reclaiming Agency, Meaning, and Value in the Age of AI
                   </p>
                   <h1 className="font-display text-soft-white text-3xl md:text-4xl lg:text-5xl leading-[1.05] mb-4">
-                    You weren't meant to be replaced.
+                    <span className="font-light">You weren't meant to be replaced.</span>
                     <br />
-                    <span className="text-citrus">You were meant to </span>
-                    <span className="text-poppy">Repurpose.</span>
+                    <span className="text-soft-white">It's Time to </span>
+                    <span className="text-citrus">Repurpose.</span>
                   </h1>
                   <p className="font-body text-soft-white/80 text-base md:text-lg max-w-md leading-relaxed mb-6">
                     The Great Repurpose is a movement for people navigating the human side of reinvention — so you can create meaningful value in an AI-shaped world.
@@ -135,7 +135,7 @@ const Index = () => {
                     to="/selfcheck"
                     className="inline-flex items-center gap-2 bg-indigo text-white font-sans font-semibold text-sm uppercase tracking-widest px-7 py-3.5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
                   >
-                    Get Your Repurpose Profile →
+                    Get Profile →
                   </Link>
                 </ScrollFadeUp>
               </div>
