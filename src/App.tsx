@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Phases from "./pages/Phases";
 import Academy from "./pages/Academy";
+import AcademyExecutive from "./pages/AcademyExecutive";
+import AcademyTransition from "./pages/AcademyTransition";
 import About from "./pages/About";
 import SelfCheck from "./pages/SelfCheck";
 import ResultsPreview from "./pages/ResultsPreview";
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/phases" element={<Phases />} />
           <Route path="/academy" element={<Academy />} />
+          <Route path="/academy/leadership" element={<AcademyExecutive />} />
+          <Route path="/academy/transition" element={<AcademyTransition />} />
           <Route path="/types" element={<TgrTypes />} />
           <Route path="/signals" element={<Signals />} />
           <Route path="/signals/:slug" element={<SignalDetail />} />
