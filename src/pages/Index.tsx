@@ -119,13 +119,13 @@ const Index = () => {
             <div className="relative w-full px-6 md:px-10 lg:px-16 pb-12 md:pb-16 pt-32">
               <div className="max-w-xl">
                 <ScrollFadeUp>
-                  <p className="font-sans text-aqua text-[0.7rem] uppercase tracking-[0.2em] font-semibold mb-3">
+                  <p className="font-sans text-aqua text-[0.85rem] uppercase tracking-[0.2em] font-semibold mb-3">
                     Reclaiming Agency, Meaning, and Value in the Age of AI
                   </p>
-                  <h1 className="font-display text-soft-white text-3xl md:text-4xl lg:text-5xl leading-[1.05] mb-4">
-                    <span className="font-light">You weren't meant to be replaced.</span>
+                  <h1 className="font-display text-soft-white text-2xl md:text-3xl lg:text-4xl leading-[1.05] mb-4">
+                    <span className="font-light text-soft-white/90">You weren't meant to be replaced.</span>
                     <br />
-                    <span className="text-soft-white">It's Time to </span>
+                    <span className="text-soft-white">it's time to </span>
                     <span className="text-citrus">Repurpose.</span>
                   </h1>
                   <p className="font-body text-soft-white/80 text-base md:text-lg max-w-md leading-relaxed mb-6">
@@ -133,7 +133,7 @@ const Index = () => {
                   </p>
                   <Link
                     to="/selfcheck"
-                    className="inline-flex items-center gap-2 bg-indigo text-white font-sans font-semibold text-sm uppercase tracking-widest px-7 py-3.5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
+                    className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-7 py-3.5 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
                   >
                     Get Profile →
                   </Link>
