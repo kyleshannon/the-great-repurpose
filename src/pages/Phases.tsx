@@ -3,8 +3,20 @@ import { Link, useLocation } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
-import { stageIcons } from "@/components/BrandIcons";
 import { getStageAnchor } from "@/lib/stages";
+import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
+import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
+import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
+import logoCitrus from "@/assets/tgr-logo-citrus.png.asset.json";
+import logoPoppy from "@/assets/tgr-logo-poppy.png.asset.json";
+
+const stageLogos: Record<string, string> = {
+  indigo: logoIndigo.url,
+  aqua: logoAqua.url,
+  orchid: logoOrchid.url,
+  citrus: logoCitrus.url,
+  poppy: logoPoppy.url,
+};
 
 const stages = [
   {
@@ -92,9 +104,8 @@ const Phases = () => {
       </section>
 
       {/* Stage sections */}
-      {stages.map((stage, i) => {
+      {stages.map((stage) => {
         const colors = colorMap[stage.color];
-        const { Icon } = stageIcons[i];
         return (
           <section
             key={stage.number}
@@ -104,9 +115,13 @@ const Phases = () => {
             <div className="max-w-4xl mx-auto">
               <ScrollFadeUp>
                 <div className="flex items-center gap-4 mb-6">
-                  <span className={`shrink-0 ${colors.icon}`}>
-                    <Icon className="w-8 h-8" />
-                  </span>
+                  <img
+                    src={stageLogos[stage.color]}
+                    alt=""
+                    aria-hidden="true"
+                    className="shrink-0 h-10 w-auto"
+                    loading="lazy"
+                  />
                   <span className={`font-sans text-xs uppercase tracking-widest font-medium ${colors.text}`}>
                     {stage.number}
                   </span>
