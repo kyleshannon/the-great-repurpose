@@ -305,12 +305,27 @@ const Index = () => {
                     <p>The Whole You, Amplified by AI. That's the opportunity. Not replacing yourself. Not becoming a prompt engineer. Becoming more fully who you already are — with tools that multiply what you can do.</p>
                   </ScrollFadeUp>
                 </div>
+                <ScrollFadeUp delay={220}>
+                  <ol className="border-t border-soft-white/15 divide-y divide-soft-white/10">
+                    {phases.map((phase) => (
+                      <li key={phase.number} className="flex items-baseline gap-4 py-3">
+                        <span className={`font-sans text-xs font-semibold tracking-widest ${colorMap[phase.color].text}`}>
+                          {phase.number}
+                        </span>
+                        <span className="font-display text-soft-white text-lg md:text-xl">{phase.name}</span>
+                        <span className="font-body text-soft-white/50 text-sm italic hidden sm:inline">
+                          {phase.tagline}
+                        </span>
+                      </li>
+                    ))}
+                  </ol>
+                </ScrollFadeUp>
                 <ScrollFadeUp delay={250}>
                   <Link
                     to="/selfcheck"
                     className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full hover:opacity-90 transition-opacity mt-4"
                   >
-                    Start Free Assessment →
+                    Get Your Profile →
                   </Link>
                 </ScrollFadeUp>
               </div>
