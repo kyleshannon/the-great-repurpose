@@ -9,7 +9,7 @@ export function Footer() {
           <p className="font-display text-soft-white text-xl mb-2">The Great Repurpose</p>
           <p className="text-soft-white/60 text-sm font-sans mb-1">By Kyle Shannon</p>
           <p className="text-soft-white/50 text-sm font-sans">
-            The Great Repurpose puts a name to what's happening and offers a path through it — born in the AI Salon, a values-driven community for anyone curious about what generative AI makes possible.
+            The Great Repurpose puts a name to what's happening to work — and offers a path through it. A framework, an assessment, and an academy for people whose careers are being rewritten by AI.
           </p>
         </div>
 
@@ -21,6 +21,7 @@ export function Footer() {
               { to: "/", label: "Home" },
               { to: "/phases", label: "The Five Stages" },
               { to: "/types", label: "Great Repurpose Profiles" },
+              { to: "/academy", label: "TGR Academy" },
               { to: "/signals", label: "Daily Signal" },
               { to: "/about", label: "About" },
               { to: "/selfcheck", label: "What's Your Repurpose Profile?" },
@@ -37,8 +38,7 @@ export function Footer() {
           <p className="text-soft-white/40 text-xs uppercase tracking-widest font-sans mb-4">Community</p>
           <div className="flex flex-col gap-2">
             {[
-              { href: "https://community.thesalon.ai", label: "The AI Salon" },
-              { href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet", label: "Office Hours: Fridays" },
+              { href: "https://community.thesalon.ai", label: "Community.theSalon.ai" },
             ].map(({ href, label }) => (
               <a
                 key={label}
@@ -60,14 +60,6 @@ export function Footer() {
           <p className="text-soft-white/50 text-sm font-display italic">
             "The future of AI is still up for grabs — join us."
           </p>
-          <a
-            href="https://community.thesalon.ai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-indigo text-sm font-sans hover:underline"
-          >
-            Community.theSalon.ai
-          </a>
           <p className="text-soft-white/30 text-xs font-sans">© 2026 The Great Repurpose</p>
         </div>
       </div>
