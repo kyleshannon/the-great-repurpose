@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 import { getStageAnchor } from "@/lib/stages";
@@ -88,6 +89,11 @@ const Phases = () => {
 
   return (
     <div className="min-h-screen bg-soft-white text-aubergine">
+      <Seo
+        title="The Five Stages of The Great Repurpose"
+        description="Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, Start Creating — the five stages people move through when AI reshapes their work."
+        path="/phases"
+      />
       <Navigation />
       <main id="main-content">
 

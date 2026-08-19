@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 
@@ -98,6 +99,12 @@ const fearQuotes = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-soft-white text-aubergine">
+      <Seo
+        title="The Great Repurpose — You Were Meant to Repurpose"
+        description="Reclaiming Agency, Meaning, and Value in the Age of AI. You weren't meant to be replaced. You were meant to Repurpose."
+        path="/"
+        image="https://thegreatrepurpose.com/__l5e/assets-v1/f80af835-3e03-449e-8150-3e917b3d7a2d/hero.png"
+      />
       <Navigation />
       <main id="main-content">
 

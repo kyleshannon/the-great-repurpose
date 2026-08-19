@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 
@@ -113,6 +114,11 @@ const accentClasses: Record<string, { border: string; text: string; bg: string }
 const TgrTypes = () => {
   return (
     <div className="min-h-screen bg-aubergine text-soft-white">
+      <Seo
+        title="The 10 Repurpose Profiles | Where You Are on the Journey"
+        description="Identity Seekers, Direction Finders, Builders in Motion, and The Amplifier — ten profiles naming where you stand in the AI transition, and what to do next."
+        path="/types"
+      />
       <Navigation />
       <main id="main-content">
         {/* Hero */}
