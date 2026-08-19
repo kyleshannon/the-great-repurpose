@@ -134,13 +134,21 @@ const Phases = () => {
                 <ScrollFadeUp delay={180}>
                   <div>
                     <p className={`font-sans text-xs uppercase tracking-widest font-medium ${colors.text} mb-3`}>What it feels like</p>
-                    <p>{stage.feels}</p>
+                    <div className="space-y-4">
+                      {stage.feels.split('\n\n').map((para, idx) => (
+                        <p key={idx}>{para}</p>
+                      ))}
+                    </div>
                   </div>
                 </ScrollFadeUp>
                 <ScrollFadeUp delay={260}>
                   <div>
                     <p className={`font-sans text-xs uppercase tracking-widest font-medium ${colors.text} mb-3`}>What it looks like in practice</p>
-                    <p>{stage.practice}</p>
+                    <div className="space-y-4">
+                      {stage.practice.split('\n\n').map((para, idx) => (
+                        <p key={idx}>{para}</p>
+                      ))}
+                    </div>
                   </div>
                 </ScrollFadeUp>
               </div>
