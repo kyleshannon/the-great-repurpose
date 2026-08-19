@@ -147,7 +147,7 @@ const Index = () => {
         {/* ── Section 2: The real question ── */}
         <section className="bg-soft-white py-16 md:py-24 px-6">
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
               <ScrollFadeUp>
                 <img
                   src={personBehindAsset.url}
@@ -156,18 +156,18 @@ const Index = () => {
                   loading="lazy"
                 />
               </ScrollFadeUp>
-              <div className="space-y-6">
+              <div className="space-y-5">
                 <ScrollFadeUp delay={100}>
-                  <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-2">
+                  <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-3">
                     Everything is changing
                   </p>
-                  <h2 className="font-display text-aubergine text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
+                  <h2 className="font-display text-aubergine text-3xl md:text-4xl lg:text-5xl leading-tight">
                     The future of work is being rewritten — and the real question is:
                   </h2>
                 </ScrollFadeUp>
                 <ScrollFadeUp delay={150}>
-                  <p className="font-display text-aubergine text-4xl md:text-5xl italic leading-snug">
-                    “Who am I now?"
+                  <p className="font-display text-aubergine text-2xl md:text-3xl italic leading-snug">
+                    “Who am I now?”
                   </p>
                 </ScrollFadeUp>
                 <div className="font-body text-aubergine/80 text-lg leading-relaxed space-y-5">
