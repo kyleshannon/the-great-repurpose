@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -49,8 +50,12 @@ export function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3 lg:gap-6">
           {/* Logo */}
-          <Link to="/" className="font-display text-soft-white text-base xl:text-lg tracking-tight whitespace-nowrap hover:opacity-80 transition-opacity shrink-0">
-            The Great Repurpose
+          <Link to="/" className="shrink-0 hover:opacity-80 transition-opacity">
+            <img
+              src={logoAsset.url}
+              alt="The Great Repurpose"
+              className="h-7 md:h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop nav links */}
@@ -81,8 +86,7 @@ export function Navigation() {
             to="/selfcheck"
             className="hidden md:inline-flex items-center gap-2 shrink-0 whitespace-nowrap bg-indigo text-white text-[11px] xl:text-sm font-sans font-medium px-4 xl:px-5 py-2 xl:py-2.5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
           >
-            <span className="hidden xl:inline">What's Your Repurpose Profile?</span>
-            <span className="xl:hidden">Your Profile</span>
+            Get Profile
           </Link>
 
           {/* Mobile hamburger */}
@@ -123,7 +127,7 @@ export function Navigation() {
             to="/selfcheck"
             className="mt-4 bg-indigo text-white text-base font-sans font-medium px-8 py-3 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
           >
-            What's Your Repurpose Profile? →
+            Get Profile →
           </Link>
         </div>
       )}
