@@ -552,8 +552,17 @@ const ResultsPreview = () => {
                 </RadarChart>
               </ResponsiveContainer>
               <p className="text-soft-white/40 text-xs font-sans mt-2">Your shape across the five dimensions</p>
+
+              <button
+                onClick={handleDownloadPDF}
+                disabled={generating}
+                className="mt-8 inline-flex items-center gap-2 bg-aqua text-aubergine font-sans text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
+              >
+                {generating ? "Generating…" : "Download Report ↓"}
+              </button>
             </div>
           </section>
+
 
 
           {/* ── About this profile (static description) ── */}
