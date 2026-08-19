@@ -454,7 +454,7 @@ const ResultsPreview = () => {
     setGenerating(true);
     try {
       const cat = categories[archetype.category];
-      generateReportPDF({
+      await generateReportPDF({
         archetype,
         category: {
           label: cat.label,
