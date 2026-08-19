@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
-import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 

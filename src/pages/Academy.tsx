@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 import elaHeroAsset from "@/assets/ela-hero.png.asset.json";
@@ -55,6 +56,39 @@ const programs = [
 const Academy = () => {
   return (
     <div className="min-h-screen bg-soft-white text-aubergine">
+      <Seo
+        title="TGR Academy | Executive Leadership & Transition Programs"
+        description="Two programs for organizations facing AI disruption: the Executive Leadership Academy for leaders making the calls, and the TGR Transition Academy — outplacement reimagined."
+        path="/academy"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "The Executive Leadership Academy",
+            description:
+              "An eight-hour immersive workshop plus ninety-minute implementation sessions every two weeks for three months, building executive AI readiness and workforce decision-making.",
+            url: "https://thegreatrepurpose.com/academy/leadership",
+            provider: { "@type": "Organization", name: "The Great Repurpose", url: "https://thegreatrepurpose.com/" },
+            audience: { "@type": "Audience", audienceType: "CEOs, COOs, CHROs, heads of talent, workforce transformation leads" },
+            hasCourseInstance: {
+              "@type": "CourseInstance",
+              courseMode: "Blended",
+              courseWorkload: "PT8H",
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "The TGR Transition Academy",
+            description:
+              "Outplacement reimagined for an AI-shaped future: a cohort moves through the five stages of The Great Repurpose, building real AI agency instead of polishing resumes.",
+            url: "https://thegreatrepurpose.com/academy/transition",
+            provider: { "@type": "Organization", name: "The Great Repurpose", url: "https://thegreatrepurpose.com/" },
+            audience: { "@type": "Audience", audienceType: "HR leaders, people teams, and employees in role transition" },
+            hasCourseInstance: { "@type": "CourseInstance", courseMode: "Blended" },
+          },
+        ]}
+      />
       <Navigation />
       <main id="main-content">
         {/* Hero */}
