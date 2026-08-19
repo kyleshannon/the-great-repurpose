@@ -57,23 +57,32 @@ export function Navigation() {
 
           {/* Desktop nav links */}
           <div className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8">
-            {navLinks.map(({ to, label }) => (
-              <Link
-                key={to}
-                to={to}
-                className="text-soft-white/80 hover:text-soft-white text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap font-sans transition-colors relative group"
-              >
-                {label}
-                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-indigo group-hover:w-full transition-all duration-300" aria-hidden="true" />
-              </Link>
-            ))}
+            {navLinks.map(({ to, label }) => {
+              const active = location.pathname === to;
+              return (
+                <Link
+                  key={to}
+                  to={to}
+                  className={`${active ? "text-soft-white font-bold" : "text-soft-white/80 hover:text-soft-white font-sans"} text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap transition-colors relative group`}
+                >
+                  {label}
+                  <span
+                    className={`absolute -bottom-0.5 left-0 h-0.5 bg-aqua transition-all duration-300 ${active ? "w-full" : "w-0 group-hover:w-full"}`}
+                    aria-hidden="true"
+                  />
+                </Link>
+              );
+            })}
             {showReportLink && (
               <Link
                 to={reportUrl}
-                className="text-indigo hover:text-soft-white text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap font-sans transition-colors relative group"
+                className={`${location.pathname === reportUrl ? "text-soft-white font-bold" : "text-indigo hover:text-soft-white"} text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap font-sans transition-colors relative group`}
               >
                 Your Report
-                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-indigo group-hover:w-full transition-all duration-300" aria-hidden="true" />
+                <span
+                  className={`absolute -bottom-0.5 left-0 h-0.5 bg-aqua transition-all duration-300 ${location.pathname === reportUrl ? "w-full" : "w-0 group-hover:w-full"}`}
+                  aria-hidden="true"
+                />
               </Link>
             )}
           </div>
