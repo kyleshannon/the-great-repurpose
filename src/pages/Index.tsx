@@ -366,7 +366,6 @@ const Index = () => {
 
           <div className="mb-16">
             {phases.map((phase, i) => {
-              const { Icon } = stageIcons[i];
               const colors = colorMap[phase.color];
               const image = stageImages[i];
               const imageRight = i % 2 === 1;
@@ -387,7 +386,12 @@ const Index = () => {
                       </div>
                       <div className={`flex-1 ${imageRight ? "md:order-1" : ""}`}>
                         <div className="flex items-center gap-3 mb-2">
-                          <Icon className={`w-8 h-8 ${colors.text}`} />
+                          <img
+                            src={stageLogos[phase.color]}
+                            alt=""
+                            className="h-10 w-auto"
+                            loading="lazy"
+                          />
                           <span className={`font-sans text-xs uppercase tracking-widest font-semibold ${colors.text}`}>
                             {phase.number}
                           </span>
