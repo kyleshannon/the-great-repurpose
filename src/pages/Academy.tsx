@@ -2,49 +2,53 @@ import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
-import twoProfessionalsScreenAsset from "@/assets/two-professionals-screen.png.asset.json";
-import twoProfessionalsTableAsset from "@/assets/two-professionals-table.png.asset.json";
+import elaHeroAsset from "@/assets/ela-hero.png.asset.json";
+import taHeroAsset from "@/assets/ta-hero.png.asset.json";
 
 const programs = [
   {
-    id: "transition",
-    eyebrow: "Program One",
-    name: "The TGR Transition Academy",
-    tagline: "For the moment the work you did stopped existing the way it used to.",
+    id: "leadership",
+    href: "/academy/leadership",
+    eyebrow: "For leaders making the calls",
+    name: "The Executive Leadership Academy",
+    tagline: "Ninety-five percent of GenAI pilots show no measurable impact. The gap is leadership, not technology.",
     accent: "text-indigo",
     border: "border-indigo/30",
-    image: twoProfessionalsTableAsset.url,
-    alt: "Two professionals working over a table of printed material",
+    image: elaHeroAsset.url,
+    alt: "Senior leaders in conversation",
     body: [
-      "Placeholder copy. The Transition Academy takes you through the five stages in order — unhooking identity, reclaiming value, discovering purpose, becoming AI ready, and relaunching yourself — with practice, feedback, and a cohort moving at the same time.",
-      "It's built for people whose role was cut, compressed, or quietly rewritten: the layoff, the shrinking scope, the sense that the ladder you were climbing got moved. The outcome isn't a certificate. It's visible work, a clear offer, and more than one way for opportunity to reach you.",
+      "An eight-hour immersive workshop followed by ninety-minute implementation sessions every two weeks for three months — applied to the real workforce, technology, and organizational decisions already on your desk.",
+      "Four parts: understand the implications of AI, shift your leadership mindset, build executive AI readiness, and find and support your people before defaulting to headcount cuts.",
     ],
     points: [
-      "Guided path through all five stages",
-      "Hands-on AI practice, not tool tutorials",
-      "Build a portfolio of visible, real work",
-      "Cohort accountability and live sessions",
+      "Understand the Implications of AI",
+      "Shift Your Leadership Mindset",
+      "Build Executive AI Readiness",
+      "Find and Support Your People",
     ],
+    footnote: "Brought in by CEOs, COOs, CHROs, heads of talent, and workforce transformation leads.",
   },
   {
-    id: "executive",
-    eyebrow: "Program Two",
-    name: "The Executive Leadership Academy",
-    tagline: "For the people deciding what AI does to everyone else's job.",
+    id: "transition",
+    href: "/academy/transition",
+    eyebrow: "For people whose role just ended",
+    name: "The TGR Transition Academy",
+    tagline: "Outplacement, reimagined for an AI-shaped future.",
     accent: "text-citrus",
     border: "border-citrus/30",
-    image: twoProfessionalsScreenAsset.url,
-    alt: "Two professionals reviewing work together at a screen",
+    image: taHeroAsset.url,
+    alt: "A person at a worktable in thought",
     body: [
-      "Placeholder copy. The Executive Leadership Academy is for leaders carrying teams and organizations through the transition — the ones making adoption calls, restructuring roles, and answering questions they were never trained for.",
-      "It covers how to make AI decisions that respect human judgment, how to redesign work without hollowing it out, and how to lead people through the identity shift instead of around it.",
+      "Traditional providers help people find another job. Polishing a resume doesn't matter if that job is no longer in demand, and career frameworks built for careers that no longer exist leave people feeling discarded rather than supported.",
+      "The Transition Academy replaces the isolation of job loss with a structured community moving through the five stages together — unhooking identity from title, reclaiming real value, and developing the AI agency to relaunch.",
     ],
     points: [
-      "Work design that keeps the human layer intact",
-      "Leading teams through identity disruption",
-      "AI adoption decisions with judgment at the center",
-      "Peer sessions with other senior leaders",
+      "Five stages, one journey, moved through as a cohort",
+      "Practical AI agency, not another upskilling checklist",
+      "Coaching from facilitators and AI implementation experts",
+      "Runs standalone or layered onto an existing vendor",
     ],
+    footnote: "70% of the skills used in most jobs will change by 2030.",
   },
 ];
 
@@ -63,7 +67,7 @@ const Academy = () => {
               Where the framework becomes practice
             </h1>
             <p className="font-body text-soft-white/70 text-lg md:text-xl max-w-2xl mx-auto">
-              Two programs built on The Five Stages of The Great Repurpose — one for people rebuilding their own work, one for the leaders responsible for everyone else's.
+              Two programs built on The Five Stages of The Great Repurpose — one for the leaders deciding how AI reshapes the work, one for the people whose roles it already changed. Run them together for coordinated support on both sides of a workforce change.
             </p>
           </ScrollFadeUp>
         </section>
@@ -102,13 +106,22 @@ const Academy = () => {
                   ))}
                 </div>
                 <ScrollFadeUp delay={200}>
-                  <ul className={`border-t ${program.border} divide-y ${program.border}`}>
+                  <ul className={`border-t ${program.border} divide-y ${program.border} mb-6`}>
                     {program.points.map((point) => (
                       <li key={point} className="font-sans text-aubergine/80 text-sm py-3">
                         {point}
                       </li>
                     ))}
                   </ul>
+                  <p className="font-sans text-aubergine/50 text-xs uppercase tracking-[0.14em] mb-6">
+                    {program.footnote}
+                  </p>
+                  <Link
+                    to={program.href}
+                    className="inline-flex items-center gap-2 border border-aubergine/30 text-aubergine font-sans font-semibold text-xs uppercase tracking-widest px-6 py-3 rounded-full hover:bg-aubergine hover:text-soft-white transition-colors"
+                  >
+                    See the one-sheet →
+                  </Link>
                 </ScrollFadeUp>
               </div>
             </div>
