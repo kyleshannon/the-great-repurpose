@@ -33,8 +33,6 @@ export function Navigation() {
     { to: "/about", label: "About" },
   ];
 
-  const isOnReportPage = reportUrl && location.pathname === reportUrl;
-  const showReportLink = reportUrl && !isOnReportPage;
 
   return (
     <>
