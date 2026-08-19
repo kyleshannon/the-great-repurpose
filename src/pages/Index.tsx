@@ -260,10 +260,7 @@ const Index = () => {
                 Experience the Heart of The Great Repurpose
               </h2>
               <p className="font-display text-aubergine/80 text-xl md:text-2xl italic leading-snug mb-10">
-                "We didn't ask for this.<br />
-                It's here.<br />
-                The only way forward is through…<br />
-                and you're not alone."
+                Official Music Video of the Movement
               </p>
               <div className="relative w-full overflow-hidden rounded-2xl" style={{ paddingBottom: "56.25%" }}>
                 <iframe
