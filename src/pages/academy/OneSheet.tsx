@@ -45,7 +45,12 @@ export function OneSheet({ html, title, description, canonical }: OneSheetProps)
         href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap"
       />
       <style>{`
-        .onesheet-root { background:#010F32; padding-top:76px; }
+        .onesheet-root { background:#010F32; }
+        /* The site nav already shows the TGR logo — hide the duplicate lockup in the one-sheet hero */
+        .onesheet-root .page img[alt="The Great Repurpose"] { display:none; }
+        /* Let the dark hero run under the translucent fixed nav */
+        .onesheet-root .page > div:first-child { min-height: 400px; }
+        .onesheet-root .page > div:first-child > div:last-child { padding-top: 96px !important; }
         .onesheet-root doc-page, .onesheet-root .page { display:block; }
         .onesheet-root .page {
           max-width: 1040px;
