@@ -15,6 +15,7 @@ import TgrTypes from "./pages/TgrTypes";
 import Signals from "./pages/Signals";
 import SignalDetail from "./pages/SignalDetail";
 import NotFound from "./pages/NotFound";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/phases" element={<Phases />} />
