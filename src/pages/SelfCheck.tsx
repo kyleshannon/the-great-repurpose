@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
+import { Seo } from "@/components/Seo";
 import QuestionSlider from "@/components/selfcheck/QuestionSlider";
 import StepDots from "@/components/selfcheck/StepDots";
 
@@ -148,6 +149,11 @@ const SelfCheck = () => {
 
   return (
     <main className="min-h-screen bg-aubergine flex flex-col relative overflow-hidden">
+      <Seo
+        title="Repurpose Profile Assessment | Free 2-Minute Self Check"
+        description="Seven questions, two minutes. Find your Repurpose Profile and see where you stand across the five stages of The Great Repurpose."
+        path="/selfcheck"
+      />
       <Navigation />
       {/* Top bar */}
       <div className="flex items-center justify-between px-5 pt-5 pb-3">

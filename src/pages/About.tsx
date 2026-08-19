@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 
@@ -21,6 +22,11 @@ const pillars = [
 const About = () => {
   return (
     <div className="min-h-screen bg-aubergine text-soft-white">
+      <Seo
+        title="About The Great Repurpose | Kyle Shannon"
+        description="The Great Repurpose is a movement helping people and organizations reclaim agency, meaning, and value as AI reshapes work. Founded by Kyle Shannon."
+        path="/about"
+      />
       <Navigation />
       <main id="main-content">
 
