@@ -125,7 +125,7 @@ const Index = () => {
                   <h1 className="font-display text-soft-white text-2xl md:text-3xl lg:text-4xl leading-[1.05] mb-4">
                     <span className="font-light text-soft-white/90">You weren't meant to be replaced.</span>
                     <br />
-                    <span className="text-soft-white">it's time to </span>
+                    <span className="text-soft-white">It's time to </span>
                     <span className="text-citrus">Repurpose.</span>
                   </h1>
                   <p className="font-body text-soft-white/80 text-base md:text-lg max-w-md leading-relaxed mb-6">
