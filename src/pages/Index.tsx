@@ -135,7 +135,7 @@ const Index = () => {
                     to="/selfcheck"
                     className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-7 py-3.5 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
                   >
-                    Get Profile →
+                    GET YOUR PROFILE →
                   </Link>
                 </ScrollFadeUp>
               </div>
