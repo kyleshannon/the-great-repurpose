@@ -14,9 +14,9 @@ export const stageDefinitions = {
   "Discover Purpose":
     "Point your reclaimed value toward a problem, audience, community, or contribution that gives your next chapter direction.",
   "Become AI Ready":
-    "Understand AI's power to amplify your ideas — once identity, value, and purpose have a foundation.",
+    "Put yourself at the center and explore AI without expectations. Play is how you find out what you can actually do with it.",
   "Relaunch Yourself":
-    "Turn who you are into work, opportunity, and income. Ship, share, teach, build, and lead out loud.",
+    "Turn who you are into visible work, real opportunities, and income that no longer depends on one employer.",
 } as const;
 
 export const stageTaglines = {

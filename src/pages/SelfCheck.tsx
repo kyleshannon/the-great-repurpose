@@ -44,16 +44,16 @@ const questions = [
   {
     id: "q6",
     dimension: "BECOME AI READY",
-    context: "A friend hands you their laptop and says \"try this new AI tool — make something with it.\"",
-    left: "I feel a knot in my stomach. I'd rather watch them use it. Or I'd try it but feel clumsy and quit after five minutes",
-    right: "I take the laptop and lose track of time. Twenty minutes later I'm showing them something I made and asking \"what if we tried…\"",
+    context: "An hour opens up and you decide to spend it with an AI tool. No deliverable, no deadline.",
+    left: "I wouldn't know what to do with the hour. If I use AI at all, it's to get something off my plate faster",
+    right: "I lose track of time playing — no goal, just seeing what's possible. I keep finding things I didn't know I could make",
   },
   {
     id: "q7",
     dimension: "RELAUNCH YOURSELF",
-    context: "Think about an idea you've had recently — something that excited you. Where is it right now?",
-    left: "It's still in my head. I've been thinking about it, maybe researching, but I haven't started making anything. I'm not sure it's ready",
-    right: "I've already made a rough version. It's messy but it exists. I showed someone. I'm iterating",
+    context: "Someone asks what you do now. Then they ask if there's anything they can see.",
+    left: "I explain it awkwardly, usually by referencing the job I used to have. There's nothing I could actually show them",
+    right: "I can say clearly who I am and what I create — and point them to real work. It's already bringing in opportunities or income",
   },
 ];
 
@@ -86,11 +86,11 @@ const SelfCheck = () => {
     if (isOpenEndedStep) {
       // Final step — navigate to results
       const finalScores: Record<string, number> = {
-        identity: (answers.q1 + answers.q2) / 2,
-        value: (answers.q3 + answers.q2 * 0.5) / 1.5,
-        purpose: (answers.q4 + answers.q5) / 2,
-        ai_relationship: (answers.q6 + answers.q5 * 0.5) / 1.5,
-        creative_action: answers.q7,
+        identity: (answers.q1 * 0.6 + answers.q2 * 0.4),
+        value: (answers.q3 * 0.65 + answers.q2 * 0.35),
+        purpose: (answers.q4 * 0.6 + answers.q5 * 0.4),
+        ai_relationship: (answers.q6 * 0.7 + answers.q5 * 0.3),
+        creative_action: (answers.q7 * 0.8 + answers.q6 * 0.2),
       };
 
       const params = new URLSearchParams({

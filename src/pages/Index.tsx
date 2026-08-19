@@ -52,7 +52,7 @@ const phases = [
     name: "Become AI Ready",
     tagline: "Understand AI's power to amplify your ideas.",
     description:
-      "This is where curiosity replaces fear. Not 'learn AI or get left behind' — that's someone else's threat. This is you, with your purpose clear, discovering that the tools everyone told you to fear are actually the most powerful instruments you've ever touched. AI doesn't replace your value. It amplifies it. But only if you know what your value is first.",
+      "Stop treating AI as something to compete with and put yourself at the center of it — your identity, your values, your purpose, your ideas. Use it only for efficiency and you'll never see what you can actually do. Explore it without expectations, and the ceiling disappears.",
     color: "citrus",
   },
   {
@@ -60,7 +60,7 @@ const phases = [
     name: "Relaunch Yourself",
     tagline: "Turn who you are into work, opportunity, and income.",
     description:
-      "Knowledge without action is just anxiety. This phase is where purpose meets practice. You start making things. You start sharing what you learn. You stop consuming AI content and start creating with AI as your instrument. The work you produce here isn't a replacement for what you lost. It's something new — and it's more you, not less.",
+      "Turn everything you've reclaimed into something the world can see, understand, value, and pay for. Visible work. Real offers. A better role, a business, a new stream of income — several ways for opportunity and money to reach you instead of one employer deciding your worth.",
     color: "poppy",
   },
 ];
@@ -147,7 +147,7 @@ const Index = () => {
         {/* ── Section 2: The real question ── */}
         <section className="bg-soft-white py-16 md:py-24 px-6">
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
               <ScrollFadeUp>
                 <img
                   src={personBehindAsset.url}
@@ -156,18 +156,18 @@ const Index = () => {
                   loading="lazy"
                 />
               </ScrollFadeUp>
-              <div className="space-y-6">
+              <div className="space-y-5">
                 <ScrollFadeUp delay={100}>
-                  <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-2">
+                  <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-3">
                     Everything is changing
                   </p>
-                  <h2 className="font-display text-aubergine text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
+                  <h2 className="font-display text-aubergine text-3xl md:text-4xl lg:text-5xl leading-tight">
                     The future of work is being rewritten — and the real question is:
                   </h2>
                 </ScrollFadeUp>
                 <ScrollFadeUp delay={150}>
-                  <p className="font-display text-aubergine text-4xl md:text-5xl italic leading-snug">
-                    “Who am I now?"
+                  <p className="font-display text-aubergine text-2xl md:text-3xl italic leading-snug">
+                    “Who am I now?”
                   </p>
                 </ScrollFadeUp>
                 <div className="font-body text-aubergine/80 text-lg leading-relaxed space-y-5">
@@ -305,12 +305,27 @@ const Index = () => {
                     <p>The Whole You, Amplified by AI. That's the opportunity. Not replacing yourself. Not becoming a prompt engineer. Becoming more fully who you already are — with tools that multiply what you can do.</p>
                   </ScrollFadeUp>
                 </div>
+                <ScrollFadeUp delay={220}>
+                  <ol className="border-t border-soft-white/15 divide-y divide-soft-white/10">
+                    {phases.map((phase) => (
+                      <li key={phase.number} className="flex items-baseline gap-4 py-3">
+                        <span className={`font-sans text-xs font-semibold tracking-widest ${colorMap[phase.color].text}`}>
+                          {phase.number}
+                        </span>
+                        <span className="font-display text-soft-white text-lg md:text-xl">{phase.name}</span>
+                        <span className="font-body text-soft-white/50 text-sm italic hidden sm:inline">
+                          {phase.tagline}
+                        </span>
+                      </li>
+                    ))}
+                  </ol>
+                </ScrollFadeUp>
                 <ScrollFadeUp delay={250}>
                   <Link
                     to="/selfcheck"
                     className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full hover:opacity-90 transition-opacity mt-4"
                   >
-                    Start Free Assessment →
+                    Get Your Profile →
                   </Link>
                 </ScrollFadeUp>
               </div>
@@ -334,10 +349,10 @@ const Index = () => {
                 Five Stages. One Journey.
               </p>
               <h2 className="font-display text-aubergine text-3xl md:text-5xl leading-tight mb-6 text-center">
-                Where are you on the map?
+                Exploring the Five Stages
               </h2>
               <p className="font-body text-aubergine/70 text-lg leading-relaxed max-w-2xl mx-auto text-center mb-14">
-                These are the five phases people actually go through when the work that defined them changes. They don't happen in order. They're not clean. But knowing where you are is the first step toward building what comes next.
+                Here's what each stage actually looks like when the work that defined you changes. They don't happen in order. They're not clean. But knowing where you are is the first step toward building what comes next.
               </p>
             </ScrollFadeUp>
           </div>
@@ -450,7 +465,7 @@ const Index = () => {
             <ScrollFadeUp delay={300}>
               <Link
                 to="/selfcheck"
-                className="inline-flex items-center gap-2 bg-indigo text-white font-sans font-semibold text-sm uppercase tracking-widest px-10 py-5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-10 py-5 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
               >
                 Get Your Repurpose Profile →
               </Link>
@@ -523,7 +538,7 @@ const Index = () => {
               <div className="text-center">
                 <Link
                   to="/selfcheck"
-                  className="inline-flex items-center gap-2 bg-indigo text-white font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full pulse-indigo hover:opacity-90 transition-opacity mb-4"
+                  className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full pulse-aqua hover:opacity-90 transition-opacity mb-4"
                 >
                   Get Your Repurpose Profile →
                 </Link>

@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 import { ChevronDown } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { matchArchetype, getArchetypeSlug, categories, type Scores, type Archetype } from "@/lib/archetypes";
+import { matchArchetype, getArchetypeSlug, categories, getRecommendations, type Scores, type Archetype } from "@/lib/archetypes";
 import { generateReportPDF } from "@/lib/generateReport";
 
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
@@ -233,7 +233,7 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
         </button>
       </form>
       <p className="text-soft-white/40 text-xs mt-4 font-sans max-w-md mx-auto leading-relaxed">
-        By submitting your email, you agree to receive emails from The AI Salon. You can unsubscribe at any time.
+        By submitting your email, you agree to receive emails from The Great Repurpose. You can unsubscribe at any time.
       </p>
     </div>
   );
@@ -243,16 +243,7 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
 
 // PDF generation moved to src/lib/generateReport.ts
 
-// ── AI Salon activities data ─────────────────────────────────────────────────
-
-const salonActivities = [
-  { label: "Friday Office Hours", desc: "Show up, ask questions, meet others navigating the same shift. Low-pressure, high-value. Weekly.", href: "https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet" },
-  { label: "AI Learning Lab", desc: "Kyle Shannon's nightly LIVE sessions exploring AI, complete with Champ the Singing Dog — no prior experience required.", href: "https://aisalon.mn.co/spaces/12680384" },
-  { label: "Mastermind Practice Lab", desc: "Peer-driven accountability for people creating a daily practice around how they use AI.", href: "https://aisalon.mn.co/spaces/21791897" },
-  { label: "Learn Out Loud", desc: "LOL sessions are taught by community members for community members. Learn or lead!", href: "https://aisalon.mn.co/events/learn-out-loud" },
-  { label: "Free AI Salon Community", desc: "The always-on conversation. Connect with others exploring AI and practicing the Cycle of AI Readiness.", href: "https://community.thesalon.ai" },
-  { label: "AI Readiness Project Podcast", desc: "Conversations about what it means to be ready for AI, and a chance to meet inspiring people making a difference in AI.", href: "http://aireadinessproject.com/" },
-];
+// ── Next-step data ───────────────────────────────────────────────────────────
 
 // ── Main component ───────────────────────────────────────────────────────────
 
@@ -373,7 +364,7 @@ const ResultsPreview = () => {
   const archetypeSlug = getArchetypeSlug(archetype);
 
   // Shareable summary text
-  const shareText = `I'm ${archetype.name}. ${archetype.tagline}\n\nRecommended: ${archetype.salonEntry.activity}\n\nWhat's your Great Repurpose Profile? Find out at TheGreatRepurpose.com — a framework for people navigating the AI transition.`;
+  const shareText = `I'm ${archetype.name}. ${archetype.tagline}\n\nRecommended: ${archetype.nextStep.body}\n\nWhat's your Great Repurpose Profile? Find out at TheGreatRepurpose.com — a framework for people navigating the AI transition.`;
 
   const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
@@ -488,10 +479,7 @@ const ResultsPreview = () => {
     });
   };
 
-  // Filter salon activities to exclude the primary recommendation
-  const secondaryActivities = salonActivities.filter(
-    (a) => a.label !== archetype.salonEntry.activity
-  );
+  const recommendation = getRecommendations(archetype, scores);
 
   return (
     <div className="min-h-screen bg-aubergine text-soft-white">
@@ -588,22 +576,22 @@ const ResultsPreview = () => {
             <div className="max-w-2xl mx-auto">
               <div className="border border-soft-white/10 rounded-xl p-8 md:p-10 bg-soft-white/[0.03]">
                 <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
-                  Recommended for You
+                  What to work on next
                 </p>
                 <h3 className="font-display text-soft-white text-xl md:text-2xl mb-3">
-                  {archetype.salonEntry.activity}
+                  {dimensionMeta[recommendation.focus].label}
                 </h3>
-                <p className="font-sans text-soft-white/60 text-base leading-relaxed mb-6">
-                  {archetype.salonEntry.body}
+                <p className="font-sans text-soft-white/60 text-base leading-relaxed mb-8">
+                  {recommendation.body}
                 </p>
-                <a
-                  href={archetype.salonEntry.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block border border-indigo text-indigo font-sans text-sm font-medium px-8 py-3 rounded-full hover:bg-indigo hover:text-soft-white transition-colors"
-                >
-                  {archetype.salonEntry.activity} →
-                </a>
+                <div className="space-y-5">
+                  {recommendation.practices.map((step) => (
+                    <div key={step.label} className="border-l-2 border-indigo/40 pl-5">
+                      <p className="font-display text-soft-white text-base mb-1">{step.label}</p>
+                      <p className="font-sans text-soft-white/55 text-sm leading-relaxed">{step.desc}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </section>
@@ -689,29 +677,24 @@ const ResultsPreview = () => {
           </div>{/* end reportRef */}
 
 
-          {/* ── Secondary recommendations (light section) ── */}
-
-          {/* Secondary recommendations with descriptions */}
+          {/* ── Where to go from here ── */}
           <section className="bg-soft-white py-16 px-6">
-            <div className="max-w-4xl mx-auto">
-              <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-4 text-center max-w-lg mx-auto">
-                Making this transition on your own isn't the move. Here are some other ways to get involved with the AI Salon community.
+            <div className="max-w-2xl mx-auto">
+              <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-8 text-center">
+                Doing this alone is harder than it needs to be. Based on your profile, here's where to go next.
               </p>
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-8 text-center">Also worth exploring</p>
-              <div className="space-y-4">
-                {secondaryActivities.map(({ label, desc, href }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block border border-aubergine/20 rounded-lg p-6 hover:border-indigo/40 transition-colors group"
-                  >
-                    <h3 className="font-display text-aubergine text-base mb-1 group-hover:text-indigo transition-colors">{label}</h3>
-                    <p className="font-sans text-aubergine/60 text-sm">{desc}</p>
-                  </a>
-                ))}
-              </div>
+              <a
+                href={recommendation.track.href}
+                target={recommendation.track.href?.startsWith("http") ? "_blank" : undefined}
+                rel="noopener noreferrer"
+                className="block border border-aubergine/20 rounded-lg p-8 hover:border-indigo/40 transition-colors group"
+              >
+                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">Recommended for you</p>
+                <h3 className="font-display text-aubergine text-xl mb-2 group-hover:text-indigo transition-colors">
+                  {recommendation.track.label}
+                </h3>
+                <p className="font-sans text-aubergine/60 text-base leading-relaxed">{recommendation.track.desc}</p>
+              </a>
             </div>
           </section>
 

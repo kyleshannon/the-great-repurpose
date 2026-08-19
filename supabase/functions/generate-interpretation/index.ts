@@ -41,12 +41,11 @@ VULNERABILITY: ${archetype.vulnerability}
 THEIR SCORES (1-10):
 - Unhook Identity: ${scores.identity}
 - Reclaim Value: ${scores.value}
-- Find Your Purpose: ${scores.purpose}
-- Discover AI's Power: ${scores.ai_relationship}
-- Start Creating: ${scores.creative_action}
+- Discover Purpose: ${scores.purpose}
+- Become AI Ready: ${scores.ai_relationship}
+- Relaunch Yourself: ${scores.creative_action}
 
-RECOMMENDED SALON ACTIVITY: ${archetype.salonEntry.activity}
-SALON ACTIVITY DESCRIPTION: ${archetype.salonEntry.body}${openAnswerSection}
+WHAT THEY SHOULD WORK ON NEXT: ${archetype.nextStep?.body ?? "Focus on their lowest dimension."}${openAnswerSection}
 
 INSTRUCTIONS:
 
@@ -58,7 +57,7 @@ Narrative synthesis of the pattern across their five dimensions. Don't just list
 
 ## What Your Scores Reveal
 
-Go dimension by dimension but make it feel like a conversation, not a report card. For each dimension, name the score naturally (e.g., "Your Unhook Identity score sits at 3.2 — which means...") and explain what it means for THIS person given their overall pattern. Connect dimensions to each other. Always use the exact stage names: Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, Start Creating.
+Go dimension by dimension but make it feel like a conversation, not a report card. For each dimension, name the score naturally (e.g., "Your Unhook Identity score sits at 3.2 — which means...") and explain what it means for THIS person given their overall pattern. Connect dimensions to each other. Always use the exact stage names: Unhook Identity, Reclaim Value, Discover Purpose, Become AI Ready, Relaunch Yourself.
 
 ${openAnswer ? `## The Thing You Haven't Started
 
@@ -66,7 +65,7 @@ Respond directly to their open-ended answer. Don't just reflect it back — add 
 
 ## Your Next Move
 
-Specific recommendations. Lead with the primary AI Salon recommendation (${archetype.salonEntry.activity}) and explain WHY it fits them — don't just name it. Also mention 1-2 other relevant activities from: Friday Office Hours (https://aisalon.mn.co/events/ai-salon-office-hoursmeet-and-greet), AI Learning Lab (https://aisalon.mn.co/spaces/12680384), Mastermind Practice Lab (https://aisalon.mn.co/spaces/21791897), Learn Out Loud (https://aisalon.mn.co/events/learn-out-loud), or the free AI Salon Community (https://community.thesalon.ai). End with one clear, forward-facing sentence specific to THEIR shape.
+Specific recommendations grounded in their weakest dimension and what they should work on next (above). Describe two or three concrete things they could actually do this month — practices, not products. If peer momentum is clearly what's missing for them, you may suggest joining an AI-forward community such as the AI Salon (https://community.thesalon.ai) in a single sentence — only if it genuinely fits. Do not list events or programs. End with one clear, forward-facing sentence specific to THEIR shape.
 
 TONE: Warm but not saccharine. Honest but not clinical. Like someone who sees you clearly and isn't afraid to say it kindly.
 

@@ -200,7 +200,7 @@ export function generateReportPDF(data: ReportData) {
   doc.setFont("helvetica", "normal");
   doc.setFontSize(7);
   setColor(doc, MUTED);
-  doc.text("TheGreatRepurpose.com  •  The AI Salon", pageWidth / 2, pageHeight - 12, { align: "center" });
+  doc.text("TheGreatRepurpose.com", pageWidth / 2, pageHeight - 12, { align: "center" });
 
   // ── Interpretation pages ───────────────────────────────────────────────────
 
@@ -258,7 +258,7 @@ export function generateReportPDF(data: ReportData) {
       doc.setFont("helvetica", "normal");
       doc.setFontSize(7);
       setColor(doc, MUTED);
-      doc.text("TheGreatRepurpose.com  •  The AI Salon", pageWidth / 2, pageHeight - 12, { align: "center" });
+      doc.text("TheGreatRepurpose.com", pageWidth / 2, pageHeight - 12, { align: "center" });
     }
   }
 

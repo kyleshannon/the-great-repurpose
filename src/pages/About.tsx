@@ -1,19 +1,20 @@
+import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 
 const pillars = [
   {
-    name: "Office Hours every Friday",
-    desc: "Weekly live sessions where real questions get real answers. Not a lecture. A conversation.",
+    name: "The Repurpose Profile",
+    desc: "A free assessment that shows you where you actually are across the five stages — and what to work on next.",
   },
   {
-    name: "AI Learning Lab",
-    desc: "Five nights a week. Hands-on exploration of AI tools in a low-stakes, high-trust environment.",
+    name: "The TGR Transition Academy",
+    desc: "A guided path for people whose role was cut, compressed, or rewritten. Identity, value, purpose, AI fluency, relaunch.",
   },
   {
-    name: "Mastermind Practice Lab",
-    desc: "For members ready to go deeper. Small-group accountability and practice for people building new directions.",
+    name: "The Executive Leadership Academy",
+    desc: "For leaders carrying teams through this shift — making AI decisions that protect judgment and still move fast.",
   },
 ];
 
@@ -48,7 +49,7 @@ const About = () => {
             </ScrollFadeUp>
             <ScrollFadeUp delay={100}>
               <p>
-               Kyle is the Co-Founder and President of the <a href="https://community.thesalon.ai" target="_blank" rel="noopener noreferrer" className="text-indigo hover:underline">AI Salon</a>, a values-driven community that's been exploring the intersection of generative AI and human potential since December 7, 2022 — five days after ChatGPT launched. A Grammy award-winning lyricist, a co-founder of one of the first digital agencies in the '90s, and someone who's spent decades at the intersection of new technology and creative expression, Kyle saw something in the AI transition that the bootcamps and the influencers were missing: the crisis wasn't about skills. It was about meaning.
+               Kyle has been exploring the intersection of generative AI and human potential since December 7, 2022 — five days after ChatGPT launched. A Grammy award-winning lyricist, a co-founder of one of the first digital agencies in the '90s, and someone who's spent decades at the intersection of new technology and creative expression, Kyle saw something in the AI transition that the bootcamps and the influencers were missing: the crisis wasn't about skills. It was about meaning.
               </p>
             </ScrollFadeUp>
             <ScrollFadeUp delay={150}>
@@ -60,16 +61,16 @@ const About = () => {
         </div>
       </section>
 
-      {/* ── The AI Salon ── */}
+      {/* ── What TGR offers ── */}
       <section className="bg-aubergine constellation-bg py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <ScrollFadeUp>
             <h2 className="font-display text-soft-white text-3xl md:text-4xl mb-4 leading-tight">
               Your Repurpose Profile is a starting point.<br />
-              The AI Salon is where you figure it out.
+              Here's where you go from there.
             </h2>
             <p className="font-sans text-soft-white/70 text-lg leading-relaxed mb-14">
-              The <a href="https://community.thesalon.ai" target="_blank" rel="noopener noreferrer" className="text-indigo hover:underline">AI Salon</a> is a community of artists, builders, educators, and policy thinkers exploring the potential of generative AI — with optimism, humility, and a shared belief that the future of AI should be co-created by the many, not the few. It operates on the Cycle of AI Readiness: Play First → Create Excellence → Generously Lead.
+              The Great Repurpose is a framework, an assessment, and a set of academies for people whose work is being rewritten by AI. It runs on the Cycle of AI Readiness: Play First → Create Excellence → Generously Lead.
             </p>
           </ScrollFadeUp>
 
@@ -87,17 +88,15 @@ const About = () => {
 
           <ScrollFadeUp delay={320}>
             <p className="font-sans text-soft-white/70 text-lg mb-8">
-              If finding your Great Repurpose Profile showed you where you are, the AI Salon is where you go next.
+              If finding your Great Repurpose Profile showed you where you are, the TGR Academy is where you go next.
             </p>
             <div className="text-center">
-              <a
-                href="https://thesalon.ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-indigo text-soft-white font-sans font-medium text-base px-8 py-4 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
+              <Link
+                to="/academy"
+                className="inline-block bg-aqua text-aubergine font-sans font-semibold text-base px-8 py-4 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
               >
-                Visit thesalon.ai →
-              </a>
+                Explore the TGR Academy →
+              </Link>
             </div>
           </ScrollFadeUp>
         </div>
