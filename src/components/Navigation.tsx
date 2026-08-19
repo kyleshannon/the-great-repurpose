@@ -33,8 +33,6 @@ export function Navigation() {
     { to: "/about", label: "About" },
   ];
 
-  const isOnReportPage = reportUrl && location.pathname === reportUrl;
-  const showReportLink = reportUrl && !isOnReportPage;
 
   return (
     <>
@@ -76,29 +74,16 @@ export function Navigation() {
                 </Link>
               );
             })}
-            {showReportLink && (
-              <Link
-                to={reportUrl}
-                className={`${location.pathname === reportUrl ? "text-soft-white font-bold" : "text-indigo hover:text-soft-white font-sans"} text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap transition-colors relative`}
-              >
-                Your Report
-                {location.pathname === reportUrl && (
-                  <span
-                    className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-aqua"
-                    aria-hidden="true"
-                  />
-                )}
-              </Link>
-            )}
           </div>
 
-          {/* Desktop CTA */}
+          {/* Desktop CTA — contextual */}
           <Link
-            to="/selfcheck"
+            to={reportUrl ?? "/selfcheck"}
             className="hidden md:inline-flex items-center gap-2 shrink-0 whitespace-nowrap bg-aqua text-aubergine text-[11px] xl:text-sm font-sans font-semibold px-4 xl:px-5 py-2 xl:py-2.5 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
           >
-            Get Profile
+            {reportUrl ? "Your Report" : "Get Profile"}
           </Link>
+
 
           {/* Mobile hamburger */}
           <button
@@ -126,20 +111,13 @@ export function Navigation() {
               {label}
             </Link>
           ))}
-          {showReportLink && (
-            <Link
-              to={reportUrl}
-              className="text-indigo text-2xl font-display tracking-wide hover:text-soft-white transition-colors"
-            >
-              Your Report
-            </Link>
-          )}
           <Link
-            to="/selfcheck"
+            to={reportUrl ?? "/selfcheck"}
             className="mt-4 bg-aqua text-aubergine text-base font-sans font-semibold px-8 py-3 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
           >
-            Get Profile →
+            {reportUrl ? "Your Report →" : "Get Profile →"}
           </Link>
+
         </div>
       )}
     </>
