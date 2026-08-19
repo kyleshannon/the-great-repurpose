@@ -47,19 +47,19 @@ export function Navigation() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3 lg:gap-6">
           {/* Logo */}
-          <Link to="/" className="font-display text-soft-white text-base lg:text-lg tracking-tight whitespace-nowrap hover:opacity-80 transition-opacity">
+          <Link to="/" className="font-display text-soft-white text-base xl:text-lg tracking-tight whitespace-nowrap hover:opacity-80 transition-opacity shrink-0">
             The Great Repurpose
           </Link>
 
           {/* Desktop nav links */}
-          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <div className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8">
             {navLinks.map(({ to, label }) => (
               <Link
                 key={to}
                 to={to}
-                className="text-soft-white/80 hover:text-soft-white text-xs uppercase tracking-widest whitespace-nowrap font-sans transition-colors relative group"
+                className="text-soft-white/80 hover:text-soft-white text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap font-sans transition-colors relative group"
               >
                 {label}
                 <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-indigo group-hover:w-full transition-all duration-300" aria-hidden="true" />
@@ -68,7 +68,7 @@ export function Navigation() {
             {showReportLink && (
               <Link
                 to={reportUrl}
-                className="text-indigo hover:text-soft-white text-xs uppercase tracking-widest whitespace-nowrap font-sans transition-colors relative group"
+                className="text-indigo hover:text-soft-white text-[11px] xl:text-xs uppercase tracking-[0.12em] xl:tracking-widest whitespace-nowrap font-sans transition-colors relative group"
               >
                 Your Report
                 <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-indigo group-hover:w-full transition-all duration-300" aria-hidden="true" />
@@ -79,14 +79,15 @@ export function Navigation() {
           {/* Desktop CTA */}
           <Link
             to="/selfcheck"
-            className="hidden lg:inline-flex items-center gap-2 shrink-0 whitespace-nowrap bg-indigo text-white text-xs xl:text-sm font-sans font-medium px-4 xl:px-5 py-2.5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
+            className="hidden md:inline-flex items-center gap-2 shrink-0 whitespace-nowrap bg-indigo text-white text-[11px] xl:text-sm font-sans font-medium px-4 xl:px-5 py-2 xl:py-2.5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
           >
-            What's Your Repurpose Profile?
+            <span className="hidden xl:inline">What's Your Repurpose Profile?</span>
+            <span className="xl:hidden">Your Profile</span>
           </Link>
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden text-soft-white p-1"
+            className="md:hidden text-soft-white p-1"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
@@ -94,6 +95,7 @@ export function Navigation() {
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+
         </div>
       </nav>
 
