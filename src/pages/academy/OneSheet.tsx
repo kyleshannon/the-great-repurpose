@@ -47,9 +47,9 @@ export function OneSheet({ html, title, description, canonical }: OneSheetProps)
       <style>{`
         .onesheet-root { background:#010F32; }
         /* The site nav already shows the TGR logo — hide the duplicate lockup in the one-sheet hero */
-        .onesheet-root .page img[alt="The Great Repurpose"] { display:none; }
+        .onesheet-root .page img[alt="The Great Repurpose"] { display:none !important; }
         /* Let the dark hero run under the translucent fixed nav */
-        .onesheet-root .page > div:first-child { min-height: 400px; }
+        .onesheet-root .page > div:first-child { height: 430px !important; }
         .onesheet-root .page > div:first-child > div:last-child { padding-top: 96px !important; }
         .onesheet-root doc-page, .onesheet-root .page { display:block; }
         .onesheet-root .page {
