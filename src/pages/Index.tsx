@@ -52,7 +52,7 @@ const phases = [
     name: "Become AI Ready",
     tagline: "Understand AI's power to amplify your ideas.",
     description:
-      "This is where curiosity replaces fear. Not 'learn AI or get left behind' — that's someone else's threat. This is you, with your purpose clear, discovering that the tools everyone told you to fear are actually the most powerful instruments you've ever touched. AI doesn't replace your value. It amplifies it. But only if you know what your value is first.",
+      "Stop treating AI as something to compete with and put yourself at the center of it — your identity, your values, your purpose, your ideas. Use it only for efficiency and you'll never see what you can actually do. Explore it without expectations, and the ceiling disappears.",
     color: "citrus",
   },
   {
@@ -60,7 +60,7 @@ const phases = [
     name: "Relaunch Yourself",
     tagline: "Turn who you are into work, opportunity, and income.",
     description:
-      "Knowledge without action is just anxiety. This phase is where purpose meets practice. You start making things. You start sharing what you learn. You stop consuming AI content and start creating with AI as your instrument. The work you produce here isn't a replacement for what you lost. It's something new — and it's more you, not less.",
+      "Turn everything you've reclaimed into something the world can see, understand, value, and pay for. Visible work. Real offers. A better role, a business, a new stream of income — several ways for opportunity and money to reach you instead of one employer deciding your worth.",
     color: "poppy",
   },
 ];
