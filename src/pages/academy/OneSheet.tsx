@@ -1,44 +1,25 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Seo } from "@/components/Seo";
 
 interface OneSheetProps {
   html: string;
   title: string;
   description: string;
   canonical: string;
+  path: string;
+  jsonLd?: Record<string, unknown>;
 }
 
 /**
  * Renders a supplied one-sheet layout verbatim, with responsive overrides layered
  * on top so the fixed letter-size design reflows on smaller screens.
  */
-export function OneSheet({ html, title, description, canonical }: OneSheetProps) {
-  useEffect(() => {
-    document.title = title;
-    const setMeta = (selector: string, attr: string, value: string, create: () => HTMLElement) => {
-      let el = document.head.querySelector(selector) as HTMLElement | null;
-      if (!el) {
-        el = create();
-        document.head.appendChild(el);
-      }
-      el.setAttribute(attr, value);
-    };
-    setMeta('meta[name="description"]', "content", description, () => {
-      const m = document.createElement("meta");
-      m.setAttribute("name", "description");
-      return m;
-    });
-    setMeta('link[rel="canonical"]', "href", canonical, () => {
-      const l = document.createElement("link");
-      l.setAttribute("rel", "canonical");
-      return l;
-    });
-  }, [title, description, canonical]);
-
+export function OneSheet({ html, title, description, path, jsonLd }: OneSheetProps) {
   return (
     <div className="onesheet-root">
+      <Seo title={title} description={description} path={path} jsonLd={jsonLd} />
       <Navigation />
       <link
         rel="stylesheet"
