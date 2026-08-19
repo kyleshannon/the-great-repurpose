@@ -7,9 +7,8 @@ export function Footer() {
         {/* Left — Wordmark */}
         <div>
           <p className="font-display text-soft-white text-xl mb-2">The Great Repurpose</p>
-          <p className="text-soft-white/60 text-sm font-sans mb-1">By Kyle Shannon</p>
           <p className="text-soft-white/50 text-sm font-sans">
-            The Great Repurpose puts a name to what's happening to work — and offers a path through it. A framework, an assessment, and an academy for people whose careers are being rewritten by AI.
+            A movement for people whose careers are being rewritten by AI. Reclaim who you are beneath the title, become AI-ready on your own terms, and relaunch into work that actually matters.
           </p>
         </div>
 
