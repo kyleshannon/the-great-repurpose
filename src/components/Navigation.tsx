@@ -113,20 +113,13 @@ export function Navigation() {
               {label}
             </Link>
           ))}
-          {showReportLink && (
-            <Link
-              to={reportUrl}
-              className="text-indigo text-2xl font-display tracking-wide hover:text-soft-white transition-colors"
-            >
-              Your Report
-            </Link>
-          )}
           <Link
-            to="/selfcheck"
+            to={reportUrl ?? "/selfcheck"}
             className="mt-4 bg-aqua text-aubergine text-base font-sans font-semibold px-8 py-3 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
           >
-            Get Profile →
+            {reportUrl ? "Your Report →" : "Get Profile →"}
           </Link>
+
         </div>
       )}
     </>
