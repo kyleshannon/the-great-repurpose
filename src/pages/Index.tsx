@@ -3,7 +3,6 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollFadeUp } from "@/components/ScrollFadeUp";
 import { SignalTeaser } from "@/components/SignalTeaser";
-import { stageIcons } from "@/components/BrandIcons";
 import heroAsset from "@/assets/hero.png.asset.json";
 import personBehindAsset from "@/assets/person-seen-from-behind.png.asset.json";
 
@@ -13,6 +12,20 @@ import twoProfessionalsScreenAsset from "@/assets/two-professionals-screen.png.a
 import twoProfessionalsTableAsset from "@/assets/two-professionals-table.png.asset.json";
 import smallGroupLaptopAsset from "@/assets/small-group-laptop.png.asset.json";
 import twoPeopleConversationAsset from "@/assets/two-people-conversation.png.asset.json";
+
+import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
+import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
+import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
+import logoCitrus from "@/assets/tgr-logo-citrus.png.asset.json";
+import logoPoppy from "@/assets/tgr-logo-poppy.png.asset.json";
+
+const stageLogos: Record<string, string> = {
+  indigo: logoIndigo.url,
+  aqua: logoAqua.url,
+  orchid: logoOrchid.url,
+  citrus: logoCitrus.url,
+  poppy: logoPoppy.url,
+};
 
 const colorMap: Record<string, { text: string; bg: string; border: string; hoverBorder: string }> = {
   indigo: { text: "text-indigo", bg: "bg-indigo/5", border: "border-indigo/20", hoverBorder: "hover:border-indigo/40" },
