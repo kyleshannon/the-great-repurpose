@@ -54,7 +54,7 @@ export function Navigation() {
             <img
               src={logoAsset.url}
               alt="The Great Repurpose"
-              className="h-9 md:h-10 lg:h-11 w-auto"
+              className="h-10 md:h-11 lg:h-12 w-auto"
             />
           </Link>
 
