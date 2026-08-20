@@ -561,7 +561,6 @@ const ResultsPreview = () => {
 
 
   const selfCheckUrl = `${window.location.origin}/selfcheck`;
-  const resultUrl = resultId ? `${window.location.origin}/results/${resultId}` : null;
   const archetypeSlug = getArchetypeSlug(archetype);
 
   const handleEmailSuccess = async (email: string) => {
