@@ -455,19 +455,31 @@ export async function generateReportPDF(data: ReportData) {
       y += 2;
     }
 
+    const practices = getTacticalPractices(data.scores as Scores);
+    const leadInText =
+      "Three concrete things you could actually do in the next month, chosen from where your scores are thinnest.";
+    const leadInLines = doc.splitTextToSize(leadInText, contentWidth) as string[];
+    const leadInHeight = leadInLines.length * 4.9;
+
+    // Keep the lead-in with at least the first practice block so it never sits alone at the bottom of a page.
+    const firstDescLines = practices[0]
+      ? (doc.splitTextToSize(practices[0].action.desc, contentWidth - 8) as string[])
+      : [];
+    const firstBlockHeight = practices[0] ? 6 + firstDescLines.length * 4.6 : 0;
+
+    if (y + leadInHeight + 6 + firstBlockHeight > pageHeight - bottomMargin) {
+      doc.addPage();
+      paintPage();
+      y = margin + 4;
+    }
+
     doc.setFont("helvetica", "normal");
     doc.setFontSize(10);
     setColor(doc, MUTED);
-    y = renderWrappedText(
-      "Three concrete things you could actually do in the next month, chosen from where your scores are thinnest.",
-      margin,
-      y,
-      contentWidth,
-      4.9,
-    );
+    y = renderWrappedText(leadInText, margin, y, contentWidth, 4.9);
     y += 6;
 
-    for (const { stage, action } of getTacticalPractices(data.scores as Scores)) {
+    for (const { stage, action } of practices) {
       const color = dimensionMeta[stage as DimensionKey].color;
       const descLines = doc.splitTextToSize(action.desc, contentWidth - 8) as string[];
       const blockHeight = 6 + descLines.length * 4.6;
