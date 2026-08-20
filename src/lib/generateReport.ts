@@ -609,6 +609,36 @@ export async function generateReportPDF(data: ReportData) {
     y += cardH + 6;
   }
 
+  // ── Interested in learning more ────────────────────────────────────────────
+  {
+    const contactHeading = "Interested in learning more?";
+    const contactLine = "Drop us a line at Possibility@TheGreatRepurpose.com";
+
+    doc.setFillColor(AUBERGINE[0], AUBERGINE[1], AUBERGINE[2]);
+    const blockHeight = 34;
+    ensureSpace(blockHeight + 8);
+    doc.rect(margin, y, contentWidth, blockHeight, "F");
+
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(13);
+    setColor(doc, [255, 255, 255]);
+    doc.text(contactHeading, pageWidth / 2, y + 11, { align: "center" });
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10);
+    setColor(doc, [255, 255, 255]);
+    const lineParts = contactLine.split("Possibility@TheGreatRepurpose.com");
+    const prefix = lineParts[0];
+    const email = "Possibility@TheGreatRepurpose.com";
+    const lineWidth = doc.getTextWidth(contactLine);
+    const startX = (pageWidth - lineWidth) / 2;
+    doc.text(prefix, startX, y + 20);
+    setColor(doc, AQUA);
+    doc.text(email, startX + doc.getTextWidth(prefix), y + 20);
+
+    y += blockHeight + 8;
+  }
+
   // ── Footers on every page ──────────────────────────────────────────────────
   const totalPages = doc.getNumberOfPages();
   for (let p = 1; p <= totalPages; p++) {
