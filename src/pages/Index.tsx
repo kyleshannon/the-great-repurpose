@@ -333,7 +333,12 @@ const Index = () => {
                     to={`/phases#${phase.name.toLowerCase().replace(/\s+/g, "-")}`}
                     className={`group block w-full ${i % 2 === 1 ? "bg-soft-white" : colors.bg} border-y border-aubergine/5 transition-colors`}
                   >
-                    <div className="max-w-5xl mx-auto px-6 py-5 md:py-7 flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                    <div className={`relative max-w-5xl mx-auto px-6 flex flex-col md:flex-row gap-8 md:gap-12 items-center ${i === 0 ? "pt-14 md:pt-18 pb-5 md:pb-7" : "py-5 md:py-7"}`}>
+                      {i === 0 && (
+                        <h2 className="absolute top-5 md:top-7 left-6 font-display text-aubergine text-2xl md:text-3xl leading-tight">
+                          The Stages...
+                        </h2>
+                      )}
                       <div className={`w-full md:w-1/3 shrink-0 ${imageRight ? "md:order-2" : ""}`}>
                         <img
                           src={image.url}
@@ -343,11 +348,6 @@ const Index = () => {
                         />
                       </div>
                       <div className={`flex-1 ${imageRight ? "md:order-1" : ""}`}>
-                        {i === 0 && (
-                          <h2 className="font-display text-aubergine text-2xl md:text-3xl leading-tight mb-3">
-                            The Stages...
-                          </h2>
-                        )}
                         <div className="flex items-center gap-3 mb-2">
                           <img
                             src={stageLogos[phase.color]}
