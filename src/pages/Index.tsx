@@ -38,6 +38,29 @@ const colorMap: Record<string, { text: string; bg: string; border: string; hover
   poppy: { text: "text-poppy", bg: "bg-poppy/5", border: "border-poppy/20", hoverBorder: "hover:border-poppy/40" },
 };
 
+const academyOfferings = [
+  {
+    href: "/academy/leadership",
+    eyebrow: "For leaders making the calls",
+    name: "The Executive Leadership Academy",
+    tagline:
+      "An immersive workshop plus three months of implementation sessions, applied to the workforce and technology decisions already on your desk.",
+    image: elaHeroAsset.url,
+    alt: "Senior leaders in conversation",
+    accent: "text-indigo",
+  },
+  {
+    href: "/academy/transition",
+    eyebrow: "For people whose role just ended",
+    name: "The TGR Transition Academy",
+    tagline:
+      "Outplacement reimagined: a cohort moving through the five stages together, building real AI agency instead of polishing a resume.",
+    image: taHeroAsset.url,
+    alt: "A person at a worktable in thought",
+    accent: "text-citrus",
+  },
+];
+
 const phases = [
   {
     number: "01",
