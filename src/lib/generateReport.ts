@@ -261,17 +261,28 @@ export async function generateReportPDF(data: ReportData) {
   // ── Radar chart ────────────────────────────────────────────────────────────
   if (data.chartImage) {
     const props = doc.getImageProperties(data.chartImage);
-    const w = contentWidth;
-    const h = (props.height / props.width) * w;
+    const ratio = props.height / props.width;
+    let w = contentWidth;
+    let h = ratio * w;
     ensureSpace(h + 16);
     doc.setFont("helvetica", "bold");
     doc.setFontSize(13);
     setColor(doc, AUBERGINE);
     doc.text("The Shape of Your Repurpose Profile", pageWidth / 2, y, { align: "center" });
     y += 6;
-    doc.addImage(data.chartImage, "PNG", margin, y, w, h);
+    // Grow the chart to fill leftover space on the page (it otherwise leaves a
+    // large gap before the page break), capped so it stays on one page.
+    const available = pageHeight - bottomMargin - y;
+    if (h < available) {
+      const maxW = pageWidth - margin * 0.5;
+      const scaled = Math.min(available / h, maxW / w);
+      w *= scaled;
+      h *= scaled;
+    }
+    doc.addImage(data.chartImage, "PNG", (pageWidth - w) / 2, y, w, h);
     y += h + 8;
   }
+
 
   // ── Your five stage scores ─────────────────────────────────────────────────
   // Keep the header with at least the first stage row.
