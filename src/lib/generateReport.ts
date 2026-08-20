@@ -547,7 +547,15 @@ export async function generateReportPDF(data: ReportData) {
       ) +
       5;
 
-    ensureSpace(cardH + 24);
+    const contactHeading = "Interested in learning more?";
+    const contactLine = "Drop us a line at Possibility@TheGreatRepurpose.com";
+    const contactBlockHeight = 34;
+    const contactBlockTotal = contactBlockHeight + 8;
+    const headingHeight = 13; // section title + spacing
+
+    // Keep the academy cards and the contact block on the same page.
+    const totalBlockHeight = cardH + headingHeight + contactBlockTotal;
+    ensureSpace(totalBlockHeight + 8);
     y += 2;
 
     doc.setFont("helvetica", "bold");
@@ -607,17 +615,11 @@ export async function generateReportPDF(data: ReportData) {
     });
 
     y += cardH + 6;
-  }
 
-  // ── Interested in learning more ────────────────────────────────────────────
-  {
-    const contactHeading = "Interested in learning more?";
-    const contactLine = "Drop us a line at Possibility@TheGreatRepurpose.com";
-
+    // ── Interested in learning more ────────────────────────────────────────────
+    // Set fill color immediately before drawing to avoid a stale/default fill.
     doc.setFillColor(AUBERGINE[0], AUBERGINE[1], AUBERGINE[2]);
-    const blockHeight = 34;
-    ensureSpace(blockHeight + 8);
-    doc.rect(margin, y, contentWidth, blockHeight, "F");
+    doc.rect(margin, y, contentWidth, contactBlockHeight, "F");
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(13);
@@ -636,7 +638,7 @@ export async function generateReportPDF(data: ReportData) {
     setColor(doc, AQUA);
     doc.text(email, startX + doc.getTextWidth(prefix), y + 20);
 
-    y += blockHeight + 8;
+    y += contactBlockHeight + 8;
   }
 
   // ── Footers on every page ──────────────────────────────────────────────────
