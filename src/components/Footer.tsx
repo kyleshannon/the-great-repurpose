@@ -10,8 +10,8 @@ export function Footer() {
           <p className="text-soft-white/50 text-sm font-sans mb-4">
             A movement for people whose careers are being rewritten by AI. Reclaim who you are beneath the title, become AI-ready on your own terms, and relaunch into work that actually matters.
           </p>
-          <p className="text-soft-white/70 text-sm font-sans mb-1">Reach out to learn more:</p>
-          <a href="mailto:Possibility@TheGreatRepurpose.com" className="text-citrus hover:text-indigo text-sm font-sans transition-colors">
+          <p className="text-soft-white/70 text-sm font-sans leading-tight">Reach out to learn more:</p>
+          <a href="mailto:Possibility@TheGreatRepurpose.com" className="text-soft-white/80 hover:text-indigo text-sm font-sans transition-colors leading-tight">
             Possibility@TheGreatRepurpose.com
           </a>
         </div>
