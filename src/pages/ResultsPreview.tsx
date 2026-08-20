@@ -800,7 +800,7 @@ const ResultsPreview = () => {
 
           {/* ── Radar ── */}
           <section className="bg-soft-white pb-6 px-4 md:px-6 border-t border-aubergine/5 pt-8">
-            <div className="max-w-2xl mx-auto text-center">
+            <div className="max-w-2xl mx-auto text-center" ref={chartRef}>
               <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-2">
                 The Shape of Your Repurpose Profile
               </h2>
@@ -825,14 +825,6 @@ const ResultsPreview = () => {
                 </RadarChart>
 
               </ResponsiveContainer>
-
-              <button
-                onClick={handleDownloadPDF}
-                disabled={generating}
-                className="mt-4 inline-flex items-center gap-2 bg-indigo text-soft-white font-sans text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
-              >
-                {generating ? "Generating…" : "Download PDF Report ↓"}
-              </button>
             </div>
           </section>
 
