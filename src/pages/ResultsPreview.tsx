@@ -62,19 +62,21 @@ const chartLabels: { subject: string; logo: string; color: string }[] = [
 function StageTick(props: any) {
   const { x, y, payload, textAnchor, scoreBySubject } = props;
   const meta = chartLabels.find((c) => c.subject === payload.value);
-  const size = 14;
+  const size = 20;
+  const fontSize = 13;
   const label = String(payload.value);
   const score = scoreBySubject?.[label];
   // Approximate label width so the icon can sit just left of the text.
-  const labelWidth = label.length * 5.6;
+  const labelWidth = label.length * fontSize * 0.56;
   const anchor = textAnchor === "middle" ? "middle" : textAnchor;
   const textStart =
     anchor === "middle" ? x - labelWidth / 2 : anchor === "end" ? x - labelWidth : x;
-  const iconX = textStart - size - 4;
+  const iconX = textStart - size - 5;
   // The top vertex sits above the chart, so lift its label/score clear of the grid.
   const isTop = anchor === "middle" && y < 140;
-  const labelY = isTop ? y - 16 : y;
-  const scoreY = labelY + 14;
+  const labelY = isTop ? y - 18 : y;
+  const scoreY = labelY + 19;
+  const scoreX = textStart + labelWidth / 2;
 
   return (
     <g>
@@ -84,7 +86,7 @@ function StageTick(props: any) {
         y={labelY}
         textAnchor={anchor}
         fill={meta?.color ?? "#010F32"}
-        fontSize={11}
+        fontSize={fontSize}
         fontFamily="Inter"
         fontWeight={600}
       >
@@ -92,12 +94,11 @@ function StageTick(props: any) {
       </text>
       {typeof score === "number" && (
         <text
-          x={x}
+          x={scoreX}
           y={scoreY}
-          textAnchor={anchor}
-          fill="#010F32"
-          fillOpacity={0.55}
-          fontSize={11}
+          textAnchor="middle"
+          fill={meta?.color ?? "#010F32"}
+          fontSize={15}
           fontFamily="Inter"
           fontWeight={700}
         >
@@ -108,6 +109,30 @@ function StageTick(props: any) {
   );
 
 }
+
+/** Radar vertex dot, colored with its stage. */
+function StageDot(props: any) {
+  const { cx, cy, index } = props;
+  const color = chartLabels[index]?.color ?? "#152DEC";
+  return <circle cx={cx} cy={cy} r={5} fill={color} stroke="#F2F1F1" strokeWidth={2} />;
+}
+
+/** Split the AI narrative into sections so we can relocate one of them. */
+function parseInterpretationSections(text: string): { title: string; body: string }[] {
+  const sections: { title: string; body: string }[] = [];
+  const parts = text.split(/^## /m);
+  if (parts[0]?.trim()) sections.push({ title: "", body: parts[0].trim() });
+  for (let i = 1; i < parts.length; i++) {
+    const nl = parts[i].indexOf("\n");
+    if (nl === -1) sections.push({ title: parts[i].trim(), body: "" });
+    else sections.push({ title: parts[i].slice(0, nl).trim(), body: parts[i].slice(nl + 1).trim() });
+  }
+  if (sections.length === 0 && text.trim()) sections.push({ title: "", body: text.trim() });
+  return sections;
+}
+
+const isNextMoveTitle = (title: string) => /next\s+move/i.test(title);
+
 
 
 function getLowestDimension(scores: Record<DimensionKey, number>): DimensionKey {
@@ -129,50 +154,38 @@ function scoresToArchetypeInput(scores: Record<DimensionKey, number>): Scores {
 
 // ── Render markdown sections ─────────────────────────────────────────────────
 
+function MarkdownParas({ body }: { body: string }) {
+  return (
+    <div className="font-sans text-aubergine/80 text-base leading-relaxed space-y-4">
+      {body.split("\n\n").filter(Boolean).map((para, j) => (
+        <p key={j} dangerouslySetInnerHTML={{
+          __html: para
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-indigo hover:underline">$1</a>')
+            .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        }} />
+      ))}
+    </div>
+  );
+}
+
 function InterpretationRenderer({ text, streaming }: { text: string; streaming: boolean }) {
-  const sections: { title: string; body: string }[] = [];
-  const parts = text.split(/^## /m);
-
-  if (parts[0]?.trim()) {
-    sections.push({ title: "", body: parts[0].trim() });
-  }
-
-  for (let i = 1; i < parts.length; i++) {
-    const newlineIdx = parts[i].indexOf("\n");
-    if (newlineIdx === -1) {
-      sections.push({ title: parts[i].trim(), body: "" });
-    } else {
-      sections.push({
-        title: parts[i].slice(0, newlineIdx).trim(),
-        body: parts[i].slice(newlineIdx + 1).trim(),
-      });
-    }
-  }
-
-  if (sections.length === 0 && text.trim()) {
-    sections.push({ title: "", body: text.trim() });
-  }
+  // "Your Next Move" is relocated into the "What to work on next" section.
+  const sections = parseInterpretationSections(text).filter((s) => !isNextMoveTitle(s.title));
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-8">
+
       {sections.map((section, i) => (
         <div key={i}>
           {section.title && (
-            <h3 className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
+            <h3 className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">
               {section.title}
             </h3>
           )}
-          <div className="font-sans text-aubergine/80 text-base leading-relaxed space-y-4">
-            {section.body.split("\n\n").filter(Boolean).map((para, j) => (
-              <p key={j} dangerouslySetInnerHTML={{
-                __html: para
-                  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-indigo hover:underline">$1</a>')
-                  .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-              }} />
-            ))}
-          </div>
+          <MarkdownParas body={section.body} />
         </div>
       ))}
+
       {streaming && (
         <span className="inline-block w-2 h-4 bg-indigo animate-pulse ml-1" />
       )}
@@ -569,6 +582,13 @@ const ResultsPreview = () => {
 
   const recommendation = getRecommendations(archetype, scores);
   const tacticalPractices = getTacticalPractices(scores);
+  // "Your Next Move" is pulled out of the AI narrative and shown under "What to work on next".
+  const nextMoveBody = parseInterpretationSections(interpretationText || "")
+    .filter((s) => isNextMoveTitle(s.title))
+    .map((s) => s.body)
+    .join("\n\n")
+    .trim();
+
 
 
   return (
@@ -599,10 +619,10 @@ const ResultsPreview = () => {
           <div ref={reportRef}>
 
           {/* ── Profile hero ── */}
-          <section className="bg-soft-white pt-20 md:pt-28 pb-6 px-4 md:px-6">
+          <section className="bg-soft-white pt-20 md:pt-24 pb-4 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">You are:</p>
-              <h1 className="font-display text-aubergine text-4xl md:text-5xl leading-tight mb-3">
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-2">You are:</p>
+              <h1 className="font-display text-aubergine text-4xl md:text-5xl leading-tight mb-2">
                 {archetype.name}
               </h1>
               <p className="font-display text-aubergine/70 text-lg italic">
@@ -611,11 +631,20 @@ const ResultsPreview = () => {
             </div>
           </section>
 
+          {/* ── Profile definition ── */}
+          <section className="bg-soft-white pb-5 px-4 md:px-6">
+            <div className="max-w-2xl mx-auto">
+              <p className="font-sans text-aubergine/80 text-base md:text-lg leading-relaxed">
+                {profileCopy[archetypeSlug]?.description ?? archetype.description}
+              </p>
+            </div>
+          </section>
+
           {/* ── The risk at this stage ── */}
-          <section className="bg-soft-white pb-10 px-4 md:px-6">
+          <section className="bg-soft-white pb-6 px-4 md:px-6">
             <div className="max-w-2xl mx-auto">
               <div className="border-l-2 border-poppy pl-5 md:pl-6">
-                <p className="text-poppy font-sans text-xs uppercase tracking-widest mb-2">
+                <p className="text-poppy font-sans text-xs uppercase tracking-widest mb-1.5">
                   The risk at this stage
                 </p>
                 <p className="font-sans text-aubergine/80 text-base leading-relaxed">
@@ -626,56 +655,68 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── Radar ── */}
-          <section className="bg-soft-white pb-8 px-4 md:px-6">
+          <section className="bg-soft-white pb-6 px-4 md:px-6 border-t border-aubergine/5 pt-8">
             <div className="max-w-2xl mx-auto text-center">
-              <ResponsiveContainer width="100%" height={360}>
-                <RadarChart data={chartData} outerRadius="55%" margin={{ top: 24, right: 24, bottom: 24, left: 24 }}>
+              <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-1">
+                The Shape of Your Repurpose Profile
+              </h2>
+              <p className="text-aubergine/45 text-sm font-sans mb-2">
+                Where you stand across the five stages, 1 to 10.
+              </p>
+              <ResponsiveContainer width="100%" height={330}>
+                <RadarChart data={chartData} outerRadius="62%" margin={{ top: 24, right: 24, bottom: 8, left: 24 }}>
+                  <defs>
+                    <linearGradient id="stageStroke" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="#152DEC" />
+                      <stop offset="25%" stopColor="#06B7B2" />
+                      <stop offset="50%" stopColor="#955CD5" />
+                      <stop offset="75%" stopColor="#EDB322" />
+                      <stop offset="100%" stopColor="#FC5430" />
+                    </linearGradient>
+                    <radialGradient id="stageFill" cx="50%" cy="50%" r="70%">
+                      <stop offset="0%" stopColor="#955CD5" stopOpacity={0.28} />
+                      <stop offset="60%" stopColor="#06B7B2" stopOpacity={0.18} />
+                      <stop offset="100%" stopColor="#FC5430" stopOpacity={0.14} />
+                    </radialGradient>
+                  </defs>
                   <PolarGrid stroke="hsl(230 96% 10% / 0.12)" />
                   <PolarAngleAxis dataKey="subject" tick={<StageTick scoreBySubject={scoreBySubject} />} />
                   <Radar
                     name="Your Signal"
                     dataKey="value"
-                    stroke="#152DEC"
-                    fill="#152DEC"
-                    fillOpacity={0.15}
-                    strokeWidth={2}
+                    stroke="url(#stageStroke)"
+                    fill="url(#stageFill)"
+                    fillOpacity={1}
+                    strokeWidth={2.5}
+                    dot={<StageDot />}
                   />
                 </RadarChart>
               </ResponsiveContainer>
-              <p className="text-aubergine/40 text-xs font-sans mt-2">Your shape across the five stages</p>
 
               <button
                 onClick={handleDownloadPDF}
                 disabled={generating}
-                className="mt-8 inline-flex items-center gap-2 bg-indigo text-soft-white font-sans text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
+                className="mt-4 inline-flex items-center gap-2 bg-indigo text-soft-white font-sans text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
               >
-                {generating ? "Generating…" : "Download Report ↓"}
+                {generating ? "Generating…" : "Download PDF Report ↓"}
               </button>
             </div>
           </section>
 
-          {/* ── Profile definition ── */}
-          <section className="bg-soft-white py-10 md:py-14 px-6 border-t border-aubergine/5">
-            <div className="max-w-2xl mx-auto">
-              <p className="font-sans text-aubergine/80 text-base md:text-lg leading-relaxed">
-                {profileCopy[archetypeSlug]?.description ?? archetype.description}
-              </p>
-            </div>
-          </section>
-
           {/* ── Your five stage scores ── */}
-          <section className="bg-soft-white py-12 md:py-16 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-8 md:py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-8">
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-5">
                 Your five stage scores
               </p>
-              <div className="space-y-8">
+              <div className="space-y-6">
                 {dimensionOrder.map((dim) => {
                   const score = scores[dim];
                   return (
                     <div key={dim}>
-                      <div className="flex items-center gap-3 mb-2">
-                        <img src={dimensionLogos[dim]} alt="" className="w-6 h-6 object-contain shrink-0" />
+                      <div className="flex items-center gap-4 mb-2">
+                        <img src={dimensionLogos[dim]} alt="" className="w-12 h-12 object-contain shrink-0" />
+
                         <div className="flex-1 min-w-0">
                           <p className="font-display text-aubergine text-lg leading-tight">
                             {dimensionMeta[dim].label}
@@ -711,9 +752,9 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── AI-Generated Narrative Report ── */}
-          <section className="bg-soft-white py-12 md:py-16 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-8 md:py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-6">
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
                 Insights About Your Profile
               </p>
 
@@ -733,16 +774,21 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── What to work on next (tactical) ── */}
-          <section className="bg-soft-white py-12 md:py-16 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-8 md:py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <div className="border border-aubergine/10 rounded-xl p-8 md:p-10 bg-white">
-                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
+              <div className="border border-aubergine/10 rounded-xl p-6 md:p-8 bg-white">
+                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">
                   What to work on next
                 </p>
-                <p className="font-sans text-aubergine/60 text-base leading-relaxed mb-8">
-                  Not a stage to go conquer — three concrete things you could actually do in the next month, chosen from where your scores are thinnest.
+                {nextMoveBody && (
+                  <div className="mb-6">
+                    <MarkdownParas body={nextMoveBody} />
+                  </div>
+                )}
+                <p className="font-sans text-aubergine/60 text-base leading-relaxed mb-5">
+                  Three concrete things you could actually do in the next month, chosen from where your scores are thinnest.
                 </p>
-                <div className="space-y-5">
+                <div className="space-y-4">
                   {tacticalPractices.map(({ stage, action }) => (
                     <div
                       key={action.label}
@@ -758,22 +804,23 @@ const ResultsPreview = () => {
             </div>
           </section>
 
+
           </div>{/* end reportRef */}
 
 
           {/* ── Where to go from here ── */}
-          <section className="bg-soft-white py-16 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-8 text-center">
+              <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-5 text-center">
                 Doing this alone is harder than it needs to be. Based on your profile, here's where to go next.
               </p>
               <a
                 href={recommendation.track.href}
                 target={recommendation.track.href?.startsWith("http") ? "_blank" : undefined}
                 rel="noopener noreferrer"
-                className="block border border-aubergine/20 rounded-lg p-8 hover:border-indigo/40 transition-colors group bg-white"
+                className="block border border-aubergine/20 rounded-lg p-6 hover:border-indigo/40 transition-colors group bg-white"
               >
-                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">Recommended for you</p>
+                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-2">Recommended for you</p>
                 <h3 className="font-display text-aubergine text-xl mb-2 group-hover:text-indigo transition-colors">
                   {recommendation.track.label}
                 </h3>
@@ -784,45 +831,46 @@ const ResultsPreview = () => {
 
 
           {/* Share + Download */}
-          <section className="bg-soft-white py-16 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-display text-aubergine text-2xl mb-3">Share your Great Repurpose Profile.</h2>
-              <p className="font-sans text-aubergine/50 text-sm mb-4 whitespace-pre-line max-w-md mx-auto">
+              <h2 className="font-display text-aubergine text-2xl mb-2">Share your Great Repurpose Profile.</h2>
+              <p className="font-sans text-aubergine/50 text-sm mb-3 whitespace-pre-line max-w-md mx-auto">
                 {shareText}
               </p>
-               <Link to="/types" className="inline-block text-indigo font-sans text-sm hover:underline mb-8">
+               <Link to="/types" className="inline-block text-indigo font-sans text-sm hover:underline mb-5">
                  Explore all 10 Great Repurpose Profiles →
               </Link>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-2">
                 <button
                   onClick={handleDownloadPDF}
                   disabled={generating}
-                  className="bg-indigo text-soft-white font-sans text-sm font-medium px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
+                  className="bg-indigo text-soft-white font-sans text-xs font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
                 >
                   {generating ? "Generating…" : "Download PDF Report"}
                 </button>
                 {resultUrl && (
                   <button
                     onClick={handleCopyLink}
-                    className="border border-aubergine/20 text-aubergine font-sans text-sm px-6 py-3 rounded-full hover:border-aubergine/60 transition-colors"
+                    className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
                   >
                     {copied ? "Copied ✓" : "Copy Link"}
                   </button>
                 )}
                 <button
                   onClick={handleShareLinkedIn}
-                  className="border border-aubergine/20 text-aubergine font-sans text-sm px-6 py-3 rounded-full hover:border-aubergine/60 transition-colors"
+                  className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
                 >
                   Share on LinkedIn
                 </button>
                 <button
                   onClick={handleShareX}
-                  className="border border-aubergine/20 text-aubergine font-sans text-sm px-6 py-3 rounded-full hover:border-aubergine/60 transition-colors"
+                  className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
                 >
                   Share on X
                 </button>
               </div>
             </div>
+
           </section>
         </>
       )}
