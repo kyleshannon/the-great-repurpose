@@ -254,21 +254,20 @@ const Index = () => {
 
 
 
-        {/* ── Section 5: Bridge to Profiles ── */}
-        <section className="bg-aubergine py-16 md:py-24 px-6">
+        {/* ── Section 5: The Five Stages ── */}
+        <section className="bg-soft-white py-16 md:py-24 px-6">
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-              <div className="space-y-6 order-2 md:order-1">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start mb-16">
+              <div className="space-y-6">
                 <ScrollFadeUp>
-                  <p className="font-sans text-aqua text-xs uppercase tracking-[0.2em] font-semibold mb-2">
+                  <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-2">
                     This is not a self-help program
                   </p>
-                  <h2 className="font-display text-soft-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
+                  <h2 className="font-display text-aubergine text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
                     The Five Stages of The Great Repurpose
-
                   </h2>
                 </ScrollFadeUp>
-                <div className="font-body text-soft-white/80 text-lg leading-relaxed space-y-5">
+                <div className="font-body text-aubergine/80 text-lg leading-relaxed space-y-5">
                   <ScrollFadeUp delay={100}>
                     <p>The Great Repurpose puts a name to what's actually happening: the relationship between you and the work that gives you meaning is being renegotiated — and nobody asked your permission.</p>
                   </ScrollFadeUp>
@@ -279,50 +278,19 @@ const Index = () => {
                     <p>The Whole You, Amplified by AI. That's the opportunity. Not replacing yourself. Not becoming a prompt engineer. Becoming more fully who you already are — with tools that multiply what you can do.</p>
                   </ScrollFadeUp>
                 </div>
-                <ScrollFadeUp delay={220}>
-                  <ol className="border-t border-soft-white/15 divide-y divide-soft-white/10">
-                    {phases.map((phase) => (
-                      <li key={phase.number} className="flex items-baseline gap-4 py-3">
-                        <span className={`font-sans text-xs font-semibold tracking-widest ${colorMap[phase.color].text}`}>
-                          {phase.number}
-                        </span>
-                        <span className="font-display text-soft-white text-lg md:text-xl">{phase.name}</span>
-                      </li>
-                    ))}
-                  </ol>
-                </ScrollFadeUp>
-                <ScrollFadeUp delay={250}>
-                  <Link
-                    to="/selfcheck"
-                    className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full hover:opacity-90 transition-opacity mt-4"
-                  >
-                    Get Your Profile →
-                  </Link>
-                </ScrollFadeUp>
               </div>
-              <ScrollFadeUp delay={100} className="order-1 md:order-2">
+              <ScrollFadeUp delay={100}>
                 <img
-                  src={twoPeopleConversationAsset.url}
-                  alt="Two people seated close together in serious conversation"
+                  src={womanDeskAsset.url}
+                  alt="A woman at her desk in the evening with handwritten pages"
                   className="w-full rounded-lg object-cover aspect-[4/5]"
                   loading="lazy"
                 />
               </ScrollFadeUp>
             </div>
-          </div>
-        </section>
 
-        {/* ── Section 6: The Five Stages ── */}
-        <section className="bg-soft-white py-16 md:py-24">
-          <div className="max-w-5xl mx-auto px-6">
             <ScrollFadeUp>
-              <p className="font-sans text-indigo text-xs uppercase tracking-[0.2em] font-semibold mb-3 text-center">
-                Five Stages. One Journey.
-              </p>
-              <h2 className="font-display text-aubergine text-3xl md:text-5xl leading-tight mb-6 text-center">
-                Exploring the Five Stages
-              </h2>
-              <p className="font-body text-aubergine/70 text-lg leading-relaxed max-w-2xl mx-auto text-center mb-14">
+              <p className="font-body text-aubergine/70 text-lg leading-relaxed max-w-2xl mb-14">
                 Here's what each stage actually looks like when the work that defined you changes. They don't happen in order. They're not clean. But knowing where you are is the first step toward building what comes next.
               </p>
             </ScrollFadeUp>
@@ -372,8 +340,6 @@ const Index = () => {
           </div>
 
           <div className="max-w-5xl mx-auto px-6">
-
-
             <ScrollFadeUp delay={300}>
               <div className="relative rounded-2xl overflow-hidden">
                 <img
