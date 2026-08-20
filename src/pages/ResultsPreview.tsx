@@ -715,26 +715,16 @@ const ResultsPreview = () => {
           {/* ── Radar ── */}
           <section className="bg-soft-white pb-6 px-4 md:px-6 border-t border-aubergine/5 pt-8">
             <div className="max-w-2xl mx-auto text-center">
-              <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-1">
+              <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-2">
                 The Shape of Your Repurpose Profile
               </h2>
-              <p className="text-aubergine/45 text-sm font-sans mb-2">
-                Where you stand across the five stages, 1 to 10.
-              </p>
-              <ResponsiveContainer width="100%" height={330}>
-                <RadarChart data={chartData} outerRadius="62%" margin={{ top: 24, right: 24, bottom: 8, left: 24 }}>
+              <ResponsiveContainer width="100%" height={380}>
+                <RadarChart data={chartData} outerRadius="58%" margin={{ top: 46, right: 34, bottom: 34, left: 34 }}>
                   <defs>
-                    <linearGradient id="stageStroke" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="#152DEC" />
-                      <stop offset="25%" stopColor="#06B7B2" />
-                      <stop offset="50%" stopColor="#955CD5" />
-                      <stop offset="75%" stopColor="#EDB322" />
-                      <stop offset="100%" stopColor="#FC5430" />
-                    </linearGradient>
                     <radialGradient id="stageFill" cx="50%" cy="50%" r="70%">
-                      <stop offset="0%" stopColor="#955CD5" stopOpacity={0.28} />
-                      <stop offset="60%" stopColor="#06B7B2" stopOpacity={0.18} />
-                      <stop offset="100%" stopColor="#FC5430" stopOpacity={0.14} />
+                      <stop offset="0%" stopColor="#955CD5" stopOpacity={0.24} />
+                      <stop offset="60%" stopColor="#06B7B2" stopOpacity={0.16} />
+                      <stop offset="100%" stopColor="#FC5430" stopOpacity={0.12} />
                     </radialGradient>
                   </defs>
                   <PolarGrid stroke="hsl(230 96% 10% / 0.12)" />
@@ -742,13 +732,12 @@ const ResultsPreview = () => {
                   <Radar
                     name="Your Signal"
                     dataKey="value"
-                    stroke="url(#stageStroke)"
-                    fill="url(#stageFill)"
-                    fillOpacity={1}
-                    strokeWidth={2.5}
-                    dot={<StageDot />}
+                    stroke="none"
+                    fill="none"
+                    shape={<StageShape />}
                   />
                 </RadarChart>
+
               </ResponsiveContainer>
 
               <button
