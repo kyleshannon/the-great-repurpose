@@ -71,13 +71,17 @@ function StageTick(props: any) {
   const textStart =
     anchor === "middle" ? x - labelWidth / 2 : anchor === "end" ? x - labelWidth : x;
   const iconX = textStart - size - 4;
+  // The top vertex sits above the chart, so lift its label/score clear of the grid.
+  const isTop = anchor === "middle" && y < 140;
+  const labelY = isTop ? y - 16 : y;
+  const scoreY = labelY + 14;
 
   return (
     <g>
-      {meta && <image href={meta.logo} x={iconX} y={y - size / 2 - 4} width={size} height={size} />}
+      {meta && <image href={meta.logo} x={iconX} y={labelY - size / 2 - 4} width={size} height={size} />}
       <text
         x={x}
-        y={y}
+        y={labelY}
         textAnchor={anchor}
         fill={meta?.color ?? "#010F32"}
         fontSize={11}
@@ -89,7 +93,7 @@ function StageTick(props: any) {
       {typeof score === "number" && (
         <text
           x={x}
-          y={y + 14}
+          y={scoreY}
           textAnchor={anchor}
           fill="#010F32"
           fillOpacity={0.55}
@@ -102,6 +106,7 @@ function StageTick(props: any) {
       )}
     </g>
   );
+
 }
 
 
