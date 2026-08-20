@@ -296,7 +296,7 @@ const Index = () => {
             </ScrollFadeUp>
           </div>
 
-          <div className="mb-16">
+          <div className="mb-10">
             {phases.map((phase, i) => {
               const colors = colorMap[phase.color];
               const image = stageImages[i];
@@ -307,7 +307,7 @@ const Index = () => {
                     to={`/phases#${phase.name.toLowerCase().replace(/\s+/g, "-")}`}
                     className={`group block w-full ${i % 2 === 1 ? "bg-soft-white" : colors.bg} border-y border-aubergine/5 transition-colors`}
                   >
-                    <div className="max-w-5xl mx-auto px-6 py-10 md:py-14 flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                    <div className="max-w-5xl mx-auto px-6 py-5 md:py-7 flex flex-col md:flex-row gap-8 md:gap-12 items-center">
                       <div className={`w-full md:w-1/3 shrink-0 ${imageRight ? "md:order-2" : ""}`}>
                         <img
                           src={image.url}
