@@ -290,9 +290,9 @@ const Index = () => {
             </div>
 
             <ScrollFadeUp>
-              <p className="font-body text-aubergine/70 text-lg leading-relaxed max-w-2xl mb-14">
-                Here's what each stage actually looks like when the work that defined you changes. They don't happen in order. They're not clean. But knowing where you are is the first step toward building what comes next.
-              </p>
+              <h2 className="font-display text-aubergine text-3xl md:text-5xl leading-tight mb-14">
+                The Stages...
+              </h2>
             </ScrollFadeUp>
           </div>
 
