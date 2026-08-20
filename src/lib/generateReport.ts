@@ -5,12 +5,19 @@ import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
 import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
 import logoCitrus from "@/assets/tgr-logo-citrus.png.asset.json";
 import logoPoppy from "@/assets/tgr-logo-poppy.png.asset.json";
+import {
+  getStageScoreNote,
+  getTacticalPractices,
+  type Archetype,
+  type Scores,
+} from "@/lib/archetypes";
 
 // ── Brand palette (print-safe, light background) ─────────────────────────────
 const OFFWHITE = [242, 241, 241] as const;   // Soft White
 const AUBERGINE = [1, 15, 50] as const;      // Aubergine-Black
 const MUTED = [90, 100, 120] as const;       // muted body text
 const RULE = [214, 213, 213] as const;       // hairline rules
+const GRAY_HEAD = [107, 114, 128] as const;  // section header gray (matches web)
 
 const INDIGO = [21, 45, 236] as const;
 const AQUA = [6, 183, 178] as const;
@@ -52,10 +59,14 @@ const dimensionMeta: Record<
 const dimOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];
 
 interface ReportData {
-  archetype: { name: string; tagline: string; description: string; vulnerability: string; category?: string };
-  category?: { label: string; description: string; isCapstone: boolean };
+  archetype: Archetype;
+  /** Canonical profile subtitle + definition shown on the web report. */
+  profileTagline: string;
+  profileDescription: string;
   scores: Record<DimensionKey, number>;
   interpretation: string;
+  /** Optional radar chart rendered as a PNG data URL. */
+  chartImage?: string | null;
 }
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
@@ -86,6 +97,8 @@ async function loadImage(url: string): Promise<string | null> {
   }
 }
 
+const isNextMoveTitle = (title: string) => /next\s+move/i.test(title);
+
 export async function generateReportPDF(data: ReportData) {
   const doc = new jsPDF("p", "mm", "a4");
   const pageWidth = doc.internal.pageSize.getWidth();
@@ -110,36 +123,54 @@ export async function generateReportPDF(data: ReportData) {
     doc.rect(0, 0, pageWidth, pageHeight, "F");
   };
 
+  let y = 26;
+
+  const ensureSpace = (needed: number) => {
+    if (y + needed > pageHeight - bottomMargin) {
+      doc.addPage();
+      paintPage();
+      y = margin + 4;
+    }
+  };
+
   /** Wrap text and render, returning the new Y position. Adds pages as needed. */
   const renderWrappedText = (
     text: string,
     x: number,
-    y: number,
+    startY: number,
     maxWidth: number,
     lineHeight: number,
     align: "left" | "center" = "left",
   ): number => {
+    let cursor = startY;
     const clean = text.replace(/\*\*/g, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
     const lines = doc.splitTextToSize(clean, maxWidth) as string[];
     for (const line of lines) {
-      if (y + lineHeight > pageHeight - bottomMargin) {
+      if (cursor + lineHeight > pageHeight - bottomMargin) {
         doc.addPage();
         paintPage();
-        y = margin + 6;
+        cursor = margin + 6;
       }
-      doc.text(line, align === "center" ? pageWidth / 2 : x, y, { align });
-      y += lineHeight;
+      doc.text(line, align === "center" ? pageWidth / 2 : x, cursor, { align });
+      cursor += lineHeight;
     }
-    return y;
+    return cursor;
   };
 
-  // ── Page 1: Cover ──────────────────────────────────────────────────────────
+  /** Small uppercase section eyebrow, matching the web report. */
+  const sectionEyebrow = (label: string, color: readonly [number, number, number] = INDIGO) => {
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(8);
+    setColor(doc, color);
+    doc.text(label.toUpperCase(), margin, y);
+    y += 8;
+  };
+
+  // ── Page 1: Cover / profile hero ───────────────────────────────────────────
   paintPage();
 
-  let y = 26;
-
   if (lockup) {
-    const w = 82;
+    const w = 74;
     const h = w * (595 / 1920);
     doc.addImage(lockup, "PNG", (pageWidth - w) / 2, y, w, h);
     y += h + 16;
@@ -150,56 +181,80 @@ export async function generateReportPDF(data: ReportData) {
   doc.setFont("helvetica", "bold");
   doc.setFontSize(8);
   setColor(doc, INDIGO);
-  doc.text("YOUR GREAT REPURPOSE PROFILE", pageWidth / 2, y, { align: "center" });
+  doc.text("YOU ARE:", pageWidth / 2, y, { align: "center" });
   y += 12;
-
-  if (data.category) {
-    doc.setFont("helvetica", "normal");
-    doc.setFontSize(13);
-    setColor(doc, MUTED);
-    const headline = data.category.isCapstone
-      ? "You've made it through."
-      : `You're a ${data.category.label}.`;
-    doc.text(headline, pageWidth / 2, y, { align: "center" });
-    y += 11;
-  }
 
   doc.setFont("helvetica", "bold");
   doc.setFontSize(28);
   setColor(doc, AUBERGINE);
   doc.text(data.archetype.name, pageWidth / 2, y, { align: "center" });
-  y += 11;
-
-  if (data.category) {
-    doc.setFont("helvetica", "normal");
-    doc.setFontSize(10);
-    setColor(doc, MUTED);
-    y = renderWrappedText(data.category.description, 0, y, contentWidth - 30, 5, "center");
-    y += 3;
-  }
+  y += 10;
 
   doc.setFont("helvetica", "italic");
   doc.setFontSize(12);
-  setColor(doc, INDIGO);
-  y = renderWrappedText(data.archetype.tagline, 0, y, contentWidth - 20, 6, "center");
-  y += 12;
+  setColor(doc, MUTED);
+  y = renderWrappedText(data.profileTagline, 0, y, contentWidth - 20, 6, "center");
+  y += 10;
 
-  drawLine(doc, y, margin + 18, pageWidth - margin - 18);
-  y += 14;
-
-  // ── Scores ─────────────────────────────────────────────────────────────────
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(8);
+  // ── Profile definition ─────────────────────────────────────────────────────
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(10.5);
   setColor(doc, AUBERGINE);
-  doc.text("YOUR FIVE STAGES", margin, y);
-  y += 9;
+  y = renderWrappedText(data.profileDescription, margin, y, contentWidth, 5.2);
+  y += 8;
+
+  // ── The risk at this stage ─────────────────────────────────────────────────
+  {
+    const riskLines = doc.splitTextToSize(data.archetype.vulnerability, contentWidth - 8) as string[];
+    const blockHeight = 7 + riskLines.length * 5;
+    ensureSpace(blockHeight + 6);
+    doc.setFillColor(POPPY[0], POPPY[1], POPPY[2]);
+    doc.rect(margin, y - 4, 0.8, blockHeight, "F");
+
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(8);
+    setColor(doc, POPPY);
+    doc.text("THE RISK AT THIS STAGE", margin + 5, y);
+    y += 5.5;
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10);
+    setColor(doc, AUBERGINE);
+    y = renderWrappedText(data.archetype.vulnerability, margin + 5, y, contentWidth - 8, 5);
+    y += 10;
+  }
+
+  // ── Radar chart ────────────────────────────────────────────────────────────
+  if (data.chartImage) {
+    const props = doc.getImageProperties(data.chartImage);
+    const w = contentWidth;
+    const h = (props.height / props.width) * w;
+    ensureSpace(h + 16);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(13);
+    setColor(doc, AUBERGINE);
+    doc.text("The Shape of Your Repurpose Profile", pageWidth / 2, y, { align: "center" });
+    y += 6;
+    doc.addImage(data.chartImage, "PNG", margin, y, w, h);
+    y += h + 8;
+  }
+
+  // ── Your five stage scores ─────────────────────────────────────────────────
+  ensureSpace(30);
+  drawLine(doc, y - 4, margin, pageWidth - margin);
+  y += 4;
+  sectionEyebrow("Your five stage scores");
 
   for (const dim of dimOrder) {
     const meta = dimensionMeta[dim];
     const score = data.scores[dim];
     const logo = logoByDim[dim];
+    const note = getStageScoreNote(dim, score);
+    const noteLines = doc.splitTextToSize(note, contentWidth) as string[];
 
-    const iconSize = 9;
+    ensureSpace(20 + noteLines.length * 4.6);
+
+    const iconSize = 10;
     const textX = margin + iconSize + 5;
 
     if (logo) {
@@ -212,79 +267,70 @@ export async function generateReportPDF(data: ReportData) {
     doc.text(meta.label, textX, y);
 
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(13);
+    doc.setFontSize(14);
     setColor(doc, meta.textColor ?? meta.color);
     doc.text(score.toFixed(1), pageWidth - margin, y, { align: "right" });
 
     doc.setFont("helvetica", "normal");
     doc.setFontSize(8);
     setColor(doc, MUTED);
-    doc.text(meta.stage, textX, y + 4.6);
+    doc.text(meta.stage, textX, y + 4.4);
 
     // Score bar
     const barY = y + 7.5;
-    const barWidth = pageWidth - margin - textX;
+    const barWidth = contentWidth;
     const barHeight = 2;
     doc.setFillColor(RULE[0], RULE[1], RULE[2]);
-    doc.roundedRect(textX, barY, barWidth, barHeight, 1, 1, "F");
+    doc.roundedRect(margin, barY, barWidth, barHeight, 1, 1, "F");
     const fillWidth = ((score - 1) / 9) * barWidth;
     doc.setFillColor(meta.color[0], meta.color[1], meta.color[2]);
-    doc.roundedRect(textX, barY, Math.max(fillWidth, 2), barHeight, 1, 1, "F");
+    doc.roundedRect(margin, barY, Math.max(fillWidth, 2), barHeight, 1, 1, "F");
 
-    y += 17;
+    y = barY + barHeight + 5;
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(9.5);
+    setColor(doc, MUTED);
+    y = renderWrappedText(note, margin, y, contentWidth, 4.6);
+    y += 7;
   }
 
-  y += 3;
-  drawLine(doc, y, margin + 18, pageWidth - margin - 18);
-  y += 13;
+  // ── Insights about your profile ────────────────────────────────────────────
+  const sections = data.interpretation ? parseInterpretation(data.interpretation) : [];
+  const narrativeSections = sections.filter((s) => !isNextMoveTitle(s.title));
+  const nextMoveBody = sections
+    .filter((s) => isNextMoveTitle(s.title))
+    .map((s) => s.body)
+    .join("\n\n")
+    .trim();
 
-  // ── Description ────────────────────────────────────────────────────────────
-  doc.setFont("helvetica", "normal");
-  doc.setFontSize(10);
-  setColor(doc, AUBERGINE);
-  y = renderWrappedText(data.archetype.description, margin, y, contentWidth, 5);
-  y += 5;
-  doc.setFont("helvetica", "italic");
-  setColor(doc, MUTED);
-  y = renderWrappedText(data.archetype.vulnerability, margin, y, contentWidth, 5);
-
-  // ── Interpretation pages ───────────────────────────────────────────────────
-  if (data.interpretation) {
+  if (narrativeSections.length) {
     doc.addPage();
     paintPage();
     y = margin + 4;
 
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(8);
-    setColor(doc, INDIGO);
-    doc.text("YOUR PERSONALIZED REPORT", margin, y);
-    y += 11;
+    doc.setFontSize(13);
+    setColor(doc, GRAY_HEAD);
+    doc.text("INSIGHTS ABOUT YOUR PROFILE", margin, y);
+    y += 10;
 
-    const sections = parseInterpretation(data.interpretation);
-
-    for (const section of sections) {
-      if (y + 20 > pageHeight - bottomMargin) {
-        doc.addPage();
-        paintPage();
-        y = margin + 4;
-      }
+    for (const section of narrativeSections) {
+      ensureSpace(20);
 
       if (section.title) {
         doc.setFont("helvetica", "bold");
-        doc.setFontSize(9);
-        setColor(doc, AUBERGINE);
+        doc.setFontSize(8);
+        setColor(doc, INDIGO);
         doc.text(section.title.toUpperCase(), margin, y);
-        y += 3;
-        drawLine(doc, y, margin, pageWidth - margin);
-        y += 7;
+        y += 6;
       }
 
       doc.setFont("helvetica", "normal");
       doc.setFontSize(10);
       setColor(doc, AUBERGINE);
 
-      const paragraphs = section.body.split("\n\n").filter(Boolean);
-      for (const para of paragraphs) {
+      for (const para of section.body.split("\n\n").filter(Boolean)) {
         y = renderWrappedText(para.trim(), margin, y, contentWidth, 4.9);
         y += 4;
       }
@@ -292,68 +338,98 @@ export async function generateReportPDF(data: ReportData) {
     }
   }
 
-  // ── Subtle Academy CTA block ───────────────────────────────────────────────
+  // ── What to work on next ───────────────────────────────────────────────────
   {
-    const blockHeight = 54;
-    if (y + blockHeight > pageHeight - bottomMargin) {
-      doc.addPage();
-      paintPage();
-      y = margin + 4;
+    ensureSpace(40);
+    y += 4;
+    sectionEyebrow("What to work on next");
 
-      // Closing page header so the CTA never floats alone
-      doc.setFont("helvetica", "bold");
-      doc.setFontSize(8);
-      setColor(doc, INDIGO);
-      doc.text("WHAT'S NEXT", margin, y);
-      y += 11;
-
+    if (nextMoveBody) {
       doc.setFont("helvetica", "normal");
-      doc.setFontSize(11);
+      doc.setFontSize(10);
       setColor(doc, AUBERGINE);
-      y = renderWrappedText(
-        "The five stages aren't a one-time read. They're a practice — and the work goes further with structure and other people moving through it alongside you.",
-        margin,
-        y,
-        contentWidth,
-        5.4,
-      );
-      y += 8;
-    } else {
-      y += 6;
+      for (const para of nextMoveBody.split("\n\n").filter(Boolean)) {
+        y = renderWrappedText(para.trim(), margin, y, contentWidth, 4.9);
+        y += 4;
+      }
+      y += 2;
     }
 
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(10);
+    setColor(doc, MUTED);
+    y = renderWrappedText(
+      "Three concrete things you could actually do in the next month, chosen from where your scores are thinnest.",
+      margin,
+      y,
+      contentWidth,
+      4.9,
+    );
+    y += 6;
+
+    for (const { stage, action } of getTacticalPractices(data.scores as Scores)) {
+      const color = dimensionMeta[stage as DimensionKey].color;
+      const descLines = doc.splitTextToSize(action.desc, contentWidth - 8) as string[];
+      const blockHeight = 6 + descLines.length * 4.6;
+      ensureSpace(blockHeight + 6);
+
+      doc.setFillColor(color[0], color[1], color[2]);
+      doc.rect(margin, y - 4, 0.8, blockHeight, "F");
+
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(10.5);
+      setColor(doc, AUBERGINE);
+      doc.text(action.label, margin + 5, y);
+      y += 5;
+
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(9.5);
+      setColor(doc, MUTED);
+      y = renderWrappedText(action.desc, margin + 5, y, contentWidth - 8, 4.6);
+      y += 7;
+    }
+  }
+
+  // ── Academy offerings ──────────────────────────────────────────────────────
+  {
+    const blockHeight = 54;
+    ensureSpace(blockHeight + 18);
+    y += 2;
+
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(13);
+    setColor(doc, AUBERGINE);
+    y = renderWrappedText(
+      "Learn more about The Great Repurpose Academy Offerings",
+      0,
+      y,
+      contentWidth,
+      6.5,
+      "center",
+    );
+    y += 4;
 
     doc.setFillColor(255, 255, 255);
     doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
     doc.setLineWidth(0.3);
     doc.roundedRect(margin, y, contentWidth, blockHeight, 3, 3, "FD");
 
-    let by = y + 9;
+    let by = y + 10;
     const bx = margin + 8;
     const bw = contentWidth - 16;
 
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(8);
-    setColor(doc, INDIGO);
-    doc.text("CONTINUE THE WORK — THE GREAT REPURPOSE ACADEMY", bx, by);
-    by += 6;
-
-    doc.setFont("helvetica", "normal");
-    doc.setFontSize(9.5);
-    setColor(doc, MUTED);
-    doc.text("Two guided tracks built on the five stages in this report.", bx, by);
-    by += 7.5;
-
     const tracks = [
       {
-        title: "Executive Leadership Academy",
-        desc: "For leaders guiding teams and organizations through the AI transition.",
+        eyebrow: "For leaders making the calls",
+        title: "The Executive Leadership Academy",
+        desc: "An immersive workshop plus three months of implementation sessions, applied to the decisions already on your desk.",
         url: "TheGreatRepurpose.com/academy/leadership",
         color: INDIGO,
       },
       {
-        title: "Transition Academy",
-        desc: "For individuals reclaiming identity, value, and a relaunched path forward.",
+        eyebrow: "For people whose role just ended",
+        title: "The TGR Transition Academy",
+        desc: "A cohort moving through the five stages together, building real AI agency instead of polishing a resume.",
         url: "TheGreatRepurpose.com/academy/transition",
         color: POPPY,
       },
