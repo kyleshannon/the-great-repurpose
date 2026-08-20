@@ -150,31 +150,32 @@ type Band = "low" | "mid" | "high";
 
 export const stageScoreBands: Record<StageKey, Record<Band, string>> = {
   identity: {
-    low: "Who you are and what you did for work are still the same thing in your head. Start noticing when a headline about AI lands as a personal threat rather than information — that reaction is the knot.",
-    mid: "You've started to separate yourself from the title, but it still snaps back under pressure. Practice describing your work by the problem you care about instead of the role you held.",
-    high: "Your sense of self doesn't depend on a job description anymore. Use that steadiness for other people — most of the room is still where you were.",
+    low: "A 10 here means your worth doesn't move when your title does. You're a long way from that — right now the job and the self are still one object, so every AI headline lands as a personal verdict. Start catching that reaction in the moment; naming it is the first loosening.",
+    mid: "A 10 here means the separation holds under pressure. Yours holds on good days and snaps back on hard ones. Close the gap by describing your work by the problem you care about rather than the role you held, until that's the version you reach for first.",
+    high: "This is close to the top of the stage: your sense of self isn't leased from an employer. The remaining work isn't yours alone — say out loud how you got here, because most of the people around you are still where you were.",
   },
   value: {
-    low: "You can name your tasks but not the human layer underneath them. Write down ten judgment calls only you would have made — that list is the beginning of your answer.",
-    mid: "You have a rough sense of what you bring, but it's still described in job terms. Sharpen it until someone outside your field understands it in one sentence.",
-    high: "You know what you carry that a tool can't reproduce. Make sure the people who'd hire or partner with you can hear it as clearly as you can say it.",
+    low: "A 10 here means you can name the human judgment you bring in one sentence a stranger understands. You're still at the task list. Write down ten calls only you would have made — that's the raw material for the sentence you don't have yet.",
+    mid: "A 10 here means your value is articulated in human terms, not job terms. Yours is half-translated — still leaning on titles and responsibilities. Cut the job language out entirely and see what's left; that remainder is the real answer.",
+    high: "You're near the top of this stage — you know what you carry that a tool can't reproduce. The gap left is distribution: make sure the people who'd hire or partner with you hear it as clearly as you can say it.",
   },
   purpose: {
-    low: "There's no target yet, which makes everything else feel arbitrary. Pick an audience — real people with a real problem — before you pick a plan.",
-    mid: "You have a direction but it's still broad enough to hide in. Narrow it to one problem and one group of people you'd like your work to reach.",
-    high: "You know what you're pointed at and who it's for. Protect that focus — the next year will offer plenty of interesting detours.",
+    low: "A 10 here means one problem, one group of people, no hedging. You don't have a target yet, which is why the rest feels arbitrary rather than hard. Pick the people before you pick the plan.",
+    mid: "A 10 here means the direction is narrow enough to act on tomorrow. Yours is still broad enough to hide inside. Cut it down to a single problem and a single audience and see whether it still holds your interest.",
+    high: "You're at or near the top of this stage — you know what you're aimed at and who it serves. Protect it. The next year will hand you interesting detours that cost more than they look like they cost.",
   },
   ai_relationship: {
-    low: "AI is still something happening to you rather than something you use. An hour a week of undirected play — no deliverable — will move this faster than any course.",
-    mid: "You use AI, mostly to go faster on things you already do. Try putting yourself at the center of a prompt: who you are, what you value, who you're reaching.",
-    high: "You've found the ceiling is higher than you assumed. Push into work you'd have called out of reach a year ago, and bring someone with you.",
+    low: "A 10 here means AI is an instrument you play, not weather you endure. You're still on the receiving end of it. One undirected hour a week — no deliverable, no course — moves this more than anything you could enroll in.",
+    mid: "A 10 here means you use AI to do work you couldn't do before, not just faster versions of work you already did. You're in the speed phase. Put yourself into the prompt — your values, your audience, your judgment — and the ceiling moves.",
+    high: "You're near the top of this stage: you've found the ceiling is higher than you assumed and you work like it. Push into something you'd have called out of reach a year ago, and bring someone less fluent along.",
   },
   creative_action: {
-    low: "Nothing is visible yet, which means opportunity has no way to find you. One rough artifact this month beats another month of planning.",
-    mid: "You're making things, but the work isn't reaching real people consistently. Name the offer, name the price, and put it in front of someone outside your circle.",
-    high: "You're shipping, and work is finding you because of it. Add a second channel so your income doesn't ride on one relationship.",
+    low: "A 10 here means work is visible and opportunity can find you. Nothing of yours is out there yet, so nothing can. One rough artifact this month beats another month of preparing a good one.",
+    mid: "A 10 here means the work reaches real people on a rhythm, with a name and a price attached. You're making things but not landing them. Name the offer and put it in front of one person outside your circle this week.",
+    high: "You're at the top of this stage — you ship, and work finds you because of it. The exposure left is concentration: add a second channel so your income doesn't rest on one relationship.",
   },
 };
+
 
 export function getScoreBand(score: number): Band {
   if (score <= 4) return "low";
