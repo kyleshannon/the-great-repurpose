@@ -879,9 +879,12 @@ const ResultsPreview = () => {
           {/* ── AI-Generated Narrative Report ── */}
           <section className="bg-soft-white py-8 md:py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
+              <h2
+                className="font-sans text-lg md:text-xl font-semibold uppercase tracking-widest mb-4"
+                style={{ color: SCORE_GRAY }}
+              >
                 Insights About Your Profile
-              </p>
+              </h2>
 
               {streamError ? (
                 <p className="font-sans text-aubergine/60 text-base text-center">{streamError}</p>
