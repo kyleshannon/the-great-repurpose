@@ -351,15 +351,16 @@ export async function generateReportPDF(data: ReportData) {
     .trim();
 
   if (narrativeSections.length) {
-    doc.addPage();
-    paintPage();
-    y = margin + 4;
+    // Flow onto the current page when there's room; only break if cramped.
+    y += 6;
+    ensureSpace(46);
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(13);
     setColor(doc, GRAY_HEAD);
     doc.text("INSIGHTS ABOUT YOUR PROFILE", margin, y);
     y += 10;
+
 
     for (const section of narrativeSections) {
       ensureSpace(20);
