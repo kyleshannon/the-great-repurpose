@@ -12,7 +12,7 @@ import womanWorktableAsset from "@/assets/woman-worktable.png.asset.json";
 import twoProfessionalsScreenAsset from "@/assets/two-professionals-screen.png.asset.json";
 import twoProfessionalsTableAsset from "@/assets/two-professionals-table.png.asset.json";
 import smallGroupLaptopAsset from "@/assets/small-group-laptop.png.asset.json";
-import twoPeopleConversationAsset from "@/assets/two-people-conversation.png.asset.json";
+
 
 import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
 import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
