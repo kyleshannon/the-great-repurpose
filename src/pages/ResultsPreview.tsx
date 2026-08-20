@@ -612,10 +612,10 @@ const ResultsPreview = () => {
           <div ref={reportRef}>
 
           {/* ── Profile hero ── */}
-          <section className="bg-soft-white pt-20 md:pt-28 pb-6 px-4 md:px-6">
+          <section className="bg-soft-white pt-20 md:pt-24 pb-4 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">You are:</p>
-              <h1 className="font-display text-aubergine text-4xl md:text-5xl leading-tight mb-3">
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-2">You are:</p>
+              <h1 className="font-display text-aubergine text-4xl md:text-5xl leading-tight mb-2">
                 {archetype.name}
               </h1>
               <p className="font-display text-aubergine/70 text-lg italic">
@@ -624,11 +624,20 @@ const ResultsPreview = () => {
             </div>
           </section>
 
+          {/* ── Profile definition ── */}
+          <section className="bg-soft-white pb-5 px-4 md:px-6">
+            <div className="max-w-2xl mx-auto">
+              <p className="font-sans text-aubergine/80 text-base md:text-lg leading-relaxed">
+                {profileCopy[archetypeSlug]?.description ?? archetype.description}
+              </p>
+            </div>
+          </section>
+
           {/* ── The risk at this stage ── */}
-          <section className="bg-soft-white pb-10 px-4 md:px-6">
+          <section className="bg-soft-white pb-6 px-4 md:px-6">
             <div className="max-w-2xl mx-auto">
               <div className="border-l-2 border-poppy pl-5 md:pl-6">
-                <p className="text-poppy font-sans text-xs uppercase tracking-widest mb-2">
+                <p className="text-poppy font-sans text-xs uppercase tracking-widest mb-1.5">
                   The risk at this stage
                 </p>
                 <p className="font-sans text-aubergine/80 text-base leading-relaxed">
@@ -639,56 +648,68 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── Radar ── */}
-          <section className="bg-soft-white pb-8 px-4 md:px-6">
+          <section className="bg-soft-white pb-6 px-4 md:px-6 border-t border-aubergine/5 pt-8">
             <div className="max-w-2xl mx-auto text-center">
-              <ResponsiveContainer width="100%" height={360}>
-                <RadarChart data={chartData} outerRadius="55%" margin={{ top: 24, right: 24, bottom: 24, left: 24 }}>
+              <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-1">
+                The Shape of Your Repurpose Profile
+              </h2>
+              <p className="text-aubergine/45 text-sm font-sans mb-2">
+                Where you stand across the five stages, 1 to 10.
+              </p>
+              <ResponsiveContainer width="100%" height={380}>
+                <RadarChart data={chartData} outerRadius="58%" margin={{ top: 28, right: 28, bottom: 28, left: 28 }}>
+                  <defs>
+                    <linearGradient id="stageStroke" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stopColor="#152DEC" />
+                      <stop offset="25%" stopColor="#06B7B2" />
+                      <stop offset="50%" stopColor="#955CD5" />
+                      <stop offset="75%" stopColor="#EDB322" />
+                      <stop offset="100%" stopColor="#FC5430" />
+                    </linearGradient>
+                    <radialGradient id="stageFill" cx="50%" cy="50%" r="70%">
+                      <stop offset="0%" stopColor="#955CD5" stopOpacity={0.28} />
+                      <stop offset="60%" stopColor="#06B7B2" stopOpacity={0.18} />
+                      <stop offset="100%" stopColor="#FC5430" stopOpacity={0.14} />
+                    </radialGradient>
+                  </defs>
                   <PolarGrid stroke="hsl(230 96% 10% / 0.12)" />
                   <PolarAngleAxis dataKey="subject" tick={<StageTick scoreBySubject={scoreBySubject} />} />
                   <Radar
                     name="Your Signal"
                     dataKey="value"
-                    stroke="#152DEC"
-                    fill="#152DEC"
-                    fillOpacity={0.15}
-                    strokeWidth={2}
+                    stroke="url(#stageStroke)"
+                    fill="url(#stageFill)"
+                    fillOpacity={1}
+                    strokeWidth={2.5}
+                    dot={<StageDot />}
                   />
                 </RadarChart>
               </ResponsiveContainer>
-              <p className="text-aubergine/40 text-xs font-sans mt-2">Your shape across the five stages</p>
 
               <button
                 onClick={handleDownloadPDF}
                 disabled={generating}
-                className="mt-8 inline-flex items-center gap-2 bg-indigo text-soft-white font-sans text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
+                className="mt-4 inline-flex items-center gap-2 bg-indigo text-soft-white font-sans text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
               >
-                {generating ? "Generating…" : "Download Report ↓"}
+                {generating ? "Generating…" : "Download PDF Report ↓"}
               </button>
             </div>
           </section>
 
-          {/* ── Profile definition ── */}
-          <section className="bg-soft-white py-10 md:py-14 px-6 border-t border-aubergine/5">
-            <div className="max-w-2xl mx-auto">
-              <p className="font-sans text-aubergine/80 text-base md:text-lg leading-relaxed">
-                {profileCopy[archetypeSlug]?.description ?? archetype.description}
-              </p>
-            </div>
-          </section>
-
           {/* ── Your five stage scores ── */}
-          <section className="bg-soft-white py-12 md:py-16 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-8 md:py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-8">
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-5">
                 Your five stage scores
               </p>
-              <div className="space-y-8">
+              <div className="space-y-6">
                 {dimensionOrder.map((dim) => {
                   const score = scores[dim];
                   return (
                     <div key={dim}>
-                      <div className="flex items-center gap-3 mb-2">
-                        <img src={dimensionLogos[dim]} alt="" className="w-6 h-6 object-contain shrink-0" />
+                      <div className="flex items-center gap-4 mb-2">
+                        <img src={dimensionLogos[dim]} alt="" className="w-12 h-12 object-contain shrink-0" />
+
                         <div className="flex-1 min-w-0">
                           <p className="font-display text-aubergine text-lg leading-tight">
                             {dimensionMeta[dim].label}
