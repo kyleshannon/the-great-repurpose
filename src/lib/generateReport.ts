@@ -149,7 +149,7 @@ export async function generateReportPDF(data: ReportData) {
 
   doc.setFont("helvetica", "bold");
   doc.setFontSize(8);
-  setColor(doc, AQUA);
+  setColor(doc, INDIGO);
   doc.text("YOUR GREAT REPURPOSE PROFILE", pageWidth / 2, y, { align: "center" });
   y += 12;
 
@@ -256,7 +256,7 @@ export async function generateReportPDF(data: ReportData) {
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(8);
-    setColor(doc, AQUA);
+    setColor(doc, INDIGO);
     doc.text("YOUR PERSONALIZED REPORT", margin, y);
     y += 11;
 
@@ -303,7 +303,7 @@ export async function generateReportPDF(data: ReportData) {
       // Closing page header so the CTA never floats alone
       doc.setFont("helvetica", "bold");
       doc.setFontSize(8);
-      setColor(doc, AQUA);
+      setColor(doc, INDIGO);
       doc.text("WHAT'S NEXT", margin, y);
       y += 11;
 
@@ -334,7 +334,7 @@ export async function generateReportPDF(data: ReportData) {
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(8);
-    setColor(doc, AQUA);
+    setColor(doc, INDIGO);
     doc.text("CONTINUE THE WORK — THE GREAT REPURPOSE ACADEMY", bx, by);
     by += 6;
 
@@ -376,7 +376,7 @@ export async function generateReportPDF(data: ReportData) {
       by += 4.6;
 
       doc.setFontSize(8.5);
-      setColor(doc, AQUA);
+      setColor(doc, INDIGO);
       doc.text(t.url, bx + 5, by);
       by += 8;
     }
