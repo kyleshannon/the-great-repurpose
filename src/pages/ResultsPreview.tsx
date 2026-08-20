@@ -742,8 +742,6 @@ const ResultsPreview = () => {
     }
   };
 
-  };
-
   const handleShareLinkedIn = () => openShare("linkedin");
   const handleShareX = () => openShare("x");
 
