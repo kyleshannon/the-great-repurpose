@@ -742,24 +742,26 @@ const ResultsPreview = () => {
     }
   };
 
-  const handleShareLinkedIn = () => openShare("linkedin");
-  const handleShareX = () => openShare("x");
-
-
   const handleDownloadPDF = async () => {
     if (!scores || !archetype) return;
     setGenerating(true);
     try {
-      const cat = categories[archetype.category];
+      const blob = await buildChartPngBlob().catch(() => null);
+      const chartImage = blob
+        ? await new Promise<string>((resolve) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(String(reader.result));
+            reader.readAsDataURL(blob);
+          })
+        : null;
+
       await generateReportPDF({
         archetype,
-        category: {
-          label: cat.label,
-          description: cat.description,
-          isCapstone: archetype.category === "capstone",
-        },
+        profileTagline: profileCopy[archetypeSlug]?.tagline ?? archetype.tagline,
+        profileDescription: profileCopy[archetypeSlug]?.description ?? archetype.description,
         scores,
         interpretation: interpretationText || "",
+        chartImage,
       });
     } catch (err) {
       console.error("PDF generation failed:", err);
