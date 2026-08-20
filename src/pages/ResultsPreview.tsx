@@ -620,7 +620,7 @@ const ResultsPreview = () => {
               <ResponsiveContainer width="100%" height={360}>
                 <RadarChart data={chartData} outerRadius="58%">
                   <PolarGrid stroke="hsl(230 96% 10% / 0.12)" />
-                  <PolarAngleAxis dataKey="subject" tick={<StageTick />} />
+                  <PolarAngleAxis dataKey="subject" tick={<StageTick scoreBySubject={scoreBySubject} />} />
                   <Radar
                     name="Your Signal"
                     dataKey="value"
