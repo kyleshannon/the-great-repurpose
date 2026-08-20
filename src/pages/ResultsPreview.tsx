@@ -421,6 +421,7 @@ const ResultsPreview = () => {
   const { id: routeId } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const reportRef = useRef<HTMLDivElement>(null);
+  const chartRef = useRef<HTMLDivElement>(null);
 
   const [submitted, setSubmitted] = useState(false);
   const [copied, setCopied] = useState(false);
