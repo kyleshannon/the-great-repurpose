@@ -926,7 +926,7 @@ const ResultsPreview = () => {
           <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
               <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-6 text-center">
-                Learn more about The Great Repurpose Academy Offerings
+                Learn About The Great Repurpose Academy
               </h2>
               <div className="grid gap-6 md:grid-cols-2">
                 {academyOfferings.map((program) => (
