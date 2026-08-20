@@ -663,8 +663,8 @@ const ResultsPreview = () => {
               <p className="text-aubergine/45 text-sm font-sans mb-2">
                 Where you stand across the five stages, 1 to 10.
               </p>
-              <ResponsiveContainer width="100%" height={380}>
-                <RadarChart data={chartData} outerRadius="58%" margin={{ top: 28, right: 28, bottom: 28, left: 28 }}>
+              <ResponsiveContainer width="100%" height={330}>
+                <RadarChart data={chartData} outerRadius="62%" margin={{ top: 24, right: 24, bottom: 8, left: 24 }}>
                   <defs>
                     <linearGradient id="stageStroke" x1="0" y1="0" x2="1" y2="1">
                       <stop offset="0%" stopColor="#152DEC" />
