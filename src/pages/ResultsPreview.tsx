@@ -789,13 +789,13 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── Radar ── */}
-          <section className="bg-soft-white pb-6 px-4 md:px-6 border-t border-aubergine/5 pt-8">
+          <section className="bg-soft-white pb-1 px-4 md:px-6 border-t border-aubergine/5 pt-8">
             <div className="max-w-2xl mx-auto text-center" ref={chartRef}>
               <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-2">
                 The Shape of Your Repurpose Profile
               </h2>
-              <ResponsiveContainer width="100%" height={310}>
-                <RadarChart data={chartData} outerRadius="66%" margin={{ top: 46, right: 34, bottom: 34, left: 34 }}>
+              <ResponsiveContainer width="100%" height={300}>
+                <RadarChart data={chartData} outerRadius="70%" margin={{ top: 56, right: 34, bottom: 8, left: 34 }}>
                   <defs>
                     <radialGradient id="stageFill" cx="50%" cy="50%" r="70%">
                       <stop offset="0%" stopColor="#955CD5" stopOpacity={0.24} />
