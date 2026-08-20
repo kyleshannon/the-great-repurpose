@@ -403,8 +403,8 @@ const ResultsPreview = () => {
 
   if (loading || !scores || !archetype) {
     return (
-      <div className="min-h-screen bg-aubergine text-soft-white flex items-center justify-center">
-        <p className="font-sans text-soft-white/50">Loading your results…</p>
+      <div className="min-h-screen bg-soft-white text-aubergine flex items-center justify-center">
+        <p className="font-sans text-aubergine/50">Loading your results…</p>
       </div>
     );
   }
