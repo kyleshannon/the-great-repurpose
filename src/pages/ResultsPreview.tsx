@@ -538,6 +538,8 @@ const ResultsPreview = () => {
   };
 
   const recommendation = getRecommendations(archetype, scores);
+  const tacticalPractices = getTacticalPractices(scores);
+
 
   return (
     <div className="min-h-screen bg-soft-white text-aubergine">
