@@ -523,53 +523,53 @@ export async function generateReportPDF(data: ReportData) {
       },
     ];
 
-    const gap = 6;
+    const gap = 5;
     const cardW = (contentWidth - gap) / 2;
-    const photoH = (cardW * 9) / 16;
+    const photoH = (cardW * 7) / 16; // shorter photo so the whole block fits on page 4
     const padX = 5;
     const textW = cardW - padX * 2;
 
     // Measure the tallest card so both share a height
-    doc.setFontSize(9.5);
+    doc.setFontSize(9);
     const bodyLines = tracks.map((t) => doc.splitTextToSize(t.desc, textW) as string[]);
     const titleLines = tracks.map((t) => {
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(10);
+      doc.setFontSize(9.5);
       return doc.splitTextToSize(t.title, textW) as string[];
     });
     const cardH =
       photoH +
-      6 +
+      5 +
       Math.max(
         ...tracks.map(
-          (_, i) => 3.8 + titleLines[i].length * 4.8 + 1.5 + bodyLines[i].length * 4.2 + 5.5,
+          (_, i) => 3.5 + titleLines[i].length * 4.5 + 1.5 + bodyLines[i].length * 4 + 5,
         ),
       ) +
-      5;
+      4;
 
     const contactHeading = "Interested in learning more?";
     const contactLine = "Drop us a line at Possibility@TheGreatRepurpose.com";
-    const contactBlockHeight = 34;
-    const contactBlockTotal = contactBlockHeight + 8;
-    const headingHeight = 13; // section title + spacing
+    const contactBlockHeight = 26;
+    const contactBlockTotal = contactBlockHeight + 6;
+    const headingHeight = 11; // section title + spacing
 
-    // Keep the academy cards and the contact block on the same page.
+    // Keep the academy cards and the contact block on the same page (page 4).
     const totalBlockHeight = cardH + headingHeight + contactBlockTotal;
-    ensureSpace(totalBlockHeight + 8);
+    ensureSpace(totalBlockHeight + 6);
     y += 2;
 
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(13);
+    doc.setFontSize(12);
     setColor(doc, AUBERGINE);
     y = renderWrappedText(
       "Learn About The Great Repurpose Academy",
       0,
       y,
       contentWidth,
-      6.5,
+      6,
       "center",
     );
-    y += 4;
+    y += 3;
 
     tracks.forEach((t, i) => {
       const cx = margin + i * (cardW + gap);
@@ -589,32 +589,32 @@ export async function generateReportPDF(data: ReportData) {
       doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
       doc.line(cx, y + photoH, cx + cardW, y + photoH);
 
-      let ty = y + photoH + 6;
+      let ty = y + photoH + 5;
 
       doc.setFont("helvetica", "bold");
       doc.setFontSize(7);
       setColor(doc, t.color);
       doc.text(t.eyebrow.toUpperCase(), cx + padX, ty);
-      ty += 5;
+      ty += 4.5;
 
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(10);
+      doc.setFontSize(9.5);
       setColor(doc, AUBERGINE);
       doc.text(titleLines[i], cx + padX, ty);
-      ty += titleLines[i].length * 4.8 + 1.5;
+      ty += titleLines[i].length * 4.5 + 1.5;
 
       doc.setFont("helvetica", "normal");
-      doc.setFontSize(9.5);
+      doc.setFontSize(9);
       setColor(doc, MUTED);
       doc.text(bodyLines[i], cx + padX, ty);
-      ty += bodyLines[i].length * 4.2 + 4.5;
+      ty += bodyLines[i].length * 4 + 4;
 
-      doc.setFontSize(8);
+      doc.setFontSize(7.5);
       setColor(doc, INDIGO);
       doc.text(t.url, cx + padX, ty);
     });
 
-    y += cardH + 6;
+    y += cardH + 4;
 
     // ── Interested in learning more ────────────────────────────────────────────
     // Set fill color immediately before drawing to avoid a stale/default fill.
@@ -622,23 +622,23 @@ export async function generateReportPDF(data: ReportData) {
     doc.rect(margin, y, contentWidth, contactBlockHeight, "F");
 
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(13);
+    doc.setFontSize(12);
     setColor(doc, [255, 255, 255]);
-    doc.text(contactHeading, pageWidth / 2, y + 11, { align: "center" });
+    doc.text(contactHeading, pageWidth / 2, y + 9, { align: "center" });
 
     doc.setFont("helvetica", "normal");
-    doc.setFontSize(10);
+    doc.setFontSize(9.5);
     setColor(doc, [255, 255, 255]);
     const lineParts = contactLine.split("Possibility@TheGreatRepurpose.com");
     const prefix = lineParts[0];
     const email = "Possibility@TheGreatRepurpose.com";
     const lineWidth = doc.getTextWidth(contactLine);
     const startX = (pageWidth - lineWidth) / 2;
-    doc.text(prefix, startX, y + 20);
+    doc.text(prefix, startX, y + 17);
     setColor(doc, AQUA);
-    doc.text(email, startX + doc.getTextWidth(prefix), y + 20);
+    doc.text(email, startX + doc.getTextWidth(prefix), y + 17);
 
-    y += contactBlockHeight + 8;
+    y += contactBlockHeight + 6;
   }
 
   // ── Footers on every page ──────────────────────────────────────────────────
