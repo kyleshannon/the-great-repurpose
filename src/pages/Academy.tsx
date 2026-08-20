@@ -111,7 +111,7 @@ const Academy = () => {
           <section
             key={program.id}
             id={program.id}
-            className={`${i % 2 === 0 ? "bg-soft-white" : "bg-soft-white/60"} scroll-mt-24 md:scroll-mt-28 py-16 md:py-24 px-6`}
+            className={`${i % 2 === 0 ? "bg-soft-white" : "bg-soft-white/60"} scroll-mt-24 md:scroll-mt-28 py-8 md:py-12 px-6`}
           >
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-start">
               <ScrollFadeUp className={i % 2 === 0 ? "" : "md:order-2"}>
@@ -140,16 +140,6 @@ const Academy = () => {
                   ))}
                 </div>
                 <ScrollFadeUp delay={200}>
-                  <ul className={`border-t ${program.border} divide-y ${program.border} mb-6`}>
-                    {program.points.map((point) => (
-                      <li key={point} className="font-sans text-aubergine/80 text-sm py-3">
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="font-sans text-aubergine/50 text-xs uppercase tracking-[0.14em] mb-6">
-                    {program.footnote}
-                  </p>
                   <Link
                     to={program.href}
                     className="inline-flex items-center gap-2 border border-aubergine/30 text-aubergine font-sans font-semibold text-xs uppercase tracking-widest px-6 py-3 rounded-full hover:bg-aubergine hover:text-soft-white transition-colors"
@@ -163,20 +153,20 @@ const Academy = () => {
         ))}
 
         {/* CTA */}
-        <section className="bg-aubergine constellation-bg py-20 px-6 text-center">
+        <section className="bg-aubergine constellation-bg py-16 px-6 text-center">
           <ScrollFadeUp>
             <h2 className="font-display text-soft-white text-2xl md:text-3xl mb-3">
-              Not sure which one is yours?
+              Interested in learning more?
             </h2>
-            <p className="font-body text-soft-white/60 text-lg mb-10 max-w-xl mx-auto">
-              Start with your Repurpose Profile. It shows you where you are across the five stages and points you toward the right next step.
+            <p className="font-body text-soft-white/60 text-lg mb-2 max-w-xl mx-auto">
+              Drop us a line at{" "}
+              <a
+                href="mailto:Possibility@TheGreatRepurpose.com"
+                className="text-aqua hover:underline"
+              >
+                Possibility@TheGreatRepurpose.com
+              </a>
             </p>
-            <Link
-              to="/selfcheck"
-              className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
-            >
-              Get Your Profile →
-            </Link>
           </ScrollFadeUp>
         </section>
       </main>
