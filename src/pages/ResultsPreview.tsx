@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 import { ChevronDown } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { matchArchetype, getArchetypeSlug, categories, getRecommendations, type Scores, type Archetype } from "@/lib/archetypes";
+import { matchArchetype, getArchetypeSlug, categories, getRecommendations, profileCopy, getStageScoreNote, getTacticalPractices, type Scores, type Archetype } from "@/lib/archetypes";
 import { generateReportPDF } from "@/lib/generateReport";
 
 import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
@@ -54,37 +54,61 @@ const dimensionColors: Record<DimensionKey, string> = {
 const chartLabels: { subject: string; logo: string; color: string }[] = [
   { subject: "Unhook Identity", logo: logoIndigo.url, color: "#152DEC" },
   { subject: "Reclaim Value", logo: logoAqua.url, color: "#06B7B2" },
-  { subject: "Find Your Purpose", logo: logoOrchid.url, color: "#955CD5" },
-  { subject: "Discover AI's Power", logo: logoCitrus.url, color: "#A67606" },
-  { subject: "Start Creating", logo: logoPoppy.url, color: "#FC5430" },
+  { subject: "Discover Purpose", logo: logoOrchid.url, color: "#955CD5" },
+  { subject: "Become AI Ready", logo: logoCitrus.url, color: "#A67606" },
+  { subject: "Relaunch Yourself", logo: logoPoppy.url, color: "#FC5430" },
 ];
 
 function StageTick(props: any) {
-  const { x, y, payload, textAnchor } = props;
+  const { x, y, payload, textAnchor, scoreBySubject } = props;
   const meta = chartLabels.find((c) => c.subject === payload.value);
-  const size = 16;
-  const above = y < 160;
-  const imgY = above ? y - size - 12 : y - 4;
-  const textY = above ? y - 6 : y + size + 8;
+  const size = 14;
+  const label = String(payload.value);
+  const score = scoreBySubject?.[label];
+  // Approximate label width so the icon can sit just left of the text.
+  const labelWidth = label.length * 5.6;
+  const anchor = textAnchor === "middle" ? "middle" : textAnchor;
+  const textStart =
+    anchor === "middle" ? x - labelWidth / 2 : anchor === "end" ? x - labelWidth : x;
+  const iconX = textStart - size - 4;
+  // The top vertex sits above the chart, so lift its label/score clear of the grid.
+  const isTop = anchor === "middle" && y < 140;
+  const labelY = isTop ? y - 16 : y;
+  const scoreY = labelY + 14;
+
   return (
     <g>
-      {meta && (
-        <image href={meta.logo} x={x - size / 2} y={imgY} width={size} height={size} />
-      )}
+      {meta && <image href={meta.logo} x={iconX} y={labelY - size / 2 - 4} width={size} height={size} />}
       <text
         x={x}
-        y={textY}
-        textAnchor={textAnchor}
+        y={labelY}
+        textAnchor={anchor}
         fill={meta?.color ?? "#010F32"}
         fontSize={11}
         fontFamily="Inter"
         fontWeight={600}
       >
-        {payload.value}
+        {label}
       </text>
+      {typeof score === "number" && (
+        <text
+          x={x}
+          y={scoreY}
+          textAnchor={anchor}
+          fill="#010F32"
+          fillOpacity={0.55}
+          fontSize={11}
+          fontFamily="Inter"
+          fontWeight={700}
+        >
+          {score.toFixed(1)}
+        </text>
+      )}
     </g>
   );
+
 }
+
 
 function getLowestDimension(scores: Record<DimensionKey, number>): DimensionKey {
   return (Object.entries(scores) as [DimensionKey, number][]).reduce(
@@ -267,10 +291,11 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
 
   return (
     <div className="border border-aubergine/10 rounded-xl p-8 text-center bg-white">
-      <h2 className="font-display text-aubergine text-xl mb-2">Your full Great Repurpose Profile is ready.</h2>
+      <h2 className="font-display text-aubergine text-xl mb-2">Enter your email to read your report.</h2>
       <p className="font-sans text-aubergine/50 text-sm mb-6 max-w-md mx-auto">
-        We'll show you what your profile means, where you're strongest, what to watch out for — and the one thing that would help you most right now.
+        Your full report covers what your profile means, where you're strongest, what to watch out for — and what to work on next.
       </p>
+
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <label htmlFor="email-input" className="sr-only">Email address</label>
         <input
@@ -412,10 +437,15 @@ const ResultsPreview = () => {
   const chartData = [
     { subject: "Unhook Identity", value: scores.identity, fullMark: 10 },
     { subject: "Reclaim Value", value: scores.value, fullMark: 10 },
-    { subject: "Find Your Purpose", value: scores.purpose, fullMark: 10 },
-     { subject: "Discover AI's Power", value: scores.ai_relationship, fullMark: 10 },
-     { subject: "Start Creating", value: scores.creative_action, fullMark: 10 },
+    { subject: "Discover Purpose", value: scores.purpose, fullMark: 10 },
+     { subject: "Become AI Ready", value: scores.ai_relationship, fullMark: 10 },
+     { subject: "Relaunch Yourself", value: scores.creative_action, fullMark: 10 },
   ];
+
+  const scoreBySubject: Record<string, number> = Object.fromEntries(
+    chartData.map((d) => [d.subject, d.value])
+  );
+
 
   const selfCheckUrl = `${window.location.origin}/selfcheck`;
   const resultUrl = resultId ? `${window.location.origin}/results/${resultId}` : null;
@@ -538,6 +568,8 @@ const ResultsPreview = () => {
   };
 
   const recommendation = getRecommendations(archetype, scores);
+  const tacticalPractices = getTacticalPractices(scores);
+
 
   return (
     <div className="min-h-screen bg-soft-white text-aubergine">
@@ -545,17 +577,17 @@ const ResultsPreview = () => {
       <main id="main-content">
 
       {!submitted ? (
-        /* ── Pre-email: simple prompt + email gate ── */
+        /* ── Pre-email: profile reveal + email gate ── */
         <section className="bg-soft-white min-h-screen flex items-center justify-center px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-16">
           <div className="max-w-2xl mx-auto w-full text-center">
-            <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">
-              Your Results
+            <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
+              Your Repurpose Profile is:
             </p>
             <h1 className="font-display text-aubergine text-4xl md:text-5xl mb-4">
-              Your Great Repurpose Report is ready.
+              {archetype.name}
             </h1>
-            <p className="font-sans text-aubergine/60 text-base mb-10">
-              Enter your email to unlock your personalized report — including your Great Repurpose Profile, where you stand across the five dimensions, and what to do next.
+            <p className="font-display text-aubergine/70 text-lg italic mb-10">
+              {profileCopy[archetypeSlug]?.tagline ?? archetype.tagline}
             </p>
 
             <EmailGate onSuccess={handleEmailSuccess} />
@@ -566,36 +598,40 @@ const ResultsPreview = () => {
           {/* ── PDF-capturable report section ── */}
           <div ref={reportRef}>
 
-          {/* ── Archetype hero + radar ── */}
-          <section className="bg-soft-white pt-20 md:pt-28 pb-8 md:pb-12 px-4 md:px-6">
+          {/* ── Profile hero ── */}
+          <section className="bg-soft-white pt-20 md:pt-28 pb-6 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">Your Great Repurpose Profile</p>
-              {(() => {
-                const cat = categories[archetype.category];
-                const isAmplifier = archetype.category === "capstone";
-                return (
-                  <>
-                    <h1 className="font-display text-aubergine text-3xl md:text-4xl leading-tight mb-3">
-                      {isAmplifier ? (
-                        <>You've made it through. <span className="block md:inline">Meet <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
-                      ) : (
-                        <>You're a <span className="font-semibold">{cat.label}</span>. <span className="block md:inline">Specifically: <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
-                      )}
-                    </h1>
-                    <p className="font-sans text-aubergine/60 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-3">
-                      {cat.description}
-                    </p>
-                    <p className="font-display text-aubergine/70 text-lg italic mb-10">
-                      {archetype.tagline}
-                    </p>
-                  </>
-                );
-              })()}
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">You are:</p>
+              <h1 className="font-display text-aubergine text-4xl md:text-5xl leading-tight mb-3">
+                {archetype.name}
+              </h1>
+              <p className="font-display text-aubergine/70 text-lg italic">
+                {profileCopy[archetypeSlug]?.tagline ?? archetype.tagline}
+              </p>
+            </div>
+          </section>
 
-              <ResponsiveContainer width="100%" height={340}>
-                <RadarChart data={chartData} outerRadius="62%">
+          {/* ── The risk at this stage ── */}
+          <section className="bg-soft-white pb-10 px-4 md:px-6">
+            <div className="max-w-2xl mx-auto">
+              <div className="border-l-2 border-poppy pl-5 md:pl-6">
+                <p className="text-poppy font-sans text-xs uppercase tracking-widest mb-2">
+                  The risk at this stage
+                </p>
+                <p className="font-sans text-aubergine/80 text-base leading-relaxed">
+                  {archetype.vulnerability}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* ── Radar ── */}
+          <section className="bg-soft-white pb-8 px-4 md:px-6">
+            <div className="max-w-2xl mx-auto text-center">
+              <ResponsiveContainer width="100%" height={360}>
+                <RadarChart data={chartData} outerRadius="55%" margin={{ top: 24, right: 24, bottom: 24, left: 24 }}>
                   <PolarGrid stroke="hsl(230 96% 10% / 0.12)" />
-                  <PolarAngleAxis dataKey="subject" tick={<StageTick />} />
+                  <PolarAngleAxis dataKey="subject" tick={<StageTick scoreBySubject={scoreBySubject} />} />
                   <Radar
                     name="Your Signal"
                     dataKey="value"
@@ -606,7 +642,7 @@ const ResultsPreview = () => {
                   />
                 </RadarChart>
               </ResponsiveContainer>
-              <p className="text-aubergine/40 text-xs font-sans mt-2">Your shape across the five dimensions</p>
+              <p className="text-aubergine/40 text-xs font-sans mt-2">Your shape across the five stages</p>
 
               <button
                 onClick={handleDownloadPDF}
@@ -618,44 +654,58 @@ const ResultsPreview = () => {
             </div>
           </section>
 
-
-
-          {/* ── About this profile (static description) ── */}
-          <section className="bg-soft-white py-12 md:py-16 px-6">
+          {/* ── Profile definition ── */}
+          <section className="bg-soft-white py-10 md:py-14 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
-                About {archetype.name}
-              </p>
-              <p className="font-sans text-aubergine/80 text-base leading-relaxed mb-4">
-                {archetype.description}
-              </p>
-              <p className="font-sans text-aubergine/60 text-base leading-relaxed italic">
-                {archetype.vulnerability}
+              <p className="font-sans text-aubergine/80 text-base md:text-lg leading-relaxed">
+                {profileCopy[archetypeSlug]?.description ?? archetype.description}
               </p>
             </div>
           </section>
 
-          {/* ── Primary recommendation ── */}
-          <section className="bg-soft-white py-12 md:py-16 px-6">
+          {/* ── Your five stage scores ── */}
+          <section className="bg-soft-white py-12 md:py-16 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <div className="border border-aubergine/10 rounded-xl p-8 md:p-10 bg-white">
-                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
-                  What to work on next
-                </p>
-                <h3 className="font-display text-aubergine text-xl md:text-2xl mb-3">
-                  {dimensionMeta[recommendation.focus].label}
-                </h3>
-                <p className="font-sans text-aubergine/60 text-base leading-relaxed mb-8">
-                  {recommendation.body}
-                </p>
-                <div className="space-y-5">
-                  {recommendation.practices.map((step) => (
-                    <div key={step.label} className="border-l-2 border-indigo/40 pl-5">
-                      <p className="font-display text-aubergine text-base mb-1">{step.label}</p>
-                      <p className="font-sans text-aubergine/55 text-sm leading-relaxed">{step.desc}</p>
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-8">
+                Your five stage scores
+              </p>
+              <div className="space-y-8">
+                {dimensionOrder.map((dim) => {
+                  const score = scores[dim];
+                  return (
+                    <div key={dim}>
+                      <div className="flex items-center gap-3 mb-2">
+                        <img src={dimensionLogos[dim]} alt="" className="w-6 h-6 object-contain shrink-0" />
+                        <div className="flex-1 min-w-0">
+                          <p className="font-display text-aubergine text-lg leading-tight">
+                            {dimensionMeta[dim].label}
+                          </p>
+                          <p className="font-sans text-xs text-aubergine/40">
+                            {dimensionMeta[dim].stage}
+                          </p>
+                        </div>
+                        <p
+                          className="font-display text-2xl font-bold shrink-0"
+                          style={{ color: dimensionColors[dim] }}
+                        >
+                          {score.toFixed(1)}
+                        </p>
+                      </div>
+                      <div className="relative h-2 bg-aubergine/10 rounded-full overflow-hidden mb-3">
+                        <div
+                          className="absolute inset-y-0 left-0 rounded-full"
+                          style={{
+                            width: `${Math.max(((score - 1) / 9) * 100, 3)}%`,
+                            background: dimensionColors[dim],
+                          }}
+                        />
+                      </div>
+                      <p className="font-sans text-aubergine/65 text-sm leading-relaxed">
+                        {getStageScoreNote(dim, score)}
+                      </p>
                     </div>
-                  ))}
-                </div>
+                  );
+                })}
               </div>
             </div>
           </section>
@@ -664,7 +714,7 @@ const ResultsPreview = () => {
           <section className="bg-soft-white py-12 md:py-16 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
               <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-6">
-                Your Personalized Report
+                Insights About Your Profile
               </p>
 
               {streamError ? (
@@ -682,61 +732,28 @@ const ResultsPreview = () => {
             </div>
           </section>
 
-          {/* ── Dimension breakdown (collapsible) ── */}
-          <section className="bg-soft-white py-12 px-6 border-t border-aubergine/5">
-            <div className="max-w-4xl mx-auto">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-6 text-center">
-                Dimension by Dimension
-              </p>
-              <div className="space-y-3">
-                {dimensionOrder.map((dim) => {
-                  const score = scores[dim];
-                  const isOpen = expandedDims.has(dim);
-                  return (
-                    <div key={dim} className="border border-aubergine/10 rounded-lg bg-white">
-                      <button
-                        onClick={() => toggleDim(dim)}
-                        className="w-full flex items-center justify-between p-6 text-left"
-                      >
-                        <div className="flex items-center gap-3">
-                          <img src={dimensionLogos[dim]} alt="" className="w-6 h-6 object-contain shrink-0" />
-                          <div>
-                            <p className="font-sans text-sm uppercase tracking-widest text-indigo font-medium">
-                              {dimensionMeta[dim].label}
-                            </p>
-                            <p className="font-sans text-xs text-aubergine/40">
-                              {dimensionMeta[dim].stage}
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex items-center gap-3">
-                          <p className="font-display text-2xl font-bold text-aubergine">
-                            {score.toFixed(1)}
-                          </p>
-                          <ChevronDown
-                            className={`w-4 h-4 text-aubergine/40 transition-transform ${isOpen ? "rotate-180" : ""}`}
-                          />
-                        </div>
-                      </button>
-                      {isOpen && (
-                        <div className="px-6 pb-6">
-                          <div className="relative h-2 bg-aubergine/10 rounded-full mb-4 overflow-hidden">
-                            <div
-                              className="absolute inset-y-0 left-0 rounded-full"
-                              style={{
-                                width: `${((score - 1) / 9) * 100}%`,
-                                background: dimensionColors[dim],
-                              }}
-                            />
-                          </div>
-                          <p className="font-sans text-sm text-aubergine/60">
-                            Score: {score.toFixed(1)} / 10
-                          </p>
-                        </div>
-                      )}
+          {/* ── What to work on next (tactical) ── */}
+          <section className="bg-soft-white py-12 md:py-16 px-6 border-t border-aubergine/5">
+            <div className="max-w-2xl mx-auto">
+              <div className="border border-aubergine/10 rounded-xl p-8 md:p-10 bg-white">
+                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
+                  What to work on next
+                </p>
+                <p className="font-sans text-aubergine/60 text-base leading-relaxed mb-8">
+                  Not a stage to go conquer — three concrete things you could actually do in the next month, chosen from where your scores are thinnest.
+                </p>
+                <div className="space-y-5">
+                  {tacticalPractices.map(({ stage, action }) => (
+                    <div
+                      key={action.label}
+                      className="border-l-2 pl-5"
+                      style={{ borderColor: dimensionColors[stage] }}
+                    >
+                      <p className="font-display text-aubergine text-base mb-1">{action.label}</p>
+                      <p className="font-sans text-aubergine/55 text-sm leading-relaxed">{action.desc}</p>
                     </div>
-                  );
-                })}
+                  ))}
+                </div>
               </div>
             </div>
           </section>
@@ -764,6 +781,7 @@ const ResultsPreview = () => {
               </a>
             </div>
           </section>
+
 
           {/* Share + Download */}
           <section className="bg-soft-white py-16 px-6 border-t border-aubergine/5">
