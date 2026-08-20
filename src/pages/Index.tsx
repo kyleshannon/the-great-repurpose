@@ -318,6 +318,11 @@ const Index = () => {
                         />
                       </div>
                       <div className={`flex-1 ${imageRight ? "md:order-1" : ""}`}>
+                        {i === 0 && (
+                          <h2 className="font-display text-aubergine text-2xl md:text-3xl leading-tight mb-3">
+                            The Stages...
+                          </h2>
+                        )}
                         <div className="flex items-center gap-3 mb-2">
                           <img
                             src={stageLogos[phase.color]}
