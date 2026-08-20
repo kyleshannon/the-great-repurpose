@@ -132,7 +132,7 @@ const Index = () => {
                     <span className="text-citrus">Repurpose.</span>
                   </h1>
                   <p className="font-body text-soft-white/80 text-base md:text-lg max-w-md leading-relaxed mb-6">
-                    The Great Repurpose is a movement for people navigating the human side of reinvention — so you can create meaningful value in an AI-shaped world.
+                    The Great Repurpose is a movement for people navigating the coming disruption in work as an opportunity for reinvention — so you can create meaningful value in an AI-shaped world.
                   </p>
                   <Link
                     to="/selfcheck"
