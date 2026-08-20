@@ -1026,74 +1026,18 @@ const ResultsPreview = () => {
           </div>{/* end reportRef */}
 
 
-          {/* ── Where to go from here ── */}
-          <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
-            <div className="max-w-2xl mx-auto">
-              <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-5 text-center">
-                Doing this alone is harder than it needs to be. Based on your profile, here's where to go next.
-              </p>
-              <a
-                href={recommendation.track.href}
-                target={recommendation.track.href?.startsWith("http") ? "_blank" : undefined}
-                rel="noopener noreferrer"
-                className="block border border-aubergine/20 rounded-lg p-6 hover:border-indigo/40 transition-colors group bg-white"
-              >
-                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-2">Recommended for you</p>
-                <h3 className="font-display text-aubergine text-xl mb-2 group-hover:text-indigo transition-colors">
-                  {recommendation.track.label}
-                </h3>
-                <p className="font-sans text-aubergine/60 text-base leading-relaxed">{recommendation.track.desc}</p>
-              </a>
-            </div>
-          </section>
-
-
-          {/* Share + Download */}
+          {/* Download */}
           <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-display text-aubergine text-2xl mb-2">Share your Great Repurpose Profile.</h2>
-              <p className="font-sans text-aubergine/50 text-sm mb-3 whitespace-pre-line max-w-md mx-auto">
-                {shareText}
-              </p>
-               <Link to="/types" className="inline-block text-indigo font-sans text-sm hover:underline mb-5">
-                 Explore all 10 Great Repurpose Profiles →
-              </Link>
-              <div className="flex flex-wrap justify-center gap-2">
-                <button
-                  onClick={handleDownloadPDF}
-                  disabled={generating}
-                  className="bg-indigo text-soft-white font-sans text-xs font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
-                >
-                  {generating ? "Generating…" : "Download PDF Report"}
-                </button>
-                {resultUrl && (
-                  <button
-                    onClick={handleCopyLink}
-                    className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
-                  >
-                    {copied ? "Copied ✓" : "Copy Link"}
-                  </button>
-                )}
-                <button
-                  onClick={handleShareLinkedIn}
-                  className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
-                >
-                  Share on LinkedIn
-                </button>
-                <button
-                  onClick={handleShareX}
-                  className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
-                >
-                  Share on X
-                </button>
-              </div>
-              <p className="font-sans text-aubergine/45 text-xs mt-3 max-w-md mx-auto">
-                {sharePrepped
-                  ? "Your profile graph is on your clipboard (and saved to downloads). Paste it into the post."
-                  : "Sharing saves your profile graph so you can attach or paste it into the post."}
-              </p>
+              <h2 className="font-display text-aubergine text-2xl mb-4">Download your Great Repurpose Profile.</h2>
+              <button
+                onClick={handleDownloadPDF}
+                disabled={generating}
+                className="bg-indigo text-soft-white font-sans text-sm font-medium px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
+              >
+                {generating ? "Generating…" : "Download PDF Report"}
+              </button>
             </div>
-
           </section>
         </>
       )}
