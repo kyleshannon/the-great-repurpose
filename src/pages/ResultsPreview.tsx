@@ -154,32 +154,27 @@ function scoresToArchetypeInput(scores: Record<DimensionKey, number>): Scores {
 
 // ── Render markdown sections ─────────────────────────────────────────────────
 
+function MarkdownParas({ body }: { body: string }) {
+  return (
+    <div className="font-sans text-aubergine/80 text-base leading-relaxed space-y-4">
+      {body.split("\n\n").filter(Boolean).map((para, j) => (
+        <p key={j} dangerouslySetInnerHTML={{
+          __html: para
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-indigo hover:underline">$1</a>')
+            .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        }} />
+      ))}
+    </div>
+  );
+}
+
 function InterpretationRenderer({ text, streaming }: { text: string; streaming: boolean }) {
-  const sections: { title: string; body: string }[] = [];
-  const parts = text.split(/^## /m);
-
-  if (parts[0]?.trim()) {
-    sections.push({ title: "", body: parts[0].trim() });
-  }
-
-  for (let i = 1; i < parts.length; i++) {
-    const newlineIdx = parts[i].indexOf("\n");
-    if (newlineIdx === -1) {
-      sections.push({ title: parts[i].trim(), body: "" });
-    } else {
-      sections.push({
-        title: parts[i].slice(0, newlineIdx).trim(),
-        body: parts[i].slice(newlineIdx + 1).trim(),
-      });
-    }
-  }
-
-  if (sections.length === 0 && text.trim()) {
-    sections.push({ title: "", body: text.trim() });
-  }
+  // "Your Next Move" is relocated into the "What to work on next" section.
+  const sections = parseInterpretationSections(text).filter((s) => !isNextMoveTitle(s.title));
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-8">
+
       {sections.map((section, i) => (
         <div key={i}>
           {section.title && (
