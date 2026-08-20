@@ -505,13 +505,15 @@ const ResultsPreview = () => {
     );
   }
 
+  // Clockwise from the top: Identity, Purpose, Relaunch, AI Ready, Value.
   const chartData = [
     { subject: "Unhook Identity", value: scores.identity, fullMark: 10 },
-    { subject: "Reclaim Value", value: scores.value, fullMark: 10 },
     { subject: "Discover Purpose", value: scores.purpose, fullMark: 10 },
-     { subject: "Become AI Ready", value: scores.ai_relationship, fullMark: 10 },
-     { subject: "Relaunch Yourself", value: scores.creative_action, fullMark: 10 },
+    { subject: "Relaunch Yourself", value: scores.creative_action, fullMark: 10 },
+    { subject: "Become AI Ready", value: scores.ai_relationship, fullMark: 10 },
+    { subject: "Reclaim Value", value: scores.value, fullMark: 10 },
   ];
+
 
   const scoreBySubject: Record<string, number> = Object.fromEntries(
     chartData.map((d) => [d.subject, d.value])
