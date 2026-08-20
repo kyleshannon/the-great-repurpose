@@ -1,32 +1,40 @@
 # The Great Repurpose
 
-> Reclaiming agency, meaning, and value in the age of AI. The Great Repurpose names the identity crisis underneath AI workforce disruption and offers a path through it: five stages, ten Repurpose Profiles, and two organizational programs — the Executive Leadership Academy and the TGR Transition Academy.
+> You weren't meant to be replaced. It's time to Repurpose. The Great Repurpose names the identity crisis underneath AI workforce disruption and offers a path through it: five stages, ten Repurpose Profiles, and two organizational programs — the Executive Leadership Academy and the TGR Transition Academy.
 
-The Great Repurpose is a movement and a set of programs for people and organizations whose work and identity are being reshaped by AI. Individuals take a free 7-question assessment to find their Repurpose Profile. Organizations engage TGR Academy: leadership training for executives making AI-era workforce decisions, and transition support for employees whose roles have ended.
+The Great Repurpose is a movement and a set of programs for people and organizations whose work and identity are being reshaped by AI. The premise: it's not us versus AI, it's us amplified by AI. Individuals take a free 7-question Repurpose Profile assessment. Organizations engage TGR Academy: leadership training for executives making AI-era workforce decisions, and transition support for employees whose roles have ended.
 
-Founded by Kyle Shannon. Site: https://thegreatrepurpose.com/
+Founded by Kyle Shannon with Andee Harris. Site: https://thegreatrepurpose.com/
 
-## The five stages
+## The five stages of The Great Repurpose
 
-1. Unhook Identity — separate who you are from the title you held.
-2. Reclaim Value — name the value you actually create, independent of a role.
-3. Find Your Purpose — aim that value at something worth building.
-4. Discover AI's Power — develop real, practical AI agency, not another upskilling checklist.
-5. Start Creating — ship work into the world; the relaunch.
-
-## For organizations (TGR Academy)
-
-- [TGR Academy](https://thegreatrepurpose.com/academy): Overview of both programs, who they are for, and how to engage.
-- [Executive Leadership Academy](https://thegreatrepurpose.com/academy/leadership): For CEOs, COOs, CHROs, heads of talent, and workforce transformation leads. An eight-hour immersive workshop plus ninety-minute implementation sessions every two weeks for three months, applied to the real workforce, technology, and organizational decisions already on the table. Four parts: understand the implications of AI, shift your leadership mindset, build executive AI readiness, and find and support your people before defaulting to headcount cuts. Premise: 95% of GenAI pilots show no measurable impact — the gap is leadership, not technology.
-- [TGR Transition Academy](https://thegreatrepurpose.com/academy/transition): Outplacement reimagined for an AI-shaped future. For HR and people teams supporting departing employees. Traditional outplacement polishes resumes for jobs that are disappearing; the Transition Academy moves a cohort through the five stages together — unhooking identity, reclaiming value, and building AI agency to relaunch. Runs standalone or layered onto an existing outplacement vendor. Premise: 70% of the skills used in most jobs will change by 2030.
+1. Unhook Identity — "I'm not my job." Separate your worth from the title, craft, task list, or workflow AI may be disrupting. You are more than the work you used to perform.
+2. Reclaim Value — "Here's who I am." Name the durable human layer underneath the tasks: taste, judgment, perspective, trust, relationships, and lived experience.
+3. Discover Purpose — "What matters to me." Point your reclaimed value toward a problem, audience, community, or contribution that gives your next chapter direction.
+4. Become AI Ready — "Understand AI's power to amplify your ideas." Put yourself at the center and explore AI without expectations. Play is how you find out what you can actually do with it.
+5. Relaunch Yourself — "Turn who you are into work, opportunity, and income." Turn who you are into visible work, real opportunities, and income that no longer depends on one employer.
 
 ## For individuals
 
-- [Repurpose Profile assessment](https://thegreatrepurpose.com/selfcheck): Free 7-question, 2-minute self check that scores you across the five stages.
-- [The 10 Repurpose Profiles](https://thegreatrepurpose.com/types): Identity Seekers (The Unlocker, The Awakener, The Explorer), Direction Finders (The Firestarter, The Translator, The Original), Builders in Motion (The Compass, The Architect, The Catalyst), and The Amplifier.
+- [Repurpose Profile assessment](https://thegreatrepurpose.com/selfcheck): Free 7-question, 2-minute self check scoring you across the five stages. Results include your profile definition, an automation-risk read, a radar across Identity, Purpose, Relaunch, AI Ready, and Value, stage-by-stage scores, AI-generated insights, tactical recommendations, and a downloadable PDF report.
+- [The 10 Repurpose Profiles](https://thegreatrepurpose.com/types): Grouped by where you are on the journey.
+  - Identity Seekers — the work right now is inner: who are you when the title falls away? The Unlocker, The Awakener, The Explorer.
+  - Direction Finders — you know yourself; now the work is aiming it at something that matters. The Firestarter, The Translator, The Original.
+  - Builders in Motion — the foundation is set; the work is shipping, not preparing. The Compass, The Architect, The Catalyst.
+  - The Amplifier — you've made it through. Now the real work begins.
 - [The Five Stages](https://thegreatrepurpose.com/phases): Detailed breakdown of each stage and what the work looks like there.
+
+## For organizations (TGR Academy)
+
+- [TGR Academy](https://thegreatrepurpose.com/academy): Lighting the path forward into the future of work. Overview of both programs, who they are for, and how to engage.
+- [Executive Leadership Academy](https://thegreatrepurpose.com/academy/leadership): An executive workshop and implementation program for leading through the AI transition. For CEOs, COOs, CHROs, heads of talent, and workforce transformation leads. An eight-hour immersive workshop plus ninety-minute implementation sessions every two weeks for three months, applied to the real workforce, technology, and organizational decisions already on the table. Premise: 95% of enterprise GenAI pilots show no measurable P&L impact, 55% of leaders who cut staff for AI say those were the wrong calls, and 70% of the skills used in most jobs will change by 2030 — the gap is leadership, not technology.
+- [TGR Transition Academy](https://thegreatrepurpose.com/academy/transition): Outplacement reimagined for an AI-shaped future. For HR and people teams supporting departing employees. Traditional outplacement polishes resumes for jobs that are disappearing; the Transition Academy moves a cohort through the five stages together — unhooking identity, reclaiming value, discovering purpose, becoming AI ready, and relaunching. Runs standalone or layered onto an existing outplacement vendor.
 
 ## Other
 
-- [About](https://thegreatrepurpose.com/about): The project, its philosophy, and founder Kyle Shannon.
+- [About](https://thegreatrepurpose.com/about): The origin of the movement, its philosophy, and founders Kyle Shannon and Andee Harris.
 - [Daily Signal](https://thegreatrepurpose.com/signals): Daily briefings on AI news mapped to the five stages. RSS: https://thegreatrepurpose.com/signals.xml
+
+## Contact
+
+Reach out to learn more: Possibility@TheGreatRepurpose.com
