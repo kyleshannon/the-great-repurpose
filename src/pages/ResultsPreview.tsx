@@ -614,19 +614,84 @@ const ResultsPreview = () => {
     }
   };
 
-  const handleShareLinkedIn = () => {
-    const url = encodeURIComponent(resultUrl || selfCheckUrl);
-    const text = encodeURIComponent(shareText);
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&summary=${text}`, "_blank");
+  /** Renders the radar SVG (with its stage logos inlined) to a downloadable PNG. */
+  const downloadChartImage = async () => {
+    const svg = chartRef.current?.querySelector("svg");
+    if (!svg) return;
+    const clone = svg.cloneNode(true) as SVGSVGElement;
+    const width = svg.clientWidth || 640;
+    const height = svg.clientHeight || 340;
+    clone.setAttribute("width", String(width));
+    clone.setAttribute("height", String(height));
+
+    // Inline the logo bitmaps so the serialized SVG is self-contained.
+    const images = Array.from(clone.querySelectorAll("image"));
+    await Promise.all(
+      images.map(async (img) => {
+        const href = img.getAttribute("href") || img.getAttribute("xlink:href");
+        if (!href || href.startsWith("data:")) return;
+        try {
+          const blob = await (await fetch(href)).blob();
+          const dataUrl: string = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(String(reader.result));
+            reader.readAsDataURL(blob);
+          });
+          img.setAttribute("href", dataUrl);
+          img.removeAttribute("xlink:href");
+        } catch {
+          img.remove();
+        }
+      })
+    );
+
+    const serialized = new XMLSerializer().serializeToString(clone);
+    const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(serialized)}`;
+    const image = new Image();
+    await new Promise((resolve, reject) => {
+      image.onload = resolve;
+      image.onerror = reject;
+      image.src = svgUrl;
+    });
+
+    const scale = 2;
+    const canvas = document.createElement("canvas");
+    canvas.width = width * scale;
+    canvas.height = height * scale;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    ctx.fillStyle = "#F2F1F1";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+    const link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png");
+    link.download = "my-repurpose-profile.png";
+    link.click();
   };
 
-  const handleShareX = () => {
-     const text = encodeURIComponent(
-       `I'm ${archetype.name}. ${archetype.tagline} What's your Great Repurpose Profile? →`
-     );
-    const url = encodeURIComponent(selfCheckUrl);
-    window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
+  /** Copies the post text, saves the graph snapshot, then opens the composer. */
+  const openShare = async (network: "linkedin" | "x") => {
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setSharePrepped(true);
+      setTimeout(() => setSharePrepped(false), 4000);
+    } catch {
+      /* clipboard may be unavailable; the composer still gets the text */
+    }
+    await downloadChartImage().catch(() => undefined);
+
+    const text = encodeURIComponent(shareText);
+    if (network === "linkedin") {
+      window.open(`https://www.linkedin.com/feed/?shareActive=true&text=${text}`, "_blank", "noopener");
+    } else {
+      window.open(`https://x.com/intent/post?text=${text}`, "_blank", "noopener");
+    }
   };
+
+  const handleShareLinkedIn = () => openShare("linkedin");
+  const handleShareX = () => openShare("x");
+
 
   const handleDownloadPDF = async () => {
     if (!scores || !archetype) return;
