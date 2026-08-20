@@ -436,6 +436,11 @@ const ResultsPreview = () => {
      { subject: "Start Creating", value: scores.creative_action, fullMark: 10 },
   ];
 
+  const scoreBySubject: Record<string, number> = Object.fromEntries(
+    chartData.map((d) => [d.subject, d.value])
+  );
+
+
   const selfCheckUrl = `${window.location.origin}/selfcheck`;
   const resultUrl = resultId ? `${window.location.origin}/results/${resultId}` : null;
   const archetypeSlug = getArchetypeSlug(archetype);
