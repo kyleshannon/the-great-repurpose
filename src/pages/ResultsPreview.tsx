@@ -291,10 +291,11 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
 
   return (
     <div className="border border-aubergine/10 rounded-xl p-8 text-center bg-white">
-      <h2 className="font-display text-aubergine text-xl mb-2">Your full Great Repurpose Profile is ready.</h2>
+      <h2 className="font-display text-aubergine text-xl mb-2">Enter your email to read your report.</h2>
       <p className="font-sans text-aubergine/50 text-sm mb-6 max-w-md mx-auto">
-        We'll show you what your profile means, where you're strongest, what to watch out for — and the one thing that would help you most right now.
+        Your full report covers what your profile means, where you're strongest, what to watch out for — and what to work on next.
       </p>
+
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <label htmlFor="email-input" className="sr-only">Email address</label>
         <input
