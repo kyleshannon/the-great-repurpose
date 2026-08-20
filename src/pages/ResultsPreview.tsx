@@ -62,25 +62,25 @@ const chartLabels: { subject: string; logo: string; color: string }[] = [
 function StageTick(props: any) {
   const { x, y, payload, textAnchor, scoreBySubject } = props;
   const meta = chartLabels.find((c) => c.subject === payload.value);
-  const size = 20;
+  const size = 22;
   const fontSize = 13;
   const label = String(payload.value);
   const score = scoreBySubject?.[label];
-  // Approximate label width so the icon can sit just left of the text.
-  const labelWidth = label.length * fontSize * 0.56;
   const anchor = textAnchor === "middle" ? "middle" : textAnchor;
-  const textStart =
-    anchor === "middle" ? x - labelWidth / 2 : anchor === "end" ? x - labelWidth : x;
-  const iconX = textStart - size - 5;
-  // The top vertex sits above the chart, so lift its label/score clear of the grid.
-  const isTop = anchor === "middle" && y < 140;
-  const labelY = isTop ? y - 18 : y;
-  const scoreY = labelY + 19;
-  const scoreX = textStart + labelWidth / 2;
+  // Approximate label width so the stacked icon can center over the text.
+  const labelWidth = label.length * fontSize * 0.56;
+  const center =
+    anchor === "middle" ? x : anchor === "end" ? x - labelWidth / 2 : x + labelWidth / 2;
+  // Stacked layout: icon on top, label, score — identical spacing on every axis.
+  const iconY = y - size - 16;
+  const labelY = y;
+  const scoreY = y + 18;
 
   return (
     <g>
-      {meta && <image href={meta.logo} x={iconX} y={labelY - size / 2 - 4} width={size} height={size} />}
+      {meta && (
+        <image href={meta.logo} x={center - size / 2} y={iconY} width={size} height={size} />
+      )}
       <text
         x={x}
         y={labelY}
@@ -94,11 +94,11 @@ function StageTick(props: any) {
       </text>
       {typeof score === "number" && (
         <text
-          x={scoreX}
+          x={center}
           y={scoreY}
           textAnchor="middle"
           fill={meta?.color ?? "#010F32"}
-          fontSize={15}
+          fontSize={16}
           fontFamily="Inter"
           fontWeight={700}
         >
@@ -107,15 +107,73 @@ function StageTick(props: any) {
       )}
     </g>
   );
-
 }
 
-/** Radar vertex dot, colored with its stage. */
-function StageDot(props: any) {
-  const { cx, cy, index } = props;
-  const color = chartLabels[index]?.color ?? "#152DEC";
-  return <circle cx={cx} cy={cy} r={5} fill={color} stroke="#F2F1F1" strokeWidth={2} />;
+/**
+ * Radar polygon drawn edge by edge so each segment fades between the two stage
+ * colors it connects, and every vertex dot matches the lines touching it.
+ */
+function StageShape(props: any) {
+  const points: { x: number; y: number }[] = props.points ?? [];
+  if (points.length < 2) return <g />;
+  const colorAt = (i: number) => chartLabels[i % chartLabels.length]?.color ?? "#152DEC";
+
+  return (
+    <g>
+      <defs>
+        {points.map((p, i) => {
+          const n = points[(i + 1) % points.length];
+          return (
+            <linearGradient
+              key={`edge-${i}`}
+              id={`stage-edge-${i}`}
+              gradientUnits="userSpaceOnUse"
+              x1={p.x}
+              y1={p.y}
+              x2={n.x}
+              y2={n.y}
+            >
+              <stop offset="0%" stopColor={colorAt(i)} />
+              <stop offset="100%" stopColor={colorAt(i + 1)} />
+            </linearGradient>
+          );
+        })}
+      </defs>
+      <polygon
+        points={points.map((p) => `${p.x},${p.y}`).join(" ")}
+        fill="url(#stageFill)"
+        stroke="none"
+      />
+      {points.map((p, i) => {
+        const n = points[(i + 1) % points.length];
+        return (
+          <line
+            key={`line-${i}`}
+            x1={p.x}
+            y1={p.y}
+            x2={n.x}
+            y2={n.y}
+            stroke={`url(#stage-edge-${i})`}
+            strokeWidth={2.5}
+            strokeLinecap="round"
+          />
+        );
+      })}
+      {points.map((p, i) => (
+        <circle
+          key={`dot-${i}`}
+          cx={p.x}
+          cy={p.y}
+          r={5}
+          fill={colorAt(i)}
+          stroke="#F2F1F1"
+          strokeWidth={2}
+        />
+      ))}
+    </g>
+  );
 }
+
 
 /** Split the AI narrative into sections so we can relocate one of them. */
 function parseInterpretationSections(text: string): { title: string; body: string }[] {
