@@ -140,8 +140,10 @@ export async function generateReportPDF(data: ReportData) {
   const bottomMargin = 24;
 
   // Preload brand imagery
-  const [lockup, ...stageLogos] = await Promise.all([
+  const [lockup, elaPhoto, taPhoto, ...stageLogos] = await Promise.all([
     loadImage(lockupIndigo.url),
+    loadImageCover(elaHeroAsset.url, 16 / 9),
+    loadImageCover(taHeroAsset.url, 16 / 9),
     ...dimOrder.map((d) => loadImage(dimensionMeta[d].logo)),
   ]);
   const logoByDim: Partial<Record<DimensionKey, string>> = {};
