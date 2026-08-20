@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-08-20-capability-grows-while-confidence-gets-fragile",
+    "date": "2026-08-20",
+    "title": "Capability Grows While Confidence Gets Fragile",
+    "pattern": "HCAMag warns that many employers are training people for today's AI rather than tomorrow's roles, while ACC's worker study finds that dependency, guilt, and eroding skills now worry people more than simple replacement. Michigan layoff claims remain more complicated than the AI label suggests, Census data shows the technology already becoming routine at work, and Forbes follows creators trying to turn autonomy into financial stability. Together, the stories reveal a widening capability-confidence gap: access to powerful tools is growing faster than the training, evidence, and economic structures people need to use them without losing agency.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://cdn.nextgov.com/media/img/cd/2026/08/19/GettyImages_2217849566/open-graph.jpg"
+  },
+  {
     "slug": "2026-08-15-opportunity-promises-meet-the-work-design-test",
     "date": "2026-08-15",
     "title": "Opportunity Promises Meet The Work Design Test",
@@ -789,6 +802,107 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-08-20-capability-grows-while-confidence-gets-fragile": {
+    "slug": "2026-08-20-capability-grows-while-confidence-gets-fragile",
+    "date": "2026-08-20",
+    "title": "Capability Grows While Confidence Gets Fragile",
+    "pattern": "HCAMag warns that many employers are training people for today's AI rather than tomorrow's roles, while ACC's worker study finds that dependency, guilt, and eroding skills now worry people more than simple replacement. Michigan layoff claims remain more complicated than the AI label suggests, Census data shows the technology already becoming routine at work, and Forbes follows creators trying to turn autonomy into financial stability. Together, the stories reveal a widening capability-confidence gap: access to powerful tools is growing faster than the training, evidence, and economic structures people need to use them without losing agency.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://cdn.nextgov.com/media/img/cd/2026/08/19/GettyImages_2217849566/open-graph.jpg",
+    "stories": [
+      {
+        "title": "AI Training Is Aiming At Yesterday's Work",
+        "url": "https://www.hcamag.com/au/news/general/why-your-ai-training-plan-might-already-be-outdated/586765",
+        "source": "hcamag.com",
+        "published": "2026-08-20T05:20:38+00:00",
+        "summary": "HCAMag reports that new research finds many companies are preparing employees to use today's AI tools rather than preparing them for the jobs those tools will reshape. Training that stops at software proficiency can leave people more exposed, because durable adaptation requires portable judgment, role redesign, and a clearer account of the value humans will carry forward.",
+        "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/035/0394_639227636960071604.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "New research says many employer training plans are oriented toward current AI tools rather than emerging roles.",
+          "Tool instruction alone cannot prepare workers for changes in responsibility, judgment, and job design.",
+          "Adaptation becomes credible when organizations build real pathways for people to develop portable value."
+        ]
+      },
+      {
+        "title": "Workers Fear Dependence More Than Replacement",
+        "url": "https://finance.yahoo.com/technology/ai/articles/acc-intelligence-research-finds-workers-120000061.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-08-19T05:00:00+00:00",
+        "summary": "ACC's survey of 1,000 full-time U.S. workers found that 74 percent worry more about becoming dependent on AI than falling behind, while 66 percent fear erosion of creativity and writing skills. Respondents estimate saving 15 hours a week, yet only 31 percent feel substantially more productive, exposing a crisis of confidence beneath the adoption statistics.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/3A944DF41800E618DD11246E1C2DF7D67123B7B0FDF6A74C83006C7AC43B0ED9/subgraphmysterio/resizefill_w1200_h250;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fprnewswire.com%2F205cd28dcf6e1323ecde49d0c40dc338.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Seventy-four percent of respondents fear AI dependency more than falling behind in adoption.",
+          "Two-thirds worry the technology may diminish creativity, writing, or critical-thinking skills.",
+          "Time savings do not automatically become confidence, judgment, or felt productivity."
+        ]
+      },
+      {
+        "title": "Michigan Layoff Claims Outrun The Evidence",
+        "url": "https://www.detroitnews.com/story/business/2026/08/19/companies-cite-ai-for-layoffs-in-michigan-but-its-not-so-simple/91010735007/",
+        "source": "detroitnews.com",
+        "published": "2026-08-18T22:02:00+00:00",
+        "summary": "The Detroit News examines Michigan companies that have invoked AI while cutting jobs, but economists and experts say current systems can replace functions without being ready to eliminate human work at scale. The distinction matters because a convenient technology label can obscure cost cutting, restructuring, and management choices that workers deserve to have explained plainly.",
+        "imageUrl": "https://www.detroitnews.com/gcdn/authoring/authoring-images/2026/08/11/PDTN/91254363007-dumondacrisure-810202600007.jpg?crop=5471,3079,x0,y284&width=3200&height=1801&format=pjpg&auto=webp",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Michigan employers have cited AI in connection with layoffs, but the causal story is not straightforward.",
+          "Experts say current AI can replace some functions without replacing entire jobs at scale.",
+          "Workers need transparent explanations that separate technical change from ordinary restructuring decisions."
+        ]
+      },
+      {
+        "title": "Census Finds AI Already Embedded In Work",
+        "url": "https://www.nextgov.com/artificial-intelligence/2026/08/ai-already-job-and-census-keeping-count/415528/",
+        "source": "nextgov.com",
+        "published": "2026-08-19T21:19:00+00:00",
+        "summary": "Nextgov reports that new U.S. Census Bureau data is beginning to measure AI as a routine workplace tool rather than a future possibility. Government leaders are pairing training and guardrails with employee-led experimentation, a useful reminder that meaningful adoption grows when people can explore the capability while retaining context, oversight, and a voice in how work changes.",
+        "imageUrl": "https://cdn.nextgov.com/media/img/cd/2026/08/19/GettyImages_2217849566/open-graph.jpg",
+        "stages": [
+          "Discover AI's Power",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "New Census Bureau data tracks AI as an increasingly ordinary part of workplace activity.",
+          "Public-sector adoption efforts combine training, guardrails, and employee-led experimentation.",
+          "People build durable capability when they participate in shaping use, not merely comply with rollout."
+        ]
+      },
+      {
+        "title": "Creative Freedom Still Needs Financial Infrastructure",
+        "url": "https://www.forbes.com/sites/alejandrarojas/2026/08/19/how-creators-are-balancing-financial-stability-and-creative-freedom/",
+        "source": "forbes.com",
+        "published": "2026-08-19T10:05:00+00:00",
+        "summary": "Forbes looks at creators who identify as business owners but still contend with delayed payments and the time pressure that interrupts production. Creative independence is not sustained by inspiration alone: reliable cash flow, business discipline, and control over working time are part of the infrastructure that lets people turn individual agency into durable value.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a82e18ff5723667b9bccbf4/0x0.jpg?format=jpg&crop=1715,1205,x302,y151,safe&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Start Creating",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Many creators see themselves as business owners while still facing delayed and unpredictable payments.",
+          "Administrative and financial pressure can directly reduce the time available for creative production.",
+          "Agency becomes sustainable when creative freedom is supported by dependable economic systems."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-08-15-opportunity-promises-meet-the-work-design-test": {
     "slug": "2026-08-15-opportunity-promises-meet-the-work-design-test",
     "date": "2026-08-15",
