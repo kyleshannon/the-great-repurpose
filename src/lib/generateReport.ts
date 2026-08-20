@@ -439,9 +439,9 @@ export async function generateReportPDF(data: ReportData) {
 
   // ── What to work on next ───────────────────────────────────────────────────
   {
-    ensureSpace(60);
-    y += 6;
-    drawLine(doc, y - 6, margin, pageWidth - margin);
+    ensureSpace(50);
+    y += 4;
+    drawLine(doc, y - 4, margin, pageWidth - margin);
     sectionEyebrow("What to work on next");
 
     if (nextMoveBody) {
@@ -449,25 +449,25 @@ export async function generateReportPDF(data: ReportData) {
       doc.setFontSize(10);
       setColor(doc, AUBERGINE);
       for (const para of nextMoveBody.split("\n\n").filter(Boolean)) {
-        y = renderWrappedText(para.trim(), margin, y, contentWidth, 4.9);
-        y += 4;
+        y = renderWrappedText(para.trim(), margin, y, contentWidth, 4.8);
+        y += 3;
       }
-      y += 2;
+      y += 1;
     }
 
     const practices = getTacticalPractices(data.scores as Scores);
     const leadInText =
       "Three concrete things you could actually do in the next month, chosen from where your scores are thinnest.";
     const leadInLines = doc.splitTextToSize(leadInText, contentWidth) as string[];
-    const leadInHeight = leadInLines.length * 4.9;
+    const leadInHeight = leadInLines.length * 4.7;
 
     // Keep the lead-in with at least the first practice block so it never sits alone at the bottom of a page.
     const firstDescLines = practices[0]
       ? (doc.splitTextToSize(practices[0].action.desc, contentWidth - 8) as string[])
       : [];
-    const firstBlockHeight = practices[0] ? 6 + firstDescLines.length * 4.6 : 0;
+    const firstBlockHeight = practices[0] ? 5 + firstDescLines.length * 4.5 : 0;
 
-    if (y + leadInHeight + 6 + firstBlockHeight > pageHeight - bottomMargin) {
+    if (y + leadInHeight + 5 + firstBlockHeight > pageHeight - bottomMargin) {
       doc.addPage();
       paintPage();
       y = margin + 4;
@@ -476,29 +476,29 @@ export async function generateReportPDF(data: ReportData) {
     doc.setFont("helvetica", "normal");
     doc.setFontSize(10);
     setColor(doc, MUTED);
-    y = renderWrappedText(leadInText, margin, y, contentWidth, 4.9);
-    y += 6;
+    y = renderWrappedText(leadInText, margin, y, contentWidth, 4.7);
+    y += 5;
 
     for (const { stage, action } of practices) {
       const color = dimensionMeta[stage as DimensionKey].color;
       const descLines = doc.splitTextToSize(action.desc, contentWidth - 8) as string[];
-      const blockHeight = 6 + descLines.length * 4.6;
-      ensureSpace(blockHeight + 6);
+      const blockHeight = 5 + descLines.length * 4.5;
+      ensureSpace(blockHeight + 5);
 
       doc.setFillColor(color[0], color[1], color[2]);
-      doc.rect(margin, y - 4, 0.8, blockHeight, "F");
+      doc.rect(margin, y - 3.5, 0.8, blockHeight, "F");
 
       doc.setFont("helvetica", "bold");
       doc.setFontSize(10.5);
       setColor(doc, AUBERGINE);
       doc.text(action.label, margin + 5, y);
-      y += 5;
+      y += 4.5;
 
       doc.setFont("helvetica", "normal");
       doc.setFontSize(9.5);
       setColor(doc, MUTED);
-      y = renderWrappedText(action.desc, margin + 5, y, contentWidth - 8, 4.6);
-      y += 7;
+      y = renderWrappedText(action.desc, margin + 5, y, contentWidth - 8, 4.5);
+      y += 6;
     }
   }
 
