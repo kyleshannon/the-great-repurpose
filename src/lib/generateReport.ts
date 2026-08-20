@@ -1,5 +1,5 @@
 import jsPDF from "jspdf";
-import lockupDark from "@/assets/tgr-lockup-dark.png";
+import lockupIndigo from "@/assets/tgr-lockup-indigo.png.asset.json";
 import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
 import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
 import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
@@ -96,7 +96,7 @@ export async function generateReportPDF(data: ReportData) {
 
   // Preload brand imagery
   const [lockup, ...stageLogos] = await Promise.all([
-    loadImage(lockupDark),
+    loadImage(lockupIndigo.url),
     ...dimOrder.map((d) => loadImage(dimensionMeta[d].logo)),
   ]);
   const logoByDim: Partial<Record<DimensionKey, string>> = {};
@@ -140,7 +140,7 @@ export async function generateReportPDF(data: ReportData) {
 
   if (lockup) {
     const w = 82;
-    const h = w * (1124 / 3625);
+    const h = w * (595 / 1920);
     doc.addImage(lockup, "PNG", (pageWidth - w) / 2, y, w, h);
     y += h + 16;
   } else {
