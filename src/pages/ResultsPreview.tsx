@@ -21,6 +21,31 @@ import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
 import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
 import logoCitrus from "@/assets/tgr-logo-citrus.png.asset.json";
 import logoPoppy from "@/assets/tgr-logo-poppy.png.asset.json";
+import elaHeroAsset from "@/assets/ela-hero.png.asset.json";
+import taHeroAsset from "@/assets/ta-hero.png.asset.json";
+
+const academyOfferings = [
+  {
+    href: "/academy/leadership",
+    eyebrow: "For leaders making the calls",
+    name: "The Executive Leadership Academy",
+    tagline:
+      "An immersive workshop plus three months of implementation sessions, applied to the workforce and technology decisions already on your desk.",
+    image: elaHeroAsset.url,
+    alt: "Senior leaders in conversation",
+    accent: "text-indigo",
+  },
+  {
+    href: "/academy/transition",
+    eyebrow: "For people whose role just ended",
+    name: "The TGR Transition Academy",
+    tagline:
+      "Outplacement reimagined: a cohort moving through the five stages together, building real AI agency instead of polishing a resume.",
+    image: taHeroAsset.url,
+    alt: "A person at a worktable in thought",
+    accent: "text-citrus",
+  },
+];
 
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
 
