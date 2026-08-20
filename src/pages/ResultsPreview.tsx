@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 import { ChevronDown } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { matchArchetype, getArchetypeSlug, categories, getRecommendations, type Scores, type Archetype } from "@/lib/archetypes";
+import { matchArchetype, getArchetypeSlug, categories, getRecommendations, profileCopy, getStageScoreNote, getTacticalPractices, type Scores, type Archetype } from "@/lib/archetypes";
 import { generateReportPDF } from "@/lib/generateReport";
 
 import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
