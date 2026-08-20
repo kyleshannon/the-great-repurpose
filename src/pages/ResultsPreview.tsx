@@ -21,6 +21,31 @@ import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
 import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
 import logoCitrus from "@/assets/tgr-logo-citrus.png.asset.json";
 import logoPoppy from "@/assets/tgr-logo-poppy.png.asset.json";
+import elaHeroAsset from "@/assets/ela-hero.png.asset.json";
+import taHeroAsset from "@/assets/ta-hero.png.asset.json";
+
+const academyOfferings = [
+  {
+    href: "/academy/leadership",
+    eyebrow: "For leaders making the calls",
+    name: "The Executive Leadership Academy",
+    tagline:
+      "An immersive workshop plus three months of implementation sessions, applied to the workforce and technology decisions already on your desk.",
+    image: elaHeroAsset.url,
+    alt: "Senior leaders in conversation",
+    accent: "text-indigo",
+  },
+  {
+    href: "/academy/transition",
+    eyebrow: "For people whose role just ended",
+    name: "The TGR Transition Academy",
+    tagline:
+      "Outplacement reimagined: a cohort moving through the five stages together, building real AI agency instead of polishing a resume.",
+    image: taHeroAsset.url,
+    alt: "A person at a worktable in thought",
+    accent: "text-citrus",
+  },
+];
 
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
 
@@ -61,6 +86,8 @@ const chartLabels: { subject: string; logo: string; color: string }[] = [
 
 const SCORE_GRAY = "#6B7280";
 
+const AXIS_FONT = "Figtree, Inter, sans-serif";
+
 function StageTick(props: any) {
   const { x, y, payload, textAnchor, scoreBySubject } = props;
   const meta = chartLabels.find((c) => c.subject === payload.value);
@@ -80,9 +107,12 @@ function StageTick(props: any) {
 
   const center =
     anchor === "middle" ? x : anchor === "end" ? x - labelWidth / 2 : x + labelWidth / 2;
+  // The top axis sits directly above the grid, so lift the whole stack clear of it.
+  const isTop = anchor === "middle" && y < 140;
+  const baseY = isTop ? y - 24 : y;
   // Stacked layout: icon on top, label, score — identical spacing on every axis.
-  const iconY = y - size - 14;
-  const scoreY = y + 19;
+  const iconY = baseY - size - 14;
+  const scoreY = baseY + 19;
 
   return (
     <g>
@@ -92,11 +122,11 @@ function StageTick(props: any) {
       <text
         ref={textRef}
         x={x}
-        y={y}
+        y={baseY}
         textAnchor={anchor}
         fill={meta?.color ?? "#010F32"}
         fontSize={fontSize}
-        fontFamily="Inter"
+        fontFamily={AXIS_FONT}
         fontWeight={600}
       >
         {label}
@@ -108,7 +138,7 @@ function StageTick(props: any) {
           textAnchor="middle"
           fill={SCORE_GRAY}
           fontSize={16}
-          fontFamily="Inter"
+          fontFamily={AXIS_FONT}
           fontWeight={700}
         >
           {score.toFixed(1)}
@@ -416,9 +446,11 @@ const ResultsPreview = () => {
   const { id: routeId } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const reportRef = useRef<HTMLDivElement>(null);
+  const chartRef = useRef<HTMLDivElement>(null);
 
   const [submitted, setSubmitted] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [sharePrepped, setSharePrepped] = useState(false);
   const [loading, setLoading] = useState(false);
   const [generating, setGenerating] = useState(false);
   const [scores, setScores] = useState<Record<DimensionKey, number> | null>(null);
@@ -535,7 +567,9 @@ const ResultsPreview = () => {
   const archetypeSlug = getArchetypeSlug(archetype);
 
   // Shareable summary text
-  const shareText = `I'm ${archetype.name}. ${archetype.tagline}\n\nRecommended: ${archetype.nextStep.body}\n\nWhat's your Great Repurpose Profile? Find out at TheGreatRepurpose.com — a framework for people navigating the AI transition.`;
+  const shareText = `I got my Repurpose Profile and I am ${archetype.name}.\n\n${
+    profileCopy[archetypeSlug]?.description ?? archetype.description
+  }\n\nGet your Repurpose Profile at TheGreatRepurpose.com`;
 
   const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
@@ -606,19 +640,84 @@ const ResultsPreview = () => {
     }
   };
 
-  const handleShareLinkedIn = () => {
-    const url = encodeURIComponent(resultUrl || selfCheckUrl);
-    const text = encodeURIComponent(shareText);
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&summary=${text}`, "_blank");
+  /** Renders the radar SVG (with its stage logos inlined) to a downloadable PNG. */
+  const downloadChartImage = async () => {
+    const svg = chartRef.current?.querySelector("svg");
+    if (!svg) return;
+    const clone = svg.cloneNode(true) as SVGSVGElement;
+    const width = svg.clientWidth || 640;
+    const height = svg.clientHeight || 340;
+    clone.setAttribute("width", String(width));
+    clone.setAttribute("height", String(height));
+
+    // Inline the logo bitmaps so the serialized SVG is self-contained.
+    const images = Array.from(clone.querySelectorAll("image"));
+    await Promise.all(
+      images.map(async (img) => {
+        const href = img.getAttribute("href") || img.getAttribute("xlink:href");
+        if (!href || href.startsWith("data:")) return;
+        try {
+          const blob = await (await fetch(href)).blob();
+          const dataUrl: string = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(String(reader.result));
+            reader.readAsDataURL(blob);
+          });
+          img.setAttribute("href", dataUrl);
+          img.removeAttribute("xlink:href");
+        } catch {
+          img.remove();
+        }
+      })
+    );
+
+    const serialized = new XMLSerializer().serializeToString(clone);
+    const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(serialized)}`;
+    const image = new Image();
+    await new Promise((resolve, reject) => {
+      image.onload = resolve;
+      image.onerror = reject;
+      image.src = svgUrl;
+    });
+
+    const scale = 2;
+    const canvas = document.createElement("canvas");
+    canvas.width = width * scale;
+    canvas.height = height * scale;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    ctx.fillStyle = "#F2F1F1";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+    const link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png");
+    link.download = "my-repurpose-profile.png";
+    link.click();
   };
 
-  const handleShareX = () => {
-     const text = encodeURIComponent(
-       `I'm ${archetype.name}. ${archetype.tagline} What's your Great Repurpose Profile? →`
-     );
-    const url = encodeURIComponent(selfCheckUrl);
-    window.open(`https://x.com/intent/tweet?text=${text}&url=${url}`, "_blank");
+  /** Copies the post text, saves the graph snapshot, then opens the composer. */
+  const openShare = async (network: "linkedin" | "x") => {
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setSharePrepped(true);
+      setTimeout(() => setSharePrepped(false), 4000);
+    } catch {
+      /* clipboard may be unavailable; the composer still gets the text */
+    }
+    await downloadChartImage().catch(() => undefined);
+
+    const text = encodeURIComponent(shareText);
+    if (network === "linkedin") {
+      window.open(`https://www.linkedin.com/feed/?shareActive=true&text=${text}`, "_blank", "noopener");
+    } else {
+      window.open(`https://x.com/intent/post?text=${text}`, "_blank", "noopener");
+    }
   };
+
+  const handleShareLinkedIn = () => openShare("linkedin");
+  const handleShareX = () => openShare("x");
+
 
   const handleDownloadPDF = async () => {
     if (!scores || !archetype) return;
@@ -726,11 +825,11 @@ const ResultsPreview = () => {
 
           {/* ── Radar ── */}
           <section className="bg-soft-white pb-6 px-4 md:px-6 border-t border-aubergine/5 pt-8">
-            <div className="max-w-2xl mx-auto text-center">
+            <div className="max-w-2xl mx-auto text-center" ref={chartRef}>
               <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-2">
                 The Shape of Your Repurpose Profile
               </h2>
-              <ResponsiveContainer width="100%" height={340}>
+              <ResponsiveContainer width="100%" height={310}>
                 <RadarChart data={chartData} outerRadius="66%" margin={{ top: 46, right: 34, bottom: 34, left: 34 }}>
                   <defs>
                     <radialGradient id="stageFill" cx="50%" cy="50%" r="70%">
@@ -751,14 +850,6 @@ const ResultsPreview = () => {
                 </RadarChart>
 
               </ResponsiveContainer>
-
-              <button
-                onClick={handleDownloadPDF}
-                disabled={generating}
-                className="mt-4 inline-flex items-center gap-2 bg-indigo text-soft-white font-sans text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
-              >
-                {generating ? "Generating…" : "Download PDF Report ↓"}
-              </button>
             </div>
           </section>
 
@@ -813,9 +904,12 @@ const ResultsPreview = () => {
           {/* ── AI-Generated Narrative Report ── */}
           <section className="bg-soft-white py-8 md:py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
+              <h2
+                className="font-sans text-lg md:text-xl font-semibold uppercase tracking-widest mb-4"
+                style={{ color: SCORE_GRAY }}
+              >
                 Insights About Your Profile
-              </p>
+              </h2>
 
               {streamError ? (
                 <p className="font-sans text-aubergine/60 text-base text-center">{streamError}</p>
@@ -833,7 +927,7 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── What to work on next (tactical) ── */}
-          <section className="bg-soft-white py-8 md:py-10 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-8 md:py-10 px-6">
             <div className="max-w-2xl mx-auto">
               <div className="border border-aubergine/10 rounded-xl p-6 md:p-8 bg-white">
                 <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">
@@ -863,6 +957,42 @@ const ResultsPreview = () => {
             </div>
           </section>
 
+          {/* ── Academy offerings ── */}
+          <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-6 text-center">
+                Learn more about The Great Repurpose Academy Offerings
+              </h2>
+              <div className="grid gap-6 md:grid-cols-2">
+                {academyOfferings.map((program) => (
+                  <Link
+                    key={program.href}
+                    to={program.href}
+                    className="group block border border-aubergine/15 rounded-xl overflow-hidden bg-white hover:border-indigo/40 transition-colors"
+                  >
+                    <img
+                      src={program.image}
+                      alt={program.alt}
+                      loading="lazy"
+                      className="w-full h-40 object-cover"
+                    />
+                    <div className="p-5">
+                      <p className={`font-sans text-xs uppercase tracking-widest mb-2 ${program.accent}`}>
+                        {program.eyebrow}
+                      </p>
+                      <h3 className="font-display text-aubergine text-lg mb-2 group-hover:text-indigo transition-colors">
+                        {program.name}
+                      </h3>
+                      <p className="font-sans text-aubergine/60 text-sm leading-relaxed mb-3">
+                        {program.tagline}
+                      </p>
+                      <span className="font-sans text-indigo text-sm">Learn more →</span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
 
           </div>{/* end reportRef */}
 
@@ -928,6 +1058,11 @@ const ResultsPreview = () => {
                   Share on X
                 </button>
               </div>
+              <p className="font-sans text-aubergine/45 text-xs mt-3 max-w-md mx-auto">
+                {sharePrepped
+                  ? "Post text copied and your profile graph downloaded — attach the image in the composer."
+                  : "Sharing copies the post above and downloads your graph so you can attach it."}
+              </p>
             </div>
 
           </section>
