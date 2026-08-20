@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 import { ChevronDown } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { matchArchetype, getArchetypeSlug, categories, getRecommendations, profileCopy, getStageScoreNote, getTacticalPractices, type Scores, type Archetype } from "@/lib/archetypes";
+import { matchArchetype, getArchetypeSlug, profileCopy, getStageScoreNote, getTacticalPractices, type Scores, type Archetype } from "@/lib/archetypes";
 import { generateReportPDF } from "@/lib/generateReport";
 
 import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
@@ -449,8 +449,6 @@ const ResultsPreview = () => {
   const chartRef = useRef<HTMLDivElement>(null);
 
   const [submitted, setSubmitted] = useState(false);
-  const [copied, setCopied] = useState(false);
-  const [sharePrepped, setSharePrepped] = useState(false);
   const [loading, setLoading] = useState(false);
   const [generating, setGenerating] = useState(false);
   const [scores, setScores] = useState<Record<DimensionKey, number> | null>(null);
@@ -563,12 +561,7 @@ const ResultsPreview = () => {
 
 
   const selfCheckUrl = `${window.location.origin}/selfcheck`;
-  const resultUrl = resultId ? `${window.location.origin}/results/${resultId}` : null;
   const archetypeSlug = getArchetypeSlug(archetype);
-
-  // Shareable summary text
-  const shareText = `I got my Repurpose Profile and I am ${archetype.name}.\n\nGet your Repurpose Profile at TheGreatRepurpose.com`;
-
 
   const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
@@ -631,14 +624,6 @@ const ResultsPreview = () => {
     setSubmitted(true);
   };
 
-  const handleCopyLink = () => {
-    if (resultUrl) {
-      navigator.clipboard.writeText(resultUrl);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
-  };
-
   /** Renders the radar SVG (with its stage logos inlined) to a PNG blob. */
   const buildChartPngBlob = async (): Promise<Blob | null> => {
     const svg = chartRef.current?.querySelector("svg");
@@ -694,72 +679,26 @@ const ResultsPreview = () => {
     );
   };
 
-  const downloadChartImage = async () => {
-    const blob = await buildChartPngBlob();
-    if (!blob) return;
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "my-repurpose-profile.png";
-    link.click();
-    setTimeout(() => URL.revokeObjectURL(url), 5000);
-  };
-
-  /** Copies the post text + graph image, saves a copy, then opens the composer. */
-  const openShare = async (network: "linkedin" | "x") => {
-    const blob = await buildChartPngBlob().catch(() => null);
-
-    // Prefer putting the graph itself on the clipboard so it can be pasted
-    // straight into the composer; fall back to text-only.
-    let imageOnClipboard = false;
-    try {
-      if (blob && typeof ClipboardItem !== "undefined") {
-        await navigator.clipboard.write([
-          new ClipboardItem({ "image/png": blob }),
-        ]);
-        imageOnClipboard = true;
-      } else {
-        await navigator.clipboard.writeText(shareText);
-      }
-    } catch {
-      try {
-        await navigator.clipboard.writeText(shareText);
-      } catch {
-        /* clipboard may be unavailable; the composer still gets the text */
-      }
-    }
-    setSharePrepped(imageOnClipboard);
-    setTimeout(() => setSharePrepped(false), 8000);
-
-    // Always keep a downloaded copy as a fallback for attaching manually.
-    await downloadChartImage().catch(() => undefined);
-
-    const text = encodeURIComponent(shareText);
-    if (network === "linkedin") {
-      window.open(`https://www.linkedin.com/feed/?shareActive=true&text=${text}`, "_blank", "noopener");
-    } else {
-      window.open(`https://x.com/intent/post?text=${text}`, "_blank", "noopener");
-    }
-  };
-
-  const handleShareLinkedIn = () => openShare("linkedin");
-  const handleShareX = () => openShare("x");
-
-
   const handleDownloadPDF = async () => {
     if (!scores || !archetype) return;
     setGenerating(true);
     try {
-      const cat = categories[archetype.category];
+      const blob = await buildChartPngBlob().catch(() => null);
+      const chartImage = blob
+        ? await new Promise<string>((resolve) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(String(reader.result));
+            reader.readAsDataURL(blob);
+          })
+        : null;
+
       await generateReportPDF({
         archetype,
-        category: {
-          label: cat.label,
-          description: cat.description,
-          isCapstone: archetype.category === "capstone",
-        },
+        profileTagline: profileCopy[archetypeSlug]?.tagline ?? archetype.tagline,
+        profileDescription: profileCopy[archetypeSlug]?.description ?? archetype.description,
         scores,
         interpretation: interpretationText || "",
+        chartImage,
       });
     } catch (err) {
       console.error("PDF generation failed:", err);
@@ -776,7 +715,6 @@ const ResultsPreview = () => {
     });
   };
 
-  const recommendation = getRecommendations(archetype, scores);
   const tacticalPractices = getTacticalPractices(scores);
   // "Your Next Move" is pulled out of the AI narrative and shown under "What to work on next".
   const nextMoveBody = parseInterpretationSections(interpretationText || "")
@@ -1024,74 +962,18 @@ const ResultsPreview = () => {
           </div>{/* end reportRef */}
 
 
-          {/* ── Where to go from here ── */}
-          <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
-            <div className="max-w-2xl mx-auto">
-              <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-5 text-center">
-                Doing this alone is harder than it needs to be. Based on your profile, here's where to go next.
-              </p>
-              <a
-                href={recommendation.track.href}
-                target={recommendation.track.href?.startsWith("http") ? "_blank" : undefined}
-                rel="noopener noreferrer"
-                className="block border border-aubergine/20 rounded-lg p-6 hover:border-indigo/40 transition-colors group bg-white"
-              >
-                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-2">Recommended for you</p>
-                <h3 className="font-display text-aubergine text-xl mb-2 group-hover:text-indigo transition-colors">
-                  {recommendation.track.label}
-                </h3>
-                <p className="font-sans text-aubergine/60 text-base leading-relaxed">{recommendation.track.desc}</p>
-              </a>
-            </div>
-          </section>
-
-
-          {/* Share + Download */}
+          {/* Download */}
           <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-display text-aubergine text-2xl mb-2">Share your Great Repurpose Profile.</h2>
-              <p className="font-sans text-aubergine/50 text-sm mb-3 whitespace-pre-line max-w-md mx-auto">
-                {shareText}
-              </p>
-               <Link to="/types" className="inline-block text-indigo font-sans text-sm hover:underline mb-5">
-                 Explore all 10 Great Repurpose Profiles →
-              </Link>
-              <div className="flex flex-wrap justify-center gap-2">
-                <button
-                  onClick={handleDownloadPDF}
-                  disabled={generating}
-                  className="bg-indigo text-soft-white font-sans text-xs font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
-                >
-                  {generating ? "Generating…" : "Download PDF Report"}
-                </button>
-                {resultUrl && (
-                  <button
-                    onClick={handleCopyLink}
-                    className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
-                  >
-                    {copied ? "Copied ✓" : "Copy Link"}
-                  </button>
-                )}
-                <button
-                  onClick={handleShareLinkedIn}
-                  className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
-                >
-                  Share on LinkedIn
-                </button>
-                <button
-                  onClick={handleShareX}
-                  className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
-                >
-                  Share on X
-                </button>
-              </div>
-              <p className="font-sans text-aubergine/45 text-xs mt-3 max-w-md mx-auto">
-                {sharePrepped
-                  ? "Your profile graph is on your clipboard (and saved to downloads). Paste it into the post."
-                  : "Sharing saves your profile graph so you can attach or paste it into the post."}
-              </p>
+              <h2 className="font-display text-aubergine text-2xl mb-4">Download your Great Repurpose Profile.</h2>
+              <button
+                onClick={handleDownloadPDF}
+                disabled={generating}
+                className="bg-indigo text-soft-white font-sans text-sm font-medium px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
+              >
+                {generating ? "Generating…" : "Download PDF Report"}
+              </button>
             </div>
-
           </section>
         </>
       )}
