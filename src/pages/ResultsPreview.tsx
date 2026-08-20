@@ -932,6 +932,42 @@ const ResultsPreview = () => {
             </div>
           </section>
 
+          {/* ── Academy offerings ── */}
+          <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-6 text-center">
+                Learn more about The Great Repurpose Academy Offerings
+              </h2>
+              <div className="grid gap-6 md:grid-cols-2">
+                {academyOfferings.map((program) => (
+                  <Link
+                    key={program.href}
+                    to={program.href}
+                    className="group block border border-aubergine/15 rounded-xl overflow-hidden bg-white hover:border-indigo/40 transition-colors"
+                  >
+                    <img
+                      src={program.image}
+                      alt={program.alt}
+                      loading="lazy"
+                      className="w-full h-40 object-cover"
+                    />
+                    <div className="p-5">
+                      <p className={`font-sans text-xs uppercase tracking-widest mb-2 ${program.accent}`}>
+                        {program.eyebrow}
+                      </p>
+                      <h3 className="font-display text-aubergine text-lg mb-2 group-hover:text-indigo transition-colors">
+                        {program.name}
+                      </h3>
+                      <p className="font-sans text-aubergine/60 text-sm leading-relaxed mb-3">
+                        {program.tagline}
+                      </p>
+                      <span className="font-sans text-indigo text-sm">Learn more →</span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
 
           </div>{/* end reportRef */}
 
