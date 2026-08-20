@@ -12,6 +12,8 @@ import womanWorktableAsset from "@/assets/woman-worktable.png.asset.json";
 import twoProfessionalsScreenAsset from "@/assets/two-professionals-screen.png.asset.json";
 import twoProfessionalsTableAsset from "@/assets/two-professionals-table.png.asset.json";
 import smallGroupLaptopAsset from "@/assets/small-group-laptop.png.asset.json";
+import elaHeroAsset from "@/assets/ela-hero.png.asset.json";
+import taHeroAsset from "@/assets/ta-hero.png.asset.json";
 
 
 import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
