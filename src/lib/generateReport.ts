@@ -129,12 +129,69 @@ async function loadImageCover(url: string, ratio: number): Promise<string | null
   }
 }
 
+/** Crop blank (transparent or uniform-background) borders off a PNG data URL. */
+async function trimImage(dataUrl: string): Promise<string> {
+  try {
+    const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+      const el = new Image();
+      el.onload = () => resolve(el);
+      el.onerror = reject;
+      el.src = dataUrl;
+    });
+    const c = document.createElement("canvas");
+    c.width = img.width;
+    c.height = img.height;
+    const ctx = c.getContext("2d", { willReadFrequently: true });
+    if (!ctx) return dataUrl;
+    ctx.drawImage(img, 0, 0);
+    const { data, width, height } = ctx.getImageData(0, 0, c.width, c.height);
+    // Reference background = top-left pixel
+    const r0 = data[0], g0 = data[1], b0 = data[2], a0 = data[3];
+    const isBlank = (i: number) => {
+      const a = data[i + 3];
+      if (a < 8 && a0 < 8) return true;
+      return (
+        Math.abs(data[i] - r0) < 6 &&
+        Math.abs(data[i + 1] - g0) < 6 &&
+        Math.abs(data[i + 2] - b0) < 6 &&
+        Math.abs(a - a0) < 6
+      );
+    };
+    let top = 0, bottom = height - 1, left = 0, right = width - 1;
+    const rowBlank = (y: number) => {
+      for (let x = 0; x < width; x++) if (!isBlank((y * width + x) * 4)) return false;
+      return true;
+    };
+    const colBlank = (x: number) => {
+      for (let y = top; y <= bottom; y++) if (!isBlank((y * width + x) * 4)) return false;
+      return true;
+    };
+    while (top < bottom && rowBlank(top)) top++;
+    while (bottom > top && rowBlank(bottom)) bottom--;
+    while (left < right && colBlank(left)) left++;
+    while (right > left && colBlank(right)) right--;
+    const w = right - left + 1;
+    const h = bottom - top + 1;
+    if (w <= 0 || h <= 0 || (w === width && h === height)) return dataUrl;
+    const out = document.createElement("canvas");
+    out.width = w;
+    out.height = h;
+    const octx = out.getContext("2d");
+    if (!octx) return dataUrl;
+    octx.drawImage(c, left, top, w, h, 0, 0, w, h);
+    return out.toDataURL("image/png");
+  } catch {
+    return dataUrl;
+  }
+}
+
 const isNextMoveTitle = (title: string) => /next\s+move/i.test(title);
 
 export async function generateReportPDF(data: ReportData) {
-  const doc = new jsPDF("p", "mm", "a4");
+  const doc = new jsPDF("p", "mm", "letter");
   const pageWidth = doc.internal.pageSize.getWidth();
   const pageHeight = doc.internal.pageSize.getHeight();
+
   const margin = 22;
   const contentWidth = pageWidth - margin * 2;
   const bottomMargin = 24;
