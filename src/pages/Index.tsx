@@ -295,11 +295,6 @@ const Index = () => {
               </ScrollFadeUp>
             </div>
 
-            <ScrollFadeUp>
-              <h2 className="font-display text-aubergine text-3xl md:text-5xl leading-tight mb-6">
-                The Stages...
-              </h2>
-            </ScrollFadeUp>
           </div>
 
           <div className="mb-10">
