@@ -541,7 +541,9 @@ const ResultsPreview = () => {
   const archetypeSlug = getArchetypeSlug(archetype);
 
   // Shareable summary text
-  const shareText = `I'm ${archetype.name}. ${archetype.tagline}\n\nRecommended: ${archetype.nextStep.body}\n\nWhat's your Great Repurpose Profile? Find out at TheGreatRepurpose.com — a framework for people navigating the AI transition.`;
+  const shareText = `I got my Repurpose Profile and I am ${archetype.name}.\n\n${
+    profileCopy[archetypeSlug]?.description ?? archetype.description
+  }\n\nGet your Repurpose Profile at TheGreatRepurpose.com`;
 
   const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
