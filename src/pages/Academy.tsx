@@ -97,11 +97,11 @@ const Academy = () => {
             <p className="font-sans text-aqua text-xs uppercase tracking-[0.2em] font-semibold mb-4">
               TGR Academy
             </p>
-            <h1 className="font-display text-soft-white text-4xl md:text-5xl leading-tight mb-5">
-              Where the framework becomes practice
+            <h1 className="font-display text-soft-white text-4xl md:text-5xl leading-tight mb-5 whitespace-pre-line">
+              Lighting the Path Forward into{"\n"}the Future of Work
             </h1>
             <p className="font-body text-soft-white/70 text-lg md:text-xl max-w-2xl mx-auto">
-              Two programs built on The Five Stages of The Great Repurpose — one for the leaders deciding how AI reshapes the work, one for the people whose roles it already changed. Run them together for coordinated support on both sides of a workforce change.
+              Two programs built on The Five Stages of The Great Repurpose... One for the leaders deciding how AI reshapes the work, and one for the people whose roles it already changed. Run them together for coordinated support on both sides of a workforce change.
             </p>
           </ScrollFadeUp>
         </section>
