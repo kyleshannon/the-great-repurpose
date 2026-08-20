@@ -72,6 +72,20 @@ export function OneSheet({ html, title, description, path, jsonLd }: OneSheetPro
         }
       `}</style>
       <div dangerouslySetInnerHTML={{ __html: html }} />
+      <section className="bg-aubergine constellation-bg py-16 px-6 text-center">
+        <h2 className="font-display text-soft-white text-2xl md:text-3xl mb-3">
+          Interested in learning more?
+        </h2>
+        <p className="font-body text-soft-white/60 text-lg mb-2 max-w-xl mx-auto">
+          Drop us a line at{" "}
+          <a
+            href="mailto:Possibility@TheGreatRepurpose.com"
+            className="text-aqua hover:underline"
+          >
+            Possibility@TheGreatRepurpose.com
+          </a>
+        </p>
+      </section>
       <div className="bg-aubergine text-center py-8">
         <Link
           to="/academy"
