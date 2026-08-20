@@ -97,6 +97,36 @@ async function loadImage(url: string): Promise<string | null> {
   }
 }
 
+/** Load an image and center-crop it to a target aspect ratio (like CSS object-cover). */
+async function loadImageCover(url: string, ratio: number): Promise<string | null> {
+  const dataUrl = await loadImage(url);
+  if (!dataUrl) return null;
+  try {
+    const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+      const el = new Image();
+      el.onload = () => resolve(el);
+      el.onerror = reject;
+      el.src = dataUrl;
+    });
+    const srcRatio = img.width / img.height;
+    let sw = img.width;
+    let sh = img.height;
+    if (srcRatio > ratio) sw = img.height * ratio;
+    else sh = img.width / ratio;
+    const sx = (img.width - sw) / 2;
+    const sy = (img.height - sh) / 2;
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.round(sw);
+    canvas.height = Math.round(sh);
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return dataUrl;
+    ctx.drawImage(img, sx, sy, sw, sh, 0, 0, canvas.width, canvas.height);
+    return canvas.toDataURL("image/jpeg", 0.85);
+  } catch {
+    return dataUrl;
+  }
+}
+
 const isNextMoveTitle = (title: string) => /next\s+move/i.test(title);
 
 export async function generateReportPDF(data: ReportData) {
