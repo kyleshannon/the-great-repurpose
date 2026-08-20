@@ -16,6 +16,12 @@ import jsPDF from "jspdf";
 import { matchArchetype, getArchetypeSlug, categories, getRecommendations, type Scores, type Archetype } from "@/lib/archetypes";
 import { generateReportPDF } from "@/lib/generateReport";
 
+import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
+import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
+import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
+import logoCitrus from "@/assets/tgr-logo-citrus.png.asset.json";
+import logoPoppy from "@/assets/tgr-logo-poppy.png.asset.json";
+
 type DimensionKey = "identity" | "value" | "purpose" | "ai_relationship" | "creative_action";
 
 const dimensionMeta: Record<DimensionKey, { label: string; stage: string }> = {
@@ -27,6 +33,58 @@ const dimensionMeta: Record<DimensionKey, { label: string; stage: string }> = {
 };
 
 const dimensionOrder: DimensionKey[] = ["identity", "value", "purpose", "ai_relationship", "creative_action"];
+
+const dimensionLogos: Record<DimensionKey, string> = {
+  identity: logoIndigo.url,
+  value: logoAqua.url,
+  purpose: logoOrchid.url,
+  ai_relationship: logoCitrus.url,
+  creative_action: logoPoppy.url,
+};
+
+const dimensionColors: Record<DimensionKey, string> = {
+  identity: "#152DEC",
+  value: "#06B7B2",
+  purpose: "#955CD5",
+  ai_relationship: "#EDB322",
+  creative_action: "#FC5430",
+};
+
+// Radar axis labels, in chart order, paired with their stage logo + color.
+const chartLabels: { subject: string; logo: string; color: string }[] = [
+  { subject: "Unhook Identity", logo: logoIndigo.url, color: "#152DEC" },
+  { subject: "Reclaim Value", logo: logoAqua.url, color: "#06B7B2" },
+  { subject: "Find Your Purpose", logo: logoOrchid.url, color: "#955CD5" },
+  { subject: "Discover AI's Power", logo: logoCitrus.url, color: "#A67606" },
+  { subject: "Start Creating", logo: logoPoppy.url, color: "#FC5430" },
+];
+
+function StageTick(props: any) {
+  const { x, y, payload, textAnchor } = props;
+  const meta = chartLabels.find((c) => c.subject === payload.value);
+  const size = 16;
+  const above = y < 160;
+  const imgY = above ? y - size - 12 : y - 4;
+  const textY = above ? y - 6 : y + size + 8;
+  return (
+    <g>
+      {meta && (
+        <image href={meta.logo} x={x - size / 2} y={imgY} width={size} height={size} />
+      )}
+      <text
+        x={x}
+        y={textY}
+        textAnchor={textAnchor}
+        fill={meta?.color ?? "#010F32"}
+        fontSize={11}
+        fontFamily="Inter"
+        fontWeight={600}
+      >
+        {payload.value}
+      </text>
+    </g>
+  );
+}
 
 function getLowestDimension(scores: Record<DimensionKey, number>): DimensionKey {
   return (Object.entries(scores) as [DimensionKey, number][]).reduce(
