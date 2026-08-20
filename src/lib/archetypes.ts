@@ -150,29 +150,29 @@ type Band = "low" | "mid" | "high";
 
 export const stageScoreBands: Record<StageKey, Record<Band, string>> = {
   identity: {
-    low: "A 10 here means your worth doesn't move when your title does. You're a long way from that — right now the job and the self are still one object, so every AI headline lands as a personal verdict. Start catching that reaction in the moment; naming it is the first loosening.",
-    mid: "A 10 here means the separation holds under pressure. Yours holds on good days and snaps back on hard ones. Close the gap by describing your work by the problem you care about rather than the role you held, until that's the version you reach for first.",
-    high: "This is close to the top of the stage: your sense of self isn't leased from an employer. The remaining work isn't yours alone — say out loud how you got here, because most of the people around you are still where you were.",
+    low: "Unhooking identity means your worth no longer moves when your title does. Right now the job and the self are still one object, so every AI headline lands as a personal verdict. Start catching that reaction in the moment; naming it is the first loosening.",
+    mid: "You're partway out of the title. Some days you can describe yourself by the problem you care about; other days the old role snaps back. Keep practicing the version that isn't borrowed from an employer until it's the one you reach for first.",
+    high: "It looks like you've done the hard work of separating who you are from what you did. Your sense of self isn't leased from an employer. Say out loud how you got here, because most of the people around you are still where you were.",
   },
   value: {
-    low: "A 10 here means you can name the human judgment you bring in one sentence a stranger understands. You're still at the task list. Write down ten calls only you would have made — that's the raw material for the sentence you don't have yet.",
-    mid: "A 10 here means your value is articulated in human terms, not job terms. Yours is half-translated — still leaning on titles and responsibilities. Cut the job language out entirely and see what's left; that remainder is the real answer.",
-    high: "You're near the top of this stage — you know what you carry that a tool can't reproduce. The gap left is distribution: make sure the people who'd hire or partner with you hear it as clearly as you can say it.",
+    low: "Reclaiming value means you can name the human judgment you bring in one sentence a stranger understands. You're still at the task list. Write down ten calls only you would have made. That's the raw material for the sentence you don't have yet.",
+    mid: "You're translating your value from job language into human language, but the translation is only half done. Cut the titles and responsibilities out entirely and see what's left. That remainder is the real answer.",
+    high: "It looks like you know what you carry that a tool can't reproduce. The gap left is distribution: make sure the people who'd hire or partner with you hear it as clearly as you can say it.",
   },
   purpose: {
-    low: "A 10 here means one problem, one group of people, no hedging. You don't have a target yet, which is why the rest feels arbitrary rather than hard. Pick the people before you pick the plan.",
-    mid: "A 10 here means the direction is narrow enough to act on tomorrow. Yours is still broad enough to hide inside. Cut it down to a single problem and a single audience and see whether it still holds your interest.",
-    high: "You're at or near the top of this stage — you know what you're aimed at and who it serves. Protect it. The next year will hand you interesting detours that cost more than they look like they cost.",
+    low: "Discovering purpose means one problem, one group of people, no hedging. You don't have a target yet, which is why the rest feels arbitrary rather than hard. Pick the people before you pick the plan.",
+    mid: "You can feel direction pulling at you, but it's still wide enough to hide inside. Cut it down to a single problem and a single audience and see whether it still holds your interest tomorrow.",
+    high: "It looks like you've discovered your purpose. You know what you're aimed at and who it serves. Protect it. The next year will hand you interesting detours that cost more than they look like they cost.",
   },
   ai_relationship: {
-    low: "A 10 here means AI is an instrument you play, not weather you endure. You're still on the receiving end of it. One undirected hour a week — no deliverable, no course — moves this more than anything you could enroll in.",
-    mid: "A 10 here means you use AI to do work you couldn't do before, not just faster versions of work you already did. You're in the speed phase. Put yourself into the prompt — your values, your audience, your judgment — and the ceiling moves.",
-    high: "You're near the top of this stage: you've found the ceiling is higher than you assumed and you work like it. Push into something you'd have called out of reach a year ago, and bring someone less fluent along.",
+    low: "Becoming AI ready means AI is an instrument you play, not weather you endure. You're still on the receiving end of it. One undirected hour a week, with no deliverable and no course, moves this more than anything you could enroll in.",
+    mid: "You're using AI to go faster, but not yet to go somewhere new. Put yourself into the prompt, your values, your audience, your judgment, and the ceiling moves from speed to possibility.",
+    high: "It looks like you've made AI a real collaborator. You've found the ceiling is higher than you assumed and you work like it. Push into something you'd have called out of reach a year ago, and bring someone less fluent along.",
   },
   creative_action: {
-    low: "A 10 here means work is visible and opportunity can find you. Nothing of yours is out there yet, so nothing can. One rough artifact this month beats another month of preparing a good one.",
-    mid: "A 10 here means the work reaches real people on a rhythm, with a name and a price attached. You're making things but not landing them. Name the offer and put it in front of one person outside your circle this week.",
-    high: "You're at the top of this stage — you ship, and work finds you because of it. The exposure left is concentration: add a second channel so your income doesn't rest on one relationship.",
+    low: "Relaunching yourself means work is visible and opportunity can find you. Nothing of yours is out there yet, so nothing can. One rough artifact this month beats another month of preparing a good one.",
+    mid: "You're making things, but they aren't quite landing. The work needs a name and a price and a person outside your circle to see it. Name the offer and put it in front of one stranger this week.",
+    high: "It looks like you've relaunched. You ship, and work finds you because of it. The exposure left is concentration: add a second channel so your income doesn't rest on one relationship.",
   },
 };
 
