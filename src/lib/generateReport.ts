@@ -5,6 +5,8 @@ import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
 import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
 import logoCitrus from "@/assets/tgr-logo-citrus.png.asset.json";
 import logoPoppy from "@/assets/tgr-logo-poppy.png.asset.json";
+import elaHeroAsset from "@/assets/ela-hero.png.asset.json";
+import taHeroAsset from "@/assets/ta-hero.png.asset.json";
 import {
   getStageScoreNote,
   getTacticalPractices,
