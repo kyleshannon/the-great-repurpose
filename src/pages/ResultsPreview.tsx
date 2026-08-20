@@ -178,21 +178,14 @@ function InterpretationRenderer({ text, streaming }: { text: string; streaming: 
       {sections.map((section, i) => (
         <div key={i}>
           {section.title && (
-            <h3 className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
+            <h3 className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">
               {section.title}
             </h3>
           )}
-          <div className="font-sans text-aubergine/80 text-base leading-relaxed space-y-4">
-            {section.body.split("\n\n").filter(Boolean).map((para, j) => (
-              <p key={j} dangerouslySetInnerHTML={{
-                __html: para
-                  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-indigo hover:underline">$1</a>')
-                  .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-              }} />
-            ))}
-          </div>
+          <MarkdownParas body={section.body} />
         </div>
       ))}
+
       {streaming && (
         <span className="inline-block w-2 h-4 bg-indigo animate-pulse ml-1" />
       )}
