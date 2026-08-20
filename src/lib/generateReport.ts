@@ -262,7 +262,7 @@ export async function generateReportPDF(data: ReportData) {
   if (data.chartImage) {
     const props = doc.getImageProperties(data.chartImage);
     const ratio = props.height / props.width;
-    let w = contentWidth;
+    let w = contentWidth * 1.4;
     let h = ratio * w;
     ensureSpace(h + 16);
     doc.setFont("helvetica", "bold");
@@ -274,7 +274,7 @@ export async function generateReportPDF(data: ReportData) {
     // large gap before the page break), capped so it stays on one page.
     const available = pageHeight - bottomMargin - y;
     if (h < available) {
-      const maxW = pageWidth - margin * 0.5;
+      const maxW = pageWidth - margin * 0.25;
       const scaled = Math.min(available / h, maxW / w);
       w *= scaled;
       h *= scaled;
