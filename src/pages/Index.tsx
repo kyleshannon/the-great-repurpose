@@ -392,91 +392,59 @@ const Index = () => {
           </div>
         </section>
 
-        {/* ── Section 7: Find your profile ── */}
+        {/* ── Section 7: Academy offerings ── */}
         <section className="bg-aubergine py-16 md:py-24 px-6">
           <div className="max-w-5xl mx-auto">
             <ScrollFadeUp>
               <p className="font-sans text-aqua text-xs uppercase tracking-[0.2em] font-semibold mb-3">
-                Find your profile
+                TGR Academy
               </p>
               <h2 className="font-display text-soft-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
-                The 10 Repurpose Profiles
+                Learn About The Great Repurpose Academy
               </h2>
               <p className="font-body text-soft-white/70 text-lg leading-relaxed max-w-3xl mb-12">
-                Ten profiles across the journey — grouped by where you are right now. Each one names a different relationship to the work that's changing.
+                Two programs built on the five stages. One for leaders deciding how AI reshapes the work, and one for people whose roles it already changed. Run them together for coordinated support on both sides of a workforce change.
               </p>
             </ScrollFadeUp>
 
-            <div className="grid md:grid-cols-3 gap-8 md:gap-10 mb-12">
-              {[
-                {
-                  group: "Identity Seekers",
-                  tagline: "The work right now is inner.",
-                  profiles: [
-                    { name: "The Unlocker", desc: "Still tying who you are to the title you held." },
-                    { name: "The Awakener", desc: "Everything is early — and that's the honest beginning." },
-                    { name: "The Explorer", desc: "Jumped into tools before the foundation was clear." },
-                  ],
-                },
-                {
-                  group: "Direction Finders",
-                  tagline: "Now the work is aiming it.",
-                  profiles: [
-                    { name: "The Firestarter", desc: "One dimension caught fire — now it needs direction." },
-                    { name: "The Translator", desc: "Strong ends, thin middle: capability without a strategic center." },
-                    { name: "The Original", desc: "Knows who they are — now needs a target to point at." },
-                  ],
-                },
-                {
-                  group: "Builders in Motion",
-                  tagline: "The work is shipping.",
-                  profiles: [
-                    { name: "The Compass", desc: "Inner work done — now it's time to engage the tools." },
-                    { name: "The Architect", desc: "Understands everything and has shipped nothing yet." },
-                    { name: "The Catalyst", desc: "Solid across the board — one deliberate push changes everything." },
-                  ],
-                },
-              ].map(({ group, tagline, profiles }) => (
-                <ScrollFadeUp key={group}>
-                  <div className="border-t-2 border-aqua/40 pt-5">
-                    <h3 className="font-display text-soft-white text-xl mb-1">{group}</h3>
-                    <p className="font-body text-soft-white/50 text-sm italic mb-4">{tagline}</p>
-                    <ul className="space-y-4">
-                      {profiles.map(({ name, desc }) => (
-                        <li key={name}>
-                          <span className="font-display text-soft-white text-base block">{name}</span>
-                          <span className="font-body text-soft-white/60 text-sm leading-snug">{desc}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+            <div className="grid gap-6 md:grid-cols-2 mb-12">
+              {academyOfferings.map((program) => (
+                <ScrollFadeUp key={program.href}>
+                  <Link
+                    to={program.href}
+                    className="group block border border-soft-white/15 rounded-xl overflow-hidden bg-soft-white/5 hover:border-indigo/40 transition-colors"
+                  >
+                    <img
+                      src={program.image}
+                      alt={program.alt}
+                      loading="lazy"
+                      className="w-full h-44 object-cover"
+                    />
+                    <div className="p-6">
+                      <p className={`font-sans text-xs uppercase tracking-widest mb-2 ${program.accent}`}>
+                        {program.eyebrow}
+                      </p>
+                      <h3 className="font-display text-soft-white text-xl mb-2 group-hover:text-indigo transition-colors">
+                        {program.name}
+                      </h3>
+                      <p className="font-sans text-soft-white/60 text-sm leading-relaxed mb-4">
+                        {program.tagline}
+                      </p>
+                      <span className="font-sans text-indigo text-sm">Learn more →</span>
+                    </div>
+                  </Link>
                 </ScrollFadeUp>
               ))}
             </div>
 
             <ScrollFadeUp delay={100}>
-              <div className="border border-aqua/30 rounded-lg bg-aqua/5 px-6 py-5 mb-12">
-                <p className="font-display text-soft-white text-lg">
-                  <span className="font-semibold">The Amplifier</span>
-                  <span className="text-soft-white/60"> — all five dimensions are in motion. Now the real work begins.</span>
-                </p>
-              </div>
-            </ScrollFadeUp>
-
-            <ScrollFadeUp delay={200}>
               <div className="text-center">
-                <p className="font-display text-soft-white text-xl md:text-2xl mb-4">
-                  Which Profile are you?
-                </p>
                 <Link
-                  to="/selfcheck"
-                  className="inline-flex items-center gap-2 bg-aqua text-aubergine font-sans font-semibold text-sm uppercase tracking-widest px-10 py-5 rounded-full pulse-aqua hover:opacity-90 transition-opacity"
+                  to="/academy"
+                  className="inline-flex items-center gap-2 border-2 border-aqua text-aqua font-sans font-semibold text-sm uppercase tracking-widest px-10 py-5 rounded-full hover:bg-aqua hover:text-aubergine transition-colors"
                 >
-                  Get Your Repurpose Profile →
+                  Explore the Academy →
                 </Link>
-                <p className="text-soft-white/50 text-sm font-sans mt-4">
-                  7 questions. 2 minutes. Then we'll tell you what you're building toward.
-                </p>
               </div>
             </ScrollFadeUp>
           </div>
