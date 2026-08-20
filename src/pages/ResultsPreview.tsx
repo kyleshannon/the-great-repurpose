@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 import { ChevronDown } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { matchArchetype, getArchetypeSlug, categories, getRecommendations, profileCopy, getStageScoreNote, getTacticalPractices, type Scores, type Archetype } from "@/lib/archetypes";
+import { matchArchetype, getArchetypeSlug, profileCopy, getStageScoreNote, getTacticalPractices, type Scores, type Archetype } from "@/lib/archetypes";
 import { generateReportPDF } from "@/lib/generateReport";
 
 import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
@@ -449,8 +449,6 @@ const ResultsPreview = () => {
   const chartRef = useRef<HTMLDivElement>(null);
 
   const [submitted, setSubmitted] = useState(false);
-  const [copied, setCopied] = useState(false);
-  const [sharePrepped, setSharePrepped] = useState(false);
   const [loading, setLoading] = useState(false);
   const [generating, setGenerating] = useState(false);
   const [scores, setScores] = useState<Record<DimensionKey, number> | null>(null);
@@ -566,10 +564,6 @@ const ResultsPreview = () => {
   const resultUrl = resultId ? `${window.location.origin}/results/${resultId}` : null;
   const archetypeSlug = getArchetypeSlug(archetype);
 
-  // Shareable summary text
-  const shareText = `I got my Repurpose Profile and I am ${archetype.name}.\n\nGet your Repurpose Profile at TheGreatRepurpose.com`;
-
-
   const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
     const lowestDim = getLowestDimension(scores);
@@ -631,14 +625,6 @@ const ResultsPreview = () => {
     setSubmitted(true);
   };
 
-  const handleCopyLink = () => {
-    if (resultUrl) {
-      navigator.clipboard.writeText(resultUrl);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
-  };
-
   /** Renders the radar SVG (with its stage logos inlined) to a PNG blob. */
   const buildChartPngBlob = async (): Promise<Blob | null> => {
     const svg = chartRef.current?.querySelector("svg");
@@ -694,54 +680,6 @@ const ResultsPreview = () => {
     );
   };
 
-  const downloadChartImage = async () => {
-    const blob = await buildChartPngBlob();
-    if (!blob) return;
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "my-repurpose-profile.png";
-    link.click();
-    setTimeout(() => URL.revokeObjectURL(url), 5000);
-  };
-
-  /** Copies the post text + graph image, saves a copy, then opens the composer. */
-  const openShare = async (network: "linkedin" | "x") => {
-    const blob = await buildChartPngBlob().catch(() => null);
-
-    // Prefer putting the graph itself on the clipboard so it can be pasted
-    // straight into the composer; fall back to text-only.
-    let imageOnClipboard = false;
-    try {
-      if (blob && typeof ClipboardItem !== "undefined") {
-        await navigator.clipboard.write([
-          new ClipboardItem({ "image/png": blob }),
-        ]);
-        imageOnClipboard = true;
-      } else {
-        await navigator.clipboard.writeText(shareText);
-      }
-    } catch {
-      try {
-        await navigator.clipboard.writeText(shareText);
-      } catch {
-        /* clipboard may be unavailable; the composer still gets the text */
-      }
-    }
-    setSharePrepped(imageOnClipboard);
-    setTimeout(() => setSharePrepped(false), 8000);
-
-    // Always keep a downloaded copy as a fallback for attaching manually.
-    await downloadChartImage().catch(() => undefined);
-
-    const text = encodeURIComponent(shareText);
-    if (network === "linkedin") {
-      window.open(`https://www.linkedin.com/feed/?shareActive=true&text=${text}`, "_blank", "noopener");
-    } else {
-      window.open(`https://x.com/intent/post?text=${text}`, "_blank", "noopener");
-    }
-  };
-
   const handleDownloadPDF = async () => {
     if (!scores || !archetype) return;
     setGenerating(true);
@@ -778,7 +716,6 @@ const ResultsPreview = () => {
     });
   };
 
-  const recommendation = getRecommendations(archetype, scores);
   const tacticalPractices = getTacticalPractices(scores);
   // "Your Next Move" is pulled out of the AI narrative and shown under "What to work on next".
   const nextMoveBody = parseInterpretationSections(interpretationText || "")
