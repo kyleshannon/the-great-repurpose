@@ -809,18 +809,18 @@ const ResultsPreview = () => {
 
 
           {/* ── Where to go from here ── */}
-          <section className="bg-soft-white py-16 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-8 text-center">
+              <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-5 text-center">
                 Doing this alone is harder than it needs to be. Based on your profile, here's where to go next.
               </p>
               <a
                 href={recommendation.track.href}
                 target={recommendation.track.href?.startsWith("http") ? "_blank" : undefined}
                 rel="noopener noreferrer"
-                className="block border border-aubergine/20 rounded-lg p-8 hover:border-indigo/40 transition-colors group bg-white"
+                className="block border border-aubergine/20 rounded-lg p-6 hover:border-indigo/40 transition-colors group bg-white"
               >
-                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">Recommended for you</p>
+                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-2">Recommended for you</p>
                 <h3 className="font-display text-aubergine text-xl mb-2 group-hover:text-indigo transition-colors">
                   {recommendation.track.label}
                 </h3>
@@ -831,45 +831,46 @@ const ResultsPreview = () => {
 
 
           {/* Share + Download */}
-          <section className="bg-soft-white py-16 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-display text-aubergine text-2xl mb-3">Share your Great Repurpose Profile.</h2>
-              <p className="font-sans text-aubergine/50 text-sm mb-4 whitespace-pre-line max-w-md mx-auto">
+              <h2 className="font-display text-aubergine text-2xl mb-2">Share your Great Repurpose Profile.</h2>
+              <p className="font-sans text-aubergine/50 text-sm mb-3 whitespace-pre-line max-w-md mx-auto">
                 {shareText}
               </p>
-               <Link to="/types" className="inline-block text-indigo font-sans text-sm hover:underline mb-8">
+               <Link to="/types" className="inline-block text-indigo font-sans text-sm hover:underline mb-5">
                  Explore all 10 Great Repurpose Profiles →
               </Link>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap justify-center gap-2">
                 <button
                   onClick={handleDownloadPDF}
                   disabled={generating}
-                  className="bg-indigo text-soft-white font-sans text-sm font-medium px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
+                  className="bg-indigo text-soft-white font-sans text-xs font-medium px-4 py-2 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60 whitespace-nowrap"
                 >
                   {generating ? "Generating…" : "Download PDF Report"}
                 </button>
                 {resultUrl && (
                   <button
                     onClick={handleCopyLink}
-                    className="border border-aubergine/20 text-aubergine font-sans text-sm px-6 py-3 rounded-full hover:border-aubergine/60 transition-colors"
+                    className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
                   >
                     {copied ? "Copied ✓" : "Copy Link"}
                   </button>
                 )}
                 <button
                   onClick={handleShareLinkedIn}
-                  className="border border-aubergine/20 text-aubergine font-sans text-sm px-6 py-3 rounded-full hover:border-aubergine/60 transition-colors"
+                  className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
                 >
                   Share on LinkedIn
                 </button>
                 <button
                   onClick={handleShareX}
-                  className="border border-aubergine/20 text-aubergine font-sans text-sm px-6 py-3 rounded-full hover:border-aubergine/60 transition-colors"
+                  className="border border-aubergine/20 text-aubergine font-sans text-xs px-4 py-2 rounded-full hover:border-aubergine/60 transition-colors whitespace-nowrap"
                 >
                   Share on X
                 </button>
               </div>
             </div>
+
           </section>
         </>
       )}
