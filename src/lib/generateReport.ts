@@ -262,7 +262,7 @@ export async function generateReportPDF(data: ReportData) {
   if (data.chartImage) {
     const props = doc.getImageProperties(data.chartImage);
     const ratio = props.height / props.width;
-    let w = contentWidth * 1.4;
+    let w = contentWidth * 1.3;
     let h = ratio * w;
     ensureSpace(h + 16);
     doc.setFont("helvetica", "bold");
