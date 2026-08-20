@@ -138,7 +138,7 @@ function InterpretationRenderer({ text, streaming }: { text: string; streaming: 
               {section.title}
             </h3>
           )}
-          <div className="font-sans text-soft-white/80 text-base leading-relaxed space-y-4">
+          <div className="font-sans text-aubergine/80 text-base leading-relaxed space-y-4">
             {section.body.split("\n\n").filter(Boolean).map((para, j) => (
               <p key={j} dangerouslySetInnerHTML={{
                 __html: para
@@ -166,7 +166,7 @@ function GeneratingIndicator() {
         <span className="w-2 h-2 rounded-full bg-indigo animate-bounce" style={{ animationDelay: "150ms" }} />
         <span className="w-2 h-2 rounded-full bg-indigo animate-bounce" style={{ animationDelay: "300ms" }} />
       </div>
-      <p className="font-sans text-soft-white/50 text-sm">Writing your report…</p>
+      <p className="font-sans text-aubergine/50 text-sm">Writing your report…</p>
     </div>
   );
 }
@@ -266,9 +266,9 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
   };
 
   return (
-    <div className="border border-soft-white/10 rounded-xl p-8 text-center bg-soft-white/[0.03]">
-      <h2 className="font-display text-soft-white text-xl mb-2">Your full Great Repurpose Profile is ready.</h2>
-      <p className="font-sans text-soft-white/50 text-sm mb-6 max-w-md mx-auto">
+    <div className="border border-aubergine/10 rounded-xl p-8 text-center bg-white">
+      <h2 className="font-display text-aubergine text-xl mb-2">Your full Great Repurpose Profile is ready.</h2>
+      <p className="font-sans text-aubergine/50 text-sm mb-6 max-w-md mx-auto">
         We'll show you what your profile means, where you're strongest, what to watch out for — and the one thing that would help you most right now.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -280,7 +280,7 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
-          className="flex-1 bg-aubergine border border-soft-white/20 text-soft-white placeholder:text-soft-white/40 rounded-lg px-4 py-3 font-sans text-base focus:outline-none focus:border-indigo transition-colors"
+          className="flex-1 bg-white border border-aubergine/20 text-aubergine placeholder:text-aubergine/40 rounded-lg px-4 py-3 font-sans text-base focus:outline-none focus:border-indigo transition-colors"
         />
         <button
           type="submit"
@@ -290,7 +290,7 @@ function EmailGate({ onSuccess }: { onSuccess: (email: string) => void }) {
           {submitting ? "Saving..." : "Show Me →"}
         </button>
       </form>
-      <p className="text-soft-white/40 text-xs mt-4 font-sans max-w-md mx-auto leading-relaxed">
+      <p className="text-aubergine/40 text-xs mt-4 font-sans max-w-md mx-auto leading-relaxed">
         By submitting your email, you agree to receive emails from The Great Repurpose. You can unsubscribe at any time.
       </p>
     </div>
