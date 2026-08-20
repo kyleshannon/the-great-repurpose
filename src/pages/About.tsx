@@ -123,7 +123,7 @@ const About = () => {
               </ScrollFadeUp>
               <ScrollFadeUp delay={200}>
                 <p>
-                  Her first response was: "How the — are you going to do that? This is not exactly easy work."
+                  Her first response was: "How the 'BLEEP' are you going to do that? This is not exactly easy work."
                 </p>
               </ScrollFadeUp>
               <ScrollFadeUp delay={250}>
