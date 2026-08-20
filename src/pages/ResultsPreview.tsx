@@ -62,19 +62,21 @@ const chartLabels: { subject: string; logo: string; color: string }[] = [
 function StageTick(props: any) {
   const { x, y, payload, textAnchor, scoreBySubject } = props;
   const meta = chartLabels.find((c) => c.subject === payload.value);
-  const size = 14;
+  const size = 20;
+  const fontSize = 13;
   const label = String(payload.value);
   const score = scoreBySubject?.[label];
   // Approximate label width so the icon can sit just left of the text.
-  const labelWidth = label.length * 5.6;
+  const labelWidth = label.length * fontSize * 0.56;
   const anchor = textAnchor === "middle" ? "middle" : textAnchor;
   const textStart =
     anchor === "middle" ? x - labelWidth / 2 : anchor === "end" ? x - labelWidth : x;
-  const iconX = textStart - size - 4;
+  const iconX = textStart - size - 5;
   // The top vertex sits above the chart, so lift its label/score clear of the grid.
   const isTop = anchor === "middle" && y < 140;
-  const labelY = isTop ? y - 16 : y;
-  const scoreY = labelY + 14;
+  const labelY = isTop ? y - 18 : y;
+  const scoreY = labelY + 19;
+  const scoreX = textStart + labelWidth / 2;
 
   return (
     <g>
@@ -84,7 +86,7 @@ function StageTick(props: any) {
         y={labelY}
         textAnchor={anchor}
         fill={meta?.color ?? "#010F32"}
-        fontSize={11}
+        fontSize={fontSize}
         fontFamily="Inter"
         fontWeight={600}
       >
@@ -92,12 +94,11 @@ function StageTick(props: any) {
       </text>
       {typeof score === "number" && (
         <text
-          x={x}
+          x={scoreX}
           y={scoreY}
-          textAnchor={anchor}
-          fill="#010F32"
-          fillOpacity={0.55}
-          fontSize={11}
+          textAnchor="middle"
+          fill={meta?.color ?? "#010F32"}
+          fontSize={15}
           fontFamily="Inter"
           fontWeight={700}
         >
@@ -108,6 +109,30 @@ function StageTick(props: any) {
   );
 
 }
+
+/** Radar vertex dot, colored with its stage. */
+function StageDot(props: any) {
+  const { cx, cy, index } = props;
+  const color = chartLabels[index]?.color ?? "#152DEC";
+  return <circle cx={cx} cy={cy} r={5} fill={color} stroke="#F2F1F1" strokeWidth={2} />;
+}
+
+/** Split the AI narrative into sections so we can relocate one of them. */
+function parseInterpretationSections(text: string): { title: string; body: string }[] {
+  const sections: { title: string; body: string }[] = [];
+  const parts = text.split(/^## /m);
+  if (parts[0]?.trim()) sections.push({ title: "", body: parts[0].trim() });
+  for (let i = 1; i < parts.length; i++) {
+    const nl = parts[i].indexOf("\n");
+    if (nl === -1) sections.push({ title: parts[i].trim(), body: "" });
+    else sections.push({ title: parts[i].slice(0, nl).trim(), body: parts[i].slice(nl + 1).trim() });
+  }
+  if (sections.length === 0 && text.trim()) sections.push({ title: "", body: text.trim() });
+  return sections;
+}
+
+const isNextMoveTitle = (title: string) => /next\s+move/i.test(title);
+
 
 
 function getLowestDimension(scores: Record<DimensionKey, number>): DimensionKey {
