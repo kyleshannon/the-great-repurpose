@@ -82,6 +82,129 @@ export const stageNextSteps: Record<StageKey, NextStepAction[]> = {
   ],
 };
 
+// ── Canonical profile copy (shared by the Profiles page and the report) ──────
+
+export interface ProfileCopy {
+  /** Subtitle shown under the profile name. */
+  tagline: string;
+  /** Longer definition paragraph. */
+  description: string;
+}
+
+export const profileCopy: Record<string, ProfileCopy> = {
+  "the-unlocker": {
+    tagline: "You're still tying who you are to the title you held.",
+    description:
+      "AI replacing jobs feels personal — because who you are and what you did are the same thing in your head. Until that loosens, nothing else lands. Your work isn't learning ChatGPT. It's answering one question honestly: who am I if I'm not my job?",
+  },
+  "the-awakener": {
+    tagline: "You're building toward clarity. Everything is early.",
+    description:
+      "You feel AI reshaping work, but you haven't started any of it — still fused to your title, haven't named your unique value, no direction, no tools. Trying to solve all four at once is why you're frozen. Pick one and take a concrete step this week.",
+  },
+  "the-explorer": {
+    tagline: "You're building toward a new creative practice.",
+    description:
+      "You're using AI tools and making things — ahead of most. But you skipped the inner work: you haven't separated from your old role or named what you bring that AI can't. Producing without knowing what it's for. Answer: what am I building, and why me?",
+  },
+  "the-firestarter": {
+    tagline: "You're building toward something that just caught fire.",
+    description:
+      "One piece just broke through — your value, a purpose, a tool. That area surged while the rest stayed flat. The breakthrough is a clue about your shape. Use it to pull the other pieces — identity, value, direction, tools, output — forward.",
+  },
+  "the-translator": {
+    tagline: "You're building toward bridging two worlds.",
+    description:
+      "You know yourself and you're fluent with AI — the two hardest bookends. But the middle is hollow: no clear sense of your value or where to aim it. Producing capably without a center. Stop long enough to ask what's actually worth building, and why you.",
+  },
+  "the-original": {
+    tagline: "You're building toward becoming irreplaceable.",
+    description:
+      "You've unhooked from your title and you know what you bring. The inner work is done. But you haven't aimed it — no problem picked, no audience, no tools. Pick a specific problem worth solving or audience worth serving. Point your clarity at a target.",
+  },
+  "the-compass": {
+    tagline: "You're building toward leading the way.",
+    description:
+      "Identity, value, direction — all clear. The hardest part is done. But you haven't picked up the tools or made anything. Perfect map, no boots on the ground. Pick one AI tool this week and make one small thing. Familiarity, not mastery.",
+  },
+  "the-architect": {
+    tagline: "You're building toward something only you can build.",
+    description:
+      "You understand all of it — who you are, what you bring, where you're going, how the tools work. The only gap is output. Preparation is disguising itself as progress. Make something rough and put it in front of a real person by Friday.",
+  },
+  "the-catalyst": {
+    tagline: "You're building toward amplifying everything you touch.",
+    description:
+      "Solid across identity, value, direction, tools, and output — nothing broken, nothing fully resolved. Balanced and capable, which is why \"good enough\" could quietly become your ceiling. Pick the one area where a small push creates the most momentum.",
+  },
+  "the-amplifier": {
+    tagline: "Now the real work begins.",
+    description:
+      "Identity unhooked, value named, direction set, tools in hand, shipping regularly. You've made it through the parts that stop most people. What's ahead isn't a victory lap — it's the work of doing this at a different scale, in front of more people, with more on the line. Find peers operating at your level. Pull someone else forward. Keep building.",
+  },
+};
+
+// ── What a score means, stage by stage ───────────────────────────────────────
+
+type Band = "low" | "mid" | "high";
+
+export const stageScoreBands: Record<StageKey, Record<Band, string>> = {
+  identity: {
+    low: "Who you are and what you did for work are still the same thing in your head. Start noticing when a headline about AI lands as a personal threat rather than information — that reaction is the knot.",
+    mid: "You've started to separate yourself from the title, but it still snaps back under pressure. Practice describing your work by the problem you care about instead of the role you held.",
+    high: "Your sense of self doesn't depend on a job description anymore. Use that steadiness for other people — most of the room is still where you were.",
+  },
+  value: {
+    low: "You can name your tasks but not the human layer underneath them. Write down ten judgment calls only you would have made — that list is the beginning of your answer.",
+    mid: "You have a rough sense of what you bring, but it's still described in job terms. Sharpen it until someone outside your field understands it in one sentence.",
+    high: "You know what you carry that a tool can't reproduce. Make sure the people who'd hire or partner with you can hear it as clearly as you can say it.",
+  },
+  purpose: {
+    low: "There's no target yet, which makes everything else feel arbitrary. Pick an audience — real people with a real problem — before you pick a plan.",
+    mid: "You have a direction but it's still broad enough to hide in. Narrow it to one problem and one group of people you'd like your work to reach.",
+    high: "You know what you're pointed at and who it's for. Protect that focus — the next year will offer plenty of interesting detours.",
+  },
+  ai_relationship: {
+    low: "AI is still something happening to you rather than something you use. An hour a week of undirected play — no deliverable — will move this faster than any course.",
+    mid: "You use AI, mostly to go faster on things you already do. Try putting yourself at the center of a prompt: who you are, what you value, who you're reaching.",
+    high: "You've found the ceiling is higher than you assumed. Push into work you'd have called out of reach a year ago, and bring someone with you.",
+  },
+  creative_action: {
+    low: "Nothing is visible yet, which means opportunity has no way to find you. One rough artifact this month beats another month of planning.",
+    mid: "You're making things, but the work isn't reaching real people consistently. Name the offer, name the price, and put it in front of someone outside your circle.",
+    high: "You're shipping, and work is finding you because of it. Add a second channel so your income doesn't ride on one relationship.",
+  },
+};
+
+export function getScoreBand(score: number): Band {
+  if (score <= 4) return "low";
+  if (score <= 7) return "mid";
+  return "high";
+}
+
+export function getStageScoreNote(stage: StageKey, score: number): string {
+  return stageScoreBands[stage][getScoreBand(score)];
+}
+
+/** The two weakest stages, lowest first. */
+export function getWeakestStages(scores: Scores, count = 2): StageKey[] {
+  return (Object.entries(scores) as [StageKey, number][])
+    .sort((a, b) => a[1] - b[1])
+    .slice(0, count)
+    .map(([k]) => k);
+}
+
+/** Tactical practices pulled across the two weakest stages. */
+export function getTacticalPractices(scores: Scores): { stage: StageKey; action: NextStepAction }[] {
+  const [first, second] = getWeakestStages(scores, 2);
+  return [
+    { stage: first, action: stageNextSteps[first][0] },
+    { stage: first, action: stageNextSteps[first][1] },
+    { stage: second, action: stageNextSteps[second][0] },
+  ];
+}
+
+
 export const categories: Record<CategoryKey, Category> = {
   "identity-seekers": {
     key: "identity-seekers",
