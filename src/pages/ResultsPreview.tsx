@@ -482,21 +482,21 @@ const ResultsPreview = () => {
   const recommendation = getRecommendations(archetype, scores);
 
   return (
-    <div className="min-h-screen bg-aubergine text-soft-white">
+    <div className="min-h-screen bg-soft-white text-aubergine">
       <Navigation />
       <main id="main-content">
 
       {!submitted ? (
         /* ── Pre-email: simple prompt + email gate ── */
-        <section className="bg-aubergine min-h-screen flex items-center justify-center px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-16">
+        <section className="bg-soft-white min-h-screen flex items-center justify-center px-4 md:px-6 pt-20 md:pt-24 pb-12 md:pb-16">
           <div className="max-w-2xl mx-auto w-full text-center">
             <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">
               Your Results
             </p>
-            <h1 className="font-display text-soft-white text-4xl md:text-5xl mb-4">
+            <h1 className="font-display text-aubergine text-4xl md:text-5xl mb-4">
               Your Great Repurpose Report is ready.
             </h1>
-            <p className="font-sans text-soft-white/60 text-base mb-10">
+            <p className="font-sans text-aubergine/60 text-base mb-10">
               Enter your email to unlock your personalized report — including your Great Repurpose Profile, where you stand across the five dimensions, and what to do next.
             </p>
 
@@ -509,7 +509,7 @@ const ResultsPreview = () => {
           <div ref={reportRef}>
 
           {/* ── Archetype hero + radar ── */}
-          <section className="bg-aubergine pt-20 md:pt-28 pb-8 md:pb-12 px-4 md:px-6">
+          <section className="bg-soft-white pt-20 md:pt-28 pb-8 md:pb-12 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
               <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">Your Great Repurpose Profile</p>
               {(() => {
@@ -517,46 +517,43 @@ const ResultsPreview = () => {
                 const isAmplifier = archetype.category === "capstone";
                 return (
                   <>
-                    <h1 className="font-display text-soft-white text-3xl md:text-4xl leading-tight mb-3">
+                    <h1 className="font-display text-aubergine text-3xl md:text-4xl leading-tight mb-3">
                       {isAmplifier ? (
                         <>You've made it through. <span className="block md:inline">Meet <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
                       ) : (
                         <>You're a <span className="font-semibold">{cat.label}</span>. <span className="block md:inline">Specifically: <em className="not-italic font-semibold">{archetype.name}</em>.</span></>
                       )}
                     </h1>
-                    <p className="font-sans text-soft-white/60 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-3">
+                    <p className="font-sans text-aubergine/60 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-3">
                       {cat.description}
                     </p>
-                    <p className="font-display text-soft-white/70 text-lg italic mb-10">
+                    <p className="font-display text-aubergine/70 text-lg italic mb-10">
                       {archetype.tagline}
                     </p>
                   </>
                 );
               })()}
 
-              <ResponsiveContainer width="100%" height={300}>
-                <RadarChart data={chartData}>
-                  <PolarGrid stroke="hsl(40 25% 90% / 0.12)" />
-                  <PolarAngleAxis
-                    dataKey="subject"
-                    tick={{ fill: "hsl(40 25% 90% / 0.7)", fontSize: 11, fontFamily: "Inter" }}
-                  />
+              <ResponsiveContainer width="100%" height={340}>
+                <RadarChart data={chartData} outerRadius="62%">
+                  <PolarGrid stroke="hsl(230 96% 10% / 0.12)" />
+                  <PolarAngleAxis dataKey="subject" tick={<StageTick />} />
                   <Radar
                     name="Your Signal"
                     dataKey="value"
-                    stroke="hsl(145 25% 50%)"
-                    fill="hsl(145 25% 50%)"
-                    fillOpacity={0.2}
+                    stroke="#152DEC"
+                    fill="#152DEC"
+                    fillOpacity={0.15}
                     strokeWidth={2}
                   />
                 </RadarChart>
               </ResponsiveContainer>
-              <p className="text-soft-white/40 text-xs font-sans mt-2">Your shape across the five dimensions</p>
+              <p className="text-aubergine/40 text-xs font-sans mt-2">Your shape across the five dimensions</p>
 
               <button
                 onClick={handleDownloadPDF}
                 disabled={generating}
-                className="mt-8 inline-flex items-center gap-2 bg-aqua text-aubergine font-sans text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
+                className="mt-8 inline-flex items-center gap-2 bg-indigo text-soft-white font-sans text-sm font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity disabled:opacity-60"
               >
                 {generating ? "Generating…" : "Download Report ↓"}
               </button>
@@ -566,38 +563,38 @@ const ResultsPreview = () => {
 
 
           {/* ── About this profile (static description) ── */}
-          <section className="bg-aubergine py-12 md:py-16 px-6">
+          <section className="bg-soft-white py-12 md:py-16 px-6">
             <div className="max-w-2xl mx-auto">
               <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
                 About {archetype.name}
               </p>
-              <p className="font-sans text-soft-white/80 text-base leading-relaxed mb-4">
+              <p className="font-sans text-aubergine/80 text-base leading-relaxed mb-4">
                 {archetype.description}
               </p>
-              <p className="font-sans text-soft-white/60 text-base leading-relaxed italic">
+              <p className="font-sans text-aubergine/60 text-base leading-relaxed italic">
                 {archetype.vulnerability}
               </p>
             </div>
           </section>
 
-          {/* ── Primary recommendation (inside dark report) ── */}
-          <section className="bg-aubergine py-12 md:py-16 px-6">
+          {/* ── Primary recommendation ── */}
+          <section className="bg-soft-white py-12 md:py-16 px-6">
             <div className="max-w-2xl mx-auto">
-              <div className="border border-soft-white/10 rounded-xl p-8 md:p-10 bg-soft-white/[0.03]">
+              <div className="border border-aubergine/10 rounded-xl p-8 md:p-10 bg-white">
                 <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
                   What to work on next
                 </p>
-                <h3 className="font-display text-soft-white text-xl md:text-2xl mb-3">
+                <h3 className="font-display text-aubergine text-xl md:text-2xl mb-3">
                   {dimensionMeta[recommendation.focus].label}
                 </h3>
-                <p className="font-sans text-soft-white/60 text-base leading-relaxed mb-8">
+                <p className="font-sans text-aubergine/60 text-base leading-relaxed mb-8">
                   {recommendation.body}
                 </p>
                 <div className="space-y-5">
                   {recommendation.practices.map((step) => (
                     <div key={step.label} className="border-l-2 border-indigo/40 pl-5">
-                      <p className="font-display text-soft-white text-base mb-1">{step.label}</p>
-                      <p className="font-sans text-soft-white/55 text-sm leading-relaxed">{step.desc}</p>
+                      <p className="font-display text-aubergine text-base mb-1">{step.label}</p>
+                      <p className="font-sans text-aubergine/55 text-sm leading-relaxed">{step.desc}</p>
                     </div>
                   ))}
                 </div>
@@ -606,14 +603,14 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── AI-Generated Narrative Report ── */}
-          <section className="bg-aubergine py-12 md:py-16 px-6 border-t border-soft-white/5">
+          <section className="bg-soft-white py-12 md:py-16 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
               <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-6">
                 Your Personalized Report
               </p>
 
               {streamError ? (
-                <p className="font-sans text-soft-white/60 text-base text-center">{streamError}</p>
+                <p className="font-sans text-aubergine/60 text-base text-center">{streamError}</p>
               ) : !interpretationText && streaming ? (
                 <GeneratingIndicator />
               ) : interpretationText ? (
@@ -628,7 +625,7 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── Dimension breakdown (collapsible) ── */}
-          <section className="bg-aubergine py-12 px-6 border-t border-soft-white/5">
+          <section className="bg-soft-white py-12 px-6 border-t border-aubergine/5">
             <div className="max-w-4xl mx-auto">
               <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-6 text-center">
                 Dimension by Dimension
@@ -638,40 +635,43 @@ const ResultsPreview = () => {
                   const score = scores[dim];
                   const isOpen = expandedDims.has(dim);
                   return (
-                    <div key={dim} className="border border-soft-white/10 rounded-lg bg-soft-white/[0.03]">
+                    <div key={dim} className="border border-aubergine/10 rounded-lg bg-white">
                       <button
                         onClick={() => toggleDim(dim)}
                         className="w-full flex items-center justify-between p-6 text-left"
                       >
-                        <div>
-                          <p className="font-sans text-sm uppercase tracking-widest text-indigo font-medium">
-                            {dimensionMeta[dim].label}
-                          </p>
-                          <p className="font-sans text-xs text-soft-white/40">
-                            {dimensionMeta[dim].stage}
-                          </p>
+                        <div className="flex items-center gap-3">
+                          <img src={dimensionLogos[dim]} alt="" className="w-6 h-6 object-contain shrink-0" />
+                          <div>
+                            <p className="font-sans text-sm uppercase tracking-widest text-indigo font-medium">
+                              {dimensionMeta[dim].label}
+                            </p>
+                            <p className="font-sans text-xs text-aubergine/40">
+                              {dimensionMeta[dim].stage}
+                            </p>
+                          </div>
                         </div>
                         <div className="flex items-center gap-3">
-                          <p className="font-display text-2xl font-bold text-soft-white">
+                          <p className="font-display text-2xl font-bold text-aubergine">
                             {score.toFixed(1)}
                           </p>
                           <ChevronDown
-                            className={`w-4 h-4 text-soft-white/40 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                            className={`w-4 h-4 text-aubergine/40 transition-transform ${isOpen ? "rotate-180" : ""}`}
                           />
                         </div>
                       </button>
                       {isOpen && (
                         <div className="px-6 pb-6">
-                          <div className="relative h-2 bg-soft-white/10 rounded-full mb-4 overflow-hidden">
+                          <div className="relative h-2 bg-aubergine/10 rounded-full mb-4 overflow-hidden">
                             <div
                               className="absolute inset-y-0 left-0 rounded-full"
                               style={{
                                 width: `${((score - 1) / 9) * 100}%`,
-                                background: "linear-gradient(to right, hsl(70 10% 25%), hsl(145 25% 50%))",
+                                background: dimensionColors[dim],
                               }}
                             />
                           </div>
-                          <p className="font-sans text-sm text-soft-white/60">
+                          <p className="font-sans text-sm text-aubergine/60">
                             Score: {score.toFixed(1)} / 10
                           </p>
                         </div>
@@ -687,7 +687,7 @@ const ResultsPreview = () => {
 
 
           {/* ── Where to go from here ── */}
-          <section className="bg-soft-white py-16 px-6">
+          <section className="bg-soft-white py-16 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
               <p className="font-sans text-aubergine/70 text-base leading-relaxed mb-8 text-center">
                 Doing this alone is harder than it needs to be. Based on your profile, here's where to go next.
@@ -696,7 +696,7 @@ const ResultsPreview = () => {
                 href={recommendation.track.href}
                 target={recommendation.track.href?.startsWith("http") ? "_blank" : undefined}
                 rel="noopener noreferrer"
-                className="block border border-aubergine/20 rounded-lg p-8 hover:border-indigo/40 transition-colors group"
+                className="block border border-aubergine/20 rounded-lg p-8 hover:border-indigo/40 transition-colors group bg-white"
               >
                 <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">Recommended for you</p>
                 <h3 className="font-display text-aubergine text-xl mb-2 group-hover:text-indigo transition-colors">
@@ -708,10 +708,10 @@ const ResultsPreview = () => {
           </section>
 
           {/* Share + Download */}
-          <section className="bg-aubergine py-16 px-6">
+          <section className="bg-soft-white py-16 px-6 border-t border-aubergine/5">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="font-display text-soft-white text-2xl mb-3">Share your Great Repurpose Profile.</h2>
-              <p className="font-sans text-soft-white/50 text-sm mb-4 whitespace-pre-line max-w-md mx-auto">
+              <h2 className="font-display text-aubergine text-2xl mb-3">Share your Great Repurpose Profile.</h2>
+              <p className="font-sans text-aubergine/50 text-sm mb-4 whitespace-pre-line max-w-md mx-auto">
                 {shareText}
               </p>
                <Link to="/types" className="inline-block text-indigo font-sans text-sm hover:underline mb-8">
@@ -728,20 +728,20 @@ const ResultsPreview = () => {
                 {resultUrl && (
                   <button
                     onClick={handleCopyLink}
-                    className="border border-soft-white/20 text-soft-white font-sans text-sm px-6 py-3 rounded-full hover:border-soft-white/60 transition-colors"
+                    className="border border-aubergine/20 text-aubergine font-sans text-sm px-6 py-3 rounded-full hover:border-aubergine/60 transition-colors"
                   >
                     {copied ? "Copied ✓" : "Copy Link"}
                   </button>
                 )}
                 <button
                   onClick={handleShareLinkedIn}
-                  className="border border-soft-white/20 text-soft-white font-sans text-sm px-6 py-3 rounded-full hover:border-soft-white/60 transition-colors"
+                  className="border border-aubergine/20 text-aubergine font-sans text-sm px-6 py-3 rounded-full hover:border-aubergine/60 transition-colors"
                 >
                   Share on LinkedIn
                 </button>
                 <button
                   onClick={handleShareX}
-                  className="border border-soft-white/20 text-soft-white font-sans text-sm px-6 py-3 rounded-full hover:border-soft-white/60 transition-colors"
+                  className="border border-aubergine/20 text-aubergine font-sans text-sm px-6 py-3 rounded-full hover:border-aubergine/60 transition-colors"
                 >
                   Share on X
                 </button>
@@ -750,6 +750,7 @@ const ResultsPreview = () => {
           </section>
         </>
       )}
+
 
       </main>
       <Footer />
