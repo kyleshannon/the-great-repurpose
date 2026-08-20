@@ -50,31 +50,39 @@ const dimensionColors: Record<DimensionKey, string> = {
   creative_action: "#FC5430",
 };
 
-// Radar axis labels, in chart order, paired with their stage logo + color.
+// Radar axis labels, clockwise from the top, paired with their stage logo + color.
 const chartLabels: { subject: string; logo: string; color: string }[] = [
   { subject: "Unhook Identity", logo: logoIndigo.url, color: "#152DEC" },
-  { subject: "Reclaim Value", logo: logoAqua.url, color: "#06B7B2" },
   { subject: "Discover Purpose", logo: logoOrchid.url, color: "#955CD5" },
-  { subject: "Become AI Ready", logo: logoCitrus.url, color: "#A67606" },
   { subject: "Relaunch Yourself", logo: logoPoppy.url, color: "#FC5430" },
+  { subject: "Become AI Ready", logo: logoCitrus.url, color: "#EDB322" },
+  { subject: "Reclaim Value", logo: logoAqua.url, color: "#06B7B2" },
 ];
+
+const SCORE_GRAY = "#6B7280";
 
 function StageTick(props: any) {
   const { x, y, payload, textAnchor, scoreBySubject } = props;
   const meta = chartLabels.find((c) => c.subject === payload.value);
-  const size = 22;
+  const size = 26;
   const fontSize = 13;
   const label = String(payload.value);
   const score = scoreBySubject?.[label];
   const anchor = textAnchor === "middle" ? "middle" : textAnchor;
-  // Approximate label width so the stacked icon can center over the text.
-  const labelWidth = label.length * fontSize * 0.56;
+
+  // Measure the rendered label so the icon and score center exactly over it.
+  const textRef = useRef<SVGTextElement>(null);
+  const [labelWidth, setLabelWidth] = useState(label.length * fontSize * 0.56);
+  useLayoutEffect(() => {
+    const w = textRef.current?.getComputedTextLength?.();
+    if (w) setLabelWidth(w);
+  }, [label]);
+
   const center =
     anchor === "middle" ? x : anchor === "end" ? x - labelWidth / 2 : x + labelWidth / 2;
   // Stacked layout: icon on top, label, score — identical spacing on every axis.
-  const iconY = y - size - 16;
-  const labelY = y;
-  const scoreY = y + 18;
+  const iconY = y - size - 14;
+  const scoreY = y + 19;
 
   return (
     <g>
@@ -82,8 +90,9 @@ function StageTick(props: any) {
         <image href={meta.logo} x={center - size / 2} y={iconY} width={size} height={size} />
       )}
       <text
+        ref={textRef}
         x={x}
-        y={labelY}
+        y={y}
         textAnchor={anchor}
         fill={meta?.color ?? "#010F32"}
         fontSize={fontSize}
@@ -97,7 +106,7 @@ function StageTick(props: any) {
           x={center}
           y={scoreY}
           textAnchor="middle"
-          fill={meta?.color ?? "#010F32"}
+          fill={SCORE_GRAY}
           fontSize={16}
           fontFamily="Inter"
           fontWeight={700}
@@ -108,6 +117,7 @@ function StageTick(props: any) {
     </g>
   );
 }
+
 
 /**
  * Radar polygon drawn edge by edge so each segment fades between the two stage
