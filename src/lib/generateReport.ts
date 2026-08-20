@@ -415,14 +415,14 @@ export async function generateReportPDF(data: ReportData) {
 
 
     for (const section of narrativeSections) {
-      ensureSpace(20);
+      ensureSpace(18);
 
       if (section.title) {
         doc.setFont("helvetica", "bold");
         doc.setFontSize(8);
         setColor(doc, INDIGO);
         doc.text(section.title.toUpperCase(), margin, y);
-        y += 6;
+        y += 5;
       }
 
       doc.setFont("helvetica", "normal");
@@ -430,10 +430,10 @@ export async function generateReportPDF(data: ReportData) {
       setColor(doc, AUBERGINE);
 
       for (const para of section.body.split("\n\n").filter(Boolean)) {
-        y = renderWrappedText(para.trim(), margin, y, contentWidth, 4.9);
-        y += 4;
+        y = renderWrappedText(para.trim(), margin, y, contentWidth, 4.8);
+        y += 3;
       }
-      y += 4;
+      y += 3;
     }
   }
 
