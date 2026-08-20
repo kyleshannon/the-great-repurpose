@@ -1,5 +1,5 @@
 import jsPDF from "jspdf";
-import lockupDark from "@/assets/tgr-lockup-dark.png";
+import lockupIndigo from "@/assets/tgr-lockup-indigo.png.asset.json";
 import logoIndigo from "@/assets/tgr-logo-indigo.png.asset.json";
 import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
 import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
@@ -96,7 +96,7 @@ export async function generateReportPDF(data: ReportData) {
 
   // Preload brand imagery
   const [lockup, ...stageLogos] = await Promise.all([
-    loadImage(lockupDark),
+    loadImage(lockupIndigo.url),
     ...dimOrder.map((d) => loadImage(dimensionMeta[d].logo)),
   ]);
   const logoByDim: Partial<Record<DimensionKey, string>> = {};
@@ -140,7 +140,7 @@ export async function generateReportPDF(data: ReportData) {
 
   if (lockup) {
     const w = 82;
-    const h = w * (1124 / 3625);
+    const h = w * (595 / 1920);
     doc.addImage(lockup, "PNG", (pageWidth - w) / 2, y, w, h);
     y += h + 16;
   } else {
@@ -149,7 +149,7 @@ export async function generateReportPDF(data: ReportData) {
 
   doc.setFont("helvetica", "bold");
   doc.setFontSize(8);
-  setColor(doc, AQUA);
+  setColor(doc, INDIGO);
   doc.text("YOUR GREAT REPURPOSE PROFILE", pageWidth / 2, y, { align: "center" });
   y += 12;
 
@@ -256,7 +256,7 @@ export async function generateReportPDF(data: ReportData) {
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(8);
-    setColor(doc, AQUA);
+    setColor(doc, INDIGO);
     doc.text("YOUR PERSONALIZED REPORT", margin, y);
     y += 11;
 
@@ -303,7 +303,7 @@ export async function generateReportPDF(data: ReportData) {
       // Closing page header so the CTA never floats alone
       doc.setFont("helvetica", "bold");
       doc.setFontSize(8);
-      setColor(doc, AQUA);
+      setColor(doc, INDIGO);
       doc.text("WHAT'S NEXT", margin, y);
       y += 11;
 
@@ -334,7 +334,7 @@ export async function generateReportPDF(data: ReportData) {
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(8);
-    setColor(doc, AQUA);
+    setColor(doc, INDIGO);
     doc.text("CONTINUE THE WORK — THE GREAT REPURPOSE ACADEMY", bx, by);
     by += 6;
 
@@ -376,7 +376,7 @@ export async function generateReportPDF(data: ReportData) {
       by += 4.6;
 
       doc.setFontSize(8.5);
-      setColor(doc, AQUA);
+      setColor(doc, INDIGO);
       doc.text(t.url, bx + 5, by);
       by += 8;
     }
