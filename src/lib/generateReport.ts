@@ -5,6 +5,8 @@ import logoAqua from "@/assets/tgr-logo-aqua.png.asset.json";
 import logoOrchid from "@/assets/tgr-logo-orchid.png.asset.json";
 import logoCitrus from "@/assets/tgr-logo-citrus.png.asset.json";
 import logoPoppy from "@/assets/tgr-logo-poppy.png.asset.json";
+import elaHeroAsset from "@/assets/ela-hero.png.asset.json";
+import taHeroAsset from "@/assets/ta-hero.png.asset.json";
 import {
   getStageScoreNote,
   getTacticalPractices,
@@ -97,6 +99,36 @@ async function loadImage(url: string): Promise<string | null> {
   }
 }
 
+/** Load an image and center-crop it to a target aspect ratio (like CSS object-cover). */
+async function loadImageCover(url: string, ratio: number): Promise<string | null> {
+  const dataUrl = await loadImage(url);
+  if (!dataUrl) return null;
+  try {
+    const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+      const el = new Image();
+      el.onload = () => resolve(el);
+      el.onerror = reject;
+      el.src = dataUrl;
+    });
+    const srcRatio = img.width / img.height;
+    let sw = img.width;
+    let sh = img.height;
+    if (srcRatio > ratio) sw = img.height * ratio;
+    else sh = img.width / ratio;
+    const sx = (img.width - sw) / 2;
+    const sy = (img.height - sh) / 2;
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.round(sw);
+    canvas.height = Math.round(sh);
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return dataUrl;
+    ctx.drawImage(img, sx, sy, sw, sh, 0, 0, canvas.width, canvas.height);
+    return canvas.toDataURL("image/jpeg", 0.85);
+  } catch {
+    return dataUrl;
+  }
+}
+
 const isNextMoveTitle = (title: string) => /next\s+move/i.test(title);
 
 export async function generateReportPDF(data: ReportData) {
@@ -108,8 +140,10 @@ export async function generateReportPDF(data: ReportData) {
   const bottomMargin = 24;
 
   // Preload brand imagery
-  const [lockup, ...stageLogos] = await Promise.all([
+  const [lockup, elaPhoto, taPhoto, ...stageLogos] = await Promise.all([
     loadImage(lockupIndigo.url),
+    loadImageCover(elaHeroAsset.url, 16 / 9),
+    loadImageCover(taHeroAsset.url, 16 / 9),
     ...dimOrder.map((d) => loadImage(dimensionMeta[d].logo)),
   ]);
   const logoByDim: Partial<Record<DimensionKey, string>> = {};
@@ -394,15 +428,57 @@ export async function generateReportPDF(data: ReportData) {
 
   // ── Academy offerings ──────────────────────────────────────────────────────
   {
-    const blockHeight = 52;
-    ensureSpace(blockHeight + 20);
+    const tracks = [
+      {
+        eyebrow: "For leaders making the calls",
+        title: "The Executive Leadership Academy",
+        desc: "An immersive workshop plus three months of implementation sessions, applied to the decisions already on your desk.",
+        url: "TheGreatRepurpose.com/academy/leadership",
+        color: INDIGO,
+        photo: elaPhoto,
+      },
+      {
+        eyebrow: "For people whose role just ended",
+        title: "The TGR Transition Academy",
+        desc: "A cohort moving through the five stages together, building real AI agency instead of polishing a resume.",
+        url: "TheGreatRepurpose.com/academy/transition",
+        color: POPPY,
+        photo: taPhoto,
+      },
+    ];
+
+    const gap = 6;
+    const cardW = (contentWidth - gap) / 2;
+    const photoH = (cardW * 9) / 16;
+    const padX = 5;
+    const textW = cardW - padX * 2;
+
+    // Measure the tallest card so both share a height
+    doc.setFontSize(9.5);
+    const bodyLines = tracks.map((t) => doc.splitTextToSize(t.desc, textW) as string[]);
+    const titleLines = tracks.map((t) => {
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(10);
+      return doc.splitTextToSize(t.title, textW) as string[];
+    });
+    const cardH =
+      photoH +
+      6 +
+      Math.max(
+        ...tracks.map(
+          (_, i) => 3.8 + titleLines[i].length * 4.8 + 1.5 + bodyLines[i].length * 4.2 + 5.5,
+        ),
+      ) +
+      5;
+
+    ensureSpace(cardH + 24);
     y += 2;
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(13);
     setColor(doc, AUBERGINE);
     y = renderWrappedText(
-      "Learn more about The Great Repurpose Academy Offerings",
+      "Learn About The Great Repurpose Academy",
       0,
       y,
       contentWidth,
@@ -411,56 +487,50 @@ export async function generateReportPDF(data: ReportData) {
     );
     y += 4;
 
-    doc.setFillColor(255, 255, 255);
-    doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
-    doc.setLineWidth(0.3);
-    doc.roundedRect(margin, y, contentWidth, blockHeight, 3, 3, "FD");
+    tracks.forEach((t, i) => {
+      const cx = margin + i * (cardW + gap);
 
-    let by = y + 10;
-    const bx = margin + 8;
-    const bw = contentWidth - 16;
+      doc.setFillColor(255, 255, 255);
+      doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+      doc.setLineWidth(0.3);
+      doc.roundedRect(cx, y, cardW, cardH, 3, 3, "FD");
 
-    const tracks = [
-      {
-        eyebrow: "For leaders making the calls",
-        title: "The Executive Leadership Academy",
-        desc: "An immersive workshop plus three months of implementation sessions, applied to the decisions already on your desk.",
-        url: "TheGreatRepurpose.com/academy/leadership",
-        color: INDIGO,
-      },
-      {
-        eyebrow: "For people whose role just ended",
-        title: "The TGR Transition Academy",
-        desc: "A cohort moving through the five stages together, building real AI agency instead of polishing a resume.",
-        url: "TheGreatRepurpose.com/academy/transition",
-        color: POPPY,
-      },
-    ];
+      if (t.photo) {
+        doc.addImage(t.photo, "JPEG", cx, y, cardW, photoH);
+      } else {
+        doc.setFillColor(t.color[0], t.color[1], t.color[2]);
+        doc.rect(cx, y, cardW, photoH, "F");
+      }
+      // hairline under the photo
+      doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+      doc.line(cx, y + photoH, cx + cardW, y + photoH);
 
-    for (const t of tracks) {
-      doc.setFillColor(t.color[0], t.color[1], t.color[2]);
-      doc.circle(bx + 1, by - 1.2, 1.2, "F");
+      let ty = y + photoH + 6;
+
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(7);
+      setColor(doc, t.color);
+      doc.text(t.eyebrow.toUpperCase(), cx + padX, ty);
+      ty += 5;
 
       doc.setFont("helvetica", "bold");
       doc.setFontSize(10);
       setColor(doc, AUBERGINE);
-      doc.text(t.title, bx + 5, by);
-      by += 4.8;
+      doc.text(titleLines[i], cx + padX, ty);
+      ty += titleLines[i].length * 4.8 + 1.5;
 
       doc.setFont("helvetica", "normal");
-      doc.setFontSize(9);
+      doc.setFontSize(9.5);
       setColor(doc, MUTED);
-      const descLines = doc.splitTextToSize(t.desc, bw - 5) as string[];
-      doc.text(descLines, bx + 5, by);
-      by += descLines.length * 4.4 + 1;
+      doc.text(bodyLines[i], cx + padX, ty);
+      ty += bodyLines[i].length * 4.2 + 4.5;
 
-      doc.setFontSize(8.5);
+      doc.setFontSize(8);
       setColor(doc, INDIGO);
-      doc.text(t.url, bx + 5, by);
-      by += 8;
-    }
+      doc.text(t.url, cx + padX, ty);
+    });
 
-    y += blockHeight + 6;
+    y += cardH + 6;
   }
 
   // ── Footers on every page ──────────────────────────────────────────────────
