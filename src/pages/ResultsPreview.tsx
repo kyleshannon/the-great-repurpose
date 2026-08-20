@@ -60,31 +60,50 @@ const chartLabels: { subject: string; logo: string; color: string }[] = [
 ];
 
 function StageTick(props: any) {
-  const { x, y, payload, textAnchor } = props;
+  const { x, y, payload, textAnchor, scoreBySubject } = props;
   const meta = chartLabels.find((c) => c.subject === payload.value);
-  const size = 16;
-  const above = y < 160;
-  const imgY = above ? y - size - 12 : y - 4;
-  const textY = above ? y - 6 : y + size + 8;
+  const size = 14;
+  const label = String(payload.value);
+  const score = scoreBySubject?.[label];
+  // Approximate label width so the icon can sit just left of the text.
+  const labelWidth = label.length * 5.6;
+  const anchor = textAnchor === "middle" ? "middle" : textAnchor;
+  const textStart =
+    anchor === "middle" ? x - labelWidth / 2 : anchor === "end" ? x - labelWidth : x;
+  const iconX = textStart - size - 4;
+
   return (
     <g>
-      {meta && (
-        <image href={meta.logo} x={x - size / 2} y={imgY} width={size} height={size} />
-      )}
+      {meta && <image href={meta.logo} x={iconX} y={y - size / 2 - 4} width={size} height={size} />}
       <text
         x={x}
-        y={textY}
-        textAnchor={textAnchor}
+        y={y}
+        textAnchor={anchor}
         fill={meta?.color ?? "#010F32"}
         fontSize={11}
         fontFamily="Inter"
         fontWeight={600}
       >
-        {payload.value}
+        {label}
       </text>
+      {typeof score === "number" && (
+        <text
+          x={x}
+          y={y + 14}
+          textAnchor={anchor}
+          fill="#010F32"
+          fillOpacity={0.55}
+          fontSize={11}
+          fontFamily="Inter"
+          fontWeight={700}
+        >
+          {score.toFixed(1)}
+        </text>
+      )}
     </g>
   );
 }
+
 
 function getLowestDimension(scores: Record<DimensionKey, number>): DimensionKey {
   return (Object.entries(scores) as [DimensionKey, number][]).reduce(
