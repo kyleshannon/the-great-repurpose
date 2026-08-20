@@ -567,9 +567,8 @@ const ResultsPreview = () => {
   const archetypeSlug = getArchetypeSlug(archetype);
 
   // Shareable summary text
-  const shareText = `I got my Repurpose Profile and I am ${archetype.name}.\n\n${
-    profileCopy[archetypeSlug]?.description ?? archetype.description
-  }\n\nGet your Repurpose Profile at TheGreatRepurpose.com`;
+  const shareText = `I got my Repurpose Profile and I am ${archetype.name}.\n\nGet your Repurpose Profile at TheGreatRepurpose.com`;
+
 
   const handleEmailSuccess = async (email: string) => {
     if (submitted) return;
@@ -640,10 +639,10 @@ const ResultsPreview = () => {
     }
   };
 
-  /** Renders the radar SVG (with its stage logos inlined) to a downloadable PNG. */
-  const downloadChartImage = async () => {
+  /** Renders the radar SVG (with its stage logos inlined) to a PNG blob. */
+  const buildChartPngBlob = async (): Promise<Blob | null> => {
     const svg = chartRef.current?.querySelector("svg");
-    if (!svg) return;
+    if (!svg) return null;
     const clone = svg.cloneNode(true) as SVGSVGElement;
     const width = svg.clientWidth || 640;
     const height = svg.clientHeight || 340;
@@ -685,26 +684,54 @@ const ResultsPreview = () => {
     canvas.width = width * scale;
     canvas.height = height * scale;
     const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    if (!ctx) return null;
     ctx.fillStyle = "#F2F1F1";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 
-    const link = document.createElement("a");
-    link.href = canvas.toDataURL("image/png");
-    link.download = "my-repurpose-profile.png";
-    link.click();
+    return await new Promise<Blob | null>((resolve) =>
+      canvas.toBlob((b) => resolve(b), "image/png")
+    );
   };
 
-  /** Copies the post text, saves the graph snapshot, then opens the composer. */
+  const downloadChartImage = async () => {
+    const blob = await buildChartPngBlob();
+    if (!blob) return;
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "my-repurpose-profile.png";
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
+  };
+
+  /** Copies the post text + graph image, saves a copy, then opens the composer. */
   const openShare = async (network: "linkedin" | "x") => {
+    const blob = await buildChartPngBlob().catch(() => null);
+
+    // Prefer putting the graph itself on the clipboard so it can be pasted
+    // straight into the composer; fall back to text-only.
+    let imageOnClipboard = false;
     try {
-      await navigator.clipboard.writeText(shareText);
-      setSharePrepped(true);
-      setTimeout(() => setSharePrepped(false), 4000);
+      if (blob && typeof ClipboardItem !== "undefined") {
+        await navigator.clipboard.write([
+          new ClipboardItem({ "image/png": blob }),
+        ]);
+        imageOnClipboard = true;
+      } else {
+        await navigator.clipboard.writeText(shareText);
+      }
     } catch {
-      /* clipboard may be unavailable; the composer still gets the text */
+      try {
+        await navigator.clipboard.writeText(shareText);
+      } catch {
+        /* clipboard may be unavailable; the composer still gets the text */
+      }
     }
+    setSharePrepped(imageOnClipboard);
+    setTimeout(() => setSharePrepped(false), 8000);
+
+    // Always keep a downloaded copy as a fallback for attaching manually.
     await downloadChartImage().catch(() => undefined);
 
     const text = encodeURIComponent(shareText);
@@ -1060,8 +1087,8 @@ const ResultsPreview = () => {
               </div>
               <p className="font-sans text-aubergine/45 text-xs mt-3 max-w-md mx-auto">
                 {sharePrepped
-                  ? "Post text copied and your profile graph downloaded — attach the image in the composer."
-                  : "Sharing copies the post above and downloads your graph so you can attach it."}
+                  ? "Your profile graph is on your clipboard (and saved to downloads). Paste it into the post."
+                  : "Sharing saves your profile graph so you can attach or paste it into the post."}
               </p>
             </div>
 
