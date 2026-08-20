@@ -194,7 +194,7 @@ const Index = () => {
                   </h2>
                 </ScrollFadeUp>
                 <ScrollFadeUp delay={150}>
-                  <p className="font-display text-aubergine text-2xl md:text-3xl italic leading-snug">
+                  <p className="font-display text-poppy text-2xl md:text-3xl italic leading-snug">
                     “Who am I now?”
                   </p>
                 </ScrollFadeUp>
