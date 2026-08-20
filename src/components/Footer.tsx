@@ -37,7 +37,7 @@ export function Footer() {
       <div className="border-t border-soft-white/10 px-6 py-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <p className="text-soft-white/50 text-sm font-display italic">
-            "The future of AI is still up for grabs — join us."
+            "It's not us versus AI. It's us AMPLIFIED by AI."
           </p>
           <p className="text-soft-white/30 text-xs font-sans">© 2026 The Great Repurpose</p>
         </div>
