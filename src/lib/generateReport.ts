@@ -317,28 +317,23 @@ export async function generateReportPDF(data: ReportData) {
 
   // ── Radar chart ────────────────────────────────────────────────────────────
   if (data.chartImage) {
-    const props = doc.getImageProperties(data.chartImage);
+    const chart = await trimImage(data.chartImage);
+    const props = doc.getImageProperties(chart);
     const ratio = props.height / props.width;
-    let w = contentWidth * 1.3;
-    let h = ratio * w;
-    ensureSpace(h + 16);
     doc.setFont("helvetica", "bold");
     doc.setFontSize(13);
     setColor(doc, AUBERGINE);
     doc.text("The Shape of Your Repurpose Profile", pageWidth / 2, y, { align: "center" });
-    y += 6;
-    // Grow the chart to fill leftover space on the page (it otherwise leaves a
-    // large gap before the page break), capped so it stays on one page.
+    y += 8;
+    // Fill the remaining vertical space on page one without overflowing.
     const available = pageHeight - bottomMargin - y;
-    if (h < available) {
-      const maxW = pageWidth - margin * 0.25;
-      const scaled = Math.min(available / h, maxW / w);
-      w *= scaled;
-      h *= scaled;
-    }
-    doc.addImage(data.chartImage, "PNG", (pageWidth - w) / 2, y, w, h);
+    const maxW = pageWidth - margin;
+    let w = Math.min(maxW, available / ratio);
+    let h = ratio * w;
+    doc.addImage(chart, "PNG", (pageWidth - w) / 2, y, w, h);
     y += h + 8;
   }
+
 
 
   // ── Your five stage scores ─────────────────────────────────────────────────
