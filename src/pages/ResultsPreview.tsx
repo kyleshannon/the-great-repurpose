@@ -582,6 +582,13 @@ const ResultsPreview = () => {
 
   const recommendation = getRecommendations(archetype, scores);
   const tacticalPractices = getTacticalPractices(scores);
+  // "Your Next Move" is pulled out of the AI narrative and shown under "What to work on next".
+  const nextMoveBody = parseInterpretationSections(interpretationText || "")
+    .filter((s) => isNextMoveTitle(s.title))
+    .map((s) => s.body)
+    .join("\n\n")
+    .trim();
+
 
 
   return (
