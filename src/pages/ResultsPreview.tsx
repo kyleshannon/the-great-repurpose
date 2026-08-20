@@ -745,9 +745,9 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── AI-Generated Narrative Report ── */}
-          <section className="bg-soft-white py-12 md:py-16 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-8 md:py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-6">
+              <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
                 Insights About Your Profile
               </p>
 
@@ -767,16 +767,21 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── What to work on next (tactical) ── */}
-          <section className="bg-soft-white py-12 md:py-16 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-8 md:py-10 px-6 border-t border-aubergine/5">
             <div className="max-w-2xl mx-auto">
-              <div className="border border-aubergine/10 rounded-xl p-8 md:p-10 bg-white">
-                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-4">
+              <div className="border border-aubergine/10 rounded-xl p-6 md:p-8 bg-white">
+                <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">
                   What to work on next
                 </p>
-                <p className="font-sans text-aubergine/60 text-base leading-relaxed mb-8">
-                  Not a stage to go conquer — three concrete things you could actually do in the next month, chosen from where your scores are thinnest.
+                {nextMoveBody && (
+                  <div className="mb-6">
+                    <MarkdownParas body={nextMoveBody} />
+                  </div>
+                )}
+                <p className="font-sans text-aubergine/60 text-base leading-relaxed mb-5">
+                  Three concrete things you could actually do in the next month, chosen from where your scores are thinnest.
                 </p>
-                <div className="space-y-5">
+                <div className="space-y-4">
                   {tacticalPractices.map(({ stage, action }) => (
                     <div
                       key={action.label}
@@ -791,6 +796,7 @@ const ResultsPreview = () => {
               </div>
             </div>
           </section>
+
 
           </div>{/* end reportRef */}
 
