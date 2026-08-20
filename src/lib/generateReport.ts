@@ -394,7 +394,7 @@ export async function generateReportPDF(data: ReportData) {
 
   // ── Academy offerings ──────────────────────────────────────────────────────
   {
-    const blockHeight = 62;
+    const blockHeight = 52;
     ensureSpace(blockHeight + 20);
     y += 2;
 
