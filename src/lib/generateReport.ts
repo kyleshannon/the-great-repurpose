@@ -341,8 +341,9 @@ export async function generateReportPDF(data: ReportData) {
 
   // ── What to work on next ───────────────────────────────────────────────────
   {
-    ensureSpace(40);
-    y += 4;
+    ensureSpace(60);
+    y += 6;
+    drawLine(doc, y - 6, margin, pageWidth - margin);
     sectionEyebrow("What to work on next");
 
     if (nextMoveBody) {
