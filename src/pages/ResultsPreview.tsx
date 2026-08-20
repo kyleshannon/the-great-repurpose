@@ -829,7 +829,7 @@ const ResultsPreview = () => {
               <h2 className="font-display text-aubergine text-2xl md:text-3xl mb-2">
                 The Shape of Your Repurpose Profile
               </h2>
-              <ResponsiveContainer width="100%" height={340}>
+              <ResponsiveContainer width="100%" height={310}>
                 <RadarChart data={chartData} outerRadius="66%" margin={{ top: 46, right: 34, bottom: 34, left: 34 }}>
                   <defs>
                     <radialGradient id="stageFill" cx="50%" cy="50%" r="70%">
