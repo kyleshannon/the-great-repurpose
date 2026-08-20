@@ -1058,6 +1058,11 @@ const ResultsPreview = () => {
                   Share on X
                 </button>
               </div>
+              <p className="font-sans text-aubergine/45 text-xs mt-3 max-w-md mx-auto">
+                {sharePrepped
+                  ? "Post text copied and your profile graph downloaded — attach the image in the composer."
+                  : "Sharing copies the post above and downloads your graph so you can attach it."}
+              </p>
             </div>
 
           </section>
