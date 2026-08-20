@@ -425,6 +425,7 @@ const ResultsPreview = () => {
 
   const [submitted, setSubmitted] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [sharePrepped, setSharePrepped] = useState(false);
   const [loading, setLoading] = useState(false);
   const [generating, setGenerating] = useState(false);
   const [scores, setScores] = useState<Record<DimensionKey, number> | null>(null);
