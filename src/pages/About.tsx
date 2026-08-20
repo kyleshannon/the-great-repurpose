@@ -201,7 +201,8 @@ const About = () => {
                 Why Kyle
               </p>
               <h2 className="font-display text-soft-white text-3xl md:text-4xl leading-tight mb-8">
-                He's been through this kind of disruption before
+                He's been through this kind<br />
+                of disruption before
               </h2>
             </ScrollFadeUp>
             <div className="font-body text-soft-white/80 text-lg leading-relaxed space-y-6">
@@ -250,7 +251,7 @@ const About = () => {
               </ScrollFadeUp>
               <ScrollFadeUp delay={450}>
                 <p>
-                  Kyle practices this himself. Through the AI Learning Lab, he continuously experiments with new models, agents, local AI, creative tools, and emerging ways of working. He co-authored <em>Collective Intelligence in the Age of AI</em>. And in developing <em>Sydney</em>, an original musical, he has used AI across writing, music, visual development, research, and production — not to automate away the creative process, but to make a complex creative ambition possible at a scale an individual could never have attempted before.
+                  Kyle practices this himself. Through the AI Learning Lab, he continuously experiments with new models, agents, local AI, creative tools, and emerging ways of working. He co-authored <em>Collective Intelligence in the Age of AI</em>. And in developing <em>Sydney</em>, an original musical, he has used AI across writing, music, visual development, research, and production... not to automate away the creative process, but to make a complex creative ambition possible at a scale an individual could never have attempted before.
                 </p>
               </ScrollFadeUp>
               <ScrollFadeUp delay={500}>
@@ -285,13 +286,14 @@ const About = () => {
                 Why Andee
               </p>
               <h2 className="font-display text-aubergine text-3xl md:text-4xl leading-tight mb-8">
-                Identity work at the level of being
+                Identity work at the<br />
+                level of being
               </h2>
             </ScrollFadeUp>
             <div className="font-body text-aubergine/80 text-lg leading-relaxed space-y-6">
               <ScrollFadeUp delay={100}>
                 <p>
-                  Before she pivoted into coaching, Andee spent almost twelve years with a global restaurant chain as a corporate trainer. In 2010, the concept was acquired by a much larger corporation with a stripping-down mentality — eliminating employee benefits and dismantling the people-first culture that had made the place thrive.
+                  Before she pivoted into coaching, Andee spent almost twelve years with a global restaurant chain as a corporate trainer. In 2010, the concept was acquired by a much larger corporation with a stripping-down mentality, eliminating employee benefits and dismantling the people-first culture that had made the place thrive.
                 </p>
               </ScrollFadeUp>
               <ScrollFadeUp delay={150}>
@@ -308,12 +310,12 @@ const About = () => {
               </ScrollFadeUp>
               <ScrollFadeUp delay={250}>
                 <p>
-                  When people don't feel cared for, they check out. They stop working for you, and that's the part most AI strategies miss. People need to connect to a sense of meaning and purpose — and it's often very dire when they don't.
+                  When people don't feel cared for, they check out. They stop working for you, and that's the part most AI strategies miss. People need to connect to a sense of meaning and purpose, and it's often very dire when they don't.
                 </p>
               </ScrollFadeUp>
               <ScrollFadeUp delay={300}>
                 <p>
-                  Andee belongs to a cohort of transformational coaches who have moved away from teaching skills entirely — working instead at the level of being, identity, and consciousness. Coaching used to be about telling people what to do. This work is about who you are.
+                  Andee belongs to a cohort of transformational coaches who have moved away from teaching skills entirely, working instead at the level of being, identity, and consciousness. Coaching used to be about telling people what to do. This work is about who you are.
                 </p>
               </ScrollFadeUp>
               <ScrollFadeUp delay={350}>
@@ -323,7 +325,7 @@ const About = () => {
               </ScrollFadeUp>
               <ScrollFadeUp delay={400}>
                 <p>
-                  Part of what made this transformation possible was connection and community, and in 2024, Andee pivoted to building online communities full-time. She has built and/or operationalized five online communities — including the AI Salon.
+                  Part of what made this transformation possible was connection and community, and in 2024, Andee pivoted to building online communities full-time. She has built and/or operationalized five online communities... including the AI Salon.
                 </p>
               </ScrollFadeUp>
               <ScrollFadeUp delay={450}>
@@ -348,7 +350,7 @@ const About = () => {
                 What We Built
               </p>
               <h2 className="font-display text-soft-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
-                Learn About The Great Repurpose Academy
+                The Great Repurpose Academy
               </h2>
               <p className="font-body text-soft-white/70 text-lg leading-relaxed max-w-3xl mb-12">
                 Two programs built on the five stages. One for leaders deciding how AI reshapes the work, and one for people whose roles it already changed. Run them together for coordinated support on both sides of a workforce change.
