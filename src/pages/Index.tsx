@@ -193,6 +193,12 @@ const Index = () => {
         <section className="bg-aubergine py-16 md:py-24 px-6">
           <div className="max-w-4xl mx-auto space-y-10">
             <ScrollFadeUp>
+              <h2 className="font-display text-soft-white text-3xl md:text-4xl lg:text-5xl leading-tight">
+                The more things change...
+              </h2>
+            </ScrollFadeUp>
+
+            <ScrollFadeUp delay={50}>
               <p className="font-body text-soft-white/70 text-lg leading-relaxed">
                 A century and a half ago, the steam engine didn't just change how things were made. It changed what it meant to be valuable. Strength, endurance, and craft that had defined human work for millennia were suddenly commodities. The people who thrived weren't the ones who out-muscled the machine. They were the ones who learned to work with it — and found the layer of value the machine couldn't reach.
               </p>
@@ -200,15 +206,15 @@ const Index = () => {
 
             <ScrollFadeUp delay={100}>
               <div className="grid md:grid-cols-5 gap-8 md:gap-10 items-center">
-                <div className="md:col-span-3 space-y-5">
-                  {fearQuotes.map(({ text, source }, i) => (
+                <div className="md:col-span-3 space-y-6">
+                  <h2 className="font-display text-soft-white text-2xl md:text-3xl leading-tight">
+                    The fears underneath the headlines
+                  </h2>
+                  {fearQuotes.map(({ text }) => (
                     <blockquote key={text} className="border-l-2 border-indigo/60 pl-5">
-                      <p className="font-display text-soft-white text-lg md:text-xl italic leading-snug mb-1">
+                      <p className="font-display text-soft-white text-lg md:text-xl italic leading-snug">
                         "{text}"
                       </p>
-                      <cite className="font-sans text-soft-white/50 text-xs not-italic tracking-wide uppercase">
-                        {source}
-                      </cite>
                     </blockquote>
                   ))}
                 </div>
@@ -232,9 +238,9 @@ const Index = () => {
                   What if the same technology that's disrupting your work could become the most powerful tool you've ever touched?
                 </h3>
                 <div className="font-body text-soft-white/80 text-base leading-relaxed space-y-3">
-                  <p>You could be excellent at anything you set your mind to.</p>
-                  <p>You could become a ten-person team.</p>
-                  <p>You could start the business you've dreamed of.</p>
+                  <p>First, you do the identity work. You separate who you are from what you used to do, so you can finally see your real value and choose what actually matters to you.</p>
+                  <p>Then you take AI — the very force that's displacing the old version of your work — and use it as an amplifier for the new version of you.</p>
+                  <p>Identity on one track. AI as a force multiplier on the other. Bring those two tracks together, and the work you were meant to do becomes far more possible.</p>
                 </div>
               </div>
             </ScrollFadeUp>
