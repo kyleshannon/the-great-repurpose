@@ -54,9 +54,9 @@ const dimensionColors: Record<DimensionKey, string> = {
 const chartLabels: { subject: string; logo: string; color: string }[] = [
   { subject: "Unhook Identity", logo: logoIndigo.url, color: "#152DEC" },
   { subject: "Reclaim Value", logo: logoAqua.url, color: "#06B7B2" },
-  { subject: "Find Your Purpose", logo: logoOrchid.url, color: "#955CD5" },
-  { subject: "Discover AI's Power", logo: logoCitrus.url, color: "#A67606" },
-  { subject: "Start Creating", logo: logoPoppy.url, color: "#FC5430" },
+  { subject: "Discover Purpose", logo: logoOrchid.url, color: "#955CD5" },
+  { subject: "Become AI Ready", logo: logoCitrus.url, color: "#A67606" },
+  { subject: "Relaunch Yourself", logo: logoPoppy.url, color: "#FC5430" },
 ];
 
 function StageTick(props: any) {
@@ -431,9 +431,9 @@ const ResultsPreview = () => {
   const chartData = [
     { subject: "Unhook Identity", value: scores.identity, fullMark: 10 },
     { subject: "Reclaim Value", value: scores.value, fullMark: 10 },
-    { subject: "Find Your Purpose", value: scores.purpose, fullMark: 10 },
-     { subject: "Discover AI's Power", value: scores.ai_relationship, fullMark: 10 },
-     { subject: "Start Creating", value: scores.creative_action, fullMark: 10 },
+    { subject: "Discover Purpose", value: scores.purpose, fullMark: 10 },
+     { subject: "Become AI Ready", value: scores.ai_relationship, fullMark: 10 },
+     { subject: "Relaunch Yourself", value: scores.creative_action, fullMark: 10 },
   ];
 
   const scoreBySubject: Record<string, number> = Object.fromEntries(
@@ -623,7 +623,7 @@ const ResultsPreview = () => {
           <section className="bg-soft-white pb-8 px-4 md:px-6">
             <div className="max-w-2xl mx-auto text-center">
               <ResponsiveContainer width="100%" height={360}>
-                <RadarChart data={chartData} outerRadius="58%">
+                <RadarChart data={chartData} outerRadius="55%" margin={{ top: 24, right: 24, bottom: 24, left: 24 }}>
                   <PolarGrid stroke="hsl(230 96% 10% / 0.12)" />
                   <PolarAngleAxis dataKey="subject" tick={<StageTick scoreBySubject={scoreBySubject} />} />
                   <Radar
