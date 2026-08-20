@@ -902,7 +902,7 @@ const ResultsPreview = () => {
           </section>
 
           {/* ── What to work on next (tactical) ── */}
-          <section className="bg-soft-white py-8 md:py-10 px-6 border-t border-aubergine/5">
+          <section className="bg-soft-white py-8 md:py-10 px-6">
             <div className="max-w-2xl mx-auto">
               <div className="border border-aubergine/10 rounded-xl p-6 md:p-8 bg-white">
                 <p className="text-indigo font-sans text-xs uppercase tracking-widest mb-3">
