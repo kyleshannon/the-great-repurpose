@@ -61,6 +61,8 @@ const chartLabels: { subject: string; logo: string; color: string }[] = [
 
 const SCORE_GRAY = "#6B7280";
 
+const AXIS_FONT = "Figtree, Inter, sans-serif";
+
 function StageTick(props: any) {
   const { x, y, payload, textAnchor, scoreBySubject } = props;
   const meta = chartLabels.find((c) => c.subject === payload.value);
@@ -80,9 +82,12 @@ function StageTick(props: any) {
 
   const center =
     anchor === "middle" ? x : anchor === "end" ? x - labelWidth / 2 : x + labelWidth / 2;
+  // The top axis sits directly above the grid, so lift the whole stack clear of it.
+  const isTop = anchor === "middle" && y < 140;
+  const baseY = isTop ? y - 24 : y;
   // Stacked layout: icon on top, label, score — identical spacing on every axis.
-  const iconY = y - size - 14;
-  const scoreY = y + 19;
+  const iconY = baseY - size - 14;
+  const scoreY = baseY + 19;
 
   return (
     <g>
@@ -92,11 +97,11 @@ function StageTick(props: any) {
       <text
         ref={textRef}
         x={x}
-        y={y}
+        y={baseY}
         textAnchor={anchor}
         fill={meta?.color ?? "#010F32"}
         fontSize={fontSize}
-        fontFamily="Inter"
+        fontFamily={AXIS_FONT}
         fontWeight={600}
       >
         {label}
@@ -108,7 +113,7 @@ function StageTick(props: any) {
           textAnchor="middle"
           fill={SCORE_GRAY}
           fontSize={16}
-          fontFamily="Inter"
+          fontFamily={AXIS_FONT}
           fontWeight={700}
         >
           {score.toFixed(1)}
