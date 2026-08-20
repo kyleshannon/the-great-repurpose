@@ -240,7 +240,8 @@ export async function generateReportPDF(data: ReportData) {
   }
 
   // ── Your five stage scores ─────────────────────────────────────────────────
-  ensureSpace(30);
+  // Keep the header with at least the first stage row.
+  ensureSpace(60);
   drawLine(doc, y - 4, margin, pageWidth - margin);
   y += 4;
   sectionEyebrow("Your five stage scores");
@@ -392,8 +393,8 @@ export async function generateReportPDF(data: ReportData) {
 
   // ── Academy offerings ──────────────────────────────────────────────────────
   {
-    const blockHeight = 54;
-    ensureSpace(blockHeight + 18);
+    const blockHeight = 62;
+    ensureSpace(blockHeight + 20);
     y += 2;
 
     doc.setFont("helvetica", "bold");
@@ -448,8 +449,9 @@ export async function generateReportPDF(data: ReportData) {
       doc.setFont("helvetica", "normal");
       doc.setFontSize(9);
       setColor(doc, MUTED);
-      doc.text(doc.splitTextToSize(t.desc, bw - 5) as string[], bx + 5, by);
-      by += 4.6;
+      const descLines = doc.splitTextToSize(t.desc, bw - 5) as string[];
+      doc.text(descLines, bx + 5, by);
+      by += descLines.length * 4.4 + 1;
 
       doc.setFontSize(8.5);
       setColor(doc, INDIGO);
