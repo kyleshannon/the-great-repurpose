@@ -415,14 +415,14 @@ export async function generateReportPDF(data: ReportData) {
 
 
     for (const section of narrativeSections) {
-      ensureSpace(20);
+      ensureSpace(18);
 
       if (section.title) {
         doc.setFont("helvetica", "bold");
         doc.setFontSize(8);
         setColor(doc, INDIGO);
         doc.text(section.title.toUpperCase(), margin, y);
-        y += 6;
+        y += 5;
       }
 
       doc.setFont("helvetica", "normal");
@@ -430,18 +430,18 @@ export async function generateReportPDF(data: ReportData) {
       setColor(doc, AUBERGINE);
 
       for (const para of section.body.split("\n\n").filter(Boolean)) {
-        y = renderWrappedText(para.trim(), margin, y, contentWidth, 4.9);
-        y += 4;
+        y = renderWrappedText(para.trim(), margin, y, contentWidth, 4.8);
+        y += 3;
       }
-      y += 4;
+      y += 3;
     }
   }
 
   // ── What to work on next ───────────────────────────────────────────────────
   {
-    ensureSpace(60);
-    y += 6;
-    drawLine(doc, y - 6, margin, pageWidth - margin);
+    ensureSpace(50);
+    y += 4;
+    drawLine(doc, y - 4, margin, pageWidth - margin);
     sectionEyebrow("What to work on next");
 
     if (nextMoveBody) {
@@ -449,25 +449,25 @@ export async function generateReportPDF(data: ReportData) {
       doc.setFontSize(10);
       setColor(doc, AUBERGINE);
       for (const para of nextMoveBody.split("\n\n").filter(Boolean)) {
-        y = renderWrappedText(para.trim(), margin, y, contentWidth, 4.9);
-        y += 4;
+        y = renderWrappedText(para.trim(), margin, y, contentWidth, 4.8);
+        y += 3;
       }
-      y += 2;
+      y += 1;
     }
 
     const practices = getTacticalPractices(data.scores as Scores);
     const leadInText =
       "Three concrete things you could actually do in the next month, chosen from where your scores are thinnest.";
     const leadInLines = doc.splitTextToSize(leadInText, contentWidth) as string[];
-    const leadInHeight = leadInLines.length * 4.9;
+    const leadInHeight = leadInLines.length * 4.7;
 
     // Keep the lead-in with at least the first practice block so it never sits alone at the bottom of a page.
     const firstDescLines = practices[0]
       ? (doc.splitTextToSize(practices[0].action.desc, contentWidth - 8) as string[])
       : [];
-    const firstBlockHeight = practices[0] ? 6 + firstDescLines.length * 4.6 : 0;
+    const firstBlockHeight = practices[0] ? 5 + firstDescLines.length * 4.5 : 0;
 
-    if (y + leadInHeight + 6 + firstBlockHeight > pageHeight - bottomMargin) {
+    if (y + leadInHeight + 5 + firstBlockHeight > pageHeight - bottomMargin) {
       doc.addPage();
       paintPage();
       y = margin + 4;
@@ -476,29 +476,29 @@ export async function generateReportPDF(data: ReportData) {
     doc.setFont("helvetica", "normal");
     doc.setFontSize(10);
     setColor(doc, MUTED);
-    y = renderWrappedText(leadInText, margin, y, contentWidth, 4.9);
-    y += 6;
+    y = renderWrappedText(leadInText, margin, y, contentWidth, 4.7);
+    y += 5;
 
     for (const { stage, action } of practices) {
       const color = dimensionMeta[stage as DimensionKey].color;
       const descLines = doc.splitTextToSize(action.desc, contentWidth - 8) as string[];
-      const blockHeight = 6 + descLines.length * 4.6;
-      ensureSpace(blockHeight + 6);
+      const blockHeight = 5 + descLines.length * 4.5;
+      ensureSpace(blockHeight + 5);
 
       doc.setFillColor(color[0], color[1], color[2]);
-      doc.rect(margin, y - 4, 0.8, blockHeight, "F");
+      doc.rect(margin, y - 3.5, 0.8, blockHeight, "F");
 
       doc.setFont("helvetica", "bold");
       doc.setFontSize(10.5);
       setColor(doc, AUBERGINE);
       doc.text(action.label, margin + 5, y);
-      y += 5;
+      y += 4.5;
 
       doc.setFont("helvetica", "normal");
       doc.setFontSize(9.5);
       setColor(doc, MUTED);
-      y = renderWrappedText(action.desc, margin + 5, y, contentWidth - 8, 4.6);
-      y += 7;
+      y = renderWrappedText(action.desc, margin + 5, y, contentWidth - 8, 4.5);
+      y += 6;
     }
   }
 
@@ -523,45 +523,53 @@ export async function generateReportPDF(data: ReportData) {
       },
     ];
 
-    const gap = 6;
+    const gap = 5;
     const cardW = (contentWidth - gap) / 2;
-    const photoH = (cardW * 9) / 16;
+    const photoH = (cardW * 7) / 16; // shorter photo so the whole block fits on page 4
     const padX = 5;
     const textW = cardW - padX * 2;
 
     // Measure the tallest card so both share a height
-    doc.setFontSize(9.5);
+    doc.setFontSize(9);
     const bodyLines = tracks.map((t) => doc.splitTextToSize(t.desc, textW) as string[]);
     const titleLines = tracks.map((t) => {
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(10);
+      doc.setFontSize(9.5);
       return doc.splitTextToSize(t.title, textW) as string[];
     });
     const cardH =
       photoH +
-      6 +
+      5 +
       Math.max(
         ...tracks.map(
-          (_, i) => 3.8 + titleLines[i].length * 4.8 + 1.5 + bodyLines[i].length * 4.2 + 5.5,
+          (_, i) => 3.5 + titleLines[i].length * 4.5 + 1.5 + bodyLines[i].length * 4 + 5,
         ),
       ) +
-      5;
+      4;
 
-    ensureSpace(cardH + 24);
+    const contactHeading = "Interested in learning more?";
+    const contactLine = "Drop us a line at Possibility@TheGreatRepurpose.com";
+    const contactBlockHeight = 26;
+    const contactBlockTotal = contactBlockHeight + 6;
+    const headingHeight = 11; // section title + spacing
+
+    // Keep the academy cards and the contact block on the same page (page 4).
+    const totalBlockHeight = cardH + headingHeight + contactBlockTotal;
+    ensureSpace(totalBlockHeight + 6);
     y += 2;
 
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(13);
+    doc.setFontSize(12);
     setColor(doc, AUBERGINE);
     y = renderWrappedText(
       "Learn About The Great Repurpose Academy",
       0,
       y,
       contentWidth,
-      6.5,
+      6,
       "center",
     );
-    y += 4;
+    y += 3;
 
     tracks.forEach((t, i) => {
       const cx = margin + i * (cardW + gap);
@@ -581,62 +589,56 @@ export async function generateReportPDF(data: ReportData) {
       doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
       doc.line(cx, y + photoH, cx + cardW, y + photoH);
 
-      let ty = y + photoH + 6;
+      let ty = y + photoH + 5;
 
       doc.setFont("helvetica", "bold");
       doc.setFontSize(7);
       setColor(doc, t.color);
       doc.text(t.eyebrow.toUpperCase(), cx + padX, ty);
-      ty += 5;
+      ty += 4.5;
 
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(10);
+      doc.setFontSize(9.5);
       setColor(doc, AUBERGINE);
       doc.text(titleLines[i], cx + padX, ty);
-      ty += titleLines[i].length * 4.8 + 1.5;
+      ty += titleLines[i].length * 4.5 + 1.5;
 
       doc.setFont("helvetica", "normal");
-      doc.setFontSize(9.5);
+      doc.setFontSize(9);
       setColor(doc, MUTED);
       doc.text(bodyLines[i], cx + padX, ty);
-      ty += bodyLines[i].length * 4.2 + 4.5;
+      ty += bodyLines[i].length * 4 + 4;
 
-      doc.setFontSize(8);
+      doc.setFontSize(7.5);
       setColor(doc, INDIGO);
       doc.text(t.url, cx + padX, ty);
     });
 
-    y += cardH + 6;
-  }
+    y += cardH + 4;
 
-  // ── Interested in learning more ────────────────────────────────────────────
-  {
-    const contactHeading = "Interested in learning more?";
-    const contactLine = "Drop us a line at Possibility@TheGreatRepurpose.com";
-
+    // ── Interested in learning more ────────────────────────────────────────────
+    // Set fill color immediately before drawing to avoid a stale/default fill.
     doc.setFillColor(AUBERGINE[0], AUBERGINE[1], AUBERGINE[2]);
-    const blockHeight = 34;
-    ensureSpace(blockHeight + 8);
-    doc.rect(margin, y, contentWidth, blockHeight, "F");
+    doc.rect(margin, y, contentWidth, contactBlockHeight, "F");
 
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(13);
+    doc.setFontSize(12);
     setColor(doc, [255, 255, 255]);
-    doc.text(contactHeading, pageWidth / 2, y + 11, { align: "center" });
+    doc.text(contactHeading, pageWidth / 2, y + 9, { align: "center" });
 
     doc.setFont("helvetica", "normal");
-    doc.setFontSize(10);
+    doc.setFontSize(9.5);
     setColor(doc, [255, 255, 255]);
     const lineParts = contactLine.split("Possibility@TheGreatRepurpose.com");
     const prefix = lineParts[0];
     const email = "Possibility@TheGreatRepurpose.com";
     const lineWidth = doc.getTextWidth(contactLine);
     const startX = (pageWidth - lineWidth) / 2;
-    doc.text(prefix, startX, y + 20);
+    doc.text(prefix, startX, y + 17);
     setColor(doc, AQUA);
-    doc.text(email, startX + doc.getTextWidth(prefix), y + 20);
+    doc.text(email, startX + doc.getTextWidth(prefix), y + 17);
 
-    y += blockHeight + 8;
+    y += contactBlockHeight + 6;
   }
 
   // ── Footers on every page ──────────────────────────────────────────────────
