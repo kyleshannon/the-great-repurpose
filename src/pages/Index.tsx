@@ -47,7 +47,7 @@ const academyOfferings = [
       "An immersive workshop plus three months of implementation sessions, applied to the workforce and technology decisions already on your desk.",
     image: elaHeroAsset.url,
     alt: "Senior leaders in conversation",
-    accent: "text-indigo",
+    accent: "text-poppy",
   },
   {
     href: "/academy/transition",
@@ -151,10 +151,10 @@ const Index = () => {
                     Reclaiming Agency, Meaning, and Value in the Age of AI
                   </p>
                   <h1 className="font-display text-soft-white text-2xl md:text-3xl lg:text-4xl leading-[1.05] mb-4">
-                    <span className="font-light text-soft-white/90">You weren't meant to be replaced.</span>
+                    <span className="font-light text-soft-white/90">you weren't meant to be automated</span>
                     <br />
-                    <span className="text-soft-white">It's time to </span>
-                    <span className="text-citrus">Repurpose.</span>
+                    <span className="text-soft-white">it's time to </span>
+                    <span className="text-citrus">repurpose</span>
                   </h1>
                   <p className="font-body text-soft-white/80 text-base md:text-lg max-w-md leading-relaxed mb-6">
                     The Great Repurpose is a movement for people navigating the coming disruption in work as an opportunity for reinvention — so you can create meaningful value in an AI-shaped world.
@@ -430,7 +430,7 @@ const Index = () => {
                       <p className="font-sans text-soft-white/60 text-sm leading-relaxed mb-4">
                         {program.tagline}
                       </p>
-                      <span className="font-sans text-indigo text-sm">Learn more →</span>
+                      <span className="font-sans text-aqua text-sm">Learn more →</span>
                     </div>
                   </Link>
                 </ScrollFadeUp>
