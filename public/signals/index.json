@@ -1,5 +1,18 @@
 [
   {
+    "slug": "2026-08-21-automation-fails-without-human-system-design",
+    "date": "2026-08-21",
+    "title": "Automation Fails Without Human System Design",
+    "pattern": "Forbes traces 10,000 vanished marketing roles to an agent-driven staffing model, while Crypto Briefing maps the narrower business processes where automation can create measurable value. Singapore's Trevor Yu argues that workers cannot be left to navigate the transition alone, another Forbes contributor recasts CTOs as planners responsible for agent infrastructure, and ZDNet reports that most organizations regret AI-led layoffs. Together, the stories make the design failure visible: automation becomes durable only when leaders redesign work, architecture, and human pathways as one system rather than treating headcount removal as the strategy.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover AI's Power",
+      "Start Creating"
+    ],
+    "imageUrl": "https://www.zdnet.com/a/img/resize/3ad6b87a4d67dbee3d1d1e6399184d06ad264d03/2026/08/20/d5ca7e20-cfea-4b47-a866-6411b06483dd/purplepeople-gettyimages-2227030316.jpg?auto=webp&fit=crop&height=675&width=1200"
+  },
+  {
     "slug": "2026-08-20-capability-grows-while-confidence-gets-fragile",
     "date": "2026-08-20",
     "title": "Capability Grows While Confidence Gets Fragile",

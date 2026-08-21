@@ -1,0 +1,101 @@
+{
+  "slug": "2026-08-21-automation-fails-without-human-system-design",
+  "date": "2026-08-21",
+  "title": "Automation Fails Without Human System Design",
+  "pattern": "Forbes traces 10,000 vanished marketing roles to an agent-driven staffing model, while Crypto Briefing maps the narrower business processes where automation can create measurable value. Singapore's Trevor Yu argues that workers cannot be left to navigate the transition alone, another Forbes contributor recasts CTOs as planners responsible for agent infrastructure, and ZDNet reports that most organizations regret AI-led layoffs. Together, the stories make the design failure visible: automation becomes durable only when leaders redesign work, architecture, and human pathways as one system rather than treating headcount removal as the strategy.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Discover AI's Power",
+    "Start Creating"
+  ],
+  "imageUrl": "https://www.zdnet.com/a/img/resize/3ad6b87a4d67dbee3d1d1e6399184d06ad264d03/2026/08/20/d5ca7e20-cfea-4b47-a866-6411b06483dd/purplepeople-gettyimages-2227030316.jpg?auto=webp&fit=crop&height=675&width=1200",
+  "stories": [
+    {
+      "title": "AI Agents Erase Marketing's First Rung",
+      "url": "https://www.forbes.com/sites/jodiecook/2026/08/20/10000-marketing-jobs-are-gone-and-ai-agents-took-them/",
+      "source": "forbes.com",
+      "published": "2026-08-20T05:00:00+00:00",
+      "summary": "Forbes reports that 10,000 marketing jobs have disappeared as agencies reorganize around AI agents, with Forrester projecting a 15 percent decline in agency roles during 2026. Junior execution work is going first, forcing the industry to confront how people develop judgment and strategic range when automation removes the entry-level assignments that once taught them.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a8568cd4b88e8c678d06a36/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Forrester expects agency employment to decline 15 percent during 2026.",
+        "AI agents are absorbing junior marketing tasks before higher-level strategic work.",
+        "Removing the first rung also removes a traditional pathway for developing human judgment."
+      ]
+    },
+    {
+      "title": "Automation Creates Value When The Process Fits",
+      "url": "https://cryptobriefing.com/ai-solutions-in-business-where-automation-delivers-real-value/",
+      "source": "cryptobriefing.com",
+      "published": "2026-08-20T13:53:58+00:00",
+      "summary": "Crypto Briefing surveys practical business uses for AI, emphasizing efficiency and adaptability rather than treating the technology as a universal replacement engine. The useful distinction is between automating a well-understood process and automating confusion: leaders still have to choose the problem, define the desired outcome, and decide where human context and accountability remain essential.",
+      "imageUrl": "https://static.cryptobriefing.com/wp-content/uploads/2026/08/20095308/AI-solutions-in-business-Where-automation-delivers-real-value-686x457.jpg",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The article focuses on concrete business processes where AI can improve efficiency and adaptation.",
+        "Automation works best when the underlying problem and workflow are clearly understood.",
+        "Human value shifts toward choosing outcomes, supplying context, and owning consequences."
+      ]
+    },
+    {
+      "title": "Workers Need Work Redesigned Around Them",
+      "url": "https://www.channelnewsasia.com/commentary/singapore-ai-jobs-improve-redesign-work-6330546",
+      "source": "channelnewsasia.com",
+      "published": "2026-08-20T23:00:00+00:00",
+      "summary": "NTU's Trevor Yu argues that Singapore's national AI direction will matter to employees only when organizations redesign work job by job. Workers cannot be expected to translate a broad technology strategy into new responsibilities alone; institutions must create participation, training, and transition pathways that give people agency in shaping the roles they will inhabit.",
+      "imageUrl": "https://dam.mediacorp.sg/image/upload/s--v6N2QpzY--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/v1/mediacorp/cna/image/2026/05/28/singapore_central_business_district.jpg?itok=GfGpyxX3",
+      "stages": [
+        "Unhook Identity",
+        "Start Creating"
+      ],
+      "keyPoints": [
+        "Singapore's national AI strategy still has to be translated into changes at the individual-job level.",
+        "Employees should not bear sole responsibility for discovering how AI changes their work.",
+        "Work redesign becomes credible when workers can participate in creating the new role."
+      ]
+    },
+    {
+      "title": "Agent Infrastructure Turns CTOs Into City Planners",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/08/20/ai-agents-are-turning-ctos-into-city-planners/",
+      "source": "forbes.com",
+      "published": "2026-08-20T03:00:00+00:00",
+      "summary": "Forbes compares the agentic enterprise to a city whose roads, bridges, and hidden weaknesses must be designed and maintained. Agents do not know which legacy shortcut will trigger tomorrow's outage, so the CTO's role expands from deploying tools to governing an interconnected environment where architecture, institutional memory, oversight, and human accountability determine whether capability remains reliable.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a85d6bbefaa4508039e6843/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Discover AI's Power",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Agent systems inherit dependencies and weaknesses that individual tools cannot see for themselves.",
+        "CTOs increasingly have to plan and govern an environment rather than merely approve software.",
+        "Institutional memory and accountable human oversight become core operating infrastructure."
+      ]
+    },
+    {
+      "title": "AI Layoffs Often Cost More Than They Save",
+      "url": "https://www.zdnet.com/article/why-replacing-staff-with-ai-backfires-and-how-smart-leaders-generate-real-value-instead/",
+      "source": "zdnet.com",
+      "published": "2026-08-20T11:34:00+00:00",
+      "summary": "ZDNet reports that three-quarters of organizations found AI-related layoffs cost more than expected savings, and as many as nine in ten would reconsider those decisions. The evidence challenges replacement as a default strategy: organizations create more durable value when they redesign roles around complementary human judgment instead of discarding experience before the technology can carry its context.",
+      "imageUrl": "https://www.zdnet.com/a/img/resize/3ad6b87a4d67dbee3d1d1e6399184d06ad264d03/2026/08/20/d5ca7e20-cfea-4b47-a866-6411b06483dd/purplepeople-gettyimages-2227030316.jpg?auto=webp&fit=crop&height=675&width=1200",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Three-quarters of organizations found AI-driven layoffs cost more than the savings they produced.",
+        "As many as nine in ten companies surveyed would rethink those workforce decisions.",
+        "Retaining human experience while redesigning roles can create more value than replacement alone."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
