@@ -365,7 +365,9 @@ const Index = () => {
                         <p className={`font-body ${colors.text} italic text-lg mb-3`}>"{phase.tagline}"</p>
                         <p className="font-body text-aubergine/70 text-base leading-relaxed">{phase.description}</p>
                       </div>
+                      </div>
                     </div>
+
                   </Link>
                 </ScrollFadeUp>
               );
