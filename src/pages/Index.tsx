@@ -333,12 +333,14 @@ const Index = () => {
                     to={`/phases#${phase.name.toLowerCase().replace(/\s+/g, "-")}`}
                     className={`group block w-full ${i % 2 === 1 ? "bg-soft-white" : colors.bg} border-y border-aubergine/5 transition-colors`}
                   >
-                    <div className={`relative max-w-5xl mx-auto px-6 flex flex-col md:flex-row gap-8 md:gap-12 items-center ${i === 0 ? "pt-14 md:pt-18 pb-5 md:pb-7" : "py-5 md:py-7"}`}>
+                    <div className={`max-w-5xl mx-auto px-6 ${i === 0 ? "pt-7 md:pt-9 pb-5 md:pb-7" : "py-5 md:py-7"}`}>
                       {i === 0 && (
-                        <h2 className="absolute top-5 md:top-7 left-6 font-display text-aubergine text-2xl md:text-3xl leading-tight">
+                        <h2 className="font-display text-aubergine text-2xl md:text-3xl leading-tight mb-5 md:mb-6">
                           The Stages...
                         </h2>
                       )}
+                      <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+
                       <div className={`w-full md:w-1/3 shrink-0 ${imageRight ? "md:order-2" : ""}`}>
                         <img
                           src={image.url}
@@ -363,7 +365,9 @@ const Index = () => {
                         <p className={`font-body ${colors.text} italic text-lg mb-3`}>"{phase.tagline}"</p>
                         <p className="font-body text-aubergine/70 text-base leading-relaxed">{phase.description}</p>
                       </div>
+                      </div>
                     </div>
+
                   </Link>
                 </ScrollFadeUp>
               );
