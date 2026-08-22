@@ -27,11 +27,22 @@ export const stageTaglines = {
   "Relaunch Yourself": "Turn who you are into work, opportunity, and income.",
 } as const;
 
+// Older Signal issues retain their historical labels. Resolve those labels
+// to the current framework so their links and definitions remain useful.
+export const legacyStageAliases = {
+  "Find Your Purpose": "Discover Purpose",
+  "Discover AI's Power": "Become AI Ready",
+  "Start Creating": "Relaunch Yourself",
+} as const;
+
 export type TgrStage = keyof typeof stageDefinitions;
 
+export const normalizeStage = (stage: string) =>
+  legacyStageAliases[stage as keyof typeof legacyStageAliases] ?? stage;
+
 export const getStageAnchor = (stage: string) =>
-  stageAnchors[stage as TgrStage] ??
-  stage
+  stageAnchors[normalizeStage(stage) as TgrStage] ??
+  normalizeStage(stage)
     .toLowerCase()
     .replace(/[’']/g, "")
     .replace(/&/g, "and")
@@ -40,7 +51,7 @@ export const getStageAnchor = (stage: string) =>
 export const getStagePath = (stage: string) => `/phases#${getStageAnchor(stage)}`;
 
 export const getStageDefinition = (stage: string) =>
-  stageDefinitions[stage as TgrStage] ?? "Explore this stage in The Great Repurpose framework.";
+  stageDefinitions[normalizeStage(stage) as TgrStage] ?? "Explore this stage in The Great Repurpose framework.";
 
 export const getStageTagline = (stage: string) =>
-  stageTaglines[stage as TgrStage] ?? "";
+  stageTaglines[normalizeStage(stage) as TgrStage] ?? "";

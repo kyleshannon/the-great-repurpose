@@ -91,7 +91,7 @@ const Phases = () => {
     <div className="min-h-screen bg-soft-white text-aubergine">
       <Seo
         title="The Five Stages of The Great Repurpose"
-        description="Unhook Identity, Reclaim Value, Find Your Purpose, Discover AI's Power, Start Creating — the five stages people move through when AI reshapes their work."
+        description="Unhook Identity, Reclaim Value, Discover Purpose, Become AI Ready, Relaunch Yourself — the five dimensions people live through when AI reshapes their work."
         path="/phases"
       />
       <Navigation />

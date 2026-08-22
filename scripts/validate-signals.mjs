@@ -7,14 +7,33 @@ const indexPath = path.join(signalsDir, "index.json");
 const canonicalStages = new Set([
   "Unhook Identity",
   "Reclaim Value",
+  "Discover Purpose",
+  "Become AI Ready",
+  "Relaunch Yourself",
+]);
+const legacyStages = new Set([
   "Find Your Purpose",
   "Discover AI's Power",
   "Start Creating",
 ]);
+const stageCutoverDate = "2026-08-12";
+const allowedStagesForDate = (date) =>
+  date < stageCutoverDate
+    ? new Set([...canonicalStages, ...legacyStages])
+    : canonicalStages;
 
 const bannedPatternFragments = [
   "The signal is no longer that AI might someday change work. The signal is that companies are already using it to redraw roles, expectations, and leverage.",
   "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
+  "The story helps show where AI is changing work, value, agency, or creation.",
+];
+
+const bannedSummaryFragments = [
+  "This matters to The Great Repurpose because it separates the human being from the job wrapper around them.",
+  "This matters because it points to the human value that remains when execution gets automated.",
+  "This matters because people need a clearer inner compass before the labor market tells them who they are allowed to be.",
+  "This matters because the capability curve is moving from novelty into operating reality.",
+  "This matters because creation is where anxiety turns into agency.",
   "The story helps show where AI is changing work, value, agency, or creation.",
 ];
 
@@ -82,8 +101,9 @@ for (const entry of Array.isArray(index) ? index : []) {
   if (!Array.isArray(signal.stages) || signal.stages.length === 0) {
     fail(`${slug}: briefing stages must be a non-empty array.`);
   } else {
+    const allowedStages = allowedStagesForDate(signal.date);
     for (const stage of signal.stages) {
-      if (!canonicalStages.has(stage)) fail(`${slug}: unknown briefing stage "${stage}".`);
+      if (!allowedStages.has(stage)) fail(`${slug}: unknown briefing stage "${stage}".`);
     }
   }
 
@@ -96,15 +116,24 @@ for (const entry of Array.isArray(index) ? index : []) {
       const prefix = `${slug}: story ${index + 1}`;
       if (!normalize(story.title)) fail(`${prefix} title is required.`);
       if (!String(story.url ?? "").startsWith("https://")) fail(`${prefix} url must be HTTPS.`);
-      if (normalize(story.summary).length < 80) fail(`${prefix} summary is too short.`);
+      const summary = normalize(story.summary);
+      if (signal.date >= "2026-06-23") {
+        if (summary.length < 120) fail(`${prefix} summary is too short to carry article summary plus TGR relevance.`);
+        for (const fragment of bannedSummaryFragments) {
+          if (summary.includes(fragment)) fail(`${prefix} summary contains banned generic copy.`);
+        }
+      } else if (summary.length < 80) {
+        fail(`${prefix} summary is too short.`);
+      }
       if (!Array.isArray(story.keyPoints) || story.keyPoints.length < 2) {
         fail(`${prefix} must have at least two keyPoints.`);
       }
       if (!Array.isArray(story.stages) || story.stages.length === 0) {
         fail(`${prefix} must have at least one stage.`);
       } else {
+        const allowedStages = allowedStagesForDate(signal.date);
         for (const stage of story.stages) {
-          if (!canonicalStages.has(stage)) fail(`${prefix} has unknown stage "${stage}".`);
+          if (!allowedStages.has(stage)) fail(`${prefix} has unknown stage "${stage}".`);
         }
       }
     });

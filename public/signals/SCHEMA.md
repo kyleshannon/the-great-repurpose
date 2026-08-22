@@ -89,11 +89,13 @@ an SVG or generated vector substitute.
 
 - `Unhook Identity`
 - `Reclaim Value`
-- `Find Your Purpose`
-- `Discover AI's Power`
-- `Start Creating`
+- `Discover Purpose`
+- `Become AI Ready`
+- `Relaunch Yourself`
 
-Any other string is silently dropped from filters.
+Issues dated `2026-08-12` and later must use only the current names above.
+Issues before that cutover may retain the legacy labels for historical
+continuity, but new and corrected issues must never introduce them.
 
 ## `index.json` shape
 

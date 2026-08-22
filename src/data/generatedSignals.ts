@@ -10,8 +10,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://www.theglobeandmail.com/resizer/v2/Y5KQIV4QCRHA5AIW6XON7H5IYI.jpg?auth=0fa044f1e8ee7d825cc3760e498c32650dfd8936e262fa679194745059149613&width=1200&height=800&quality=80&smart=true"
   },
@@ -23,8 +23,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://www.zdnet.com/a/img/resize/3ad6b87a4d67dbee3d1d1e6399184d06ad264d03/2026/08/20/d5ca7e20-cfea-4b47-a866-6411b06483dd/purplepeople-gettyimages-2227030316.jpg?auto=webp&fit=crop&height=675&width=1200"
   },
@@ -36,8 +36,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://cdn.nextgov.com/media/img/cd/2026/08/19/GettyImages_2217849566/open-graph.jpg"
   },
@@ -49,7 +49,7 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7a264ce63c53e5b623df4e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -61,8 +61,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Start Creating",
-      "Discover AI's Power"
+      "Relaunch Yourself",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7ee6e4e281d4658c13262a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
@@ -74,8 +74,8 @@ export const bundledSignalIndex = [
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
   },
@@ -85,10 +85,10 @@ export const bundledSignalIndex = [
     "title": "Work Becomes AI's Training Ground",
     "pattern": "Business Insider traces Google, Meta, and Mechanize's race to train agents inside realistic work environments, while Skan AI raises $63 million to map how employees actually move through enterprise systems. Forbes argues that every agent now needs named management and accountability; Oracle pairs billions in AI infrastructure spending with reported job cuts; and higher education is pressed to make its AI boundaries visible. Together, the stories show work becoming both the training data and the proving ground for AI—and make human oversight, consent, and judgment more valuable precisely as machines learn the workflow.",
     "stages": [
-      "Discover AI's Power",
+      "Become AI Ready",
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/3WDoD2ymJo193EQQiyjPZc/10a7a431875f094f56d874bfa72cb9b0/Nuneybits_Vector_art_of_bank_towers_feeding_glowing_process_map_2465961e-61fe-473e-aaec-8071e4adbfcc.webp?w=800&q=75"
   },
@@ -836,8 +836,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose",
-      "Discover AI's Power"
+      "Discover Purpose",
+      "Become AI Ready"
     ],
     "imageUrl": "https://www.theglobeandmail.com/resizer/v2/Y5KQIV4QCRHA5AIW6XON7H5IYI.jpg?auth=0fa044f1e8ee7d825cc3760e498c32650dfd8936e262fa679194745059149613&width=1200&height=800&quality=80&smart=true",
     "stories": [
@@ -850,7 +850,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "Students are leaning on AI more for application writing than for career exploration and networking.",
@@ -867,7 +867,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://images.goodreturns.in/img/2026/08/appleoffice-23111787394315.jpg",
         "stages": [
           "Unhook Identity",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "More than 200 reported cuts touch teams associated with Siri, AI, and Vision Pro.",
@@ -884,7 +884,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/035/0270_639229271118105707.jpg",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Routine HR activities are increasingly suited to automation.",
@@ -901,7 +901,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://www.theglobeandmail.com/resizer/v2/Y5KQIV4QCRHA5AIW6XON7H5IYI.jpg?auth=0fa044f1e8ee7d825cc3760e498c32650dfd8936e262fa679194745059149613&width=1200&height=800&quality=80&smart=true",
         "stages": [
           "Unhook Identity",
-          "Find Your Purpose"
+          "Discover Purpose"
         ],
         "keyPoints": [
           "AI capability is uneven rather than uniformly better than human intelligence.",
@@ -918,7 +918,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://static.businessworld.in/AI _20260818062826_ogImage_26.png",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI changes bundles of work within jobs rather than only replacing entire occupations.",
@@ -937,8 +937,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://www.zdnet.com/a/img/resize/3ad6b87a4d67dbee3d1d1e6399184d06ad264d03/2026/08/20/d5ca7e20-cfea-4b47-a866-6411b06483dd/purplepeople-gettyimages-2227030316.jpg?auto=webp&fit=crop&height=675&width=1200",
     "stories": [
@@ -967,7 +967,7 @@ export const bundledSignalsBySlug = {
         "summary": "Crypto Briefing surveys practical business uses for AI, emphasizing efficiency and adaptability rather than treating the technology as a universal replacement engine. The useful distinction is between automating a well-understood process and automating confusion: leaders still have to choose the problem, define the desired outcome, and decide where human context and accountability remain essential.",
         "imageUrl": "https://static.cryptobriefing.com/wp-content/uploads/2026/08/20095308/AI-solutions-in-business-Where-automation-delivers-real-value-686x457.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -985,7 +985,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://dam.mediacorp.sg/image/upload/s--v6N2QpzY--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/v1/mediacorp/cna/image/2026/05/28/singapore_central_business_district.jpg?itok=GfGpyxX3",
         "stages": [
           "Unhook Identity",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "Singapore's national AI strategy still has to be translated into changes at the individual-job level.",
@@ -1001,7 +1001,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes compares the agentic enterprise to a city whose roads, bridges, and hidden weaknesses must be designed and maintained. Agents do not know which legacy shortcut will trigger tomorrow's outage, so the CTO's role expands from deploying tools to governing an interconnected environment where architecture, institutional memory, oversight, and human accountability determine whether capability remains reliable.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a85d6bbefaa4508039e6843/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1038,8 +1038,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "https://cdn.nextgov.com/media/img/cd/2026/08/19/GettyImages_2217849566/open-graph.jpg",
     "stories": [
@@ -1069,7 +1069,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://s.yimg.com/lo/mysterio/api/3A944DF41800E618DD11246E1C2DF7D67123B7B0FDF6A74C83006C7AC43B0ED9/subgraphmysterio/resizefill_w1200_h250;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fprnewswire.com%2F205cd28dcf6e1323ecde49d0c40dc338.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Seventy-four percent of respondents fear AI dependency more than falling behind in adoption.",
@@ -1102,7 +1102,7 @@ export const bundledSignalsBySlug = {
         "summary": "Nextgov reports that new U.S. Census Bureau data is beginning to measure AI as a routine workplace tool rather than a future possibility. Government leaders are pairing training and guardrails with employee-led experimentation, a useful reminder that meaningful adoption grows when people can explore the capability while retaining context, oversight, and a voice in how work changes.",
         "imageUrl": "https://cdn.nextgov.com/media/img/cd/2026/08/19/GettyImages_2217849566/open-graph.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1119,7 +1119,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes looks at creators who identify as business owners but still contend with delayed payments and the time pressure that interrupts production. Creative independence is not sustained by inspiration alone: reliable cash flow, business discipline, and control over working time are part of the infrastructure that lets people turn individual agency into durable value.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a82e18ff5723667b9bccbf4/0x0.jpg?format=jpg&crop=1715,1205,x302,y151,safe&height=900&width=1600&fit=bounds",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1139,7 +1139,7 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power"
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7a264ce63c53e5b623df4e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -1168,7 +1168,7 @@ export const bundledSignalsBySlug = {
         "summary": "Mark Zuckerberg argues that AI will not eliminate employment overall and that superintelligence agents will give small companies capabilities once reserved for larger organizations. His optimism contrasts with Dario Amodei's warning about entry-level white-collar work, making the real question who gains the tools, judgment, and market access to turn leverage into livelihoods.",
         "imageUrl": "https://media.assettype.com/freepressjournal/2026-08-13/sawnn5ki/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Queen-Of-All-Mayhem-2026-08-13T203224.687.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1185,7 +1185,7 @@ export const bundledSignalsBySlug = {
         "summary": "Brix launched a proactive workforce agent for AI startups, with cofounder Katherine Duan arguing that hiring's bottleneck is not simply the supply of candidates. Moving from a tool that assists recruiters to an agent that initiates work raises the value of human role definition, judgment, and accountability: someone still has to decide what good hiring means.",
         "imageUrl": "https://app.financewire.com/storage/uploads/users/mawra_bi_1786708397AJTbwIhA8a.jpg",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1239,8 +1239,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Start Creating",
-      "Discover AI's Power"
+      "Relaunch Yourself",
+      "Become AI Ready"
     ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7ee6e4e281d4658c13262a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
@@ -1253,7 +1253,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "https://media.assettype.com/freepressjournal/2026-03-14/j1q45ex0/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Queen-Of-All-Mayhem-2026-03-14T063422.412.jpg",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Goldman Sachs expects India's concentration of physical and mechanical work to limit economy-wide AI job losses.",
@@ -1303,7 +1303,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes contrasts the studios behind the top 50 creators' $1.02 billion in earnings with two small business owners who used AI to produce at creator scale without teams. The opportunity is not effortless content volume; it is giving a person with taste, a clear point of view, and customer knowledge enough leverage to operate like a much larger organization.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7ee6e4e281d4658c13262a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Start Creating",
+          "Relaunch Yourself",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1340,8 +1340,8 @@ export const bundledSignalsBySlug = {
     "stages": [
       "Unhook Identity",
       "Reclaim Value",
-      "Discover AI's Power",
-      "Start Creating"
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
     "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
     "stories": [
@@ -1371,7 +1371,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Reclaim Value",
-          "Start Creating"
+          "Relaunch Yourself"
         ],
         "keyPoints": [
           "The article defines AI scale as expanding people's capacity rather than simply reducing headcount.",
@@ -1388,7 +1388,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Reclaim Value",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Chandrasekaran argues that AI can raise the productive capacity of people with little formal training.",
@@ -1405,7 +1405,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI exposure now reaches office roles that workers once considered protected from automation.",
@@ -1439,10 +1439,10 @@ export const bundledSignalsBySlug = {
     "title": "Work Becomes AI's Training Ground",
     "pattern": "Business Insider traces Google, Meta, and Mechanize's race to train agents inside realistic work environments, while Skan AI raises $63 million to map how employees actually move through enterprise systems. Forbes argues that every agent now needs named management and accountability; Oracle pairs billions in AI infrastructure spending with reported job cuts; and higher education is pressed to make its AI boundaries visible. Together, the stories show work becoming both the training data and the proving ground for AI—and make human oversight, consent, and judgment more valuable precisely as machines learn the workflow.",
     "stages": [
-      "Discover AI's Power",
+      "Become AI Ready",
       "Unhook Identity",
       "Reclaim Value",
-      "Find Your Purpose"
+      "Discover Purpose"
     ],
     "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/3WDoD2ymJo193EQQiyjPZc/10a7a431875f094f56d874bfa72cb9b0/Nuneybits_Vector_art_of_bank_towers_feeding_glowing_process_map_2465961e-61fe-473e-aaec-8071e4adbfcc.webp?w=800&q=75",
     "stories": [
@@ -1455,7 +1455,7 @@ export const bundledSignalsBySlug = {
         "imageUrl": "",
         "stages": [
           "Unhook Identity",
-          "Discover AI's Power"
+          "Become AI Ready"
         ],
         "keyPoints": [
           "AI developers are seeking realistic work environments that can teach agents to complete jobs rather than only answer questions.",
@@ -1471,7 +1471,7 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes argues that an AI agent becomes an unmanaged worker when nobody can say who authorized it, what data it touched, or how to reverse its actions. The management problem is therefore human, not merely technical: organizations need clear ownership, boundaries, monitoring, and rollback authority so automation expands capability without dissolving accountability.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/691caa4b92349bc97f986494/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1488,7 +1488,7 @@ export const bundledSignalsBySlug = {
         "summary": "VentureBeat reports that Skan AI raised $63 million in Series C funding to build a context graph of work by observing how employees navigate enterprise software. The bet is that AI cannot transform operations it does not understand. That makes the messy, invisible coordination people perform both valuable source material and a domain that requires transparent limits on workplace observation.",
         "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/3WDoD2ymJo193EQQiyjPZc/10a7a431875f094f56d874bfa72cb9b0/Nuneybits_Vector_art_of_bank_towers_feeding_glowing_process_map_2465961e-61fe-473e-aaec-8071e4adbfcc.webp?w=800&q=75",
         "stages": [
-          "Discover AI's Power",
+          "Become AI Ready",
           "Reclaim Value"
         ],
         "keyPoints": [
@@ -1522,8 +1522,8 @@ export const bundledSignalsBySlug = {
         "summary": "Forbes argues that colleges and universities have a responsibility to show students how AI is used and where its boundaries lie. Transparency can become a competitive advantage because students need more than tool access: they need practice deciding when AI helps, when it distorts learning, and which judgments they must still be able to make for themselves.",
         "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a79f11ccb85802184fa1982/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         "stages": [
-          "Find Your Purpose",
-          "Discover AI's Power"
+          "Discover Purpose",
+          "Become AI Ready"
         ],
         "keyPoints": [
           "Institutions should clearly disclose how AI participates in teaching, assessment, and student services.",

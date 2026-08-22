@@ -6,8 +6,8 @@
   "stages": [
     "Unhook Identity",
     "Reclaim Value",
-    "Discover AI's Power",
-    "Start Creating"
+    "Become AI Ready",
+    "Relaunch Yourself"
   ],
   "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
   "stories": [
@@ -37,7 +37,7 @@
       "imageUrl": "",
       "stages": [
         "Reclaim Value",
-        "Start Creating"
+        "Relaunch Yourself"
       ],
       "keyPoints": [
         "The article defines AI scale as expanding people's capacity rather than simply reducing headcount.",
@@ -54,7 +54,7 @@
       "imageUrl": "",
       "stages": [
         "Reclaim Value",
-        "Discover AI's Power"
+        "Become AI Ready"
       ],
       "keyPoints": [
         "Chandrasekaran argues that AI can raise the productive capacity of people with little formal training.",
@@ -71,7 +71,7 @@
       "imageUrl": "",
       "stages": [
         "Unhook Identity",
-        "Discover AI's Power"
+        "Become AI Ready"
       ],
       "keyPoints": [
         "AI exposure now reaches office roles that workers once considered protected from automation.",
