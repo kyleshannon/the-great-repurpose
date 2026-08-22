@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-08-22-career-maps-fracture-around-human-judgment",
+    "date": "2026-08-22",
+    "title": "Career Maps Fracture Around Human Judgment",
+    "pattern": "GovTech warns that students can lose their own voice when AI writes the job search, while Apple cuts roles across Siri, AI, and Vision Pro teams as its product priorities shift. HR leaders still reserve coaching, judgment, and employee experience for people; The Globe and Mail describes AI capability as jagged rather than uniformly superior; and Businessworld moves the question from whether jobs disappear to how work inside them changes. Together, the stories reveal a career map breaking into uneven terrain: durable agency comes from knowing which tasks to delegate without surrendering the voice, judgment, and direction that make a person valuable.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://www.theglobeandmail.com/resizer/v2/Y5KQIV4QCRHA5AIW6XON7H5IYI.jpg?auth=0fa044f1e8ee7d825cc3760e498c32650dfd8936e262fa679194745059149613&width=1200&height=800&quality=80&smart=true"
+  },
+  {
     "slug": "2026-08-21-automation-fails-without-human-system-design",
     "date": "2026-08-21",
     "title": "Automation Fails Without Human System Design",
@@ -815,6 +828,107 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-08-22-career-maps-fracture-around-human-judgment": {
+    "slug": "2026-08-22-career-maps-fracture-around-human-judgment",
+    "date": "2026-08-22",
+    "title": "Career Maps Fracture Around Human Judgment",
+    "pattern": "GovTech warns that students can lose their own voice when AI writes the job search, while Apple cuts roles across Siri, AI, and Vision Pro teams as its product priorities shift. HR leaders still reserve coaching, judgment, and employee experience for people; The Globe and Mail describes AI capability as jagged rather than uniformly superior; and Businessworld moves the question from whether jobs disappear to how work inside them changes. Together, the stories reveal a career map breaking into uneven terrain: durable agency comes from knowing which tasks to delegate without surrendering the voice, judgment, and direction that make a person valuable.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://www.theglobeandmail.com/resizer/v2/Y5KQIV4QCRHA5AIW6XON7H5IYI.jpg?auth=0fa044f1e8ee7d825cc3760e498c32650dfd8936e262fa679194745059149613&width=1200&height=800&quality=80&smart=true",
+    "stories": [
+      {
+        "title": "Students Need AI Without Losing Their Voice",
+        "url": "https://www.govtech.com/education/higher-ed/how-higher-ed-can-train-students-to-use-ai-in-the-job-search",
+        "source": "govtech.com",
+        "published": "2026-08-22T04:27:39.850000+00:00",
+        "summary": "GovTech reports that career-services professionals see students overusing AI to produce application materials while underusing it for career exploration and networking. The distinction matters because an efficient application is not the same as a coherent direction: students still need to articulate their own voice, relationships, and reasons for pursuing the work.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "Students are leaning on AI more for application writing than for career exploration and networking.",
+          "Heavy generation can mute the personal voice employers are trying to understand.",
+          "Career readiness now includes deciding where AI helps and where authorship must remain human."
+        ]
+      },
+      {
+        "title": "Apple Cuts Roles As Product Priorities Shift",
+        "url": "https://www.goodreturns.in/news/tech-layoffs-2026-over-200-job-cuts-hit-apple-siri-ai-vision-pro-teams-smart-glasses-in-focus-1530059.html",
+        "source": "goodreturns.in",
+        "published": "2026-08-22T10:26:36+00:00",
+        "summary": "Goodreturns reports more than 200 job cuts affecting Apple teams connected to Siri, AI, and Vision Pro, including roughly 100 positions in the Vision Pro organization. The cuts show how quickly a role's institutional wrapper can change when a company redirects product attention, even when the underlying creative and technical capabilities remain useful elsewhere.",
+        "imageUrl": "https://images.goodreturns.in/img/2026/08/appleoffice-23111787394315.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Start Creating"
+        ],
+        "keyPoints": [
+          "More than 200 reported cuts touch teams associated with Siri, AI, and Vision Pro.",
+          "Around 100 positions are reportedly being removed from the Vision Pro organization.",
+          "Workers need portable stories about their capabilities when product strategy redraws the role around them."
+        ]
+      },
+      {
+        "title": "HR Automation Raises The Human Premium",
+        "url": "https://www.hcamag.com/us/specialization/leadership/where-ai-will-and-will-not-replace-hr-management/587050",
+        "source": "hcamag.com",
+        "published": "2026-08-21T12:38:36+00:00",
+        "summary": "HRD America describes routine human-resources work moving toward automation while coaching, judgment, and employee experience become more important. The shift does not remove human work so much as concentrate it around trust, context, and consequential choices that a process engine cannot own.",
+        "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/035/0270_639229271118105707.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "Routine HR activities are increasingly suited to automation.",
+          "Coaching, judgment, and employee experience remain central human responsibilities.",
+          "The durable value in people leadership moves toward trust, context, and accountable decisions."
+        ]
+      },
+      {
+        "title": "Jagged AI Capability Redraws Career Paths",
+        "url": "https://www.theglobeandmail.com/business/careers/talent/article-jagged-little-skill-how-ai-is-changing-where-the-next-generation-of/",
+        "source": "theglobeandmail.com",
+        "published": "2026-08-21T13:00:00+00:00",
+        "summary": "The Globe and Mail argues that AI is not advancing as a smooth, universal substitute for human intelligence; its capability is jagged, shifting, and full of gaps. Career pathways will therefore be built through changing combinations of machine strength and human judgment, making adaptability more useful than betting identity on a fixed job description.",
+        "imageUrl": "https://www.theglobeandmail.com/resizer/v2/Y5KQIV4QCRHA5AIW6XON7H5IYI.jpg?auth=0fa044f1e8ee7d825cc3760e498c32650dfd8936e262fa679194745059149613&width=1200&height=800&quality=80&smart=true",
+        "stages": [
+          "Unhook Identity",
+          "Find Your Purpose"
+        ],
+        "keyPoints": [
+          "AI capability is uneven rather than uniformly better than human intelligence.",
+          "The gaps between machine strengths create changing spaces for human contribution.",
+          "People need adaptable capability portfolios instead of identities fixed to one role."
+        ]
+      },
+      {
+        "title": "The Task Changes Before The Job Disappears",
+        "url": "https://www.businessworld.in/article/beyond-will-ai-take-my-job-619677",
+        "source": "businessworld.in",
+        "published": "2026-08-21T15:03:00+00:00",
+        "summary": "Businessworld reframes the familiar replacement question by arguing that AI is changing the work inside jobs, not simply eliminating whole occupations. That task-level view gives people and organizations more agency: they can identify what to automate, what to redesign, and where human judgment should carry greater weight.",
+        "imageUrl": "https://static.businessworld.in/AI _20260818062826_ogImage_26.png",
+        "stages": [
+          "Unhook Identity",
+          "Discover AI's Power"
+        ],
+        "keyPoints": [
+          "AI changes bundles of work within jobs rather than only replacing entire occupations.",
+          "A task-level view makes the transition more specific and actionable.",
+          "Workers can reclaim agency by separating automatable execution from distinctly human judgment."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-08-21-automation-fails-without-human-system-design": {
     "slug": "2026-08-21-automation-fails-without-human-system-design",
     "date": "2026-08-21",

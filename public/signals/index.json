@@ -1,5 +1,18 @@
 [
   {
+    "slug": "2026-08-22-career-maps-fracture-around-human-judgment",
+    "date": "2026-08-22",
+    "title": "Career Maps Fracture Around Human Judgment",
+    "pattern": "GovTech warns that students can lose their own voice when AI writes the job search, while Apple cuts roles across Siri, AI, and Vision Pro teams as its product priorities shift. HR leaders still reserve coaching, judgment, and employee experience for people; The Globe and Mail describes AI capability as jagged rather than uniformly superior; and Businessworld moves the question from whether jobs disappear to how work inside them changes. Together, the stories reveal a career map breaking into uneven terrain: durable agency comes from knowing which tasks to delegate without surrendering the voice, judgment, and direction that make a person valuable.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Find Your Purpose",
+      "Discover AI's Power"
+    ],
+    "imageUrl": "https://www.theglobeandmail.com/resizer/v2/Y5KQIV4QCRHA5AIW6XON7H5IYI.jpg?auth=0fa044f1e8ee7d825cc3760e498c32650dfd8936e262fa679194745059149613&width=1200&height=800&quality=80&smart=true"
+  },
+  {
     "slug": "2026-08-21-automation-fails-without-human-system-design",
     "date": "2026-08-21",
     "title": "Automation Fails Without Human System Design",
