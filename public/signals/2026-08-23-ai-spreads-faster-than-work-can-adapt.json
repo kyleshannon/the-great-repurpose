@@ -1,0 +1,102 @@
+{
+  "slug": "2026-08-23-ai-spreads-faster-than-work-can-adapt",
+  "date": "2026-08-23",
+  "title": "AI Spreads Faster Than Work Can Adapt",
+  "pattern": "Communicate Online finds AI becoming infrastructure for MENA creators, while iAsk is turning search into guided learning instead of instant answers. Australian companies report scattered productivity gains without broad financial or job effects; Inc. warns that piling tools onto people can intensify work and erase the practice that builds judgment; and Forbes argues that even office space must shift from displaying busyness to supporting thought, connection, and impact. Together, the stories expose an adaptation gap: AI can spread through tasks quickly, but people still need learning, recovery, authorship, and redesigned institutions to turn capability into durable human value.",
+  "stages": [
+    "Become AI Ready",
+    "Reclaim Value",
+    "Unhook Identity",
+    "Discover Purpose",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://communicateonline.me/wp-content/uploads/2026/08/120774.jpg",
+  "stories": [
+    {
+      "title": "MENA Creators Make AI Their Infrastructure",
+      "url": "https://communicateonline.me/insights/ai-is-taking-over-menas-creator-economy-and-its-just-getting-started/",
+      "source": "communicateonline.me",
+      "published": "2026-08-23T04:46:11+00:00",
+      "summary": "Communicate Online reports that AI now sits across creator ideation, production, discovery, and monetization, with regional tools such as the Arabic-first Risha.ai expanding the shift in MENA. As content volume rises, the durable advantage moves away from raw output and toward a creator's voice, audience trust, judgment, and final creative decisions.",
+      "imageUrl": "https://communicateonline.me/wp-content/uploads/2026/08/120774.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "A cited survey found 47% of creators use AI daily and nearly 79% use it at least weekly.",
+        "AI is moving beyond production into talent discovery, audience analysis, storefront creation, and monetization.",
+        "As output becomes abundant, distinctive voice, trust, and creative judgment become more valuable."
+      ]
+    },
+    {
+      "title": "iAsk Turns Answers Into Guided Learning",
+      "url": "https://markets.businessinsider.com/news/stocks/iask-ai-launches-new-education-based-hub-to-help-students-learn-with-artificial-intelligence-1036484398",
+      "source": "markets.businessinsider.com",
+      "published": "2026-08-22T17:14:00+00:00",
+      "summary": "iAsk is expanding its search product into an education hub with guided learning, tutoring, step-by-step explanations, and document analysis designed to help students understand concepts rather than merely retrieve answers. The useful test for educational AI is not how quickly it completes a task, but whether the learner develops enough knowledge to work independently.",
+      "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/WeraP7i62sgexGIFNwzD88Tp1ko2/89201234-1787458496-1.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Discover Purpose"
+      ],
+      "keyPoints": [
+        "The new hub combines AI search, tutoring, homework assistance, guided explanations, and document analysis.",
+        "The company says its goal is to help students learn with AI instead of using it only for quick answers.",
+        "Real AI readiness requires preserving the practice through which learners build understanding and independence."
+      ]
+    },
+    {
+      "title": "Corporate AI Gains Remain Messy And Local",
+      "url": "https://www.afr.com/chanticleer/ai-in-corporate-australia-is-a-mess-your-job-is-safe-for-a-while-yet-20260821-p60qbm",
+      "source": "afr.com",
+      "published": "2026-08-21T01:20:04+00:00",
+      "summary": "The Australian Financial Review finds companies reporting useful local gains—Breville says AI helped compress one product rollout from 14 months in eight markets to about nine months in 40—but little broad evidence of revenue growth, cost reduction, or headcount cuts. AI adoption is organizational redesign, not a simple task swap, because real jobs bundle messy, interdependent responsibilities.",
+      "imageUrl": "https://static.ffx.io/images/$zoom_0.3146%2C$multiply_3%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_56/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_opinion_no_age_social_wm/552b9819c8f5bb58fdc0bcb643d1b81361167755",
+      "stages": [
+        "Unhook Identity",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Australian firms can point to individual productivity wins but struggle to show net financial returns from AI.",
+        "Commonwealth Bank reported AI gross benefits while its headcount and overall costs still increased.",
+        "Complex jobs and connected departments make enterprise AI a long organizational redesign rather than an instant labor replacement."
+      ]
+    },
+    {
+      "title": "AI Tools Can Make Hard Work Harder",
+      "url": "https://www.inc.com/tony-manganiello/your-ai-strategy-may-be-creating-a-human-bottleneck-and-hurting-productivity/91393886",
+      "source": "inc.com",
+      "published": "2026-08-21T05:00:00+00:00",
+      "summary": "Inc. argues that AI can remove routine work while concentrating each day into more emotionally and cognitively demanding tasks. It can also remove the repetitions through which junior employees develop judgment. Leaders therefore need to redesign jobs around recovery, deliberate practice, human review, and the capabilities people must retain—not merely add tools and demand more output.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "The article cites 79% generative-AI adoption but only 39% of organizations reporting an operating-profit impact.",
+        "Filling every saved minute with harder interactions can increase intensity without making work sustainable.",
+        "Automating away all repetition can also remove the practice people need to evaluate AI output reliably."
+      ]
+    },
+    {
+      "title": "Workspaces Must Reward Impact Over Busyness",
+      "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/08/18/the-end-of-productivity-culture-why-ai-will-change-the-spaces-we-need-for-work/",
+      "source": "forbes.com",
+      "published": "2026-08-18T04:00:00+00:00",
+      "summary": "Forbes contributor Sarah Davis argues that offices built to display presence and busyness no longer fit work shifting toward judgment, creativity, deep thought, and relationships. If AI absorbs more visible execution, workplace design and measurement must support human impact—better questions, original thinking, learning, trust, and cognitive endurance—instead of preserving old productivity signals.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a8383038e312120cc082170/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI shifts work away from routine execution toward judgment, creativity, deep thinking, and relationships.",
+        "Offices designed around visible effort can conflict with the concentration and connection higher-value work requires.",
+        "Organizations need measures of created value and impact rather than inherited signals of busyness."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
