@@ -1,0 +1,101 @@
+{
+  "slug": "2026-08-24-ai-raises-the-bar-before-building-ladders",
+  "date": "2026-08-24",
+  "title": "AI Raises The Bar Before Building Ladders",
+  "pattern": "DBS and Singapore's Institute of Banking and Finance are pairing AI training with career advice, while Unite.AI asks whether adoption is producing a better working life at all. Forbes shows that dependable multi-agent systems require people to redesign work around specialized roles and oversight; Memeburn's labor data finds hiring and productivity expectations rising even as entry-level practice and employer-funded training shrink; and Google Flow moves more creative planning, production, and asset management into one automated workspace. Together, the stories expose the central tension: AI is raising the performance bar across finance, operations, and creative work before most institutions have built the learning ladders, human safeguards, and career pathways people need to clear it.",
+  "stages": [
+    "Become AI Ready",
+    "Relaunch Yourself",
+    "Reclaim Value",
+    "Unhook Identity"
+  ],
+  "imageUrl": "/signals/tgr-signal-thumbnail.jpg",
+  "stories": [
+    {
+      "title": "DBS Builds AI Skills With Career Pathways",
+      "url": "https://www.humanresourcesonline.net/dbs-ibf-sign-mou-to-build-ai-skills-across-the-bank-and-singapore-s-financial-workforce",
+      "source": "humanresourcesonline.net",
+      "published": "2026-08-24T03:06:00+00:00",
+      "summary": "DBS and Singapore's Institute of Banking and Finance signed an agreement to expand AI skills across the bank and the wider financial workforce. DBS is also offering career advice to help employees understand how their roles and possible pathways are changing—a useful recognition that readiness requires navigation and institutional support, not just access to tools.",
+      "imageUrl": "",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "The partnership connects workforce development inside DBS with broader AI capability building across Singapore's financial sector.",
+        "DBS's Career Advisory Service is designed to help employees navigate changing roles and career pathways as adoption grows.",
+        "Reskilling becomes credible when workers can see where new capabilities lead, not merely what new tools they must learn."
+      ]
+    },
+    {
+      "title": "Better AI Work Starts With Better Work",
+      "url": "https://www.unite.ai/is-ai-creating-better-working-life-future/",
+      "source": "unite.ai",
+      "published": "2026-08-24T10:59:47+00:00",
+      "summary": "Unite.AI argues that organizations should judge workplace AI by whether it improves the experience of work, not only whether it increases output. The human question comes before the deployment plan: leaders must decide which burdens technology should remove and which forms of judgment, connection, growth, and agency the redesigned work should preserve.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Everyday AI adoption forces organizations to choose between extracting more output and deliberately improving working life.",
+        "A useful deployment begins with the human outcome the organization wants, not with the capability a vendor wants to install.",
+        "Sustainable AI readiness depends on redesigning work so people retain agency, development, and meaningful responsibility."
+      ]
+    },
+    {
+      "title": "Multi-Agent Systems Need Designed Accountability",
+      "url": "https://www.forbes.com/sites/bernardmarr/2026/08/24/how-to-design-multi-agent-workflows-that-actually-work/",
+      "source": "forbes.com",
+      "published": "2026-08-23T22:07:00+00:00",
+      "summary": "Forbes contributor Bernard Marr explains why breaking complex processes into specialized agents can make automated work easier to inspect and improve than assigning everything to one system. The deeper shift is from using an AI tool to designing a working system: humans must define roles, handoffs, permissions, failure checks, and the decisions that remain accountable to people.",
+      "imageUrl": "",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "One agent handling an entire complex process can make errors harder to locate and correct.",
+        "Specialized agents require explicit coordination, clear inputs and outputs, and observable handoffs between tasks.",
+        "Human value moves toward system design, judgment, and accountability as execution is distributed across agents."
+      ]
+    },
+    {
+      "title": "AI Hiring Grows While Entry Rungs Shrink",
+      "url": "https://memeburn.com/bright-side-ai-impact-labor-market-2026/",
+      "source": "memeburn.com",
+      "published": "2026-08-23T13:50:37+00:00",
+      "summary": "Memeburn reports that 35% of surveyed employers expect AI to increase headcount, compared with 15% expecting cuts, but the opportunity comes with a higher bar: 74% treat AI skills as an advantage or requirement and 57% have raised productivity expectations. Entry-level workers face the sharpest contradiction because routine learning tasks are being automated while employers demand more experience and most provide little mandatory AI training.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "A survey of more than 1,000 employers found 35% expect AI-related headcount growth and 15% expect reductions.",
+        "Thirty-eight percent have shifted basic data work away from entry-level employees, and 31% have raised experience requirements for those roles.",
+        "Only 22% provide mandatory AI training to every employee, leaving workers to meet rising expectations without a shared learning ladder."
+      ]
+    },
+    {
+      "title": "Google Flow Automates The Creative Workflow",
+      "url": "https://www.analyticsinsight.net/artificial-intelligence/google-flow-ai-7-creative-tasks-you-can-now-automate-with-generative-ai",
+      "source": "analyticsinsight.net",
+      "published": "2026-08-24T03:30:00+00:00",
+      "summary": "Analytics Insight describes Google Flow's expansion from video generation into an integrated creative workspace that can develop rough ideas, generate variations, edit through conversation, organize assets, and build reusable tools. As more execution moves inside the system, the creator's durable responsibility becomes clearer: set the intent, choose among possibilities, maintain coherence, and decide what deserves to exist.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Flow Agent can turn an early idea into storyboards, mood boards, prompts, and multiple visual directions.",
+        "The workspace combines conversational video editing, asset organization, background generation, and natural-language custom-tool creation.",
+        "Automation compresses creative execution while increasing the importance of human intent, selection, taste, and authorship."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
