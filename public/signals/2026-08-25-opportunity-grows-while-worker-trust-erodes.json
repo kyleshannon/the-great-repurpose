@@ -1,0 +1,101 @@
+{
+  "slug": "2026-08-25-opportunity-grows-while-worker-trust-erodes",
+  "date": "2026-08-25",
+  "title": "Opportunity Grows While Worker Trust Erodes",
+  "pattern": "Forbes maps new careers around AI adoption, while CounterPunch reports research showing that AI-linked layoffs and job insecurity can erase the productivity gains leaders expect. DBS and Singapore's Institute of Banking and Finance are testing pathways into redesigned finance roles; another Forbes report finds that tens of thousands of AI-economy jobs are emerging in construction, data centers, energy, and technical operations; and NVIDIA's NeMo Switchyard shows companies distributing agent work across specialized models. Together, the stories reveal an opportunity-trust divide: AI can create new roles and more capable systems, but people need credible pathways, shared gains, and accountable leadership before they can move toward the opportunity without fearing the transition itself.",
+  "stages": [
+    "Relaunch Yourself",
+    "Become AI Ready",
+    "Reclaim Value",
+    "Unhook Identity"
+  ],
+  "imageUrl": "https://s.yimg.com/lo/mysterio/api/7F3D70C6C6919261F46C6519DF87F3E9C0E38793BFC3A51AEED79719A292152E/subgraphmysterio/resizefill_w1200_h801;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fthe_edge_961%2F3bf795876b431ce9e059dda780feddd5.jpg",
+  "stories": [
+    {
+      "title": "Five Career Openings Emerge Around AI",
+      "url": "https://www.forbes.com/sites/tracybrower/2026/08/25/5-new-career-opportunities-in-the-ai-future-of-work/",
+      "source": "forbes.com",
+      "published": "2026-08-25T03:59:00+00:00",
+      "summary": "Forbes contributor Tracy Brower identifies new career opportunities forming around AI and argues that workers can reach them by building relevant skills and increasing the value of their contribution. The hopeful forecast still carries a navigation challenge: people need to translate existing strengths into emerging work rather than wait for a familiar job title to tell them where they belong.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a8d5e51f9312fb4f1b180cb/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "AI adoption is producing new categories of work alongside the roles and tasks it changes.",
+        "Workers need to describe portable strengths and contribution rather than anchor their identity to one job wrapper.",
+        "A credible opportunity becomes actionable only when people can see the skills and steps that lead into it."
+      ]
+    },
+    {
+      "title": "AI Layoffs Undercut The Productivity Promise",
+      "url": "https://www.counterpunch.org/2026/08/25/layoffs-tied-to-ai-hurt-worker-productivity/",
+      "source": "counterpunch.org",
+      "published": "2026-08-25T05:04:04+00:00",
+      "summary": "Research summarized by CounterPunch links AI-related layoffs and job insecurity to more negative employee sentiment toward AI—and finds that worker sentiment is strongly associated with firm productivity. After analyzing employee reviews, company performance, investments, and layoff announcements, the authors argue that cutting people to prove an AI return can destroy the trust and participation required to produce one.",
+      "imageUrl": "https://www.counterpunch.org/wp-content/uploads/2026/08/Journalism_and_Artificial_Intelligence_53910891889.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "The researchers analyzed millions of employee reviews alongside company performance, AI investments, and layoff announcements.",
+        "Job-security fears, weak training, and poor AI leadership were prominent drivers of negative worker sentiment.",
+        "Organizations are more likely to realize AI gains when workers share in the opportunity instead of experiencing the technology primarily as a threat."
+      ]
+    },
+    {
+      "title": "DBS Tests Pathways Into Redesigned Finance Roles",
+      "url": "https://sg.finance.yahoo.com/news/dbs-ibf-help-prepare-finance-180030925.html",
+      "source": "sg.finance.yahoo.com",
+      "published": "2026-08-23T07:00:00+00:00",
+      "summary": "DBS is working with Singapore's Institute of Banking and Finance to test how employees can move into redesigned roles after upskilling more than 11,000 staff whose jobs were reshaped by AI. The effort treats adaptation as a pathway problem, not just a course-completion problem: workers need practical routes from changed tasks into durable roles and opportunity.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/7F3D70C6C6919261F46C6519DF87F3E9C0E38793BFC3A51AEED79719A292152E/subgraphmysterio/resizefill_w1200_h801;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fthe_edge_961%2F3bf795876b431ce9e059dda780feddd5.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "DBS has already upskilled more than 11,000 employees affected by AI-driven job redesign.",
+        "The collaboration with IBF will test movement into roles shaped by new technology and business needs.",
+        "Institutional support becomes meaningful when training connects to a visible next role rather than ending with a credential."
+      ]
+    },
+    {
+      "title": "AI Infrastructure Creates A Skilled-Trades Boom",
+      "url": "https://www.forbes.com/sites/rachelwells/2026/08/21/35000-new-ai-jobs-and-a-10-billion-bet-openai-and-others-are-hiring/",
+      "source": "forbes.com",
+      "published": "2026-08-21T05:48:00+00:00",
+      "summary": "Forbes reports that OpenAI expects more than 35,000 construction jobs through 2032, alongside 2,500 long-term operational roles, while Generac and Micron are expanding around data-center demand. The AI economy's near-term opportunity is not confined to model builders: construction, energy, cooling, networking, maintenance, and technical operations make physical skill newly central to digital growth.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a8845b3759c70f3cb198837/0x0.jpg?format=jpg&crop=2004,1126,x63,y0,safe&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Reclaim Value",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "OpenAI's announced expansion includes more than 35,000 construction jobs and 2,500 continuing operational roles.",
+        "Data centers, chips, energy, cooling, and networks turn hands-on technical work into core AI infrastructure.",
+        "Trade schools, certificates, associate degrees, and practical experience can provide more accessible routes into parts of the AI economy."
+      ]
+    },
+    {
+      "title": "AI Agents Route Work Across Specialized Models",
+      "url": "https://www.business-standard.com/technology/artificial-intelligence/ai-agents-model-routing-ai-model-selection-126082500644_1.html",
+      "source": "business-standard.com",
+      "published": "2026-08-25T08:43:41+00:00",
+      "summary": "Business Standard examines the move from choosing one AI model to routing each step of an agent's work to the model best suited to its difficulty, cost, latency, and policy constraints. NVIDIA's NeMo Switchyard makes that orchestration explicit. As execution fragments across models, human responsibility shifts upward toward defining standards, watching handoffs, and deciding which tradeoffs are acceptable.",
+      "imageUrl": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-08/25/thumb/featurecrop/1200X628/1787647005-1923.png",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Model routers can assign routine steps to efficient models and reserve frontier capability for harder reasoning.",
+        "Effective routing weighs task fit, accuracy, cost, latency, infrastructure, and policy rather than model prestige alone.",
+        "Human judgment remains responsible for the routing rules, quality thresholds, observability, and consequences of failure."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
