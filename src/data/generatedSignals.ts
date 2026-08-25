@@ -6,14 +6,14 @@ export const bundledSignalIndex = [
     "slug": "2026-08-25-opportunity-grows-while-worker-trust-erodes",
     "date": "2026-08-25",
     "title": "Opportunity Grows While Worker Trust Erodes",
-    "pattern": "Forbes maps new careers around AI adoption, while CounterPunch reports research showing that AI-linked layoffs and job insecurity can erase the productivity gains leaders expect. DBS and Singapore's Institute of Banking and Finance are testing pathways into redesigned finance roles; another Forbes report finds that tens of thousands of AI-economy jobs are emerging in construction, data centers, energy, and technical operations; and NVIDIA's NeMo Switchyard shows companies distributing agent work across specialized models. Together, the stories reveal an opportunity-trust divide: AI can create new roles and more capable systems, but people need credible pathways, shared gains, and accountable leadership before they can move toward the opportunity without fearing the transition itself.",
+    "pattern": "Forbes maps new careers around AI adoption, while CounterPunch reports research showing that AI-linked layoffs and job insecurity can erase the productivity gains leaders expect. Network World finds that agentic AI is reshaping cybersecurity roles around supervision, verification, and risk judgment; another Forbes report finds that tens of thousands of AI-economy jobs are emerging in construction, data centers, energy, and technical operations; and NVIDIA's NeMo Switchyard shows companies distributing agent work across specialized models. Together, the stories reveal an opportunity-trust divide: AI can create new roles and more capable systems, but people need credible pathways, shared gains, and accountable leadership before they can move toward the opportunity without fearing the transition itself.",
     "stages": [
-      "Relaunch Yourself",
-      "Become AI Ready",
       "Reclaim Value",
-      "Unhook Identity"
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
-    "imageUrl": "https://s.yimg.com/lo/mysterio/api/7F3D70C6C6919261F46C6519DF87F3E9C0E38793BFC3A51AEED79719A292152E/subgraphmysterio/resizefill_w1200_h801;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fthe_edge_961%2F3bf795876b431ce9e059dda780feddd5.jpg"
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a8d5e51f9312fb4f1b180cb/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
   {
     "slug": "2026-08-24-ai-raises-the-bar-before-building-ladders",
@@ -872,14 +872,14 @@ export const bundledSignalsBySlug = {
     "slug": "2026-08-25-opportunity-grows-while-worker-trust-erodes",
     "date": "2026-08-25",
     "title": "Opportunity Grows While Worker Trust Erodes",
-    "pattern": "Forbes maps new careers around AI adoption, while CounterPunch reports research showing that AI-linked layoffs and job insecurity can erase the productivity gains leaders expect. DBS and Singapore's Institute of Banking and Finance are testing pathways into redesigned finance roles; another Forbes report finds that tens of thousands of AI-economy jobs are emerging in construction, data centers, energy, and technical operations; and NVIDIA's NeMo Switchyard shows companies distributing agent work across specialized models. Together, the stories reveal an opportunity-trust divide: AI can create new roles and more capable systems, but people need credible pathways, shared gains, and accountable leadership before they can move toward the opportunity without fearing the transition itself.",
+    "pattern": "Forbes maps new careers around AI adoption, while CounterPunch reports research showing that AI-linked layoffs and job insecurity can erase the productivity gains leaders expect. Network World finds that agentic AI is reshaping cybersecurity roles around supervision, verification, and risk judgment; another Forbes report finds that tens of thousands of AI-economy jobs are emerging in construction, data centers, energy, and technical operations; and NVIDIA's NeMo Switchyard shows companies distributing agent work across specialized models. Together, the stories reveal an opportunity-trust divide: AI can create new roles and more capable systems, but people need credible pathways, shared gains, and accountable leadership before they can move toward the opportunity without fearing the transition itself.",
     "stages": [
-      "Relaunch Yourself",
-      "Become AI Ready",
       "Reclaim Value",
-      "Unhook Identity"
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself"
     ],
-    "imageUrl": "https://s.yimg.com/lo/mysterio/api/7F3D70C6C6919261F46C6519DF87F3E9C0E38793BFC3A51AEED79719A292152E/subgraphmysterio/resizefill_w1200_h801;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fthe_edge_961%2F3bf795876b431ce9e059dda780feddd5.jpg",
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a8d5e51f9312fb4f1b180cb/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
     "stories": [
       {
         "title": "Five Career Openings Emerge Around AI",
@@ -916,20 +916,20 @@ export const bundledSignalsBySlug = {
         ]
       },
       {
-        "title": "DBS Tests Pathways Into Redesigned Finance Roles",
-        "url": "https://sg.finance.yahoo.com/news/dbs-ibf-help-prepare-finance-180030925.html",
-        "source": "sg.finance.yahoo.com",
-        "published": "2026-08-23T07:00:00+00:00",
-        "summary": "DBS is working with Singapore's Institute of Banking and Finance to test how employees can move into redesigned roles after upskilling more than 11,000 staff whose jobs were reshaped by AI. The effort treats adaptation as a pathway problem, not just a course-completion problem: workers need practical routes from changed tasks into durable roles and opportunity.",
-        "imageUrl": "https://s.yimg.com/lo/mysterio/api/7F3D70C6C6919261F46C6519DF87F3E9C0E38793BFC3A51AEED79719A292152E/subgraphmysterio/resizefill_w1200_h801;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fthe_edge_961%2F3bf795876b431ce9e059dda780feddd5.jpg",
+        "title": "AI Agents Redraw Cybersecurity Skill Requirements",
+        "url": "https://www.networkworld.com/article/4212081/ai-agents-are-reshaping-the-threat-landscape-shifting-it-skills-requirements.html",
+        "source": "networkworld.com",
+        "published": "2026-08-24T07:52:00+00:00",
+        "summary": "Network World reports that 78% of cybersecurity jobs now require AI skills, as agentic systems take on more routine security work. The opportunity is not simply to learn a tool: workers' value moves toward supervising agents, validating outputs, assessing risk, and bringing ethical and systems judgment to work that cannot be handed off.",
+        "imageUrl": "https://www.networkworld.com/wp-content/uploads/2026/08/4212081-0-15017000-1787583162-future-proof-IT-career-shutterstock_2674627607.jpg?quality=50&strip=all&w=1024",
         "stages": [
-          "Become AI Ready",
-          "Relaunch Yourself"
+          "Unhook Identity",
+          "Reclaim Value"
         ],
         "keyPoints": [
-          "DBS has already upskilled more than 11,000 employees affected by AI-driven job redesign.",
-          "The collaboration with IBF will test movement into roles shaped by new technology and business needs.",
-          "Institutional support becomes meaningful when training connects to a visible next role rather than ending with a credential."
+          "The AI Workforce Consortium reports that 78% of cybersecurity roles now require AI skills.",
+          "The share of G7 cybersecurity postings requiring AI skills doubled to 28.5% between October 2025 and March 2026.",
+          "As agents handle high-volume tasks, people become responsible for supervision, output validation, risk judgment, and accountability."
         ]
       },
       {
