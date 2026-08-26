@@ -1,0 +1,101 @@
+{
+  "slug": "2026-08-26-machines-delegate-while-career-ladders-disappear",
+  "date": "2026-08-26",
+  "title": "Machines Delegate While Career Ladders Disappear",
+  "pattern": "CNA examines agents taking routine work, while Stanford payroll research finds workers ages 22 to 25 falling further behind in AI-exposed occupations. Slack Code invites nontechnical employees to build software with agents but still relies on expert approval; interviews with data labelers reveal precarious workers doing the difficult manual labor hidden beneath automation; and Forbes describes synthetic managers assigning work back to people. Together, the stories expose a dangerous inversion: machines are gaining the authority to build and delegate just as the entry-level practice, stable employment, and human mentorship needed to develop judgment are becoming harder to find.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Become AI Ready",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2211086231-1152x648.jpg",
+  "stories": [
+    {
+      "title": "AI Agents Move From Answers To Action",
+      "url": "https://www.channelnewsasia.com/listen/cna938-rewind/mind-your-money-ai-agents-and-future-work-6341831",
+      "source": "channelnewsasia.com",
+      "published": "2026-08-25T16:59:00+00:00",
+      "summary": "CNA's Cheryl Goh and Zoom APAC head Carlos Quaderi explore agents that automate routine tasks, support productivity, and ease workforce constraints. The human question is not simply whether agents can act, but whether workers receive the skills and agency to stay relevant as execution shifts into software.",
+      "imageUrl": "https://dam.mediacorp.sg/image/upload/s--eY590iK5--/c_fill,g_auto,h_676,w_1200/f_auto,q_auto/v1/mediacorp/cna/image/2025/09/29/cna938-rewind-thumb-square-1080-1080.png?itok=3G4nmaZK",
+      "stages": [
+        "Become AI Ready",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "AI agents are moving beyond responses into actions performed on a user's behalf.",
+        "Businesses see routine-task automation as a response to productivity and workforce constraints.",
+        "Workers need practical agent fluency without tying their value to the tasks being automated."
+      ]
+    },
+    {
+      "title": "AI Exposure Widens The Entry-Level Employment Gap",
+      "url": "https://arstechnica.com/ai/2026/08/ai-is-hitting-entry-level-jobs-hardest-stanford-study-finds/",
+      "source": "arstechnica.com",
+      "published": "2026-08-24T21:45:53+00:00",
+      "summary": "Updated Stanford research using ADP payroll data finds employment for workers ages 22 to 25 in the most AI-exposed occupations is 19 percent below comparable employment in less-exposed fields, while finding no widespread economy-wide displacement. The deeper risk is a broken experience ladder: eliminating junior practice today leaves fewer people prepared for expert judgment tomorrow.",
+      "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2211086231-1152x648.jpg",
+      "stages": [
+        "Relaunch Yourself",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The relative employment shortfall for young workers in highly AI-exposed roles reached 19 percent by June 2026.",
+        "The research does not find broad economy-wide job displacement from AI.",
+        "Career systems need new ways for early-career workers to acquire experience and visible proof of judgment."
+      ]
+    },
+    {
+      "title": "Slack Code Turns Software Building Into Team Work",
+      "url": "https://www.inc.com/chloe-rosenberg/slacks-new-ai-update-wants-everyone-to-be-a-builder-is-your-job-description-about-to-change/91395056",
+      "source": "inc.com",
+      "published": "2026-08-24T08:50:00+00:00",
+      "summary": "Slack Code brings AI coding into shared channels so nontechnical employees, engineers, and agents can move from an idea or bug report toward working software in one place. Production changes still require expert sign-off, making judgment and accountability more valuable even as the boundary around who gets to build expands.",
+      "imageUrl": "",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Slack Code integrates models and coding agents into collaborative channels.",
+        "Nontechnical employees can prompt and iterate on software inside a familiar interface.",
+        "Expert review remains essential for security, quality, and high-stakes production decisions."
+      ]
+    },
+    {
+      "title": "The AI Job Boom Hides Precarious Human Labor",
+      "url": "https://phys.org/news/2026-08-ai-job-boom-tedious-temporary.html",
+      "source": "phys.org",
+      "published": "2026-08-24T05:40:00+00:00",
+      "summary": "Interviews with data workers in China and Australia show the human labor behind AI: labeling, testing, and moderating data, often without formal contracts, predictable assignments, or meaningful appeal rights. As easier tasks disappear, workers inherit harder work under deeper precarity, exposing why job counts alone cannot measure whether AI creates dignified opportunity.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Human workers prepare and correct the data that AI systems depend on.",
+        "Many general data-labeling roles offer low pay, unstable task access, and few worker protections.",
+        "A credible AI economy must measure work quality, bargaining power, and well-being—not only jobs created."
+      ]
+    },
+    {
+      "title": "Synthetic Managers Begin Assigning Work To People",
+      "url": "https://www.forbes.com/sites/michaelashley/2026/08/26/what-happens-when-ai-starts-assigning-work-to-humans/",
+      "source": "forbes.com",
+      "published": "2026-08-26T04:00:00+00:00",
+      "summary": "Forbes explores ambient delegation, in which agents receive signals, decide what needs attention, and assign tasks to people before a human manager intervenes. That shifts management from distributing work toward designing rules, exercising strategic judgment, and protecting the trust and human connection that synthetic managers cannot own.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI systems are beginning to route and assign work rather than merely complete tasks.",
+        "Humans increasingly design how synthetic managers operate and what decisions they may make.",
+        "Leadership value moves toward context, trust, mentorship, and accountability when delegation becomes ambient."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
