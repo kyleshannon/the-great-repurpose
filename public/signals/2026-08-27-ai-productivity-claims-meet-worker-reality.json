@@ -1,0 +1,101 @@
+{
+  "slug": "2026-08-27-ai-productivity-claims-meet-worker-reality",
+  "date": "2026-08-27",
+  "title": "AI Productivity Claims Meet Worker Reality",
+  "pattern": "Reuters traces how Meta's plan to remove large parts of its workforce collapsed when its own AI tools failed to deliver the expected productivity and employees resisted the process. The Seattle Times follows Indian data annotators whose temporary labor creates the capability that may eventually displace it; Businessworld and People Matters document Meta's halted second round of cuts from different workforce angles; and HR Dive finds finance leaders more confident about AI-driven growth than job losses. Together, the stories expose the test beneath every automation promise: productivity forecasts become credible only when measured against actual performance, worker knowledge, and the quality of the human work created or removed.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Become AI Ready",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://images.seattletimes.com/wp-content/uploads/2026/08/5Awyh6Y.jpg?d=375x241",
+  "stories": [
+    {
+      "title": "Meta's AI Layoff Plan Meets Its Evidence",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/how-metas-ai-workforce-transformation-plans-went-kaput-2026-08-26/",
+      "source": "reuters.com",
+      "published": "2026-08-26T13:15:00+00:00",
+      "summary": "Reuters examines how Meta's plan to use AI productivity gains to justify deep workforce reductions unraveled when the tools did not meet internal expectations and employees challenged the process. The episode makes a basic human standard visible: leaders should prove that new capability works before asking people to absorb irreversible consequences.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Meta's workforce transformation linked planned job cuts to expected AI productivity gains.",
+        "The plan stalled when internal evidence and employee resistance challenged those assumptions.",
+        "Automation decisions need measured results and accountable leadership before they become workforce policy."
+      ]
+    },
+    {
+      "title": "Data Annotation Creates Jobs With An Expiration Date",
+      "url": "https://www.seattletimes.com/explore/careers/where-ai-is-creating-jobs-for-humans-for-a-while/",
+      "source": "seattletimes.com",
+      "published": "2026-08-26T13:00:03+00:00",
+      "summary": "The Seattle Times follows data annotators in a small southern Indian city who train AI systems to perform tasks previously done by people. Their fast-growing field offers income and entry into the AI economy, but its work may disappear as the systems improve, turning a new job category into a temporary bridge rather than a durable career ladder.",
+      "imageUrl": "https://images.seattletimes.com/wp-content/uploads/2026/08/5Awyh6Y.jpg?d=375x241",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Workers in southern India label data that helps AI perform tasks historically done by people.",
+        "Data annotation is creating human employment while also improving the systems that may reduce demand for it.",
+        "Temporary AI work needs pathways into transferable skills, agency, and more durable forms of value."
+      ]
+    },
+    {
+      "title": "Weak AI Gains Halt Meta's Workforce Overhaul",
+      "url": "https://www.businessworld.in/article/meta-s-ai-workforce-overhaul-falters-as-zuckerberg-halts-cuts-621056",
+      "source": "businessworld.in",
+      "published": "2026-08-26T20:05:00+00:00",
+      "summary": "Businessworld reports that Meta scaled back Project OT after weak AI productivity gains and employee backlash, despite proposals to reduce some teams by as much as 60 percent. The reversal shows that workforce redesign cannot be treated as a spreadsheet exercise: employee knowledge and demonstrated system performance are part of the operating evidence.",
+      "imageUrl": "https://static.businessworld.in/meta_20250125090554_ogImage_31.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Project OT reportedly considered reductions of up to 60 percent in some Meta teams.",
+        "Weak productivity results and employee backlash contributed to the plan being scaled back.",
+        "Responsible redesign requires validated tools, worker participation, and a credible plan for changed roles."
+      ]
+    },
+    {
+      "title": "Finance Leaders Expect Growth Before Job Cuts",
+      "url": "https://www.hrdive.com/news/ai-related-growth-edge-job-cut-fears-finance-execs-tech-outlook/828764/",
+      "source": "hrdive.com",
+      "published": "2026-08-26T02:47:00+00:00",
+      "summary": "HR Dive reports that 54 percent of respondents in an informal CFO Dive poll expect higher employee productivity to be AI's biggest workforce effect, putting growth expectations ahead of job-cut fears. That confidence is a useful counterpoint to Meta's reversal, but it also raises the burden of proof: leaders must show where gains come from and who shares them.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Fifty-four percent of respondents chose higher employee productivity as AI's largest workforce impact.",
+        "Finance executives in the informal poll placed growth expectations ahead of job-cut fears.",
+        "Productivity claims become meaningful when organizations trace the gains and distribute their benefits credibly."
+      ]
+    },
+    {
+      "title": "Employee Pushback Changes Meta's Automation Strategy",
+      "url": "https://www.peoplematters.in/news/strategic-hr/meta-layoffs-zuckerberg-reportedly-stopped-second-round-after-ai-underperformed-51718",
+      "source": "peoplematters.in",
+      "published": "2026-08-26T17:00:00+00:00",
+      "summary": "People Matters reports that Meta shelved a planned second layoff round after internal data questioned AI productivity gains and employees pushed back against the transformation strategy. The account centers the organizational lesson: workers are not merely costs inside an automation model; their evidence, trust, and participation can determine whether change succeeds.",
+      "imageUrl": "https://asset.peoplematters.in/images/c9ad829b-69c9-404d-a53b-c3d7be217bf1.png",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Meta reportedly stopped a second layoff round after AI underperformed internal expectations.",
+        "Employee resistance became a material factor in the company's transformation decision.",
+        "Workforce change is more durable when people can challenge assumptions and shape the system around them."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}

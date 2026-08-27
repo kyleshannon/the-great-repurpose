@@ -1,5 +1,18 @@
 [
   {
+    "slug": "2026-08-27-ai-productivity-claims-meet-worker-reality",
+    "date": "2026-08-27",
+    "title": "AI Productivity Claims Meet Worker Reality",
+    "pattern": "Reuters traces how Meta's plan to remove large parts of its workforce collapsed when its own AI tools failed to deliver the expected productivity and employees resisted the process. The Seattle Times follows Indian data annotators whose temporary labor creates the capability that may eventually displace it; Businessworld and People Matters document Meta's halted second round of cuts from different workforce angles; and HR Dive finds finance leaders more confident about AI-driven growth than job losses. Together, the stories expose the test beneath every automation promise: productivity forecasts become credible only when measured against actual performance, worker knowledge, and the quality of the human work created or removed.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://images.seattletimes.com/wp-content/uploads/2026/08/5Awyh6Y.jpg?d=375x241"
+  },
+  {
     "slug": "2026-08-26-machines-delegate-while-career-ladders-disappear",
     "date": "2026-08-26",
     "title": "Machines Delegate While Career Ladders Disappear",
