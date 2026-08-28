@@ -1,0 +1,101 @@
+{
+  "slug": "2026-08-28-protection-promises-need-real-transition-pathways",
+  "date": "2026-08-28",
+  "title": "Protection Promises Need Real Transition Pathways",
+  "pattern": "Moneycontrol reports Bill Gates proposing human-reserved jobs and automation taxes, while Martin Ford and Robert Reich warn from different angles that disruption could spread across professions and white-collar work. Flova.ai is simultaneously moving video creation toward agent-native production, and Forbes follows seven states trying to connect job creation with talent development. Together, the stories reveal the gap between protection and preparation: naming vulnerable jobs may focus the debate, but people need practical learning routes, portable value, and a voice in deciding which work should remain meaningfully human.",
+  "stages": [
+    "Unhook Identity",
+    "Relaunch Yourself",
+    "Become AI Ready",
+    "Reclaim Value"
+  ],
+  "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/08/20260827132259_Bill-Gates-1.jpg",
+  "stories": [
+    {
+      "title": "Gates Proposes Jobs Reserved For Human Judgment",
+      "url": "https://www.moneycontrol.com/world/bill-gates-warns-ai-could-replace-human-minds-at-work-proposes-new-tax-on-robots-and-human-reserved-jobs-article-14017079.html",
+      "source": "moneycontrol.com",
+      "published": "2026-08-27T06:23:00+00:00",
+      "summary": "Moneycontrol reports Bill Gates's proposal to designate some roles as human-reserved, especially work involving empathy, ethics, education, care, and high-stakes judgment. He also suggests taxing AI use and robots to fund retraining and safety nets, shifting the question from whether disruption arrives to how society preserves agency through it.",
+      "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/08/20260827132259_Bill-Gates-1.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Gates argues that cognitive automation could pressure entry-level, mid-level, and physical work.",
+        "His human-reserved framework prioritizes empathy, ethics, care, education, and consequential judgment.",
+        "Automation taxes would help fund retraining and support for people displaced by the transition."
+      ]
+    },
+    {
+      "title": "Ford Frames AI Disruption As Economy-Wide",
+      "url": "https://inthesetimes.com/article/ai-is-coming-for-all-of-our-jobs",
+      "source": "inthesetimes.com",
+      "published": "2026-08-27T08:30:00+00:00",
+      "summary": "Martin Ford argues in In These Times that AI's reach will not stay confined to a handful of occupations or industries. The broad warning makes identity resilience essential, but it also raises an institutional obligation: people need credible ways to carry their judgment and experience into new forms of work rather than absorbing disruption alone.",
+      "imageUrl": "https://s3.us-east-1.amazonaws.com/in-these-times/_1200x630_crop_center-center_82_none/GettyImages-2218344194_2026-08-20-192314_lcbi.jpg?mtime=1787253807",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Ford describes AI as a force likely to affect nearly every industry and profession.",
+        "Economy-wide disruption makes a single-job identity increasingly fragile.",
+        "Transition systems must help people translate durable capabilities into new work."
+      ]
+    },
+    {
+      "title": "Reich Puts White-Collar Work In The Crosshairs",
+      "url": "https://247wallst.com/investing/2026/08/27/robert-reich-predicts-ai-will-wipe-out-huge-numbers-of-white-collar-jobs/",
+      "source": "247wallst.com",
+      "published": "2026-08-27T13:44:35+00:00",
+      "summary": "24/7 Wall St. relays former Labor Secretary Robert Reich's warning that AI could remove large numbers of white-collar jobs. Forecasts this broad should not become destiny, but they clarify the human task: workers and institutions must identify the judgment, trust, relationships, and purpose that remain valuable when familiar task bundles come apart.",
+      "imageUrl": "https://247wallst.com/wp-content/uploads/2026/08/robert-reich-says-the-canada-trade-war-will-hit-ho-featured-1787756620628.webp",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Reich expects substantial exposure across white-collar occupations.",
+        "Job-loss forecasts describe risk but do not define which transitions are inevitable.",
+        "Workers need language for value that survives the breakup of established roles."
+      ]
+    },
+    {
+      "title": "Flova Moves Video Production Toward Agent-Native Workflows",
+      "url": "https://markets.businessinsider.com/news/stocks/flova-pte-ltd-announces-full-integration-of-seedance-2-5-into-flova-ai-further-advancing-agent-native-video-production-1036501787",
+      "source": "markets.businessinsider.com",
+      "published": "2026-08-27T17:59:00+00:00",
+      "summary": "A company announcement says Flova.ai integrated Seedance 2.5 into its video platform to advance agent-native production. The product claim points to a concrete shift inside creative work: execution moves deeper into the system, while people increasingly define intent, direct agents, judge outputs, and take responsibility for the finished story.",
+      "imageUrl": "https://ml.globenewswire.com/Resource/Download/96dd6cb3-2fef-4010-9d8b-4597d95b44cb/flova-ai.png",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Flova.ai says Seedance 2.5 is now integrated into its AI video production platform.",
+        "Agent-native workflows move more production execution into coordinated software systems.",
+        "Creative value shifts toward direction, taste, verification, and accountable authorship."
+      ]
+    },
+    {
+      "title": "Seven States Link Job Creation To Talent Development",
+      "url": "https://www.forbes.com/sites/mattgandal/2026/08/27/the-jobs-are-changing-is-higher-education-ready-to-change-with-them/",
+      "source": "forbes.com",
+      "published": "2026-08-27T08:39:00+00:00",
+      "summary": "Forbes describes the Opportunity Alliance's effort across seven states to pursue job creation and talent development together instead of treating training as a later response. That sequencing matters: economic development becomes a human pathway only when employers, educators, and public leaders build visible routes into the work they hope to attract.",
+      "imageUrl": "",
+      "stages": [
+        "Relaunch Yourself",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "The Opportunity Alliance connects seven states around jobs and talent strategy.",
+        "The initiative treats workforce development and job creation as simultaneous work.",
+        "Higher education can become transition infrastructure when learning connects directly to emerging opportunity."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
