@@ -1,0 +1,101 @@
+{
+  "slug": "2026-08-29-proof-must-precede-workforce-redesign",
+  "date": "2026-08-29",
+  "title": "Proof Must Precede Workforce Redesign",
+  "pattern": "CEOWORLD challenges executives to prove that AI actually caused and can absorb nearly 140,000 technology-sector job cuts, while UiPath founder Daniel Dines argues that machines still cannot accumulate the tacit knowledge or accountability learned inside real work. Forbes finds entry-level roles demanding senior-level emotional intelligence, and two Indonesian ministries respond with triple-skilling and AI literacy for workers and civil servants. Together, the stories reveal a sequencing problem: leaders are redesigning work before validating the systems, while people are expected to supply judgment, adaptability, and institutional knowledge without always receiving the pathways needed to develop them.",
+  "stages": [
+    "Reclaim Value",
+    "Become AI Ready",
+    "Relaunch Yourself",
+    "Unhook Identity"
+  ],
+  "imageUrl": "https://ceoworld.biz/wp-content/uploads/2026/06/Artificial-intelligence-AI-20260618234446.jpg",
+  "stories": [
+    {
+      "title": "AI Layoffs Need Operational Proof",
+      "url": "https://ceoworld.biz/2026/08/28/ai-layoffs-need-evidence-not-executive-storytelling/",
+      "source": "ceoworld.biz",
+      "published": "2026-08-29T00:36:33+00:00",
+      "summary": "CEOWORLD cites nearly 140,000 U.S. technology job cuts in 2026 and argues that leaders often blur verified automation, strategic reallocation, and ordinary cost reduction. Its proposed test—task, workflow, capacity, and outcome evidence—makes workforce change accountable to real operating performance instead of letting an AI narrative substitute for proof.",
+      "imageUrl": "https://ceoworld.biz/wp-content/uploads/2026/06/Artificial-intelligence-AI-20260618234446.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Amazon, Oracle, Meta, and Microsoft account for roughly 50,000 of the technology-sector cuts cited in the analysis.",
+        "The article calls for task, workflow, capacity, and outcome proof before layoffs are described as AI-driven.",
+        "Operational evidence helps distinguish genuine automation from budget choices dressed in the language of innovation."
+      ]
+    },
+    {
+      "title": "Emotional Intelligence Becomes An Entry Requirement",
+      "url": "https://www.forbes.com/sites/kevinkruse/2026/08/29/what-is-emotional-intelligence-the-new-definition-for-the-ai-era/",
+      "source": "forbes.com",
+      "published": "2026-08-29T03:53:00+00:00",
+      "summary": "Forbes reports that entry-level roles exposed to AI are seven times more likely to request traditionally senior capabilities such as judgment and leadership. As technical execution becomes easier to automate, self-awareness, self-management, social awareness, and relationship management move from promotion criteria to the starting line—raising the value of human skills while making early careers harder to enter.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a8e1d7bb6344e8da94b2455/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Reclaim Value",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "PwC analyzed more than one billion job ads across six continents for its 2026 Global AI Jobs Barometer.",
+        "Human judgment and leadership are appearing far more often in AI-exposed entry-level job requirements.",
+        "Emotional intelligence is learnable, but institutions must create ways for young workers to practice it."
+      ]
+    },
+    {
+      "title": "AI Cannot Learn The Unwritten Job",
+      "url": "https://www.forbes.com/sites/gabrielalinzainescu/2026/08/27/uipaths-daniel-dines-says-ais-real-limit-is-that-it-cant-learn-on-the-job/",
+      "source": "forbes.com",
+      "published": "2026-08-27T09:58:00+00:00",
+      "summary": "UiPath founder Daniel Dines argues that AI arrives as a capable but context-poor “bright stranger”: it can reason over recorded information but does not absorb tacit knowledge, carry accountability, or reliably execute long high-consequence chains. His model—AI proposes, humans decide, automation executes—places human judgment and institutional memory inside the operating architecture rather than outside it.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Dines identifies learning, persistent identity, consequence, and exactness as four structural limits of enterprise AI.",
+        "He urges companies to map work, validate systems in production, redesign roles, and only then adjust headcount.",
+        "The durable human moat shifts toward writing the playbook, spotting exceptions, validating outputs, and owning consequences."
+      ]
+    },
+    {
+      "title": "Indonesia Builds A Triple-Skilling Pathway",
+      "url": "https://en.antaranews.com/news/428975/indonesia-prepares-3s-strategy-to-help-young-workers-adapt-to-ai",
+      "source": "en.antaranews.com",
+      "published": "2026-08-29T03:51:10+00:00",
+      "summary": "Indonesia's Manpower Ministry is preparing a 3S strategy that combines upskilling, reskilling, and cross-skilling as AI changes labor demand. With more than 68 percent of the population at working age, the ministry is pairing AI literacy, data analysis, and automation with critical thinking, ethics, adaptability, and leadership so demographic potential becomes mobility rather than mismatch.",
+      "imageUrl": "https://cdn.antaranews.com/cache/1200x800/2026/08/29/1000749803.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Upskilling deepens current capabilities, reskilling supports movement into new sectors, and cross-skilling combines fields for flexibility.",
+        "Vocational curricula are being reoriented around both technical AI capabilities and durable human strengths.",
+        "The plan also seeks broader training access for women, disabled workers, and young people in underserved regions."
+      ]
+    },
+    {
+      "title": "AI Literacy Becomes Public-Sector Infrastructure",
+      "url": "https://en.antaranews.com/news/428997/ai-literacy-essential-to-navigate-digital-era-work-dynamics-ministry",
+      "source": "en.antaranews.com",
+      "published": "2026-08-29T09:45:27+00:00",
+      "summary": "Indonesia's Communication and Digital Affairs Ministry says AI literacy is urgent for workers and civil servants because generative AI is changing decisions, public service, employment, and even fiscal structures. Citing ILO estimates that nearly one in four ASEAN workers holds an exposed job, the ministry frames readiness as institutional capacity for informed governance, not merely individual tool use.",
+      "imageUrl": "https://cdn.antaranews.com/cache/1200x800/2026/08/20/IMG-20260819-WA0070.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The ministry cites an ILO estimate that nearly one in four ASEAN workers is in a job exposed to generative AI.",
+        "Civil servants working on labor, tax, digital-economy, and governance policy need technical understanding and risk awareness.",
+        "Long-term readiness combines AI literacy, policy analysis, data-based decisions, governance, and cross-sector coordination."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
