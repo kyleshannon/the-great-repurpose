@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-08-30-career-agency-needs-more-than-ai-skills",
+    "date": "2026-08-30",
+    "title": "Career Agency Needs More Than AI Skills",
+    "pattern": "Tang Min describes Chinese universities partnering with business as AI simultaneously creates and squeezes jobs, while Indonesia urges workers and civil servants to build practical AI fluency. Grads of Life argues that young people should help redesign entry-level work, University of Phoenix provost John Woods says AI can surface career options but cannot choose a meaningful path, and the Las Vegas Sun defends the humanities as training for judgment. Together, the stories move readiness beyond tool proficiency: people need access to new capability, but also the authorship, context, and human discernment to decide where that capability should lead.",
+    "stages": [
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a93b2401283a9045a9b82a0/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-08-29-proof-must-precede-workforce-redesign",
     "date": "2026-08-29",
     "title": "Proof Must Precede Workforce Redesign",
@@ -920,6 +933,107 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-08-30-career-agency-needs-more-than-ai-skills": {
+    "slug": "2026-08-30-career-agency-needs-more-than-ai-skills",
+    "date": "2026-08-30",
+    "title": "Career Agency Needs More Than AI Skills",
+    "pattern": "Tang Min describes Chinese universities partnering with business as AI simultaneously creates and squeezes jobs, while Indonesia urges workers and civil servants to build practical AI fluency. Grads of Life argues that young people should help redesign entry-level work, University of Phoenix provost John Woods says AI can surface career options but cannot choose a meaningful path, and the Las Vegas Sun defends the humanities as training for judgment. Together, the stories move readiness beyond tool proficiency: people need access to new capability, but also the authorship, context, and human discernment to decide where that capability should lead.",
+    "stages": [
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a93b2401283a9045a9b82a0/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "China's AI Expansion Creates And Squeezes Work",
+        "url": "https://www.forbes.com/sites/russellflannery/2026/08/30/how-ais-spread-boosts-squeezes-chinas-job-market-tang-min/",
+        "source": "forbes.com",
+        "published": "2026-08-29T22:30:00+00:00",
+        "summary": "Forbes reports economist Tang Min's view that AI is expanding some parts of China's economy while putting pressure on established jobs. Universities are responding through closer business collaboration to close their own knowledge gaps, showing that transition capacity depends on institutions learning alongside workers rather than merely telling individuals to adapt.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a93b2401283a9045a9b82a0/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Tang Min frames AI as a force that can generate economic opportunity while squeezing portions of the labor market.",
+          "Chinese universities are increasing collaboration with businesses to address gaps in current AI knowledge.",
+          "Institutional learning pathways can help people move with changing work instead of carrying the transition alone."
+        ]
+      },
+      {
+        "title": "Indonesia Treats AI Fluency As Workforce Infrastructure",
+        "url": "https://en.tempo.co/read/2118565/indonesia-urges-workers-to-build-ai-skills-as-jobs-evolve",
+        "source": "en.tempo.co",
+        "published": "2026-08-29T17:00:00+00:00",
+        "summary": "Tempo reports Indonesia urging workers, including civil servants, to develop AI skills as generative systems reshape jobs, decisions, and the digital economy. The appeal broadens readiness from private career advantage to public capacity: people inside institutions need enough fluency to govern change, preserve judgment, and redesign services responsibly.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Indonesia is calling on both private-sector workers and civil servants to strengthen practical AI skills.",
+          "The policy frame connects generative AI to employment, decision-making, public service, and the digital economy.",
+          "AI literacy becomes institutional infrastructure when people must evaluate systems and make consequential decisions."
+        ]
+      },
+      {
+        "title": "Young Talent Must Help Redesign Entry-Level Work",
+        "url": "https://www.forbes.com/sites/gradsoflife/2026/08/25/ai-is-changing-work-young-talent-will-define-what-comes-next/",
+        "source": "forbes.com",
+        "published": "2026-08-25T09:22:00+00:00",
+        "summary": "Grads of Life argues in Forbes that young people are positioned to shape the next era of work, not simply endure it. Preparing them to lead requires employers and educators to rethink entry-level roles and career preparation, preserving places where beginners can contribute, practice judgment, build relationships, and develop an occupational identity.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Young workers can help define emerging work because they are entering careers alongside rapidly changing AI systems.",
+          "Entry-level job design and career preparation must change together as routine tasks become easier to automate.",
+          "A durable talent system gives beginners real participation and developmental responsibility rather than demanding instant seniority."
+        ]
+      },
+      {
+        "title": "AI Can Map Options But Cannot Choose Meaning",
+        "url": "https://www.yahoo.com/lifestyle/articles/ai-could-help-career-path-103000732.html",
+        "source": "yahoo.com",
+        "published": "2026-08-29T03:31:00+00:00",
+        "summary": "University of Phoenix provost John Woods explains that AI can help people explore occupations and discover possible career pathways, but it cannot make the defining choice for them. The distinction restores agency to career transition: technology can widen the map, while people must connect options to their values, experience, motivation, and desired life.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/b2bdb9fdce063320970640bdfede884c756679badc45c0273eccf5ec834547a9/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Ftoms_guide_826%2F13537b51787ddf48ce465f9c79da2b54.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "AI can help a person identify occupations and pathways they may not have considered.",
+          "Career exploration still requires human reflection about values, motivation, experience, and purpose.",
+          "The most useful career technology expands choice without pretending to own the final decision."
+        ]
+      },
+      {
+        "title": "The Humanities Train Judgment For The AI Age",
+        "url": "https://lasvegassun.com/news/2026/aug/27/we-need-the-humanities-in-the-age-of-ai/",
+        "source": "lasvegassun.com",
+        "published": "2026-08-27T09:00:00+00:00",
+        "summary": "The Las Vegas Sun argues that AI's promise in discovery, knowledge access, productivity, and problem-solving increases rather than reduces the need for the humanities. Technical capability still needs interpretation, ethics, historical context, and clear communication, making humanistic education part of AI readiness rather than an ornamental alternative to it.",
+        "imageUrl": "https://assets.lasvegassun.com/media/assets/images/icons/favicon-app.png",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The editorial welcomes AI's potential to accelerate discovery, widen knowledge access, and address difficult problems.",
+          "Humanities disciplines develop interpretation, ethical reasoning, historical context, and communication around powerful tools.",
+          "AI readiness is incomplete when people can operate systems but cannot judge their purposes or consequences."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-08-29-proof-must-precede-workforce-redesign": {
     "slug": "2026-08-29-proof-must-precede-workforce-redesign",
     "date": "2026-08-29",
