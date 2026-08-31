@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-08-31-ai-fluency-cannot-repair-broken-trust",
+    "date": "2026-08-31",
+    "title": "AI Fluency Cannot Repair Broken Trust",
+    "pattern": "Bernard Marr maps the AI capabilities employers are actually seeking, while Principal CHRO Lisa Coulson pairs AI training for 90% of 19,000 employees with a renewed investment in emotional intelligence. Forbes reframes career readiness around judgment, questions, and value creation; the Economic Times argues that even AI-leading companies still depend on human workers and should favor reskilling over reflexive cuts; and HRD Australia reports that opaque AI-linked layoffs are eroding faith in corporate leaders. Together, the stories show that readiness is both a capability challenge and a trust challenge: people can learn new tools, but leaders must still explain decisions, design credible transitions, and prove that human development is more than cover for headcount reduction.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a8dc6d7ac06920eea046181/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-08-30-career-agency-needs-more-than-ai-skills",
     "date": "2026-08-30",
     "title": "Career Agency Needs More Than AI Skills",
@@ -933,6 +946,107 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-08-31-ai-fluency-cannot-repair-broken-trust": {
+    "slug": "2026-08-31-ai-fluency-cannot-repair-broken-trust",
+    "date": "2026-08-31",
+    "title": "AI Fluency Cannot Repair Broken Trust",
+    "pattern": "Bernard Marr maps the AI capabilities employers are actually seeking, while Principal CHRO Lisa Coulson pairs AI training for 90% of 19,000 employees with a renewed investment in emotional intelligence. Forbes reframes career readiness around judgment, questions, and value creation; the Economic Times argues that even AI-leading companies still depend on human workers and should favor reskilling over reflexive cuts; and HRD Australia reports that opaque AI-linked layoffs are eroding faith in corporate leaders. Together, the stories show that readiness is both a capability challenge and a trust challenge: people can learn new tools, but leaders must still explain decisions, design credible transitions, and prove that human development is more than cover for headcount reduction.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a8dc6d7ac06920eea046181/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "Employers Shift From AI Hype To Applied Capability",
+        "url": "https://www.forbes.com/sites/bernardmarr/2026/08/31/the-ai-skills-employers-actually-want-in-2026/",
+        "source": "forbes.com",
+        "published": "2026-08-30T22:30:00+00:00",
+        "summary": "Bernard Marr examines hiring data showing demand across agentic AI, prompt engineering, machine learning, and AI governance rather than treating AI literacy as one generic skill. The spread matters for workers because readiness now means understanding where a capability creates value, how it fits a workflow, and what oversight it requires—not merely adding an AI label to a résumé.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Hiring demand spans agentic systems, prompt engineering, machine learning, and AI governance.",
+          "Employers are distinguishing useful applied capabilities from skills that have not delivered expected value.",
+          "Workers need role-specific fluency that connects tools to workflows, outcomes, and responsible oversight."
+        ]
+      },
+      {
+        "title": "Opaque AI Layoffs Break Leadership Trust",
+        "url": "https://www.hcamag.com/au/news/general/ai-layoffs-shatter-trust-in-corporate-leadership/587930",
+        "source": "hcamag.com",
+        "published": "2026-08-31T12:24:38+00:00",
+        "summary": "HRD Australia reports that more than half of laid-off workers suspect AI secretly drove the elimination of their roles, creating a broader crisis of confidence in corporate leadership. Whether every suspicion is correct is less important than the signal: when leaders do not explain the evidence, criteria, and transition plan behind workforce decisions, workers fill the vacuum with fear and distrust.",
+        "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/037/0391_639237467146393007.png",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "More than half of surveyed laid-off workers suspect AI played a hidden role in their job loss.",
+          "Opacity around automation decisions can damage confidence in leaders beyond the employees directly affected.",
+          "Credible transition leadership requires evidence, explanation, and visible support rather than an unexplained technology rationale."
+        ]
+      },
+      {
+        "title": "AI Leaders Still Depend On Human Work",
+        "url": "https://economictimes.indiatimes.com/opinion/et-editorial/even-ai-champs-blink-on-job-cuts/articleshow/133634226.cms",
+        "source": "economictimes.indiatimes.com",
+        "published": "2026-08-30T10:35:00+00:00",
+        "summary": "The Economic Times uses Meta's shifting approach to job cuts to argue that becoming AI-native is harder and more subjective than executive forecasts suggest. Most organizations still cannot operate without human workers, making reskilling and work redesign a more credible route than assuming technology can immediately absorb the knowledge, coordination, and accountability people provide.",
+        "imageUrl": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-160432,resizemode-75,msid-133634226/opinion/et-editorial/even-ai-champs-blink-on-job-cuts.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Meta's decision illustrates the difficulty of converting an AI-native ambition into an operating model.",
+          "Most organizations still rely on human knowledge and labor even as they expand AI investment.",
+          "Reskilling people to work with AI offers an alternative to premature workforce removal."
+        ]
+      },
+      {
+        "title": "AI Training Works Better With Emotional Intelligence",
+        "url": "https://www.forbes.com/sites/kevinkruse/2026/08/31/this-chro-upskilled-90-of-her-workforce-in-ai-then-she-doubled-down-on-ei/",
+        "source": "forbes.com",
+        "published": "2026-08-31T03:00:00+00:00",
+        "summary": "Principal CHRO Lisa Coulson says the company trained 90% of its 19,000 employees in AI and then increased its focus on emotional intelligence. The sequence treats technical fluency and human capability as complements: scaled adoption still depends on communication, empathy, judgment, and the ability to bring colleagues through change.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a8dc6d7ac06920eea046181/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Principal trained 90% of its 19,000-person workforce in AI.",
+          "The company followed technical upskilling with greater investment in emotional intelligence.",
+          "AI adoption at scale depends on human communication and judgment as well as tool proficiency."
+        ]
+      },
+      {
+        "title": "Career Readiness Moves From Answers To Judgment",
+        "url": "https://www.yahoo.com/lifestyle/articles/back-school-age-ai-career-103838636.html",
+        "source": "yahoo.com",
+        "published": "2026-08-31T03:38:00+00:00",
+        "summary": "A Forbes contribution distributed by Yahoo argues that AI is changing career readiness from knowing the right answers to exercising judgment, asking stronger questions, and creating value with abundant information. For students, that shifts education away from competing with machines on recall and toward developing agency: framing problems, evaluating outputs, and deciding what is worth making.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/45026d771dd0b628da37e32a7a417384b720108de5c98b79adbb790cf8a48b14/lightyear_networkapi/resizefill_w958_h639%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fforbes_contributor_845%2F645949594d7078c4b53ddb417d48db8d.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AI reduces the value of education centered only on retrieving correct answers.",
+          "Career readiness increasingly depends on judgment, better questions, and purposeful value creation.",
+          "Students need practice framing problems and evaluating outputs, not just access to AI tools."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-08-30-career-agency-needs-more-than-ai-skills": {
     "slug": "2026-08-30-career-agency-needs-more-than-ai-skills",
     "date": "2026-08-30",
