@@ -1,0 +1,101 @@
+{
+  "slug": "2026-09-01-ai-gains-need-human-transition-infrastructure",
+  "date": "2026-09-01",
+  "title": "AI Gains Need Human Transition Infrastructure",
+  "pattern": "Business Standard describes AI literacy becoming a baseline workplace skill across India, while Forbes argues that individual productivity gains still require leaders to redesign work without discarding human judgment. Bionic artist Viktoria Modesta frames AI as a mirror for human value; ACTO CEO Parth Khanna ties trusted AI in pharmaceutical sales to human intelligence and empathetic agents; and Lloyds commits £100 million to AI skills, apprenticeships, Youth Hubs, and career access. Together, the stories show that capability alone does not create progress: institutions must turn new tools into trusted systems, supported learning, and credible pathways through change.",
+  "stages": [
+    "Reclaim Value",
+    "Become AI Ready",
+    "Relaunch Yourself",
+    "Unhook Identity"
+  ],
+  "imageUrl": "https://assets.bizclikmedia.net/1200/7e5ea31c491e23ee0a60666467f3d0fb:66716b6776ce0d128c095dbcee10d192/sharon-doherty.jpg.jpg",
+  "stories": [
+    {
+      "title": "AI Literacy Becomes A Workplace Baseline In India",
+      "url": "https://www.business-standard.com/technology/artificial-intelligence/ai-literacy-as-ai-goes-mainstream-india-s-workforce-faces-new-skills-test-126090100909_1.html",
+      "source": "business-standard.com",
+      "published": "2026-09-01T10:58:56+00:00",
+      "summary": "Business Standard reports that Indian professionals are using AI for research, writing, data analysis, and routine tasks, turning AI literacy into a basic workplace expectation. The shift makes readiness broader than tool access: workers also need judgment, privacy awareness, and support for continual reskilling as familiar roles change.",
+      "imageUrl": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-06/05/thumb/featurecrop/1200X628/1780679316-0044.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "AI is moving into everyday research, writing, analysis, and administrative work across India.",
+        "Practical literacy now includes evaluating outputs, protecting sensitive information, and knowing when human judgment should override automation.",
+        "Employers and educators must provide repeatable learning pathways instead of leaving adaptation entirely to individuals."
+      ]
+    },
+    {
+      "title": "Productivity Gains Stall Without Work Redesign",
+      "url": "https://www.forbes.com/sites/michaeledmondson/2026/09/01/the-ai-productivity-paradox-leaders-need-to-solve/",
+      "source": "forbes.com",
+      "published": "2026-09-01T03:00:00+00:00",
+      "summary": "Forbes examines the gap between employees completing tasks faster with AI and organizations converting that speed into durable performance. Leaders must redesign workflows, incentives, and decisions around the new capability while preserving the context and judgment that make efficient output valuable.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Faster individual execution does not automatically improve organization-wide outcomes.",
+        "AI productivity depends on redesigning work rather than inserting tools into unchanged processes.",
+        "Human judgment remains essential for choosing priorities, interpreting context, and deciding what improved performance should accomplish."
+      ]
+    },
+    {
+      "title": "A Bionic Artist Uses AI As A Mirror",
+      "url": "https://www.tmcnet.com/usubmit/2026/09/01/10437871.htm",
+      "source": "tmcnet.com",
+      "published": "2026-08-31T17:00:00+00:00",
+      "summary": "Bionic artist Viktoria Modesta challenges the replacement narrative by presenting AI as a mirror that reflects human intention, identity, and creative choice. Her framing shifts the central question from whether machines can reproduce an output to what people choose to express, embody, and value through the technology.",
+      "imageUrl": "https://images.tmcnet.com/tmc/world.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Modesta treats AI as an extension and reflection of human creativity rather than an autonomous substitute for it.",
+        "The meaning of creative work still comes from human intention, identity, and interpretation.",
+        "Workers and creators can reclaim agency by deciding what technology should reveal or amplify about them."
+      ]
+    },
+    {
+      "title": "Trusted AI Pairs Intelligence With Empathy",
+      "url": "https://www.pharmexec.com/view/why-ai-trust-comes-down-one-equation-parth-khanna",
+      "source": "pharmexec.com",
+      "published": "2026-09-01T11:30:10.221000+00:00",
+      "summary": "ACTO CEO Parth Khanna argues that trusted AI in pharmaceutical engagement depends on combining human intelligence with empathetic agents rather than removing the sales representative from the relationship. The model changes the rep's value toward context, supervision, and trust—capabilities that matter most when automated systems operate in consequential human settings.",
+      "imageUrl": "https://cdn.sanity.io/images/0vv8moc6/pharmexec/4c500e8ad95c16982b059e9f745e8836d2f5e009-1920x1080.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Khanna's trust equation combines human intelligence with agents designed to interact empathetically.",
+        "AI changes the pharmaceutical representative's role toward orchestration, context, and relationship stewardship.",
+        "Accountability stays human when automated recommendations affect high-trust professional decisions."
+      ]
+    },
+    {
+      "title": "Lloyds Funds Skills And Career Pathways",
+      "url": "https://fintechmagazine.com/news/why-lloyds-is-investing-100m-in-ai-skills-and-careers",
+      "source": "fintechmagazine.com",
+      "published": "2026-08-31T07:58:46+00:00",
+      "summary": "Lloyds Banking Group is investing £100 million in AI skills and career access through apprenticeships, Youth Hubs, and a partnership with the UK Department for Work and Pensions. The commitment treats workforce transition as infrastructure: people need funded routes into changing work, not just warnings that they should become more adaptable by 2030.",
+      "imageUrl": "https://assets.bizclikmedia.net/1200/7e5ea31c491e23ee0a60666467f3d0fb:66716b6776ce0d128c095dbcee10d192/sharon-doherty.jpg.jpg",
+      "stages": [
+        "Relaunch Yourself",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Lloyds is committing £100 million to AI capability, apprenticeships, and broader career access.",
+        "Youth Hubs and the DWP partnership connect skills investment to concrete entry points into work.",
+        "Institutional support can turn adaptation from an individual burden into a navigable transition pathway."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
