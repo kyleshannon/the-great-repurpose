@@ -1,5 +1,18 @@
 [
   {
+    "slug": "2026-09-02-institutions-must-fund-the-human-transition",
+    "date": "2026-09-02",
+    "title": "Institutions Must Fund The Human Transition",
+    "pattern": "Millennium Post counts more than 175,000 technology layoffs in 2026, and The American Bazaar reports Oracle cutting about 3,000 jobs in India while redirecting capital toward AI and cloud infrastructure. SunStar describes employers turning to graduate education for higher-value work, while MiddleGround Capital argues that automation can create better jobs when investment is designed around workers. EY makes the choice tangible by committing $100 million to rewards for judgment, adaptability, innovation, and AI experimentation. Together, the stories expose the real transition test: institutions cannot simply redraw jobs and tell people to adapt; they must fund the learning, human capabilities, and work design that make adaptation possible.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://www.millenniumpost.in/h-upload/2026/09/01/1054489-crowd-1.jpg"
+  },
+  {
     "slug": "2026-09-01-ai-gains-need-human-transition-infrastructure",
     "date": "2026-09-01",
     "title": "AI Gains Need Human Transition Infrastructure",
@@ -174,11 +187,7 @@
     "date": "2026-08-15",
     "title": "Opportunity Promises Meet The Work Design Test",
     "pattern": "Singapore promises to use AI for productivity and better jobs, while Mark Zuckerberg predicts superintelligence agents will help small businesses thrive. Brix is already placing a proactive agent into recruiting, yet Forbes finds that employers' enthusiasm for skills-based hiring rarely changes who actually gets hired, and Oracle workers face another reported round of cuts. Together, the stories turn optimistic employment claims into a work-design test: institutions must show how AI expands people's agency and pathways, not simply ask workers to trust that opportunity will follow disruption.",
-    "stages": [
-      "Unhook Identity",
-      "Reclaim Value",
-      "Become AI Ready"
-    ],
+    "stages": ["Unhook Identity", "Reclaim Value", "Become AI Ready"],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a7a264ce63c53e5b623df4e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
   {
@@ -361,11 +370,7 @@
     "date": "2026-08-01",
     "title": "Human Judgment Becomes The Operating System",
     "pattern": "Visa is cutting 2,600 roles as AI speeds parts of product and technology work, while ADP argues that jobs are being recomposed around deeper thinking rather than simply erased. A workforce survey, Forbes’ call to measure human-AI collaboration, and Onyx’s control plane for 1.1 million agents point to the same tension: as machines execute more of the work, human judgment, accountability, and the power to say no must become part of the operating system.",
-    "stages": [
-      "Reclaim Value",
-      "Discover AI's Power",
-      "Unhook Identity"
-    ],
+    "stages": ["Reclaim Value", "Discover AI's Power", "Unhook Identity"],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/68b9a3deb1db5576bdde29b4/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
   {
@@ -386,11 +391,7 @@
     "date": "2026-07-29",
     "title": "Reskilling Promises Meet The Judgment Reality",
     "pattern": "Today's five stories test whether the reskilling promise is keeping pace with the work people will actually inherit. Andrew Ng and Coursera are putting $100 million behind LearnVector's personal AI tutors; Daron Acemoglu argues for pro-worker AI rather than another automation-first economy; Inc. warns that companies are rehiring judgment they cut too quickly; The Conference Board finds employers teaching today's tools more often than tomorrow's roles; and Google's analysis of nearly 15 million Gemini interactions finds broad assistance but little full automation. The human tension is whether institutions will help people build adaptable judgment and agency, or merely teach them to chase the latest tool while the shape of work keeps moving.",
-    "stages": [
-      "Reclaim Value",
-      "Discover AI's Power",
-      "Unhook Identity"
-    ],
+    "stages": ["Reclaim Value", "Discover AI's Power", "Unhook Identity"],
     "imageUrl": "https://media.assettype.com/outlookbusiness/2026-07-29/u2m5tkqx/Untitled-design-32.jpg?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100"
   },
   {
@@ -398,11 +399,7 @@
     "date": "2026-07-28",
     "title": "Automation Advances While Human Confidence Retreats",
     "pattern": "Today's five stories show automation advancing faster than institutions can explain what human contribution remains worth. AutoRev is putting agents on calls, estimates, and booking; Financial Express argues creative value is migrating toward expression and judgment; The Guardian finds no broad jobs apocalypse yet; Memeburn finds concentrated damage among young workers alongside AI-washed layoffs; and the Miami Herald reports that layoff anxiety is already draining employee engagement. The human tension is whether people can reclaim agency, taste, and trusted judgment before uncertainty makes them disengage from work that still needs them.",
-    "stages": [
-      "Reclaim Value",
-      "Unhook Identity",
-      "Discover AI's Power"
-    ],
+    "stages": ["Reclaim Value", "Unhook Identity", "Discover AI's Power"],
     "imageUrl": "/signals/tgr-signal-thumbnail.jpg"
   },
   {
@@ -410,11 +407,7 @@
     "date": "2026-07-25",
     "title": "AI Cuts Meet The Skills Price Signal",
     "pattern": "Today's five stories show the labor market sending two signals at once: AI is erasing familiar role structures while raising the price of people who can direct it. Two reports on Uber's 10% customer-service reduction reveal both the immediate disruption and the company's simultaneous hiring for technical roles; new freelance data finds AI projects paying 2.5 times more than other work; Unite.AI documents the costly boomerang when Ford, Commonwealth Bank, and Klarna restore human expertise; and TechWolf with WTW proposes a shared skills-data layer for workforce decisions. The human tension is whether people can translate durable judgment, context, and relationships into visible skills before institutions reduce them to either a cost to cut or a premium capability to buy.",
-    "stages": [
-      "Unhook Identity",
-      "Reclaim Value",
-      "Discover AI's Power"
-    ],
+    "stages": ["Unhook Identity", "Reclaim Value", "Discover AI's Power"],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a639125da626858fbd7dec4/0x0.jpg?format=jpg&crop=1961,1103,x68,y105,safe&height=900&width=1600&fit=bounds"
   },
   {
@@ -422,11 +415,7 @@
     "date": "2026-07-24",
     "title": "Automation Claims Meet The Confidence Gap",
     "pattern": "Today's five stories expose a widening gap between what organizations say AI can automate and what people can confidently absorb. OpenAI says Presence resolves 75% of its own inbound support issues, while Google's ATLAS study finds AI spread across most occupations but used for only about one-fifth of a typical job's tasks. Patreon cuts 93 people while insisting AI neither caused the restructuring nor replaces human creativity, and a Robert Walters survey finds Singapore workers already using AI widely while fearing displacement and skills obsolescence. The human tension is that institutions can redesign work faster than they can prove the technology, explain the choices, or help people build a durable sense of value beyond the role being changed.",
-    "stages": [
-      "Unhook Identity",
-      "Reclaim Value",
-      "Discover AI's Power"
-    ],
+    "stages": ["Unhook Identity", "Reclaim Value", "Discover AI's Power"],
     "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/07/4200685-0-61569700-1784812733-shutterstock_2560810077.jpg?quality=50&strip=all&w=1024"
   },
   {
@@ -500,10 +489,7 @@
     "date": "2026-07-18",
     "title": "Judge Won't Block Meta AI Layoffs",
     "pattern": "Today's stories move the AI work conversation from headline job counts to the terms on which people are kept, ranked, or represented. Meta's layoffs and discrimination allegations show the governance cost of automated decisions; the productivity and white-collar stories show that efficiency alone does not explain—or sustain—human contribution. The deeper pattern is that AI transition demands more than new tools: it asks institutions to make accountability, agency, and durable human value visible.",
-    "stages": [
-      "Unhook Identity",
-      "Discover AI's Power"
-    ],
+    "stages": ["Unhook Identity", "Discover AI's Power"],
     "imageUrl": "https://data.ibtimes.sg/en/full/93078/us.jpg?w=1200&h=630?q=60"
   },
   {
@@ -538,11 +524,7 @@
     "date": "2026-07-15",
     "title": "Meta Layoffs Meet The Taste Premium",
     "pattern": "Today's five stories draw a line between AI used on people and AI used with them. Two reports on Meta's disputed layoff system make accountability the immediate stakes, while essential workers and Wall Street professionals are being equipped with AI as a source of context and leverage. As creation becomes cheap, the durable human premium shifts toward taste, judgment, and responsibility for which decisions deserve to be made.",
-    "stages": [
-      "Unhook Identity",
-      "Reclaim Value",
-      "Discover AI's Power"
-    ],
+    "stages": ["Unhook Identity", "Reclaim Value", "Discover AI's Power"],
     "imageUrl": "https://image.cnbcfm.com/api/v1/image/108297760-1777307207308-108297760-1777307153926-gettyimages-2267943764-Zuckerberg_182_032626.jpeg?v=1780690805&w=1920&h=1080"
   },
   {
@@ -563,11 +545,7 @@
     "date": "2026-07-13",
     "title": "Enterprise Readiness Meets The Broken Skills Ladder",
     "pattern": "Today's five stories expose a mismatch between what enterprise AI success demands and how institutions prepare people for it. Forbes says AI value depends on organizational readiness and human leadership, another Forbes piece tells students to choose future-facing degrees, and Herald Business calls for restoring youth skills ladders; meanwhile, two reports put Xbox CEO Asha Sharma on the Federal Reserve's AI jobs task force after 3,200 layoffs. The pattern is that companies need people with judgment, accountability, and transformation capacity just as the educational and employment systems that develop those qualities are losing credible rungs.",
-    "stages": [
-      "Unhook Identity",
-      "Reclaim Value",
-      "Find Your Purpose"
-    ],
+    "stages": ["Unhook Identity", "Reclaim Value", "Find Your Purpose"],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5472bb97e75b48bdf6c70b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
   {
@@ -575,10 +553,7 @@
     "date": "2026-07-12",
     "title": "Emotional Skills Meet The Disappearing First Rung",
     "pattern": "Today's five stories show schools trying to prepare people for a human-centered AI economy while the places where those qualities are learned and rewarded are coming apart. Forbes argues for emotional education and maps degree choices for AI careers, Psychology Today says remote work is stripping junior workers of apprenticeship, and two reports place an Xbox executive on the Federal Reserve's AI-and-jobs task force just after 3,200 layoffs. The pattern is that empathy, judgment, and direction are becoming more valuable at the same moment that credentials, entry-level practice, and institutional trust are becoming less reliable paths for developing them.",
-    "stages": [
-      "Unhook Identity",
-      "Find Your Purpose"
-    ],
+    "stages": ["Unhook Identity", "Find Your Purpose"],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5205e8a09a80202929b872/0x0.jpg?format=jpg&crop=3642,2049,x0,y123,safe&height=900&width=1600&fit=bounds"
   },
   {
@@ -586,11 +561,7 @@
     "date": "2026-07-11",
     "title": "AI Degrees Meet The Vanishing First Rung",
     "pattern": "Today's five stories expose a broken handoff between preparing for an AI career and finding a first place to practice it. Forbes maps the degrees meant to future-proof students, Psychology Today argues remote work is erasing the apprenticeship that turns education into judgment, and two reports put an Xbox executive on the Federal Reserve's AI-and-jobs task force just after 3,200 layoffs. With Forbes also describing agents as workers already entering the org chart, the pattern is that people are being told to choose the right credential while both the entry rung and the shape of the workforce are being redesigned beneath them.",
-    "stages": [
-      "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
-    ],
+    "stages": ["Unhook Identity", "Find Your Purpose", "Discover AI's Power"],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a5010c5551dd74d962bffa6/0x0.jpg?format=jpg&crop=2551,1701,x0,y0,safe&height=900&width=1600&fit=bounds"
   },
   {
@@ -598,11 +569,7 @@
     "date": "2026-07-10",
     "title": "Older Workers Meet The AI Task Force",
     "pattern": "Today's five stories show workers being asked to adapt before institutions can explain what adaptation will protect. AOL finds many workers over 60 unconcerned about AI even as age bias and automation narrow their options; Sri Lanka is confronting white-collar exposure; and an Xbox executive is joining a Federal Reserve AI-and-jobs task force after 3,200 layoffs. North Texas colleges are teaching students to use AI across careers while Digital Journal argues that jobs themselves are fluid, making the pattern a widening lag between lived workforce disruption and the systems meant to help people navigate it.",
-    "stages": [
-      "Unhook Identity",
-      "Discover AI's Power",
-      "Find Your Purpose"
-    ],
+    "stages": ["Unhook Identity", "Discover AI's Power", "Find Your Purpose"],
     "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/06/20260608074948_Xbox-CEO-Asha-Sharma.png"
   },
   {
@@ -650,11 +617,7 @@
     "date": "2026-07-06",
     "title": "Credentials Meet The AI Role Map",
     "pattern": "Today's five stories show the credential market trying to prove it still maps to work while AI breaks jobs into role-level risk and opportunity. Forbes points to P-TECH-style education-to-job systems and healthcare roles being reshaped instead of erased; GMAC data says MBAs still have demand, while 24/7 Wall St. reports AI-investing companies adding jobs with a catch and OK Diario names language-heavy professions facing direct exposure. The pattern is not degrees versus AI; it is whether credentials, employers, and workers can translate human judgment into new roles fast enough.",
-    "stages": [
-      "Unhook Identity",
-      "Find Your Purpose",
-      "Reclaim Value"
-    ],
+    "stages": ["Unhook Identity", "Find Your Purpose", "Reclaim Value"],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3ab4b8bc4283e7c147fcb6/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
   {
@@ -662,11 +625,7 @@
     "date": "2026-07-05",
     "title": "Degrees Meet The AI Work Test",
     "pattern": "Today's five stories show the old credential bargain being stress-tested by AI before students and institutions have a clean replacement. OK Diario names language-heavy white-collar roles as exposed, Forbes points to education-to-job systems and healthcare roles being redesigned rather than simply erased, and The Week plus AOL show graduates and students already adjusting majors around employability. The deeper pattern is not just job loss; it is the collapse of degree-as-shelter and the rise of demonstrable judgment, applied skill, and purpose as the new proof of value.",
-    "stages": [
-      "Unhook Identity",
-      "Find Your Purpose",
-      "Reclaim Value"
-    ],
+    "stages": ["Unhook Identity", "Find Your Purpose", "Reclaim Value"],
     "imageUrl": "https://okdiario.com/techy/en/wp-content/uploads/2026/07/ai-job-market-impact-2030.jpg"
   },
   {
@@ -687,11 +646,7 @@
     "date": "2026-07-03",
     "title": "Healthcare AI Anxiety Tests Credential Confidence",
     "pattern": "Today's five stories show AI turning job security into a contest over what still counts as protected human judgment. Forbes frames healthcare disruption as role-by-role rather than wholesale replacement, GMAC and the Freedom Institute sell credentials and AI-ready education as shields, and BMS is taking worker surveillance and platform protections to BRICS while the jobs-report story argues value is shifting toward qualities that resist commoditization.",
-    "stages": [
-      "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
-    ],
+    "stages": ["Unhook Identity", "Find Your Purpose", "Discover AI's Power"],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a44260badfeba28839f0a92/0x0.jpg?format=jpg&crop=1627,1084,x0,y0,safe&height=900&width=1600&fit=bounds"
   },
   {
@@ -699,11 +654,7 @@
     "date": "2026-07-02",
     "title": "MBA Demand Meets Agent Labor Fight",
     "pattern": "Today's five stories put workforce readiness between institutional promises and worker protection. GMAC says MBA graduates remain in demand, the Freedom Institute sells AI-personalized career readiness, and Forbes argues organizations still decide how jobs change. But AvePoint, Kyndryl, and BMS expose the pressure underneath: agents are entering routine work faster than roles, controls, surveillance rules, and platform-worker protections can catch up.",
-    "stages": [
-      "Unhook Identity",
-      "Find Your Purpose",
-      "Discover AI's Power"
-    ],
+    "stages": ["Unhook Identity", "Find Your Purpose", "Discover AI's Power"],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a442534b7d5da8de0b45c9a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
   {
@@ -737,11 +688,7 @@
     "date": "2026-06-29",
     "title": "AI Layoffs Push Reskilling Onto Graduates",
     "pattern": "Today's five stories pin the cost of AI adaptation on workers before institutions have settled who pays. Memeburn tracks AI-cited cuts and the unpaid reskilling bill, TNO's Dutch study points to higher mental load after routine work is automated, and Microsoft plus South African graduate coverage show students being told to become AI-fluent before the first job stabilizes. The tension is no longer only displacement; it is whether companies, schools, and governments absorb any of the transition cost or leave workers to self-fund the new baseline.",
-    "stages": [
-      "Unhook Identity",
-      "Reclaim Value",
-      "Find Your Purpose"
-    ],
+    "stages": ["Unhook Identity", "Reclaim Value", "Find Your Purpose"],
     "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-layoffs-2026_-major-tech-firms-cutting-jobs-as-AI-rises.jpg"
   },
   {
@@ -749,11 +696,7 @@
     "date": "2026-06-28",
     "title": "AI Layoffs Expose Reskilling Bill",
     "pattern": "Today's five stories put the same bill on the table from different angles: companies are breaking jobs into tasks, using AI investment to justify cuts, and then asking workers to prove they can adapt fast enough. Forbes frames the redesign problem inside roles, while Memeburn and eWeek name the sharper human stake: Meta, Robinhood, Walmart, Oracle, South African workers, and anxious professionals are all caught between displacement headlines and the unanswered question of who pays for retraining.",
-    "stages": [
-      "Unhook Identity",
-      "Reclaim Value",
-      "Discover AI's Power"
-    ],
+    "stages": ["Unhook Identity", "Reclaim Value", "Discover AI's Power"],
     "imageUrl": "https://memeburn.com/wp-content/uploads/2026/06/AI-Reskilling-2026-Whos-Actually-Paying-to-Retrain-Millions.jpg"
   },
   {
@@ -761,11 +704,7 @@
     "date": "2026-06-27",
     "title": "AI Job Cuts Force Task-Level Redesign",
     "pattern": "Today's five stories show AI pressure moving from broad workforce anxiety into task-level redesign. Forbes argues leaders need to classify the work inside jobs, AI builders are openly funding research into displacement, and Meta, Robinhood, Walmart, and Oracle appear in a layoff tracker tied to AI investment. HR Dive and Dell point to the next human stake: entry-level workers and enterprise teams will be judged by how well they supervise, direct, and redesign work with agents in the loop.",
-    "stages": [
-      "Unhook Identity",
-      "Discover AI's Power",
-      "Start Creating"
-    ],
+    "stages": ["Unhook Identity", "Discover AI's Power", "Start Creating"],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a3d340f319522946f3a2838/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
   {
@@ -786,11 +725,7 @@
     "date": "2026-06-25",
     "title": "Autonomous Agents Redraw Career Value",
     "pattern": "The five stories point to a labor market learning two truths at once: agents are becoming infrastructure, and careers now have to outlast any one employer's redesign. Oracle cuts and broader tech restructuring show old roles being rewritten, while PwC and the 100-year career frame point to renewal rather than simple replacement. The durable move is to build portable judgment, not just defend a job title.",
-    "stages": [
-      "Unhook Identity",
-      "Discover AI's Power",
-      "Reclaim Value"
-    ],
+    "stages": ["Unhook Identity", "Discover AI's Power", "Reclaim Value"],
     "imageUrl": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2026/06/John-Roese3.jpg"
   },
   {

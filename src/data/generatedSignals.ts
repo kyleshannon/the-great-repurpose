@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-02-institutions-must-fund-the-human-transition",
+    "date": "2026-09-02",
+    "title": "Institutions Must Fund The Human Transition",
+    "pattern": "Millennium Post counts more than 175,000 technology layoffs in 2026, and The American Bazaar reports Oracle cutting about 3,000 jobs in India while redirecting capital toward AI and cloud infrastructure. SunStar describes employers turning to graduate education for higher-value work, while MiddleGround Capital argues that automation can create better jobs when investment is designed around workers. EY makes the choice tangible by committing $100 million to rewards for judgment, adaptability, innovation, and AI experimentation. Together, the stories expose the real transition test: institutions cannot simply redraw jobs and tell people to adapt; they must fund the learning, human capabilities, and work design that make adaptation possible.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://www.millenniumpost.in/h-upload/2026/09/01/1054489-crowd-1.jpg"
+  },
+  {
     "slug": "2026-09-01-ai-gains-need-human-transition-infrastructure",
     "date": "2026-09-01",
     "title": "AI Gains Need Human Transition Infrastructure",
@@ -959,6 +972,107 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-02-institutions-must-fund-the-human-transition": {
+    "slug": "2026-09-02-institutions-must-fund-the-human-transition",
+    "date": "2026-09-02",
+    "title": "Institutions Must Fund The Human Transition",
+    "pattern": "Millennium Post counts more than 175,000 technology layoffs in 2026, and The American Bazaar reports Oracle cutting about 3,000 jobs in India while redirecting capital toward AI and cloud infrastructure. SunStar describes employers turning to graduate education for higher-value work, while MiddleGround Capital argues that automation can create better jobs when investment is designed around workers. EY makes the choice tangible by committing $100 million to rewards for judgment, adaptability, innovation, and AI experimentation. Together, the stories expose the real transition test: institutions cannot simply redraw jobs and tell people to adapt; they must fund the learning, human capabilities, and work design that make adaptation possible.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://www.millenniumpost.in/h-upload/2026/09/01/1054489-crowd-1.jpg",
+    "stories": [
+      {
+        "title": "Tech Layoffs Pass 175,000 In 2026",
+        "url": "https://www.millenniumpost.in/big-stories/tech-layoffs-cross-175000-in-2026-as-ai-reshapes-jobs-hiring-and-workforce-plans-674495",
+        "source": "millenniumpost.in",
+        "published": "2026-09-01T19:38:11+00:00",
+        "summary": "Millennium Post reports that global technology layoffs have passed 175,000 in 2026 as companies restructure work, hiring, and investment around AI. The scale turns disruption from an abstract forecast into a present identity and livelihood challenge, making credible transition support as important as the technology strategy itself.",
+        "imageUrl": "https://www.millenniumpost.in/h-upload/2026/09/01/1054489-crowd-1.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Reported technology layoffs have exceeded 175,000 globally during 2026.",
+          "AI investment, workforce restructuring, hiring changes, and job security are increasingly intertwined.",
+          "Workers need practical routes into new value creation, not only explanations for why old roles disappeared."
+        ]
+      },
+      {
+        "title": "Employers Turn To Graduate Education For Adaptation",
+        "url": "https://www.sunstar.com.ph/cebu/firms-turn-to-graduate-education-as-ai-reshapes-jobs",
+        "source": "sunstar.com.ph",
+        "published": "2026-09-02T03:15:00+00:00",
+        "summary": "SunStar reports that employers are encouraging workers to pursue graduate education as AI shifts jobs toward higher-value and more technology-driven responsibilities. Education can create a relaunch pathway, but only when programs help people build judgment and applied capability rather than merely adding another credential to an unstable career ladder.",
+        "imageUrl": "https://cf-images.assettype.com/sunstar%2F2024-05%2F4177634e-2b4a-43ae-ae2d-5a16eac4e5d8%2FArtificial_Intelligence.jpg?rect=0%2C53%2C750%2C394&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "stages": [
+          "Relaunch Yourself",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Companies are looking to graduate education as work moves toward higher-value, technology-enabled responsibilities.",
+          "Workers are being asked to upgrade skills while the roles they are preparing for continue to change.",
+          "Useful education must connect credentials to applied judgment, agency, and visible career pathways."
+        ]
+      },
+      {
+        "title": "Oracle Cuts Jobs While Funding AI Infrastructure",
+        "url": "https://americanbazaaronline.com/2026/09/01/oracle-layoffs-in-india-today-3000-job-cuts-beyond-us-487356/",
+        "source": "americanbazaaronline.com",
+        "published": "2026-09-01T14:38:49+00:00",
+        "summary": "The American Bazaar reports that Oracle is cutting around 3,000 jobs in India as part of a wider restructuring while spending heavily on AI, cloud infrastructure, and data centers. The contrast shows how quickly institutional capital can move toward new capability—and how rarely equivalent infrastructure is built to help displaced people translate their experience into new work.",
+        "imageUrl": "https://americanbazaaronline.com/wp-content/uploads/2026/04/Oracle-Layoff.png",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Reported cuts of about 3,000 positions would equal roughly 10 percent of Oracle's workforce in India.",
+          "Oracle's global headcount reportedly fell by about 21,000 during the fiscal year ending May 31, 2026.",
+          "The company is reducing payroll while directing substantial capital toward AI, cloud, and data-center capacity."
+        ]
+      },
+      {
+        "title": "Automation Investment Can Build Better Jobs",
+        "url": "https://nypost.com/contributor-content/the-automation-paradox-robots-that-create-jobs-instead-of-killing-them/",
+        "source": "nypost.com",
+        "published": "2026-09-01T17:29:33+00:00",
+        "summary": "A New York Post contributor feature presents MiddleGround Capital's case that automation can improve employee livelihoods and create better work instead of simply eliminating positions. The outcome depends on ownership and design choices: productivity becomes human progress only when organizations reinvest gains in workers, roles, and capabilities.",
+        "imageUrl": "https://nypost.com/wp-content/uploads/sites/2/2026/09/middleground.jpg?quality=75&strip=all&w=1200",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "MiddleGround Capital frames automation as a tool for improving employee livelihoods and the quality of work.",
+          "Technology does not determine whether jobs improve or disappear; investment and work-design choices do.",
+          "Shared productivity gains can fund stronger roles and capability instead of treating labor only as a cost to remove."
+        ]
+      },
+      {
+        "title": "EY Rewards Judgment Alongside AI Experimentation",
+        "url": "https://www.inc.com/marcel-schwantes/ey-is-giving-employees-100-million-in-bonuses-the-reasoning-says-a-lot-about-the-future-of-leadership/91398868",
+        "source": "inc.com",
+        "published": "2026-09-01T08:09:00+00:00",
+        "summary": "Inc. reports that EY US will invest $100 million in employee rewards emphasizing judgment, adaptability, innovation, and experimentation with AI, with the largest awards rising to $25,000. The program makes organizational values concrete: if human capabilities matter more as machines improve, leaders must recognize and reward them rather than merely praising them.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "EY US is investing $100 million in rewards and bonuses tied to human capabilities and AI experimentation.",
+          "The maximum individual or team award is increasing fivefold to $25,000.",
+          "Reward systems tell workers whether judgment, adaptability, innovation, and trust actually carry institutional value."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-01-ai-gains-need-human-transition-infrastructure": {
     "slug": "2026-09-01-ai-gains-need-human-transition-infrastructure",
     "date": "2026-09-01",
