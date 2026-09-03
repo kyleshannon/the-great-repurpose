@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-03-work-redesign-erases-the-old-career-map",
+    "date": "2026-09-03",
+    "title": "Work Redesign Erases The Old Career Map",
+    "pattern": "DigitalJobs.com is building a marketplace where people and AI agents can both seek digital work, while Dallas Federal Reserve research finds AI exposure already reducing entry-level job postings in Texas by 8 to 9 percent. Phenom is putting agents into hiring, development, and retention; Shelley Zalis argues that leaders should redesign work around outcomes, access, and human potential; and Uber is reportedly cutting roughly 3,300 roles with middle management in focus. Together, the stories show the career map changing at both ends: machines are becoming participants in the labor market as entry routes and management layers contract, leaving people to build agency around judgment, outcomes, and portable value rather than a stable ladder.",
+    "stages": [
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Become AI Ready",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://gizmodo.com/app/uploads/2021/08/0ebdcad1e01554aaeaeecd5b3eb58833.jpg"
+  },
+  {
     "slug": "2026-09-02-institutions-must-fund-the-human-transition",
     "date": "2026-09-02",
     "title": "Institutions Must Fund The Human Transition",
@@ -972,6 +985,108 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-03-work-redesign-erases-the-old-career-map": {
+    "slug": "2026-09-03-work-redesign-erases-the-old-career-map",
+    "date": "2026-09-03",
+    "title": "Work Redesign Erases The Old Career Map",
+    "pattern": "DigitalJobs.com is building a marketplace where people and AI agents can both seek digital work, while Dallas Federal Reserve research finds AI exposure already reducing entry-level job postings in Texas by 8 to 9 percent. Phenom is putting agents into hiring, development, and retention; Shelley Zalis argues that leaders should redesign work around outcomes, access, and human potential; and Uber is reportedly cutting roughly 3,300 roles with middle management in focus. Together, the stories show the career map changing at both ends: machines are becoming participants in the labor market as entry routes and management layers contract, leaving people to build agency around judgment, outcomes, and portable value rather than a stable ladder.",
+    "stages": [
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Become AI Ready",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://gizmodo.com/app/uploads/2021/08/0ebdcad1e01554aaeaeecd5b3eb58833.jpg",
+    "stories": [
+      {
+        "title": "Job Platform Opens Work To Humans And Agents",
+        "url": "https://www.onrec.com/news/launch/digitaljobscom-launches-the-world%E2%80%99s-first-job-platform-built-for-both-humans-and-ai",
+        "source": "onrec.com",
+        "published": "2026-09-02T17:00:00+00:00",
+        "summary": "DigitalJobs.com launched with more than 120,000 quality-vetted digital jobs and says its platform is designed for both human job seekers and AI agents seeking work. Treating software agents as labor-market participants changes more than search: people increasingly need to define outcomes, supervise delegated work, and make their judgment visible alongside machine capability.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "DigitalJobs.com says it launched with more than 120,000 quality-vetted digital jobs.",
+          "The platform is designed to serve both human job seekers and AI agents looking for work.",
+          "Workers must distinguish their judgment and accountability from tasks an agent can execute."
+        ]
+      },
+      {
+        "title": "AI Exposure Shrinks Entry-Level Job Openings",
+        "url": "https://www.forbes.com/sites/rachelwells/2026/09/02/ai-cut-entry-level-job-posts-up-to-9-welcome-to-the-invisible-layoff/",
+        "source": "forbes.com",
+        "published": "2026-09-02T02:20:00+00:00",
+        "summary": "Forbes reports Dallas Federal Reserve research linking AI exposure to an 8 to 9 percent decline in entry-level job postings in Texas. These are invisible layoffs—opportunities that are never created—so the human cost appears before a termination notice and weakens the first rung where people once learned how organizations work.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Entry-level postings in highly AI-exposed Texas occupations reportedly fell by 8 to 9 percent.",
+          "The reduction represents roles that disappear before anyone is hired.",
+          "Employers need new ways for emerging workers to gain experience, context, and trust."
+        ]
+      },
+      {
+        "title": "Phenom Brings Agents Across The Talent Lifecycle",
+        "url": "https://www.rutlandherald.com/news/business/test-phenom-ai-agents-for-hiring-development-and-retention-at-hr-s-biggest-fall-events/article_3c60f578-2a71-51e2-bf4e-1c870c9497e2.html",
+        "source": "rutlandherald.com",
+        "published": "2026-09-02T02:30:00+00:00",
+        "summary": "Phenom is showcasing AI agents for hiring, employee development, and retention at major fall HR events. Moving agents across the talent lifecycle means organizations are embedding software into decisions that shape access, growth, and belonging, where human oversight and accountability remain essential.",
+        "imageUrl": "https://bloximages.chicago2.vip.townnews.com/rutlandherald.com/content/tncms/assets/v3/editorial/4/da/4da05f5c-0f2f-5d92-afe8-959aed091c43/6a9826567ebf9.image.jpg?crop=1200%2C630%2C0%2C285",
+        "stages": [
+          "Relaunch Yourself",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Phenom is presenting agents for hiring, development, and retention.",
+          "Agentic systems are moving across the employee lifecycle.",
+          "Employers must preserve human review when automation influences opportunity."
+        ]
+      },
+      {
+        "title": "Leaders Must Redesign Work Around Human Potential",
+        "url": "https://www.forbes.com/sites/shelleyzalis/2026/09/02/ai-should-not-just-accelerate-work-it-should-help-us-reimagine-it/",
+        "source": "forbes.com",
+        "published": "2026-09-02T09:34:00+00:00",
+        "summary": "Shelley Zalis argues that AI should help leaders reimagine work around outcomes, human potential, access, and opportunity instead of simply accelerating existing processes. The design question becomes whether the resulting system expands people's agency and ability to create meaningful value.",
+        "imageUrl": "",
+        "stages": [
+          "Relaunch Yourself",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The article calls for redesigning work rather than only accelerating it.",
+          "Outcomes, human potential, access, and opportunity are core criteria.",
+          "Productivity becomes progress when redesigned systems help people contribute and grow."
+        ]
+      },
+      {
+        "title": "Uber Targets Middle Management In Workforce Cut",
+        "url": "https://gizmodo.com/ai-or-overhiring-uber-targets-middle-management-with-10-cut-to-workforce-2000806239",
+        "source": "gizmodo.com",
+        "published": "2026-09-02T16:25:56+00:00",
+        "summary": "Gizmodo reports that Uber is cutting roughly 3,300 employees, or about 10 percent of its workforce, with middle management in focus amid debate over AI and prior overhiring. The cuts show disruption reaching organizational coordinating layers and force experienced workers to translate management identity into portable judgment and leadership value.",
+        "imageUrl": "https://gizmodo.com/app/uploads/2021/08/0ebdcad1e01554aaeaeecd5b3eb58833.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Uber is reportedly cutting roughly 3,300 employees.",
+          "Middle-management roles are a central target.",
+          "Experienced workers need to express value beyond a management title."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-02-institutions-must-fund-the-human-transition": {
     "slug": "2026-09-02-institutions-must-fund-the-human-transition",
     "date": "2026-09-02",
