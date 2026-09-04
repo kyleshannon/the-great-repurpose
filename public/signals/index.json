@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-09-04-automation-tests-the-boundaries-of-human-judgment",
+    "date": "2026-09-04",
+    "title": "Automation Tests The Boundaries Of Human Judgment",
+    "pattern": "EliseAI's Apollo is being positioned as one agentic teammate that can work across multifamily roles, while a Wired job seeker answered an automated recruiter by sending ChatGPT into the interview. Hardeep Singh argues that the real AI-readiness gap is leadership rather than skills alone; Avik Das reports that AI is changing jobs through new skills, structures, and ways of working rather than simply eliminating them; and Corrin Kaye warns that people may surrender thinking even when AI does not replace it. Together, the stories locate the central tension of agentic work: as software crosses more role boundaries, people and leaders must decide where automation serves human agency and where judgment, accountability, and deliberate thought must remain unmistakably human.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://media.wired.com/photos/6a95faca62c1ea4a51e42ed9/191:100/w_1280,c_limit/Two-AI-Bots-Talking-to-Each-Other-Business-dv1959057.jpg"
+  },
+  {
     "slug": "2026-09-03-work-redesign-erases-the-old-career-map",
     "date": "2026-09-03",
     "title": "Work Redesign Erases The Old Career Map",

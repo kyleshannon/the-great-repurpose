@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-04-automation-tests-the-boundaries-of-human-judgment",
+    "date": "2026-09-04",
+    "title": "Automation Tests The Boundaries Of Human Judgment",
+    "pattern": "EliseAI's Apollo is being positioned as one agentic teammate that can work across multifamily roles, while a Wired job seeker answered an automated recruiter by sending ChatGPT into the interview. Hardeep Singh argues that the real AI-readiness gap is leadership rather than skills alone; Avik Das reports that AI is changing jobs through new skills, structures, and ways of working rather than simply eliminating them; and Corrin Kaye warns that people may surrender thinking even when AI does not replace it. Together, the stories locate the central tension of agentic work: as software crosses more role boundaries, people and leaders must decide where automation serves human agency and where judgment, accountability, and deliberate thought must remain unmistakably human.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://media.wired.com/photos/6a95faca62c1ea4a51e42ed9/191:100/w_1280,c_limit/Two-AI-Bots-Talking-to-Each-Other-Business-dv1959057.jpg"
+  },
+  {
     "slug": "2026-09-03-work-redesign-erases-the-old-career-map",
     "date": "2026-09-03",
     "title": "Work Redesign Erases The Old Career Map",
@@ -985,6 +997,106 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-04-automation-tests-the-boundaries-of-human-judgment": {
+    "slug": "2026-09-04-automation-tests-the-boundaries-of-human-judgment",
+    "date": "2026-09-04",
+    "title": "Automation Tests The Boundaries Of Human Judgment",
+    "pattern": "EliseAI's Apollo is being positioned as one agentic teammate that can work across multifamily roles, while a Wired job seeker answered an automated recruiter by sending ChatGPT into the interview. Hardeep Singh argues that the real AI-readiness gap is leadership rather than skills alone; Avik Das reports that AI is changing jobs through new skills, structures, and ways of working rather than simply eliminating them; and Corrin Kaye warns that people may surrender thinking even when AI does not replace it. Together, the stories locate the central tension of agentic work: as software crosses more role boundaries, people and leaders must decide where automation serves human agency and where judgment, accountability, and deliberate thought must remain unmistakably human.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://media.wired.com/photos/6a95faca62c1ea4a51e42ed9/191:100/w_1280,c_limit/Two-AI-Bots-Talking-to-Each-Other-Business-dv1959057.jpg",
+    "stories": [
+      {
+        "title": "Apollo Brings One Agent Across Multifamily Roles",
+        "url": "https://finance.yahoo.com/technology/ai/articles/eliseai-unveils-apollo-one-ai-130000656.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-09-03T06:00:00+00:00",
+        "summary": "EliseAI introduced Apollo as a single agentic teammate designed to perform tasks across its housing-operations platform, from leasing work to executive workflows. A system that crosses role boundaries can reduce handoffs, but it also makes human direction and accountability more important because decisions no longer stay inside one clearly defined job.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/b91499290693a0ca971a6b5f17098e8ea5df89eb1c9c93ce5616ac95084a9c92/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fglobenewswire.com%2F58992c75d9c357ef71cb26067e4b69f3.png",
+        "stages": [
+          "Become AI Ready",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Apollo is designed to perform tasks across the EliseAI platform rather than serve one narrow role.",
+          "The product is aimed at workers ranging from leasing agents to executives.",
+          "Cross-role agents increase the need for clear human direction, review, and accountability."
+        ]
+      },
+      {
+        "title": "Job Interview Becomes A Bot-To-Bot Exchange",
+        "url": "https://www.wired.com/story/bot-vs-bot-job-interview-ai/",
+        "source": "wired.com",
+        "published": "2026-09-02T15:51:46.736000+00:00",
+        "summary": "Wired follows a job seeker who, frustrated by automated recruiting and ghosting, used ChatGPT to answer an AI interviewer. When both sides delegate the encounter to bots, hiring can lose the human evidence it is supposed to reveal, turning a consequential judgment about potential into a contest between automated proxies.",
+        "imageUrl": "https://media.wired.com/photos/6a95faca62c1ea4a51e42ed9/191:100/w_1280,c_limit/Two-AI-Bots-Talking-to-Each-Other-Business-dv1959057.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "A job seeker used ChatGPT to respond to an automated interviewer.",
+          "The tactic emerged after repeated frustration with AI recruiters and ghosting.",
+          "Bot-to-bot screening risks hiding the human capability and context hiring should assess."
+        ]
+      },
+      {
+        "title": "AI Readiness Depends On Leadership Choices",
+        "url": "https://cxotoday.com/expert-opinion/the-real-ai-readiness-gap-isnt-skills-its-leadership/",
+        "source": "cxotoday.com",
+        "published": "2026-09-04T10:40:47+00:00",
+        "summary": "Hardeep Singh argues that organizations have overfocused on skills, reskilling, and workforce fluency while underestimating leadership's role in shaping AI adoption. Training people to use tools is insufficient if leaders do not redesign decisions, expectations, and support systems around responsible human participation.",
+        "imageUrl": "https://cxotoday.com/wp-content/uploads/2026/04/artificial-intelligence-skills.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The workplace AI conversation has concentrated heavily on skills and reskilling.",
+          "Singh identifies leadership as the more consequential readiness gap.",
+          "Leaders must create the conditions in which new capability becomes trusted, responsible work."
+        ]
+      },
+      {
+        "title": "AI Changes Work Through Skills And Structure",
+        "url": "https://www.rediff.com/getahead/report/ai-is-changing-work-not-cutting-jobs/20260904.htm",
+        "source": "rediff.com",
+        "published": "2026-09-03T23:30:00+00:00",
+        "summary": "Avik Das reports the argument that AI is changing work through new skills, new operating structures, and new ways of working rather than simply cutting jobs. That distinction shifts attention from headline job counts to how roles are rebuilt—and whether people receive real pathways to move into the redesigned work.",
+        "imageUrl": "https://im.rediff.com/1200-630/money/2026/sep/04new-ai-jobs1.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The article frames AI's immediate effect as changing work rather than uniformly eliminating jobs.",
+          "The transition requires new skills, working methods, and organizational structures.",
+          "Workers need credible pathways into redesigned roles, not only reassurance about aggregate employment."
+        ]
+      },
+      {
+        "title": "AI Literacy Must Preserve Active Thinking",
+        "url": "https://hrexecutive.com/what-happens-when-people-stop-thinking-the-case-for-behavioral-ai-literacy/",
+        "source": "hrexecutive.com",
+        "published": "2026-09-02T12:15:57+00:00",
+        "summary": "Corrin Kaye makes the case for behavioral AI literacy: the risk is not only that AI replaces human thinking, but that people gradually choose to think less when answers are readily available. Readiness therefore includes habits of questioning, verification, and reflection that keep human judgment engaged while tools become easier to delegate to.",
+        "imageUrl": "https://hrexecutive.com/wp-content/uploads/AdobeStock_2123221961.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Behavioral AI literacy focuses on how people change their thinking habits around AI.",
+          "Easy delegation can lead people to practice less independent thought even without direct replacement.",
+          "Questioning, verification, and reflection keep AI use connected to human agency."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-03-work-redesign-erases-the-old-career-map": {
     "slug": "2026-09-03-work-redesign-erases-the-old-career-map",
     "date": "2026-09-03",
