@@ -133,7 +133,7 @@ const Phases = () => {
                   </span>
                   <div className={`h-px flex-1 border-t ${colors.border} opacity-30`} />
                 </div>
-                <h2 className={`font-display ${colors.text} text-3xl md:text-4xl mb-2`}>
+                <h2 className={`font-display ${colors.bg === "bg-aubergine" ? "text-soft-white" : colors.text} text-3xl md:text-4xl mb-2`}>
                   {stage.name}
                 </h2>
                 <p className={`font-display ${colors.text} text-xl italic mb-10`}>
