@@ -1,0 +1,103 @@
+{
+  "slug": "2026-09-05-ai-capability-moves-into-the-workflow",
+  "date": "2026-09-05",
+  "title": "AI Capability Moves Into The Workflow",
+  "pattern": "NUS-ISS is organizing its 2026 Learning Festival around the move from AI experiments to measurable enterprise impact, while HP and Lenovo are putting local AI acceleration directly into new creator PCs and tablets. Michael Ringman argues that customer value comes from orchestrating work across departmental boundaries, and People Matters says learning, reskilling, and job design must change as AI learns alongside workers. Together, the stories show capability moving from isolated tools into the everyday workflow: faster hardware can expand what people make, but lasting value depends on whether organizations connect systems coherently, govern them responsibly, and give people room to learn a different way of working.",
+  "stages": [
+    "Become AI Ready",
+    "Relaunch Yourself",
+    "Reclaim Value",
+    "Unhook Identity"
+  ],
+  "imageUrl": "https://asset.peoplematters.in/images/fb733404-43f5-4b40-a190-edc139c9a396.jpg",
+  "stories": [
+    {
+      "title": "NUS-ISS Targets The Barriers Between AI Pilots And Impact",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nus-iss-learning-festival-2026-010000847.html",
+      "source": "finance.yahoo.com",
+      "published": "2026-08-30T17:00:00+00:00",
+      "summary": "NUS-ISS launched the 11th edition of its Learning Festival as a six-week program running from August 28 to October 10. Its focus on data readiness, governance, and workforce capability frames enterprise AI as an organizational transition: moving beyond experiments requires people who can direct systems responsibly and connect technical capability to measurable outcomes.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/99eef9b9843dc44b16663a95edb0abeb69a75d28d1b71fc15b0d76c12fa6602c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprnewswire.com%2Fb3fdd6f38500faf1ecbad922b2393ab7.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "The 11th NUS-ISS Learning Festival runs for six weeks from August 28 to October 10.",
+        "The program centers data readiness, governance, and workforce capability as barriers to enterprise AI impact.",
+        "Organizations need human judgment and accountability to move AI from experimentation into consequential work."
+      ]
+    },
+    {
+      "title": "HP Brings Local AI Power To Creators",
+      "url": "https://markets.businessinsider.com/news/stocks/hp-announces-new-omnibook-pcs-to-help-build-the-next-generation-of-ai-experiences-1036523864",
+      "source": "markets.businessinsider.com",
+      "published": "2026-09-04T06:59:00+00:00",
+      "summary": "HP announced new OmniBook PCs powered by NVIDIA RTX technology for AI builders, creators, gamers, and developers. Bringing more AI computation onto personal hardware can shorten the distance between an idea and a finished artifact, while shifting the human contribution toward choosing the problem, directing the process, and judging what deserves to be made.",
+      "imageUrl": "https://ml.globenewswire.com/media/d2df86df-608b-40f2-b3ed-5fcb32d36d56/small/logo-hp-electric-blue-keyline-png.png",
+      "stages": [
+        "Relaunch Yourself",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "HP's new OmniBook lineup targets AI builders, creators, gamers, and developers.",
+        "NVIDIA RTX hardware is designed to accelerate AI experiences on the device.",
+        "As production gets easier, human value moves toward intent, taste, direction, and judgment."
+      ]
+    },
+    {
+      "title": "Customer Experience Depends On AI Orchestration",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/09/04/ai-isnt-the-future-of-customer-experience-ai-orchestration-is/",
+      "source": "forbes.com",
+      "published": "2026-09-04T04:45:00+00:00",
+      "summary": "Michael Ringman argues that customers judge an experience by how easily they accomplish their goal, not by the performance of separate departmental systems. The practical AI challenge is therefore orchestration across the full journey, with people responsible for defining the outcome, resolving competing priorities, and ensuring that automation serves the customer's actual need.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a98671463c720684e48e015/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Customers evaluate the ease of completing their goal rather than departmental KPIs.",
+        "AI creates value when systems coordinate across the entire customer journey.",
+        "Human judgment remains necessary to define outcomes and manage tradeoffs across organizational boundaries."
+      ]
+    },
+    {
+      "title": "Learning Must Change Alongside Intelligent Systems",
+      "url": "https://www.peoplematters.in/article/ai-and-emerging-tech/when-ai-learns-humans-must-learn-differently-51888",
+      "source": "peoplematters.in",
+      "published": "2026-09-03T22:30:00+00:00",
+      "summary": "People Matters argues that organizations must rethink learning, reskilling, and job design as intelligent technologies reshape work. Adaptation cannot rest on workers collecting isolated tool skills; employers must create learning systems and redesigned roles that let people grow alongside AI and convert new capability into portable, meaningful value.",
+      "imageUrl": "https://asset.peoplematters.in/images/fb733404-43f5-4b40-a190-edc139c9a396.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "AI is changing how organizations need to approach learning, reskilling, and job design.",
+        "Workers need opportunities to grow alongside intelligent technologies rather than train once for a fixed role.",
+        "Employers share responsibility for building credible pathways into redesigned work."
+      ]
+    },
+    {
+      "title": "Lenovo Puts AI Acceleration Into Creative Workflows",
+      "url": "https://techaeris.com/2026/09/03/ifa-2026-new-lenovo-yoga-ai-pcs/",
+      "source": "techaeris.com",
+      "published": "2026-09-03T16:05:00+00:00",
+      "summary": "Lenovo's new Yoga PCs and tablets combine on-device AI acceleration, OLED displays, and cross-device features for creative work. The hardware makes AI a more immediate part of everyday production, but a smoother workflow does not determine the work's purpose; creators still supply the direction, context, and standards that turn computational speed into something valuable.",
+      "imageUrl": "https://techaeris.com/wp-content/uploads/2026/08/Lenovo-Yoga-IFA-2026-1.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Lenovo introduced Yoga creator devices with local AI acceleration and OLED displays.",
+        "Cross-device features are designed to connect AI capability to everyday creative workflows.",
+        "Creators remain responsible for the intent, context, and quality standards behind faster production."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
