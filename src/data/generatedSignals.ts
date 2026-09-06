@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-06-a-jobs-boom-still-needs-human-pathways",
+    "date": "2026-09-06",
+    "title": "A Jobs Boom Still Needs Human Pathways",
+    "pattern": "Heise reports technology layoffs rising alongside AI investment, while The Economist argues that AI is also generating jobs and AOL’s analysis contrasts Bill Gates’s job-loss warning with Jensen Huang’s focus on tasks. The Telegraph puts employee adaptation at the center of workplace strategy, and Quizlet’s student research shows demand for useful learning support even as enthusiasm for AI cools. Together, these stories expose the distance between a growing AI economy and a person’s ability to find a place in it: new jobs and smarter tools become meaningful progress when people can build confidence, carry their value forward, and reach the opportunities being created.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/5/9/7/3/3/shutterstock_2103114116-8544d16fdaba394a.jpg?func=bound&height=1200&org_if_sml=1&q=85&width=1200"
+  },
+  {
     "slug": "2026-09-05-ai-capability-moves-into-the-workflow",
     "date": "2026-09-05",
     "title": "AI Capability Moves Into The Workflow",
@@ -1010,6 +1023,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-06-a-jobs-boom-still-needs-human-pathways": {
+    "slug": "2026-09-06-a-jobs-boom-still-needs-human-pathways",
+    "date": "2026-09-06",
+    "title": "A Jobs Boom Still Needs Human Pathways",
+    "pattern": "Heise reports technology layoffs rising alongside AI investment, while The Economist argues that AI is also generating jobs and AOL’s analysis contrasts Bill Gates’s job-loss warning with Jensen Huang’s focus on tasks. The Telegraph puts employee adaptation at the center of workplace strategy, and Quizlet’s student research shows demand for useful learning support even as enthusiasm for AI cools. Together, these stories expose the distance between a growing AI economy and a person’s ability to find a place in it: new jobs and smarter tools become meaningful progress when people can build confidence, carry their value forward, and reach the opportunities being created.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/5/9/7/3/3/shutterstock_2103114116-8544d16fdaba394a.jpg?func=bound&height=1200&org_if_sml=1&q=85&width=1200",
+    "stories": [
+      {
+        "title": "Tech Layoffs Rise Alongside AI Investment",
+        "url": "https://www.heise.de/en/news/Tech-industry-cuts-more-jobs-AI-boom-claims-tens-of-thousands-of-jobs-11442705.html",
+        "source": "heise.de",
+        "published": "2026-09-05T18:51:00+00:00",
+        "summary": "Heise reports that Silicon Valley job losses in 2026 have already surpassed last year’s total as technology companies commit billions to AI and reduce staffing. The juxtaposition matters: investment in a growing industry can still leave individual workers displaced. People need ways to carry their expertise and relationships into new work when an employer changes its priorities.",
+        "imageUrl": "https://heise.cloudimg.io/v7/_www-heise-de_/imgs/18/5/1/5/9/7/3/3/shutterstock_2103114116-8544d16fdaba394a.jpg?func=bound&height=1200&org_if_sml=1&q=85&width=1200",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Heise links rising technology layoffs with a major shift toward AI investment.",
+          "A growing industry can still remove the roles on which people built careers."
+        ]
+      },
+      {
+        "title": "The Economist Sees An AI Jobs Boom",
+        "url": "https://www.economist.com/finance-and-economics/2026/09/04/the-jobs-apocalypse-is-postponed-an-ai-jobs-boom-is-here",
+        "source": "economist.com",
+        "published": "2026-09-04T11:05:00+00:00",
+        "summary": "The Economist argues that AI is creating employment even as companies announce AI-related cuts, challenging the idea that technological disruption has already produced economy-wide job collapse. That broader picture can coexist with painful individual transitions. For workers, the practical question is whether emerging opportunities are reachable through their existing skills, location, and access to learning.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The article presents job creation as a counterweight to AI-related layoffs.",
+          "Aggregate growth does not establish that displaced workers can access the new roles."
+        ]
+      },
+      {
+        "title": "Bill Gates And Jensen Huang Disagree On Job Loss",
+        "url": "https://www.aol.com/articles/bill-gates-warns-ai-cause-111100000.html",
+        "source": "aol.com",
+        "published": "2026-09-01T04:11:00+00:00",
+        "summary": "A Motley Fool analysis carried by AOL contrasts Bill Gates’s warning about disappearing jobs with Jensen Huang’s view that AI replaces tasks. It also notes that pandemic hiring and acquisitions complicate claims about what caused recent cuts. The human challenge remains concrete: retraining and finding another role take time even when new categories of work emerge.",
+        "imageUrl": "https://hermes.media.static.aol.com/media/2026/09/01/85507adc-c22f-38cc-859b-0d3576a60337/602372ce-9c8a-4130-860b-87c5d856c183.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Gates and Huang offer different expectations about whole jobs versus individual tasks.",
+          "The analysis cautions that recent layoffs have causes beyond AI alone."
+        ]
+      },
+      {
+        "title": "Workplace AI Strategies Face An Adaptation Test",
+        "url": "https://www.telegraph.co.uk/business/ai-era-job-skills/ai-workplace-reskilling/",
+        "source": "telegraph.co.uk",
+        "published": "2026-09-03T04:48:00+00:00",
+        "summary": "The Telegraph argues that corporate AI strategies should be judged by how effectively they help people adapt, alongside the work they automate. Its framing pushes beyond treating a job as a collection of removable tasks. A useful transition strategy must give people room to learn and rebuild confidence as the work that once demonstrated their value changes.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The article puts employee adaptation at the center of AI strategy.",
+          "Learning and confidence deserve attention alongside automation targets."
+        ]
+      },
+      {
+        "title": "Students Want Study Support Beyond AI Hype",
+        "url": "https://www.sacbee.com/news/business/article317115702.html",
+        "source": "sacbee.com",
+        "published": "2026-09-03T01:49:00+00:00",
+        "summary": "Quizlet’s research, reported in this syndicated article, finds that students can be skeptical about AI while still wanting tools that adjust to their learning progress. In its survey, 98 percent of 1,005 students valued that adaptability. The distinction matters for readiness: useful support helps people understand what to practice and develop confidence, rather than simply complete assignments faster.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Quizlet’s survey finds strong demand for study tools that adapt to student progress.",
+          "Skepticism about AI can coexist with demand for practical learning support."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-05-ai-capability-moves-into-the-workflow": {
     "slug": "2026-09-05-ai-capability-moves-into-the-workflow",
     "date": "2026-09-05",
