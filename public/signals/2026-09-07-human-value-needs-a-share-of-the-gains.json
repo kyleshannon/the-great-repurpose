@@ -1,0 +1,96 @@
+{
+  "slug": "2026-09-07-human-value-needs-a-share-of-the-gains",
+  "date": "2026-09-07",
+  "title": "Human Value Needs A Share Of The Gains",
+  "pattern": "The Tech Edvocate’s automation-reversal argument and PwC’s Paul Griggs put human judgment and reinvestment back into the business case, while Nirit Cohen asks who gets to keep the time AI saves. Luka Kids leaves children room to finish their own drawings; Nancy Dusani asks whether African creators will retain a voice and a stake when their work trains AI. Across workplaces, childhood creativity, and cultural archives, recognizing human value is only a beginning: people also need control over how it is used and a share in what it creates.",
+  "stages": [
+    "Reclaim Value",
+    "Unhook Identity",
+    "Relaunch Yourself",
+    "Become AI Ready"
+  ],
+  "imageUrl": "https://cdn.homecrux.com/wp-content/uploads/2026/09/Luka-Kids-Drawing-Projector.jpg",
+  "stories": [
+    {
+      "title": "Automation Reversals Put Human Judgment Back In Focus",
+      "url": "https://www.thetechedvocate.org/the-ai-reversal-why-companies-are-rehiring-workers-after-automation-failed/",
+      "source": "thetechedvocate.org",
+      "published": "2026-09-07T10:04:57+00:00",
+      "summary": "The Tech Edvocate argues that aggressive automation can leave gaps in customer care, judgment, and complex problem-solving that require people to return. Its broader lesson is about work design: removing routine tasks does not remove the need for human accountability, and recognizing that value should shape deployment before workers lose their roles.",
+      "imageUrl": "https://www.thetechedvocate.org/wp-content/uploads/2026/09/featured-image-1788775492274.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Automation can leave difficult exceptions and relationship work unresolved.",
+        "Design human oversight into the workflow before removing roles."
+      ]
+    },
+    {
+      "title": "PwC Executive Urges Businesses To Reinvest AI Gains",
+      "url": "https://cyprus-mail.com/2026/09/07/ai-gains-should-fund-growth-rather-than-facilitate-job-cuts-says-executive",
+      "source": "cyprus-mail.com",
+      "published": "2026-09-07T05:00:00+00:00",
+      "summary": "PwC US senior partner Paul Griggs argues that businesses should direct AI productivity gains into new products, markets, and customers. He says leaders should define those opportunities before deciding how to redeploy or retrain people. For workers, a credible transition requires a visible destination for their capabilities, alongside the promise of greater efficiency.",
+      "imageUrl": "https://cyprus-mail.com/wp-content/uploads/2026/06/ai-artificial-intelligence.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Define growth opportunities before making workforce decisions.",
+        "Track freed staff time and expertise as capacity for reinvestment."
+      ]
+    },
+    {
+      "title": "Luka Kids Projects Drawing Outlines From Spoken Ideas",
+      "url": "https://www.homecrux.com/luka-kids-drawing-projector-for-children/414047/",
+      "source": "homecrux.com",
+      "published": "2026-09-07T03:42:19+00:00",
+      "summary": "Unveiled at IFA 2026, Luka Kids’ drawing projector turns a child’s spoken idea into an outline on paper that the child can complete, color, or change. Homecrux reports that pricing and launch timing remain unconfirmed. The design offers a concrete model of creative assistance: help someone begin while leaving room for their own decisions.",
+      "imageUrl": "https://cdn.homecrux.com/wp-content/uploads/2026/09/Luka-Kids-Drawing-Projector.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Spoken prompts become projected outlines for children to develop.",
+        "The child can add details and change the drawing."
+      ]
+    },
+    {
+      "title": "When AI Saves Time At Work, Who Keeps It?",
+      "url": "https://www.forbes.com/sites/niritcohen/2026/09/06/when-ai-saves-time-at-work-who-gets-to-keep-it/",
+      "source": "forbes.com",
+      "published": "2026-09-06T12:47:00+00:00",
+      "summary": "Nirit Cohen’s Forbes column asks who captures the productivity gains when AI saves workers time and expands what individuals can do. It frames freelancing as a potential challenge to the traditional employment bargain. The human stake is agency over those gains: greater capability can raise output expectations, but it can also open room to renegotiate how work is valued.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Time saved raises a question about who receives the benefit.",
+        "Greater individual capability may change the employment bargain."
+      ]
+    },
+    {
+      "title": "African Creators Need A Voice In AI Training",
+      "url": "https://mg.co.za/thought-leader/2026-09-07-africa-s-creativity-is-ai-s-next-gold-rush/",
+      "source": "mg.co.za",
+      "published": "2026-09-06T16:10:00+00:00",
+      "summary": "Writing in the Mail & Guardian, Nancy Dusani argues that Africa’s literature, journalism, music, and languages could become valuable AI inputs while their creators lose control over use and compensation. She calls for transparency, licensing, and creator participation. The opportunity is to make cultural knowledge a source of shared value, with the people who created and preserved it having a meaningful say.",
+      "imageUrl": "https://images.newsteam.io/image/400/GbSdY1y2zdNhBG8vFnBh4ZyqCbxfyAMfcaTjZ9zn3UX1vXXKvSebE8hvNeCYdzwFC8C1CZdo6BGibWofTSvyq6icJjRgnoFQzRYUz1zLaZrAouodDZjhnCUZAskyD8DkHnSujJkWhY9FJ545Yme9L",
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Cultural and linguistic knowledge makes AI systems more useful.",
+        "Creators need transparency and a stake in the value their work generates."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
