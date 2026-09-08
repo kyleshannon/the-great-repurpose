@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-08-better-ai-work-needs-stronger-human-judgment",
+    "date": "2026-09-08",
+    "title": "Better AI Work Needs Stronger Human Judgment",
+    "pattern": "CIO’s changing IT career paths and CIEL HR’s hiring figures point toward more work directing AI, even as a Great Place To Work India study reveals anxiety and burnout. The Bangkok labour dialogue and Michael Edmondson’s argument for preserving useful effort connect the missing pieces: people need a voice in work redesign and opportunities to exercise their own judgment. The transition succeeds when faster execution comes with stronger human capability and a credible place for people in the work ahead.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://www.cio.com/wp-content/uploads/2026/09/4218846-0-03694300-1788861834-shutterstock_2208430283.jpg?quality=50&strip=all&w=1024"
+  },
+  {
     "slug": "2026-09-07-human-value-needs-a-share-of-the-gains",
     "date": "2026-09-07",
     "title": "Human Value Needs A Share Of The Gains",
@@ -1036,6 +1049,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-08-better-ai-work-needs-stronger-human-judgment": {
+    "slug": "2026-09-08-better-ai-work-needs-stronger-human-judgment",
+    "date": "2026-09-08",
+    "title": "Better AI Work Needs Stronger Human Judgment",
+    "pattern": "CIO’s changing IT career paths and CIEL HR’s hiring figures point toward more work directing AI, even as a Great Place To Work India study reveals anxiety and burnout. The Bangkok labour dialogue and Michael Edmondson’s argument for preserving useful effort connect the missing pieces: people need a voice in work redesign and opportunities to exercise their own judgment. The transition succeeds when faster execution comes with stronger human capability and a credible place for people in the work ahead.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://www.cio.com/wp-content/uploads/2026/09/4218846-0-03694300-1788861834-shutterstock_2208430283.jpg?quality=50&strip=all&w=1024",
+    "stories": [
+      {
+        "title": "IT careers shift toward directing and checking AI",
+        "url": "https://www.cio.com/article/4218846/how-to-upskill-it-for-agentic-ai-7-pathways-to-success.html",
+        "source": "cio.com",
+        "published": "2026-09-08T03:01:00+00:00",
+        "summary": "Writing code is becoming one part of a wider job. CIO describes seven development paths for IT teams, including business fluency and the ability to evaluate and govern agent output. The TGR implication is practical: experience remains valuable when people can explain the problem, supply the right context, and take responsibility for the result.",
+        "imageUrl": "https://www.cio.com/wp-content/uploads/2026/09/4218846-0-03694300-1788861834-shutterstock_2208430283.jpg?quality=50&strip=all&w=1024",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "CIO frames upskilling as changes in working habits as well as technical training.",
+          "Business understanding and critical thinking help IT professionals direct automated work."
+        ]
+      },
+      {
+        "title": "India’s agentic AI hiring surge changes the skills equation",
+        "url": "https://money.rediff.com/news/market/agentic-ai-talent-demand-soars-260-in-india-report/53960420260908",
+        "source": "money.rediff.com",
+        "published": "2026-09-08T11:18:00+00:00",
+        "summary": "CIEL HR reports a 260% year-over-year rise in demand for agentic AI engineers in India, alongside growth in architecture and AI operations roles. Its analysis also identifies routine support and reporting tasks as especially exposed to automation. For workers, the opportunity is to translate existing domain knowledge into designing and supervising systems, while recognizing that a hiring surge does not guarantee an easy transition.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The reported 260% increase describes demand for a specific role, not growth across all employment.",
+          "Rising demand and automation of routine tasks can happen at the same time."
+        ]
+      },
+      {
+        "title": "Asian labour dialogue puts workers inside AI decisions",
+        "url": "https://www.devdiscourse.com/article/other/3974039-asia-looks-to-protect-workers-as-ai-reshapes-millions-of-jobs",
+        "source": "devdiscourse.com",
+        "published": "2026-09-08T07:46:00+00:00",
+        "summary": "Officials, employers and worker representatives met in Bangkok on August 26–27 to discuss AI and employment across ASEAN and China. Today’s report emphasizes social dialogue, digital access and practical transition support. The human stake is who gets a voice as work changes: adapting becomes more achievable when institutions give people resources and influence over decisions that affect their livelihoods.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The Bangkok dialogue brought governments, employers and workers together.",
+          "Digital access and practical worker support were priorities alongside adoption."
+        ]
+      },
+      {
+        "title": "Leaders must decide which effort deserves to stay",
+        "url": "https://www.forbes.com/sites/michaeledmondson/2026/09/08/why-knowing-when-to-use-ai-is-the-next-leadership-challenge/",
+        "source": "forbes.com",
+        "published": "2026-09-08T10:00:00+00:00",
+        "summary": "Michael Edmondson argues that leaders should distinguish wasted effort from the effort that builds judgment, learning and relationships. His Forbes essay proposes removing the first, preserving the second, and redesigning work around both human and AI capabilities. Through the TGR lens, becoming AI ready includes knowing what to keep practicing so that faster output does not quietly weaken independent thinking.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The essay separates administrative burden from practice that develops human capability.",
+          "Work design should measure learning and judgment alongside speed."
+        ]
+      },
+      {
+        "title": "AI workforce plans meet a confidence and burnout gap",
+        "url": "https://www.peoplematters.in/news/ai-and-emerging-tech/1-in-4-chros-expect-ai-driven-workforce-cuts-as-13percent-of-employees-face-high-burnout-study-51905",
+        "source": "peoplematters.in",
+        "published": "2026-09-07",
+        "summary": "A Great Place To Work India study, reported by People Matters, finds that one quarter of surveyed CHROs expect AI-related headcount reductions within two years, while 13% of employees fall into its high-burnout category. These are survey findings, not an inevitable jobs forecast. The TGR challenge is to make transition credible through clearer expectations, trustworthy leadership and room to learn.",
+        "imageUrl": "https://asset.peoplematters.in/images/23a0971c-aed3-4b43-aa86-aad43396d72c.png",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "A quarter of surveyed CHROs anticipate workforce reductions of 1% to 20%.",
+          "The reported 13% high-burnout share makes employee capacity part of the adoption question."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-07-human-value-needs-a-share-of-the-gains": {
     "slug": "2026-09-07-human-value-needs-a-share-of-the-gains",
     "date": "2026-09-07",
