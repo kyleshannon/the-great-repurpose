@@ -1,5 +1,18 @@
 [
   {
+    "slug": "2026-09-09-ai-scale-depends-on-human-ownership",
+    "date": "2026-09-09",
+    "title": "AI Scale Depends On Human Ownership",
+    "pattern": "Analytics Insight’s CPO checklist and Singapore employers’ 2027 plans put AI adoption inside workforce strategy, while ACTO’s Parth Khanna argues that life-sciences agents earn trust through capability, compliance and role context. Diginomica warns that treating agents like employees weakens accountability, even as OpenAI lawyer Nicole Diaz shows how carefully bounded agents can triage legal work. Together, the stories draw a practical line: AI scales when people redesign the work, define the guardrails and remain visibly responsible for the outcome.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-09-08%2Fh5vcn8ed%2FChief-People-Officer-2027-Checklist-10-Workforce-Priorities-for-the-AI-Era.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+  },
+  {
     "slug": "2026-09-08-better-ai-work-needs-stronger-human-judgment",
     "date": "2026-09-08",
     "title": "Better AI Work Needs Stronger Human Judgment",

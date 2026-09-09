@@ -1,0 +1,96 @@
+{
+  "slug": "2026-09-09-ai-scale-depends-on-human-ownership",
+  "date": "2026-09-09",
+  "title": "AI Scale Depends On Human Ownership",
+  "pattern": "Analytics Insight’s CPO checklist and Singapore employers’ 2027 plans put AI adoption inside workforce strategy, while ACTO’s Parth Khanna argues that life-sciences agents earn trust through capability, compliance and role context. Diginomica warns that treating agents like employees weakens accountability, even as OpenAI lawyer Nicole Diaz shows how carefully bounded agents can triage legal work. Together, the stories draw a practical line: AI scales when people redesign the work, define the guardrails and remain visibly responsible for the outcome.",
+  "stages": [
+    "Reclaim Value",
+    "Become AI Ready",
+    "Unhook Identity",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-09-08%2Fh5vcn8ed%2FChief-People-Officer-2027-Checklist-10-Workforce-Priorities-for-the-AI-Era.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+  "stories": [
+    {
+      "title": "People leaders must redesign work before reducing it",
+      "url": "https://www.analyticsinsight.net/artificial-intelligence/chief-people-officer-2027-checklist-10-workforce-priorities-for-the-ai-era",
+      "source": "analyticsinsight.net",
+      "published": "2026-09-08T21:30:00+00:00",
+      "summary": "Analytics Insight’s 2027 checklist tells chief people officers to break jobs into tasks before making headcount decisions, build skills around business needs and measure work quality rather than AI activity. The TGR signal is that job titles are becoming weaker containers for value. People need visible pathways from existing judgment and experience into redesigned roles.",
+      "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-09-08%2Fh5vcn8ed%2FChief-People-Officer-2027-Checklist-10-Workforce-Priorities-for-the-AI-Era.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The checklist puts job redesign ahead of broad workforce reductions.",
+        "It recommends measuring quality, trust and business results instead of raw AI use."
+      ]
+    },
+    {
+      "title": "Life-sciences AI trust requires capability and compliance",
+      "url": "https://www.pharmexec.com/view/why-ai-trust-comes-down-one-equation-parth-khanna",
+      "source": "pharmexec.com",
+      "published": "2026-09-09T11:30:10.813000+00:00",
+      "summary": "ACTO CEO Parth Khanna says life-sciences AI becomes trustworthy when it is both capable and compliant, with role-specific context, pre-deployment testing and continuing observation. He expects agents to free field representatives for deeper clinical dialogue and relationships. Human value does not disappear in this model; it moves toward judgment, application and accountability in regulated work.",
+      "imageUrl": "https://cdn.sanity.io/images/0vv8moc6/pharmexec/4c500e8ad95c16982b059e9f745e8836d2f5e009-1920x1080.jpg",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Role context and guardrails make agents more useful without weakening compliance.",
+        "Human field roles may shift toward clinical interpretation and relationship-building."
+      ]
+    },
+    {
+      "title": "Calling agents employees can weaken accountability",
+      "url": "https://diginomica.com/treating-ai-agents-employees-doesnt-work-heres-why",
+      "source": "diginomica.com",
+      "published": "2026-09-09T08:35:01+00:00",
+      "summary": "Diginomica reports that anthropomorphizing AI agents can reduce human scrutiny, add review cycles and erode professional identity and organizational trust without meaningfully improving adoption. Experts argue that agents should instead be governed as infrastructure with named human owners. The distinction matters because responsibility cannot be delegated to a system that does not bear consequences.",
+      "imageUrl": "https://diginomica.com/sites/default/files/images/2026-09/Screenshot%202026-09-08%20at%2021.21.45.png",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Employee-like framing can make people less rigorous when reviewing agent output.",
+        "Named human ownership keeps escalation and accountability explicit."
+      ]
+    },
+    {
+      "title": "OpenAI’s legal team turns expertise into systems",
+      "url": "https://www.forbes.com/sites/rachelwells/2026/09/07/i-asked-an-openai-employee-how-she-uses-ai-at-work-heres-her-answer/",
+      "source": "forbes.com",
+      "published": "2026-09-07T05:06:00+00:00",
+      "summary": "OpenAI associate general counsel Nicole Diaz describes moving from AI as an individual adviser to an intake agent that handles recurring policy questions, drafts responses and escalates richer context to humans. Her team is also building a compliance knowledge system around risks and controls. The transferable skill is operationalizing expertise while retaining human ownership of judgment-heavy decisions.",
+      "imageUrl": "",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The intake agent supports repetitive work and brings complex matters back to people.",
+        "Systems thinking turns professional expertise into reusable policies, controls and workflows."
+      ]
+    },
+    {
+      "title": "Singapore’s AI priority rises as wage plans cool",
+      "url": "https://www.techrepublic.com/article/news-ai-employer-priorities-apac-singapore/",
+      "source": "techrepublic.com",
+      "published": "2026-09-08T12:02:23+00:00",
+      "summary": "TechRepublic reports that 48% of surveyed Singapore employers rank AI as a 2027 workforce priority while 51% expect to moderate or freeze wages. Adoption is still uneven: implementation cost and missing in-house expertise remain major barriers, although 40% plan to increase headcount. Workers need transition pathways that convert investment into redesigned jobs and credible mobility, not just pressure to adapt.",
+      "imageUrl": "https://assets.techrepublic.com/uploads/2026/09/zhu-hongzhi-tzFVsg6nWtM-unsplash-1024x576.jpg?f=jpeg",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "AI priority is rising even as many employers become more cautious about wages.",
+        "Costs and skills gaps still separate stated ambition from broad deployment."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
