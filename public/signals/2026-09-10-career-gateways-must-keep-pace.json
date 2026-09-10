@@ -1,0 +1,96 @@
+{
+  "slug": "2026-09-10-career-gateways-must-keep-pace",
+  "date": "2026-09-10",
+  "title": "Career Gateways Must Keep Pace",
+  "pattern": "Computerworld’s evidence on uneven job risk and SEEK’s warning about junior white-collar roles put the first rungs of work under the clearest pressure, while Forbes asks families to weigh how colleges are preparing students for an AI-shaped economy. Gartner’s four future-of-work shifts and Tamar AI’s Glanze launch extend the question from hiring to how organizations and creators build new ways in. The human tension is not simply whether AI creates opportunity; it is whether education, employers and creative platforms turn that opportunity into credible entry points where people can develop judgment, contribute and be seen.",
+  "stages": [
+    "Become AI Ready",
+    "Relaunch Yourself",
+    "Reclaim Value",
+    "Unhook Identity"
+  ],
+  "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/09/4220365-0-55631400-1788972290-shutterstock_1492935800.jpg?quality=50&strip=all&w=1024",
+  "stories": [
+    {
+      "title": "Studies find uneven AI job risk",
+      "url": "https://www.computerworld.com/article/4220365/no-ai-is-not-killing-jobs-for-everyone-studies-say.html",
+      "source": "computerworld.com",
+      "published": "2026-09-09T13:41:00+00:00",
+      "summary": "Computerworld reports that AI is not eliminating work evenly: employers still seek advanced AI skills while younger workers face a sharper risk of having parts of their jobs automated. The signal is that a transition cannot be judged by one headline number. Early-career workers need opportunities to build durable judgment and visible experience as routine tasks change.",
+      "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/09/4220365-0-55631400-1788972290-shutterstock_1492935800.jpg?quality=50&strip=all&w=1024",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Demand for advanced AI skills can rise while entry-level tasks become more exposed to automation.",
+        "Young workers need new ways to accumulate experience, credibility and judgment."
+      ]
+    },
+    {
+      "title": "SEEK maps AI pressure on junior roles",
+      "url": "https://www.thechronicle.com.au/business/technology/ai/seek-report-reveals-the-junior-white-collar-jobs-at-risk-from-ai-revolution/news-story/70ef7ce1368cde3250db644db1f8c2e8",
+      "source": "thechronicle.com.au",
+      "published": "2026-09-09T15:53:00+00:00",
+      "summary": "A SEEK report identifies junior white-collar roles where AI automation is having the greatest impact. Those roles have long served as a proving ground for new professionals. If organizations redesign the work without redesigning that on-ramp, they risk removing the learning path that helps people become capable, trusted contributors.",
+      "imageUrl": "",
+      "stages": [
+        "Relaunch Yourself",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Junior white-collar roles are a focal point for AI-driven task change.",
+        "Career entry paths need redesign alongside the work itself."
+      ]
+    },
+    {
+      "title": "Choosing college for an AI-shaped economy",
+      "url": "https://www.forbes.com/sites/lisachambers/2026/09/10/how-to-choose-a-college-in-the-age-of-ai/",
+      "source": "forbes.com",
+      "published": "2026-09-10T03:00:00+00:00",
+      "summary": "Forbes argues that families choosing a college should look beyond cost and conventional payoff to how institutions are preparing students for AI’s effects on education and jobs. The useful question is whether a school helps students experiment, adapt and carry human strengths into changing work—not merely whether it adds AI to the brochure.",
+      "imageUrl": "",
+      "stages": [
+        "Become AI Ready",
+        "Discover Purpose"
+      ],
+      "keyPoints": [
+        "College choices now include how institutions respond to AI-driven changes in work.",
+        "Preparation should build adaptability and direction, not just technical exposure."
+      ]
+    },
+    {
+      "title": "Gartner identifies four future-of-work shifts",
+      "url": "https://cxotoday.com/others/gartner-identifies-4-shifts-shaping-the-future-of-work/",
+      "source": "cxotoday.com",
+      "published": "2026-09-09T11:52:13+00:00",
+      "summary": "Gartner says CIOs should prepare for four shifts as AI accelerates the pace and scope of work, and warns that treating automation as the whole strategy will look like a mistake in retrospect. Technology leaders need to make room for the human systems around adoption: learning, role design and accountable decisions.",
+      "imageUrl": "https://cxotoday.com/wp-content/uploads/2026/07/artificial_intelligence_3.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "AI changes both the pace and scope of work, not only individual tasks.",
+        "Workforce strategy must accompany automation decisions."
+      ]
+    },
+    {
+      "title": "Glanze connects AI creators with audiences",
+      "url": "https://finance.yahoo.com/media-advertising/articles/tamar-ai-unleashes-creativity-glanze-080000840.html",
+      "source": "finance.yahoo.com",
+      "published": "2026-09-10T01:00:00+00:00",
+      "summary": "Tamar AI launched Glanze at the Venice Film Festival as a streaming platform for AI-native series, films and explorable worlds, linking creation to a global audience. The platform points to a new kind of creative gateway. Tools matter, but creators also need a route from experimentation to an audience, recognition and sustainable opportunity.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/103f40c600d5561568855b26a5be17c622ac31762e448ba7ed3ebaf86f4d067b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprnewswire.com%2Fc84ad1fa44e35d7cd93f5fd15b65b234.jpg",
+      "stages": [
+        "Relaunch Yourself",
+        "Discover Purpose"
+      ],
+      "keyPoints": [
+        "Glanze positions AI-native films and series for a global streaming audience.",
+        "Creative opportunity depends on distribution and connection as well as generation tools."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
