@@ -1,0 +1,95 @@
+{
+  "slug": "2026-09-11-ai-readiness-grows-through-shared-practice",
+  "date": "2026-09-11",
+  "title": "AI Readiness Grows Through Shared Practice",
+  "pattern": "Skillnet Ireland finds workers using training to strengthen career paths, while Deloitte asks CEOs to build human capability and trust into everyday AI adoption. Zuper puts specialized agents beside field-service teams, JazzWorld places 100 young professionals inside real business problems, and Aparna Rae documents peer communities filling gaps left by corporate learning programs. Across all five stories, readiness emerges as a social practice rather than a software purchase: people build agency when tools, coaching and lived expertise meet inside the work.",
+  "stages": [
+    "Become AI Ready",
+    "Reclaim Value",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://www.irishexaminer.com/cms_media/module_img/10448/5224030_2_org_Dave_Flynn_Skillnet_Ireland_281_29.jpg",
+  "stories": [
+    {
+      "title": "Irish workers use training to widen career paths",
+      "url": "https://www.irishexaminer.com/business/economy/arid-41909338.html",
+      "source": "irishexaminer.com",
+      "published": "2026-09-11T06:15:00+00:00",
+      "summary": "The Irish Examiner reports that one in five Irish workers is reskilling in digital, technical or leadership capabilities, with AI training close behind, according to Skillnet Ireland. The important signal is active career agency: workers are not waiting for job descriptions to settle. Supported learning helps them carry existing experience into new roles and build confidence before disruption becomes a crisis.",
+      "imageUrl": "https://www.irishexaminer.com/cms_media/module_img/10448/5224030_2_org_Dave_Flynn_Skillnet_Ireland_281_29.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "One in five Irish workers is pursuing digital, technical or leadership reskilling.",
+        "Training creates a practical bridge from current experience to future opportunity."
+      ]
+    },
+    {
+      "title": "CEOs must make AI adoption human-led",
+      "url": "https://www.forbes.com/sites/deloitte/2026/09/09/the-ceos-new-imperative-enable-a-human-led-ai-powered-workforce/",
+      "source": "forbes.com",
+      "published": "2026-09-09T08:51:00+00:00",
+      "summary": "A Deloitte BrandVoice article argues that CEOs should move from isolated technology programs to continual, small changes embedded in daily workflows. It pairs AI deployment with clear accountability, apprenticeship and transparent development paths. Through the TGR lens, becoming AI ready is an organizational design responsibility: leaders must protect trust while giving people repeated opportunities to learn and contribute at higher value.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Deloitte recommends incremental workflow changes instead of one sweeping transformation program.",
+        "Clear accountability and on-the-job learning keep human capability inside the operating model."
+      ]
+    },
+    {
+      "title": "Field-service agents move into specific jobs",
+      "url": "https://www.rutlandherald.com/news/business/zuper-adds-four-new-ai-agents-to-work-the-job-alongside-your-field-service-teams/article_30b937bb-e865-5327-a022-b331ec0f2970.html",
+      "source": "rutlandherald.com",
+      "published": "2026-09-10T02:01:00+00:00",
+      "summary": "Zuper announced four agents for accounts receivable, sales coaching, weather and reputation management, joining its customer-service and field agents. Operators configure them with plain-language instructions and company playbooks inside existing jobs and records. The shift is from generic assistance to bounded workflow roles, which makes human judgment more important in deciding the rules, reviewing exceptions and improving how the work runs.",
+      "imageUrl": "https://bloximages.chicago2.vip.townnews.com/rutlandherald.com/content/tncms/custom/image/21fa4cf2-cde4-11eb-949b-3b99a2a8f984.jpg?resize=600%2C600",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The new agents address defined field-service workflows rather than acting as one general assistant.",
+        "Operators supply instructions and playbooks while people handle conversations and exceptions that need judgment."
+      ]
+    },
+    {
+      "title": "JazzWorld embeds young talent in AI transformation",
+      "url": "https://profit.pakistantoday.com.pk/2026/09/10/ai-transformation-starts-with-reskilling-the-workforce-says-jazzworld-ceo",
+      "source": "profit.pakistantoday.com.pk",
+      "published": "2026-09-10T06:01:14.974000+00:00",
+      "summary": "JazzWorld inducted 100 young professionals into a year-long AI Associates Program spanning fintech, cybersecurity, data science, software and digital platforms. Rather than isolating them in an AI unit, the company will place them with existing teams on real customer and business problems. The program turns reskilling into experience, giving emerging talent a pathway to create value rather than merely collect credentials.",
+      "imageUrl": "https://profit.pakistantoday.com.pk/uploads/MAH03306-JPG-1789019893417-le3rmj.jpeg",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "The associates will work for a year across five practical technology and business areas.",
+        "Embedding participants in operating teams connects AI fluency to real decisions and outcomes."
+      ]
+    },
+    {
+      "title": "Peer communities fill the AI learning gap",
+      "url": "https://www.forbes.com/sites/aparnarae/2026/09/10/the-55-trillion-ai-skills-gap-is-being-filled-by-peers-not-corporate-ld/",
+      "source": "forbes.com",
+      "published": "2026-09-10T06:00:00+00:00",
+      "summary": "Aparna Rae describes peer-led communities teaching mid-career professionals and nonprofit teams to build useful AI workflows when formal workplace training is missing. The examples emphasize delegation, domain knowledge, privacy and human oversight over tool collecting. Their deeper contribution is psychological as well as technical: shared practice helps people recognize that lived expertise remains the foundation for directing automated systems responsibly.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Peer leaders translate AI into role-relevant workflows for nontechnical professionals.",
+        "Hands-on communities can restore agency where software mandates arrive without structured training."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
