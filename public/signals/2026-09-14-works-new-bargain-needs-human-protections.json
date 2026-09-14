@@ -1,0 +1,81 @@
+{
+  "slug": "2026-09-14-works-new-bargain-needs-human-protections",
+  "date": "2026-09-14",
+  "title": "Work's New Bargain Needs Human Protections",
+  "pattern": "Fast Company's HR leaders, the Financial Times' gig workers, and Oracle's restructuring all show AI changing the terms of employment, not merely adding a tool. CTech's warning against counting replacements and TeamLease's case for reskilling point toward the same practical tension: adoption needs people to retain a path to security, expertise, and meaningful contribution. The new bargain cannot be measured only in lower costs; it has to make human capacity durable.",
+  "stages": [
+    "Reclaim Value",
+    "Become AI Ready",
+    "Unhook Identity",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://pic1.calcalist.co.il/picserver3/crop_images/2025/09/29/BJ0M1nD2ll/BJ0M1nD2ll_0_52_2001_1126_0_large.jpg",
+  "stories": [
+    {
+      "title": "AI is giving HR chiefs a new job",
+      "url": "https://www.fastcompany.com/91603670/ai-giving-hr-chiefs-a-new-job",
+      "source": "fastcompany.com",
+      "published": "2026-09-14T01:00:00+00:00",
+      "summary": "Fast Company argues that the decisive AI challenge for HR is not deployment but redesigning the work and workforce around it. That shifts HR from administering a technology rollout to helping people understand changing contributions, roles, and expectations. For TGR, the question is whether the redesign gives people a credible way to grow their value rather than simply asking them to absorb disruption.",
+      "keyPoints": [
+        "AI adoption requires rethinking work design as well as choosing technology.",
+        "HR leaders must connect new capabilities to real workforce pathways."
+      ],
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "imageUrl": ""
+    },
+    {
+      "title": "Automation is coming for the gig economy",
+      "url": "https://www.ft.com/content/a2c33eed-7aef-4e68-9252-3a1dddf61b5a?syn-25a6b1a6=1",
+      "source": "ft.com",
+      "published": "2026-09-13T21:00:00+00:00",
+      "summary": "The Financial Times examines how automation could reach gig work already marked by weak employment rights, uneven benefits, and limited public support. The concern is not just that tasks may disappear, but that workers without a safety net can be left carrying the transition's cost. TGR makes the human stake plain: agency requires protection, bargaining power, and options before work is reorganized.",
+      "keyPoints": [
+        "Gig workers often face thin benefits and protections before automation arrives.",
+        "A fair transition needs more than a promise of new efficiency."
+      ],
+      "stages": ["Reclaim Value", "Unhook Identity"],
+      "imageUrl": ""
+    },
+    {
+      "title": "Oracle's AI transformation gets more expensive as layoffs continue",
+      "url": "https://www.calcalistech.com/ctechnews/article/lr4q3x1fx",
+      "source": "calcalistech.com",
+      "published": "2026-09-14T06:59:47.388536+00:00",
+      "summary": "CTech reports that Oracle raised expected restructuring costs by $700 million to roughly $2.8 billion, including workforce reductions linked in part to AI adoption. The story complicates the tidy narrative that automation is simply cheap or frictionless. For TGR, it is a reminder that organizations should account for the human and institutional costs of change alongside the technology's projected gains.",
+      "keyPoints": [
+        "Oracle's restructuring costs rose by $700 million to about $2.8 billion.",
+        "Workforce reductions are part of the transition cost, not an external footnote."
+      ],
+      "stages": ["Reclaim Value", "Unhook Identity"],
+      "imageUrl": "https://pic1.calcalist.co.il/picserver3/crop_images/2025/09/29/BJ0M1nD2ll/BJ0M1nD2ll_0_52_2001_1126_0_large.jpg"
+    },
+    {
+      "title": "Did we overestimate how quickly AI would replace workers?",
+      "url": "https://www.calcalistech.com/ctechnews/article/53pzwe5uv",
+      "source": "calcalistech.com",
+      "published": "2026-09-13T12:12:00+00:00",
+      "summary": "CTech publishes Global Teams founder Rinat Buchholz's case that companies may win not by replacing the most people but by recognizing that the scarce resource has changed. The useful distinction is between eliminating headcount and building judgment, context, and collaboration around capable tools. TGR readers can use that lens to identify the contribution they need to make more visible as execution gets cheaper.",
+      "keyPoints": [
+        "Replacing the most workers is not necessarily the strongest AI strategy.",
+        "Scarcity can shift toward judgment, context, and coordinated human work."
+      ],
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "imageUrl": "https://pic1.calcalist.co.il/picserver3/crop_images/2025/04/28/Bk11d7C2yxl/Bk11d7C2yxl_0_14_1066_600_0_large.jpg"
+    },
+    {
+      "title": "AI adoption's pace depends on regulation, cost, and expertise",
+      "url": "https://money.rediff.com/news/market/ai-adoption-regulation-cost-shape-future-says-teamlease-ceo/54292320260914",
+      "source": "money.rediff.com",
+      "published": "2026-09-14T04:28:00+00:00",
+      "summary": "TeamLease EdTech CEO Shantanu Rooj says AI adoption is irreversible, while regulation and cost will shape its pace, and stresses reskilling alongside domain expertise. That framing matters because readiness is not generic tool fluency; people need enough practical knowledge to apply AI responsibly in a real field. The TGR opportunity is to build capability that travels with a person as the conditions change.",
+      "keyPoints": [
+        "Regulation and cost will influence how quickly adoption spreads.",
+        "Reskilling works best when paired with domain expertise."
+      ],
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "imageUrl": "https://im.rediff.com/money/2025/oct/23oct-ai.jpg?fr=money"
+    }
+  ],
+  "sourceStatus": "generated"
+}
