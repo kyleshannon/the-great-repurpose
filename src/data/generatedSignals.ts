@@ -3,6 +3,32 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-13-cheaper-output-makes-human-direction-more-valuable",
+    "date": "2026-09-13",
+    "title": "Cheaper Output Makes Human Direction More Valuable",
+    "pattern": "Analytics Insight describes pressure on routine freelance work, while Entrepreneur asks what companies should rebuild after layoffs. Communicate's account of creative judgment, Arabian Business's emphasis on people, and Hollywood creators' effort to define AI's impact suggest a common response: make human direction explicit. When producing another draft becomes easier, people need clearer ownership of the brief, the standards, the relationships, and the outcome.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-09-12%2Fsskd70zl%2FHow-AI-Productivity-Is-Changing-Employment-And-Freelancing.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+  },
+  {
+    "slug": "2026-09-12-agent-ambitions-need-human-career-paths",
+    "date": "2026-09-12",
+    "title": "Agent Ambitions Need Human Career Paths",
+    "pattern": "Salesforce is packaging agents for specific jobs while graduates and experienced technology workers face a less predictable route into paid work. Diginomica's debate over agent managers and HR Dive's account of Salesforce and Indeed leaders put the missing piece in view: someone must design how people learn, supervise, and advance alongside these systems. The human opportunity depends on building those career paths as deliberately as the agents themselves.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://www.unite.ai/wp-content/uploads/2026/09/salesforce-debuts-job-ready-agentforce-agents-long-horizon-runtime.jpg"
+  },
+  {
     "slug": "2026-09-11-ai-readiness-grows-through-shared-practice",
     "date": "2026-09-11",
     "title": "AI Readiness Grows Through Shared Practice",
@@ -1087,6 +1113,198 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-13-cheaper-output-makes-human-direction-more-valuable": {
+    "slug": "2026-09-13-cheaper-output-makes-human-direction-more-valuable",
+    "date": "2026-09-13",
+    "title": "Cheaper Output Makes Human Direction More Valuable",
+    "pattern": "Analytics Insight describes pressure on routine freelance work, while Entrepreneur asks what companies should rebuild after layoffs. Communicate's account of creative judgment, Arabian Business's emphasis on people, and Hollywood creators' effort to define AI's impact suggest a common response: make human direction explicit. When producing another draft becomes easier, people need clearer ownership of the brief, the standards, the relationships, and the outcome.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-09-12%2Fsskd70zl%2FHow-AI-Productivity-Is-Changing-Employment-And-Freelancing.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+    "stories": [
+      {
+        "title": "AI productivity is reshaping employment and freelance work",
+        "url": "https://www.analyticsinsight.net/artificial-intelligence/how-ai-productivity-is-changing-employment-and-freelancing",
+        "source": "analyticsinsight.net",
+        "published": "2026-09-13T00:30:00+00:00",
+        "summary": "Analytics Insight reviews how cheaper routine writing, coding, and design can alter hiring and freelance demand without automatically improving workers' income. Its analysis distinguishes fast production from specialist expertise, quality control, and client relationships. For TGR, the useful move is to make those contributions visible in an offer or portfolio, instead of competing only on the number of deliverables produced.",
+        "keyPoints": [
+          "Productivity gains alone do not guarantee stronger pay or demand.",
+          "Specialist judgment and responsibility for the result can help distinguish an offer."
+        ],
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-09-12%2Fsskd70zl%2FHow-AI-Productivity-Is-Changing-Employment-And-Freelancing.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+        "title": "Rebuilding after AI layoffs requires a different work design",
+        "url": "https://www.entrepreneur.com/leadership/how-to-rebuild-your-workforce-the-right-way-after-ai-layoffs/505336",
+        "source": "entrepreneur.com",
+        "published": "2026-09-09T19:00:00+00:00",
+        "summary": "In Entrepreneur, Ryan Wong argues that rehiring into the same organizational chart can reproduce the problems behind a restructuring. He recommends understanding current capabilities, examining individual tasks, and equipping managers with better context. The TGR relevance is the distinction between a position and a person's contribution: redesign should identify where experience, relationships, and judgment still matter.",
+        "keyPoints": [
+          "The article recommends analyzing tasks and capabilities rather than relying on job titles.",
+          "Managers need context about actual contributions when making decisions about their teams."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "imageUrl": "https://www.entrepreneur.com/wp-content/uploads/sites/2/2026/09/1788972888-rebuilding-workforce-after-ai-layoffs-0926-s-1639067251.jpg?resize=1024,682"
+      },
+      {
+        "title": "Creative abundance puts a premium on selection and judgment",
+        "url": "https://communicateonline.me/news/is-ai-replacing-creativity-or-redefining-it/",
+        "source": "communicateonline.me",
+        "published": "2026-09-11T05:39:04+00:00",
+        "summary": "Communicate examines how generative tools shift creative work toward ideas, curation, and cultural understanding, drawing on research from Adobe and other organizations. It also raises a training problem: removing junior production tasks can remove opportunities to develop expertise. Reclaiming human value means protecting both the judgment behind a creative choice and the experiences through which newcomers learn it.",
+        "keyPoints": [
+          "Producing more alternatives increases the importance of choosing what fits a real brief.",
+          "Agencies need to preserve learning opportunities as production becomes easier to automate."
+        ],
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "imageUrl": "https://communicateonline.me/wp-content/uploads/2026/09/4.png"
+      },
+      {
+        "title": "The future of AI will always be a story about people",
+        "url": "https://www.arabianbusiness.com/opinion/the-future-of-ai-will-always-be-a-story-about-people",
+        "source": "arabianbusiness.com",
+        "published": "2026-09-11T03:57:00+00:00",
+        "summary": "This Arabian Business opinion piece frames AI adoption around the people who make an organization work. Through the TGR lens, that premise becomes a concrete leadership challenge: explain how employees can contribute as tasks change, and make room for their knowledge in the redesign. A technology plan becomes meaningful when people can see their own next step within it.",
+        "keyPoints": [
+          "The article puts people at the center of the adoption question.",
+          "TGR implication: connect changing tasks to a clear path for employee contribution."
+        ],
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": ""
+      },
+      {
+        "title": "Hollywood creators seek a shared language for AI impact",
+        "url": "https://www.yahoo.com/entertainment/movies/articles/hollywood-creators-group-trying-assess-130000172.html",
+        "source": "yahoo.com",
+        "published": "2026-09-09T06:01:00+00:00",
+        "summary": "The Hollywood Reporter, republished by Yahoo, reports that Daniel Kwan and Joseph Gordon-Levitt's creators coalition is launching a website to clarify AI and its effects on the industry. For creators, shared definitions can support more informed decisions about how tools enter the work. The TGR opportunity is to participate in setting expectations while retaining responsibility for creative choices.",
+        "keyPoints": [
+          "The initiative aims to make the role of AI in creative work easier to discuss and assess.",
+          "Shared language can help creators take part in decisions affecting their livelihoods."
+        ],
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/98d3333efe1cb66b4aab55ca681196553daf3deb1a661fc64ae7030c9f55b706/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_hollywood_reporter_217%2F94abca1bde9cee7af941af77e0c56ee3.jpg"
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-09-12-agent-ambitions-need-human-career-paths": {
+    "slug": "2026-09-12-agent-ambitions-need-human-career-paths",
+    "date": "2026-09-12",
+    "title": "Agent Ambitions Need Human Career Paths",
+    "pattern": "Salesforce is packaging agents for specific jobs while graduates and experienced technology workers face a less predictable route into paid work. Diginomica's debate over agent managers and HR Dive's account of Salesforce and Indeed leaders put the missing piece in view: someone must design how people learn, supervise, and advance alongside these systems. The human opportunity depends on building those career paths as deliberately as the agents themselves.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://www.unite.ai/wp-content/uploads/2026/09/salesforce-debuts-job-ready-agentforce-agents-long-horizon-runtime.jpg",
+    "stories": [
+      {
+        "title": "Salesforce launches agents built for specific business roles",
+        "url": "https://www.unite.ai/salesforce-debuts-job-ready-agentforce-agents-and-long-horizon-runtime/",
+        "source": "unite.ai",
+        "published": "2026-09-11T12:21:01+00:00",
+        "summary": "Salesforce announced Agentforce agents for functions including customer service, employee support, commerce, and sales, alongside a runtime intended to sustain work across days or weeks. Several agents are available now; its outbound sales agent remains in pilot. The TGR implication is practical: people need to define the boundaries, escalation points, and outcomes of delegated work.",
+        "keyPoints": [
+          "Agents arrive with predefined business capabilities that companies can adapt.",
+          "Longer-running assignments make supervision and clear decision rights more consequential."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "imageUrl": "https://www.unite.ai/wp-content/uploads/2026/09/salesforce-debuts-job-ready-agentforce-agents-long-horizon-runtime.jpg"
+      },
+      {
+        "title": "AI pressures graduate career entry",
+        "url": "https://www.theguardian.com/education/2026/sep/12/ai-computer-science-graduates-job-prospects-uk-data?ref=taaft",
+        "source": "theguardian.com",
+        "published": "2026-09-12T07:00:30+00:00",
+        "summary": "The Guardian reports weaker UK graduate employment prospects. For someone who built an identity around a qualification, uncertainty can feel like a verdict on personal worth. The TGR response is to separate that worth from the credential and build visible evidence of judgment through real projects, mentoring, and relationships.",
+        "keyPoints": [
+          "Graduate opportunities face pressure.",
+          "A practical response: pair qualifications with projects that demonstrate useful judgment."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": "https://i.guim.co.uk/img/media/fe746a73da419d2c972bac95b3ec2b2833706c92/625_0_7200_5760/master/7200.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f0729a9d98b3e5d04505cc3a776a130b"
+      },
+      {
+        "title": "Technology job cuts reflect AI spending and wider cost pressures",
+        "url": "https://www.fortuneindia.com/business-news/oracle-and-others-including-uber-apple-microsoft-cut-thousands-of-jobs-amid-ai-shift-rising-costs/158887",
+        "source": "fortuneindia.com",
+        "published": "2026-09-11T23:34:00+00:00",
+        "summary": "Fortune India describes workforce reductions across companies including Oracle, Uber, Apple, and Microsoft, alongside AI investment, restructuring, and other business pressures. These are several different situations, so the article should not be read as proof that AI caused every cut. For workers, the shared challenge is making transferable experience visible when an employer changes its priorities.",
+        "keyPoints": [
+          "The report connects restructuring with both technology investment and operating pressures.",
+          "An employer removing a role does not erase the knowledge a person developed in it."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "imageUrl": "https://media.fortuneindia.com/fortune-india/2026-03-11/8ca29n2r/2.jpg?w=1200&ar=40:21&auto=format,compress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+        "title": "Who will manage work shared by people and AI agents?",
+        "url": "https://diginomica.com/leading-human-ai-agent-workforces-are-agent-managers-answer",
+        "source": "diginomica.com",
+        "published": "2026-09-10T09:05:01+00:00",
+        "summary": "Diginomica examines whether organizations need dedicated agent managers or should develop supervision skills within existing roles. Its sources emphasize governance, employee involvement, and the risk of losing institutional knowledge during a transition. Becoming AI ready therefore includes learning to translate business expertise into reliable processes, with named people accountable for what the agents do.",
+        "keyPoints": [
+          "Experts disagree on whether agent management becomes a separate job everywhere.",
+          "Developing current employees can preserve the business knowledge that safe deployment needs."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "imageUrl": "https://diginomica.com/sites/default/files/images/2026-09/Screenshot%202026-09-08%20at%2021.33.33.png"
+      },
+      {
+        "title": "Salesforce and Indeed leaders put people inside the AI transition",
+        "url": "https://www.hrdive.com/news/work-in-the-age-of-ai-were-all-getting-in-the-waymo-for-the-first-time/830088/",
+        "source": "hrdive.com",
+        "published": "2026-09-10T09:22:00+00:00",
+        "summary": "At Indeed FutureWorks, leaders from Salesforce and Indeed described a workforce where agents support coding, sales qualification, and customer service. HR Dive reports that they also urged companies to redesign work around human capability. The TGR question is whether that promise becomes tangible: training, meaningful responsibilities, and a route forward for the people whose tasks change.",
+        "keyPoints": [
+          "The examples involve people directing agents or handling escalated work.",
+          "Workforce redesign needs to give employees a way to develop and apply their abilities."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": ""
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-11-ai-readiness-grows-through-shared-practice": {
     "slug": "2026-09-11-ai-readiness-grows-through-shared-practice",
     "date": "2026-09-11",
