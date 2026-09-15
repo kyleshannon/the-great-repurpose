@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-15-careers-become-the-new-ai-compensation",
+    "date": "2026-09-15",
+    "title": "Careers Become The New AI Compensation",
+    "pattern": "Forbes argues that career development is becoming a form of pay as skills change faster, while Analytics Insight frames the next step beyond prompting as a broader set of AI capabilities. Workable is productizing AI recruiting agents, Oracle is reportedly cutting jobs while funding AI infrastructure, and ASUS is putting agentic creative tools into professional hardware. Together, these stories make the tradeoff unmistakable: when AI reshapes the work available, people need employers and institutions to invest in capability, judgment, and a credible next chapter—not merely in cheaper execution.",
+    "stages": [
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Reclaim Value",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-09-13%2F3td9j34c%2FWhat-Should-You-Learn-After-Generative-AI-Advanced-AI-Skills-for-the-Next-Stage-of-Your-Career.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+  },
+  {
     "slug": "2026-09-14-works-new-bargain-needs-human-protections",
     "date": "2026-09-14",
     "title": "Work's New Bargain Needs Human Protections",
@@ -1126,6 +1139,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-15-careers-become-the-new-ai-compensation": {
+    "slug": "2026-09-15-careers-become-the-new-ai-compensation",
+    "date": "2026-09-15",
+    "title": "Careers Become The New AI Compensation",
+    "pattern": "Forbes argues that career development is becoming a form of pay as skills change faster, while Analytics Insight frames the next step beyond prompting as a broader set of AI capabilities. Workable is productizing AI recruiting agents, Oracle is reportedly cutting jobs while funding AI infrastructure, and ASUS is putting agentic creative tools into professional hardware. Together, these stories make the tradeoff unmistakable: when AI reshapes the work available, people need employers and institutions to invest in capability, judgment, and a credible next chapter—not merely in cheaper execution.",
+    "stages": [
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Reclaim Value",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-09-13%2F3td9j34c%2FWhat-Should-You-Learn-After-Generative-AI-Advanced-AI-Skills-for-the-Next-Stage-of-Your-Career.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+    "stories": [
+      {
+        "title": "Beyond Generative AI: 7 Skills That Will Shape The Future Of Work",
+        "url": "https://www.analyticsinsight.net/artificial-intelligence/beyond-generative-ai-7-skills-that-will-shape-the-future-of-work",
+        "source": "analyticsinsight.net",
+        "published": "2026-09-13T07:00:00+00:00",
+        "summary": "Analytics Insight looks beyond basic prompting to the skills professionals need as AI agents, retrieval systems, machine learning, and evaluation become more common in everyday work. Its central question is not whether to use generative AI, but how to build enough practical range to direct it well. For TGR, readiness means pairing technical curiosity with the judgment to decide where a tool genuinely improves the work.",
+        "keyPoints": [
+          "Career readiness is moving beyond basic prompting toward a wider AI skill set.",
+          "Useful AI capability includes knowing how to evaluate and direct systems in real work."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-09-13%2F3td9j34c%2FWhat-Should-You-Learn-After-Generative-AI-Advanced-AI-Skills-for-the-Next-Stage-of-Your-Career.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      },
+      {
+        "title": "AI Is Turning Career Development Into A Form Of Pay",
+        "url": "https://www.forbes.com/sites/niritcohen/2026/09/15/ai-is-turning-career-development-into-a-form-of-pay/",
+        "source": "forbes.com",
+        "published": "2026-09-15T03:00:00+00:00",
+        "summary": "Forbes argues that as skills become less durable, workers will increasingly judge a job by the capabilities and future options it helps them build. That changes career development from a perk into part of the employment bargain. TGR readers can take the insight personally: the value of a role includes whether it expands the judgment, relationships, and adaptable skills they can carry into their next chapter.",
+        "keyPoints": [
+          "Workers may value jobs for the future capabilities they create, not only current salary.",
+          "Career development becomes more consequential when skills have a shorter shelf life."
+        ],
+        "stages": [
+          "Relaunch Yourself",
+          "Unhook Identity"
+        ],
+        "imageUrl": ""
+      },
+      {
+        "title": "Workable Launches AI Recruiting Agents With New Pricing",
+        "url": "https://markets.businessinsider.com/news/stocks/workable-brings-its-new-line-of-ai-recruiting-agents-to-general-availability-with-new-credit-based-pricing-model-and-expanded-mcp-capabilities-1036543417",
+        "source": "markets.businessinsider.com",
+        "published": "2026-09-14T03:47:00+00:00",
+        "summary": "Workable says its new AI recruiting agents are generally available, with credit-based pricing and expanded MCP capabilities. The announcement shows automation advancing into a gateway that already shapes who gets seen, considered, and hired. For TGR, the human question is whether people can understand and navigate these systems while organizations preserve room for context, fairness, and genuine potential beyond a machine-readable profile.",
+        "keyPoints": [
+          "AI recruiting agents are moving from product announcement to general availability.",
+          "Automation at the hiring gate raises questions about access, context, and human judgment."
+        ],
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": ""
+      },
+      {
+        "title": "Oracle Begins New Job Cuts As AI Spending Rises",
+        "url": "https://finance.yahoo.com/technology/ai/articles/oracle-begins-round-job-cuts-141027948.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-09-14T07:10:00+00:00",
+        "summary": "Yahoo Finance reports that Oracle has begun another round of job cuts, citing affected employees and an internal email, as the company raises spending on AI infrastructure. The story puts investment and displacement in the same frame rather than treating them as separate business events. TGR's stake is the transition path: people need support to translate their experience into value before an organization reallocates resources around new systems.",
+        "keyPoints": [
+          "The report links another Oracle workforce reduction to a period of rising AI infrastructure spending.",
+          "Technology investment and worker transition must be considered as one human and economic decision."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/24f093ac024c4c9a99178b3ca9caa7a1407c952485c8b0e39dfb0324d985528d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Finvestorshub_458%2F569136a30465b4ad55f82f24ed3e2a73.png"
+      },
+      {
+        "title": "ASUS Advances AI-Powered Creativity With ProArt",
+        "url": "https://press.asus.com/blog/asus-ifa-2026-proart-nvidia-rtx-spark-ai-creativity/",
+        "source": "press.asus.com",
+        "published": "2026-09-15T17:00:00+00:00",
+        "summary": "ASUS used IFA to introduce ProArt devices and NVIDIA RTX Spark-based systems designed for local AI and agentic creative workflows. The product story matters because increasingly capable tools are moving closer to individual creators rather than remaining distant cloud abstractions. For TGR, the opportunity is to use that access to strengthen one's own point of view, craft, and client value—not to let faster generation replace them.",
+        "keyPoints": [
+          "ASUS positioned new ProArt hardware around local AI and agentic creative workflows.",
+          "Creative advantage depends on using accessible tools to amplify a distinctive human perspective."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "imageUrl": "https://press.asus.com/assets/w_1200,h_630/4b49c2eb-7f17-4568-91af-74be0eaa1dcc/ProArt%20P16_P14_GR1X_Scenario%20Photo_3840x2160.jpg"
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-14-works-new-bargain-needs-human-protections": {
     "slug": "2026-09-14-works-new-bargain-needs-human-protections",
     "date": "2026-09-14",
