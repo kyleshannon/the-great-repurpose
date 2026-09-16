@@ -3,6 +3,20 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-16-human-direction-defines-the-ai-transition",
+    "date": "2026-09-16",
+    "title": "Human Direction Defines The AI Transition",
+    "pattern": "Forbes asks schools to help students form purposes of their own, while Anthropic's economic projection and Seattle trade-school enrollment show people bracing for altered career paths. OpenArt is asking creatives to benchmark models on their own terms, and the Claude Cowork–ChatGPT Work comparison makes AI agency inside daily work tangible. These stories share a harder question than tool adoption: as systems accelerate output and rearrange jobs, who develops the judgment, purpose, and practical agency to direct what comes next?",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Discover Purpose",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/a9c964640336ad9b071413d9dde6c09ed5147d9d71746e19993165f3f5c210a6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbusiness-wire.com%2Fd1768851c3072093f99ef76a59268167.jpg"
+  },
+  {
     "slug": "2026-09-15-careers-become-the-new-ai-compensation",
     "date": "2026-09-15",
     "title": "Careers Become The New AI Compensation",
@@ -1139,6 +1153,103 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-16-human-direction-defines-the-ai-transition": {
+    "slug": "2026-09-16-human-direction-defines-the-ai-transition",
+    "date": "2026-09-16",
+    "title": "Human Direction Defines The AI Transition",
+    "pattern": "Forbes asks schools to help students form purposes of their own, while Anthropic's economic projection and Seattle trade-school enrollment show people bracing for altered career paths. OpenArt is asking creatives to benchmark models on their own terms, and the Claude Cowork–ChatGPT Work comparison makes AI agency inside daily work tangible. These stories share a harder question than tool adoption: as systems accelerate output and rearrange jobs, who develops the judgment, purpose, and practical agency to direct what comes next?",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Discover Purpose",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/a9c964640336ad9b071413d9dde6c09ed5147d9d71746e19993165f3f5c210a6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbusiness-wire.com%2Fd1768851c3072093f99ef76a59268167.jpg",
+    "stories": [
+      {
+        "title": "Human Artificial Intelligence Starts With Knowing What You Want To Do",
+        "url": "https://www.forbes.com/sites/rayravaglia/2026/09/15/human-artificial-intelligence-starts-with-knowing-what-you-want-to-do/",
+        "source": "forbes.com",
+        "published": "2026-09-15T07:01:00+00:00",
+        "summary": "Forbes relays Micro1 CEO Ali Ansari's argument that AI still depends on human judgment and that schools must help students develop purposes of their own. The point is not simply to teach a new tool; it is to give people enough direction to choose worthwhile problems. For TGR, purpose becomes a practical capability when a machine can generate so many possible next moves.",
+        "keyPoints": [
+          "AI remains dependent on people deciding which problems and outcomes matter.",
+          "Education needs to develop purpose and judgment alongside technical fluency."
+        ],
+        "stages": [
+          "Discover Purpose",
+          "Reclaim Value"
+        ],
+        "imageUrl": ""
+      },
+      {
+        "title": "Anthropic Says AI Could Boost US GDP by 32% in Four Years, With Displaced Workers Facing Career Changes",
+        "url": "https://techstory.in/anthropic-says-ai-could-boost-us-gdp-by-32-in-four-years-with-displaced-workers-facing-career-changes/",
+        "source": "techstory.in",
+        "published": "2026-09-15T09:37:00+00:00",
+        "summary": "TechStory reports Anthropic's model projecting a 32% US GDP increase over four years while warning that many workers could face career disruption. The claim puts aggregate growth and individual transition in the same frame. TGR's question is whether the institutions gaining from AI will help people translate experience into a viable next role before the economic headline becomes their personal rupture.",
+        "keyPoints": [
+          "The projection pairs a large potential GDP gain with substantial worker displacement.",
+          "Economic upside does not remove the need for credible career-transition support."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": ""
+      },
+      {
+        "title": "OpenArt Introduces OpenArt Arena, a New AI Model Benchmark Tailor-Made for and by Creatives",
+        "url": "https://finance.yahoo.com/technology/ai/articles/openart-introduces-openart-arena-ai-150000116.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-09-15T08:00:00+00:00",
+        "summary": "OpenArt has introduced OpenArt Arena, a benchmark for image and video models shaped around the needs of creative communities. Its premise is revealing: model quality is not an abstract score but a question of whether a tool helps filmmakers, advertisers, and creators make better work. TGR sees the human value moving upstream into taste, standards, and the decision about what deserves to be made.",
+        "keyPoints": [
+          "OpenArt Arena evaluates AI image and video models through creative-community needs.",
+          "Creative advantage depends on taste and standards, not raw generation alone."
+        ],
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/a9c964640336ad9b071413d9dde6c09ed5147d9d71746e19993165f3f5c210a6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbusiness-wire.com%2Fd1768851c3072093f99ef76a59268167.jpg"
+      },
+      {
+        "title": "Claude Cowork vs ChatGPT Work: Which AI Can Actually Do Your Work?",
+        "url": "https://www.eweek.com/news/claude-cowork-vs-chatgpt-work/",
+        "source": "eweek.com",
+        "published": "2026-09-15T16:00:00+00:00",
+        "summary": "eWeek compares Claude Cowork and ChatGPT Work across files, browsers, desktops, and automation—the places where an AI agent begins to act inside real workflows. That comparison makes delegation more concrete than another chatbot feature list. For TGR, workers must learn to define scope, supervise outputs, and remain accountable for the consequences of what an agent does on their behalf.",
+        "keyPoints": [
+          "Workplace AI agents are extending into files, browsers, desktops, and automation.",
+          "Directing and supervising agents makes human accountability more central to the job."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "imageUrl": "https://cdn.eweek.com/unnamed (11).png"
+      },
+      {
+        "title": "Trade Schools See Influx As Students Worry About AI, Job Security",
+        "url": "https://www.seattletimes.com/business/trade-schools-see-influx-as-students-worry-about-ai-job-security/",
+        "source": "seattletimes.com",
+        "published": "2026-09-15T13:06:13+00:00",
+        "summary": "The Seattle Times reports growing interest in trade schools as students weigh AI's uncertain impact on white-collar work and job security. Choosing a path that feels more tangible is a rational response to an unstable career map, not a retreat from the future. TGR's wider challenge is to build many credible routes to useful work, so anxiety does not become the only career counselor.",
+        "keyPoints": [
+          "Concern about AI's effect on white-collar work is shaping education choices.",
+          "People need multiple credible paths to security, contribution, and future options."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": "https://images.seattletimes.com/wp-content/uploads/2026/09/09152026_construction91526-tzr_tzr_055649.jpg?d=1200x630"
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-15-careers-become-the-new-ai-compensation": {
     "slug": "2026-09-15-careers-become-the-new-ai-compensation",
     "date": "2026-09-15",
