@@ -31,6 +31,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/stages" element={<TheFiveStages />} />
           <Route path="/phases" element={<Navigate to="/stages" replace />} />
+          <Route path="/the-five-stages" element={<Navigate to="/stages" replace />} />
           <Route path="/academy" element={<Academy />} />
           <Route path="/academy/leadership" element={<AcademyExecutive />} />
           <Route path="/academy/transition" element={<AcademyTransition />} />
