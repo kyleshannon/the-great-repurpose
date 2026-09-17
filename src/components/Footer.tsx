@@ -22,7 +22,7 @@ export function Footer() {
           <div className="grid grid-cols-2 gap-x-8 gap-y-2">
             {[
               { to: "/", label: "Home" },
-              { to: "/phases", label: "The Five Stages" },
+              { to: "/the-five-stages", label: "The Five Stages" },
               { to: "/types", label: "Great Repurpose Profiles" },
               { to: "/academy", label: "TGR Academy" },
               { to: "/signals", label: "Daily Signal" },
