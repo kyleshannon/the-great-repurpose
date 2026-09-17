@@ -80,9 +80,15 @@ const TgrTypes = () => {
               <p className="font-sans text-soft-white/70 text-lg leading-relaxed max-w-2xl mx-auto mb-4">
                 Everyone navigating the AI transition is somewhere on this map. Ten profiles, each one a real place people find themselves — defined by your pattern across Unhook Identity, Reclaim Value, Discover Purpose, Become AI Ready, and Relaunch Yourself.
               </p>
-              <p className="font-sans text-soft-white/50 text-base max-w-2xl mx-auto">
+              <p className="font-sans text-soft-white/50 text-base max-w-2xl mx-auto mb-8">
                 None of them are bad. All of them are a starting point.
               </p>
+              <Link
+                to="/selfcheck"
+                className="inline-block bg-indigo text-white font-sans font-medium text-lg px-10 py-5 rounded-full pulse-indigo hover:opacity-90 transition-opacity"
+              >
+                What's Your Repurpose Profile? →
+              </Link>
             </ScrollFadeUp>
           </div>
         </section>
