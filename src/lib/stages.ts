@@ -48,7 +48,8 @@ export const getStageAnchor = (stage: string) =>
     .replace(/&/g, "and")
     .replace(/[^a-z0-9]+/g, "-")    .replace(/^-|-$/g, "");
 
-export const getStagePath = (stage: string) => `/phases#${getStageAnchor(stage)}`;
+export const getStagePath = (stage: string) =>
+  `/stages#${getStageAnchor(stage)}`;
 
 export const getStageDefinition = (stage: string) =>
   stageDefinitions[normalizeStage(stage) as TgrStage] ?? "Explore this stage in The Great Repurpose framework.";

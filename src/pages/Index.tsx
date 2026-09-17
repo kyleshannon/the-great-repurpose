@@ -330,7 +330,7 @@ const Index = () => {
               return (
                 <ScrollFadeUp key={phase.number}>
                   <Link
-                    to={`/phases#${phase.name.toLowerCase().replace(/\s+/g, "-")}`}
+                    to={`/stages#${phase.name.toLowerCase().replace(/\s+/g, "-")}`}
                     className={`group block w-full ${i % 2 === 1 ? "bg-soft-white" : colors.bg} border-y border-aubergine/5 transition-colors`}
                   >
                     <div className={`max-w-5xl mx-auto px-6 ${i === 0 ? "pt-7 md:pt-9 pb-5 md:pb-7" : "py-5 md:py-7"}`}>
@@ -385,7 +385,7 @@ const Index = () => {
                 />
                 <div className="absolute inset-0 bg-aubergine/60 flex items-center justify-center">
                   <Link
-                    to="/phases"
+                    to="/stages"
                     className="inline-flex items-center gap-2 border-2 border-soft-white text-soft-white font-sans font-semibold text-sm uppercase tracking-widest px-8 py-4 rounded-full hover:bg-soft-white hover:text-aubergine transition-colors"
                   >
                     Explore The Five Stages →

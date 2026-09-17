@@ -90,7 +90,7 @@ const colorMap: Record<string, { bg: string; text: string; body: string; border:
   poppy: { bg: "bg-soft-white", text: "text-poppy", body: "text-aubergine/70", border: "border-poppy/20", icon: "text-poppy" },
 };
 
-const Phases = () => {
+const TheFiveStages = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -107,7 +107,7 @@ const Phases = () => {
       <Seo
         title="The Five Stages of The Great Repurpose"
         description="Unhook Identity, Reclaim Value, Discover Purpose, Become AI Ready, Relaunch Yourself — the five dimensions people live through when AI reshapes their work."
-        path="/phases"
+        path="/stages"
       />
       <Navigation />
       <main id="main-content">
@@ -238,4 +238,4 @@ const Phases = () => {
   );
 };
 
-export default Phases;
+export default TheFiveStages;
