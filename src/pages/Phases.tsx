@@ -210,7 +210,6 @@ const Phases = () => {
                 </ScrollFadeUp>
                 </div>
               </div>
-            </div>
           </section>
         );
       })}
