@@ -142,42 +142,28 @@ const Phases = () => {
             id={getStageAnchor(stage.name)}
             className={`${colors.bg} scroll-mt-24 py-16 px-6 md:scroll-mt-28 md:py-24`}
           >
-            <div className="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-12 lg:gap-16">
-              <ScrollFadeUp className={`lg:col-span-5 ${stageIndex % 2 === 1 ? "lg:order-2" : ""}`}>
-                <div className="aspect-[4/3] overflow-hidden">
+            <div className="mx-auto max-w-4xl">
+              <ScrollFadeUp>
+                <div className="flex items-center gap-4 mb-6">
                   <img
-                    src={stage.image}
-                    alt={stage.imageAlt}
-                    className="h-full w-full object-cover object-center"
+                    src={stageLogos[stage.color]}
+                    alt=""
+                    aria-hidden="true"
+                    className="shrink-0 h-10 w-auto"
                     loading="lazy"
-                    width="1024"
-                    height="768"
                   />
+                  <span className={`font-sans text-xs uppercase tracking-widest font-medium ${colors.text}`}>
+                    {stage.number}
+                  </span>
+                  <div className={`h-px flex-1 border-t ${colors.border} opacity-30`} />
                 </div>
+                <h2 className={`font-display ${colors.bg === "bg-aubergine" ? "text-soft-white" : colors.text} text-3xl md:text-4xl mb-2`}>
+                  {stage.name}
+                </h2>
+                <p className={`font-display ${colors.text} text-xl italic mb-10`}>
+                  "{stage.tagline}"
+                </p>
               </ScrollFadeUp>
-
-              <div className={`lg:col-span-7 ${stageIndex % 2 === 1 ? "lg:order-1" : ""}`}>
-                <ScrollFadeUp>
-                  <div className="flex items-center gap-4 mb-6">
-                    <img
-                      src={stageLogos[stage.color]}
-                      alt=""
-                      aria-hidden="true"
-                      className="shrink-0 h-10 w-auto"
-                      loading="lazy"
-                    />
-                    <span className={`font-sans text-xs uppercase tracking-widest font-medium ${colors.text}`}>
-                      {stage.number}
-                    </span>
-                    <div className={`h-px flex-1 border-t ${colors.border} opacity-30`} />
-                  </div>
-                  <h2 className={`font-display ${colors.bg === "bg-aubergine" ? "text-soft-white" : colors.text} text-3xl md:text-4xl mb-2`}>
-                    {stage.name}
-                  </h2>
-                  <p className={`font-display ${colors.text} text-xl italic mb-10`}>
-                    "{stage.tagline}"
-                  </p>
-                </ScrollFadeUp>
 
                 <div className={`space-y-8 font-sans ${colors.body} text-lg leading-relaxed`}>
                 <ScrollFadeUp delay={100}>
