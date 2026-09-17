@@ -107,7 +107,7 @@ const TheFiveStages = () => {
       <Seo
         title="The Five Stages of The Great Repurpose"
         description="Unhook Identity, Reclaim Value, Discover Purpose, Become AI Ready, Relaunch Yourself — the five dimensions people live through when AI reshapes their work."
-        path="/the-five-stages"
+        path="/stages"
       />
       <Navigation />
       <main id="main-content">

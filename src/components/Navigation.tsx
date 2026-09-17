@@ -26,7 +26,7 @@ export function Navigation() {
   }, [location]);
 
   const navLinks = [
-    { to: "/the-five-stages", label: "The Five Stages" },
+    { to: "/stages", label: "The Five Stages" },
     { to: "/types", label: "Profiles" },
     { to: "/academy", label: "Academy" },
     { to: "/signals", label: "Daily Signal" },
