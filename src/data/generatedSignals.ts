@@ -3,6 +3,33 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-18-building-human-capacity-for-agentic-work",
+    "date": "2026-09-18",
+    "title": "Building Human Capacity For Agentic Work",
+    "pattern": "Microsoft's Frontier Firm Playbook, unapproved workplace agents, and AI sales-and-service teams at 50 auto dealerships all make agentic work tangible. The Conference Board's four job futures and the different education approaches in the UAE and New York point to the same human tension: organizations are deploying AI faster than they are designing the judgment, governance, and learning people need to direct it. The work ahead is not simply rolling out agents; it is building credible ways for people to contribute alongside them.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://cdn-res.keymedia.com/cms/images/in/kris_638721076384441937.png"
+  },
+  {
+    "slug": "2026-09-17-career-resilience-requires-human-judgment",
+    "date": "2026-09-17",
+    "title": "Career Resilience Requires Human Judgment",
+    "pattern": "A twelve-day-old agent called Pip is already seeking paid work, while a new report warns that employers may have to rehire 30% of people affected by AI layoffs at a higher cost. Luma's study of creative professionals, the debate over college graduates, and Forbes' case for the human edge all put the same pressure on careers: automation can change tasks quickly, but durable work still depends on judgment, relationships, learning, and a reason to contribute. The transition will be healthier when people are helped to build those capacities rather than simply compete with a machine's output.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Unhook Identity",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/04/20260411021838_Worker-AI-agent.png"
+  },
+  {
     "slug": "2026-09-16-human-direction-defines-the-ai-transition",
     "date": "2026-09-16",
     "title": "Human Direction Defines The AI Transition",
@@ -1153,6 +1180,199 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-18-building-human-capacity-for-agentic-work": {
+    "slug": "2026-09-18-building-human-capacity-for-agentic-work",
+    "date": "2026-09-18",
+    "title": "Building Human Capacity For Agentic Work",
+    "pattern": "Microsoft's Frontier Firm Playbook, unapproved workplace agents, and AI sales-and-service teams at 50 auto dealerships all make agentic work tangible. The Conference Board's four job futures and the different education approaches in the UAE and New York point to the same human tension: organizations are deploying AI faster than they are designing the judgment, governance, and learning people need to direct it. The work ahead is not simply rolling out agents; it is building credible ways for people to contribute alongside them.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://cdn-res.keymedia.com/cms/images/in/kris_638721076384441937.png",
+    "stories": [
+      {
+        "title": "Microsoft's Playbook Reframes Human Value",
+        "url": "https://www.forbes.com/sites/niritcohen/2026/09/17/microsoft-frontier-firm-playbook-shows-how-human-value-keeps-moving/",
+        "source": "forbes.com",
+        "published": "2026-09-17T07:27:00+00:00",
+        "summary": "Forbes examines Microsoft's Frontier Firm Playbook and its premise that AI can learn from a company's tacit knowledge. That makes the value question sharper, not smaller: when systems absorb more know-how, people need to make their judgment, context, trust, and choices visible.",
+        "keyPoints": [
+          "Microsoft's playbook considers how AI can learn from an organization's tacit knowledge.",
+          "Human value shifts toward judgment, context, trust, and choices that execution alone cannot explain."
+        ],
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "imageUrl": ""
+      },
+      {
+        "title": "Shadow Agents Expose a Governance Gap",
+        "url": "https://finance.yahoo.com/technology/ai/articles/shadow-agent-gap-67-workers-120952237.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-09-17T05:09:00+00:00",
+        "summary": "A reported 67% of U.S. workers are using unapproved AI tools while enterprises build governance infrastructure around them. The gap is not merely a policy problem; it shows that people are already redesigning work with agents and need clear responsibility, guardrails, and support.",
+        "keyPoints": [
+          "The article reports that 67% of U.S. workers use unapproved AI tools.",
+          "Workplace adoption needs governance that helps people use agents responsibly in real workflows."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "imageUrl": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png"
+      },
+      {
+        "title": "Dealerships Put AI Into Customer Work",
+        "url": "https://markets.businessinsider.com/news/stocks/igniteups-ai-reaches-50-dealer-partners-as-dealerships-deploy-fullscale-ai-workforce-across-sales-and-service-1036556438",
+        "source": "markets.businessinsider.com",
+        "published": "2026-09-17T23:29:00+00:00",
+        "summary": "IgniteUps AI says its platform now supports leads, calls, and service conversations at 50 dealership partners. As agents move into customer-facing work, the human role has to expand beyond completing each exchange to setting standards, handling exceptions, and owning the relationship.",
+        "keyPoints": [
+          "The platform is deployed across 50 dealership partners in sales and service workflows.",
+          "Customer-facing agents raise the value of human oversight, standards, and relationship ownership."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/CqUC39NlcCczdNcC5rKEoyqgqXu2/1789610345710-0.png"
+      },
+      {
+        "title": "Four Job Futures Demand Preparedness",
+        "url": "https://www.investmentnews.com/practice-management/what-ai-means-for-jobs-four-futures-every-advisor-should-know/268219",
+        "source": "investmentnews.com",
+        "published": "2026-09-16T06:41:00+00:00",
+        "summary": "InvestmentNews covers a Conference Board report outlining four possible futures for AI-driven labor disruption. The scenarios are a reminder that people cannot wait for a single forecast to feel certain before building portable capabilities, relationships, and a sense of value beyond the job wrapper.",
+        "keyPoints": [
+          "The Conference Board report maps four potential paths for AI's effect on jobs.",
+          "Preparation means strengthening capabilities and identity that can travel across changing work."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": "https://cdn-res.keymedia.com/cms/images/in/kris_638721076384441937.png"
+      },
+      {
+        "title": "Education Must Balance Fluency and Friction",
+        "url": "https://www.forbes.com/sites/michaeledmondson/2026/09/15/the-ai-education-paradox-preparing-students-for-an-ai-workforce/",
+        "source": "forbes.com",
+        "published": "2026-09-15T06:39:00+00:00",
+        "summary": "Forbes contrasts approaches in the UAE and New York to preparing students for an AI-shaped workforce. AI fluency matters, but so does preserving the productive friction through which people develop judgment, confidence, and the ability to do meaningful work with the tools.",
+        "keyPoints": [
+          "The article compares AI-education approaches in the UAE and New York.",
+          "Future readiness needs both tool fluency and opportunities to build independent judgment."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": ""
+      }
+    ],
+    "sourceStatus": "generated"
+  },
+  "2026-09-17-career-resilience-requires-human-judgment": {
+    "slug": "2026-09-17-career-resilience-requires-human-judgment",
+    "date": "2026-09-17",
+    "title": "Career Resilience Requires Human Judgment",
+    "pattern": "A twelve-day-old agent called Pip is already seeking paid work, while a new report warns that employers may have to rehire 30% of people affected by AI layoffs at a higher cost. Luma's study of creative professionals, the debate over college graduates, and Forbes' case for the human edge all put the same pressure on careers: automation can change tasks quickly, but durable work still depends on judgment, relationships, learning, and a reason to contribute. The transition will be healthier when people are helped to build those capacities rather than simply compete with a machine's output.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Unhook Identity",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/04/20260411021838_Worker-AI-agent.png",
+    "stories": [
+      {
+        "title": "A Twelve-Day-Old AI Agent Goes Job Hunting",
+        "url": "https://www.moneycontrol.com/news/trends/12-day-old-ai-agent-goes-job-hunting-emails-philosopher-for-paid-work-14032109.html",
+        "source": "moneycontrol.com",
+        "published": "2026-09-17T03:01:00+00:00",
+        "summary": "Moneycontrol reports that Pip, an AI agent on the iLands platform, sought paid freelance work to earn tokens and keep operating. The story makes labor-market automation feel less abstract: agents can now be framed as participants in the same market for tasks. TGR's question is what humans will be valued for when execution itself becomes an applicant.",
+        "keyPoints": [
+          "Pip sought paid work to earn the tokens required to continue operating.",
+          "The episode makes AI's entry into task markets concrete rather than theoretical."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/04/20260411021838_Worker-AI-agent.png"
+      },
+      {
+        "title": "AI Layoffs Can Create Costly Rehiring",
+        "url": "https://www.hcamag.com/ca/specialization/transformation/employers-will-need-to-rehire-30-of-workers-affected-by-ai-layoffs-at-higher-cost-report/589966",
+        "source": "hcamag.com",
+        "published": "2026-09-16T08:59:03+00:00",
+        "summary": "HRD Canada covers a report estimating that employers may need to rehire 30% of workers affected by AI layoffs, at higher cost. It challenges the idea that automation is a one-way replacement calculation. For TGR, the overlooked asset is institutional knowledge: organizations that discard people too quickly may discover that judgment, context, and trust are expensive to rebuild.",
+        "keyPoints": [
+          "The report projects costly rehiring after some AI-driven layoffs.",
+          "Workforce decisions must account for knowledge and relationships, not only near-term automation savings."
+        ],
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/036/0363_639251601968562405.png"
+      },
+      {
+        "title": "Creative Professionals Keep Human Judgment Central",
+        "url": "https://finance.yahoo.com/technology/ai/articles/luma-study-finds-ai-become-160000514.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-09-16T09:01:00+00:00",
+        "summary": "Luma's study finds AI has become mainstream among creative professionals, with 81% reporting that they have released AI-assisted content. Yet the study still identifies human judgment as the industry's defining advantage. That distinction matters: when generation becomes common, taste, standards, and responsibility for the finished work become more—not less—valuable.",
+        "keyPoints": [
+          "Most surveyed creative professionals report publishing AI-assisted work.",
+          "Human judgment remains the differentiator in a more automated creative process."
+        ],
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "imageUrl": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png"
+      },
+      {
+        "title": "College Graduates Face AI's Entry-Level Challenge",
+        "url": "https://www.wsj.com/opinion/college-grads-vs-the-ai-job-apocalypse-8858fc7e",
+        "source": "wsj.com",
+        "published": "2026-09-15T14:48:00+00:00",
+        "summary": "The Wall Street Journal opinion piece considers how AI's takeover of entry-level tasks is changing the value conversation around college. For new graduates, the disruption is not only economic; it interrupts the early work through which people gain confidence, judgment, and a professional identity. TGR sees an urgent design problem: preserve real on-ramps into capability.",
+        "keyPoints": [
+          "AI is putting pressure on tasks that have traditionally helped graduates enter work.",
+          "Early-career pathways need to develop judgment and confidence, not just credentials."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": ""
+      },
+      {
+        "title": "The Human Edge Needs Career Design",
+        "url": "https://www.forbes.com/councils/forbescoachescouncil/2026/09/16/the-human-edge-in-the-age-of-ai-how-to-future-proof-your-career/",
+        "source": "forbes.com",
+        "published": "2026-09-15T21:00:00+00:00",
+        "summary": "Forbes argues that AI-native operations can lose the institutional wisdom carried by culture-bearers and mentors. Future-proofing a career therefore cannot mean chasing every new tool in isolation. It means cultivating the human capacities that travel across changing systems: relationships, discernment, learning, and the ability to help others make sense of what matters.",
+        "keyPoints": [
+          "AI-native operations risk losing knowledge transmitted through mentors and culture-bearers.",
+          "Career resilience rests on durable human capacities alongside technical fluency."
+        ],
+        "stages": [
+          "Discover Purpose",
+          "Unhook Identity"
+        ],
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a84862ac2ae2870c08a7275/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-16-human-direction-defines-the-ai-transition": {
     "slug": "2026-09-16-human-direction-defines-the-ai-transition",
     "date": "2026-09-16",

@@ -1,0 +1,82 @@
+{
+  "slug": "2026-09-17-career-resilience-requires-human-judgment",
+  "date": "2026-09-17",
+  "title": "Career Resilience Requires Human Judgment",
+  "pattern": "A twelve-day-old agent called Pip is already seeking paid work, while a new report warns that employers may have to rehire 30% of people affected by AI layoffs at a higher cost. Luma's study of creative professionals, the debate over college graduates, and Forbes' case for the human edge all put the same pressure on careers: automation can change tasks quickly, but durable work still depends on judgment, relationships, learning, and a reason to contribute. The transition will be healthier when people are helped to build those capacities rather than simply compete with a machine's output.",
+  "stages": [
+    "Reclaim Value",
+    "Become AI Ready",
+    "Relaunch Yourself",
+    "Unhook Identity",
+    "Discover Purpose"
+  ],
+  "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/04/20260411021838_Worker-AI-agent.png",
+  "stories": [
+    {
+      "title": "A Twelve-Day-Old AI Agent Goes Job Hunting",
+      "url": "https://www.moneycontrol.com/news/trends/12-day-old-ai-agent-goes-job-hunting-emails-philosopher-for-paid-work-14032109.html",
+      "source": "moneycontrol.com",
+      "published": "2026-09-17T03:01:00+00:00",
+      "summary": "Moneycontrol reports that Pip, an AI agent on the iLands platform, sought paid freelance work to earn tokens and keep operating. The story makes labor-market automation feel less abstract: agents can now be framed as participants in the same market for tasks. TGR's question is what humans will be valued for when execution itself becomes an applicant.",
+      "keyPoints": [
+        "Pip sought paid work to earn the tokens required to continue operating.",
+        "The episode makes AI's entry into task markets concrete rather than theoretical."
+      ],
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/04/20260411021838_Worker-AI-agent.png"
+    },
+    {
+      "title": "AI Layoffs Can Create Costly Rehiring",
+      "url": "https://www.hcamag.com/ca/specialization/transformation/employers-will-need-to-rehire-30-of-workers-affected-by-ai-layoffs-at-higher-cost-report/589966",
+      "source": "hcamag.com",
+      "published": "2026-09-16T08:59:03+00:00",
+      "summary": "HRD Canada covers a report estimating that employers may need to rehire 30% of workers affected by AI layoffs, at higher cost. It challenges the idea that automation is a one-way replacement calculation. For TGR, the overlooked asset is institutional knowledge: organizations that discard people too quickly may discover that judgment, context, and trust are expensive to rebuild.",
+      "keyPoints": [
+        "The report projects costly rehiring after some AI-driven layoffs.",
+        "Workforce decisions must account for knowledge and relationships, not only near-term automation savings."
+      ],
+      "stages": ["Reclaim Value", "Relaunch Yourself"],
+      "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/036/0363_639251601968562405.png"
+    },
+    {
+      "title": "Creative Professionals Keep Human Judgment Central",
+      "url": "https://finance.yahoo.com/technology/ai/articles/luma-study-finds-ai-become-160000514.html",
+      "source": "finance.yahoo.com",
+      "published": "2026-09-16T09:01:00+00:00",
+      "summary": "Luma's study finds AI has become mainstream among creative professionals, with 81% reporting that they have released AI-assisted content. Yet the study still identifies human judgment as the industry's defining advantage. That distinction matters: when generation becomes common, taste, standards, and responsibility for the finished work become more—not less—valuable.",
+      "keyPoints": [
+        "Most surveyed creative professionals report publishing AI-assisted work.",
+        "Human judgment remains the differentiator in a more automated creative process."
+      ],
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "imageUrl": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png"
+    },
+    {
+      "title": "College Graduates Face AI's Entry-Level Challenge",
+      "url": "https://www.wsj.com/opinion/college-grads-vs-the-ai-job-apocalypse-8858fc7e",
+      "source": "wsj.com",
+      "published": "2026-09-15T14:48:00+00:00",
+      "summary": "The Wall Street Journal opinion piece considers how AI's takeover of entry-level tasks is changing the value conversation around college. For new graduates, the disruption is not only economic; it interrupts the early work through which people gain confidence, judgment, and a professional identity. TGR sees an urgent design problem: preserve real on-ramps into capability.",
+      "keyPoints": [
+        "AI is putting pressure on tasks that have traditionally helped graduates enter work.",
+        "Early-career pathways need to develop judgment and confidence, not just credentials."
+      ],
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "imageUrl": ""
+    },
+    {
+      "title": "The Human Edge Needs Career Design",
+      "url": "https://www.forbes.com/councils/forbescoachescouncil/2026/09/16/the-human-edge-in-the-age-of-ai-how-to-future-proof-your-career/",
+      "source": "forbes.com",
+      "published": "2026-09-15T21:00:00+00:00",
+      "summary": "Forbes argues that AI-native operations can lose the institutional wisdom carried by culture-bearers and mentors. Future-proofing a career therefore cannot mean chasing every new tool in isolation. It means cultivating the human capacities that travel across changing systems: relationships, discernment, learning, and the ability to help others make sense of what matters.",
+      "keyPoints": [
+        "AI-native operations risk losing knowledge transmitted through mentors and culture-bearers.",
+        "Career resilience rests on durable human capacities alongside technical fluency."
+      ],
+      "stages": ["Discover Purpose", "Unhook Identity"],
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a84862ac2ae2870c08a7275/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+    }
+  ],
+  "sourceStatus": "generated"
+}

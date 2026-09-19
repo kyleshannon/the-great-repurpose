@@ -1,0 +1,81 @@
+{
+  "slug": "2026-09-18-building-human-capacity-for-agentic-work",
+  "date": "2026-09-18",
+  "title": "Building Human Capacity For Agentic Work",
+  "pattern": "Microsoft's Frontier Firm Playbook, unapproved workplace agents, and AI sales-and-service teams at 50 auto dealerships all make agentic work tangible. The Conference Board's four job futures and the different education approaches in the UAE and New York point to the same human tension: organizations are deploying AI faster than they are designing the judgment, governance, and learning people need to direct it. The work ahead is not simply rolling out agents; it is building credible ways for people to contribute alongside them.",
+  "stages": [
+    "Become AI Ready",
+    "Reclaim Value",
+    "Unhook Identity",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://cdn-res.keymedia.com/cms/images/in/kris_638721076384441937.png",
+  "stories": [
+    {
+      "title": "Microsoft's Playbook Reframes Human Value",
+      "url": "https://www.forbes.com/sites/niritcohen/2026/09/17/microsoft-frontier-firm-playbook-shows-how-human-value-keeps-moving/",
+      "source": "forbes.com",
+      "published": "2026-09-17T07:27:00+00:00",
+      "summary": "Forbes examines Microsoft's Frontier Firm Playbook and its premise that AI can learn from a company's tacit knowledge. That makes the value question sharper, not smaller: when systems absorb more know-how, people need to make their judgment, context, trust, and choices visible.",
+      "keyPoints": [
+        "Microsoft's playbook considers how AI can learn from an organization's tacit knowledge.",
+        "Human value shifts toward judgment, context, trust, and choices that execution alone cannot explain."
+      ],
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "imageUrl": ""
+    },
+    {
+      "title": "Shadow Agents Expose a Governance Gap",
+      "url": "https://finance.yahoo.com/technology/ai/articles/shadow-agent-gap-67-workers-120952237.html",
+      "source": "finance.yahoo.com",
+      "published": "2026-09-17T05:09:00+00:00",
+      "summary": "A reported 67% of U.S. workers are using unapproved AI tools while enterprises build governance infrastructure around them. The gap is not merely a policy problem; it shows that people are already redesigning work with agents and need clear responsibility, guardrails, and support.",
+      "keyPoints": [
+        "The article reports that 67% of U.S. workers use unapproved AI tools.",
+        "Workplace adoption needs governance that helps people use agents responsibly in real workflows."
+      ],
+      "stages": ["Unhook Identity", "Become AI Ready"],
+      "imageUrl": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png"
+    },
+    {
+      "title": "Dealerships Put AI Into Customer Work",
+      "url": "https://markets.businessinsider.com/news/stocks/igniteups-ai-reaches-50-dealer-partners-as-dealerships-deploy-fullscale-ai-workforce-across-sales-and-service-1036556438",
+      "source": "markets.businessinsider.com",
+      "published": "2026-09-17T23:29:00+00:00",
+      "summary": "IgniteUps AI says its platform now supports leads, calls, and service conversations at 50 dealership partners. As agents move into customer-facing work, the human role has to expand beyond completing each exchange to setting standards, handling exceptions, and owning the relationship.",
+      "keyPoints": [
+        "The platform is deployed across 50 dealership partners in sales and service workflows.",
+        "Customer-facing agents raise the value of human oversight, standards, and relationship ownership."
+      ],
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/CqUC39NlcCczdNcC5rKEoyqgqXu2/1789610345710-0.png"
+    },
+    {
+      "title": "Four Job Futures Demand Preparedness",
+      "url": "https://www.investmentnews.com/practice-management/what-ai-means-for-jobs-four-futures-every-advisor-should-know/268219",
+      "source": "investmentnews.com",
+      "published": "2026-09-16T06:41:00+00:00",
+      "summary": "InvestmentNews covers a Conference Board report outlining four possible futures for AI-driven labor disruption. The scenarios are a reminder that people cannot wait for a single forecast to feel certain before building portable capabilities, relationships, and a sense of value beyond the job wrapper.",
+      "keyPoints": [
+        "The Conference Board report maps four potential paths for AI's effect on jobs.",
+        "Preparation means strengthening capabilities and identity that can travel across changing work."
+      ],
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "imageUrl": "https://cdn-res.keymedia.com/cms/images/in/kris_638721076384441937.png"
+    },
+    {
+      "title": "Education Must Balance Fluency and Friction",
+      "url": "https://www.forbes.com/sites/michaeledmondson/2026/09/15/the-ai-education-paradox-preparing-students-for-an-ai-workforce/",
+      "source": "forbes.com",
+      "published": "2026-09-15T06:39:00+00:00",
+      "summary": "Forbes contrasts approaches in the UAE and New York to preparing students for an AI-shaped workforce. AI fluency matters, but so does preserving the productive friction through which people develop judgment, confidence, and the ability to do meaningful work with the tools.",
+      "keyPoints": [
+        "The article compares AI-education approaches in the UAE and New York.",
+        "Future readiness needs both tool fluency and opportunities to build independent judgment."
+      ],
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "imageUrl": ""
+    }
+  ],
+  "sourceStatus": "generated"
+}
