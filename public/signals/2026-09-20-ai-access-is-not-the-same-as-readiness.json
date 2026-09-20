@@ -1,0 +1,102 @@
+{
+  "slug": "2026-09-20-ai-access-is-not-the-same-as-readiness",
+  "date": "2026-09-20",
+  "title": "AI Access Is Not the Same as Readiness",
+  "pattern": "The Tech Edvocate’s career analysis and course roundup put the burden of adaptation on individuals, while STOCK-UP describes how schools can connect AI literacy with a larger sense of direction. Mint’s report on agentic AI setbacks and Digital Trends’ account of employees bringing their own tools show what happens when access outruns shared practice. The human work is to turn experimentation into capability, with institutions helping people build judgment, confidence, and a place to contribute.",
+  "stages": [
+    "Become AI Ready",
+    "Reclaim Value",
+    "Unhook Identity",
+    "Discover Purpose",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://assets.st-note.com/production/uploads/images/315631971/rectangle_large_type_2_7f58685a70ada35a75b33d34881cb5e2.png?fit=bounds&quality=85&width=1280",
+  "stories": [
+    {
+      "title": "AI Skills Are Changing What Tech Careers Require",
+      "url": "https://www.thetechedvocate.org/the-brutal-truth-ai-skills-will-devour-traditional-tech-roles-sooner-than-you-think/",
+      "source": "thetechedvocate.org",
+      "published": "2026-09-20T02:27:51+00:00",
+      "summary": "The Tech Edvocate argues that AI is absorbing some of the routine work through which junior technologists traditionally gained experience, while raising demand for model integration, data literacy, and ethical judgment. Its useful distinction is that existing technical foundations still matter, but their application is changing. For The Great Repurpose, the question is how people demonstrate portable judgment when the old entry-level training ground gets smaller.",
+      "imageUrl": "https://www.thetechedvocate.org/wp-content/uploads/2026/09/featured-image-1789871256087.png",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Routine coding and troubleshooting have served as learning opportunities as well as production tasks.",
+        "The article describes a blend of established technical skills and new AI capabilities, rather than a clean break with prior experience.",
+        "Career development needs ways to practice judgment, not just a new list of tools."
+      ]
+    },
+    {
+      "title": "AI Reskilling Options Span Literacy and Hands-On Building",
+      "url": "https://www.thetechedvocate.org/7-ai-reskilling-courses-tech-professionals-swear-by-to-avoid-job-loss/",
+      "source": "thetechedvocate.org",
+      "published": "2026-09-20T02:26:50+00:00",
+      "summary": "A Tech Edvocate course roundup distinguishes broad AI literacy from deeper technical training, citing offerings such as AI for Everyone and project-based learning for developers. The article frames education as a response to career anxiety, but a course list cannot guarantee job security. The practical TGR move is to choose a learning goal tied to work you want to do, then build something that demonstrates the capability.",
+      "imageUrl": "https://www.thetechedvocate.org/wp-content/uploads/2026/09/featured-image-1789871191641.png",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Nontechnical AI literacy and technical model development serve different learning goals.",
+        "Treat the roundup as a starting point; check a provider’s current syllabus and availability before enrolling.",
+        "Convert learning into a small, observable project that expresses your own strengths."
+      ]
+    },
+    {
+      "title": "STOCK-UP Connects AI Literacy With Career Direction",
+      "url": "https://note.com/stock_up/n/n907883b32862?hl=en",
+      "source": "note.com",
+      "published": "2026-09-20T02:30:00+00:00",
+      "summary": "In its own program overview, Japanese education company STOCK-UP describes school support that combines AI literacy, career exploration, and teacher training. Students are asked to verify AI answers, understand information risks, and explore career as a way of participating in society rather than simply choosing a job title. That is a concrete model for helping people build both technical confidence and a clearer sense of who they want to become.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/315631971/rectangle_large_type_2_7f58685a70ada35a75b33d34881cb5e2.png?fit=bounds&quality=85&width=1280",
+      "stages": [
+        "Discover Purpose",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "The company describes lessons on hallucinations, information protection, and checking answers against primary sources.",
+        "Career exercises connect personal strengths with social roles and a next action to try.",
+        "The offering is a provider’s description of its approach, not an independent evaluation of learning outcomes."
+      ]
+    },
+    {
+      "title": "Agentic AI Adoption Does Not Guarantee Productivity Gains",
+      "url": "https://www.livemint.com/technology/tech-news/mckinsey-report-shows-productivity-decline-in-30-of-companies-using-agentic-ai-11789881025363.html",
+      "source": "livemint.com",
+      "published": "2026-09-20T05:10:24+00:00",
+      "summary": "An ANI report carried by Mint, citing McKinsey’s Technology Trends Outlook 2026, says productivity fell in roughly 30 percent of companies after teams began using agentic AI tools. It describes a gap between more coding activity and actual releases, alongside developer concerns about accuracy. The TGR lesson is that installing autonomous tools still leaves humans responsible for the workflow, the quality standard, and the definition of useful progress.",
+      "imageUrl": "https://www.livemint.com/lm-img/img/2024/12/18/1600x900/logo/tech1_1734536428801_1734536438047.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Mint’s report attributes the productivity finding to McKinsey; it is not evidence that every AI deployment reduces performance.",
+        "More generated code is an activity measure, not proof of a better delivered product.",
+        "Teams need clear review responsibilities and outcomes they can measure."
+      ]
+    },
+    {
+      "title": "Employees Bring Their Own AI Tools to Work",
+      "url": "https://www.digitaltrends.com/cool-tech/workers-bringing-own-ai-to-work-study/",
+      "source": "digitaltrends.com",
+      "published": "2026-09-19T05:33:00+00:00",
+      "summary": "Digital Trends reports on a University of Konstanz study describing slow growth in workplace AI adoption and employees bringing their own AI tools into the job. The pattern suggests that personal experimentation and organizational readiness are moving at different speeds. For The Great Repurpose, individual curiosity needs a shared path into supported practice, with room for workers to surface doubts and shape how the tools are used.",
+      "imageUrl": "",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The reported study distinguishes growing AI interest from the pace of workplace adoption.",
+        "Employees’ own tool choices are part of the adoption picture.",
+        "Organizations can build on that initiative through shared learning and clear expectations."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
