@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-19-new-careers-need-human-accountability",
+    "date": "2026-09-19",
+    "title": "New Careers Need Human Accountability",
+    "pattern": "A broken career ladder for knowledge workers, recession-like prospects for computer-science graduates, and creators bringing AI into public-facing work show that AI is already changing how people enter and advance through careers. At the same time, a commerce test exposes where agents fail and HR leaders are building the systems that will shape adoption. The human tension is clear: opportunity now depends less on simply using AI and more on proving judgment, responsibility, and a distinct contribution around it.",
+    "stages": [
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/8b47819b4e7fc9f940159b5fdf22d89ea74125ecb596cfd5d0dcd8dab25c23ab/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fzdnet_articles_730%2F3521dd55fe7e25fe51323f0bda2cf44c.jpg"
+  },
+  {
     "slug": "2026-09-18-building-human-capacity-for-agentic-work",
     "date": "2026-09-18",
     "title": "Building Human Capacity For Agentic Work",
@@ -1180,6 +1193,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-19-new-careers-need-human-accountability": {
+    "slug": "2026-09-19-new-careers-need-human-accountability",
+    "date": "2026-09-19",
+    "title": "New Careers Need Human Accountability",
+    "pattern": "A broken career ladder for knowledge workers, recession-like prospects for computer-science graduates, and creators bringing AI into public-facing work show that AI is already changing how people enter and advance through careers. At the same time, a commerce test exposes where agents fail and HR leaders are building the systems that will shape adoption. The human tension is clear: opportunity now depends less on simply using AI and more on proving judgment, responsibility, and a distinct contribution around it.",
+    "stages": [
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/8b47819b4e7fc9f940159b5fdf22d89ea74125ecb596cfd5d0dcd8dab25c23ab/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fzdnet_articles_730%2F3521dd55fe7e25fe51323f0bda2cf44c.jpg",
+    "stories": [
+      {
+        "title": "Career Ladders Give Way to New Routes",
+        "url": "https://www.yahoo.com/lifestyle/articles/ai-just-broke-career-ladder-190654001.html",
+        "source": "yahoo.com",
+        "published": "2026-09-18T12:06:00+00:00",
+        "summary": "A Yahoo report argues that traditional career ladders are giving way to more lattice-like routes as AI changes work. That shift asks people to separate progress from a familiar title sequence and build a career around adaptable strengths, relationships, and visible contribution.",
+        "keyPoints": [
+          "Traditional career paths are shifting toward less linear structures.",
+          "Career resilience increasingly depends on portable strengths and relationships."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/8b47819b4e7fc9f940159b5fdf22d89ea74125ecb596cfd5d0dcd8dab25c23ab/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fzdnet_articles_730%2F3521dd55fe7e25fe51323f0bda2cf44c.jpg"
+      },
+      {
+        "title": "Commerce Testing Finds Agent Limits",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/commerce-test-shows-where-ai-agents-break-down/",
+        "source": "pymnts.com",
+        "published": "2026-09-18T19:36:53+00:00",
+        "summary": "PYMNTS examines a commerce test that reveals where AI agents break down, challenging the assumption that agentic commerce will work reliably by default. The lesson for organizations is that readiness includes testing real-world failures and assigning people clear responsibility for trust, exceptions, and outcomes.",
+        "keyPoints": [
+          "A commerce test identifies practical breakdowns in AI-agent performance.",
+          "Responsible deployment requires people to own exceptions and customer trust."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "imageUrl": "https://www.pymnts.com/wp-content/uploads/2026/09/AI-agents-commerce-breakdown.jpeg"
+      },
+      {
+        "title": "Creators Put AI Into Their Craft",
+        "url": "https://www.yahoo.com/entertainment/articles/ai-creator-day-adds-rebecca-160000245.html",
+        "source": "yahoo.com",
+        "published": "2026-09-17T09:00:00+00:00",
+        "summary": "AI Creator Day is adding Rebecca Zamolo, Matt Slays, and Vincent Marcus, creators whose audiences reach tens of millions. Their participation shows a practical version of relaunching: AI becomes part of a creator's process while the audience connection, point of view, and reputation remain distinctly human.",
+        "keyPoints": [
+          "Rebecca Zamolo, Matt Slays, and Vincent Marcus are joining AI Creator Day.",
+          "Creator opportunity still rests on human perspective, audience trust, and reputation."
+        ],
+        "stages": [
+          "Relaunch Yourself",
+          "Become AI Ready"
+        ],
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/f99356fc90fed9292499446245a4ca1e1c0cc073f9b2f8ba3894a8de2e4083fd/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthewrap.com%2F7099ac145d6c8b778bbf7636ecd705f0.png"
+      },
+      {
+        "title": "Computer-Science Graduates Face a Harder Start",
+        "url": "https://www.theregister.com/ai-and-ml/2026/09/18/compsci-grads-facing-recession-like-job-prospects-thanks-to-ai/5297537",
+        "source": "theregister.com",
+        "published": "2026-09-18T19:48:22+00:00",
+        "summary": "The Register reports that computer-science graduates face recession-like job prospects as AI reshapes entry-level work. It is a sharp reminder that a credential or technical identity cannot guarantee a path; emerging workers need opportunities to demonstrate judgment, learning, and value beyond routine execution.",
+        "keyPoints": [
+          "Computer-science graduates are encountering recession-like job prospects.",
+          "Early-career opportunity needs paths to demonstrate judgment and adaptable value."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": "https://image.theregister.com/233361.jpg?imageId=233361&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+      },
+      {
+        "title": "HR Leaders Build AI Into Work",
+        "url": "https://www.inc.com/netta-jenkins/20-hr-leaders-are-building-the-ai-powered-future-of-work-heres-what-theyre-building/91403679",
+        "source": "inc.com",
+        "published": "2026-09-15T09:00:00+00:00",
+        "summary": "Inc. profiles 20 HR leaders building AI agents for real business problems and changing how HR works. Their work matters because the future of work will be designed through choices about capability, accountability, and access—not merely through which tools an organization buys.",
+        "keyPoints": [
+          "Twenty HR leaders are building AI agents for concrete business problems.",
+          "Workforce design must pair new tools with accountability and meaningful access."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "imageUrl": ""
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-18-building-human-capacity-for-agentic-work": {
     "slug": "2026-09-18-building-human-capacity-for-agentic-work",
     "date": "2026-09-18",
