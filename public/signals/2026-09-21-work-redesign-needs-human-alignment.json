@@ -1,0 +1,102 @@
+{
+  "slug": "2026-09-21-work-redesign-needs-human-alignment",
+  "date": "2026-09-21",
+  "title": "Work Redesign Needs Human Alignment",
+  "pattern": "CEOWORLD's account of role compression, Grit Daily's case for realignment, and IBM's finding that leaders value critical thinking all describe work changing faster than people can simply reskill into it. Google is teaching Kenyan creators to use Gemini, while NEC research on a confirmation point asks who remains accountable when AI agents act. The real transition is not reducing people to the tasks AI leaves behind; it is helping them align judgment, learning, and responsibility with work worth doing.",
+  "stages": [
+    "Reclaim Value",
+    "Become AI Ready",
+    "Unhook Identity",
+    "Discover Purpose",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://newsroom.ibm.com/image/CHRO-Hero-C-Wide_social.png",
+  "stories": [
+    {
+      "title": "AI Layoffs Point to Role Compression",
+      "url": "https://ceoworld.biz/2026/09/21/ai-layoffs-are-not-just-job-cuts-they-are-role-compression/",
+      "source": "ceoworld.biz",
+      "published": "2026-09-21T02:43:42+00:00",
+      "summary": "CEOWORLD argues that the larger organizational shift behind AI layoffs may be role compression: work once distributed across several jobs or management layers is being gathered into fewer roles. That changes more than headcount. For The Great Repurpose, people need to identify the judgment, relationships, and outcomes they can own when a familiar job description no longer contains the same pathway.",
+      "imageUrl": "https://cdn.ceoworld.biz/wp-content/uploads/2026/09/market-stock-graph-data.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The article distinguishes role compression from a simple tally of eliminated jobs.",
+        "Fewer layers can concentrate responsibilities that previously created several career steps.",
+        "A durable response starts by naming the human outcomes a person can be trusted to own."
+      ]
+    },
+    {
+      "title": "Google Trains Kenyan Creators on Gemini",
+      "url": "https://techtrendske.co.ke/2026/09/21/google-trains-kenyan-gen-z-creators-students-on-gemini-ai-tools/",
+      "source": "techtrendske.co.ke",
+      "published": "2026-09-21T10:50:49+00:00",
+      "summary": "TechTrends Kenya reports that Google's Tutunge na Gemini workshop in Nairobi is teaching Gen Z creators, students, and media participants how to use Gemini tools. The workshop is a reminder that access becomes meaningful through practice in a real creative community. The TGR opportunity is to turn tool fluency into work that reflects a person's voice, audience knowledge, and intention.",
+      "imageUrl": "https://techtrendske.co.ke/wp-content/uploads/2026/09/Janet-Kemboi-Head-of-Google-Communications-Public-Affairs-Sub-Saharan-Africa-during-the-media-and-content-creators-workshop.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "The Nairobi workshop focuses on creators, students, and media participants using Gemini.",
+        "Hands-on learning connects AI capability to an existing creative practice and audience.",
+        "Tool access is more useful when people can apply it to a contribution they want to make."
+      ]
+    },
+    {
+      "title": "Realignment Becomes a Future-of-Work Skill",
+      "url": "https://gritdaily.com/is-realignment-the-next-big-skill-for-the-future-of-work/",
+      "source": "gritdaily.com",
+      "published": "2026-09-21T10:09:53+00:00",
+      "summary": "Grit Daily frames realignment, rather than reskilling alone, as a necessary response to AI, layoffs, and ongoing workplace disruption. The distinction matters: gaining a new skill does not automatically answer where a person's experience, values, and energy should go next. For The Great Repurpose, realignment means reconnecting capability with a direction that can survive a changing role map.",
+      "imageUrl": "https://gritdaily.com/wp-content/uploads/2026/09/pexels-fauxels-3184668.jpg",
+      "stages": [
+        "Discover Purpose",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "The article treats disruption as a reason to reassess direction, not merely acquire another credential.",
+        "Realignment links changing external conditions to a person's values and longer-term contribution.",
+        "Career moves become more resilient when they are guided by purpose as well as market demand."
+      ]
+    },
+    {
+      "title": "AI Delegation Needs a Confirmation Point",
+      "url": "https://note.com/aliberaworks/n/n0725fdc0c453?hl=en",
+      "source": "note.com",
+      "published": "2026-09-19T04:50:00+00:00",
+      "summary": "A note.com essay about NEC research asks for a clear confirmation point before work is delegated to AI agents: the moment when someone can say whether it is safe to proceed. The idea makes governance personal and practical rather than abstract. As delegation expands, the human value is not disappearing; it is moving into setting thresholds, checking evidence, and taking responsibility for consequential decisions.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/315334306/rectangle_large_type_2_0486c44bab3166b8d1b1876277024b35.png?fit=bounds&quality=85&width=1280",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "The confirmation point is a deliberate check before an agent's work is allowed to proceed.",
+        "Delegation still requires people to define acceptable evidence and risk.",
+        "Accountability becomes a visible capability when systems can act on their own."
+      ]
+    },
+    {
+      "title": "IBM Puts Critical Thinking at the Center",
+      "url": "https://newsroom.ibm.com/2026-09-21-new-ibm-chro-study-ai-puts-critical-thinking-at-the-center-of-workforce-priorities",
+      "source": "newsroom.ibm.com",
+      "published": "2026-09-20T17:00:00+00:00",
+      "summary": "IBM's CHRO study reports that 71 percent of surveyed HR leaders see supervising, validating, and overriding AI outputs as an essential workforce skill, while only 29 percent of employees rank judgment as important. That gap is a learning-design problem as much as a technology problem. The TGR task is to make critical thinking concrete: practice questioning outputs, identifying stakes, and deciding when to intervene.",
+      "imageUrl": "https://newsroom.ibm.com/image/CHRO-Hero-C-Wide_social.png",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "IBM reports a large gap between leaders' and employees' views of judgment as an AI-era skill.",
+        "Supervising and overriding outputs require people to understand both the task and its consequences.",
+        "Organizations can teach judgment through repeated practice, not just policy statements."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
