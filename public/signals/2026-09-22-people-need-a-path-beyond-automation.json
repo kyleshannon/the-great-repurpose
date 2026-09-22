@@ -1,0 +1,96 @@
+{
+  "slug": "2026-09-22-people-need-a-path-beyond-automation",
+  "date": "2026-09-22",
+  "title": "People Need a Path Beyond Automation",
+  "pattern": "China’s displaced workers and APEC’s calls for training and protection expose the same gap: automating a task does not create a next chapter for the person who performed it. BDO’s case for recognizing hidden skills, a task-level career essay and Aini’s beginner-focused AI story each offer a different starting point for rebuilding agency. The human transition needs both personal experimentation and institutions that make existing capabilities visible, support learning and open a credible route into new work.",
+  "stages": [
+    "Reclaim Value",
+    "Relaunch Yourself",
+    "Unhook Identity",
+    "Become AI Ready"
+  ],
+  "imageUrl": "https://media.assettype.com/freepressjournal/2026-09-02/5rpzji33/Untitled-design-2026-09-02T085825.796.jpg",
+  "stories": [
+    {
+      "url": "https://www.freepressjournal.in/tech/chinas-ai-boom-puts-jobs-at-risk-as-automation-sweeps-across-workplaces",
+      "source": "freepressjournal.in",
+      "published": "2026-09-20T21:27:00+00:00",
+      "imageUrl": "https://media.assettype.com/freepressjournal/2026-09-02/5rpzji33/Untitled-design-2026-09-02T085825.796.jpg",
+      "title": "China’s AI Boom Puts Jobs at Risk Across Workplaces",
+      "summary": "An IANS report carried by Free Press Journal follows a Beijing programmer who lost his job as his employer explored AI coding and then began making short videos. It also describes automation spreading into delivery and logistics. For TGR, the human challenge is rebuilding direction when a familiar skill stops providing a dependable career identity.",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "The report connects AI adoption in programming and logistics with pressure on workers’ next career moves.",
+        "A displaced programmer’s move toward video creation illustrates the search for a new way to contribute."
+      ]
+    },
+    {
+      "url": "https://www.scoop.co.nz/stories/WO2609/S00171/apec-ministers-target-jobs-skills-and-worker-protection-as-ai-reshapes-work.htm",
+      "source": "scoop.co.nz",
+      "published": "2026-09-21T17:43:00+00:00",
+      "imageUrl": "http://img.scoop.co.nz/stories/images/1908/scoop_image.jpg",
+      "title": "APEC Ministers Call for Skills and Protection as AI Reshapes Work",
+      "summary": "APEC ministers meeting in Nanjing called for reskilling, apprenticeships and stronger protection for workers, including people in gig and contract jobs. They also highlighted AI’s potential to improve job matching and anticipate skills demand. The TGR connection is practical: personal reinvention becomes more possible when training, visible opportunities and support follow people between roles.",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Ministers paired workforce training with social protection and better recognition of skills across economies.",
+        "The transition needs routes into meaningful work as well as access to AI tools."
+      ]
+    },
+    {
+      "url": "https://note.com/oninote_official/n/n0aa721c43bd7?hl=en",
+      "source": "note.com",
+      "published": "2026-09-21T22:56:00+00:00",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/312289702/rectangle_large_type_2_8fb2cb6cdabc18e89d1b8c0ac8ddec6a.png?fit=bounds&quality=85&width=1280",
+      "title": "An AI Agent Career Essay Looks Beyond Job Titles",
+      "summary": "This commentary on note.com proposes assessing work task by task, with attention to relationships, physical practice, creativity and ethical judgment. Its useful distinction is between a job title and the changing duties inside it. Through the TGR lens, that inventory can help someone identify the human contribution worth developing without treating any occupation as permanently protected.",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The author recommends separating routine duties from tasks that require judgment or relationship building.",
+        "The essay offers a career reflection framework; its claims about employment trends should not be treated as settled forecasts."
+      ]
+    },
+    {
+      "url": "https://www.kansascity.com/news/business/article317326834.html",
+      "source": "kansascity.com",
+      "published": "2026-09-21T09:30:00+00:00",
+      "imageUrl": "",
+      "title": "Reimagining Work in the Age of AI: From Roles to Skills",
+      "summary": "In this BDO-authored article distributed by Stacker, Beth Hoang and Sue Miller Wiltz argue for redesigning work around capabilities and involving employees in that process. Skills gained through earlier jobs, volunteering and personal interests can remain invisible in conventional job descriptions. TGR’s opportunity is to make that broader human value visible before organizations decide what to automate or hire.",
+      "stages": [
+        "Reclaim Value",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "BDO argues that skills visibility can support redeployment and reveal capabilities an organization already has.",
+        "Employees’ knowledge of meaningful work and workflow problems belongs in decisions about redesign."
+      ]
+    },
+    {
+      "url": "https://note.com/aini_books/n/n2b10d279a720?hl=en",
+      "source": "note.com",
+      "published": "2026-09-22T04:30:00+00:00",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/316253046/rectangle_large_type_2_4c211249e535e7af5e3451fac61e08c1.jpeg?fit=bounds&quality=85&width=1280",
+      "title": "A Beginner’s AI Agent Book Uses Storytelling to Build Confidence",
+      "summary": "Aini’s promotional book preview introduces Megumi, an anxious beginner exploring home-based work, and Kuro, an imagined AI partner. Through their dialogue, it presents directing AI as a way to attempt work that initially feels out of reach. The TGR signal is the confidence barrier: a small, concrete experiment can widen someone’s sense of possibility, while earnings claims still require evidence.",
+      "stages": [
+        "Become AI Ready",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "The preview uses a character-led introduction to explain delegation and human direction.",
+        "Its income framing is promotional, not a demonstrated result; the useful starting point is a modest experiment."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
