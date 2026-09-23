@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-23-ais-new-bargain-reshapes-career-entry",
+    "date": "2026-09-23",
+    "title": "AI's New Bargain Reshapes Career Entry",
+    "pattern": "Microsoft's Xbox cuts and Oracle's layoffs arrive alongside enormous bets on AI infrastructure, while the Dallas Fed finds weaker demand for recent graduates in work AI can already perform. A CHRO workforce-planning guide calls for new skills and role maps, and Vmake is making sophisticated creative production easier for smaller teams. The bargain cannot be that companies gain capacity while newcomers and displaced workers lose a credible way in; institutions and employers need to turn AI-enabled work into visible learning paths, accountable roles, and real openings for people.",
+    "stages": [
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Become AI Ready",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://www.dallasfed.org/-/media/Images/research/economics/2026/0922/job-candidates-pri.jpg"
+  },
+  {
     "slug": "2026-09-22-people-need-a-path-beyond-automation",
     "date": "2026-09-22",
     "title": "People Need a Path Beyond Automation",
@@ -1234,6 +1247,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-23-ais-new-bargain-reshapes-career-entry": {
+    "slug": "2026-09-23-ais-new-bargain-reshapes-career-entry",
+    "date": "2026-09-23",
+    "title": "AI's New Bargain Reshapes Career Entry",
+    "pattern": "Microsoft's Xbox cuts and Oracle's layoffs arrive alongside enormous bets on AI infrastructure, while the Dallas Fed finds weaker demand for recent graduates in work AI can already perform. A CHRO workforce-planning guide calls for new skills and role maps, and Vmake is making sophisticated creative production easier for smaller teams. The bargain cannot be that companies gain capacity while newcomers and displaced workers lose a credible way in; institutions and employers need to turn AI-enabled work into visible learning paths, accountable roles, and real openings for people.",
+    "stages": [
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Become AI Ready",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://www.dallasfed.org/-/media/Images/research/economics/2026/0922/job-candidates-pri.jpg",
+    "stories": [
+      {
+        "title": "Microsoft Begins New Xbox Job Cuts",
+        "url": "https://www.businessinsider.com/microsoft-starts-a-new-round-of-job-cuts-2026-9",
+        "source": "Business Insider",
+        "published": "2026-09-22T14:01:56.888000+00:00",
+        "summary": "Microsoft began another round of layoffs, focused primarily on Xbox while also affecting Cloud + AI roles. The cuts show how even companies investing heavily in AI can reorganize established teams, making a job title a less reliable promise of continuity than the capabilities and relationships a person can carry forward.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The reductions center on Xbox but extend into other business units.",
+          "AI investment and workforce contraction can happen at the same company and time."
+        ]
+      },
+      {
+        "title": "Vmake Expands Its AI Creative Workspace",
+        "url": "https://finance.yahoo.com/technology/ai/articles/vmake-labs-upgrades-ai-creative-160000359.html",
+        "source": "Yahoo Finance",
+        "published": "2026-09-22T09:00:00+00:00",
+        "summary": "Vmake Labs has added dedicated agent, video, and image-creation paths, plus a mobile workspace and reusable creative templates. The tools lower the distance between an idea and a finished campaign asset, but their value depends on people learning how to set direction, make choices, and connect output to an audience.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/2fd83572be709610b3d1b134255dc1415c1c71859daf91d5b915af7de5c7dbd5/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprnewswire.com%2Fb90e4f52e773d1dc30abcf2473b40875.png",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The redesign gives creators separate routes for agent, video, and image work.",
+          "Faster production raises the premium on taste, context, and human direction."
+        ]
+      },
+      {
+        "title": "CHROs Face AI Workforce Planning for 2027",
+        "url": "https://www.analyticsinsight.net/cxo-insights/chro-guide-to-ai-workforce-planning-skills-roles-for-2027",
+        "source": "Analytics Insight",
+        "published": "2026-09-22T14:30:00+00:00",
+        "summary": "A guide for chief human-resources officers argues that AI planning must move beyond headcount forecasts toward the skills and roles an organization will need. That is the institutional side of the human transition: redesign work so people can see what is changing, what remains valuable, and how to grow into the next contribution.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Workforce planning is shifting from counting roles to mapping capabilities.",
+          "Leaders need transparent paths from current skills to emerging work."
+        ]
+      },
+      {
+        "title": "Oracle Layoffs Hit Older Employees and Managers",
+        "url": "https://www.livemint.com/companies/news/inside-oracles-job-cuts-over-40s-middle-managers-take-biggest-hit-in-latest-round-of-layoffs-11790134724210.html",
+        "source": "Mint",
+        "published": "2026-09-23T04:20:57+00:00",
+        "summary": "Oracle's latest layoffs reportedly affect employees over 40 and middle managers especially hard as the company funds a major expansion in AI infrastructure. When change is financed through job loss, the question is not only efficiency but whether experienced people are offered a dignified route to translate their judgment into new work.",
+        "imageUrl": "https://www.livemint.com/lm-img/img/2026/09/23/1600x900/logo/ORACLE-RESULTS--0_1776319033146_1776319049273_1790136911101_Od5t_980f696f-0444-4c16-9f4e-433c3a45ced7_Y5vE.JPG",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The company is pairing AI-infrastructure expansion with another round of cuts.",
+          "Experience and management judgment need a deliberate place in redesigned organizations."
+        ]
+      },
+      {
+        "title": "AI Contributes to a Weaker Graduate Job Market",
+        "url": "https://www.dallasfed.org/research/economics/2026/0922",
+        "source": "Federal Reserve Bank of Dallas",
+        "published": "2026-09-21T17:00:00+00:00",
+        "summary": "Dallas Fed researchers find evidence that generative AI has reduced demand for entry-level work where the technology can complete tasks more efficiently. New graduates need more than a warning about disruption: they need paid chances to build judgment, domain knowledge, and trust through work that still has a human learning curve.",
+        "imageUrl": "https://www.dallasfed.org/-/media/Images/research/economics/2026/0922/job-candidates-pri.jpg",
+        "stages": [
+          "Relaunch Yourself",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The research links AI exposure with weaker demand for some recent-graduate roles.",
+          "Entry pathways matter because they are where people develop durable judgment and experience."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-22-people-need-a-path-beyond-automation": {
     "slug": "2026-09-22-people-need-a-path-beyond-automation",
     "date": "2026-09-22",
