@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-24-ai-adoption-needs-human-infrastructure",
+    "date": "2026-09-24",
+    "title": "AI Adoption Needs Human Infrastructure",
+    "pattern": "The ILO finds Chinese companies using AI in hybrid workflows, Verizon is funding community-based AI training, and companies remain hesitant to hand agents real responsibility. YouTube is embedding AI across creator work while Taiyo Kikaku is turning individual generative-AI know-how into a shared creative practice. The transition is not simply whether AI can perform more tasks; it is whether institutions build the learning, judgment, trust, and collective capability that let people direct that capacity well.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://www.ilo.org/sites/default/files/2026-09/pexels-mikhail-nilov-7988082.jpg"
+  },
+  {
     "slug": "2026-09-23-ais-new-bargain-reshapes-career-entry",
     "date": "2026-09-23",
     "title": "AI's New Bargain Reshapes Career Entry",
@@ -1247,6 +1260,99 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-24-ai-adoption-needs-human-infrastructure": {
+    "slug": "2026-09-24-ai-adoption-needs-human-infrastructure",
+    "date": "2026-09-24",
+    "title": "AI Adoption Needs Human Infrastructure",
+    "pattern": "The ILO finds Chinese companies using AI in hybrid workflows, Verizon is funding community-based AI training, and companies remain hesitant to hand agents real responsibility. YouTube is embedding AI across creator work while Taiyo Kikaku is turning individual generative-AI know-how into a shared creative practice. The transition is not simply whether AI can perform more tasks; it is whether institutions build the learning, judgment, trust, and collective capability that let people direct that capacity well.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://www.ilo.org/sites/default/files/2026-09/pexels-mikhail-nilov-7988082.jpg",
+    "stories": [
+      {
+        "title": "Chinese Enterprises Pair AI With Human Work",
+        "url": "https://www.ilo.org/resource/news/ai-adoption-chinese-enterprises-boosts-productivity-raises-concerns-about",
+        "source": "ilo.org",
+        "published": "2026-09-22T13:22:59+00:00",
+        "summary": "An ILO study of Chinese enterprises finds AI is mostly entering hybrid workflows rather than replacing people wholesale, even as job and skills concerns grow. That makes the human contribution more visible: workers need to shape how systems are used, catch their failures, and translate productivity gains into work that preserves dignity and agency.",
+        "imageUrl": "https://www.ilo.org/sites/default/files/2026-09/pexels-mikhail-nilov-7988082.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The ILO finds AI is being integrated mainly through hybrid human-and-machine workflows.",
+          "Productivity gains still raise questions about who gains new skills and who bears the disruption."
+        ]
+      },
+      {
+        "title": "Verizon Funds Community AI Skills Training",
+        "url": "https://markets.businessinsider.com/news/stocks/verizon-announces-70m-investment-in-nationwide-ai-upskilling-initiative-with-verizon-ai-skills-for-america-1036567351",
+        "source": "markets.businessinsider.com",
+        "published": "2026-09-23T02:00:00+00:00",
+        "summary": "Verizon says it will invest $70 million in AI resources and training with community organizations, aimed at job seekers across the United States. The announcement recognizes an important truth: readiness cannot be treated as a private test of motivation. People need accessible places to learn, practice, and carry new capabilities into opportunity.",
+        "imageUrl": "https://ml.globenewswire.com/media/2a0c6c7a-3980-4c97-a719-a463817cf3f6/small/verizon-logo-png.png",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The initiative combines AI resources with support from community-based organizations.",
+          "Its focus on job seekers frames AI learning as an access and opportunity challenge, not only a technical one."
+        ]
+      },
+      {
+        "title": "Companies Hesitate To Trust AI Agents",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/09/23/ai-agents-can-do-the-work-companies-hesitate-to-let-them/",
+        "source": "forbes.com",
+        "published": "2026-09-23T08:15:00+00:00",
+        "summary": "A Forbes Business Council contributor argues that AI agents may be able to take on more work before organizations are ready to grant them that responsibility. The gap is not just technical performance. It is a question of trust, governance, and who remains accountable when people delegate meaningful work to a system.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/69fce125ee9d081ee10f199d/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Organizations may be slower to delegate than the underlying agent technology is to improve.",
+          "Responsible adoption depends on clear human oversight, trust, and accountability."
+        ]
+      },
+      {
+        "title": "YouTube Expands AI Creator Tools",
+        "url": "https://www.theverge.com/tech/999140/made-on-youtube-creator-tools-ai-thumbnails-tests",
+        "source": "theverge.com",
+        "published": "2026-09-23T14:30:00+00:00",
+        "summary": "YouTube is building AI features that can help creators test ideas, optimize catalogs, and handle more of the production workflow. As execution becomes easier to automate, creators are pushed upstream toward judgment: deciding what deserves to exist, what fits an audience, and what kind of relationship their work should build.",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Creation-YT-Studio-Bundle-Optimize-your-Catalog-UX-Flow-2.jpg?quality=90&strip=all&crop=0%2C3.4750998734523%2C100%2C93.049800253095&w=1200",
+        "stages": [
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "YouTube's new tools bring AI deeper into the creator production and optimization process.",
+          "Creative advantage shifts toward taste, audience understanding, and the choices behind the output."
+        ]
+      },
+      {
+        "title": "A.I.R. Shares Creative AI Practice",
+        "url": "https://note.com/taiyokikaku/n/n02a625e4e65a?hl=en",
+        "source": "note.com",
+        "published": "2026-09-23T21:29:00+00:00",
+        "summary": "Japanese production company Taiyo Kikaku has formed A.I.R., a creative AI division designed to turn individual generative-AI experiments into shared organizational knowledge. Its approach treats AI capability as a collective creative practice, giving more people a way to build on one another's learning rather than starting alone from scratch.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/316981752/rectangle_large_type_2_73b6a063884485fb21a44816e47fb20e.jpeg?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "A.I.R. converts isolated generative-AI knowledge into a shared creative capability.",
+          "The model makes experimentation more durable by embedding it in a team practice."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-23-ais-new-bargain-reshapes-career-entry": {
     "slug": "2026-09-23-ais-new-bargain-reshapes-career-entry",
     "date": "2026-09-23",
