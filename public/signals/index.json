@@ -1,5 +1,18 @@
 [
   {
+    "slug": "2026-09-25-ai-investment-needs-human-pathways",
+    "date": "2026-09-25",
+    "title": "AI Investment Needs Human Pathways",
+    "pattern": "Workera finds that AI training is rising even as employees lack time to build skills, while parents, students, and computer-science graduates are searching for a credible route into an AI-shaped job market. Crunchbase records technology layoffs as companies redirect spending toward AI, and an Australian health-portal breach exposes the governance risk of agents acting without sufficient oversight. The transition cannot be measured by investment or access alone: people need protected time to learn, visible entry paths, and institutions willing to keep accountability human as work changes.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/ca8f164e8ad91ea39012de911ca1804f94f4c3e314fb58cc7b63a5dd3c8c7936/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fprnewswire.com%2F64cfe9f4170c866e24939e1edcf8fc36.png"
+  },
+  {
     "slug": "2026-09-24-ai-adoption-needs-human-infrastructure",
     "date": "2026-09-24",
     "title": "AI Adoption Needs Human Infrastructure",
