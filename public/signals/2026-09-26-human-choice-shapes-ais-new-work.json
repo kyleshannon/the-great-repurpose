@@ -1,0 +1,80 @@
+{
+  "slug": "2026-09-26-human-choice-shapes-ais-new-work",
+  "date": "2026-09-26",
+  "title": "Human Choice Shapes AI's New Work",
+  "pattern": "KBTG's Techtopia is framing the agentic era around the \"Human of Tomorrow,\" while The Conversation finds new work emerging to clean up low-quality AI output and Investopedia reports a tentative return of jobs tied to degrees young people may no longer trust. Forbes argues that autonomous agents do not remove human responsibility, and filmmaker Vaibhav Modi questions whether saving time is enough reason to hand creative work to AI. The common choice is not whether machines can take on more execution; it is whether people, educators, and employers will define worthwhile work through judgment, accountability, and creative intention.",
+  "stages": [
+    "Become AI Ready",
+    "Reclaim Value",
+    "Unhook Identity"
+  ],
+  "imageUrl": "https://manilatimes.net/manilatimes/uploads/images/2026/09/24/1231398.jpg",
+  "stories": [
+    {
+      "title": "KBTG Puts Human Value at the Center of Agentic AI",
+      "url": "https://www.manilatimes.net/2026/09/24/tmt-newswire/media-outreach-newswire/kbtg-techtopia-returns-for-its-fourth-year-exploring-human-value-in-the-agentic-ai-era-under-the-theme-human-of-tomorrow/2431948",
+      "source": "manilatimes.net",
+      "published": "2026-09-24T07:11:52+00:00",
+      "summary": "KBTG's fourth Techtopia event takes up the theme \"Human of Tomorrow\" as agentic AI changes how organizations think about value. The framing matters because capability alone does not answer what people should be trusted to decide, create, and remain accountable for.",
+      "imageUrl": "https://manilatimes.net/manilatimes/uploads/images/2026/09/24/1231398.jpg",
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "keyPoints": [
+        "KBTG's Techtopia returns with a theme centered on human value in the agentic-AI era.",
+        "The event's premise shifts attention from AI capability to the human roles that give it direction."
+      ]
+    },
+    {
+      "title": "AI Creates Work, but Not Always Better Work",
+      "url": "https://theconversation.com/ai-is-creating-jobs-as-well-as-erasing-them-but-how-rewarding-are-they-292848",
+      "source": "theconversation.com",
+      "published": "2026-09-25T06:00:00+00:00",
+      "summary": "The Conversation examines the jobs appearing alongside AI disruption, including work spent cleaning up \"workslop\"—low-quality output that still needs a person to repair. New roles count only if they offer dignity, learning, and a credible path to greater contribution rather than a permanent cleanup assignment.",
+      "imageUrl": "https://images.theconversation.com/files/762106/original/file-20260924-50-8yg5tv.jpg?ixlib=rb-4.1.1&rect=0%2C585%2C2827%2C1413&q=45&auto=format&w=1356&h=668&fit=crop",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "AI is creating some roles even as it removes or reshapes others.",
+        "Cleaning up poor AI output exposes the difference between more work and more rewarding work."
+      ]
+    },
+    {
+      "title": "Returning Jobs Still Leave Degree Decisions Uncertain",
+      "url": "https://www.investopedia.com/jobs-damaged-by-ai-are-making-a-comeback-but-is-it-enough-to-make-the-degrees-worth-it-12127724",
+      "source": "investopedia.com",
+      "published": "2026-09-21T14:13:00+00:00",
+      "summary": "Investopedia reports that some jobs hit hardest in the AI era are showing signs of recovery, though wages and openings may still be too weak to restore confidence in the degrees connected to them. For people deciding where to invest their future, a comeback is not yet the same as a dependable pathway.",
+      "imageUrl": "https://www.investopedia.com/thmb/Vy3haQVrVvlHqMAR3MGqHsqx_Do=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2295116786-e45b97a0861d4e9a8aa0c5b58bb39dd8.jpg",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": [
+        "Some AI-disrupted jobs are recovering after prior declines in wages and openings.",
+        "Young people still need enough stability to see a degree as a worthwhile route into work."
+      ]
+    },
+    {
+      "title": "Autonomous AI Still Requires Human Accountability",
+      "url": "https://www.forbes.com/sites/devpatnaik/2026/09/21/the-future-of-ai-is-still-a-human-choice/",
+      "source": "forbes.com",
+      "published": "2026-09-21T11:32:00+00:00",
+      "summary": "Forbes argues that as AI agents gain autonomy, responsibility still belongs to the people who design, deploy, and govern them. That is a practical human advantage: judgment about goals, consequences, and accountability cannot be outsourced simply because execution becomes faster.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": [
+        "More autonomous agents increase the importance of clear human responsibility.",
+        "Leadership remains accountable for the goals and boundaries built into AI systems."
+      ]
+    },
+    {
+      "title": "Creative Work Needs More Than Time Savings",
+      "url": "https://www.bollywoodhelpline.com/news/entertainment/movie/vaibhav-modi-on-ai-taking-over-creative-work-why-would-you-choose-to-let-ai-handle-the-work-just-to-save-time/79346",
+      "source": "bollywoodhelpline.com",
+      "published": "2026-09-25T17:01:00+00:00",
+      "summary": "Filmmaker Vaibhav Modi challenges the assumption that creative work should be handed to AI merely to save time. The question points upstream: human value in creation includes taste, purpose, and the decision about what is worth making—not just the speed of production.",
+      "imageUrl": "https://www.bollywoodhelpline.com/upload/articles/screenshot-2026-09-26-at-12-34-25-pm5815331.jpg",
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "keyPoints": [
+        "Vaibhav Modi questions whether efficiency is sufficient reason to automate creative work.",
+        "Creative value includes human intention and judgment about what deserves to be made."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
