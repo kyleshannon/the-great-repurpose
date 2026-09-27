@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-27-skills-need-a-human-system",
+    "date": "2026-09-27",
+    "title": "Skills Need a Human System",
+    "pattern": "A public-workforce framework calls for equitable reskilling as agencies govern AI, while IBM's research warns that the capabilities people need at work can erode during the transition. A company-change essay and a workplace reflection both point to the daily reality of AI adoption, and AI Creator Day puts filmmakers in the same conversation about what creators need next. The human question is not simply which tasks AI can accelerate; it is whether employers, public institutions, and creative communities build durable ways for people to learn, contribute, and retain judgment as the work changes.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://patimes.org/wp-content/uploads/2026/09/igor-omilaev-gVQLAbGVB6Q-unsplash-scaled.jpg"
+  },
+  {
     "slug": "2026-09-26-human-choice-shapes-ais-new-work",
     "date": "2026-09-26",
     "title": "Human Choice Shapes AI's New Work",
@@ -1285,6 +1298,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-27-skills-need-a-human-system": {
+    "slug": "2026-09-27-skills-need-a-human-system",
+    "date": "2026-09-27",
+    "title": "Skills Need a Human System",
+    "pattern": "A public-workforce framework calls for equitable reskilling as agencies govern AI, while IBM's research warns that the capabilities people need at work can erode during the transition. A company-change essay and a workplace reflection both point to the daily reality of AI adoption, and AI Creator Day puts filmmakers in the same conversation about what creators need next. The human question is not simply which tasks AI can accelerate; it is whether employers, public institutions, and creative communities build durable ways for people to learn, contribute, and retain judgment as the work changes.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://patimes.org/wp-content/uploads/2026/09/igor-omilaev-gVQLAbGVB6Q-unsplash-scaled.jpg",
+    "stories": [
+      {
+        "title": "Public Agencies Need Equitable AI Reskilling",
+        "url": "https://patimes.org/governing-ai-in-the-public-workforce-a-skills-based-framework-for-equitable-reskilling/",
+        "source": "patimes.org",
+        "published": "2026-09-25T17:57:29+00:00",
+        "summary": "Public agencies are building governance processes for AI use, but governance also has to prepare the people whose work will change. A skills-based reskilling framework makes the transition a shared institutional responsibility rather than asking each worker to navigate it alone.",
+        "imageUrl": "https://patimes.org/wp-content/uploads/2026/09/igor-omilaev-gVQLAbGVB6Q-unsplash-scaled.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Federal agencies are cataloging and governing their AI use cases.",
+          "Equitable reskilling connects AI oversight to credible learning opportunities for public workers."
+        ]
+      },
+      {
+        "title": "AI Adoption Changes More Than Office Work",
+        "url": "https://note.com/grand_seal2547/n/n2e4abf388b63?hl=en",
+        "source": "note.com",
+        "published": "2026-09-26T08:19:00+00:00",
+        "summary": "An essay on company change argues that AI's effects extend beyond white-collar roles into how organizations coordinate work across their operations. That is a reminder to look past job labels and ask which human capabilities, relationships, and decisions the new system should strengthen.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/317882282/rectangle_large_type_2_03e54c1ef1f9db278f40e92f05508d71.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The AI divide may widen between companies that integrate the technology and those that do not.",
+          "Work redesign reaches operational roles as well as knowledge work."
+        ]
+      },
+      {
+        "title": "AI Creator Day Brings Filmmakers Into the Conversation",
+        "url": "https://www.yahoo.com/entertainment/movies/articles/stability-ai-ceo-prem-akkaraju-180000656.html",
+        "source": "yahoo.com",
+        "published": "2026-09-25T11:00:00+00:00",
+        "summary": "AI Creator Day is convening Stability AI, filmmakers, and creator-tool leaders around a changing production landscape. The useful question for creators is not whether tools can generate more material, but how they can preserve authorship, craft, and a viable path to make work that matters.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/4cebf8821b9872898861ae6cd46d4aad8305d381f7377e264529e8ff19aa4ff4/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthewrap.com%2Fee9426f4337ef607d40854e07e31ce17.png",
+        "stages": [
+          "Relaunch Yourself",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The event brings AI leaders and filmmakers into the same creative conversation.",
+          "Creator readiness includes protecting human direction alongside new production capability."
+        ]
+      },
+      {
+        "title": "Workplace AI Brings Relief and Unease",
+        "url": "https://www.sunstar.com.ph/cebu/artificial-intelligence-at-work-good-vibes-goosebumps",
+        "source": "sunstar.com.ph",
+        "published": "2026-09-27T03:38:00+00:00",
+        "summary": "A workplace reflection captures the mixed experience of AI: it can relieve busywork while also raising real unease about what comes next. Naming both reactions is useful because readiness begins with honest experimentation and conversations about where people still need agency and support.",
+        "imageUrl": "https://cf-images.assettype.com/sunstar%2F2026-09-27%2Fwv7t7qk8%2FLifeStyle.jpg?rect=0%2C28%2C750%2C394&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "stages": [
+          "Become AI Ready",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "AI can reduce routine workload while making the future of work feel uncertain.",
+          "People need room to learn and name their concerns, not just pressure to adopt tools."
+        ]
+      },
+      {
+        "title": "Skills Erosion Is a Workplace AI Warning",
+        "url": "https://thejournal.com/articles/2026/09/21/study-ai-is-reshaping-work-while-skills-erosion-remains-top-concern.aspx",
+        "source": "thejournal.com",
+        "published": "2026-09-20T17:00:00+00:00",
+        "summary": "IBM research finds AI reshaping which abilities matter at work even as employees worry that some human capabilities are weakening. The response cannot be a generic training catalog; people need work designed to keep judgment, collaboration, and learning alive while tools take on more execution.",
+        "imageUrl": "https://thejournal.com/-/media/EDU/CampusTechnology/2026/09/20260921erosion.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Workers report concern that important skills may erode as AI changes work.",
+          "AI adoption should protect and develop human capabilities, not merely automate tasks."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-26-human-choice-shapes-ais-new-work": {
     "slug": "2026-09-26-human-choice-shapes-ais-new-work",
     "date": "2026-09-26",
