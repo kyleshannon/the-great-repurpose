@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-28-skills-become-works-new-social-contract",
+    "date": "2026-09-28",
+    "title": "Skills Become Work's New Social Contract",
+    "pattern": "ET HR World and India's labour ministry both argue that AI is making job labels less durable while making reskilling a public and organizational obligation. LibrAI's local-first setup, enterprise agent supervision, and one candidate's job-search agent show that people are also building practical control over how AI enters their work. The tension is no longer simply whether people can learn new tools; it is whether employers, governments, and workers will create credible ways to prove judgment, protect privacy, and share responsibility as roles are remade.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-134534157,imgsize-389140,width-1200,height=627,overlay-ethr,resizemode-75/industry/job-titles-are-dying-faster-than-skills-can-be-taught-and-thats-the-real-ai-problem-at-work.jpg"
+  },
+  {
     "slug": "2026-09-27-skills-need-a-human-system",
     "date": "2026-09-27",
     "title": "Skills Need a Human System",
@@ -1298,6 +1311,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-28-skills-become-works-new-social-contract": {
+    "slug": "2026-09-28-skills-become-works-new-social-contract",
+    "date": "2026-09-28",
+    "title": "Skills Become Work's New Social Contract",
+    "pattern": "ET HR World and India's labour ministry both argue that AI is making job labels less durable while making reskilling a public and organizational obligation. LibrAI's local-first setup, enterprise agent supervision, and one candidate's job-search agent show that people are also building practical control over how AI enters their work. The tension is no longer simply whether people can learn new tools; it is whether employers, governments, and workers will create credible ways to prove judgment, protect privacy, and share responsibility as roles are remade.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-134534157,imgsize-389140,width-1200,height=627,overlay-ethr,resizemode-75/industry/job-titles-are-dying-faster-than-skills-can-be-taught-and-thats-the-real-ai-problem-at-work.jpg",
+    "stories": [
+      {
+        "title": "Skills Matter More Than Job Titles",
+        "url": "https://hr.economictimes.indiatimes.com/news/industry/job-titles-are-dying-faster-than-skills-can-be-taught-and-thats-the-real-ai-problem-at-work/134534157",
+        "source": "hr.economictimes.indiatimes.com",
+        "published": "2026-09-27T17:00:00+00:00",
+        "summary": "ET HR World examines how AI is making traditional job titles a weaker guide to what people can actually contribute. A skills-based view can free people from being defined by an outdated role, but only if employers make those capabilities visible, teachable, and trusted in real decisions.",
+        "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-134534157,imgsize-389140,width-1200,height=627,overlay-ethr,resizemode-75/industry/job-titles-are-dying-faster-than-skills-can-be-taught-and-thats-the-real-ai-problem-at-work.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AI is accelerating the shift from fixed job labels toward changing skill combinations.",
+          "Workers need credible ways to develop and demonstrate capabilities beyond a title."
+        ]
+      },
+      {
+        "title": "Local AI Protects Privacy and Creativity",
+        "url": "https://note.com/librai/n/n991c29dabba3?hl=en",
+        "source": "note.com",
+        "published": "2026-09-27T20:01:00+00:00",
+        "summary": "LibrAI makes the case for running AI on a personal computer to reduce recurring costs and keep sensitive work closer to home. The point is not technical self-sufficiency for its own sake; choosing where tools run can protect creative control, privacy, and the conditions for thoughtful experimentation.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/318411156/rectangle_large_type_2_26f8745fd35ebea68ecc5ed075d9a672.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Local AI can address subscription costs and privacy concerns around important work.",
+          "Tool choices shape who controls creative material and the context around it."
+        ]
+      },
+      {
+        "title": "Enterprises Shift Toward AI Supervision",
+        "url": "https://finance.yahoo.com/technology/ai/articles/supervisor-agent-shift-enterprises-actually-152104569.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-09-27T08:21:00+00:00",
+        "summary": "A Yahoo Finance report describes a workplace in which more people direct and supervise AI agents instead of performing every underlying task themselves. That raises the value of judgment, clear instructions, and accountability: supervising a system is a different kind of work, not an escape from responsibility.",
+        "imageUrl": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png",
+        "stages": [
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The report cites a growing share of workers spending time managing AI agents.",
+          "Oversight work depends on judgment, direction, and responsibility for outcomes."
+        ]
+      },
+      {
+        "title": "An AI Agent Becomes a Portfolio",
+        "url": "https://www.inc.com/netta-jenkins/she-built-an-ai-agent-to-get-her-next-job-it-worked/91410184",
+        "source": "inc.com",
+        "published": "2026-09-27T07:59:00+00:00",
+        "summary": "Inc. profiles a job candidate who built an AI agent to demonstrate leadership, problem-solving, and practical skill rather than relying only on a résumé. The signal is hopeful but demanding: people can use AI to make their value visible when the work reflects genuine judgment and authorship.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The candidate used an AI agent as evidence of capability, not merely as a job-search shortcut.",
+          "A portfolio can show how a person frames problems and directs new tools."
+        ]
+      },
+      {
+        "title": "Reskilling Must Balance Growth and Safety",
+        "url": "https://money.rediff.com/news/market/mandaviya-reskill-workers-for-ai-era-balance-growth-safety/55169520260928",
+        "source": "money.rediff.com",
+        "published": "2026-09-27T19:25:00+00:00",
+        "summary": "India's labour minister calls for continuous reskilling alongside attention to worker safety, social security, and modern industrial relations. That framing matters because adaptation cannot be an individual burden alone; a humane AI transition needs institutions that pair opportunity with protection.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The minister links AI-era reskilling to productivity, safety, and social security.",
+          "Workers need durable support as roles and expectations change."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-27-skills-need-a-human-system": {
     "slug": "2026-09-27-skills-need-a-human-system",
     "date": "2026-09-27",
