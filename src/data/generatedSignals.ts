@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-09-29-ai-promises-need-human-proof",
+    "date": "2026-09-29",
+    "title": "AI Promises Need Human Proof",
+    "pattern": "DHL's training data shows companies adopting AI far faster than they are preparing workers, while a White House economist argues that the technology will create jobs and a study finds no measurable graduate-job collapse yet. At the same time, white-collar layoffs are already unsettling careers and the art market is testing what authenticity means when machines can generate work. The tension is between broad claims about AI's benefits and the practical evidence people need: real training, fair transitions, trustworthy attribution, and a credible way to show the judgment they bring.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-134564081,imgsize-223486,width-1200,height=627,overlay-ethr,resizemode-75/industry/while-75-companies-are-adopting-ai-only-35-of-workers-have-received-ai-related-training-report.jpg"
+  },
+  {
     "slug": "2026-09-28-skills-become-works-new-social-contract",
     "date": "2026-09-28",
     "title": "Skills Become Work's New Social Contract",
@@ -1311,6 +1323,100 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-09-29-ai-promises-need-human-proof": {
+    "slug": "2026-09-29-ai-promises-need-human-proof",
+    "date": "2026-09-29",
+    "title": "AI Promises Need Human Proof",
+    "pattern": "DHL's training data shows companies adopting AI far faster than they are preparing workers, while a White House economist argues that the technology will create jobs and a study finds no measurable graduate-job collapse yet. At the same time, white-collar layoffs are already unsettling careers and the art market is testing what authenticity means when machines can generate work. The tension is between broad claims about AI's benefits and the practical evidence people need: real training, fair transitions, trustworthy attribution, and a credible way to show the judgment they bring.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-134564081,imgsize-223486,width-1200,height=627,overlay-ethr,resizemode-75/industry/while-75-companies-are-adopting-ai-only-35-of-workers-have-received-ai-related-training-report.jpg",
+    "stories": [
+      {
+        "title": "AI Adoption Outruns Worker Training",
+        "url": "https://hr.economictimes.indiatimes.com/news/industry/while-75-companies-are-adopting-ai-only-35-of-workers-have-received-ai-related-training-report/134564081",
+        "source": "hr.economictimes.indiatimes.com",
+        "published": "2026-09-29T04:03:00+00:00",
+        "summary": "A DHL report cited by ET HR World finds that 75% of companies are adopting AI, while only 35% of workers have received AI-related training. That gap turns transformation into a human obligation, not just a technology rollout: people need time, practice, and support to build confidence and direct the tools reshaping their work.",
+        "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-134564081,imgsize-223486,width-1200,height=627,overlay-ethr,resizemode-75/industry/while-75-companies-are-adopting-ai-only-35-of-workers-have-received-ai-related-training-report.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "DHL's report puts company AI adoption at 75% and worker AI training at 35%.",
+          "Reskilling needs to be an operating commitment, not a private after-hours burden."
+        ]
+      },
+      {
+        "title": "Job Claims Need More Than Optimism",
+        "url": "https://www.cfodive.com/news/ai-creates-jobs-kills-white-house-economist-hassett-fed-economy-gdp-productivity/831553/",
+        "source": "cfodive.com",
+        "published": "2026-09-28T08:47:00+00:00",
+        "summary": "A White House economist argues that AI will create jobs rather than destroy them, even as polling shows many adults fear job loss from adoption. The claim may prove true over time, but people navigating an uncertain role need more than reassurance; they need visible routes to contribute, learn, and retain agency while the labor market changes.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "The economist frames AI as a source of new jobs and productivity rather than a net job killer.",
+          "Workers need practical pathways through transition regardless of the long-run forecast."
+        ]
+      },
+      {
+        "title": "Authenticity Becomes Creative Value",
+        "url": "https://www.jdsupra.com/legalnews/ai-in-the-art-market-part-3-human-7253272/",
+        "source": "jdsupra.com",
+        "published": "2026-09-27T17:00:00+00:00",
+        "summary": "A JD Supra analysis considers how AI-generated and AI-assisted work is forcing the art market to revisit human creativity and authenticity. When execution becomes easier to simulate, creators and audiences have to decide what they are recognizing: provenance, intention, taste, relationship, and the accountable human choices behind a work.",
+        "imageUrl": "https://jdsupra-static.s3.amazonaws.com/profile-images/og.14849_2738.jpg",
+        "stages": [
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AI-assisted art raises questions about authenticity as well as production technique.",
+          "Human value can become clearer when audiences ask who made the choices and why."
+        ]
+      },
+      {
+        "title": "Layoffs Test the White-Collar Story",
+        "url": "https://www.aol.com/articles/bosses-firing-white-collar-workers-150000000.html",
+        "source": "aol.com",
+        "published": "2026-09-28T08:00:00+00:00",
+        "summary": "An AOL report describes accelerating white-collar layoffs across technology, finance, and consulting, and examines what is driving the cuts. For people inside those shifts, the immediate task is not to accept a job title as an identity verdict; it is to identify portable judgment, relationships, and problem-solving value before the role changes again.",
+        "imageUrl": "https://hermes.media.static.aol.com/media/2026/09/28/585f44e6-ba2f-3ca1-925d-cb6855744e52/01f702f4-3c8e-4a54-a044-3df070ee93a0.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The report points to layoffs spreading across several white-collar sectors.",
+          "A role change is a prompt to articulate value that travels beyond one employer."
+        ]
+      },
+      {
+        "title": "Graduate Jobs Need Better Evidence",
+        "url": "https://www.washingtonpost.com/education/2026/09/28/is-ai-killing-jobs-college-grads-not-yet-new-study-says/",
+        "source": "washingtonpost.com",
+        "published": "2026-09-28T12:00:00+00:00",
+        "summary": "A new study reported by The Washington Post finds no statistically significant rise in unemployment for recent college graduates in jobs considered vulnerable to AI. That is a useful corrective to sweeping narratives, but it does not remove the need for early-career people to build judgment, evidence of capability, and relationships as entry paths evolve.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The study did not find a statistically significant graduate-unemployment increase in AI-vulnerable jobs.",
+          "Early-career resilience depends on learning and showing capabilities, not only watching headline forecasts."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-09-28-skills-become-works-new-social-contract": {
     "slug": "2026-09-28-skills-become-works-new-social-contract",
     "date": "2026-09-28",
