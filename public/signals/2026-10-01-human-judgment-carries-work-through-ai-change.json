@@ -1,0 +1,94 @@
+{
+  "slug": "2026-10-01-human-judgment-carries-work-through-ai-change",
+  "date": "2026-10-01",
+  "title": "Human Judgment Carries Work Through AI Change",
+  "pattern": "VOSU is building a marketplace around proven AI creators, while a Forbes essay argues that creativity, curiosity, and compassion become more valuable as AI enters work. At the same time, analysts are warning that an agent's real behavior matters more than its job description, BMW's cuts show the human cost of AI-led restructuring, and Federal Reserve Governor Michael Barr is urging preparation for possible job losses. The tension is clear: as work is reorganized, people need credible ways to demonstrate judgment and institutions need credible ways to support them through the change.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Become AI Ready",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/XnjtkXoOhrbBTyVCY0r1cst5mAe2/89204784-1790843074-1.jpg",
+  "stories": [
+    {
+      "title": "AI Creators Build a New Marketplace",
+      "url": "https://markets.businessinsider.com/news/stocks/after-reaching-5-million-run-rate-vosu-introduces-marketplace-connecting-brands-with-proven-ai-creators-1036589983",
+      "source": "markets.businessinsider.com",
+      "published": "2026-10-01T03:35:00+00:00",
+      "summary": "VOSU has introduced a marketplace that connects brands with generative-media creators whose portfolios and project experience demonstrate what they can deliver. As AI lowers the cost of production, creative opportunity increasingly rests on evidence of taste, reliability, client relationships, and the judgment behind what gets made.",
+      "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/XnjtkXoOhrbBTyVCY0r1cst5mAe2/89204784-1790843074-1.jpg",
+      "stages": [
+        "Relaunch Yourself",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "VOSU's marketplace matches brands with AI creators who can show a real portfolio and project experience.",
+        "When output becomes easier to generate, trust and demonstrated judgment become a stronger basis for creative work."
+      ]
+    },
+    {
+      "title": "Human Intelligence Becomes More Visible",
+      "url": "https://www.forbes.com/sites/shelleyzalis/2026/10/01/from-ei-to-hi-why-we-need-human-intelligence-in-the-age-of-ai/",
+      "source": "forbes.com",
+      "published": "2026-10-01T12:00:00+00:00",
+      "summary": "A Forbes essay makes the case that creativity, judgment, curiosity, and compassion matter more—not less—as AI changes the future of work. The useful challenge is to treat those qualities as capabilities people can practice and show, rather than vague virtues that organizations praise after they have automated the routine work around them.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The argument shifts attention from emotional intelligence alone toward a broader human intelligence.",
+        "Human value becomes practical when organizations make room for curiosity, context, and accountable judgment."
+      ]
+    },
+    {
+      "title": "Agent Performance Needs Human Evaluation",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/09/29/why-your-ai-agents-job-description-may-not-predict-its-performance/",
+      "source": "forbes.com",
+      "published": "2026-09-29T06:15:00+00:00",
+      "summary": "A Forbes Technology Council article argues that an AI agent's stated job description cannot substitute for observing how it behaves in real work. That distinction makes supervision a human responsibility: people need the skills to set expectations, inspect outcomes, and decide when a system's performance deserves trust.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6abaa6e0940a1fe334a5d067/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": [
+        "Unhook Identity",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "An agent's title describes an intended role, not proof of reliable performance.",
+        "Supervising AI requires people to evaluate behavior, exceptions, and outcomes in context."
+      ]
+    },
+    {
+      "title": "AI-Led Cuts Put Careers Under Pressure",
+      "url": "https://smefutures.com/after-oracles-layoff-spree-bmw-enters-the-fray-with-ai-led-job-cuts/",
+      "source": "smefutures.com",
+      "published": "2026-09-30T22:05:00+00:00",
+      "summary": "A report on BMW's AI-led job cuts places the company alongside Oracle in a wider wave of workforce restructuring. For people affected by these changes, a job title cannot be the only container for identity or value; they need help translating experience, judgment, and relationships into the next opportunity before the old role disappears.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "BMW's cuts are framed as part of a broader AI-linked restructuring trend.",
+        "Career resilience starts with value that can travel beyond a changing role or employer."
+      ]
+    },
+    {
+      "title": "Institutions Need to Prepare for Job Losses",
+      "url": "https://www.americanbanker.com/news/barr-now-is-the-time-to-prepare-for-ai-driven-job-losses",
+      "source": "americanbanker.com",
+      "published": "2026-09-29T23:52:10.330000+00:00",
+      "summary": "Federal Reserve Governor Michael Barr says AI has not yet had a material labor-market effect, but that businesses and governments should prepare for AI-driven job losses. Preparation should mean more than forecasting risk: it should create real pathways for people to learn, shift roles, and keep agency as institutions redraw the work around them.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Barr says the labor-market effect has not yet been material, while urging earlier preparation.",
+        "Public and business planning matters most when it creates credible transition paths for people."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
