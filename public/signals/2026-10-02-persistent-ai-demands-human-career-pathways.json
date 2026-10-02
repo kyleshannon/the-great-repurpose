@@ -1,0 +1,96 @@
+{
+  "slug": "2026-10-02-persistent-ai-demands-human-career-pathways",
+  "date": "2026-10-02",
+  "title": "Persistent AI Demands Human Career Pathways",
+  "pattern": "As OpenAI, Meta, and Google push persistent agents, employers are being asked to redesign how careers begin; Disney's fourth round of layoffs and new job-cut data show why that cannot wait. A look at generative AI's spread through creative and white-collar work makes the tension unavoidable: scalable automation can expand capability, but people need pathways to build judgment, identity, and a next role.",
+  "stages": [
+    "Unhook Identity",
+    "Become AI Ready",
+    "Reclaim Value",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-09/23/thumb/featurecrop/1200X628/1790162673-5512.png",
+  "stories": [
+    {
+      "title": "Persistent Agents Move Beyond Chatbots",
+      "url": "https://www.business-standard.com/technology/artificial-intelligence/rise-of-persistent-ai-agents-openai-meta-google-126100200565_1.html",
+      "source": "business-standard.com",
+      "published": "2026-10-02T10:35:41+00:00",
+      "summary": "OpenAI, Meta, and Google are moving from task-specific chatbots toward persistent agents that retain context, access applications, and keep working across tasks. That makes human direction more consequential: people will need to set boundaries, judge outcomes, and remain accountable for work performed by systems that do not simply stop at the end of a prompt.",
+      "imageUrl": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-09/23/thumb/featurecrop/1200X628/1790162673-5512.png",
+      "stages": [
+        "Become AI Ready",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Persistent agents are designed to retain context, use applications, and continue work across multiple jobs.",
+        "The human role shifts toward directing systems, evaluating results, and owning the consequences."
+      ]
+    },
+    {
+      "title": "Employers Must Rethink Career Entry",
+      "url": "https://www.forbes.com/sites/gradsoflife/2026/09/28/as-ai-changes-work-employers-must-rethink-how-careers-begin/",
+      "source": "forbes.com",
+      "published": "2026-09-28T07:51:00+00:00",
+      "summary": "A Forbes article argues that employers have an opportunity to rethink how people gain experience, develop skills, and build durable careers as AI changes entry-level work. If routine starter tasks disappear, organizations need intentional ways for people to practice judgment, earn trust, and find a credible first path into meaningful work.",
+      "imageUrl": "",
+      "stages": [
+        "Reclaim Value",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "AI is challenging the traditional early-career tasks through which people gain experience.",
+        "Employers can create new pathways for skills, judgment, and long-term career development."
+      ]
+    },
+    {
+      "title": "Disney's Cuts Expose Career Fragility",
+      "url": "https://www.ibtimes.sg/disney-layoffs-hundreds-jobs-cut-fourth-round-ai-reshapes-company-94459",
+      "source": "ibtimes.sg",
+      "published": "2026-09-30T16:31:37+00:00",
+      "summary": "Disney has reportedly cut hundreds of jobs in human resources and technology in its fourth major layoff round of 2026, as it restructures operations around AI. The human stakes are not abstract when a role disappears: people need support to separate their value from a job title and translate experience into what comes next.",
+      "imageUrl": "https://data.ibtimes.sg/en/full/97758/disney-has-announced-another-round-corporate-layoffs-it-restructures-operations.jpg?w=1200&h=630?q=60",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "Disney's reported cuts center on corporate functions including human resources and technology.",
+        "Career resilience requires a portable account of skills, relationships, and judgment beyond a changing role."
+      ]
+    },
+    {
+      "title": "Generative AI Reaches Creative Work",
+      "url": "https://note.com/onoshin_digital/n/na8cea7822746?hl=en",
+      "source": "note.com",
+      "published": "2026-09-30T04:30:00+00:00",
+      "summary": "An analysis of generative AI in creative, media, and advertising work argues that its effects now reach far beyond factory automation into information, text, code, and images. As production becomes easier to scale, creative workers can reclaim value through taste, context, relationships, and the decisions about what is worth making.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/319115282/rectangle_large_type_2_f55a2d4a9d6a17008710314f309ef4fd.jpeg?fit=bounds&quality=85&width=1280",
+      "stages": [
+        "Reclaim Value",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Generative AI is affecting white-collar and creative work that handles information, text, code, and images.",
+        "Human value becomes more visible in taste, meaning, relationships, and choices about what deserves to be made."
+      ]
+    },
+    {
+      "title": "AI Becomes a Leading Job-Cut Driver",
+      "url": "https://247wallst.com/investing/2026/10/01/ai-becomes-top-reason-for-job-cuts/",
+      "source": "247wallst.com",
+      "published": "2026-10-01T18:25:30+00:00",
+      "summary": "New job-cut data identifies AI as a leading reason companies are giving for workforce reductions, even when broader headlines can make the labor picture look reassuring. The signal is a call for candor and preparation: people deserve transition pathways before uncertainty becomes a layoff notice.",
+      "imageUrl": "https://247wallst.com/wp-content/uploads/2025/01/shutterstock-2311563719-huge-licensed-scaled.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "AI is being cited as a top reason for job cuts in the latest workforce data.",
+        "Preparation matters most when it gives people practical options before a role is eliminated."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
