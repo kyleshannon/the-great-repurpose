@@ -1,0 +1,80 @@
+{
+  "slug": "2026-10-03-agentic-work-needs-human-context",
+  "date": "2026-10-03",
+  "title": "Agentic Work Needs Human Context",
+  "pattern": "Wall Street banks are hiring for agents, an entrepreneur is using one across a new business, and BMW is using AI to shrink senior management. An Irish Times examination of desk work and a look at the future of human gatherings bring the human tension into focus: AI can widen the reach of a role, but it cannot supply the context, responsibility, and connection that make the work worth doing.",
+  "stages": [
+    "Become AI Ready",
+    "Unhook Identity",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://www.pymnts.com/wp-content/uploads/2026/07/bank.jpeg",
+  "stories": [
+    {
+      "title": "Bank AI Hiring Shifts Toward Agents",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/bank-ai-job-postings-jump-49percent-agents-go-work/",
+      "source": "pymnts.com",
+      "published": "2026-10-02T19:20:24+00:00",
+      "summary": "Wall Street banks are increasing AI job postings as they move from chatbots toward agents that operate inside real workflows. The opportunity is not simply to build models: people will need to direct systems, evaluate outcomes, and own the decisions made around them.",
+      "imageUrl": "https://www.pymnts.com/wp-content/uploads/2026/07/bank.jpeg",
+      "stages": ["Become AI Ready", "Unhook Identity"],
+      "keyPoints": [
+        "Bank AI job postings rose as firms expanded their focus from chatbots to agents.",
+        "The growing work is about designing, supervising, and taking responsibility for AI in operational systems."
+      ]
+    },
+    {
+      "title": "An Entrepreneur Puts an Agent to Work",
+      "url": "https://www.businessinsider.com/instinct-ai-agent-helped-entrepreneur-run-new-business-puttez-2026-10",
+      "source": "businessinsider.com",
+      "published": "2026-10-02T14:34:27.467000+00:00",
+      "summary": "A tech entrepreneur used an Instinct AI agent across marketing, operations, shipping, and tariff work for a new business. It is a practical glimpse of agentic work: a person can extend their reach, but still has to decide what matters, set the constraints, and stand behind the result.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "keyPoints": [
+        "The agent was applied across several functions of a new business rather than one isolated task.",
+        "Using an agent well depends on human priorities, boundaries, and accountability."
+      ]
+    },
+    {
+      "title": "BMW Uses AI to Reshape Management",
+      "url": "https://www.latestly.com/auto/bmw-layoffs-why-the-automaker-is-cutting-20-of-senior-management-roles-using-ai-7631134.html",
+      "source": "latestly.com",
+      "published": "2026-10-03T10:04:28+00:00",
+      "summary": "BMW plans to cut 20 percent of senior-management roles by mid-2027 while using AI to create leaner leadership structures. For the people affected, the issue is larger than efficiency: experience and value have to become portable when the role that once held them changes.",
+      "imageUrl": "https://st1.latestly.com/wp-content/uploads/2025/08/BMW-Group-Logo-784x441.jpg",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": [
+        "BMW says it plans to reduce senior-management roles as it improves its cost base and structure.",
+        "Career resilience requires translating leadership experience beyond a changing title or hierarchy."
+      ]
+    },
+    {
+      "title": "Desk Work Is More Than Automatable Tasks",
+      "url": "https://www.irishtimes.com/business/2026/10/03/will-artificial-intelligence-kill-off-the-desk-job/",
+      "source": "irishtimes.com",
+      "published": "2026-10-03T03:00:00+00:00",
+      "summary": "The Irish Times argues that predictions of imminent white-collar automation often underestimate what other people's jobs actually entail. That reminder matters because job descriptions hide the judgment, relationships, and situational awareness that people bring to work every day.",
+      "imageUrl": "https://www.irishtimes.com/resizer/v2/QEMLEDOMYVGH7ANWBW2CT2GX7U.jpg?smart=true&auth=8da121520cedf0049e0d98dcfee736ca042d160a8d48a2a5c13464d7635ec105&width=1200&height=630",
+      "stages": ["Unhook Identity"],
+      "keyPoints": [
+        "Claims about automating desk jobs can miss the full range of work people actually do.",
+        "Human value includes context, judgment, and relationships that do not fit neatly into a task list."
+      ]
+    },
+    {
+      "title": "AI Raises the Value of Human Gatherings",
+      "url": "https://www.ibtimes.com/what-ai-means-future-human-gatherings-3808186",
+      "source": "ibtimes.com",
+      "published": "2026-10-02T18:44:58+00:00",
+      "summary": "A look at AI's future alongside rising investment in models and platforms asks what happens to the human gatherings where ideas and relationships develop. As AI makes more output easier to generate, communities can reclaim value by making room for genuine exchange, shared learning, and purpose.",
+      "imageUrl": "https://d.ibtimes.com/en/full/4653144/hailey-fadi-dawood.png",
+      "stages": ["Become AI Ready"],
+      "keyPoints": [
+        "AI investment is growing while employee engagement remains low globally.",
+        "Human gatherings can be places to explore AI, build relationships, and turn new capability into meaningful participation."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
