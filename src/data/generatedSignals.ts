@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-05-human-judgment-must-outlast-easier-output",
+    "date": "2026-10-05",
+    "title": "Human Judgment Must Outlast Easier Output",
+    "pattern": "Today's two note.com guides turn AI anxiety into decisions about tasks, delegation, and midcareer experience; BNO's contributed image-tool overview shows how quickly the output layer is becoming easier. Bowdoin's creators ask what makes that output meaningful, while Michael Edmondson asks how students will acquire judgment when beginner work disappears. The shared challenge is to preserve the practice, perspective, and responsibility that let people direct abundant capability toward something worth doing.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://www.bowdoin.edu/news/2026/images/four-headshots-2x2-transparent.png"
+  },
+  {
     "slug": "2026-10-04-ai-needs-human-stewards-everywhere",
     "date": "2026-10-04",
     "title": "AI Needs Human Stewards Everywhere",
@@ -1374,6 +1387,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-05-human-judgment-must-outlast-easier-output": {
+    "slug": "2026-10-05-human-judgment-must-outlast-easier-output",
+    "date": "2026-10-05",
+    "title": "Human Judgment Must Outlast Easier Output",
+    "pattern": "Today's two note.com guides turn AI anxiety into decisions about tasks, delegation, and midcareer experience; BNO's contributed image-tool overview shows how quickly the output layer is becoming easier. Bowdoin's creators ask what makes that output meaningful, while Michael Edmondson asks how students will acquire judgment when beginner work disappears. The shared challenge is to preserve the practice, perspective, and responsibility that let people direct abundant capability toward something worth doing.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://www.bowdoin.edu/news/2026/images/four-headshots-2x2-transparent.png",
+    "stories": [
+      {
+        "title": "How to Decide Which Work to Entrust to AI Agents",
+        "url": "https://note.com/maas_note/n/nedbb767a8282?hl=en",
+        "source": "note.com",
+        "published": "2026-10-04T19:24:00+00:00",
+        "summary": "A practical guide on note.com separates work AI can perform from work people should delegate. It identifies repetition, explicit rules, available data, and verifiable results as useful tests, then distinguishes drafting, supervised execution, and bounded automation. The human opportunity is to redesign a task around clear judgment and responsibility before handing it over.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/320967418/rectangle_large_type_2_4d313737836ce6ba54a441e8c3575684.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Check whether the task has clear inputs, decision rules, and a result that can be verified.",
+          "Begin with drafts or supervised work; reserve consequential decisions for accountable people."
+        ]
+      },
+      {
+        "title": "Tasks Change Before Careers: A Midcareer View of AI",
+        "url": "https://note.com/ai_oji_maa/n/n63da0e71f8b4?hl=en",
+        "source": "note.com",
+        "published": "2026-10-04T03:31:00+00:00",
+        "summary": "A note.com essay aimed at workers in their forties argues that AI changes the tasks inside a job before it erases an occupation. The author contrasts automated research and drafting with customer understanding, trust, decisions, and responsibility. Its practical exercise is to list ten tasks and sort them into AI work, shared work, and human work: a way to turn experience into direction.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/320750066/rectangle_large_type_2_19137c485903185b1cd4ffd9ea707130.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The essay treats experience, customer relationships, and management judgment as assets to amplify with AI.",
+          "Map ten recurring tasks into delegate, collaborate, and retain categories before redesigning a role."
+        ]
+      },
+      {
+        "title": "Why GPT Image 2 Is Gaining Attention Across the AI Industry",
+        "url": "https://bnonews.com/index.php/2026/10/gpt-image-2-gaining-attention-ai-industry/",
+        "source": "bnonews.com",
+        "published": "2026-10-05T05:56:39+00:00",
+        "summary": "BNO News carries a contributed overview that presents GPT Image 2 within Higgsfield's creative suite and describes demand for faster visual production in marketing, education, and ecommerce. This is the contributor's account, without independent benchmarks in the article. The TGR question is what people do with easier image creation: choose a meaningful direction, judge the result, and connect it to an audience.",
+        "imageUrl": "https://bnonews.com/wp-content/uploads/2026/10/20261005Article1.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The contributed piece emphasizes integrated creative workflows and faster experimentation with visual assets.",
+          "Product claims are attributed to the article; useful human value still depends on taste, context, and evaluation."
+        ]
+      },
+      {
+        "title": "Four Creators Consider Creativity in the Era of AI",
+        "url": "https://www.bowdoin.edu/news/2026/10/four-creators-consider-human-creativity-in-the-era-of-ai.html",
+        "source": "bowdoin.edu",
+        "published": "2026-10-01",
+        "summary": "At Bowdoin, writer Jordan Kisner, composer Badie Khaleghian, photographer Michael Kolster, and producer Franklin Leonard explored how AI changes creative practice. Their discussion connected concerns about sameness with problem framing, uncertainty, and art's human purpose. Leonard anticipated more material and a greater need to identify worthwhile work. Easier production makes perspective and discernment more consequential, while leaving room for creators to choose their own relationship with AI.",
+        "imageUrl": "https://www.bowdoin.edu/news/2026/images/four-headshots-2x2-transparent.png",
+        "stages": [
+          "Reclaim Value",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "The panel offered differing creative practices, including deliberate refusal and longstanding use of technology.",
+          "Framing problems, embracing uncertainty, and discerning worthwhile work emerged as human contributions."
+        ]
+      },
+      {
+        "title": "If AI Is Eliminating Easy Work, How Should Colleges Prepare Students?",
+        "url": "https://www.forbes.com/sites/michaeledmondson/2026/09/29/if-ai-is-eliminating-easy-work-how-should-colleges-prepare-students/",
+        "source": "forbes.com",
+        "published": "2026-09-29T03:00:00+00:00",
+        "summary": "Michael Edmondson argues that colleges must prepare students for complex work as AI absorbs simpler entry tasks. Drawing on workplace research, he describes the learning experience lost when routine work disappears and calls for authentic projects, feedback, and independent thinking. Preparing people to evaluate and challenge AI requires preserving the practice through which judgment develops, alongside opportunities to use the tools.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Removing routine entry work can also remove the apprenticeship through which beginners gain expertise.",
+          "Teach students to frame problems, evaluate AI output, and defend decisions through authentic practice."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-04-ai-needs-human-stewards-everywhere": {
     "slug": "2026-10-04-ai-needs-human-stewards-everywhere",
     "date": "2026-10-04",

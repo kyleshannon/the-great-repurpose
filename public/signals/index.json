@@ -1,10 +1,28 @@
 [
   {
+    "slug": "2026-10-05-human-judgment-must-outlast-easier-output",
+    "date": "2026-10-05",
+    "title": "Human Judgment Must Outlast Easier Output",
+    "pattern": "Today's two note.com guides turn AI anxiety into decisions about tasks, delegation, and midcareer experience; BNO's contributed image-tool overview shows how quickly the output layer is becoming easier. Bowdoin's creators ask what makes that output meaningful, while Michael Edmondson asks how students will acquire judgment when beginner work disappears. The shared challenge is to preserve the practice, perspective, and responsibility that let people direct abundant capability toward something worth doing.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://www.bowdoin.edu/news/2026/images/four-headshots-2x2-transparent.png"
+  },
+  {
     "slug": "2026-10-04-ai-needs-human-stewards-everywhere",
     "date": "2026-10-04",
     "title": "AI Needs Human Stewards Everywhere",
     "pattern": "Philippine planners and Indian labor analysts are pairing AI growth with reskilling and public support, while a Japanese writer sees physical AI extending the question to blue-collar work. CTech's workplace agents and creators defending their AI use show the same shift at the individual level: more people will need to direct, judge, and explain AI's role rather than simply absorb its output or its disruption.",
-    "stages": ["Become AI Ready", "Reclaim Value", "Relaunch Yourself", "Unhook Identity"],
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Unhook Identity"
+    ],
     "imageUrl": "https://newsbytes.ph/wp-content/uploads/2026/10/Balisacan.jpg"
   },
   {
