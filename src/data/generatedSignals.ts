@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-06-human-experience-becomes-ais-essential-input",
+    "date": "2026-10-06",
+    "title": "Human Experience Becomes AI's Essential Input",
+    "pattern": "Mercor's training economy and SAP's planned TechWolf acquisition turn people's expertise and actual work into inputs for AI; CSU students are asking whether tool access becomes a credible career path. Yoon Seok-kwan reinvests saved time in sensory experience, while Tak@ | IT Explore argues for clear objectives before autonomous delegation. These stories put human experience at the center of machine capability and ask how people retain choice, proof of value, and a future in work systems increasingly shaped around AI.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/10/06/news-p.v1.20261004.6707dea3eb6849bf8475a16fb1c86bbc_P1.jpg"
+  },
+  {
     "slug": "2026-10-05-human-judgment-must-outlast-easier-output",
     "date": "2026-10-05",
     "title": "Human Judgment Must Outlast Easier Output",
@@ -1387,6 +1400,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-06-human-experience-becomes-ais-essential-input": {
+    "slug": "2026-10-06-human-experience-becomes-ais-essential-input",
+    "date": "2026-10-06",
+    "title": "Human Experience Becomes AI's Essential Input",
+    "pattern": "Mercor's training economy and SAP's planned TechWolf acquisition turn people's expertise and actual work into inputs for AI; CSU students are asking whether tool access becomes a credible career path. Yoon Seok-kwan reinvests saved time in sensory experience, while Tak@ | IT Explore argues for clear objectives before autonomous delegation. These stories put human experience at the center of machine capability and ask how people retain choice, proof of value, and a future in work systems increasingly shaped around AI.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/10/06/news-p.v1.20261004.6707dea3eb6849bf8475a16fb1c86bbc_P1.jpg",
+    "stories": [
+      {
+        "title": "Who Benefits When Experts Teach AI?",
+        "url": "https://www.cbsnews.com/news/artificial-intelligence-trained-to-help-with-careers-60-minutes/",
+        "source": "cbsnews.com",
+        "published": "2026-10-04T19:26:00+00:00",
+        "summary": "CBS follows specialists who teach Mercor's models their professional knowledge. Its accompanying transcript describes training gigs whose hours can be unpredictable. The TGR question is how people turn hard-earned judgment into opportunity while protecting their identity and a sustainable livelihood as execution becomes more widely available.",
+        "imageUrl": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/10/02/a0e8300e-0204-4f98-9f7a-e58e7fc552ef/thumbnail/1200x630/edaa6d8c507cfdedae87286735da9fa3/60-minutes-full-episode-10-04-2026.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Mercor turns expertise into model training.",
+          "Irregular training gigs do not substitute for stable careers."
+        ]
+      },
+      {
+        "title": "Cal State Invests in AI as Students Question Career Value",
+        "url": "https://www.sfgate.com/news/bayarea/article/edsource-cal-state-goes-all-in-on-ai-but-some-22463415.php",
+        "source": "sfgate.com",
+        "published": "2026-10-05T11:05:02+00:00",
+        "summary": "EdSource's report, syndicated by SFGate, describes CSU's ChatGPT Edu access and classroom grants alongside students' doubts about employment prospects. Faculty question whether the university has identified the career skills this investment develops, while employers still seek leadership, inventiveness, and ethics. The human challenge is to connect tool access with visible capability and credible opportunities, rather than equating a subscription with readiness.",
+        "imageUrl": "https://s.hdnux.com/photos/01/54/20/70/28380735/6/rawImage.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "CSU is funding AI access and faculty experimentation across its university system.",
+          "Students and faculty want clearer evidence of how AI preparation supports careers."
+        ]
+      },
+      {
+        "title": "Yoon Seok-kwan Reinvests AI Time in Human Creativity",
+        "url": "https://www.koreaherald.com/article/10894255",
+        "source": "koreaherald.com",
+        "published": "2026-10-06T04:48:03+00:00",
+        "summary": "AI artist Yoon Seok-kwan, known as Keepkwan, told Herald Design Lounge that walks, photography, pottery, and bonsai cultivate the experience and judgment behind his work. After years in corporate strategy, he used image generation to revive a creative ambition and build an exhibition around his own story. His example connects AI capability with a human life that supplies direction, taste, and something worth communicating.",
+        "imageUrl": "https://wimg.heraldcorp.com/news/cms/2026/10/06/news-p.v1.20261004.6707dea3eb6849bf8475a16fb1c86bbc_P1.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The artist uses some time saved by AI to develop sensory experience away from screens.",
+          "His own story and interests guide what he creates and how he evaluates AI results."
+        ]
+      },
+      {
+        "title": "SAP Plans TechWolf Acquisition to Map Work and Skills",
+        "url": "https://www.unite.ai/sap-signs-agreement-to-acquire-ai-work-intelligence-provider-techwolf/",
+        "source": "unite.ai",
+        "published": "2026-10-06T12:00:01+00:00",
+        "summary": "Unite.AI reports SAP's agreement to acquire TechWolf, whose platform maps tasks, skills, and labor-market context from connected business systems. The deal is expected to close in the fourth quarter, subject to approvals; planned integration would inform hiring, reskilling, and workforce redesign. The TGR stake is whether these richer descriptions make people's capabilities and next opportunities more visible as roles change.",
+        "imageUrl": "https://www.unite.ai/wp-content/uploads/2026/10/sap-signs-agreement-to-acquire-ai-work-intelligence-provider-techwolf.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The acquisition is agreed, with closing still subject to conditions and regulatory approval.",
+          "SAP plans to connect skills and work data with workforce planning and internal mobility."
+        ]
+      },
+      {
+        "title": "Autonomous AI Shifts Work Toward Defining Goals",
+        "url": "https://note.com/itexplore/n/n2e1e2f351b55?hl=en",
+        "source": "note.com",
+        "published": "2026-10-03T19:19:00+00:00",
+        "summary": "A note.com essay by Tak@ | IT Explore examines the fatigue of repeatedly prompting AI and repairing broken context. It argues that more autonomous systems shift the human task toward defining objectives, completion criteria, and failure conditions. The practical TGR lesson is to make judgment visible: write down the goal and how you will evaluate the result before delegating a longer project.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/320585615/rectangle_large_type_2_e707c300ccabb93f49009d29ade4952f.jpeg?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The author frames repeated prompting and context repair as hidden costs of AI work.",
+          "Clear objectives and evaluation criteria help people direct a project and assess its result."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-05-human-judgment-must-outlast-easier-output": {
     "slug": "2026-10-05-human-judgment-must-outlast-easier-output",
     "date": "2026-10-05",
