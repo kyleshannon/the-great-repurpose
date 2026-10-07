@@ -1,0 +1,94 @@
+{
+  "slug": "2026-10-07-transition-support-must-match-ai-change",
+  "date": "2026-10-07",
+  "title": "Transition Support Must Match AI Change",
+  "pattern": "Ireland's recruiters want public reskilling money directed to jobs AI is already changing, while DNB and HubSpot are cutting roles as they reorganize around AI. Workers are responding by looking toward trades, teaching, and health care, and employers are being asked to govern AI agents inside real workplaces. The shared question is whether institutions will build credible pathways for people before automation turns a role change into a private emergency.",
+  "stages": [
+    "Unhook Identity",
+    "Reclaim Value",
+    "Become AI Ready",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://www.techcentral.ie/wp-content/uploads/2026/10/SiobhanKinsella_ERF.jpg",
+  "stories": [
+    {
+      "title": "Recruiters Call for AI Reskilling Funds to Reach Affected Jobs",
+      "url": "https://www.techcentral.ie/recruiters-welcome-budget-investment-for-ai-skills-but-say-the-money-must-reach-the-jobs-ai-is-changing-now/",
+      "source": "techcentral.ie",
+      "published": "2026-10-07T08:01:44+00:00",
+      "summary": "Ireland's Employment and Recruitment Federation welcomed a €150 million Budget 2027 commitment from the National Training Fund for AI reskilling and upskilling. The federation argues the money must reach people in jobs already changing, rather than remain an abstract skills promise. For TGR, the important test is whether public investment helps workers translate experience into a next role before disruption narrows their choices.",
+      "imageUrl": "https://www.techcentral.ie/wp-content/uploads/2026/10/SiobhanKinsella_ERF.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "The Budget 2027 plan allocates €150 million over three years for AI reskilling and upskilling.",
+        "Recruiters say the funding must reach workers whose jobs AI is changing now."
+      ]
+    },
+    {
+      "title": "AI Agents Put Workplace Accountability in Focus",
+      "url": "https://www.jdsupra.com/legalnews/ai-agents-in-the-workplace-8895748/",
+      "source": "jdsupra.com",
+      "published": "2026-10-05T17:00:00+00:00",
+      "summary": "A JD Supra workplace-law overview considers how AI agents are entering business workflows to streamline operations and routine work. Its practical implication is that organizations need clear responsibility for how agents are introduced, directed, and monitored. The TGR relevance is that people are not merely being displaced by a tool; many are being asked to exercise judgment and accountability in newly automated systems.",
+      "imageUrl": "https://jdsupra-static.s3.amazonaws.com/profile-images/og.15537_3227.jpg",
+      "stages": [
+        "Become AI Ready",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "AI agents are being introduced to streamline workflows and operations.",
+        "Employers need people who can direct and supervise AI inside real work systems."
+      ]
+    },
+    {
+      "title": "DNB Plans Technology Cuts as AI Takes Manual Work",
+      "url": "https://www.analyticsinsight.net/layoffs/dnb-to-cut-400-roles-as-ai-takes-on-manual-banking-work",
+      "source": "analyticsinsight.net",
+      "published": "2026-10-07T03:55:00+00:00",
+      "summary": "DNB, Norway's largest bank, plans to cut about 400 technology roles as it expands AI use for manual banking work, according to Analytics Insight's report. The story makes the human transition concrete: automation is changing both tasks and the role structures around them. TGR asks what support, visible skills, and next-step options people receive when an employer redraws that structure.",
+      "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-10-07%2Ffw0ea5cg%2FDNB-to-lay-off-400-and-expand-use-of-AI-agents.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "DNB plans to cut around 400 roles in its technology teams.",
+        "The bank links the change to using AI for manual banking work."
+      ]
+    },
+    {
+      "title": "AI Anxiety Steers Workers Toward Hands-On Careers",
+      "url": "https://finance-commerce.com/2026/10/ai-proof-jobs-career-changes/",
+      "source": "finance-commerce.com",
+      "published": "2026-10-06T13:48:00+00:00",
+      "summary": "Finance & Commerce reports that AI-related job fears are pushing younger workers and recent graduates toward skilled trades, teaching, and health care—fields they see as less exposed to automation. The move reflects a search for security, but it also shows a labor market asking people to redesign identity under pressure. The TGR task is to offer broader, more active pathways than simply fleeing toward supposedly AI-proof work.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Workers are looking to skilled trades, teaching, and health care for perceived durability.",
+        "Career decisions are increasingly being shaped by fears about automation."
+      ]
+    },
+    {
+      "title": "HubSpot Cuts 660 Roles in AI Reorganization",
+      "url": "https://www.newsbytesapp.com/news/business/hubspot-cuts-660-jobs-as-it-shifts-to-ai-solutions/tldr",
+      "source": "newsbytesapp.com",
+      "published": "2026-10-06T19:40:00+00:00",
+      "summary": "HubSpot is cutting 660 jobs, roughly 7% of its workforce, as it reorganizes around AI-driven goals, according to NewsBytes. The company is offering affected employees 20 weeks of base pay and job-search support. That assistance matters, yet the wider TGR question remains: whether companies pair an AI strategy with enough time, guidance, and opportunity for people to relaunch on their own terms.",
+      "imageUrl": "",
+      "stages": [
+        "Unhook Identity",
+        "Relaunch Yourself"
+      ],
+      "keyPoints": [
+        "HubSpot is cutting 660 roles, about 7% of its workforce.",
+        "Affected employees are being offered 20 weeks of base pay and job-search support."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
