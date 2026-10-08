@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-08-ai-rewrites-who-gets-to-advance",
+    "date": "2026-10-08",
+    "title": "AI Rewrites Who Gets To Advance",
+    "pattern": "Gallup's workplace findings show AI's benefits concentrating among college graduates and managers, while Goldman Sachs expects new hires to supervise agents from day one. At Amazon, another round of cuts accompanies greater AI infrastructure investment, and thePantheon.ai asks what it means for a person's mission to persist through technology. Together, these stories make the human tension plain: when work is redesigned, people need a real route to judgment, purpose, and opportunity—not merely a closer seat to automation.",
+    "stages": [
+      "Unhook Identity",
+      "Become AI Ready",
+      "Reclaim Value",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://static.cryptobriefing.com/wp-content/uploads/2026/10/08052557/library-goldman-sachs-new-hires-will-manage-ai-agents-from-day-o-3-800x450.png"
+  },
+  {
     "slug": "2026-10-07-transition-support-must-match-ai-change",
     "date": "2026-10-07",
     "title": "Transition Support Must Match AI Change",
@@ -1413,6 +1426,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-08-ai-rewrites-who-gets-to-advance": {
+    "slug": "2026-10-08-ai-rewrites-who-gets-to-advance",
+    "date": "2026-10-08",
+    "title": "AI Rewrites Who Gets To Advance",
+    "pattern": "Gallup's workplace findings show AI's benefits concentrating among college graduates and managers, while Goldman Sachs expects new hires to supervise agents from day one. At Amazon, another round of cuts accompanies greater AI infrastructure investment, and thePantheon.ai asks what it means for a person's mission to persist through technology. Together, these stories make the human tension plain: when work is redesigned, people need a real route to judgment, purpose, and opportunity—not merely a closer seat to automation.",
+    "stages": [
+      "Unhook Identity",
+      "Become AI Ready",
+      "Reclaim Value",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://static.cryptobriefing.com/wp-content/uploads/2026/10/08052557/library-goldman-sachs-new-hires-will-manage-ai-agents-from-day-o-3-800x450.png",
+    "stories": [
+      {
+        "title": "AI Benefits Are Deepening a Workplace Divide",
+        "url": "https://finance.yahoo.com/technology/ai/articles/ai-creating-workplace-divide-college-223007629.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-10-07T15:30:00+00:00",
+        "summary": "A Gallup study covered by Yahoo Finance finds that regular AI use—and its workplace gains—are more common among college graduates and managers, people already more likely to hold quality jobs. The warning is not that workers should avoid AI; it is that access without support can widen an existing gap. TGR's task is to help people build visible human value and practical agency before that gap becomes a permanent career divide.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/a8d1c12e9fe2832f5c562a6fbfe401d6efc9e860b0f4aa719e7b43eeb2a64cb8/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbenzinga_79%2F8aa3e5c1321a27c343896db00db71e2c.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Regular AI use is far more common among college graduates and managers.",
+          "The study suggests AI's productivity gains are accruing unevenly across the workforce."
+        ]
+      },
+      {
+        "title": "Goldman Sachs Hires Will Supervise AI Agents",
+        "url": "https://cryptobriefing.com/goldman-sachs-new-hires-manage-ai-agents/",
+        "source": "cryptobriefing.com",
+        "published": "2026-10-08T06:25:29+00:00",
+        "summary": "Goldman Sachs says new finance hires will manage AI agents from their first day, according to CryptoBriefing. The role shift could also reduce the need for layers of middle management. It is a concrete signal that career entry is becoming less about completing routine tasks and more about directing systems, checking outcomes, and carrying responsibility for the result.",
+        "imageUrl": "https://static.cryptobriefing.com/wp-content/uploads/2026/10/08052557/library-goldman-sachs-new-hires-will-manage-ai-agents-from-day-o-3-800x450.png",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Goldman Sachs expects new finance hires to oversee AI agents from day one.",
+          "The shift makes judgment and accountability part of the entry-level job."
+        ]
+      },
+      {
+        "title": "Amazon Cuts Jobs Amid AI Infrastructure Growth",
+        "url": "https://www.peoplematters.in/news/strategic-hr/amazon-cuts-nearly-1000-jobs-in-latest-layoffs-impacting-teams-in-india-and-uk-52585",
+        "source": "peoplematters.in",
+        "published": "2026-10-07T19:44:00+00:00",
+        "summary": "People Matters reports that Amazon's latest cuts affected nearly 1,000 employees across functions in India and the UK as the company continues restructuring and investing in AI infrastructure. A job title can disappear before a worker has a clear story about what comes next. That makes transition support, transferable proof of value, and room to relaunch essential rather than optional.",
+        "imageUrl": "https://asset.peoplematters.in/images/8f46eef5-63fb-465e-a71d-d31f9e2a4a00.png",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Amazon's latest reported cuts affected nearly 1,000 jobs in India and the UK.",
+          "The restructuring coincides with accelerated investment in AI infrastructure."
+        ]
+      },
+      {
+        "title": "Amazon Layoffs Show AI Spending's Workforce Tradeoffs",
+        "url": "https://invezz.com/news/2026/10/08/amazon-cuts-nearly-1000-jobs-during-prime-event-as-ai-spending-reshapes-workforce/",
+        "source": "invezz.com",
+        "published": "2026-10-07T22:38:00+00:00",
+        "summary": "Invezz likewise links Amazon's nearly 1,000 reported job cuts to the company’s AI spending and workforce reshaping. The separate account reinforces the scale of the transition rather than adding a new company narrative. For people inside changing institutions, the work is to separate personal worth from a role wrapper and begin building a next chapter before the decision is made for them.",
+        "imageUrl": "https://invezz-wp-media.lon1.digitaloceanspaces.com/2026/10/image-33.png",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "A second report connects Amazon's recent cuts with AI investment and workforce change.",
+          "The immediate human challenge is preparing for a changing role before it becomes a forced transition."
+        ]
+      },
+      {
+        "title": "A Digital Legacy Startup Extends Mission Beyond Life",
+        "url": "https://techcrunch.com/contributor-content/thepantheon-ai-is-betting-that-the-human-mind-can-outlive-a-lifetime/",
+        "source": "techcrunch.com",
+        "published": "2026-10-07T09:07:00+00:00",
+        "summary": "TechCrunch describes thePantheon.ai's attempt to preserve more than memories: it wants a person's mission and philosophy to continue beyond a lifetime. The idea is speculative, but its question is useful now. If AI can increasingly carry out pieces of our work, purpose becomes a more durable compass than the task list or job title we once used to explain who we are.",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2018/02/tc-backlight-e1689786273147.png?w=1200",
+        "stages": [
+          "Discover Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "thePantheon.ai is pursuing a digital legacy built around a person's mission and philosophy.",
+          "The story shifts the question from preserving tasks to carrying forward purpose."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-07-transition-support-must-match-ai-change": {
     "slug": "2026-10-07-transition-support-must-match-ai-change",
     "date": "2026-10-07",
