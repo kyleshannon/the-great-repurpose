@@ -1,0 +1,81 @@
+{
+  "slug": "2026-10-10-ai-needs-pathways-people-can-trust",
+  "date": "2026-10-10",
+  "title": "AI Needs Pathways People Can Trust",
+  "pattern": "Colleges are launching AI and influencing degrees while Carnegie Mellon-style investments reshape how students learn; at the same time, employers face a growing body of AI employment rules and evidence that cost-cutting adoption can weaken development. Jeff Bezos's vision of shorter workweeks raises the larger question. The human tension is whether AI-led change will create credible routes to capability, security, and contribution—or simply remove the places where people learn how to matter.",
+  "stages": [
+    "Become AI Ready",
+    "Relaunch Yourself",
+    "Unhook Identity",
+    "Reclaim Value"
+  ],
+  "imageUrl": "https://images.seattletimes.com/wp-content/uploads/2026/10/10092026_tzr_tzr_131143.jpg?d=1200x630",
+  "stories": [
+    {
+      "title": "Colleges Build New AI Career Pathways",
+      "url": "https://www.npr.org/2026/10/09/nx-s1-5991808/new-career-paths-colleges-now-offer-degrees-in-influencing-and-ai",
+      "source": "npr.org",
+      "published": "2026-10-09T06:00:00+00:00",
+      "summary": "NPR examines colleges adding degrees in AI, influencing, and health sciences as they compete for students seeking a durable career path. The move recognizes that credentials must evolve with work, but a new program matters only if it gives people genuine practice, discernment, and access to opportunity—not just a trendier label.",
+      "imageUrl": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "keyPoints": [
+        "Colleges are introducing AI and influencing programs to attract students responding to a changing job market.",
+        "Career preparation must offer real capability and mobility, not merely a new name for uncertainty."
+      ]
+    },
+    {
+      "title": "Bezos Imagines Less Work Without Lost Living Standards",
+      "url": "https://www.seattletimes.com/business/bezos-dismisses-ai-job-loss-fears-predicts-shorter-workweeks/",
+      "source": "seattletimes.com",
+      "published": "2026-10-09T23:52:29+00:00",
+      "summary": "The Seattle Times reports Jeff Bezos's claim that AI could let people work less without losing their standard of living. It is an optimistic forecast, not a transition plan. If required labor shrinks, people still need a say in how income, belonging, skill-building, and meaningful contribution are organized.",
+      "imageUrl": "https://images.seattletimes.com/wp-content/uploads/2026/10/10092026_tzr_tzr_131143.jpg?d=1200x630",
+      "stages": ["Unhook Identity", "Discover Purpose"],
+      "keyPoints": [
+        "Bezos predicts that AI could enable shorter workweeks while preserving living standards.",
+        "More free time becomes progress only when people retain security and agency over what comes next."
+      ]
+    },
+    {
+      "title": "Colleges Redesign Learning for the AI Era",
+      "url": "https://www.forbes.com/sites/lisachambers/2026/10/10/12-top-colleges-reinventing-education-for-the-ai-era/",
+      "source": "forbes.com",
+      "published": "2026-10-10T03:30:00+00:00",
+      "summary": "Forbes profiles colleges reworking curriculum, campuses, and problem-solving models for an AI-shaped economy, including a major new Carnegie Mellon investment in Miami. The enduring opportunity is not tool fluency alone. Schools must help people develop the judgment and collaborative confidence to keep learning as roles change.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": [
+        "The article highlights institutions reshaping education around AI-era problem solving and workforce needs.",
+        "Human advantage depends on learning systems that build judgment alongside technical capability."
+      ]
+    },
+    {
+      "title": "Employers Navigate a Growing AI Employment Rulebook",
+      "url": "https://www.gibsondunn.com/artificial-intelligence-in-employment-newsletter-october-2026/",
+      "source": "gibsondunn.com",
+      "published": "2026-10-05T18:10:49+00:00",
+      "summary": "Gibson Dunn's October roundup tracks the legislation, enforcement, litigation, and regulatory developments shaping employers' use of AI. The expanding rulebook is a signal that workplace transformation cannot be treated as a private efficiency project. People need clear rights, accountability, and recourse where automated systems affect their work.",
+      "imageUrl": "https://www.gibsondunn.com/wp-content/uploads/2024/09/A.jpg",
+      "stages": ["Reclaim Value", "Unhook Identity"],
+      "keyPoints": [
+        "Employment-related AI rules are evolving through legislation, enforcement actions, and litigation.",
+        "Responsible adoption requires accountability for people affected by automated workplace decisions."
+      ]
+    },
+    {
+      "title": "AI Cost Cutting Can Starve Future Growth",
+      "url": "https://www.yahoo.com/news/us/articles/ai-adoption-may-hampering-future-144800785.html",
+      "source": "yahoo.com",
+      "published": "2026-10-07T07:48:00+00:00",
+      "summary": "Yahoo reports that streamlining roles with AI may reduce the experiential and development opportunities organizations need for future growth. The warning is practical: when entry points and stretch assignments disappear, people lose places to build judgment. A healthy AI strategy must deliberately replace those pathways rather than assume capability will emerge on its own.",
+      "imageUrl": "",
+      "stages": ["Relaunch Yourself", "Become AI Ready"],
+      "keyPoints": [
+        "The report warns that eliminating or streamlining positions can remove crucial development experiences.",
+        "Organizations need intentional paths for people to build capability as AI changes the work."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
