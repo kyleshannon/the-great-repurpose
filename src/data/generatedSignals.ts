@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-11-human-oversight-makes-ai-work-trustworthy",
+    "date": "2026-10-11",
+    "title": "Human Oversight Makes AI Work Trustworthy",
+    "pattern": "A reflection on human value in an automated economy, Forbes arguments for hopeful HR and human-centered leadership, Philadelphia's revamped coding curriculum, and a report on Google's AQuA all point to the same shift: AI is moving work faster than institutions are redesigning responsibility. The human tension is whether people will be prepared to direct, question, and stand behind AI-assisted work—or be left carrying accountability without the authority and preparation to exercise judgment.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://assets.st-note.com/production/uploads/images/323172975/rectangle_large_type_2_04204b6f64e3712ac85a85db9f6f2c0b.png?fit=bounds&quality=85&width=1280"
+  },
+  {
     "slug": "2026-10-10-ai-needs-pathways-people-can-trust",
     "date": "2026-10-10",
     "title": "AI Needs Pathways People Can Trust",
@@ -1452,6 +1464,100 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-11-human-oversight-makes-ai-work-trustworthy": {
+    "slug": "2026-10-11-human-oversight-makes-ai-work-trustworthy",
+    "date": "2026-10-11",
+    "title": "Human Oversight Makes AI Work Trustworthy",
+    "pattern": "A reflection on human value in an automated economy, Forbes arguments for hopeful HR and human-centered leadership, Philadelphia's revamped coding curriculum, and a report on Google's AQuA all point to the same shift: AI is moving work faster than institutions are redesigning responsibility. The human tension is whether people will be prepared to direct, question, and stand behind AI-assisted work—or be left carrying accountability without the authority and preparation to exercise judgment.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://assets.st-note.com/production/uploads/images/323172975/rectangle_large_type_2_04204b6f64e3712ac85a85db9f6f2c0b.png?fit=bounds&quality=85&width=1280",
+    "stories": [
+      {
+        "title": "What Human Value Means in an Automated Economy",
+        "url": "https://note.com/igoshi_walker/n/n11e34cb82f7c?hl=en",
+        "source": "note.com",
+        "published": "2026-10-07T13:15:00+00:00",
+        "summary": "This reflection examines the persistent fear that AI will take jobs and argues that the more durable human contribution lies beyond routine execution. It frames the transition as a question of how people build and communicate judgment, context, and relationships when automation changes what employers can buy from a machine.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/321959901/rectangle_large_type_2_bb4c4b70cc73a6f6f6d356fd4b9fb67b.jpeg?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The piece treats job-loss anxiety as a prompt to define human value more clearly, not as a reason to abandon agency.",
+          "It points toward judgment, context, trust, and relationships as contributions that automation alone does not explain."
+        ]
+      },
+      {
+        "title": "The Future Of HR: From Managers Of Human Resources To Guardians Of Hope",
+        "url": "https://www.forbes.com/sites/afdhelaziz/2026/10/09/the-future-of-hr-from-managers-of-human-resources-to-guardians-of-hope/",
+        "source": "forbes.com",
+        "published": "2026-10-09T10:16:00+00:00",
+        "summary": "A Forbes contributor argues that HR leaders confronting AI automation need to move beyond administering labor toward helping people navigate uncertainty and possibility. The proposed role treats hope as an institutional practice: giving workers credible support, language, and paths through a changing job landscape.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The article recasts HR's role amid automation as helping people face disruption with more than compliance processes.",
+          "It makes transition support a leadership responsibility rather than an individual worker's private burden."
+        ]
+      },
+      {
+        "title": "AI Leadership Still Needs Human Perspective As Technology Gets Smarter",
+        "url": "https://www.forbes.com/sites/dianehamilton/2026/10/09/ai-leadership-still-needs-human-perspective-as-technology-gets-smarter/",
+        "source": "forbes.com",
+        "published": "2026-10-09T00:00:00+00:00",
+        "summary": "This leadership argument insists that more capable AI does not remove the need for human perspective. It places curiosity, engagement, and discernment at the center of adoption, reminding leaders that a system can optimize a task without deciding whether the task, the incentives, or the outcome deserve trust.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The article links AI leadership to human perspective rather than treating technical capability as sufficient direction.",
+          "It highlights curiosity and judgment as practical leadership capacities in AI-enabled organizations."
+        ]
+      },
+      {
+        "title": "AI Forces Coding Program To Revamp How It Prepares Philly Students For Tech Jobs",
+        "url": "https://www.phillyvoice.com/coding-program-philadelphia-students-tech-jobs-ai/",
+        "source": "phillyvoice.com",
+        "published": "2026-10-10T09:01:00.467352+00:00",
+        "summary": "A Philadelphia coding program is overhauling its curriculum as AI reshapes entry-level technology work and makes the job market more competitive. The story shows that career preparation now has to include adaptation and durable problem-solving, not simply a fixed set of technical tasks that software can increasingly perform.",
+        "imageUrl": "https://media.phillyvoice.com/media/images/Screenshot_2026-10-09_at_1.10..2e16d0ba.fill-1200x630-c0.png",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The program changed its curriculum in response to AI's impact on the path into technology jobs.",
+          "Its challenge is to give students an advantage in a labor market where familiar entry-level work is changing."
+        ]
+      },
+      {
+        "title": "Google AQuA Monitors AI Agents With Another AI",
+        "url": "https://note.com/good_newt8869/n/n7aad3e9668a7?hl=en",
+        "source": "note.com",
+        "published": "2026-10-11T00:23:00+00:00",
+        "summary": "A report on Google's AQuA describes an AI-based mechanism for diagnosing agent-work failures even when a task appears complete. It exposes a coming management question: as organizations delegate more work to agents, people need visibility into how it was done and clear ownership for deciding whether an apparently successful result is actually sound.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/323172975/rectangle_large_type_2_04204b6f64e3712ac85a85db9f6f2c0b.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AQuA is presented as a way to diagnose failures in AI-agent work even when the task reports completion.",
+          "The example makes supervision and accountability part of the work people must learn to do with agents."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-10-ai-needs-pathways-people-can-trust": {
     "slug": "2026-10-10-ai-needs-pathways-people-can-trust",
     "date": "2026-10-10",
