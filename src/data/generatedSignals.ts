@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-12-ai-transition-needs-shared-pathways",
+    "date": "2026-10-12",
+    "title": "AI Transition Needs Shared Pathways",
+    "pattern": "NTUC and PwC are pairing job redesign with worker support in Singapore while Oracle layoffs, the IMF's warning, and calls for AI education in Nigeria make the disruption concrete. A Japanese reskilling guide points to the same lesson: people cannot be expected to navigate changing work alone; institutions must make credible routes to renewed capability and value visible.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://assets.st-note.com/production/uploads/images/323260438/rectangle_large_type_2_db182928dc9d4cbfbc02f3006d86be73.png?fit=bounds&quality=85&width=1280"
+  },
+  {
     "slug": "2026-10-11-human-oversight-makes-ai-work-trustworthy",
     "date": "2026-10-11",
     "title": "Human Oversight Makes AI Work Trustworthy",
@@ -1464,6 +1476,101 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-12-ai-transition-needs-shared-pathways": {
+    "slug": "2026-10-12-ai-transition-needs-shared-pathways",
+    "date": "2026-10-12",
+    "title": "AI Transition Needs Shared Pathways",
+    "pattern": "NTUC and PwC are pairing job redesign with worker support in Singapore while Oracle layoffs, the IMF's warning, and calls for AI education in Nigeria make the disruption concrete. A Japanese reskilling guide points to the same lesson: people cannot be expected to navigate changing work alone; institutions must make credible routes to renewed capability and value visible.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://assets.st-note.com/production/uploads/images/323260438/rectangle_large_type_2_db182928dc9d4cbfbc02f3006d86be73.png?fit=bounds&quality=85&width=1280",
+    "stories": [
+      {
+        "title": "NTUC and PwC Singapore Partner to Help Workers Benefit From AI",
+        "url": "https://www.ntuc.org.sg/uportal/news/NTUC-and-PwC-Singapore-partner-to-help-workers-benefit-from-AI/",
+        "source": "ntuc.org.sg",
+        "published": "2026-10-11T17:00:00+00:00",
+        "summary": "Singapore's NTUC and PwC are partnering to help companies adopt AI while redesigning jobs and preparing workers for higher-value roles. The useful signal is institutional: transition becomes more credible when employers, worker organizations, and educators make a practical path forward together.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The partnership connects AI adoption to job redesign and worker development.",
+          "Workers need visible routes into higher-value roles as job tasks change."
+        ]
+      },
+      {
+        "title": "AI Reshuffle: The Tech Jobs Being Cut vs. Created",
+        "url": "https://www.freepressjournal.in/tech/ai-reshuffle-the-tech-jobs-being-cut-vs-the-ones-being-created",
+        "source": "freepressjournal.in",
+        "published": "2026-10-12T03:10:00+00:00",
+        "summary": "Oracle's reported second round of 2026 layoffs illustrates how rapidly AI investment can change the shape of technical work, including product engineering roles. The human task is to separate durable judgment and contribution from any one job title, then build a next chapter before the old wrapper disappears.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Oracle's reported cuts put product engineering teams among the roles under pressure.",
+          "Career resilience depends on portable contribution, not attachment to a single role."
+        ]
+      },
+      {
+        "title": "Experts Urge Early AI Education to Equip Students for Future Jobs",
+        "url": "https://businessday.ng/education/article/experts-urge-early-ai-education-to-equip-students-for-future-jobs/",
+        "source": "businessday.ng",
+        "published": "2026-10-11T17:00:00+00:00",
+        "summary": "Education experts in Nigeria are urging earlier AI learning so students can develop capabilities for changing work rather than encounter the shift only at the point of hiring. Access matters, but so does teaching people how to use tools with judgment, agency, and a sense of where they can create value.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The proposal brings AI education into the school curriculum earlier.",
+          "Preparation should build judgment and opportunity, not merely tool familiarity."
+        ]
+      },
+      {
+        "title": "IMF Warns AI Could Disrupt 40% of Global Jobs",
+        "url": "https://businessday.ng/business-economy/article/imf-warns-ai-could-disrupt-40-of-global-jobs-urges-action-to-protect-workers/",
+        "source": "businessday.ng",
+        "published": "2026-10-11T17:00:00+00:00",
+        "summary": "The IMF is warning that AI could affect roughly 40 percent of jobs worldwide, with outcomes ranging from augmentation to downgrading or elimination. That scale calls for more than individual resilience: workers need protection, real transition support, and room to redirect their capabilities toward work that remains meaningfully theirs.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The IMF frames AI's labor impact as global and uneven.",
+          "Public and organizational support determine whether disruption becomes a viable transition."
+        ]
+      },
+      {
+        "title": "What Is Reskilling? Five Concrete Skills for Work",
+        "url": "https://note.com/k9r_3m7vx/n/n2267b90e4bfe?hl=en",
+        "source": "note.com",
+        "published": "2026-10-11T04:40:00+00:00",
+        "summary": "A Japanese guide makes reskilling tangible by asking which skills remain useful as AI and digitalization change everyday work. Its practical orientation is valuable, but the deeper challenge is social: people need time, support, and believable destinations for learning to become a route to renewed value rather than a private burden.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/323260438/rectangle_large_type_2_db182928dc9d4cbfbc02f3006d86be73.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The guide translates reskilling into concrete, work-relevant capabilities.",
+          "Learning works best when it connects to a credible next role or contribution."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-11-human-oversight-makes-ai-work-trustworthy": {
     "slug": "2026-10-11-human-oversight-makes-ai-work-trustworthy",
     "date": "2026-10-11",
