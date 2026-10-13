@@ -1,0 +1,81 @@
+{
+  "slug": "2026-10-13-career-entry-needs-public-imagination",
+  "date": "2026-10-13",
+  "title": "Career Entry Needs Public Imagination",
+  "pattern": "The Times of India, the World Bank and IMF warnings, Forbes's call for workforce development, and two Japanese reflections on disappearing white-collar work converge on one problem: AI is narrowing familiar routes into a livelihood faster than societies are creating credible new ones. The human tension is not simply whether people can learn a tool, but whether institutions will offer young and displaced workers a real role, a reason to belong, and a path to contribute.",
+  "stages": [
+    "Unhook Identity",
+    "Relaunch Yourself",
+    "Reclaim Value",
+    "Become AI Ready"
+  ],
+  "imageUrl": "https://cdn.vanguardngr.com/wp-content/uploads/2026/10/Screenshot-2026-10-13-051609.png",
+  "stories": [
+    {
+      "title": "AI Erodes Entry-Level Jobs as Graduates Need Judgment and Automation Skills",
+      "url": "https://www.educationtimes.com/news/ai-erodes-entry-level-jobs-fresh-grads-need-business-judgment-automation-skills/articleshow/134911775.cms",
+      "source": "educationtimes.com",
+      "published": "2026-10-13T01:01:00+00:00",
+      "summary": "The Times of India reports that AI is shrinking traditional entry-level white-collar work while increasing the value of people who can direct automation with business judgment. For new graduates, the transition is not a simple skills race: they need opportunities to practice discernment and contribute before employers expect them to supervise a system.",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-134911902,width-1280,height-720,imgsize-222930,resizemode-6,y_pad-600/photo.jpg",
+      "stages": ["Unhook Identity", "Become AI Ready"],
+      "keyPoints": [
+        "AI is putting familiar entry-level white-collar tasks under pressure.",
+        "Graduates need business judgment alongside the ability to work with automation."
+      ]
+    },
+    {
+      "title": "World Bank and IMF Warn of an AI Jobs Crisis Without Worker Preparation",
+      "url": "https://www.vanguardngr.com/2026/10/ai-world-bank-imf-warn-of-jobs-crisis-in-nigeria-others-2/",
+      "source": "vanguardngr.com",
+      "published": "2026-10-13T04:16:43+00:00",
+      "summary": "The World Bank and IMF warn that AI could deepen job insecurity in Nigeria and other developing economies unless governments and businesses prepare workers and use the technology to create employment. The story shifts responsibility beyond individual reskilling: public choices determine whether AI expands participation or compounds exclusion.",
+      "imageUrl": "https://cdn.vanguardngr.com/wp-content/uploads/2026/10/Screenshot-2026-10-13-051609.png",
+      "stages": ["Relaunch Yourself", "Reclaim Value"],
+      "keyPoints": [
+        "The warning links AI's labor effects to worker preparation and job creation.",
+        "Governments and employers shape whether technological change broadens or restricts opportunity."
+      ]
+    },
+    {
+      "title": "AI Is Changing Work Faster Than Workforce Development Can Respond",
+      "url": "https://www.forbes.com/sites/michaeledmondson/2026/10/13/ai-is-changing-work-faster-than-workforce-development-can-respond/",
+      "source": "forbes.com",
+      "published": "2026-10-13T03:00:00+00:00",
+      "summary": "A Forbes analysis argues that AI is remaking work from inside organizations faster than workforce-development systems can adapt. Its useful challenge is to connect ongoing learning to actual openings and evolving tasks, so people gain a route to meaningful contribution rather than another credential with no destination.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "keyPoints": [
+        "Workforce systems are struggling to keep pace with task-level changes from AI.",
+        "Learning has to connect to real opportunity, not remain detached from changing work."
+      ]
+    },
+    {
+      "title": "White-Collar Work Faces a New AI Reckoning",
+      "url": "https://note.com/b_w_tabby/n/nf2684a2543d3?hl=en",
+      "source": "note.com",
+      "published": "2026-10-11T19:36:00+00:00",
+      "summary": "A Japanese essay traces how roles once treated as independent professions can be reduced to routines when tools absorb parts of the work. Its deeper question is identity: if a job title no longer guarantees a place, people need language for the judgment, relationships, and purpose they can carry into what comes next.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/322731869/rectangle_large_type_2_3623e96950c686115f41984daa441ef5.jpeg?fit=bounds&quality=85&width=1280",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "Automation can turn once-distinct professional tasks into repeatable routines.",
+        "A durable transition begins by separating personal worth from a disappearing job wrapper."
+      ]
+    },
+    {
+      "title": "Reskilling Must Lead to Work People Can Believe In",
+      "url": "https://note.com/cyberphilosophy/n/n5ae50ab3302f?hl=en",
+      "source": "note.com",
+      "published": "2026-10-12T01:00:00+00:00",
+      "summary": "A Japanese reflection on job-loss anxiety asks the question beneath many employer reskilling programs: after efficiency gains, will there still be meaningful work and a place for the people who learned it? That uncertainty makes credibility essential; training becomes humane only when it points toward a visible, worthwhile next contribution.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/323492985/rectangle_large_type_2_5aee748c29bb7cc2ad2dab36ccc4f087.jpeg?fit=bounds&quality=85&width=1280",
+      "stages": ["Discover Purpose", "Relaunch Yourself"],
+      "keyPoints": [
+        "The essay questions whether reskilling will be followed by meaningful work.",
+        "People need credible destinations for learning before they can treat it as a real path forward."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
