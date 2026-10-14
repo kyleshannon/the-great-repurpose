@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-14-ai-changes-jobs-before-institutions-explain-them",
+    "date": "2026-10-14",
+    "title": "AI Changes Jobs Before Institutions Explain Them",
+    "pattern": "Forbes offers HR leaders strategies for preparing people, while 247WallSt and The Sun report Kroger's AI-linked corporate cuts; Workday and Cresta show the systems that are accelerating the change. The human tension is that organizations are asking people to adapt, supervise, and reskill even as familiar roles are being removed before a credible next place in the work can be explained.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6ace493c5b6f9dad27ce0967/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+  },
+  {
     "slug": "2026-10-13-career-entry-needs-public-imagination",
     "date": "2026-10-13",
     "title": "Career Entry Needs Public Imagination",
@@ -1489,6 +1502,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-14-ai-changes-jobs-before-institutions-explain-them": {
+    "slug": "2026-10-14-ai-changes-jobs-before-institutions-explain-them",
+    "date": "2026-10-14",
+    "title": "AI Changes Jobs Before Institutions Explain Them",
+    "pattern": "Forbes offers HR leaders strategies for preparing people, while 247WallSt and The Sun report Kroger's AI-linked corporate cuts; Workday and Cresta show the systems that are accelerating the change. The human tension is that organizations are asking people to adapt, supervise, and reskill even as familiar roles are being removed before a credible next place in the work can be explained.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6ace493c5b6f9dad27ce0967/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "stories": [
+      {
+        "title": "15 HR Strategies for Preparing Employees for AI-Driven Roles",
+        "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/10/13/15-hr-strategies-that-prepare-employees-for-ai-driven-roles/",
+        "source": "forbes.com",
+        "published": "2026-10-13T11:15:00+00:00",
+        "summary": "Forbes's HR Council argues that employers need to develop people as AI changes job responsibilities rather than relying only on new hiring. The useful test is whether that development gives workers a real route into changed work, not simply another demand to keep up.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6ace493c5b6f9dad27ce0967/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "AI-driven role changes require employers to build new capabilities inside their existing workforce.",
+          "Training matters most when it points to a visible next contribution rather than a vague expectation to adapt."
+        ]
+      },
+      {
+        "title": "Kroger Plans Deep Corporate Cuts as AI Expands",
+        "url": "https://247wallst.com/investing/2026/10/13/kroger-to-cut-37-of-corporate-jobs-another-ai-win/",
+        "source": "247wallst.com",
+        "published": "2026-10-13T14:14:32+00:00",
+        "summary": "247WallSt reports that Kroger is tying sweeping corporate reductions to AI, raising a concrete question about what happens to white-collar work when efficiency is treated as the whole story. People affected by those choices need more than an explanation of the technology; they need a credible path for the value they still carry.",
+        "imageUrl": "https://247wallst.com/wp-content/uploads/2022/02/imageForEntry14-kvt.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Kroger's reported corporate cuts make AI's labor effects immediate rather than theoretical.",
+          "A role disappearing does not erase the judgment, relationships, and experience people can bring forward."
+        ]
+      },
+      {
+        "title": "Workday Expands Agentic AI for HR Teams",
+        "url": "https://www.techtarget.com/it-strategy/news/366652049/Workday-expands-agentic-AI-automation-for-HR-teams",
+        "source": "techtarget.com",
+        "published": "2026-10-13T02:00:00+00:00",
+        "summary": "TechTarget reports that Workday is extending agentic AI to automate lower-level HR work and help teams plan and staff organizations. As routine tasks move into systems, the human work shifts toward setting direction, exercising judgment, and being accountable for how people are affected.",
+        "imageUrl": "https://www.techtarget.com/rms/onlineimages/maze_g685007409.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Workday is positioning agentic AI to take on more routine HR activity.",
+          "Human value increasingly sits in judgment, context, and responsibility for the system's consequences."
+        ]
+      },
+      {
+        "title": "Kroger Plans 3,000 Job Cuts Linked to AI",
+        "url": "https://www.the-sun.com/money/17137923/kroger-cut-3000-jobs-devastating-layoffs-ai/",
+        "source": "the-sun.com",
+        "published": "2026-10-13T00:21:00+00:00",
+        "summary": "The Sun reports that Kroger plans to eliminate about 3,000 roles over three years while pointing to AI as part of the change. The scale makes the identity question unavoidable: when a job wrapper falls away, workers need language and support for the capabilities that remain theirs.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The reported plan puts thousands of corporate jobs into an AI-shaped transition.",
+          "A humane response separates a person's worth and capability from a role that an organization has chosen to remove."
+        ]
+      },
+      {
+        "title": "Cresta Launches a Deputy Agent for Post-Call Work",
+        "url": "https://www.tmcnet.com/usubmit/2026/10/13/10461804.htm",
+        "source": "tmcnet.com",
+        "published": "2026-10-12T17:01:00+00:00",
+        "summary": "Cresta's announced Deputy Agent is designed to continue customer work after a call ends, a clear example of AI extending the work once held inside a human role. The question is not whether the agent can keep moving, but what people will be empowered to decide, improve, and own around it.",
+        "imageUrl": "https://mmx.prnewswire.com/media/MS1730746/Cresta-Logo.jpg?id=OA3014307",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The product is positioned to carry customer-related work beyond the live conversation.",
+          "Workers need agency over the judgment and accountability that surround an always-on agent."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-13-career-entry-needs-public-imagination": {
     "slug": "2026-10-13-career-entry-needs-public-imagination",
     "date": "2026-10-13",
