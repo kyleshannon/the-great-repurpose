@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-15-better-jobs-require-human-choices",
+    "date": "2026-10-15",
+    "title": "Better Jobs Require Human Choices",
+    "pattern": "A workplace podcast, the IMF's warning to the Philippines, and a Bank of Cyprus student forum all arrive at the same question: who will decide what AI-powered work is for? Forbes shows that women in highly exposed administrative roles face unequal transition barriers, while The Hill argues that efficiency only becomes better work when employers deliberately create room to learn, advance, and contribute.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover Purpose",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://bloximages.chicago2.vip.townnews.com/madison.com/content/tncms/assets/v3/editorial/e/a7/ea78a35f-8f65-5499-81b8-f12b1e0bc542/6acfc1afb6b3a.preview.png?crop=1400%2C735%2C0%2C332&resize=1200%2C630&order=crop%2Cresize"
+  },
+  {
     "slug": "2026-10-14-ai-changes-jobs-before-institutions-explain-them",
     "date": "2026-10-14",
     "title": "AI Changes Jobs Before Institutions Explain Them",
@@ -1502,6 +1515,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-15-better-jobs-require-human-choices": {
+    "slug": "2026-10-15-better-jobs-require-human-choices",
+    "date": "2026-10-15",
+    "title": "Better Jobs Require Human Choices",
+    "pattern": "A workplace podcast, the IMF's warning to the Philippines, and a Bank of Cyprus student forum all arrive at the same question: who will decide what AI-powered work is for? Forbes shows that women in highly exposed administrative roles face unequal transition barriers, while The Hill argues that efficiency only becomes better work when employers deliberately create room to learn, advance, and contribute.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover Purpose",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://bloximages.chicago2.vip.townnews.com/madison.com/content/tncms/assets/v3/editorial/e/a7/ea78a35f-8f65-5499-81b8-f12b1e0bc542/6acfc1afb6b3a.preview.png?crop=1400%2C735%2C0%2C332&resize=1200%2C630&order=crop%2Cresize",
+    "stories": [
+      {
+        "title": "Could AI make our jobs easier but less meaningful?",
+        "url": "https://madison.com/audio_ea78a35f-8f65-5499-81b8-f12b1e0bc542.html",
+        "source": "madison.com",
+        "published": "2026-10-14T10:00:00+00:00",
+        "summary": "This workplace-focused episode asks whether AI can remove tedious tasks and raise productivity while still leaving people with work that feels thinner or less connected to purpose. The TGR question is not merely what automation saves, but whether people retain authorship over the value and meaning of the work that remains.",
+        "imageUrl": "https://bloximages.chicago2.vip.townnews.com/madison.com/content/tncms/assets/v3/editorial/e/a7/ea78a35f-8f65-5499-81b8-f12b1e0bc542/6acfc1afb6b3a.preview.png?crop=1400%2C735%2C0%2C332&resize=1200%2C630&order=crop%2Cresize",
+        "stages": [
+          "Unhook Identity",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "Eliminating tedious tasks does not automatically make the remaining work more meaningful.",
+          "People need a voice in how AI changes the purpose and texture of their roles."
+        ]
+      },
+      {
+        "title": "The Philippines and the AI Revolution: Can Artificial Intelligence Create Better Jobs and Higher Incomes?",
+        "url": "https://www.mindanaotimes.com.ph/the-philippines-and-the-ai-revolution-can-artificial-intelligence-create-better-jobs-and-higher-incomes/",
+        "source": "Mindanao Times",
+        "published": "2026-10-15T07:33:54+00:00",
+        "summary": "Reporting on IMF Managing Director Kristalina Georgieva's Bangkok remarks, this piece weighs AI investment and new opportunity against the risk that developing economies fall further behind without preparation for job disruption. Better incomes will depend on whether workers gain real pathways into new capability, not simply whether AI investment arrives.",
+        "imageUrl": "https://www.mindanaotimes.com.ph/wp-content/uploads/2026/07/90f727f8-9064-4538-a084-f99c3ca75a77.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "AI investment can create opportunity while also widening gaps between economies and workers.",
+          "Preparing people for transition is as important as attracting the technology itself."
+        ]
+      },
+      {
+        "title": "As AI Automates Women's Work, Workplaces Must Adapt",
+        "url": "https://www.forbes.com/sites/shubhi-rao/2026/10/14/as-ai-automates-womens-work-workplaces-must-adapt/",
+        "source": "Forbes",
+        "published": "2026-10-14T05:17:00+00:00",
+        "summary": "Shubhi Rao argues that generative AI disproportionately exposes administrative and clerical roles where women are heavily represented, while routes into growing jobs often require credentials, experience, or in-person work. She calls for employers and governments to measure mobility, hire for skills, and remove barriers such as child-care constraints before automation deepens an existing advancement gap.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Administrative roles with high AI exposure are disproportionately held by women.",
+          "Skills-based hiring, transition metrics, and care infrastructure can make new pathways more equitable."
+        ]
+      },
+      {
+        "title": "Bank of Cyprus brings students face to face with the realities of AI",
+        "url": "https://cyprus-mail.com/2026/10/15/bank-of-cyprus-brings-students-face-to-face-with-the-realities-of-ai",
+        "source": "Cyprus Mail",
+        "published": "2026-10-15T09:53:36+00:00",
+        "summary": "A Bank of Cyprus event brought students and experts together to discuss AI's effects on education, employment, and future careers. The useful signal is that readiness cannot wait until people are already displaced: young people need honest exposure to changing skill demands and help connecting those demands to a future they can shape.",
+        "imageUrl": "https://cyprus-mail.com/wp-content/uploads/2026/10/DSC_4023_2048px-1.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "Students are being asked to confront how AI is changing education and career prospects now.",
+          "AI readiness is stronger when technical awareness is tied to direction and agency."
+        ]
+      },
+      {
+        "title": "AI is making work faster, but creation of better jobs won’t be automatic",
+        "url": "https://thehill.com/opinion/technology/6143182-making-jobs-better-with-ai/",
+        "source": "The Hill",
+        "published": "2026-10-13T05:30:00+00:00",
+        "summary": "This commentary argues that time saved by AI is only an opening, not a guarantee of more rewarding work. Whether efficiency becomes learning, advancement, and better jobs—or simply more assignments—depends on choices employers make about how they redesign work and share the gains.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "Faster task completion creates a choice about where the recovered capacity goes.",
+          "Employers determine whether AI productivity produces development and better work or intensified output."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-14-ai-changes-jobs-before-institutions-explain-them": {
     "slug": "2026-10-14-ai-changes-jobs-before-institutions-explain-them",
     "date": "2026-10-14",
