@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-16-ais-human-costs-enter-public-negotiation",
+    "date": "2026-10-16",
+    "title": "AI's Human Costs Enter Public Negotiation",
+    "pattern": "A Vietnamese business conference, a student newspaper's defense of human creativity, Federal Reserve evidence of changing hiring, Netflix's cuts, and the U.S. midterm debate all make AI's social consequences harder to treat as a distant forecast. The tension is moving into public view: organizations and citizens must decide whether AI's gains will be negotiated around meaningful work, creative dignity, and credible paths forward—or merely absorbed as losses people are expected to manage alone.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://image.vietnamnews.vn/uploadvnnews/Article/2026/10/16/538306_Trinh.jpg"
+  },
+  {
     "slug": "2026-10-15-better-jobs-require-human-choices",
     "date": "2026-10-15",
     "title": "Better Jobs Require Human Choices",
@@ -1515,6 +1528,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-16-ais-human-costs-enter-public-negotiation": {
+    "slug": "2026-10-16-ais-human-costs-enter-public-negotiation",
+    "date": "2026-10-16",
+    "title": "AI's Human Costs Enter Public Negotiation",
+    "pattern": "A Vietnamese business conference, a student newspaper's defense of human creativity, Federal Reserve evidence of changing hiring, Netflix's cuts, and the U.S. midterm debate all make AI's social consequences harder to treat as a distant forecast. The tension is moving into public view: organizations and citizens must decide whether AI's gains will be negotiated around meaningful work, creative dignity, and credible paths forward—or merely absorbed as losses people are expected to manage alone.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://image.vietnamnews.vn/uploadvnnews/Article/2026/10/16/538306_Trinh.jpg",
+    "stories": [
+      {
+        "title": "Businesses urged to redesign work around people as AI reshapes jobs",
+        "url": "https://vietnamnews.vn/economy/1802164/businesses-urged-to-redesign-work-around-people-as-ai-reshapes-jobs.html",
+        "source": "vietnamnews.vn",
+        "published": "",
+        "summary": "Speakers at Vietnam's Makeover 2026 conference argued that businesses must rethink how work is organized and how employees collaborate with AI if productivity gains are to create lasting value. The useful TGR signal is that new tools do not settle the human question: leaders still choose whether redesigned work gives people greater capability and a meaningful role.",
+        "imageUrl": "https://image.vietnamnews.vn/uploadvnnews/Article/2026/10/16/538306_Trinh.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "Conference speakers connected AI adoption to the design of work and employee collaboration.",
+          "Productivity becomes durable value only when organizations deliberately reshape roles around people."
+        ]
+      },
+      {
+        "title": "Our View: Generative AI cheapens the image-bearing work of creativity",
+        "url": "https://www.theechonews.com/article/2026/10/our-view-generative-ai-cheapens-the-image-bearing-work-of-creativity",
+        "source": "The Echo",
+        "published": "",
+        "summary": "This editorial argues that generative AI can tempt people to bypass the difficult, image-bearing work of human creativity. Its TGR relevance is not a rejection of tools; it is a reminder that creative capacity carries dignity and judgment, and that easier production should not make authorship or personal expression feel disposable.",
+        "imageUrl": "https://snworksceo.imgix.net/etu/5026a1b0-5bab-42af-a72b-3bf8fb379dd4.sized-1000x1000.png?w=800&h=600",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The piece treats creativity as more than a stream of images or outputs.",
+          "AI-assisted creation still needs human authorship, care, and reasons for making."
+        ]
+      },
+      {
+        "title": "AI Isn't Coming for American Jobs Someday. The Fed Says It's Already Happening.",
+        "url": "https://247wallst.com/investing/2026/10/15/ai-isnt-coming-for-american-jobs-someday-the-fed-says-its-already-happening/",
+        "source": "247wallst.com",
+        "published": "",
+        "summary": "This report interprets the Federal Reserve's latest economic assessment as evidence that AI is already changing who gets hired and who is left out of the labor market. For TGR, the immediate stake is agency: people need visible transition routes before changing hiring patterns turn uncertainty into a permanent loss of confidence and contribution.",
+        "imageUrl": "https://247wallst.com/wp-content/uploads/2026/06/No-Jobs-Sign.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The article argues AI's employment effects are already appearing in hiring patterns.",
+          "Workers need credible routes into renewed contribution before exclusion becomes entrenched."
+        ]
+      },
+      {
+        "title": "Netflix Cuts 1,000 Jobs After Earlier Layoff Warnings",
+        "url": "https://www.forbes.com/sites/rickellis/2026/10/14/netflix-cuts-1000-jobs-after-earlier-layoff-warnings/",
+        "source": "Forbes",
+        "published": "",
+        "summary": "Forbes reports that Netflix is cutting 1,000 roles, affecting product, technology, legal, and human-resources teams. The story is a concrete reminder that professional identity can be disrupted across functions at once; people need more than a layoff announcement to relaunch—they need support, context, and a believable next chapter.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The reported cuts span both technical and nontechnical corporate functions.",
+          "A transition is more humane when people receive pathways beyond the role being removed."
+        ]
+      },
+      {
+        "title": "AI and jobs: The technology issue entering America's midterm debate",
+        "url": "https://www.firstpost.com/tech/ai-and-jobs-the-technology-issue-entering-americas-midterm-debate-14053404.html",
+        "source": "Firstpost",
+        "published": "",
+        "summary": "Firstpost examines how AI and jobs are entering the American midterm debate, alongside arguments that stronger controls could affect U.S. competitiveness. The important TGR shift is that workforce disruption is becoming a civic question: public choices about policy, training, and accountability will help determine whether people share in AI's benefits.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "AI's labor effects are becoming part of the public argument over national policy.",
+          "Competitiveness debates still need to account for worker preparation and shared benefit."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-15-better-jobs-require-human-choices": {
     "slug": "2026-10-15-better-jobs-require-human-choices",
     "date": "2026-10-15",
