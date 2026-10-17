@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-17-ai-pushes-works-worth-upstream",
+    "date": "2026-10-17",
+    "title": "AI Pushes Work's Worth Upstream",
+    "pattern": "VSCO is building tools and business support around working photographers, while Kling 4.0 makes polished visual output easier to produce. At the same time, Anthropic's reported agent workload, AI-linked layoffs, and renewed attention to skilled trades show familiar job ladders shifting underneath people. The tension is where value moves when production accelerates: people need authority to direct the work, recognize their durable expertise, and build a next chapter rather than be measured only against cheaper output.",
+    "stages": [
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/1117c684a238d25e6148439059f0d022ad3f39224159b06a02f45d016db9f12c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fnyse_video_805%2Fb23f36610d26c2dbe11a1995de2d4c9a.png"
+  },
+  {
     "slug": "2026-10-16-ais-human-costs-enter-public-negotiation",
     "date": "2026-10-16",
     "title": "AI's Human Costs Enter Public Negotiation",
@@ -1528,6 +1541,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-17-ai-pushes-works-worth-upstream": {
+    "slug": "2026-10-17-ai-pushes-works-worth-upstream",
+    "date": "2026-10-17",
+    "title": "AI Pushes Work's Worth Upstream",
+    "pattern": "VSCO is building tools and business support around working photographers, while Kling 4.0 makes polished visual output easier to produce. At the same time, Anthropic's reported agent workload, AI-linked layoffs, and renewed attention to skilled trades show familiar job ladders shifting underneath people. The tension is where value moves when production accelerates: people need authority to direct the work, recognize their durable expertise, and build a next chapter rather than be measured only against cheaper output.",
+    "stages": [
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/1117c684a238d25e6148439059f0d022ad3f39224159b06a02f45d016db9f12c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fnyse_video_805%2Fb23f36610d26c2dbe11a1995de2d4c9a.png",
+    "stories": [
+      {
+        "title": "VSCO CEO discusses photography, AI, and creator careers",
+        "url": "https://finance.yahoo.com/video/vsco-ceo-eric-wittman-photography-150644107.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-10-16T08:06:00+00:00",
+        "summary": "VSCO CEO Eric Wittman describes the company's effort to support photographers with editing, discovery, business tools, community, and education as AI changes creative workflows. The relevant TGR question is whether creative professionals retain room to build a practice and be found for their judgment, rather than being reduced to the output a tool can produce.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/1117c684a238d25e6148439059f0d022ad3f39224159b06a02f45d016db9f12c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fnyse_video_805%2Fb23f36610d26c2dbe11a1995de2d4c9a.png",
+        "stages": [
+          "Relaunch Yourself",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "VSCO is positioning editing, business support, community, and discovery as parts of a photographer's professional life.",
+          "AI can remove workflow friction, but lasting creative work still depends on a person's taste, relationships, and point of view."
+        ]
+      },
+      {
+        "title": "Anthropic's AI workforce experiment squeezes junior jobs",
+        "url": "https://www.ibtimes.sg/anthropics-ai-workforce-experiment-already-squeezing-out-junior-jobs-agents-work-six-times-more-95235",
+        "source": "ibtimes.sg",
+        "published": "2026-10-17T08:55:54+00:00",
+        "summary": "This report says Anthropic's AI agents are working far more hours than their human handlers while junior workers' share of technical hiring has fallen. It makes the entry-level problem concrete: if agents absorb the work through which people once learned, organizations must create deliberate paths for newcomers to develop judgment, responsibility, and visible value.",
+        "imageUrl": "https://data.ibtimes.sg/en/full/87140/ai.jpg?w=1200&h=630?q=60",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The article links expanding agent work to a shrinking share of junior technical hires.",
+          "Entry-level opportunity needs to be redesigned around learning to direct and evaluate AI, not simply replaced."
+        ]
+      },
+      {
+        "title": "AI layoffs push some workers toward new businesses",
+        "url": "https://www.entrepreneur.com/building-a-business/ai-is-now-the-top-reason-for-layoffs-for-some-workers-its-also-a-path-to-starting-a-business",
+        "source": "entrepreneur.com",
+        "published": "2026-10-17T00:00:00+00:00",
+        "summary": "Entrepreneur reports that AI has become a leading reason employers give for layoffs, while some displaced workers use accessible tools to start lean businesses. The important distinction is not that a layoff becomes easy; it is that experience, customer knowledge, and purpose can become raw material for a more self-directed next chapter.",
+        "imageUrl": "https://www.entrepreneur.com/wp-content/uploads/sites/2/2026/10/layoffs-ai-1026-g-2279095544.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The story connects AI-related job cuts with lower-cost ways to test a business idea.",
+          "A credible relaunch begins with human experience and a problem worth serving, not the tool alone."
+        ]
+      },
+      {
+        "title": "Blue-collar work gains attention in an AI-shifting labor market",
+        "url": "https://note.com/raijobtai/n/n65e0ba0a6957?hl=en",
+        "source": "note.com",
+        "published": "2026-10-15T12:49:00+00:00",
+        "summary": "This reflection examines why construction and factory work are receiving fresh attention as AI disrupts office, sales, and administrative roles, while warning that higher pay does not make the choice simple. It is a useful prompt to look beneath occupational labels: practical skill, local trust, and real-world judgment can carry value even as the labor market redraws status.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/324823499/rectangle_large_type_2_9721d1d60dff09beb27d9c10b01f9a03.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The piece contrasts AI exposure in white-collar work with renewed interest in specialized hands-on roles.",
+          "A transition becomes more honest when people can recognize skills and contribution beyond the prestige of a former title."
+        ]
+      },
+      {
+        "title": "Kling 4.0 brings professional controls to AI video creation",
+        "url": "https://markets.businessinsider.com/news/stocks/kling-ai-launches-kling-4-0-globally-with-professional-grade-output-stable-motion-and-multimodal-control-1036633972",
+        "source": "markets.businessinsider.com",
+        "published": "2026-10-15T23:53:00+00:00",
+        "summary": "Kling AI announced a global release of Kling 4.0, promising more stable motion and multimodal controls for professional-grade video generation. As production barriers fall, the human layer moves upstream: deciding what deserves to be made, shaping an audience relationship, and bringing taste and responsibility to the choices the system cannot make.",
+        "imageUrl": "https://ml.globenewswire.com/Resource/Download/758d5f9d-018a-49a1-9797-05dee1f9b4ce/k1.png",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Kling 4.0 emphasizes stable motion and multimodal control for AI-generated video.",
+          "Easier production raises the premium on human direction, discernment, and a reason for creating."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-16-ais-human-costs-enter-public-negotiation": {
     "slug": "2026-10-16-ais-human-costs-enter-public-negotiation",
     "date": "2026-10-16",
