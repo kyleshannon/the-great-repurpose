@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-18-work-needs-a-human-safety-net",
+    "date": "2026-10-18",
+    "title": "Work Needs A Human Safety Net",
+    "pattern": "A creator's account of returning to drawing with AI, a report on Asia's changing labor demand, an October tech-layoff tally, ZDNET's wage-loss dashboard, and a hospital-bill essay all put the same human question in view: disruption is arriving in both the work people make and the work that pays for life. The tension is whether employers and public institutions will build real routes to skills, agency, and security—or leave individuals to absorb the risk alone.",
+    "stages": [
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/5fbce8ce917d9da870dc4bb9ac11496b78c1bca8.png"
+  },
+  {
     "slug": "2026-10-17-ai-pushes-works-worth-upstream",
     "date": "2026-10-17",
     "title": "AI Pushes Work's Worth Upstream",
@@ -1541,6 +1553,97 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-18-work-needs-a-human-safety-net": {
+    "slug": "2026-10-18-work-needs-a-human-safety-net",
+    "date": "2026-10-18",
+    "title": "Work Needs A Human Safety Net",
+    "pattern": "A creator's account of returning to drawing with AI, a report on Asia's changing labor demand, an October tech-layoff tally, ZDNET's wage-loss dashboard, and a hospital-bill essay all put the same human question in view: disruption is arriving in both the work people make and the work that pays for life. The tension is whether employers and public institutions will build real routes to skills, agency, and security—or leave individuals to absorb the risk alone.",
+    "stages": [
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/5fbce8ce917d9da870dc4bb9ac11496b78c1bca8.png",
+    "stories": [
+      {
+        "title": "A creator finds drawing again with AI",
+        "url": "https://note.com/tnpmgn/n/n252f5f0147b2?hl=en",
+        "source": "note.com",
+        "published": "2026-10-18T02:58:00+00:00",
+        "summary": "This personal account wrestles with the threat AI poses to creative jobs, copyright, and training data while describing how an AI tool helped its author return to drawing. It is a useful reminder that creative identity cannot be reduced either to fear of a tool or to the output it produces; people still decide what they want to make and why.",
+        "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/5fbce8ce917d9da870dc4bb9ac11496b78c1bca8.png",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The writer connects AI's creative promise with concerns about livelihoods, copyright, and training data.",
+          "Using AI renewed the author's practice of drawing rather than replacing the desire to create."
+        ]
+      },
+      {
+        "title": "AI reshapes labor demand across Asia",
+        "url": "https://www.thehindubusinessline.com/info-tech/ai-reshapes-labour-demand-across-asia-posing-challenges-for-job-creation-and-skills-development-report/article71599064.ece",
+        "source": "thehindubusinessline.com",
+        "published": "2026-10-18T04:14:04+00:00",
+        "summary": "A regional report says AI is changing labor demand across Asia and calls for skills development and policy shifts that turn disruption into inclusive growth. The TGR challenge is collective as well as individual: people need visible pathways to contribute, not a vague instruction to adapt faster.",
+        "imageUrl": "https://bl-i.thgim.com/public/todays-paper/tp-others/tp-variety/f7zczf/article71594281.ece/alternates/LANDSCAPE_1200/Know-your-AI-agG1IGM4TPG.4.jpg.jpg",
+        "stages": [
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The report frames AI's labor effects as a job-creation and skills-development challenge across Asia.",
+          "Inclusive growth requires policy and training systems that make a transition practical for workers."
+        ]
+      },
+      {
+        "title": "Tech layoffs keep piling up in October",
+        "url": "https://www.fastcompany.com/91625107/tech-layoffs-2026-update-mass-job-cuts-october-netflix-hubspot-flock-more",
+        "source": "fastcompany.com",
+        "published": "2026-10-16T07:47:00+00:00",
+        "summary": "Fast Company tracks continued technology-sector job losses as the fourth quarter begins, including cuts at Netflix, HubSpot, and Flock Safety. A running tally cannot explain each worker's next step, which is exactly why organizations need to pair restructuring with honest support for identity, skills, and transition.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The update documents continuing job cuts at several technology companies in October.",
+          "Job loss is not only an efficiency statistic; it interrupts a person's income, belonging, and sense of future."
+        ]
+      },
+      {
+        "title": "A dashboard tracks AI-linked wage losses",
+        "url": "https://www.zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker/",
+        "source": "zdnet.com",
+        "published": "2026-10-16T11:47:39+00:00",
+        "summary": "ZDNET highlights a Wage Loss Dashboard mapping layoffs and estimated wage losses by state, updated with September data. Making the costs visible is important, but measurement should lead to action: communities need ways to help people retain agency and move toward work that recognizes their experience.",
+        "imageUrl": "https://www.zdnet.com/wp-content/uploads/sites/3/How-many-jobs-is-your-state-losing-to-AI-This-dashboard-tracks-the-cuts-and-the-cost.jpg",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The dashboard maps layoffs and wage losses associated with AI-related cuts across states.",
+          "Local data can make an abstract disruption concrete enough for communities to respond."
+        ]
+      },
+      {
+        "title": "A hospital bill exposes work's fragile bargain",
+        "url": "https://www.nydailynews.com/2026/10/18/my-9000-hospital-bill-and-the-future-of-work/",
+        "source": "nydailynews.com",
+        "published": "2026-10-18T09:00:12+00:00",
+        "summary": "An essay about a $9,000 hospital bill connects personal financial strain with fear about AI-driven job loss and the scale of coming disruption. Its force is in the reminder that work is tied to basic security; a humane AI transition must take seriously what people stand to lose beyond a job title.",
+        "imageUrl": "https://www.nydailynews.com/wp-content/uploads/2026/10/shutterstock_2683994185.jpg?w=5760&h=3240",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The essay links household costs and job-loss anxiety rather than treating work change as a distant technology story.",
+          "A credible transition protects dignity and practical security alongside new forms of work."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-17-ai-pushes-works-worth-upstream": {
     "slug": "2026-10-17-ai-pushes-works-worth-upstream",
     "date": "2026-10-17",
