@@ -3,6 +3,20 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-19-ai-redefines-works-human-terms",
+    "date": "2026-10-19",
+    "title": "AI Redefines Work's Human Terms",
+    "pattern": "A staged video of an AI recruiter interviewing an AI candidate, two reflections on human value and portable skills, a report on autonomous digital workforces, and new research on the emotional cost of AI-assisted creativity all press on the same question: what remains distinctly ours when systems can perform more of the work? The answer cannot be a private scramble to look machine-like; people need work, learning, and creative cultures that make judgment, purpose, and relationships matter more.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Discover Purpose",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://www.rte.ie/images/00253227-1600.jpg"
+  },
+  {
     "slug": "2026-10-18-work-needs-a-human-safety-net",
     "date": "2026-10-18",
     "title": "Work Needs A Human Safety Net",
@@ -1553,6 +1567,103 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-19-ai-redefines-works-human-terms": {
+    "slug": "2026-10-19-ai-redefines-works-human-terms",
+    "date": "2026-10-19",
+    "title": "AI Redefines Work's Human Terms",
+    "pattern": "A staged video of an AI recruiter interviewing an AI candidate, two reflections on human value and portable skills, a report on autonomous digital workforces, and new research on the emotional cost of AI-assisted creativity all press on the same question: what remains distinctly ours when systems can perform more of the work? The answer cannot be a private scramble to look machine-like; people need work, learning, and creative cultures that make judgment, purpose, and relationships matter more.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Discover Purpose",
+      "Become AI Ready"
+    ],
+    "imageUrl": "https://www.rte.ie/images/00253227-1600.jpg",
+    "stories": [
+      {
+        "title": "A staged AI interview shows a hiring fear",
+        "url": "https://www.yahoo.com/news/world/articles/fact-check-video-ai-recruiter-012601365.html",
+        "source": "yahoo.com",
+        "published": "",
+        "summary": "A fact check found that a viral video of an AI recruiter interviewing an AI agent for a job candidate was a staged parody, not a real hiring process. The joke still lands because it exposes a real anxiety: when hiring becomes automated theater, people can lose the chance to show judgment, context, and character.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/257dc6821cd10ca50a7e48b1caa2ea84c62b96b081465955e0d9cbd56502cb54/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Flead_stories_560%2F1f6f90b98b5fe326b95813a6ede69965.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The video was staged, but it plays on genuine unease about automated hiring.",
+          "A credible hiring process must leave room for human judgment and a person's full story."
+        ]
+      },
+      {
+        "title": "A reflection asks what work is for",
+        "url": "https://note.com/jpss4691/n/n6a224d010def?hl=en",
+        "source": "note.com",
+        "published": "",
+        "summary": "Drawing on Hannah Arendt's distinction between labor, work, and action, this essay asks what human value means in an AI era organized around efficiency. Its challenge is deeper than job protection: people need room to act, create, and belong rather than treating output as the sole measure of a life.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/324813888/rectangle_large_type_2_4672bce350841b5ba4e91fe8dd490a59.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Discover Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The essay uses Arendt's framework to question an efficiency-only view of work.",
+          "Human value includes action and meaning, not merely productive output."
+        ]
+      },
+      {
+        "title": "Internal reskilling may not travel",
+        "url": "https://note.com/chic_sloth168/n/n336da4ee23eb?hl=en",
+        "source": "note.com",
+        "published": "",
+        "summary": "This article examines the anxiety of workers whose AI training is useful only inside their current employer. It argues for skills that can travel across organizations, a practical TGR test of whether reskilling expands a person's options or simply makes them more dependent on one system.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/325663616/rectangle_large_type_2_9195fd158a72e3aca58d58d57e434aee.jpeg?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Relaunch Yourself",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Workers need to know whether new skills have value beyond their present company.",
+          "Portable capability creates more agency than closed internal training tracks."
+        ]
+      },
+      {
+        "title": "Autonomous agents enter enterprise workflows",
+        "url": "https://techgenyz.com/autonomous-ai-agents-enterprise-digital-workforce/",
+        "source": "techgenyz.com",
+        "published": "",
+        "summary": "Techgenyz reports on autonomous AI agents taking on multi-step enterprise workflows with less constant oversight. As digital workforces grow, the human task shifts toward setting direction, checking consequences, and designing work so accountability is not automated away.",
+        "imageUrl": "https://techgenyz.com/wp-content/uploads/2026/04/AI-code-agents.webp",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Autonomous agents are moving beyond isolated tasks into connected business workflows.",
+          "Human value increasingly lies in direction, accountability, and the judgment to intervene."
+        ]
+      },
+      {
+        "title": "AI-assisted creativity can feel hollow",
+        "url": "https://www.rte.ie/news/newslens/2026/1019/1595935-ai-creative-work/",
+        "source": "study",
+        "published": "",
+        "summary": "A study cited by RTÉ suggests AI-assisted creative work may weaken some of the psychological benefits people associate with making things. The finding does not require rejecting AI, but it does ask creators to protect the agency, effort, and personal connection that make creative practice restorative.",
+        "imageUrl": "https://www.rte.ie/images/00253227-1600.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "The research links AI-assisted creative work with diminished positive feelings from creating.",
+          "Creative tools should serve human involvement and meaning rather than erase them."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-18-work-needs-a-human-safety-net": {
     "slug": "2026-10-18-work-needs-a-human-safety-net",
     "date": "2026-10-18",
