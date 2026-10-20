@@ -1,0 +1,61 @@
+{
+  "slug": "2026-10-20-ai-turns-workers-into-work-designers",
+  "date": "2026-10-20",
+  "title": "AI Turns Workers Into Work Designers",
+  "pattern": "Anthropic's research and employees' own accounts show people spending more time directing and checking Claude, while Forbes argues that an AI agent should be onboarded like a new hire and that creativity still needs human judgment. A separate look at AI-linked layoffs raises the harder institutional question: when work changes, will organizations give people authority, preparation, and an honest path forward—or simply call the disruption inevitable?",
+  "stages": ["Become AI Ready", "Reclaim Value", "Unhook Identity", "Relaunch Yourself", "Discover Purpose"],
+  "imageUrl": "https://images.yourstory.com/cs/286/07f6d7f0ed8e11ed819979969b4b51e2/AINEWS-1791885014582.jpg",
+  "stories": [
+    {
+      "title": "Anthropic maps changing work inside the company",
+      "url": "https://yourstory.com/ai-story/anthropic-ai-jobs-study-work-changing",
+      "source": "yourstory.com",
+      "published": "2026-10-18T16:59:00+00:00",
+      "summary": "YourStory reports on Anthropic's study of how AI agents are changing its own work, including fewer junior technical hires, higher productivity, and new demands on employees. The lesson is not that people disappear from the system; their value shifts toward designing, directing, and being accountable for work that agents now help perform.",
+      "imageUrl": "https://images.yourstory.com/cs/286/07f6d7f0ed8e11ed819979969b4b51e2/AINEWS-1791885014582.jpg",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": ["Anthropic's study connects AI agents with changing hiring patterns and day-to-day productivity.", "Workers need authority and judgment to direct AI inside real systems, not just access to a tool."]
+    },
+    {
+      "title": "Treat an AI agent like a new hire",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/10/20/why-you-should-treat-your-ai-agent-like-a-new-hire/",
+      "source": "forbes.com",
+      "published": "2026-10-20T03:44:00+00:00",
+      "summary": "A Forbes Technology Council contributor argues that organizations should treat an AI agent more like a new hire than an appliance. That framing clarifies the human responsibility: someone must set expectations, provide context, evaluate output, and decide where the agent should not act alone.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6ad6568a9de18ce4307c8ae9/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": ["The new-hire metaphor makes AI adoption an organizational practice, not a software purchase.", "Human direction, context, and evaluation remain necessary when agents enter a workflow."]
+    },
+    {
+      "title": "Creative value begins before the output",
+      "url": "https://www.forbes.com/councils/forbescommunicationscouncil/2026/10/19/the-tenth-choice-the-value-of-creativity-in-the-age-of-ai-marketing-/",
+      "source": "forbes.com",
+      "published": "2026-10-19T07:01:00+00:00",
+      "summary": "A Forbes Communications Council essay asks what creativity is worth when AI can make marketing output easier to produce. It points toward a durable human role upstream of production: choosing the idea, audience, meaning, and relationship that make a piece of work worth making in the first place.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/684c50221dc6520938de6d1a/0x0.jpg?format=jpg&crop=2035,1144,x0,y102,safe&height=900&width=1600&fit=bounds",
+      "stages": ["Reclaim Value", "Discover Purpose"],
+      "keyPoints": ["Easier content production does not settle the question of what should be made.", "Creative value lives in taste, purpose, and relationships as well as execution."]
+    },
+    {
+      "title": "Anthropic employees learn to supervise Claude",
+      "url": "https://www.fastcompany.com/91626124/anthropic-employees-on-how-their-jobs-changed-in-the-past-year-claude-ai",
+      "source": "fastcompany.com",
+      "published": "2026-10-19T14:00:00+00:00",
+      "summary": "Fast Company reports on Anthropic employees describing a shift from doing some work directly to supervising Claude's contributions. The phrase may sound casual, but it names a serious transition: people need the skill, authority, and time to review AI work rather than inherit responsibility for decisions they did not truly control.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Unhook Identity"],
+      "keyPoints": ["AI can move workers from direct execution toward supervision and review.", "Accountability must stay matched with the authority to question and redirect an agent."]
+    },
+    {
+      "title": "Layoffs need an honest explanation",
+      "url": "https://www.ntd.com/are-companies-using-ai-to-replace-workers-or-justify-layoffs_1179335.html",
+      "source": "ntd.com",
+      "published": "2026-10-19T18:13:39+00:00",
+      "summary": "NTD examines whether companies are using AI to replace workers or to explain layoffs that have multiple causes. For people whose roles are changing, the distinction matters: a credible transition begins with an honest account of what is happening and a real route to carry skills, dignity, and agency into what comes next.",
+      "imageUrl": "https://i.ntd.com/assets/uploads/2026/10/id1179841-GettyImages-2188469159.jpg.webp",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": ["AI is one factor in job-market change, alongside the forces that have always shaped layoffs.", "People deserve clear explanations and credible next pathways when roles are eliminated."]
+    }
+  ],
+  "sourceStatus": "generated"
+}
