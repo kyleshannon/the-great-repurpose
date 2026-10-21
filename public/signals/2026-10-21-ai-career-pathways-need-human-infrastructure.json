@@ -1,0 +1,80 @@
+{
+  "slug": "2026-10-21-ai-career-pathways-need-human-infrastructure",
+  "date": "2026-10-21",
+  "title": "AI Career Pathways Need Human Infrastructure",
+  "pattern": "An IMF-backed account finds hiring demand falling in AI-exposed jobs even as new skills create openings; Forbes offers a worker-level case for showing value, and another report asks universities to pair AI tools with human judgment. Stories about developing-economy growth and deliberate change management broaden the same choice: will AI's gains become credible career pathways with learning, context, and support—or another transition people are expected to navigate alone?",
+  "stages": [
+    "Reclaim Value",
+    "Relaunch Yourself",
+    "Unhook Identity"
+  ],
+  "imageUrl": "https://s.yimg.com/lo/mysterio/api/17daaa7ff5a8cbacc66ef8212ce5ed16e047f347a1d39dd7eb749b9b177d9614/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fforbes_contributor_845%2F4aa7a1c5e718a2d64963130eb5329a45.jpg",
+  "stories": [
+    {
+      "title": "AI cuts hiring demand in exposed jobs",
+      "url": "https://www.devdiscourse.com/article/other/3995014-ai-cuts-hiring-demand-by-nearly-10-in-exposed-jobs-but-new-skills-are-opening-career-pathways",
+      "source": "devdiscourse.com",
+      "published": "2026-10-21T00:00:00+00:00",
+      "summary": "Reporting on an IMF study of 110 economies says hiring demand has fallen nearly 10% in highly AI-exposed occupations, even as demand for AI skills creates new openings. The important work is not simply telling people to adapt: it is building accessible routes to new skills, digital education, and work that carries their existing value forward.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "The study links AI exposure with lower hiring demand in affected occupations.",
+        "New AI-skill demand makes reskilling and transition policy central, not optional."
+      ]
+    },
+    {
+      "title": "Show the value employers can trust",
+      "url": "https://www.forbes.com/sites/rachelwells/2026/10/20/3-actions-that-signal-youre-high-value-to-employers-in-2027/",
+      "source": "forbes.com",
+      "published": "2026-10-20T00:00:00+00:00",
+      "summary": "Forbes frames advancement around visible actions and skills that make a worker valuable to an employer. In an AI-shaped market, that invitation is strongest when it moves beyond self-promotion toward demonstrated judgment, reliability, and contribution in real relationships.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value"],
+      "keyPoints": [
+        "Career growth depends on making useful capabilities legible to other people.",
+        "Value is more durable when it includes trust and judgment, not only output."
+      ]
+    },
+    {
+      "title": "Career readiness joins AI with human judgment",
+      "url": "https://www.yahoo.com/news/us/articles/ai-changing-means-career-ready-100000730.html",
+      "source": "yahoo.com",
+      "published": "2026-10-21T10:00:00+00:00",
+      "summary": "Universities are redefining career readiness by expanding workplace experience, developing AI capabilities, and pairing AI career tools with human judgment. That is a healthier model than treating readiness as a software feature: learners need context, practice, and people who can help them interpret changing work.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/17daaa7ff5a8cbacc66ef8212ce5ed16e047f347a1d39dd7eb749b9b177d9614/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fforbes_contributor_845%2F4aa7a1c5e718a2d64963130eb5329a45.jpg",
+      "stages": ["Reclaim Value", "Unhook Identity"],
+      "keyPoints": [
+        "Career preparation is shifting toward AI capability plus workplace experience.",
+        "Human judgment keeps career tools connected to a person's real direction."
+      ]
+    },
+    {
+      "title": "AI growth needs workforce opportunity",
+      "url": "https://www.nation.com.pk/21-Oct-2026/ai-productivity-gains-open-new-growth-opportunities-developing-economies",
+      "source": "nation.com.pk",
+      "published": "2026-10-21T00:58:00+00:00",
+      "summary": "A report on developing economies describes AI as a potential source of productivity and workforce opportunity. Growth becomes meaningful only when people can turn it into visible work, income, and a practical next step rather than watch its benefits accumulate elsewhere.",
+      "imageUrl": "",
+      "stages": ["Relaunch Yourself"],
+      "keyPoints": [
+        "AI productivity could open new economic opportunities in developing economies.",
+        "Opportunity needs pathways from capability to paid, locally relevant work."
+      ]
+    },
+    {
+      "title": "Human value grows through deliberate change",
+      "url": "https://www.forbes.com/councils/forbescommunicationscouncil/2026/10/21/the-change-management-paradox-as-ai-gets-better-humans-become-more-valuable/",
+      "source": "forbes.com",
+      "published": "2026-10-20T21:00:00+00:00",
+      "summary": "A Forbes Communications Council essay argues that rushing AI adoption can weaken the foundations organizations need, while a slower approach can make human contribution more valuable. The practical implication is to give people time and authority to build judgment into new ways of working.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6ad79e30c9dd6e9551c9e49d/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": ["Relaunch Yourself"],
+      "keyPoints": [
+        "Fast adoption does not automatically create a sound operating model.",
+        "Deliberate change makes space for human context, judgment, and accountability."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
