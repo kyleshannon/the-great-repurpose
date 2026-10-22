@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-22-ai-raises-the-stakes-for-human-readiness",
+    "date": "2026-10-22",
+    "title": "AI Raises The Stakes For Human Readiness",
+    "pattern": "Computerworld reports that employers are paying more for AI fluency while asking for deeper experience; ASU is framing agents around human agency and career preparation; and central bankers are watching the job consequences. A new creator course and Barclays' planned AI-linked cuts show the same transition at opposite ends of the labor market: capability is spreading quickly, but people need credible learning, judgment, and institutional support to turn that change into agency rather than displacement.",
+    "stages": [
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Reclaim Value",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108440474-1792559189185-gettyimages-2267051635-porzycki-dailylif260320_npzKY.jpeg?v=1792559557&w=1920&h=1080"
+  },
+  {
     "slug": "2026-10-21-ai-career-pathways-need-human-infrastructure",
     "date": "2026-10-21",
     "title": "AI Career Pathways Need Human Infrastructure",
@@ -1593,6 +1606,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-22-ai-raises-the-stakes-for-human-readiness": {
+    "slug": "2026-10-22-ai-raises-the-stakes-for-human-readiness",
+    "date": "2026-10-22",
+    "title": "AI Raises The Stakes For Human Readiness",
+    "pattern": "Computerworld reports that employers are paying more for AI fluency while asking for deeper experience; ASU is framing agents around human agency and career preparation; and central bankers are watching the job consequences. A new creator course and Barclays' planned AI-linked cuts show the same transition at opposite ends of the labor market: capability is spreading quickly, but people need credible learning, judgment, and institutional support to turn that change into agency rather than displacement.",
+    "stages": [
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Reclaim Value",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108440474-1792559189185-gettyimages-2267051635-porzycki-dailylif260320_npzKY.jpeg?v=1792559557&w=1920&h=1080",
+    "stories": [
+      {
+        "title": "Employers pay more for AI fluency",
+        "url": "https://www.computerworld.com/article/4237995/want-a-higher-paying-tech-job-employers-want-ai-fluency-expertise.html",
+        "source": "computerworld.com",
+        "published": "2026-10-20T18:29:00+00:00",
+        "summary": "Computerworld reports that employers are becoming more selective in tech hiring while paying a premium for advanced AI skills and practical experience. The opportunity is real, but it should not become a new credential race: people need ways to build demonstrable capability, judgment, and communication as the entry ladder shifts.",
+        "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/10/4237995-0-56621400-1792585524-shutterstock_2420639397.jpg?quality=50&strip=all&w=1024",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "A Robert Half survey found that 72% of respondents are increasing pay for relevant AI skills.",
+          "Job postings increasingly combine AI fluency with experience, data skills, and the ability to verify AI-assisted work."
+        ]
+      },
+      {
+        "title": "ASU centers human agency in agentic AI",
+        "url": "https://www.kjzz.org/education/2026-10-21/asu-says-ai-agents-will-become-a-critical-partner-in-students-careers",
+        "source": "kjzz.org",
+        "published": "2026-10-21T22:28:45.141000+00:00",
+        "summary": "At Arizona State University, a conference on agentic AI and the student experience is asking how autonomous systems can serve human-defined goals and expand access to learning. The valuable question is not whether students get an agent, but whether education helps them retain direction, practice, and agency as work changes.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "ASU is exploring agentic AI in workforce and education settings with human agency as the stated focus.",
+          "The university connects AI experimentation to its large online and upskilling populations."
+        ]
+      },
+      {
+        "title": "Central bankers assess AI's job effects",
+        "url": "https://www.cnbc.com/2026/10/21/ai-and-jobs-why-central-bankers-are-paying-attention.html",
+        "source": "cnbc.com",
+        "published": "2026-10-21T23:00:01+00:00",
+        "summary": "CNBC reports that central bankers and researchers are scrutinizing how artificial intelligence could reshape jobs as competition for capital intensifies. When labor transition becomes a macroeconomic concern, workers need more than forecasts: they need institutions that make new skills, mobility, and dignified work materially reachable.",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108440474-1792559189185-gettyimages-2267051635-porzycki-dailylif260320_npzKY.jpeg?v=1792559557&w=1920&h=1080",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "AI's labor-market consequences are becoming a policy concern for central bankers and researchers.",
+          "Economic adaptation depends on pathways people can use, not only aggregate productivity gains."
+        ]
+      },
+      {
+        "title": "Creators gain a practical AI learning path",
+        "url": "https://www.bizcommunity.com/article/launch-of-practical-generative-ai-course-for-content-creators-636721a",
+        "source": "bizcommunity.com",
+        "published": "2026-10-22T02:52:00+00:00",
+        "summary": "AFDA and ZenRobot have launched an online generative-AI course for content creators, bringing practical training into a creative field already being reshaped by new tools. Training matters most when it helps creators build a distinctive practice and informed choices, rather than merely produce more interchangeable output.",
+        "imageUrl": "https://biz-file.com/c/2610/825907-1200x624.jpg?5",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AFDA and ZenRobot are offering a practical online generative-AI course for content creators.",
+          "Creative education can turn tool access into deliberate capability and a more durable practice."
+        ]
+      },
+      {
+        "title": "Barclays ties job cuts to AI efficiency",
+        "url": "https://www.cnbc.com/2026/10/22/barclays-ai-jobs-cuts.html",
+        "source": "cnbc.com",
+        "published": "2026-10-22T07:41:09+00:00",
+        "summary": "Barclays says it plans to cut 5,000 jobs while citing efficiency savings from AI, putting a concrete human cost beside broad claims about productivity. The moment calls for honest transition support: people cannot be asked to absorb a reorganization alone while organizations capture the efficiency dividend.",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/107389383-17108553062024-03-19t131822z_527815204_rc20p6a93htr_rtrmadp_0_barclays-ceo.jpeg?v=1710855373&w=1920&h=1080",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Barclays plans 5,000 job cuts and cites AI-related efficiency savings.",
+          "Efficiency claims should be paired with concrete support for the people whose work is being redesigned."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-21-ai-career-pathways-need-human-infrastructure": {
     "slug": "2026-10-21-ai-career-pathways-need-human-infrastructure",
     "date": "2026-10-21",
