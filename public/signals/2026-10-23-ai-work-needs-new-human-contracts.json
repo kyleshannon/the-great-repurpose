@@ -1,0 +1,81 @@
+{
+  "slug": "2026-10-23-ai-work-needs-new-human-contracts",
+  "date": "2026-10-23",
+  "title": "AI Work Needs New Human Contracts",
+  "pattern": "Microsoft and Barclays' AI-linked cuts, LinkedIn's effort to help people navigate a tougher hiring market, and an NBER finding of no net employment change all point to the same unsettled bargain: aggregate job counts cannot tell workers whether their own path is becoming more secure. ShopOS's creator platform and Google and Microsoft's workplace agents make the stakes practical. As tasks and roles are redistributed, organizations need clearer agreements about opportunity, accountability, and the human judgment that makes AI-enabled work trustworthy.",
+  "stages": [
+    "Reclaim Value",
+    "Relaunch Yourself",
+    "Unhook Identity",
+    "Become AI Ready"
+  ],
+  "imageUrl": "https://st1.latestly.com/wp-content/uploads/2026/06/68-181-784x441.jpg",
+  "stories": [
+    {
+      "title": "Companies Cut Jobs as AI Spending Shifts",
+      "url": "https://www.latestly.com/business/layoffs-amid-ai-adoption-multinationals-cut-jobs-as-corporate-investments-pivot-toward-artificial-intelligence-7653652.html",
+      "source": "LatestLY",
+      "published": "2026-10-22T15:52:18+00:00",
+      "summary": "Major companies including Microsoft and Barclays are cutting administrative and operational roles while redirecting investment toward AI infrastructure, data centers, and automation. The shift creates demand for specialized technical talent, but it also makes the transition personal for workers whose value has been tied to tasks now being redesigned.",
+      "imageUrl": "https://st1.latestly.com/wp-content/uploads/2026/06/68-181-784x441.jpg",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": [
+        "AI investment is changing which roles companies fund and which they reduce.",
+        "Workers need pathways beyond task-based identities as operating models change."
+      ]
+    },
+    {
+      "title": "LinkedIn Uses AI to Navigate a Harder Job Market",
+      "url": "https://www.forbes.com/sites/dougmelville/2026/10/22/with-job-applications-up-30-linkedins-new-ai-tool-may-unlock-your-next-chapter/",
+      "source": "Forbes",
+      "published": "2026-10-22T15:49:00+00:00",
+      "summary": "With job applications up 30 percent, LinkedIn is positioning a new AI tool as help for people seeking their next role. The useful question is not whether a tool can submit or sort applications, but whether it helps a person articulate transferable value and make an intentional next move in a crowded market.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value", "Relaunch Yourself"],
+      "keyPoints": [
+        "A more competitive job market increases the need for credible self-direction.",
+        "AI can support career navigation when it clarifies rather than replaces human judgment."
+      ]
+    },
+    {
+      "title": "ShopOS Launches Sloosh for AI-Assisted Creators",
+      "url": "https://www.tmcnet.com/usubmit/2026/10/22/10468661.htm",
+      "source": "TMCnet",
+      "published": "2026-10-21T17:00:00+00:00",
+      "summary": "ShopOS has launched Sloosh, an AI-powered creative platform aimed at the next generation of creators. The platform reflects a broader change in creative work: easier production raises the importance of taste, direction, and the ability to turn tools into work that carries a distinct human point of view.",
+      "imageUrl": "https://images.tmcnet.com/tmc/world.jpg",
+      "stages": ["Reclaim Value", "Discover Purpose"],
+      "keyPoints": [
+        "AI creative platforms lower the barrier to making and distributing work.",
+        "Human taste and purpose become more visible sources of creative value."
+      ]
+    },
+    {
+      "title": "Study Finds No Net AI Employment Effect Yet",
+      "url": "https://www.forbes.com/sites/joemckendrick/2026/10/21/its-a-wash-ai-will-create-as-many-jobs-as-it-eliminates-study-suggests/",
+      "source": "Forbes",
+      "published": "2026-10-21T13:37:00+00:00",
+      "summary": "An NBER survey of 9,000 executives found no net effect from AI on firm employment over the previous three years, while most respondents expected little overall impact in the next three. That aggregate stability should not obscure uneven change: job counts can hold steady even as skills, authority, and access to opportunity are redistributed.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": [
+        "The survey reports no overall employment change from AI so far.",
+        "Headline employment totals do not reveal who gains new agency or loses a viable path."
+      ]
+    },
+    {
+      "title": "Workplace AI Agents Need Human Management",
+      "url": "https://www.inc.com/robert-gillespie/managing-ai-agents-at-work-costs/91422882",
+      "source": "Inc.",
+      "published": "2026-10-22T07:01:00+00:00",
+      "summary": "Google and Microsoft are giving AI agents workplace accounts, placing automated actors alongside employees in company systems. The operational challenge is not merely provisioning access: teams must decide who supervises agent work, how trust is earned, and where human accountability remains visible when an agent acts.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Unhook Identity"],
+      "keyPoints": [
+        "AI agents are becoming participants in ordinary workplace systems.",
+        "Clear human ownership is essential to prevent automation from creating a hidden distrust tax."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
