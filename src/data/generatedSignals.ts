@@ -3,6 +3,20 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-24-ai-changes-the-terms-of-service",
+    "date": "2026-10-24",
+    "title": "AI Changes The Terms Of Service",
+    "pattern": "Anthropic's Claude Duet is designed to act across thousands of work apps while a CNBC look at customer service asks what happens to a difficult human job when AI enters the queue. Forbes argues that simulated empathy makes authentic connection more consequential, and reports on white-collar wages and American Express cuts show the institutional pressure behind that question. The emerging choice is not simply whether service becomes automated, but whether organizations preserve the human judgment, relationship, and economic path that make service worth receiving and worth doing.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108451569-1792759766860-gettyimages-2214834073-ma117502.jpeg?v=1792759802&w=1920&h=1080"
+  },
+  {
     "slug": "2026-10-23-ai-work-needs-new-human-contracts",
     "date": "2026-10-23",
     "title": "AI Work Needs New Human Contracts",
@@ -1619,6 +1633,103 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-24-ai-changes-the-terms-of-service": {
+    "slug": "2026-10-24-ai-changes-the-terms-of-service",
+    "date": "2026-10-24",
+    "title": "AI Changes The Terms Of Service",
+    "pattern": "Anthropic's Claude Duet is designed to act across thousands of work apps while a CNBC look at customer service asks what happens to a difficult human job when AI enters the queue. Forbes argues that simulated empathy makes authentic connection more consequential, and reports on white-collar wages and American Express cuts show the institutional pressure behind that question. The emerging choice is not simply whether service becomes automated, but whether organizations preserve the human judgment, relationship, and economic path that make service worth receiving and worth doing.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://image.cnbcfm.com/api/v1/image/108451569-1792759766860-gettyimages-2214834073-ma117502.jpeg?v=1792759802&w=1920&h=1080",
+    "stories": [
+      {
+        "title": "Anthropic Launches Claude Duet for Connected Work",
+        "url": "https://tech.yahoo.com/ai/claude/articles/anthropics-claude-duet-ai-agent-153031094.html",
+        "source": "Yahoo Tech",
+        "published": "2026-10-23T08:30:00+00:00",
+        "summary": "Anthropic has launched Claude Duet, an AI agent intended to work across thousands of connected applications, handle tasks, and spot problems proactively. As software takes on more coordination, people need to be clear about where they set goals, exercise judgment, and remain accountable for the outcomes an agent produces.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/b965abf54e9afeaf81c5544e3cedd6c49f4cbd7185e1f0c16600d2c0c2cf4c12/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Ftoms_guide_826%2Ff72e6cb12a417d84e9804d33ee5fd6fb.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Claude Duet is positioned to act across a large network of workplace apps.",
+          "Delegating tasks makes human direction and accountability more visible, not less important."
+        ]
+      },
+      {
+        "title": "Customer Service Faces AI's Daily Test",
+        "url": "https://www.cnbc.com/2026/10/24/ai-customer-service-jobs-work.html",
+        "source": "CNBC",
+        "published": "2026-10-24T05:00:01+00:00",
+        "summary": "CNBC examines how AI is changing a customer-service job that is already demanding, asking whether automation will ease the work or add new frustrations. The answer will depend on work design: employees need enough authority, context, and support to resolve the human situations that scripted systems cannot carry.",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108451569-1792759766860-gettyimages-2214834073-ma117502.jpeg?v=1792759802&w=1920&h=1080",
+        "stages": [
+          "Reclaim Value",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Customer service remains difficult even when AI can handle parts of an interaction.",
+          "Better tools matter only when people retain the capacity to solve real customer problems."
+        ]
+      },
+      {
+        "title": "Authentic Empathy Matters More in an AI Age",
+        "url": "https://www.forbes.com/sites/michaeledmondson/2026/10/22/the-empathy-paradox-why-human-connection-matters-in-the-age-of-ai/",
+        "source": "Forbes",
+        "published": "2026-10-22T06:18:00+00:00",
+        "summary": "As AI systems become more capable of simulating empathy, this essay argues that genuine human connection becomes more important to leadership, relationships, and workforce development. The distinction is not sentimental: trust grows when people feel recognized by someone with real responsibility, context, and care.",
+        "imageUrl": "",
+        "stages": [
+          "Discover Purpose",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Simulated empathy raises the value of authentic human connection.",
+          "Leadership and development still rely on accountable relationships, not merely persuasive language."
+        ]
+      },
+      {
+        "title": "AI Could Pressure White-Collar Wages Before Jobs Vanish",
+        "url": "https://ceoworld.biz/2026/10/18/ai-could-reshape-white-collar-employment-by-2030-and-wages-may-be-the-bigger-risk/",
+        "source": "CEOWORLD",
+        "published": "2026-10-17T22:27:47+00:00",
+        "summary": "A CEOWORLD analysis argues that AI could reshape professional employment through weaker wage growth, reduced graduate recruitment, and concentrated productivity gains before whole occupations disappear. That makes the transition a question of bargaining power and credible pathways, not just a future headcount forecast.",
+        "imageUrl": "https://cdn.ceoworld.biz/wp-content/uploads/2026/10/Artificial-Intelligence-and-the-Future-of-White-Collar-Jobs.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Economic pressure can arrive through pay and entry-level opportunities as well as layoffs.",
+          "Workers need ways to translate experience into durable value as professional work changes."
+        ]
+      },
+      {
+        "title": "American Express Plans AI-Linked Job Cuts",
+        "url": "https://www.investmentnews.com/fintech/american-express-to-make-job-cuts-as-ai-revolution-ramps-up/268723",
+        "source": "InvestmentNews",
+        "published": "2026-10-23T12:06:17+00:00",
+        "summary": "American Express plans job cuts as it pursues a more agile and efficient operating model shaped by AI, according to InvestmentNews. The announcement makes a familiar organizational claim concrete: efficiency is not a human transition plan unless people can see how roles, learning, and opportunity will be redesigned with them.",
+        "imageUrl": "https://cdn-res.keymedia.com/cms/images/in/jame_639283678890125556.jpeg",
+        "stages": [
+          "Relaunch Yourself",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "American Express is linking workforce reductions to a broader AI-era efficiency push.",
+          "Organizations need visible transition pathways alongside operational change."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-23-ai-work-needs-new-human-contracts": {
     "slug": "2026-10-23-ai-work-needs-new-human-contracts",
     "date": "2026-10-23",
