@@ -3,6 +3,20 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-25-ai-makes-human-oversight-a-career-strategy",
+    "date": "2026-10-25",
+    "title": "AI Makes Human Oversight A Career Strategy",
+    "pattern": "Pakistan Observer's case for agentic governance, CEOWORLD's question about unsupervised specialist agents, and TechCrunch's account of security screening all make oversight a practical design choice rather than a compliance afterthought. Barclays' AI spending and workforce cuts show the economic pressure behind that choice, while Forbes argues that students are seeking careers, not just degrees. As AI absorbs more execution, people need real authority, visible judgment, and credible pathways to remain responsible for what organizations decide and do.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Unhook Identity",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://cdn.ceoworld.biz/wp-content/uploads/2026/10/akhil-verghese.jpg"
+  },
+  {
     "slug": "2026-10-24-ai-changes-the-terms-of-service",
     "date": "2026-10-24",
     "title": "AI Changes The Terms Of Service",
@@ -1633,6 +1647,103 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-25-ai-makes-human-oversight-a-career-strategy": {
+    "slug": "2026-10-25-ai-makes-human-oversight-a-career-strategy",
+    "date": "2026-10-25",
+    "title": "AI Makes Human Oversight A Career Strategy",
+    "pattern": "Pakistan Observer's case for agentic governance, CEOWORLD's question about unsupervised specialist agents, and TechCrunch's account of security screening all make oversight a practical design choice rather than a compliance afterthought. Barclays' AI spending and workforce cuts show the economic pressure behind that choice, while Forbes argues that students are seeking careers, not just degrees. As AI absorbs more execution, people need real authority, visible judgment, and credible pathways to remain responsible for what organizations decide and do.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Unhook Identity",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://cdn.ceoworld.biz/wp-content/uploads/2026/10/akhil-verghese.jpg",
+    "stories": [
+      {
+        "title": "Agentic AI Brings Governance Into Focus",
+        "url": "https://pakobserver.net/agentic-ai-future-organizations-transformation-of-governance/",
+        "source": "Pakistan Observer",
+        "published": "",
+        "summary": "Pakistan Observer argues that AI is moving beyond task automation toward agentic systems that can shape organizational decisions and operations. That shift makes governance a human capability: leaders need to define boundaries, accountability, and the values an autonomous system is allowed to advance.",
+        "imageUrl": "https://pakobserver.net/wp-content/uploads/2026/08/makkah-agreement-emerging-logic-of-regional-security-pakobserver-771070.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Agentic systems raise governance questions because they can influence work beyond a single automated task.",
+          "Human responsibility depends on setting clear authority, limits, and accountability before systems act."
+        ]
+      },
+      {
+        "title": "Specialist AI Agents Need Human Supervision",
+        "url": "https://ceoworld.biz/2026/10/25/should-specialized-ai-agents-work-unsupervised/",
+        "source": "CEOWORLD",
+        "published": "",
+        "summary": "CEOWORLD examines whether specialized AI agents should handle work such as scheduling and client proposals without supervision. The question is not whether people can step away from every task, but where they must retain review, judgment, and ownership when an agent's output affects customers and commitments.",
+        "imageUrl": "https://cdn.ceoworld.biz/wp-content/uploads/2026/10/akhil-verghese.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Specialized agents can take on work that once required complete human involvement.",
+          "Delegation still requires people to decide when review and accountability cannot be automated away."
+        ]
+      },
+      {
+        "title": "Barclays Redirects Spending Toward AI Amid Cuts",
+        "url": "https://www.orlandosentinel.com/2026/10/23/ai-related-layoffs-list/",
+        "source": "Orlando Sentinel",
+        "published": "",
+        "summary": "The Orlando Sentinel reports that Barclays is redirecting spending toward AI while trimming its workforce, alongside other companies linking cuts to AI investment. For workers, that makes the transition immediate: organizations need to pair efficiency decisions with honest information, learning, and paths into redesigned roles.",
+        "imageUrl": "https://www.orlandosentinel.com/wp-content/uploads/2026/10/AI-Related-Layoffs_3528_-1.jpg?w=2000&h=1333",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Barclays is among companies connecting workforce reductions with AI-related spending priorities.",
+          "Cost cutting is not a transition plan unless people can see a viable next role and way to build value."
+        ]
+      },
+      {
+        "title": "Security Screening Needs AI And Human Judgment",
+        "url": "https://techcrunch.com/contributor-content/exploring-how-ai-and-human-judgment-could-work-together-in-security-screening/",
+        "source": "TechCrunch",
+        "published": "",
+        "summary": "TechCrunch explores how AI is being used to detect objects and unusual situations in physical-security screening, while teams still decide how to respond. The human role becomes sharper when systems flag possibilities: people need the context and authority to assess risk, make a call, and remain accountable for consequences.",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2018/02/tc-backlight-e1689786273147.png?w=1200",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "AI is increasingly used to identify objects, motion, and unusual situations in security work.",
+          "Detection support does not replace the contextual human judgment required to act responsibly."
+        ]
+      },
+      {
+        "title": "Higher Education Must Make Careers Visible",
+        "url": "https://www.forbes.com/councils/forbescommunicationscouncil/2026/10/22/why-higher-education-needs-to-market-careers-not-degrees/",
+        "source": "Forbes",
+        "published": "",
+        "summary": "Forbes argues that students need to see the work, impact, skills, and pathways a degree can open, not simply the credential itself. In an AI-shaped labor market, that is a call for education to help people imagine a future self and build a durable bridge between learning and meaningful contribution.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6ad92ea735bc4e684bbfbf4b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Relaunch Yourself",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "Students are seeking a concrete picture of work, impact, skills, and future paths.",
+          "Career visibility helps people connect education to a meaningful and adaptable future self."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-24-ai-changes-the-terms-of-service": {
     "slug": "2026-10-24-ai-changes-the-terms-of-service",
     "date": "2026-10-24",
