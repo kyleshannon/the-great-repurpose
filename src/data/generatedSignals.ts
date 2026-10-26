@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-26-the-human-systems-behind-ai-work",
+    "date": "2026-10-26",
+    "title": "The Human Systems Behind AI Work",
+    "pattern": "The IMF's evidence of softer hiring in AI-exposed occupations, IIT Madras's call for affordable tools and reskilling, and a Fox News opinion argument for universities to teach AI capability all point to a public challenge: people cannot be expected to navigate changing work alone. Forbes's warning that fast AI only matters when organizations accept the resulting work, alongside Bloomberg's report on agent pressure in credit trading, makes the organizational half just as clear. The transition will be shaped not only by what AI can execute, but by whether employers, educators, and professions build pathways for people to exercise judgment, learn, and remain accountable.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://cf-images.assettype.com/sunstar%2F2024-05%2Fcc07ad00-514a-4ae6-95fe-ec3ed8ad0b92%2FAI_Human.jpg?rect=0%2C0%2C750%2C394&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+  },
+  {
     "slug": "2026-10-25-ai-makes-human-oversight-a-career-strategy",
     "date": "2026-10-25",
     "title": "AI Makes Human Oversight A Career Strategy",
@@ -1647,6 +1660,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-26-the-human-systems-behind-ai-work": {
+    "slug": "2026-10-26-the-human-systems-behind-ai-work",
+    "date": "2026-10-26",
+    "title": "The Human Systems Behind AI Work",
+    "pattern": "The IMF's evidence of softer hiring in AI-exposed occupations, IIT Madras's call for affordable tools and reskilling, and a Fox News opinion argument for universities to teach AI capability all point to a public challenge: people cannot be expected to navigate changing work alone. Forbes's warning that fast AI only matters when organizations accept the resulting work, alongside Bloomberg's report on agent pressure in credit trading, makes the organizational half just as clear. The transition will be shaped not only by what AI can execute, but by whether employers, educators, and professions build pathways for people to exercise judgment, learn, and remain accountable.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://cf-images.assettype.com/sunstar%2F2024-05%2Fcc07ad00-514a-4ae6-95fe-ec3ed8ad0b92%2FAI_Human.jpg?rect=0%2C0%2C750%2C394&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+    "stories": [
+      {
+        "title": "IMF Says AI Is Shifting Jobs And Skills Demand",
+        "url": "https://www.sunstar.com.ph/cebu/imf-ai-shifts-jobs-raises-demand-for-new-skills",
+        "source": "sunstar.com.ph",
+        "published": "2026-10-25T05:05:00+00:00",
+        "summary": "An IMF assessment reported by SunStar finds employers advertising fewer openings in occupations highly exposed to AI while demand for new skills rises. That is a concrete reminder that workers need more than reassurance when roles change: they need room to separate their identity from a job title and build value that can travel into the next version of work.",
+        "imageUrl": "https://cf-images.assettype.com/sunstar%2F2024-05%2Fcc07ad00-514a-4ae6-95fe-ec3ed8ad0b92%2FAI_Human.jpg?rect=0%2C0%2C750%2C394&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Hiring demand is declining in occupations with high AI exposure.",
+          "The shift is increasing the premium on workers who can develop new, portable capabilities."
+        ]
+      },
+      {
+        "title": "IIT Madras Maps AI's Task-Level Impact On Jobs",
+        "url": "https://news.careers360.com/iit-madras-whitepaper-says-ai-reshape-job-wont-eliminate-professions-calls-reskilling-wadhwani-employment-india",
+        "source": "news.careers360.com",
+        "published": "2026-10-26T07:24:34+00:00",
+        "summary": "Researchers at IIT Madras argue that AI is more likely to reshape tasks than erase entire professions, and recommend affordable tools, employment research, and reskilling. The useful human question is therefore not whether a role survives unchanged, but whether workers receive practical access and support to become capable in its next form.",
+        "imageUrl": "https://cache.careers360.mobi/media/article_images/2026/10/26/iit-madras-whitepaper-says-ai-reshape-job-wont-eliminate-professions.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The whitepaper distinguishes task transformation from wholesale profession elimination.",
+          "Its recommendations connect AI access, labor research, and reskilling rather than treating adaptation as an individual burden."
+        ]
+      },
+      {
+        "title": "AI Speed Needs Organizational Acceptance To Create Value",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/10/26/why-ai-speed-stops-short-of-the-income-statement/",
+        "source": "forbes.com",
+        "published": "2026-10-26T04:00:00+00:00",
+        "summary": "A Forbes Council contributor argues that AI-generated speed reaches the income statement only when work is accepted and used inside the organization. That shifts attention from output volume to the human systems around it: trust, context, decision rights, and the judgment needed to turn a fast result into work that others can stand behind.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6aa15b1cbfb6bfae36a4be1e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Faster output alone does not guarantee business value.",
+          "Adoption depends on people accepting, contextualizing, and taking responsibility for the work."
+        ]
+      },
+      {
+        "title": "Credit Trading Faces A Gradual Shift To AI Agents",
+        "url": "https://finance.yahoo.com/technology/ai/articles/ai-agents-seen-taking-credit-093000187.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-10-26T02:30:00+00:00",
+        "summary": "Bloomberg reports that AI agents are expected to take on portions of credit-trading work over time rather than replace the entire job at once. For people in specialized professions, that slower redistribution still matters: the durable role increasingly includes supervising systems, recognizing exceptions, and carrying accountability where automated execution cannot.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/beea8464eee7852f176bc145f052a4ba850ef5b4dce6200feaf831bac576141b/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbloomberg_holding_pen_162%2F89f07e128bbbdabc69f23e2bacc4a103.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The expected change is partial and gradual, not an all-at-once replacement of traders.",
+          "Human judgment and accountability become more visible as automated agents take on defined work."
+        ]
+      },
+      {
+        "title": "Universities Need To Teach Practical AI Capability",
+        "url": "https://www.foxnews.com/opinion/ai-changing-everything-universities-must-teach-americans-keep-up",
+        "source": "foxnews.com",
+        "published": "2026-10-26T02:00:00+00:00",
+        "summary": "A Fox News opinion piece argues that universities should help students learn to use AI well, citing research on the uneven frontier where poor tool use can hurt performance. Its central educational point is sound: AI readiness is not passive exposure to a tool, but repeated practice, discernment, and confidence about when human thinking must lead.",
+        "imageUrl": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/Artificial-Intelligence-Photo-2.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The piece highlights that misusing AI can reduce performance rather than improve it.",
+          "Education has to develop judgment and practical fluency, not merely access to AI tools."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-25-ai-makes-human-oversight-a-career-strategy": {
     "slug": "2026-10-25-ai-makes-human-oversight-a-career-strategy",
     "date": "2026-10-25",
