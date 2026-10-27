@@ -1,0 +1,86 @@
+{
+  "slug": "2026-10-27-ai-transition-demands-human-career-support",
+  "date": "2026-10-27",
+  "title": "AI Transition Demands Human Career Support",
+  "pattern": "Reports of technology layoffs at Microsoft, Barclays, Oracle, Meta, and other firms put the disruption in plain view, while research on AI-assisted interview training shows that sharper answers do not automatically create confidence or jobs. Anthropic's employment findings warn that employees can become the bottleneck for fast-moving agents, and Adecco's EZRA is betting on connected human-and-AI coaching. The real test is whether organizations treat AI transition as a cost-cutting exercise or build the coaching, learning, and humane pace people need to shape their next chapter.",
+  "stages": [
+    "Relaunch Yourself",
+    "Become AI Ready",
+    "Unhook Identity",
+    "Reclaim Value"
+  ],
+  "imageUrl": "https://images.cnbctv18.com/uploads/2026/10/image-2026-10-28af20d68456bca57f896426804ec6cb.jpg?im=FitAndFill,width=1200,height=675",
+  "stories": [
+    {
+      "title": "Tech Layoffs Mount As AI Investment Grows",
+      "url": "https://www.cnbctv18.com/education/tech-layoffs-2026-459-jobs-lost-daily-microsoft-barclays-amex-plan-ai-linked-cuts-20020239.htm",
+      "source": "CNBC TV18",
+      "published": "2026-10-27T08:01:18+00:00",
+      "summary": "CNBC TV18 reports that tech companies have eliminated more than 134,000 jobs in 2026, with firms including Microsoft and Barclays cutting roles while funding AI. The number matters, but the human question is larger: a transition cannot be measured only by savings or software investment when people need credible paths to reorient their skills and value.",
+      "imageUrl": "https://images.cnbctv18.com/uploads/2026/10/image-2026-10-28af20d68456bca57f896426804ec6cb.jpg?im=FitAndFill,width=1200,height=675",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": [
+        "More than 134,000 tech jobs have been lost in 2026.",
+        "AI investment and workforce reductions are arriving together.",
+        "Career support must accompany operational change."
+      ]
+    },
+    {
+      "title": "AI Layoffs Raise The Stakes For Career Pathways",
+      "url": "https://www.ibtimes.sg/ai-layoffs-are-exploding-2026-over-93000-tech-jobs-gone-microsoft-targets-60000-more-95575",
+      "source": "International Business Times Singapore",
+      "published": "2026-10-27T09:36:40+00:00",
+      "summary": "International Business Times Singapore tracks AI-linked cuts across Microsoft, Oracle, Meta, and Barclays and asks whether productivity gains will create further reductions. For people inside those numbers, the useful response is not panic or denial. It is to make durable judgment, relationships, and direction visible while building a path beyond any single job title.",
+      "imageUrl": "https://data.ibtimes.sg/en/full/98913/ai-layoffs-are-rising-microsoft-oracle-meta-barclays-cut-jobs-bigger-question-whether-ai.jpg?w=1200&h=630?q=60",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": [
+        "Several major employers are linking AI investment to workforce changes.",
+        "Productivity claims do not settle the question of who benefits.",
+        "Workers need agency beyond the role being reduced."
+      ]
+    },
+    {
+      "title": "AI Interview Training Improves Answers, Not Confidence",
+      "url": "https://www.devdiscourse.com/article/technology/3997315-better-interview-answers-same-confidence-what-ai-supported-career-training-found",
+      "source": "Devdiscourse",
+      "published": "2026-10-27T04:14:00+00:00",
+      "summary": "A study covered by Devdiscourse found that AI-supported career training can improve the quality of interview answers without producing the same gain in confidence. That distinction is important. Tools can help people rehearse and articulate experience, but a durable career transition also needs self-trust, context, and an honest sense of what contribution someone wants to make.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": [
+        "AI support improved short-term interview-answer quality.",
+        "The evidence did not show an equivalent confidence gain.",
+        "Career tools work best alongside human reflection and support."
+      ]
+    },
+    {
+      "title": "Workers Struggle To Keep Pace With AI Agents",
+      "url": "https://www.forbes.com/sites/benjaminwolff/2026/10/26/theres-a-human-cost-as-employees-struggle-to-keep-up-with-ai-agents/",
+      "source": "Forbes",
+      "published": "2026-10-26T08:38:00+00:00",
+      "summary": "Forbes examines an Anthropic employment report suggesting that people can become the bottleneck when AI agents accelerate the pace of work. Faster execution is not automatically progress if employees lose room to judge, learn, recover, and coordinate. Organizations need to design a human rhythm around agents rather than treating human limits as a defect to eliminate.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "keyPoints": [
+        "Agent speed can shift pressure onto the people around the system.",
+        "Judgment and coordination require time, not just throughput.",
+        "Human-centered AI design includes sustainable pace."
+      ]
+    },
+    {
+      "title": "Adecco Connects Human And AI Career Coaching",
+      "url": "https://www.aol.com/articles/ezra-coaching-arm-adecco-group-164500000.html",
+      "source": "AOL",
+      "published": "2026-10-26T09:46:00+00:00",
+      "summary": "Adecco Group's coaching business EZRA has launched Loop, a connected human-and-AI coaching experience. Its premise is constructive: AI can extend coaching, but people still need a trusted conversation to interpret change, test choices, and stay accountable to a purpose. The strongest transition systems use technology to make human support more available, not less necessary.",
+      "imageUrl": "https://hermes.media.transform.aol.com/8d28251a3576e7ee6c2c219d6f715d98b6530ba0/w_1200,c_scale,f_auto,q_auto/https://hermes.media.static.aol.com/media/2026/10/26/5bf56928-38fc-3312-9ad9-04bd2095b43f/0b5b3d30-22aa-4da3-98b8-697d5cc516b6.jpg",
+      "stages": ["Discover Purpose", "Become AI Ready"],
+      "keyPoints": [
+        "EZRA Loop combines human and AI coaching.",
+        "Career transition benefits from reflection as well as guidance.",
+        "AI can broaden access to support without replacing trust."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
