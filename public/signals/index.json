@@ -1,5 +1,17 @@
 [
   {
+    "slug": "2026-10-28-human-capacity-shapes-the-ai-transition",
+    "date": "2026-10-28",
+    "title": "Human Capacity Shapes The AI Transition",
+    "pattern": "Salesforce's support reductions, UC Berkeley mathematician Richard Borcherds's concern about learning, and Bill Gates's warning of a long disruption make the stakes of AI adoption personal. Arguments that AI can create work and the engineering challenge of orchestrating agents at scale point to the same choice: society must build the learning, judgment, and resilient systems that let people shape the transition instead of merely absorb it.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://mindmatters.ai/wp-content/uploads/sites/2/2026/10/cosm-speakers-example-1597x1044.jpg"
+  },
+  {
     "slug": "2026-10-27-ai-transition-demands-human-career-support",
     "date": "2026-10-27",
     "title": "AI Transition Demands Human Career Support",

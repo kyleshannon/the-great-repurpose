@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-28-human-capacity-shapes-the-ai-transition",
+    "date": "2026-10-28",
+    "title": "Human Capacity Shapes The AI Transition",
+    "pattern": "Salesforce's support reductions, UC Berkeley mathematician Richard Borcherds's concern about learning, and Bill Gates's warning of a long disruption make the stakes of AI adoption personal. Arguments that AI can create work and the engineering challenge of orchestrating agents at scale point to the same choice: society must build the learning, judgment, and resilient systems that let people shape the transition instead of merely absorb it.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://mindmatters.ai/wp-content/uploads/sites/2/2026/10/cosm-speakers-example-1597x1044.jpg"
+  },
+  {
     "slug": "2026-10-27-ai-transition-demands-human-career-support",
     "date": "2026-10-27",
     "title": "AI Transition Demands Human Career Support",
@@ -1673,6 +1685,103 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-28-human-capacity-shapes-the-ai-transition": {
+    "slug": "2026-10-28-human-capacity-shapes-the-ai-transition",
+    "date": "2026-10-28",
+    "title": "Human Capacity Shapes The AI Transition",
+    "pattern": "Salesforce's support reductions, UC Berkeley mathematician Richard Borcherds's concern about learning, and Bill Gates's warning of a long disruption make the stakes of AI adoption personal. Arguments that AI can create work and the engineering challenge of orchestrating agents at scale point to the same choice: society must build the learning, judgment, and resilient systems that let people shape the transition instead of merely absorb it.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://mindmatters.ai/wp-content/uploads/sites/2/2026/10/cosm-speakers-example-1597x1044.jpg",
+    "stories": [
+      {
+        "title": "AI Agents Put Support Work Under Pressure",
+        "url": "https://www.forbes.com/sites/jodiecook/2026/10/27/10-jobs-ai-agents-are-making-redundant-in-2027/",
+        "source": "Forbes",
+        "published": "2026-10-27T10:00:00+00:00",
+        "summary": "Forbes reports that Salesforce reduced its support team from 9,000 to 5,000 as AI agents took on work, then identifies roles likely to change next. The useful response is not to treat a job title as a permanent identity: people need time and support to make their human judgment, relationships, and problem-framing visible as execution shifts.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Salesforce's support workforce fell from 9,000 to 5,000 as agents assumed work.",
+          "Agent adoption is reshaping task-heavy roles before 2027.",
+          "Career resilience depends on more than the work a system can execute."
+        ]
+      },
+      {
+        "title": "AI Can Expand Creative Work",
+        "url": "https://mindmatters.ai/2026/10/ai-empowers-creativity-and-creates-work/",
+        "source": "Mind Matters",
+        "published": "2026-10-27T18:46:15+00:00",
+        "summary": "Mind Matters argues that past technological change eliminated some work while opening new forms of contribution, and asks readers to see AI through that longer lens. That promise only becomes real when people develop taste, perspective, and the confidence to use new capability for work worth doing rather than waiting for a replacement role to appear.",
+        "imageUrl": "https://mindmatters.ai/wp-content/uploads/sites/2/2026/10/cosm-speakers-example-1597x1044.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Technology has repeatedly displaced tasks while creating new work.",
+          "Creative opportunity requires people to develop their own point of view.",
+          "The human contribution is direction, not simply output."
+        ]
+      },
+      {
+        "title": "Agent Scale Requires Resilient Orchestration",
+        "url": "https://www.infoworld.com/article/4240704/six-elements-of-resilient-ai-orchestration-platforms.html",
+        "source": "InfoWorld",
+        "published": "2026-10-27T02:52:00+00:00",
+        "summary": "InfoWorld examines what organizations need when they move from a few AI agents to hundreds or thousands running across platforms. The infrastructure question is also a human one: resilient systems need clear ownership, careful oversight, and people who can decide what should be automated, connected, and accountable.",
+        "imageUrl": "https://www.infoworld.com/wp-content/uploads/2026/10/4240704-0-88635000-1793178133-crm-trends-agentic-ai-shutterstock_2816124497.jpg?quality=50&strip=all&w=1024",
+        "stages": [
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Organizations are preparing to coordinate agents at much larger scale.",
+          "Resilience depends on more than a platform's technical features.",
+          "Humans must retain ownership of choices and consequences."
+        ]
+      },
+      {
+        "title": "AI Challenges How Future Mathematicians Learn",
+        "url": "https://www.jagranjosh.com/news/ai-in-education-makes-uc-berkeley-professor-question-the-future-of-maths-careers-188731",
+        "source": "Jagran Josh",
+        "published": "2026-10-28T04:37:48+00:00",
+        "summary": "A UC Berkeley mathematician's concern about AI-assisted homework turns a classroom problem into a career question: how will students build the understanding that future work requires? Education has to protect room for struggle, curiosity, and proof while helping learners use AI as a partner rather than a substitute for their own developing judgment.",
+        "imageUrl": "https://img.jagranjosh.com/images/2026/10/28/article/image/Untitled-design-(69)-1793162260435.webp",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "AI use is changing the meaning of completed mathematics homework.",
+          "Students still need to develop understanding, not just obtain answers.",
+          "Learning systems must prepare people for judgment-rich future work."
+        ]
+      },
+      {
+        "title": "Prosperity Promises Include A Long Disruption",
+        "url": "https://www.marca.com/en/technology/2026/10/27/bill-gates-ai-warning-more-prosperous-future-could-come-after-20-years-of-disruption.html",
+        "source": "Marca",
+        "published": "2026-10-27T03:45:13+00:00",
+        "summary": "Marca reports Bill Gates's view that AI could bring greater prosperity after a prolonged period of disruption. That framing makes the interval matter: people cannot be asked to wait decades for benefits without practical routes to learn, contribute, and stay connected to meaningful work while the economy changes.",
+        "imageUrl": "https://e00-xlk-ue-marca-en.uecdn.es/files/article_main_microformat/uploads/2026/10/27/6ae01c0fb3df1.jpeg",
+        "stages": [
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "AI's potential gains may arrive alongside a long period of adjustment.",
+          "Prosperity forecasts do not erase the transition's human costs.",
+          "People need credible pathways through disruption now."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-27-ai-transition-demands-human-career-support": {
     "slug": "2026-10-27-ai-transition-demands-human-career-support",
     "date": "2026-10-27",
