@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-29-ais-value-shift-demands-human-stewardship",
+    "date": "2026-10-29",
+    "title": "AI's Value Shift Demands Human Stewardship",
+    "pattern": "VerSe's SPARK summit is compressing film production with AI, while CodeSignal wants agents to turn everyday work into evidence of skill. Economic Times' focus on critical thinking, creativity, empathy, and adaptability, CXOtoday's case for reskilling current employees, and Instagram chief Adam Mosseri's warning about creator backlash describe the same tension: faster output can widen opportunity only when people retain authorship, develop visible judgment, and have real support to move into the work that remains humanly consequential.",
+    "stages": [
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Become AI Ready",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://st1.latestly.com/wp-content/uploads/2026/10/ANI-20261029080558-588x441.jpg"
+  },
+  {
     "slug": "2026-10-28-human-capacity-shapes-the-ai-transition",
     "date": "2026-10-28",
     "title": "Human Capacity Shapes The AI Transition",
@@ -1685,6 +1698,106 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-29-ais-value-shift-demands-human-stewardship": {
+    "slug": "2026-10-29-ais-value-shift-demands-human-stewardship",
+    "date": "2026-10-29",
+    "title": "AI's Value Shift Demands Human Stewardship",
+    "pattern": "VerSe's SPARK summit is compressing film production with AI, while CodeSignal wants agents to turn everyday work into evidence of skill. Economic Times' focus on critical thinking, creativity, empathy, and adaptability, CXOtoday's case for reskilling current employees, and Instagram chief Adam Mosseri's warning about creator backlash describe the same tension: faster output can widen opportunity only when people retain authorship, develop visible judgment, and have real support to move into the work that remains humanly consequential.",
+    "stages": [
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Become AI Ready",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://st1.latestly.com/wp-content/uploads/2026/10/ANI-20261029080558-588x441.jpg",
+    "stories": [
+      {
+        "title": "Mumbai Summit Tests AI Filmmaking At Scale",
+        "url": "https://www.latestly.com/agency-news/business-news-mumbai-hosts-spark-indias-ai-creativity-summit-showcasing-live-ai-filmmaking-to-500-creative-leaders-7660664.html",
+        "source": "LatestLY",
+        "published": "2026-10-29T08:42:24+00:00",
+        "summary": "LatestLY reports that VerSe Innovation's SPARK summit brought more than 500 Indian filmmakers, studio leaders, broadcasters, agencies, and creators together to see AI-made film work produced on its Spark Station platform. When production time collapses, creative careers depend less on owning every execution step and more on taste, direction, relationships, and the judgment to decide what deserves to be made.",
+        "imageUrl": "https://st1.latestly.com/wp-content/uploads/2026/10/ANI-20261029080558-588x441.jpg",
+        "stages": [
+          "Relaunch Yourself",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "SPARK showcased AI filmmaking for more than 500 creative-industry leaders in Mumbai.",
+          "VerSe positioned its Spark Station platform around rapid AI content production.",
+          "Creative value shifts toward choosing, shaping, and standing behind the work."
+        ]
+      },
+      {
+        "title": "CodeSignal Makes Work Evidence Of Skill",
+        "url": "https://www.forbes.com/sites/rayravaglia/2026/10/29/codesignal-ai-agents-turn-work-into-evidence-of-employee-skills/",
+        "source": "Forbes",
+        "published": "2026-10-29T02:59:00+00:00",
+        "summary": "Forbes examines CodeSignal's Agentic Skills Intelligence, which uses AI agents to assess employee capability through real work and recommend targeted practice. That moves the question beyond credentials: people need opportunities to make their judgment and growth visible while employers use AI to develop talent rather than merely score or sort it.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "CodeSignal uses agentic systems to infer skills from work people actually do.",
+          "The platform connects assessment with targeted practice for employees.",
+          "AI-enabled evaluation should reveal growth and judgment, not reduce workers to opaque scores."
+        ]
+      },
+      {
+        "title": "Human Skills Gain Value Alongside AI",
+        "url": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/which-human-skills-become-more-valuable-as-ai-becomes-better-at-doing-the-work/135286786",
+        "source": "Economic Times CIO",
+        "published": "2026-10-28T17:00:00+00:00",
+        "summary": "Economic Times CIO highlights critical thinking, creativity, empathy, and adaptability as capabilities organizations value more as AI handles more execution. The important shift is not that people must become more machine-like; it is that their ability to interpret context, build trust, and choose wisely becomes a clearer source of contribution.",
+        "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-135286786,imgsize-56358,width-1200,height=627,overlay-etcio,resizemode-75/artificial-intelligence/which-human-skills-become-more-valuable-as-ai-becomes-better-at-doing-the-work.jpg",
+        "stages": [
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Critical thinking, creativity, empathy, and adaptability remain central as AI advances.",
+          "The durable human contribution is context and judgment, not faster repetition.",
+          "Organizations must make these capacities visible in how they hire and develop people."
+        ]
+      },
+      {
+        "title": "Reskilling Becomes A Workforce Strategy",
+        "url": "https://cxotoday.com/ai/strategic-reskilling-over-lateral-hiring-navigating-the-100-200-billion-net-ai-opportunity/",
+        "source": "CXOtoday",
+        "published": "2026-10-29T07:10:34+00:00",
+        "summary": "CXOtoday reports an estimate that AI-led services could create $100–200 billion in net new work by 2030 and argues that technology firms can prepare by reskilling people they already employ rather than relying only on lateral hiring. A credible transition needs that kind of institutional investment, so workers have a practical route to new contribution instead of a vague instruction to adapt.",
+        "imageUrl": "https://cxotoday.com/wp-content/uploads/2026/09/AI_education.jpg",
+        "stages": [
+          "Relaunch Yourself",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The article estimates substantial new AI-led services work by 2030.",
+          "It frames reskilling current employees as an alternative to external hiring alone.",
+          "Career change becomes more humane when employers fund a path into new work."
+        ]
+      },
+      {
+        "title": "Creators Press For Security And Ownership",
+        "url": "https://www.firstpost.com/tech/instagram-head-adam-mosseri-warns-ai-backlash-will-intensify-as-creators-fear-job-losses-14056277.html",
+        "source": "Firstpost",
+        "published": "2026-10-28T23:56:00+00:00",
+        "summary": "Firstpost reports that Instagram head Adam Mosseri expects AI backlash to intensify as creators worry about job security and ownership of their work. The warning is a reminder that creative adoption cannot be sustained by capability alone: people need a believable stake in the value, attribution, and opportunity created by the systems they are asked to use.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Mosseri expects resistance to grow as creators face AI-related job and ownership concerns.",
+          "Creator trust depends on more than access to powerful new tools.",
+          "People need agency and a credible economic stake in AI-enabled creative work."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-28-human-capacity-shapes-the-ai-transition": {
     "slug": "2026-10-28-human-capacity-shapes-the-ai-transition",
     "date": "2026-10-28",
