@@ -3,6 +3,20 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-30-meaning-becomes-work-in-the-ai-age",
+    "date": "2026-10-30",
+    "title": "Meaning Becomes Work In The AI Age",
+    "pattern": "An AP report on employers calling back people they previously cut for AI, Apple’s push to add assistants to everyday creative tools, and an agentic-AI skills argument all point to work being rebuilt around systems that can execute more. At the same time, Forbes’ question about purpose and News-Medical’s review of technology, identity, and meaning make the human tension unmistakable: people need more than access to AI; they need a credible way to develop judgment, direct their work, and locate significance when the old job story no longer holds.",
+    "stages": [
+      "Discover Purpose",
+      "Relaunch Yourself",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/50de8f0dfa6f68fe816395c578ed5ce335809f9a6bf1059bea3f0ef6a2df1b85/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fforbes_contributor_845%2Fd4a32fd498ae08766f91b90ed8db90c1.jpg"
+  },
+  {
     "slug": "2026-10-29-ais-value-shift-demands-human-stewardship",
     "date": "2026-10-29",
     "title": "AI's Value Shift Demands Human Stewardship",
@@ -1698,6 +1712,108 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-30-meaning-becomes-work-in-the-ai-age": {
+    "slug": "2026-10-30-meaning-becomes-work-in-the-ai-age",
+    "date": "2026-10-30",
+    "title": "Meaning Becomes Work In The AI Age",
+    "pattern": "An AP report on employers calling back people they previously cut for AI, Apple’s push to add assistants to everyday creative tools, and an agentic-AI skills argument all point to work being rebuilt around systems that can execute more. At the same time, Forbes’ question about purpose and News-Medical’s review of technology, identity, and meaning make the human tension unmistakable: people need more than access to AI; they need a credible way to develop judgment, direct their work, and locate significance when the old job story no longer holds.",
+    "stages": [
+      "Discover Purpose",
+      "Relaunch Yourself",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/50de8f0dfa6f68fe816395c578ed5ce335809f9a6bf1059bea3f0ef6a2df1b85/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fforbes_contributor_845%2Fd4a32fd498ae08766f91b90ed8db90c1.jpg",
+    "stories": [
+      {
+        "title": "Workers Weigh A Return After AI Cuts",
+        "url": "https://apnews.com/article/ai-jobs-layoffs-hiring-rebounding-skills-04662acffb7beba822129118dde3f0a7",
+        "source": "Associated Press",
+        "published": "",
+        "summary": "The Associated Press examines what workers should consider when a company that cut jobs while investing in AI later asks people to return. The question is larger than a second offer: a humane transition requires clarity about what changed, what new capabilities are valued, and whether people will have real agency in the redesigned work.",
+        "imageUrl": "",
+        "stages": [
+          "Relaunch Yourself",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Some employers are reconsidering staffing after AI-related job cuts.",
+          "A return offer should prompt questions about role design, skills, and security.",
+          "Workers need a path into changed work, not simply a return to a familiar title."
+        ]
+      },
+      {
+        "title": "Purpose Matters As AI Expands Capability",
+        "url": "https://www.yahoo.com/lifestyle/articles/ai-surpasses-human-intelligence-where-203101035.html",
+        "source": "Yahoo Life",
+        "published": "",
+        "summary": "A Forbes contributor asks where people will find meaning and purpose as AI transforms work and creativity. That is not a side question to adoption: when machines absorb more execution, people need practices and communities that help them choose what is worth pursuing and keep agency over the lives they are building.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/50de8f0dfa6f68fe816395c578ed5ce335809f9a6bf1059bea3f0ef6a2df1b85/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fforbes_contributor_845%2Fd4a32fd498ae08766f91b90ed8db90c1.jpg",
+        "stages": [
+          "Discover Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The article frames AI’s advance as a challenge to human meaning and purpose.",
+          "Human agency remains central even when tools become far more capable.",
+          "Purpose has to be actively chosen rather than inherited from a job description."
+        ]
+      },
+      {
+        "title": "Apple Brings AI Into Creative Workflows",
+        "url": "https://www.techrepublic.com/article/news-apple-creator-studio-ai-assistants/",
+        "source": "TechRepublic",
+        "published": "",
+        "summary": "TechRepublic reports that Apple Creator Studio will add AI assistants to Pages, Numbers, and Keynote, while outlining pricing, device requirements, and business-account limits. As assistance moves into ordinary knowledge and creative work, durable value shifts toward framing the task, checking results, and deciding how the finished work serves people.",
+        "imageUrl": "https://assets.techrepublic.com/uploads/2026/10/tr-10282026-creator-studio.jpg?f=jpeg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Apple Creator Studio is adding AI assistants to Pages, Numbers, and Keynote.",
+          "The rollout includes practical questions about pricing, hardware, and account access.",
+          "Everyday AI assistance raises the value of framing, verification, and judgment."
+        ]
+      },
+      {
+        "title": "Agentic AI Raises The Bar For Skills",
+        "url": "https://www.expresscomputer.in/guest-blogs/the-future-of-work-skills-employees-need-in-the-age-of-agentic-ai/140758/",
+        "source": "Express Computer",
+        "published": "",
+        "summary": "Express Computer argues that employees need new skills as agentic AI can generate forecasts, identify at-risk accounts, and recommend action. The practical implication is not that people must compete with agents at speed; it is that they need literacy, discernment, and enough hands-on practice to supervise automated recommendations responsibly.",
+        "imageUrl": "https://cdn1.expresscomputer.in/wp-content/uploads/2025/11/24153352/EC_05_Artificial_Intelligence_AI_Technology_750.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Agentic systems can generate forecasts and recommendations for business teams.",
+          "Workers need skills to interpret and challenge automated outputs.",
+          "Capability building should make people responsible stewards, not passive recipients of AI advice."
+        ]
+      },
+      {
+        "title": "Research Tests AI’s Effects On Meaning",
+        "url": "https://www.news-medical.net/news/20261029/Is-AI-changing-what-gives-our-lives-meaning.aspx",
+        "source": "News-Medical",
+        "published": "2026-10-29T00:00:00+00:00",
+        "summary": "News-Medical summarizes a rapid review of 18 publications on how AI, immersive technologies, and other digital tools may influence identity, existential inquiry, and the search for meaning. The evidence is varied rather than conclusive, but it reinforces the need for digital literacy and reflective use so technological change does not quietly decide what people value.",
+        "imageUrl": "https://www.news-medical.net/images/news/ImageForNews_850124_17933238149329862.jpg",
+        "stages": [
+          "Discover Purpose",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The review covers 18 publications on technology, identity, and meaning.",
+          "Its findings are suggestive rather than proof of a single causal effect.",
+          "Reflective digital literacy can help people engage technology without outsourcing their values."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-29-ais-value-shift-demands-human-stewardship": {
     "slug": "2026-10-29-ais-value-shift-demands-human-stewardship",
     "date": "2026-10-29",
