@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-10-31-ai-readiness-requires-independent-judgment",
+    "date": "2026-10-31",
+    "title": "AI Readiness Requires Independent Judgment",
+    "pattern": "A creator’s career story, a warning about agents acting beyond simple tool access, and Zoho CEO Sridhar Vembu’s call for meta-level skills all describe work in which using AI is no longer the whole assignment. Earth.com’s look at the changing value of college degrees and AACSB’s question about whether business students are still learning to think expose the same human tension: education and careers must develop people who can frame problems, question outputs, and make responsible choices when systems can produce more answers than anyone can simply accept.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://www.earth.com/img/16x9/1920/media-2026/2026/10/30155820/AI-college-degrees.jpg"
+  },
+  {
     "slug": "2026-10-30-meaning-becomes-work-in-the-ai-age",
     "date": "2026-10-30",
     "title": "Meaning Becomes Work In The AI Age",
@@ -1712,6 +1725,107 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-10-31-ai-readiness-requires-independent-judgment": {
+    "slug": "2026-10-31-ai-readiness-requires-independent-judgment",
+    "date": "2026-10-31",
+    "title": "AI Readiness Requires Independent Judgment",
+    "pattern": "A creator’s career story, a warning about agents acting beyond simple tool access, and Zoho CEO Sridhar Vembu’s call for meta-level skills all describe work in which using AI is no longer the whole assignment. Earth.com’s look at the changing value of college degrees and AACSB’s question about whether business students are still learning to think expose the same human tension: education and careers must develop people who can frame problems, question outputs, and make responsible choices when systems can produce more answers than anyone can simply accept.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://www.earth.com/img/16x9/1920/media-2026/2026/10/30155820/AI-college-degrees.jpg",
+    "stories": [
+      {
+        "title": "A Creator Career Built Through Curiosity",
+        "url": "https://note.com/shiny_whale552/n/ne92076bcb689?hl=en",
+        "source": "note.com",
+        "published": "",
+        "summary": "An interview profile follows entrepreneur and creator Marina Mogilko from early language learning into a career spanning education, media, and business. Her path is a useful reminder that AI-era resilience is not only technical: people need the confidence to follow questions, combine capabilities, and keep redesigning work around what they can uniquely learn and direct.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/329879620/rectangle_large_type_2_f609e59b1efc5f8e0a170380442faefb.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Relaunch Yourself",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "Marina Mogilko’s career has crossed language learning, entrepreneurship, and content creation.",
+          "Her story emphasizes building a path around interests rather than a single fixed role.",
+          "Adaptable careers require curiosity and agency alongside new tools."
+        ]
+      },
+      {
+        "title": "Agents Need Judgment Beyond Tool Access",
+        "url": "https://www.digitaltrends.com/contributor-content/why-ai-agents-need-more-than-access-to-tools/",
+        "source": "Digital Trends",
+        "published": "",
+        "summary": "Digital Trends argues that an AI agent given permission to send messages, update records, or change files faces a different kind of task than an assistant drafting text. The shift from suggestion to action raises the stakes for context, verification, and accountability—human capacities that organizations must deliberately keep in the loop.",
+        "imageUrl": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/10/ai-agents-tools-1350x810-1.jpg?resize=1200%2C630&ssl=1",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "An agent that acts in systems has to do more than generate plausible text.",
+          "Permissions create a need for context, action selection, and confirmation.",
+          "Human oversight becomes more important as AI moves from advice to execution."
+        ]
+      },
+      {
+        "title": "Zoho Calls for Meta-Level AI Skills",
+        "url": "https://www.newsbytesapp.com/news/business/zoho-ceo-sridhar-vembu-urges-reskilling-for-ai-era-computer-workers/tldr",
+        "source": "NewsBytes",
+        "published": "",
+        "summary": "Zoho CEO Sridhar Vembu urges computer workers to reskill for an AI-shaped economy, arguing that meta-level abilities determine whether people can use the technology well. The point is not just greater productivity: workers need enough conceptual understanding to set direction, assess tradeoffs, and avoid becoming dependent on systems they cannot interrogate.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Vembu frames meta-level skills as central to using AI effectively.",
+          "Reskilling needs to include thinking about systems, not only operating them.",
+          "Workers gain agency when they can evaluate AI rather than merely consume its output."
+        ]
+      },
+      {
+        "title": "AI Changes What Degrees Must Prove",
+        "url": "https://www.earth.com/science/ai-is-changing-the-value-of-a-college-degree-and-the-implications-are-enormous/",
+        "source": "Earth.com",
+        "published": "",
+        "summary": "Earth.com reports on research asking how AI’s changes to the job market could alter the traditional value of a college degree and what education should prioritize. As routine knowledge work is reshaped, credentials cannot be the whole promise; learners need visible capabilities in judgment, synthesis, and applying knowledge to unfamiliar human problems.",
+        "imageUrl": "https://www.earth.com/img/16x9/1920/media-2026/2026/10/30155820/AI-college-degrees.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The article examines AI’s implications for the labor-market value of degrees.",
+          "It raises questions about what education should teach and signal.",
+          "Credentials must connect to human capabilities that remain meaningful in changed work."
+        ]
+      },
+      {
+        "title": "Business Schools Protect Independent Thinking",
+        "url": "https://www.yahoo.com/news/us/articles/race-teach-ai-students-still-144314002.html",
+        "source": "Yahoo News",
+        "published": "",
+        "summary": "A report from AACSB’s Deans Conference asks whether business schools can teach AI fluency without sacrificing independent thought and judgment. That is a design challenge for every learning institution: people should gain practical access to powerful tools while still practicing the discernment needed to challenge a recommendation and choose a direction.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/61e896d9f1c7a87b9a83c4046e52835b035d16f1295f65a68707a3223c1d8402/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fpoets_quants_171%2F40a3529d2d067e3a56c835730e903bd8.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "AACSB leaders are weighing AI instruction against the need for independent thinking.",
+          "AI fluency should strengthen rather than replace judgment.",
+          "Education has to prepare people to question and direct AI-supported work."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-30-meaning-becomes-work-in-the-ai-age": {
     "slug": "2026-10-30-meaning-becomes-work-in-the-ai-age",
     "date": "2026-10-30",
