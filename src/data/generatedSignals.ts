@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-01-work-design-requires-human-career-choice",
+    "date": "2026-11-01",
+    "title": "Work Design Requires Human Career Choice",
+    "pattern": "Indian Express's MBA comparison, Gen Z workers' accounts of AI jobs, and a reflection on AI-driven abundance all ask people to reconsider what a durable career is for. Forbes' clinical-trial argument and HRM America's warning about workforce design bring that question inside organizations: as AI changes how work is executed, people need real choices about what they learn, direct, and remain accountable for—not just a new tool to operate.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://images.indianexpress.com/2026/11/the-right-choice-ie-ai-in-mba.jpg"
+  },
+  {
     "slug": "2026-10-31-ai-readiness-requires-independent-judgment",
     "date": "2026-10-31",
     "title": "AI Readiness Requires Independent Judgment",
@@ -1725,6 +1738,99 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-01-work-design-requires-human-career-choice": {
+    "slug": "2026-11-01-work-design-requires-human-career-choice",
+    "date": "2026-11-01",
+    "title": "Work Design Requires Human Career Choice",
+    "pattern": "Indian Express's MBA comparison, Gen Z workers' accounts of AI jobs, and a reflection on AI-driven abundance all ask people to reconsider what a durable career is for. Forbes' clinical-trial argument and HRM America's warning about workforce design bring that question inside organizations: as AI changes how work is executed, people need real choices about what they learn, direct, and remain accountable for—not just a new tool to operate.",
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value"
+    ],
+    "imageUrl": "https://images.indianexpress.com/2026/11/the-right-choice-ie-ai-in-mba.jpg",
+    "stories": [
+      {
+        "title": "Choosing an MBA for an AI-Driven Career",
+        "url": "https://indianexpress.com/article/education/the-right-choice-mba-with-ai-vs-general-mba-which-holds-greater-career-potential-10945285/",
+        "source": "indianexpress.com",
+        "published": "2026-11-01T10:26:08+00:00",
+        "summary": "Indian Express compares an MBA focused on AI with a general MBA, contrasting specialized technology fluency with broader business flexibility. The useful TGR question is not which credential sounds safest, but how a person can combine technical awareness with the judgment to direct work across changing contexts.",
+        "imageUrl": "https://images.indianexpress.com/2026/11/the-right-choice-ie-ai-in-mba.jpg",
+        "stages": [
+          "Relaunch Yourself",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "An AI-focused MBA pairs management study with emerging technology skills.",
+          "A general MBA offers a wider business foundation and more career flexibility."
+        ]
+      },
+      {
+        "title": "Gen Z Workers Describe AI Jobs",
+        "url": "https://www.dailymail.com/sciencetech/article-16249767/AI-generation-Gen-Z-workers.html",
+        "source": "dailymail.com",
+        "published": "2026-11-01T12:18:45+00:00",
+        "summary": "Gen Z workers describe roles emerging around a rapidly growing AI industry, where investment is expanding alongside new job labels and expectations. Their accounts make the transition concrete: career identity cannot rest only on a title when the work itself is being defined in public, in real time.",
+        "imageUrl": "https://i.dailymail.com/1s/2026/10/30/16/112199391-0-image-m-5_1793377756069.jpg",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "AI is attracting major investment and creating new categories of work.",
+          "Workers entering these roles are helping define what the jobs actually involve."
+        ]
+      },
+      {
+        "title": "AI Abundance Still Requires Human Choices",
+        "url": "https://note.com/prime_lupine5859/n/nfb4c19b09ca4?hl=en",
+        "source": "note.com",
+        "published": "2026-10-28T07:10:00+00:00",
+        "summary": "A reflection on Elon Musk's vision of AI and robots producing abundant goods asks whether money, electricity, and resources could take on different economic roles. Even as a speculative view, it surfaces a practical human task: people need language for value and contribution that is larger than the job market they have known.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/329593713/rectangle_large_type_2_f1d131f98a3897d3c249e7aef9a23319.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The article considers an economy shaped by AI, robotics, electricity, and resources.",
+          "Its abundance premise raises questions about how society recognizes human value."
+        ]
+      },
+      {
+        "title": "Clinical Trials Shift From Repair to Prediction",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/10/30/clinical-trial-ai-from-fixing-the-past-to-predicting-the-future/",
+        "source": "forbes.com",
+        "published": "2026-10-30T07:46:00+00:00",
+        "summary": "Forbes argues that clinical-trial teams should first ask why a workflow exists before deciding whether AI can automate it. That is a strong model for AI readiness: people create more durable value when they can redesign a system around purpose, risk, and accountability instead of merely accelerating its old steps.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/64ca698bfa66b94eb249769f/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The piece asks teams to examine the purpose of clinical-trial work before automating it.",
+          "Predictive AI changes the work of designing and governing the workflow."
+        ]
+      },
+      {
+        "title": "Workforce Design Is AI's Missing Layer",
+        "url": "https://www.hcamag.com/us/news/general/workforce-design-is-the-ai-era-gap-that-most-organisations-are-missing/595703",
+        "source": "hcamag.com",
+        "published": "2026-10-31T15:00:51+00:00",
+        "summary": "HRM America reports that only 4% of HR leaders feel very prepared for AI-driven change and argues that deploying tools without redesigning work will not hold. The human stakes are organizational as well as individual: people need a voice in how roles, learning, and responsibility are rebuilt.",
+        "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/036/0287_639290695842991078.png",
+        "stages": [
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Only 4% of HR leaders surveyed feel very prepared for AI-driven change.",
+          "The article argues that technology deployment must be matched by workforce redesign."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-10-31-ai-readiness-requires-independent-judgment": {
     "slug": "2026-10-31-ai-readiness-requires-independent-judgment",
     "date": "2026-10-31",
