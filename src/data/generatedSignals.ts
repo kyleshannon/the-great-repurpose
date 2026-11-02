@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-02-ai-needs-a-new-bargain-for-work",
+    "date": "2026-11-02",
+    "title": "AI Needs A New Bargain For Work",
+    "pattern": "EY-Parthenon's CEO survey, SK ecoplant's role-specific agents, and Tech.co's account of a labor market changing before mass layoffs all show that efficiency is not the same as a workable future. A proposal for AI staffing and OODAloop's warning about shifting decision authority make the stakes clearer: as systems take on more execution, people and institutions need a new bargain over who directs work, shares its value, and remains accountable for its consequences.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://cyprus-mail.com/wp-content/uploads/2025/06/AI-artificial-intelligence.jpg"
+  },
+  {
     "slug": "2026-11-01-work-design-requires-human-career-choice",
     "date": "2026-11-01",
     "title": "Work Design Requires Human Career Choice",
@@ -1738,6 +1751,100 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-02-ai-needs-a-new-bargain-for-work": {
+    "slug": "2026-11-02-ai-needs-a-new-bargain-for-work",
+    "date": "2026-11-02",
+    "title": "AI Needs A New Bargain For Work",
+    "pattern": "EY-Parthenon's CEO survey, SK ecoplant's role-specific agents, and Tech.co's account of a labor market changing before mass layoffs all show that efficiency is not the same as a workable future. A proposal for AI staffing and OODAloop's warning about shifting decision authority make the stakes clearer: as systems take on more execution, people and institutions need a new bargain over who directs work, shares its value, and remains accountable for its consequences.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://cyprus-mail.com/wp-content/uploads/2025/06/AI-artificial-intelligence.jpg",
+    "stories": [
+      {
+        "title": "AI Productivity Gains Are Not Yet Growth",
+        "url": "https://cyprus-mail.com/2026/11/02/ai-boosts-productivity-but-companies-struggle-to-turn-gains-into-growth",
+        "source": "cyprus-mail.com",
+        "published": "2026-11-02T05:30:00+00:00",
+        "summary": "An EY-Parthenon survey finds companies are seeing AI productivity gains while many leaders still struggle to turn them into durable growth. Skills shortages, rising complexity, and weak workforce investment show why faster execution alone cannot create value; organizations must decide what human capabilities they are building around it.",
+        "imageUrl": "https://cyprus-mail.com/wp-content/uploads/2025/06/AI-artificial-intelligence.jpg",
+        "stages": [
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The EY-Parthenon survey reports productivity gains without consistent profit or growth gains.",
+          "Leaders cite complexity, skills shortages, and workforce development as constraints."
+        ]
+      },
+      {
+        "title": "SK Ecoplant Deploys Role-Specific AI Agents",
+        "url": "https://biz.chosun.com/en/en-realestate/2026/11/02/ARCRPK7YDJAZVIJFKAXY65UMXU/",
+        "source": "biz.chosun.com",
+        "published": "2026-11-02T05:22:56.172000+00:00",
+        "summary": "SK ecoplant is rolling out job-specific AI agents across its South Korean operations, pairing role-tuned tools with in-house development capabilities. The change makes AI readiness concrete: workers are not simply handed automation, but need the judgment to configure, direct, and take responsibility for systems embedded in real jobs.",
+        "imageUrl": "https://biz.chosun.com/resizer/v2/RIK2YJZK7BGPTFEW5KHYJEAAHQ.jpg?auth=19a52aeeaebd4596dfae12df38b7c59e4a291721770854f8023917aca1753e43&width=1200&height=630&smart=true",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The company is deploying agents tailored to specific operational roles.",
+          "Role-tuned agents shift part of the job toward directing and supervising AI."
+        ]
+      },
+      {
+        "title": "An AI Staffing Agency Tests Work's Old Assumptions",
+        "url": "https://note.com/mizumi_anpan/n/n8b723f89cc8f?hl=en",
+        "source": "note.com",
+        "published": "2026-11-01T06:44:00+00:00",
+        "summary": "A writer imagines an AI staffing agency and asks whether income could be decoupled from conventional employment before displacement becomes a crisis. It is a speculative proposal, but its useful challenge is immediate: people need ways to separate dignity and security from a job wrapper that autonomous systems may increasingly reshape.",
+        "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/f02c6705942e8ec5b425be4c3dc0e3803e08ae64.png",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The proposal imagines AI performing work traditionally placed through human staffing.",
+          "It asks whether economic security can be designed before job displacement accelerates."
+        ]
+      },
+      {
+        "title": "AI's Labor-Market Effects Arrive Before Mass Layoffs",
+        "url": "https://tech.co/news/why-arent-we-seeing-mass-ai-layoffs",
+        "source": "tech.co",
+        "published": "2026-11-02T10:33:13+00:00",
+        "summary": "Tech.co notes that predicted mass AI layoffs have not materialized at the promised scale, even as the technology is already changing the labor market. That distinction matters: waiting for a dramatic cut can obscure the slower redesign of hiring, tasks, and career entry that already asks workers to rethink where their value lives.",
+        "imageUrl": "https://images.tech.co/wp-content/uploads/sites/10/2026/11/Layoffs.jpg",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "The article finds no mass layoff wave on the scale some technology leaders predicted.",
+          "It still identifies signs that AI is changing labor-market conditions."
+        ]
+      },
+      {
+        "title": "AI Shifts Authority Along With Work",
+        "url": "https://oodaloop.com/analysis/disruptive-technology/beyond-job-displacement-ai-human-agency-and-the-future-of-value-creation/",
+        "source": "oodaloop.com",
+        "published": "2026-10-30T06:01:00+00:00",
+        "summary": "OODAloop argues that AI affects more than who performs tasks; it redistributes decision authority, organizational power, and access to economic value. Its frame broadens the public conversation beyond job counts: a fair transition depends on whether people retain agency and a credible share in the systems they help make work.",
+        "imageUrl": "https://oodaloop.com/wp-content/uploads/2026/11/John-Henry-Job-Displacement.jpeg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The analysis focuses on AI's effects on decision authority and organizational power.",
+          "It argues that value creation must be examined alongside employment displacement."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-01-work-design-requires-human-career-choice": {
     "slug": "2026-11-01-work-design-requires-human-career-choice",
     "date": "2026-11-01",
