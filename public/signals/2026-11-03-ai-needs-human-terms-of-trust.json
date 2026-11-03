@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-03",
+  "slug": "2026-11-03-ai-needs-human-terms-of-trust",
+  "title": "AI Needs Human Terms Of Trust",
+  "pattern": "Companies quietly rehiring workers after AI-led layoffs, employees who lack confidence in new tools, and AI agents that still depend on people all challenge the fantasy of a clean handoff from humans to machines. Ghanaian calls for worker protections and a changing CHRO role point to the same task: AI adoption needs explicit terms for trust, accountability, capability, and what people are owed when systems change the work.",
+  "stages": [
+    "Reclaim Value",
+    "Become AI Ready",
+    "Unhook Identity",
+    "Discover Purpose"
+  ],
+  "imageUrl": "https://s.yimg.com/lo/mysterio/api/20798e82707466b83e595c09da157833c70df3b303d52ae46f1647837a15b18e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fgadget_review_articles_822%2F75489a01a86c03e00e18d7108cf782c7.jpg",
+  "stories": [
+    {
+      "title": "AI Layoffs Lead Companies To Rehire Workers",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-layoff-experiment-backfiring-companies-191025913.html",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/20798e82707466b83e595c09da157833c70df3b303d52ae46f1647837a15b18e/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fgadget_review_articles_822%2F75489a01a86c03e00e18d7108cf782c7.jpg",
+      "summary": "A report on AI-led layoffs says 19% of U.S. workers displaced by AI were later asked to return, often seeking higher pay and job guarantees. The reversal is a reminder that cutting people before understanding the work can destroy knowledge and trust; durable value comes from redesigning roles with people, not treating them as a temporary cost to remove.",
+      "keyPoints": [
+        "The report says 19% of workers replaced by AI were later asked to return.",
+        "Returning workers are reported to be seeking stronger pay and job guarantees."
+      ],
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ]
+    },
+    {
+      "title": "Workforce Confidence Defines AI Readiness",
+      "source": "forbes.com",
+      "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/11/02/the-real-test-of-ai-readiness-is-workforce-confidence/",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6ae387e3f1b60b1502998469/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "summary": "A Forbes Human Resources Council contributor argues that organizations cannot sustain AI initiatives when workers do not feel capable of using the tools. Confidence is not a soft add-on to deployment: people need practical learning, room to question outputs, and a credible reason to believe AI will expand their agency rather than quietly narrow it.",
+      "keyPoints": [
+        "The article identifies workforce comfort with AI as a condition for sustainable adoption.",
+        "AI readiness depends on people being able to use new systems with confidence."
+      ],
+      "stages": [
+        "Become AI Ready"
+      ]
+    },
+    {
+      "title": "Ghanaian Leader Calls For AI Worker Protections",
+      "source": "myjoyonline.com",
+      "url": "https://www.myjoyonline.com/bawumia-calls-for-laws-to-protect-workers-from-ai-job-losses/",
+      "imageUrl": "https://www.myjoyonline.com/wp-content/uploads/2026/10/Bawumia_KAS_Accra.png",
+      "summary": "Dr. Mahamudu Bawumia has called for laws to protect workers from potential AI-related job losses in Ghana. The appeal puts a public obligation beside private adoption: if AI can reorder livelihoods, the transition cannot rest on individual resilience alone; institutions must help preserve dignity, security, and a path forward.",
+      "keyPoints": [
+        "Bawumia called for legislation addressing potential AI-related job losses.",
+        "The proposal frames worker protection as part of AI policy."
+      ],
+      "stages": [
+        "Reclaim Value",
+        "Discover Purpose"
+      ]
+    },
+    {
+      "title": "CHROs Become Leaders Of AI Work Redesign",
+      "source": "fastcompany.com",
+      "url": "https://www.fastcompany.com/91632822/the-next-generation-of-chros-will-help-define-the-ai-era",
+      "imageUrl": "",
+      "summary": "Fast Company describes a next generation of chief human resources officers moving from talent stewardship into enterprise transformation as AI changes how work gets done. That shift matters because work redesign is not merely an IT rollout: leaders responsible for people must shape the roles, learning, and accountability that make technology serve a human future.",
+      "keyPoints": [
+        "The CHRO role is described as expanding from talent stewardship to transformation leadership.",
+        "AI is changing the organizational work HR leaders are expected to guide."
+      ],
+      "stages": [
+        "Become AI Ready",
+        "Discover Purpose"
+      ]
+    },
+    {
+      "title": "AI Agents Still Rely On Human Work",
+      "source": "cnbc.com",
+      "url": "https://www.cnbc.com/2026/10/31/ai-agents-humans-dazzle-duckbill-meta.html",
+      "imageUrl": "https://image.cnbcfm.com/api/v1/image/108373383-1791299845415-gettyimages-2296215889-META_CONNECT.jpeg?v=1791299900&w=1920&h=1080",
+      "summary": "CNBC reports that agents from companies including Dazzle, Duckbill, and Wajo still turn to human workers for calls and other real-world tasks when software reaches its limits. The story makes the hidden design question visible: the future of work depends on whether human contribution is acknowledged, valued, and given meaningful authority instead of being obscured behind an automated promise.",
+      "keyPoints": [
+        "Several AI-agent companies still use people when software cannot complete real-world work.",
+        "Human labor remains part of many systems marketed as autonomous agents."
+      ],
+      "stages": [
+        "Reclaim Value",
+        "Unhook Identity"
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
