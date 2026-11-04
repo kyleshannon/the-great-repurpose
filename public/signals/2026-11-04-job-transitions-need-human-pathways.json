@@ -1,0 +1,61 @@
+{
+  "slug": "2026-11-04-job-transitions-need-human-pathways",
+  "date": "2026-11-04",
+  "title": "Job Transitions Need Human Pathways",
+  "pattern": "SUSE and Canva are cutting and reshaping roles as automation and AI alter their operating models, while the World Bank warns that 1.2 billion young people need stronger systems for entering an AI-shaped labor market. A separate call for AI grounded in human dignity makes the same point at a different scale: transition cannot be treated as a staffing adjustment or a technical upgrade; people need credible routes to develop judgment, direction, and belonging.",
+  "stages": ["Unhook Identity", "Relaunch Yourself", "Reclaim Value", "Become AI Ready", "Discover Purpose"],
+  "imageUrl": "https://bl-i.thgim.com/public/incoming/vrmv35/article71663871.ece/alternates/LANDSCAPE_1200/2026-11-03T235619Z_1546568892_RC2MGOAF6F3T_RTRMADP_3_CANVA-LAYOFFS.JPG",
+  "stories": [
+    {
+      "title": "SUSE Plans Workforce Cuts as Automation Changes Roles",
+      "url": "https://www.moneycontrol.com/technology/suse-layoffs-open-source-software-company-to-cut-10-of-workforce-as-ceo-cites-ai-and-automation-article-14067277.html",
+      "source": "moneycontrol.com",
+      "published": "2026-11-02T20:25:00+00:00",
+      "summary": "SUSE says it will cut roughly 190 roles, or 10% of its workforce, as changing business requirements and automation reduce demand for some work. The human task is not merely to absorb the announcement: workers and employers need a clear path from a disappearing role toward the judgment, relationships, and capabilities that remain valuable.",
+      "imageUrl": "https://images.moneycontrol.com/static-mcnews/2025/08/20250831145347_Layoffs.png",
+      "stages": ["Unhook Identity", "Become AI Ready"],
+      "keyPoints": ["SUSE expects to reduce its workforce by about 190 people.", "Its CEO cited changing business needs and automation as reducing demand for certain roles."]
+    },
+    {
+      "title": "Canva Reshapes Roles in AI-Driven Overhaul",
+      "url": "https://www.thehindubusinessline.com/info-tech/canva-announces-layoffs-job-changes-for-about-22-of-workforce/article71663785.ece",
+      "source": "thehindubusinessline.com",
+      "published": "2026-11-04T03:30:29+00:00",
+      "summary": "Canva is cutting about 22% of its workforce while changing roles and office hubs as part of an AI-driven overhaul. The headline is a reminder that a company redesign can abruptly separate people from familiar job identities, making practical relaunch support as important as the technology strategy.",
+      "imageUrl": "https://bl-i.thgim.com/public/incoming/vrmv35/article71663871.ece/alternates/LANDSCAPE_1200/2026-11-03T235619Z_1546568892_RC2MGOAF6F3T_RTRMADP_3_CANVA-LAYOFFS.JPG",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": ["Canva announced job cuts affecting about 22% of its workforce.", "The company is also reshaping roles and hubs during a broader technology transition."]
+    },
+    {
+      "title": "World Bank Calls for Skills Investment for Young Workers",
+      "url": "https://www.devdiscourse.com/article/business/4001378-12-billion-young-people-face-ai-shaped-jobs-as-world-bank-pushes-skills-investment",
+      "source": "devdiscourse.com",
+      "published": "2026-11-04T00:57:00+00:00",
+      "summary": "The World Bank highlights how 1.2 billion young people will enter labor markets shaped by AI and calls for investment in education, health care, and workforce skills. The useful frame is larger than tool training: institutions must help people build durable value and a direction for using new capability.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value", "Discover Purpose"],
+      "keyPoints": ["The World Bank says 1.2 billion young people face AI-shaped job markets.", "It argues for stronger education, health care, and workforce-skill systems."]
+    },
+    {
+      "title": "Human Dignity Must Guide Safe AI",
+      "url": "https://note.com/ideal_pika9887/n/n053ed2195929?hl=en",
+      "source": "note.com",
+      "published": "2026-11-03T22:05:00+00:00",
+      "summary": "An essay asks what values should steer increasingly capable AI, including whether efficiency and profit can crowd out human emotion and dignity. Its relevance is direct: safe technology is not only about what systems can do, but about whose purposes, judgment, and well-being shape their use.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/332096929/rectangle_large_type_2_62d37aad6b0787906a274c0323d9b18a.png?fit=bounds&quality=85&width=1280",
+      "stages": ["Reclaim Value", "Discover Purpose"],
+      "keyPoints": ["The essay questions whether smarter AI automatically improves human life.", "It centers human emotions and dignity alongside efficiency and profit."]
+    },
+    {
+      "title": "Canva Cuts 1,271 Jobs During AI Restructuring",
+      "url": "https://www.techjuice.pk/canva-mass-layoffs-ai-restructuring/",
+      "source": "techjuice.pk",
+      "published": "2026-11-04T11:13:48+00:00",
+      "summary": "A second account of Canva's first mass layoff puts the reduction at 1,271 employees as revenue growth slows and AI disruption drives restructuring. Repeated coverage does not make the human consequence abstract: when a firm resets its model, people need visible ways to convert experience into their next contribution.",
+      "imageUrl": "https://www.techjuice.pk/wp-content/uploads/2026/11/canva-cuts-22-of-workforce-in-first-mass-layoffs-in-13-years-techjuice-261001.jpg",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": ["The report describes 1,271 Canva jobs being eliminated.", "It links the restructuring to slowing growth and AI disruption."]
+    }
+  ],
+  "sourceStatus": "generated"
+}
