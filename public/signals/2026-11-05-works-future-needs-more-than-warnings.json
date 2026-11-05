@@ -1,0 +1,61 @@
+{
+  "slug": "2026-11-05-works-future-needs-more-than-warnings",
+  "date": "2026-11-05",
+  "title": "Work's Future Needs More Than Warnings",
+  "pattern": "Forbes' IDC findings, Fast Company's reporting on algorithmic workforce management, Plato's simulated workplaces, a blue-collar survival guide, and warnings attributed to Anthropic's Dario Amodei all point to the same divide: AI's effects on work are being named faster than people are being prepared for them. A useful response cannot stop at predicting displacement; it must help workers build judgment, employers design accountable transitions, and communities create credible paths into changed work.",
+  "stages": ["Become AI Ready", "Relaunch Yourself", "Unhook Identity", "Reclaim Value", "Discover Purpose"],
+  "imageUrl": "https://cdn.eweek.com/igor-omilaev-FHgWFzDDAOs-unsplash.jpg",
+  "stories": [
+    {
+      "title": "Human Skills Still Shape AI Returns",
+      "url": "https://www.forbes.com/sites/dianehamilton/2026/11/05/the-hidden-costs-of-ai-why-human-skills-still-drive-business-results/",
+      "source": "forbes.com",
+      "published": "2026-11-05T00:00:00+00:00",
+      "summary": "A Forbes article drawing on IDC research argues that AI cost savings can disappoint when organizations underinvest in employee judgment and development. The relevant question is not whether a system can perform a task, but whether people have the context and capability to turn that output into durable business value.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "keyPoints": ["The article says AI cost savings can be undermined when human skills are overlooked.", "IDC research is cited to connect employee judgment and development with business results."]
+    },
+    {
+      "title": "Algorithmic Management Deepens Layoff Anxiety",
+      "url": "https://www.fastcompany.com/91626904/how-likely-are-you-to-be-fired-by-ai",
+      "source": "fastcompany.com",
+      "published": "2026-11-04T02:00:00+00:00",
+      "summary": "Fast Company reports that workforce-management and work-intelligence tools are intensifying fears in an era of repeated layoffs, including for workers on protected leave and workers from marginalized groups. When algorithms shape who is measured, managed, or removed, accountable human judgment and clear recourse become part of workplace dignity.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": ["The report draws on accounts from nearly 500 workers worried about AI and layoffs.", "It identifies heightened concerns for women, people of color, and people on protected leave."]
+    },
+    {
+      "title": "Plato Trains Agents in Simulated Workplaces",
+      "url": "https://www.eweek.com/news/plato-16-million-ai-agent-training-simulations/",
+      "source": "eweek.com",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "AI startup Plato has raised $16 million to create simulated workplaces where agents can practice business tasks before deployment in enterprises. As agents become better rehearsed for routine workflows, people need to move upstream toward work that depends on framing problems, testing consequences, and directing systems well.",
+      "imageUrl": "https://cdn.eweek.com/igor-omilaev-FHgWFzDDAOs-unsplash.jpg",
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "keyPoints": ["Plato raised $16 million for workplace simulations for AI agents.", "The simulations are designed to let agents practice business tasks before enterprise use."]
+    },
+    {
+      "title": "AI Is Reaching Blue-Collar Work, Too",
+      "url": "https://note.com/pepe2254/n/n704c967c40c2?hl=en",
+      "source": "note.com",
+      "published": "2026-10-31T00:51:00+00:00",
+      "summary": "A practitioner-written guide challenges the assumption that manual work is naturally insulated from AI and argues that field operations are changing too. Its useful signal is that no occupational label guarantees safety; workers need room to identify the judgment, relationships, and practical problem-solving they can carry into changing roles.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/330534565/rectangle_large_type_2_8dccad1bec482aca3b6f5d4b888caea4.jpeg?fit=bounds&quality=85&width=1280",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": ["The guide argues that AI is reshaping field operations as well as white-collar work.", "It rejects the idea that manual labor is automatically protected from AI disruption."]
+    },
+    {
+      "title": "White-Collar Disruption Demands Career Pathways",
+      "url": "https://bravenewcoin.com/insights/anthropic-ceo-warns-ai-could-wipe-out-50-of-white-collar-jobs-within-5-years",
+      "source": "bravenewcoin.com",
+      "published": "2026-11-03T04:22:03+00:00",
+      "summary": "Brave New Coin reports a warning attributed to Anthropic CEO Dario Amodei that rapid AI advances could disrupt a large share of entry-level white-collar jobs within five years. Even when forecasts are uncertain, the human obligation is immediate: build routes for early-career workers to gain experience, judgment, and a stake in what comes next.",
+      "imageUrl": "https://bravenewcoin.com/wp-content/uploads/2026/11/Anthropic-ceo-warning-ai-job-takeover-news-image1.jpg",
+      "stages": ["Discover Purpose", "Become AI Ready"],
+      "keyPoints": ["The report attributes a warning about major entry-level white-collar disruption to Anthropic CEO Dario Amodei.", "It frames the possible disruption over a one- to five-year period."]
+    }
+  ],
+  "sourceStatus": "generated"
+}
