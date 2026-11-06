@@ -1,0 +1,81 @@
+{
+  "slug": "2026-11-06-ai-makes-transition-a-design-challenge",
+  "date": "2026-11-06",
+  "title": "AI Makes Transition A Design Challenge",
+  "pattern": "Block's continued cuts and Goldman Sachs's warning about longer spells of displacement show that efficiency gains can leave people carrying the transition alone. Oracle's expanding agent runtime, Forbes' case for human security judgment, and KOF's more measured Swiss outlook point to the work ahead: institutions must deliberately design roles, safeguards, and pathways so AI's gains do not become individual losses.",
+  "stages": [
+    "Become AI Ready",
+    "Unhook Identity",
+    "Reclaim Value",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/66f18bd01c89fe34044872a8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+  "stories": [
+    {
+      "title": "Block cutting more jobs months after Jack Dorsey's massive AI-driven layoffs",
+      "url": "https://uk.finance.yahoo.com/news/block-cutting-more-jobs-months-171213239.html",
+      "source": "uk.finance.yahoo.com",
+      "published": "2026-11-05T04:12:00+00:00",
+      "summary": "Block, the parent of Cash App and Square, is continuing job cuts months after Jack Dorsey announced plans to eliminate nearly half its workforce. The story makes the transition concrete: when a company redesigns around AI, people need more than a new org chart—they need a credible account of what skills, judgment, and contribution still matter.",
+      "imageUrl": "https://s.yimg.com/cv/apiv2/cv/apiv2/social/images/yahoo-finance-default-logo.png",
+      "stages": ["Unhook Identity"],
+      "keyPoints": [
+        "Block is still reducing roles after its earlier AI-driven restructuring announcement.",
+        "A changed role should not be treated as proof that the person behind it has lost value."
+      ]
+    },
+    {
+      "title": "Goldman Sachs warns AI layoffs may lead to long-term worker displacement",
+      "url": "https://cryptobriefing.com/goldman-sachs-ai-layoffs-worker-displacement/",
+      "source": "cryptobriefing.com",
+      "published": "2026-11-03T17:06:51+00:00",
+      "summary": "Goldman Sachs estimates that AI-displaced workers take roughly a month longer to find new work and says as much as 9% of the U.S. workforce could be displaced. The important signal is the gap between a layoff and a next chapter: transition support must help people translate their experience into work that is still needed.",
+      "imageUrl": "https://static.cryptobriefing.com/wp-content/uploads/2026/11/03120646/library-goldman-sachs-warns-ai-layoffs-may-lead-to-long-term-wor-800x450.png",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": [
+        "Goldman Sachs links AI displacement to longer searches for a new job.",
+        "Workers need pathways into changed work, not only forecasts of how many jobs may move."
+      ]
+    },
+    {
+      "title": "The Future Of AI Security Is Better Judgment, Not More Automation",
+      "url": "https://www.forbes.com/councils/forbestechcouncil/2026/11/04/the-future-of-ai-security-is-better-judgment-not-more-automation/",
+      "source": "forbes.com",
+      "published": "2026-11-03T21:01:00+00:00",
+      "summary": "A Forbes Technology Council article argues that AI security systems need the governed context security teams use to investigate, prioritize, and decide. That is a useful corrective to automation hype: as systems act faster, human value concentrates in framing risk, weighing consequences, and being accountable for the call.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/66f18bd01c89fe34044872a8/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "keyPoints": [
+        "AI security needs access to governed context, not just more automated execution.",
+        "Judgment about priority, risk, and accountability remains a distinctly human contribution."
+      ]
+    },
+    {
+      "title": "Hidden AI Winners: Increased Productivity Could Boost Consumption",
+      "url": "https://www.bluewin.ch/en/news/hidden-ai-winners-increased-productivity-could-boost-consumption-li.3663956",
+      "source": "bluewin.ch",
+      "published": "2026-11-06T01:31:00+00:00",
+      "summary": "KOF economist Michael Siegenthaler sees a Swiss labor-market impact from AI that may be less severe than feared, while stressing that individual effects can still be significant. The distinction matters: aggregate productivity is not a human outcome by itself; people need the capability and support to share in the upside.",
+      "imageUrl": "https://bluewin-prod-sc-images.imgix.net/2026/11/06/170e75b6-0918-40ca-ab2c-90e60fcd217e.jpg?w=1024&auto=format&s=bb8c915524e8a93974dd3707014fa15c",
+      "stages": ["Become AI Ready"],
+      "keyPoints": [
+        "Productivity gains may soften labor-market effects at the aggregate level.",
+        "Individual workers can still face a hard adjustment even when the economy benefits overall."
+      ]
+    },
+    {
+      "title": "Oracle unveils Fusion Claw to let AI agents execute enterprise work",
+      "url": "https://cryptobriefing.com/oracle-unveils-fusion-claw-enterprise-ai/",
+      "source": "cryptobriefing.com",
+      "published": "2026-11-05T19:05:48+00:00",
+      "summary": "Oracle has introduced Fusion Claw, an agentic runtime that can execute enterprise work across 75 Fusion applications on OCI, with Gemini and OpenAI models in the mix. As agents move into real operating systems, jobs must be redesigned around directing, checking, and improving their work—not simply standing aside.",
+      "imageUrl": "https://static.cryptobriefing.com/wp-content/uploads/2026/11/05140537/library-oracle-unveils-fusion-claw-to-let-ai-agents-execute-ente-800x450.png",
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "keyPoints": [
+        "Oracle is extending agentic execution across 75 Fusion applications.",
+        "The emerging role is to set direction, supervise outputs, and own the consequences."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
