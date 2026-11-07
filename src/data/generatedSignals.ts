@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-07-creative-direction-makes-ai-work-human",
+    "date": "2026-11-07",
+    "title": "Creative Direction Makes AI Work Human",
+    "pattern": "Core Studio's 24-agent filmmaking system and ShotCode's new advertising studio both put creative direction—not raw generation—at the center of AI-enabled production. Forbes' warning about productivity without learning, law schools' push for AI literacy and ethical safeguards, and the Federal Reserve's productivity-and-jobs conference make the larger task clear: people need places to practice judgment, develop craft, and shape the terms on which new capability changes work.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/b83e6a1e-c080-4119-af94-c2b64c3dafb8.jpeg?resize=1200%2C630&ssl=1"
+  },
+  {
     "slug": "2026-11-06-ai-makes-transition-a-design-challenge",
     "date": "2026-11-06",
     "title": "AI Makes Transition A Design Challenge",
@@ -1805,6 +1817,101 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-07-creative-direction-makes-ai-work-human": {
+    "slug": "2026-11-07-creative-direction-makes-ai-work-human",
+    "date": "2026-11-07",
+    "title": "Creative Direction Makes AI Work Human",
+    "pattern": "Core Studio's 24-agent filmmaking system and ShotCode's new advertising studio both put creative direction—not raw generation—at the center of AI-enabled production. Forbes' warning about productivity without learning, law schools' push for AI literacy and ethical safeguards, and the Federal Reserve's productivity-and-jobs conference make the larger task clear: people need places to practice judgment, develop craft, and shape the terms on which new capability changes work.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/b83e6a1e-c080-4119-af94-c2b64c3dafb8.jpeg?resize=1200%2C630&ssl=1",
+    "stories": [
+      {
+        "title": "AI Filmmaking Platform Core Studio Launches at Taiwan Creative Content Fest With 24 Specialized Agents",
+        "url": "https://tech.yahoo.com/ai/meta-ai/articles/ai-filmmaking-platform-core-studio-081935430.html",
+        "source": "tech.yahoo.com",
+        "published": "",
+        "summary": "Taiwan's imCore Corp. launched Core Studio, a filmmaking platform that uses 24 specialized AI agents across scripting, storyboarding, image generation, editing, and color grading. The important shift is not that production becomes automatic; it is that creators need stronger direction, taste, and responsibility for the story a system helps them make.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/b6d50458ab1db7ee5ea36f518bb4b2edd5c53d79f62aa2f7f6a9e8f097eb66eb/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fvariety.com%2F0f315b81cfcb265f658af13d04b925a8.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Core Studio combines specialized agents across the filmmaking workflow.",
+          "As execution becomes easier, human value moves toward direction, taste, and accountability."
+        ]
+      },
+      {
+        "title": "ShotCode bets on human creativity as AI reshapes advertising video production",
+        "url": "https://www.digitaltrends.com/partner-content/shotcode-bets-on-human-creativity-as-ai-reshapes-advertising-video-production/",
+        "source": "digitaltrends.com",
+        "published": "",
+        "summary": "ShotCode is launching an AI-powered advertising studio around a simple bet: brands will need help deciding what to make, not merely another tool that can make it. That distinction makes creative judgment a durable contribution—someone still has to understand an audience, choose a point of view, and stand behind the work.",
+        "imageUrl": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/b83e6a1e-c080-4119-af94-c2b64c3dafb8.jpeg?resize=1200%2C630&ssl=1",
+        "stages": [
+          "Reclaim Value",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "ShotCode is positioning creative direction as the service around generative video tools.",
+          "A fast output is not a strategy; people still decide what is worth saying and why."
+        ]
+      },
+      {
+        "title": "Why The Best Way To Improve Productivity Isn’t Always To Save Time",
+        "url": "https://www.forbes.com/sites/benjaminlaker/2026/11/06/why-the-best-way-to-improve-productivity-isnt-always-to-save-time/",
+        "source": "forbes.com",
+        "published": "",
+        "summary": "Forbes asks whether AI-driven time savings can weaken the effort through which people build expertise. The useful question is not whether every task should remain slow; it is whether organizations are protecting enough practice, feedback, and ownership for workers to become more capable rather than merely more dependent on automation.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Saving time can remove some of the practice that develops expertise.",
+          "Productivity should be judged by growing human capability, not only by faster completion."
+        ]
+      },
+      {
+        "title": "AI in legal education demands curriculum reform, faculty upskilling and ethical safeguards",
+        "url": "https://www.educationtimes.com/news/ai-in-legal-education-demands-curriculum-reform-faculty-upskilling-and-ethical-safeguards/articleshow/135630370.cms",
+        "source": "educationtimes.com",
+        "published": "",
+        "summary": "A report on legal education argues that schools need AI-aware curricula, faculty development, practical training, and ethical safeguards. It points to a broader transition rule: tool access is not readiness; people need structured learning that develops professional judgment and a clear understanding of the consequences of their decisions.",
+        "imageUrl": "https://static.toiimg.com/thumb/msid-135630472,width-1280,height-720,imgsize-103,resizemode-6,y_pad-600/photo.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Legal education is being asked to combine AI literacy with practical and ethical training.",
+          "Professional judgment needs to grow alongside technical fluency."
+        ]
+      },
+      {
+        "title": "Productivity and Jobs Task Force Conference",
+        "url": "https://insurancenewsnet.com/oarticle/productivity-and-jobs-task-force-conference",
+        "source": "insurancenewsnet.com",
+        "published": "",
+        "summary": "The Federal Reserve Board and the Federal Reserve Bank of San Francisco are convening a conference on productivity and jobs, putting the institutional consequences of technological change on the agenda. That is the right scale of question: gains in output matter, but so do the pathways, protections, and purposes available to people whose work is being reorganized.",
+        "imageUrl": "",
+        "stages": [
+          "Discover Purpose",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Federal Reserve institutions are examining the connection between productivity and jobs.",
+          "Public debate must connect efficiency gains to human pathways and shared value."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-06-ai-makes-transition-a-design-challenge": {
     "slug": "2026-11-06-ai-makes-transition-a-design-challenge",
     "date": "2026-11-06",
