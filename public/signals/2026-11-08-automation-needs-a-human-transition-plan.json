@@ -1,0 +1,61 @@
+{
+  "slug": "2026-11-08-automation-needs-a-human-transition-plan",
+  "date": "2026-11-08",
+  "title": "Automation Needs A Human Transition Plan",
+  "pattern": "New AI agents for construction, accounting, property management, healthcare, and marketing show automation moving from demos into ordinary business workflows. Japan's debate about labor shortages, a daily-practice community's reflection on making room for agents, mortgage-lending job cuts, and a technology-leadership summit all expose the same tension: capacity gains only become progress when institutions give people a role in deciding what changes, learning the new work, and sharing its value.",
+  "stages": ["Become AI Ready", "Reclaim Value", "Relaunch Yourself", "Discover Purpose"],
+  "imageUrl": "https://assets.st-note.com/production/uploads/images/333593146/rectangle_large_type_2_2330305223814c02d0c18aa08db06ac2.png?fit=bounds&quality=85&width=1280",
+  "stories": [
+    {
+      "title": "AI Agents Move Into Industry Workflows",
+      "url": "https://www.forbes.com/sites/quickerbettertech/2026/11/08/business-tech-news-new-ai-agents-for-construction-accounting-property-management-healthcare-and-marketing/",
+      "source": "forbes.com",
+      "published": "",
+      "summary": "A Forbes roundup reports new AI agents aimed at construction, accounting, property management, healthcare, and marketing, including tools for project management, financial operations, and administrative work. The question is no longer whether agents can enter these workflows; it is whether employers will help people redesign roles, build oversight, and retain meaningful responsibility as they do.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": ["New agents are being positioned for specific operational work across several industries.", "Workflow automation needs clear human ownership, not just faster task completion."]
+    },
+    {
+      "title": "Can Japan Grow Richer As AI Changes Work?",
+      "url": "https://note.com/suzukan01/n/naae34b50bb7d?hl=en",
+      "source": "note.com",
+      "published": "",
+      "summary": "A Japanese essay responds to Bank of Japan Governor Kazuo Ueda's comments on AI in a country facing acute labor shortages. It reframes the familiar fear that AI will take jobs around a more useful civic question: who benefits when technology expands capacity, and how do workers remain part of the choices that shape that gain?",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/333593146/rectangle_large_type_2_2330305223814c02d0c18aa08db06ac2.png?fit=bounds&quality=85&width=1280",
+      "stages": ["Reclaim Value", "Discover Purpose"],
+      "keyPoints": ["Japan's labor shortage changes the context for debates about AI and employment.", "Greater capacity still requires a shared account of value, participation, and benefit."]
+    },
+    {
+      "title": "Technology Leaders Gather For Nashville AI Summit",
+      "url": "https://markets.businessinsider.com/news/stocks/hmg-strategy-brings-its-c-level-technology-leadership-community-to-tennessee-for-inaugural-nashville-summit-1036731412",
+      "source": "markets.businessinsider.com",
+      "published": "",
+      "summary": "HMG Strategy announced an inaugural Nashville summit for its C-level technology leadership community. Executive gatherings can easily turn AI into a procurement conversation; the more consequential leadership work is designing how capability, accountability, and employee development move together when technology changes the operating model.",
+      "imageUrl": "https://ml.globenewswire.com/Resource/Download/74033d76-2046-4997-b9d8-0a4c88aa1e5a/tenn-logo-cluster-1.png",
+      "stages": ["Become AI Ready", "Discover Purpose"],
+      "keyPoints": ["Technology leaders are convening around the operational implications of emerging capability.", "Leadership must connect adoption decisions to accountability and human development."]
+    },
+    {
+      "title": "Creating Space In Work With AI Agents",
+      "url": "https://note.com/angel_marilyn/n/n5efcc30f2396?hl=en",
+      "source": "note.com",
+      "published": "",
+      "summary": "A reflection from a long-running daily-practice community considers how AI agents might create more room in work rather than simply add another demand. That distinction matters: reclaimed time is valuable only when people can direct it toward learning, relationships, care, or work that calls for their particular judgment.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/333661499/rectangle_large_type_2_717da45de9d8299778aa427c738f8ecd.png?fit=bounds&quality=85&width=1280",
+      "stages": ["Discover Purpose", "Reclaim Value"],
+      "keyPoints": ["AI can create space, but people still decide what that space is for.", "A humane transition protects room for practice, reflection, and relationships."]
+    },
+    {
+      "title": "Lenders Turn To Cuts And AI As Jobs Stay Strong",
+      "url": "https://www.nationalmortgagenews.com/news/lenders-turn-to-cuts-ai-as-strong-jobs-point-to-rate-hikes",
+      "source": "nationalmortgagenews.com",
+      "published": "",
+      "summary": "National Mortgage News reports that nonbank mortgage payroll estimates reached a yearly low as lenders and brokers reduced staff amid productivity gains and flattening costs. The story is a reminder that an efficiency claim is never the whole transition story; people need credible paths to adapt, contribute, and rebuild when operating models change.",
+      "imageUrl": "",
+      "stages": ["Relaunch Yourself", "Unhook Identity"],
+      "keyPoints": ["Mortgage-industry employment is falling alongside productivity-focused changes.", "Organizations should pair cost decisions with real pathways for people affected by them."]
+    }
+  ],
+  "sourceStatus": "generated"
+}
