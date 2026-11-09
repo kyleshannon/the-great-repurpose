@@ -1,0 +1,61 @@
+{
+  "slug": "2026-11-09-ai-changes-how-work-earns-trust",
+  "date": "2026-11-09",
+  "title": "AI Changes How Work Earns Trust",
+  "pattern": "New research on AI agents coordinating inside companies, AI-accelerated recruiting, Upwork's map of less-automatable roles, a Tennessee leadership summit, and fresh productivity data all point to a shift in how work is judged. As systems absorb more screening, coordination, and routine output, people and institutions must make trust visible through accountable oversight, durable expertise, and clearer paths into changed roles.",
+  "stages": ["Become AI Ready", "Reclaim Value", "Unhook Identity", "Relaunch Yourself"],
+  "imageUrl": "https://image.cnbcfm.com/api/v1/image/108520477-1793823798855-gettyimages-2297748926-_04a0065_yahpbvob.jpeg?v=1793823822&w=1920&h=1080",
+  "stories": [
+    {
+      "title": "AI Agent Teams Create New Oversight Risks",
+      "url": "https://www.cnbc.com/2026/11/08/ai-agents-risks.html",
+      "source": "cnbc.com",
+      "published": "2026-11-08T14:14:11+00:00",
+      "summary": "CNBC examines experiments in which AI agents work together inside corporate systems, where their goals and ethical choices can conflict. Delegating work to a network of agents does not remove responsibility; it raises the need for people who can set boundaries, notice failures, and answer for the outcomes.",
+      "imageUrl": "https://image.cnbcfm.com/api/v1/image/108520477-1793823798855-gettyimages-2297748926-_04a0065_yahpbvob.jpeg?v=1793823822&w=1920&h=1080",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": ["Agent teams can pursue misaligned goals or operate without consistent ethical judgment.", "Human oversight becomes more important as organizations delegate work across autonomous systems."]
+    },
+    {
+      "title": "Which Jobs Remain Harder To Automate?",
+      "url": "https://propakistani.pk/2026/11/09/here-are-120-jobs-least-likely-to-be-replaced-by-ai/",
+      "source": "propakistani.pk",
+      "published": "2026-11-09T11:22:22+00:00",
+      "summary": "A report on Upwork's list of more than 120 roles across 13 industries identifies work considered less likely to be replaced by AI. The useful question is not which label offers permanent shelter, but which human capabilities, relationships, and judgment people can develop as job descriptions keep changing.",
+      "imageUrl": "https://propakistani.pk/wp-content/uploads/2026/11/AI-jobs-pp.png",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": ["Upwork identifies more than 120 roles it considers less likely to be replaced by AI.", "Career resilience depends on capabilities people can carry beyond any single job title."]
+    },
+    {
+      "title": "Technology Leaders Confront Workforce Transformation",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-chips-today-ai-tech-113730173.html",
+      "source": "finance.yahoo.com",
+      "published": "2026-11-09T03:37:00+00:00",
+      "summary": "A Nashville summit will bring CIOs, CISOs, CTOs, and other technology leaders together around AI, cybersecurity, and workforce transformation. The leadership test is larger than choosing tools: it is whether adoption plans give people the preparation, authority, and support to shape the operating model those tools create.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/9a40ecd0a68b78beea47e34d053daf091f9842d15181c72d5beec5f4b4c388d9/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsimply_wall_st__316%2Fe6251d5b66a3d9915d9c3c1b9b27c900.jpg",
+      "stages": ["Become AI Ready"],
+      "keyPoints": ["The summit centers AI, cybersecurity, and workforce transformation for regional technology leaders.", "Adoption plans need employee development and accountability alongside technical capability."]
+    },
+    {
+      "title": "AI Puts Recruiting Fees Under Pressure",
+      "url": "https://www.cnbc.com/2026/11/08/ai-recruitment-agency-fees.html",
+      "source": "cnbc.com",
+      "published": "2026-11-08T06:00:01+00:00",
+      "summary": "Recruiters tell CNBC that AI is accelerating screening and changing the economics of agency work, challenging percentage-based placement fees. When a profession's routine workflow becomes faster and cheaper, its value has to become clearer in the human work that technology cannot simply certify: context, trust, and consequential judgment.",
+      "imageUrl": "https://image.cnbcfm.com/api/v1/image/105671436-1547150719833gettyimages-862718244.jpeg?v=1579791016&w=1920&h=1080",
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "keyPoints": ["AI is speeding up candidate screening and reshaping recruitment-agency economics.", "Recruiters must make their distinctive contribution visible beyond process throughput."]
+    },
+    {
+      "title": "Productivity Gains Raise A Transition Question",
+      "url": "https://www.businessreport.com/roundup-labor-productivity-holiday-priorities-job-market-resilience/",
+      "source": "businessreport.com",
+      "published": "2026-11-05T15:32:55+00:00",
+      "summary": "Business Report notes that U.S. labor productivity rose at a 3.6% annualized rate in the third quarter as investment in AI, software, and equipment translated into greater efficiency. A productivity gain is real, but it is not a complete social outcome unless people affected by the redesign have a credible way to participate in what comes next.",
+      "imageUrl": "https://s49408.pcdn.co/wp-content/uploads/2026/11/iStock-2236907372-scaled.jpg",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": ["U.S. labor productivity rose at a 3.6% annualized rate in the third quarter.", "Efficiency gains need to be matched by credible pathways for people whose work is redesigned."]
+    }
+  ],
+  "sourceStatus": "generated"
+}
