@@ -1,0 +1,61 @@
+{
+  "slug": "2026-11-10-ai-demands-new-value-agreements",
+  "date": "2026-11-10",
+  "title": "AI Demands New Value Agreements",
+  "pattern": "A GRC workplace guide, a warning about widening gaps in developing economies, a care worker's reflection on physical AI, and new creator programs from Luma, Infinite Studios, and Adobe all ask who gets to shape the terms of AI-enabled work. The shared challenge is not simply learning a tool: people and institutions need clearer agreements about skill, support, credit, and dignity as AI changes what work is worth.",
+  "stages": ["Reclaim Value", "Become AI Ready", "Relaunch Yourself", "Discover Purpose"],
+  "imageUrl": "https://www.bleepstatic.com/content/posts/2026/11/09/dont-dumb-down-your-ai.jpg",
+  "stories": [
+    {
+      "title": "GRC Work Shifts Toward AI Governance",
+      "url": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
+      "source": "bleepingcomputer.com",
+      "published": "2026-11-09T02:05:00+00:00",
+      "summary": "BleepingComputer examines how AI agents are absorbing routine governance, risk, and compliance work. Its case for data literacy, agent governance, and communication is a reminder that professionals can reclaim value by becoming accountable stewards of the systems that now perform parts of their old workflow.",
+      "imageUrl": "https://www.bleepstatic.com/content/posts/2026/11/09/dont-dumb-down-your-ai.jpg",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": ["Routine GRC tasks are increasingly being handled by AI agents.", "Data literacy, agent governance, and communication become central human capabilities."]
+    },
+    {
+      "title": "AI Infrastructure Gap Threatens Developing Economies",
+      "url": "https://www.nation.com.pk/10-Nov-2026/developing-economies-face-widening-productivity-gap-amid-global-ai-transition",
+      "source": "nation.com.pk",
+      "published": "2026-11-10T07:18:23+00:00",
+      "summary": "The Nation reports that AI could raise productivity in developing economies while uneven infrastructure and workforce preparation widen the gap between countries. Access to capability is not the same as access to agency; transition plans need investment in the conditions that let people use new tools well.",
+      "imageUrl": "https://www.nation.com.pk/digital_images/large/2026-11-10/developing-economies-face-widening-productivity-gap-amid-global-ai-transition-1794295074-4957.png",
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "keyPoints": ["AI productivity gains depend on digital infrastructure and workforce readiness.", "Uneven access can widen rather than close economic opportunity gaps."]
+    },
+    {
+      "title": "Care Work Raises The Question Of Human Value",
+      "url": "https://note.com/pomodoro_times/n/n3f301bb418b1?hl=en",
+      "source": "note.com",
+      "published": "2026-11-03T07:49:00+00:00",
+      "summary": "A longtime care worker reflects on whether physical AI might remove exhausting tasks without diminishing the people who provide care. The question is a useful corrective to job-loss panic: reducing hardship can create room for more attention, relationship, and purpose, if society chooses to recognize those contributions.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/331913814/rectangle_large_type_2_9b69055b92ae251e38df61c8d40f8fa8.png?fit=bounds&quality=85&width=1280",
+      "stages": ["Discover Purpose", "Unhook Identity"],
+      "keyPoints": ["Physical AI could reduce burdensome care tasks rather than erase the meaning of care.", "Human value cannot be measured only by the amount of labor performed."]
+    },
+    {
+      "title": "Agencies Reconsider Their Role In AI Production",
+      "url": "https://www.forbes.com/sites/jamiegutfreund/2026/11/09/luma-ai-and-infinite-studios-are-moving-in-where-do-agencies-fit/",
+      "source": "forbes.com",
+      "published": "2026-11-09T19:40:00+00:00",
+      "summary": "Forbes looks at Luma AI and Infinite Studios building in-house AI creative teams with brands, putting pressure on the traditional agency role. The durable contribution is less about owning production steps and more about bringing distinctive judgment, direction, and trusted partnership to the work.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value", "Relaunch Yourself"],
+      "keyPoints": ["Luma AI and Infinite Studios are helping brands build AI creative capacity internally.", "Agencies must articulate value beyond owning routine production workflows."]
+    },
+    {
+      "title": "Adobe Expands AI Learning For Creators",
+      "url": "https://www.thewrap.com/media-platforms/tv/adobe-masterclass-for-creators-ai-usage/",
+      "source": "thewrap.com",
+      "published": "2026-11-09T13:00:00+00:00",
+      "summary": "Adobe's new ten-part creator masterclass pairs prominent working creators with data on how creators are using AI. Training matters most when it helps people make intentional choices about craft, authorship, and audience—not when it treats adoption as a race to produce more with less reflection.",
+      "imageUrl": "https://www.thewrap.com/wp-content/uploads/2026/11/adobe-creator-playbook.jpg",
+      "stages": ["Become AI Ready", "Discover Purpose"],
+      "keyPoints": ["Adobe is launching a ten-part educational series for creators.", "AI fluency should strengthen creative judgment, authorship, and intentional practice."]
+    }
+  ],
+  "sourceStatus": "generated"
+}
