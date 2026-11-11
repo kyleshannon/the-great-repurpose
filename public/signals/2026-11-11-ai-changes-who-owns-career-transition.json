@@ -1,0 +1,61 @@
+{
+  "slug": "2026-11-11-ai-changes-who-owns-career-transition",
+  "date": "2026-11-11",
+  "title": "AI Changes Who Owns Career Transition",
+  "pattern": "Forbes asks leaders to onboard and hold AI agents accountable, while Australian firms and NICE connect AI productivity to job cuts and leaner management. University of Phoenix is convening a conversation about staying relevant, and Adobe's creator-economy question asks who benefits as making gets cheaper. Together, these stories move career transition from a private worker problem to a shared design question: who provides the learning, authority, and fair terms people need to direct changed work?",
+  "stages": ["Unhook Identity", "Become AI Ready", "Reclaim Value", "Relaunch Yourself"],
+  "imageUrl": "https://pic1.calcalist.co.il/picserver3/crop_images/2025/07/28/Sku6PA4Dll/Sku6PA4Dll_0_0_1000_563_0_large.jpg",
+  "stories": [
+    {
+      "title": "Leaders Need New Systems For AI Agents",
+      "url": "https://www.forbes.com/sites/niritcohen/2026/11/10/managing-ai-agents-like-employees-6-processes-to-rethink/",
+      "source": "forbes.com",
+      "published": "2026-11-10T06:20:00+00:00",
+      "summary": "Forbes argues that AI agents need to be managed through familiar organizational systems: onboarding, performance expectations, accountability, and oversight. That shifts the human role from completing every task to setting direction and carrying responsibility for what the system does.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "keyPoints": ["AI agents require explicit onboarding, performance expectations, and accountability.", "Supervision and judgment become a more visible part of human work as agents take on execution."]
+    },
+    {
+      "title": "Australian Firms Link AI Use To Job Cuts",
+      "url": "https://www.theaustralian.com.au/business/major-australian-companies-slash-jobs-and-expand-ai-use-to-tackle-productivity-slump/news-story/1a9678abbe5d37dd53e2281aa4eef54a",
+      "source": "theaustralian.com.au",
+      "published": "2026-11-10T09:59:00+00:00",
+      "summary": "The Australian reports that major companies are cutting jobs while expanding AI use in pursuit of productivity. The harder issue is not simply whether roles disappear, but whether employers give people credible paths to carry their skills, dignity, and agency into the work that changes next.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": ["Several major Australian companies are pairing workforce reductions with expanded AI use.", "Productivity claims do not automatically create a humane transition for affected workers."]
+    },
+    {
+      "title": "University Of Phoenix Addresses Career Relevance",
+      "url": "https://www.tmcnet.com/usubmit/2026/11/10/10479205.htm",
+      "source": "tmcnet.com",
+      "published": "2026-11-09T16:00:00+00:00",
+      "summary": "University of Phoenix is hosting a webinar on maintaining career relevance in the age of AI. The invitation is a useful reminder that people need more than tool tips: they need places to interpret change, name their value, and choose a next direction.",
+      "imageUrl": "https://mmx.prnewswire.com/media/MS1759141/University-of-Phoenix-Logo.jpg?id=OA3070985",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": ["The webinar focuses on maintaining career relevance as AI changes work.", "Career resilience depends on translating experience into value that travels beyond a job title."]
+    },
+    {
+      "title": "NICE Ties AI Productivity To Workforce Cuts",
+      "url": "https://www.calcalistech.com/ctechnews/article/ygubfbd9r",
+      "source": "calcalistech.com",
+      "published": "2026-11-04T17:44:25.601508+00:00",
+      "summary": "NICE CEO Scott Russell links 500 job cuts to a strategy of using AI tools to raise developer productivity and remove management layers. The story makes organizational design concrete: when efficiency alters the role map, leaders must decide where human judgment and advancement still live.",
+      "imageUrl": "https://pic1.calcalist.co.il/picserver3/crop_images/2025/07/28/Sku6PA4Dll/Sku6PA4Dll_0_0_1000_563_0_large.jpg",
+      "stages": ["Unhook Identity", "Become AI Ready"],
+      "keyPoints": ["NICE is targeting slower-growing businesses while increasing AI-enabled productivity.", "Removing management layers changes both accountability and career pathways."]
+    },
+    {
+      "title": "Cheaper AI Creation Raises A Value Question",
+      "url": "https://www.yahoo.com/news/articles/ai-changing-economics-creativity-benefits-140727221.html",
+      "source": "yahoo.com",
+      "published": "2026-11-10T06:08:00+00:00",
+      "summary": "A Forbes examination of Adobe's creator event asks who benefits as AI lowers the cost of producing creative work. When output becomes abundant, human value shifts toward taste, authorship, relationship, and the judgment to decide what deserves to be made.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/220642875e5e977a113134b33f813229916c561664749836269c746833b2cc36/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fforbes_contributor_845%2F8a896b130d9a49ec95e43af4053675e4.jpg",
+      "stages": ["Reclaim Value"],
+      "keyPoints": ["AI is reducing the cost of creative production while increasing the volume of content.", "Taste, authorship, and judgment matter more when execution is easier to obtain."]
+    }
+  ],
+  "sourceStatus": "generated"
+}
