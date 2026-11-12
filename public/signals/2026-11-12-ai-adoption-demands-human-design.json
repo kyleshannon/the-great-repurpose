@@ -1,0 +1,81 @@
+{
+  "slug": "2026-11-12-ai-adoption-demands-human-design",
+  "date": "2026-11-12",
+  "title": "AI Adoption Demands Human Design",
+  "pattern": "India's IT sector is confronting a skills reset, employers that replaced people with AI are rehiring human expertise, and China is framing the transition as more than replacement. The same lesson runs through early AI-assisted writing and higher education: AI capability expands quickly, but institutions still have to design the judgment, learning, and career pathways that keep people meaningfully in the work.",
+  "stages": [
+    "Unhook Identity",
+    "Become AI Ready",
+    "Relaunch Yourself",
+    "Reclaim Value"
+  ],
+  "imageUrl": "https://bioengineer.org/wp-content/uploads/2026/11/stackrss-featured-7451.png",
+  "stories": [
+    {
+      "title": "India's AI Jobs Outlook Depends on a Skills Reset",
+      "url": "https://www.livemint.com/cio/opinion/ai-to-create-1-7-mn-net-jobs-by-2030-but-indias-workforce-faces-a-skills-reset-291794470282165.html",
+      "source": "livemint.com",
+      "published": "2026-11-12T08:42:12+00:00",
+      "summary": "Indian IT companies expect AI to create net jobs by 2030, but are reworking hiring priorities and workforce skills as technology roles change. The opportunity is real only if workers are given a credible path to build new capability rather than being left to absorb a redesigned labor market alone.",
+      "imageUrl": "https://www.livemint.com/lm-img/img/2026/11/12/600x338/ai_jobs_1794472727008_6ng4_1794472779609_9vPL_9641720d-7f75-43da-85bb-7aa9a51ed42d_nBnK.jpg",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "Indian IT employers are revising workforce strategies, roles, and skill priorities around AI.",
+        "A jobs forecast matters less to people than access to the learning and mobility it assumes."
+      ]
+    },
+    {
+      "title": "Companies Rehire Expertise After AI-Led Cuts",
+      "url": "https://www.forbes.com/sites/bernardmarr/2026/11/12/ai-rebounding-why-companies-are-rehiring-the-humans-they-replaced/",
+      "source": "forbes.com",
+      "published": "2026-11-11T21:33:00+00:00",
+      "summary": "Some companies that eliminated roles in the name of AI are discovering operational gaps and bringing human expertise back. The reversal is a reminder that replacing tasks is not the same as replacing accountability, context, or the people who can recognize when automated work is going wrong.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": [
+        "AI-driven cuts can expose costly gaps in organizational knowledge and judgment.",
+        "Human value becomes clearer when a system needs repair, context, and responsibility."
+      ]
+    },
+    {
+      "title": "China Urges a Worker-Centered AI Transition",
+      "url": "https://en.ce.cn/main/latest/202611/t20261112_3292771.shtml",
+      "source": "en.ce.cn",
+      "published": "2026-11-11T18:11:00+00:00",
+      "summary": "After visits to an intelligent manufacturing facility, Chinese officials argued that the AI transition should involve more than replacing workers and that businesses must help people prepare. The public-policy question is not simply how fast automation can spread, but who is responsible for making the next chapter of work navigable.",
+      "imageUrl": "",
+      "stages": ["Unhook Identity", "Relaunch Yourself"],
+      "keyPoints": [
+        "The discussion links intelligent manufacturing with preparation for affected workers.",
+        "A humane transition requires institutions to pair deployment with pathways into what comes next."
+      ]
+    },
+    {
+      "title": "Early Human Direction Improves AI-Assisted Writing",
+      "url": "https://bioengineer.org/guiding-early-ai-decisions-improves-story-quality-and-writer-satisfaction/",
+      "source": "bioengineer.org",
+      "published": "2026-11-12T11:33:38+00:00",
+      "summary": "A PNAS Nexus experiment found that keeping people involved in early creative choices improved both story quality and writer satisfaction in AI-assisted work. It points to a practical design principle: put human taste and intention upstream, where they can shape the work instead of merely approving machine output at the end.",
+      "imageUrl": "https://bioengineer.org/wp-content/uploads/2026/11/stackrss-featured-7451.png",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": [
+        "Early human decisions improved outcomes in an AI-assisted writing study.",
+        "Direction and taste are productive capabilities, not decorative add-ons to automation."
+      ]
+    },
+    {
+      "title": "Universities Lag Students in AI Readiness",
+      "url": "https://phys.org/news/2026-11-ai-universal-higher-universities.html",
+      "source": "phys.org",
+      "published": "2026-11-10T13:20:00+00:00",
+      "summary": "AI use is becoming nearly universal among university students in many countries, while institutional policies and teaching models lag behind. Exposure to a tool is not preparation for a changing world of work; learners need help developing judgment, boundaries, and an account of the value they can create with it.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Discover Purpose"],
+      "keyPoints": [
+        "Student adoption is outpacing many universities' formal AI policies and practices.",
+        "AI readiness needs judgment and direction alongside technical access."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
