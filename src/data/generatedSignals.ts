@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-13-career-shifts-need-institutional-design",
+    "date": "2026-11-13",
+    "title": "Career Shifts Need Institutional Design",
+    "pattern": "A Japanese reskilling roadmap, Fast Company's case for human-directed AI work, job-cut data, and Forbes reporting on finance teams and white-collar hiring all describe work being redesigned faster than people can navigate it alone. The human challenge is not merely to keep up with a tool: employers, educators, and leaders have to create credible pathways for learning, accountability, and renewed value as roles change.",
+    "stages": [
+      "Unhook Identity",
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://assets.st-note.com/production/uploads/images/335371808/rectangle_large_type_2_80d8fb2672437e5a538bef7fe685cdd3.jpeg?fit=bounds&quality=85&width=1280"
+  },
+  {
     "slug": "2026-11-12-ai-adoption-demands-human-design",
     "date": "2026-11-12",
     "title": "AI Adoption Demands Human Design",
@@ -1882,6 +1895,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-13-career-shifts-need-institutional-design": {
+    "slug": "2026-11-13-career-shifts-need-institutional-design",
+    "date": "2026-11-13",
+    "title": "Career Shifts Need Institutional Design",
+    "pattern": "A Japanese reskilling roadmap, Fast Company's case for human-directed AI work, job-cut data, and Forbes reporting on finance teams and white-collar hiring all describe work being redesigned faster than people can navigate it alone. The human challenge is not merely to keep up with a tool: employers, educators, and leaders have to create credible pathways for learning, accountability, and renewed value as roles change.",
+    "stages": [
+      "Unhook Identity",
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://assets.st-note.com/production/uploads/images/335371808/rectangle_large_type_2_80d8fb2672437e5a538bef7fe685cdd3.jpeg?fit=bounds&quality=85&width=1280",
+    "stories": [
+      {
+        "title": "Reskilling Must Change Work, Not Just Prompts",
+        "url": "https://note.com/quirky_frog4014/n/nac7e780e30f8?hl=en",
+        "source": "note.com",
+        "published": "2026-11-12T06:21:00+00:00",
+        "summary": "A Japanese roadmap argues that collecting prompt tricks is not a durable answer to AI disruption. It links reskilling to business-process redesign, making the case that people build lasting value when learning changes the work around them rather than becoming another private productivity exercise.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/335371808/rectangle_large_type_2_80d8fb2672437e5a538bef7fe685cdd3.jpeg?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Prompt collections alone do not create durable market value.",
+          "Reskilling is paired with business-process redesign and practical application."
+        ]
+      },
+      {
+        "title": "AI Can Move Workers Toward Judgment",
+        "url": "https://www.fastcompany.com/91635839/ai-doesnt-have-to-replace-human-workers",
+        "source": "fastcompany.com",
+        "published": "2026-11-06T05:32:00+00:00",
+        "summary": "Fast Company argues that AI agents do not have to mean human replacement. When organizations design work deliberately, people can spend less time executing routine tasks and more time setting direction, managing exceptions, applying judgment, and owning outcomes.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AI agents can shift work from execution toward direction and accountability.",
+          "The outcome depends on intentional job design, not automation alone."
+        ]
+      },
+      {
+        "title": "Job Cuts Make Transition Support Urgent",
+        "url": "https://invezz.com/news/2026/11/12/ai-layoffs-2026-so-far-job-cuts-firms-jobs-regions/",
+        "source": "invezz.com",
+        "published": "2026-11-12T09:00:00+00:00",
+        "summary": "A 2026 tally reports 121,401 U.S. job cuts attributed to AI across firms, roles, and regions. The number is a reminder that transition cannot be treated as a personal resilience test; people need honest explanations and viable routes to carry their value into changed work.",
+        "imageUrl": "https://invezz-wp-media.lon1.digitaloceanspaces.com/2026/11/featured-37.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The report tracks 121,401 U.S. AI-related job cuts in 2026.",
+          "Workers need pathways beyond the role that was eliminated."
+        ]
+      },
+      {
+        "title": "Banks Must Design Human-Agent Teams",
+        "url": "https://www.forbes.com/sites/renanaashkenazi/2026/11/12/ai-agents-are-forcing-banks-to-build-a-new-kind-of-finance-team/",
+        "source": "forbes.com",
+        "published": "2026-11-12T04:32:00+00:00",
+        "summary": "Forbes examines how AI agents are forcing finance organizations to rethink team structure as the cost of digital labor is measured against payroll. The important work is not simply adding agents; it is deciding which human judgment, controls, and responsibilities must anchor the redesigned team.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Digital labor is being evaluated against payroll, not just software cost.",
+          "Finance teams need new operating models for human accountability around agents."
+        ]
+      },
+      {
+        "title": "Hiring Growth Does Not Erase Uneven Change",
+        "url": "https://www.forbes.com/sites/jonmarkman/2026/11/09/white-collar-hiring-hit-its-fastest-pace-since-2022-despite-ai-job-fears/",
+        "source": "forbes.com",
+        "published": "2026-11-08T21:00:00+00:00",
+        "summary": "White-collar hiring accelerated in October even as document-preparation jobs declined sharply over the year. That contrast matters: the future of work will not be one universal verdict on AI, but a series of uneven shifts that require people to recognize where their capabilities can be renewed and redirected.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "White-collar employment grew rapidly in October.",
+          "Document-preparation jobs fell 17% over the year, showing how uneven the transition can be."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-12-ai-adoption-demands-human-design": {
     "slug": "2026-11-12-ai-adoption-demands-human-design",
     "date": "2026-11-12",
