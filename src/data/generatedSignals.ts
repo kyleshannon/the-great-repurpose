@@ -3,6 +3,18 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-15-ai-demands-new-terms-of-oversight",
+    "date": "2026-11-15",
+    "title": "AI Demands New Terms Of Oversight",
+    "pattern": "New security roles around enterprise agents, Adobe's Creative Agent and Firefly, SmallRig's discussion of authenticity, warnings about AI supervision fatigue, and a more complicated reading of tech layoffs all point to the same challenge: expanding capability does not settle who is accountable for the work. As AI moves into systems, creative practice, and career narratives, people need terms that protect judgment, sustainable attention, and a credible account of where human value remains.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://hackread.com/wp-content/uploads/2026/11/security-jobs-growing-around-enterprise-ai-agents.jpg"
+  },
+  {
     "slug": "2026-11-13-career-shifts-need-institutional-design",
     "date": "2026-11-13",
     "title": "Career Shifts Need Institutional Design",
@@ -1895,6 +1907,100 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-15-ai-demands-new-terms-of-oversight": {
+    "slug": "2026-11-15-ai-demands-new-terms-of-oversight",
+    "date": "2026-11-15",
+    "title": "AI Demands New Terms Of Oversight",
+    "pattern": "New security roles around enterprise agents, Adobe's Creative Agent and Firefly, SmallRig's discussion of authenticity, warnings about AI supervision fatigue, and a more complicated reading of tech layoffs all point to the same challenge: expanding capability does not settle who is accountable for the work. As AI moves into systems, creative practice, and career narratives, people need terms that protect judgment, sustainable attention, and a credible account of where human value remains.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Unhook Identity"
+    ],
+    "imageUrl": "https://hackread.com/wp-content/uploads/2026/11/security-jobs-growing-around-enterprise-ai-agents.jpg",
+    "stories": [
+      {
+        "title": "Security Roles Grow Around Enterprise AI Agents",
+        "url": "https://hackread.com/security-jobs-growing-around-enterprise-ai-agents/",
+        "source": "hackread.com",
+        "published": "2026-11-14T13:04:01+00:00",
+        "summary": "Enterprise AI assistants are moving beyond chat windows into shared mailboxes, SharePoint searches, and support workflows. That expansion creates work for people who can set permissions, monitor behavior, investigate failures, and make accountability real when agents act inside operational systems.",
+        "imageUrl": "https://hackread.com/wp-content/uploads/2026/11/security-jobs-growing-around-enterprise-ai-agents.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Enterprise agents increasingly touch mailboxes, knowledge systems, and support work.",
+          "Security and accountability become part of the human role around deployed agents."
+        ]
+      },
+      {
+        "title": "Adobe Positions Creative Agents Around Firefly",
+        "url": "https://note.com/pivot_ai/n/n16fc1496fb97?hl=en",
+        "source": "note.com",
+        "published": "2026-11-15T00:11:00+00:00",
+        "summary": "A Pivot AI account of Adobe MAX 2026 frames Creative Agent and Firefly as a response to a changing creative-AI market. The human question is not whether creation becomes faster, but whether creators retain the taste, direction, and authorship needed to make the resulting work matter.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/336328662/rectangle_large_type_2_871a061e5ddfd47e67848d7b064c1832.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Adobe is positioning Creative Agent and Firefly in a rapidly changing creative-AI market.",
+          "Creative value still depends on direction, taste, and accountable authorship."
+        ]
+      },
+      {
+        "title": "Artists Debate Authenticity In The AI Era",
+        "url": "https://www.tmcnet.com/usubmit/2026/11/14/10481367.htm",
+        "source": "tmcnet.com",
+        "published": "2026-11-13T16:00:00+00:00",
+        "summary": "SmallRig brought art-world figures together to discuss creativity, authenticity, and innovation in an AI-shaped environment. The conversation matters because cheaper generation raises the value of the human choices that establish context, trust, meaning, and a reason to care about the work.",
+        "imageUrl": "https://mmx.prnewswire.com/media/MS2034412/20261113060347EST_image_1.jpg?id=OA3076999",
+        "stages": [
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The discussion centers creativity and authenticity alongside new technology.",
+          "Human context and judgment help establish why creative work is worth trusting."
+        ]
+      },
+      {
+        "title": "AI Supervision Can Create Its Own Strain",
+        "url": "https://www.digitaljournal.com/article/ai-brain-fry-the-hidden-human-cost-of-the-productivity-revolution/",
+        "source": "digitaljournal.com",
+        "published": "2026-11-11T13:19:00+00:00",
+        "summary": "An examination of AI's productivity promise warns that supervising increasingly capable systems can create a different kind of cognitive strain. Organizations should not treat faster output as proof of better work; they also need to design attention, escalation, and recovery into human-agent workflows.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Automation can shift repetitive work while adding supervisory cognitive load.",
+          "Healthy AI adoption requires deliberate limits and support around human attention."
+        ]
+      },
+      {
+        "title": "Tech Job Cuts Have More Than One Cause",
+        "url": "https://seekingalpha.com/news/4669026-ai-not-the-main-reason-for-tech-related-job-cuts-but-the-economy-analyst",
+        "source": "seekingalpha.com",
+        "published": "2026-11-09T07:29:00+00:00",
+        "summary": "An analyst argues that the economy, rather than AI alone, explains much of the recent tech-job-cut picture cited by Challenger, Gray & Christmas. That distinction matters to workers: a useful transition story separates evidence from fear and makes room for people to reframe their value beyond any one role.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Economic conditions remain an important explanation for technology-sector cuts.",
+          "Workers need evidence-based narratives and pathways beyond a changing job title."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-13-career-shifts-need-institutional-design": {
     "slug": "2026-11-13-career-shifts-need-institutional-design",
     "date": "2026-11-13",
