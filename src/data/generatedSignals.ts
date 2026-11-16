@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-16-ai-redraws-tasks-not-human-worth",
+    "date": "2026-11-16",
+    "title": "AI Redraws Tasks, Not Human Worth",
+    "pattern": "Task-by-task workforce planning, voice assistants on the frontline, and Accenture’s changing-work analysis all point to roles being redesigned around AI. Adobe’s creative agents and Mendoza students’ changing coursework show the same pressure reaching both established creators and people preparing to enter work. The common challenge is to make human judgment and direction more visible as execution becomes easier to automate.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://wersm.com/wp-content/uploads/2026/11/nouveautes-adobe-firefly-studio-ia-1-768x432.jpg.webp"
+  },
+  {
     "slug": "2026-11-15-ai-demands-new-terms-of-oversight",
     "date": "2026-11-15",
     "title": "AI Demands New Terms Of Oversight",
@@ -1907,6 +1920,101 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-16-ai-redraws-tasks-not-human-worth": {
+    "slug": "2026-11-16-ai-redraws-tasks-not-human-worth",
+    "date": "2026-11-16",
+    "title": "AI Redraws Tasks, Not Human Worth",
+    "pattern": "Task-by-task workforce planning, voice assistants on the frontline, and Accenture’s changing-work analysis all point to roles being redesigned around AI. Adobe’s creative agents and Mendoza students’ changing coursework show the same pressure reaching both established creators and people preparing to enter work. The common challenge is to make human judgment and direction more visible as execution becomes easier to automate.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://wersm.com/wp-content/uploads/2026/11/nouveautes-adobe-firefly-studio-ia-1-768x432.jpg.webp",
+    "stories": [
+      {
+        "title": "The future of work is being rewritten, task by task",
+        "url": "https://www.theedgesingapore.com/digitaledge/careers-training/future-work-being-rewritten-task-task",
+        "source": "theedgesingapore.com",
+        "published": "2026-11-15T17:41:00+00:00",
+        "summary": "The Edge Singapore argues that employers need to explain how AI changes each person’s tasks, then provide training and practical experience for the transition. The human question is not simply which tasks disappear. It is whether people receive enough clarity and support to recognize the value they can carry into a different version of their work.",
+        "keyPoints": [
+          "Employers should explain task-level changes and provide practical preparation.",
+          "A transition plan should help people carry their value beyond a changing job description."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "imageUrl": ""
+      },
+      {
+        "title": "Voice AI is quietly transforming frontline work",
+        "url": "https://www.fastcompany.com/91642518/voice-ai-is-quietly-transforming-frontline-work",
+        "source": "fastcompany.com",
+        "published": "2026-11-16T02:11:00+00:00",
+        "summary": "Fast Company describes how improving speech recognition and AI agents are making hands-free assistants more practical in factories, stores, and other frontline workplaces. AI readiness is moving beyond the office keyboard. For workers, the opportunity is to experiment with tools inside the actual job while retaining the situational judgment that makes assistance useful.",
+        "keyPoints": [
+          "Speech recognition and AI agents are enabling hands-free assistance in frontline workplaces.",
+          "Useful experimentation begins with real working conditions, not an abstract productivity promise."
+        ],
+        "stages": [
+          "Become AI Ready"
+        ],
+        "imageUrl": ""
+      },
+      {
+        "title": "As AI takes over more tasks, five trends reshaping the future of work",
+        "url": "https://www.theglobeandmail.com/business/careers/article-as-ai-takes-over-more-tasks-five-trends-reshaping-the-future-of-work/",
+        "source": "theglobeandmail.com",
+        "published": "2026-11-15T14:00:00+00:00",
+        "summary": "The Globe and Mail examines an Accenture report on changing work, highlighting human judgment, career development, and new leadership demands as AI takes on more tasks. The shift challenges the habit of equating a role with its current task list. Organizations need to make room for people’s developing capabilities, not just automate yesterday’s responsibilities.",
+        "keyPoints": [
+          "The report connects task automation with changes in judgment, development, and leadership.",
+          "Career development must evolve alongside the tasks organizations delegate to AI."
+        ],
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "imageUrl": "https://www.theglobeandmail.com/resizer/v2/P7LG6AWY4NAMJGYPTVIT3SAUVE.jpg?auth=9fabe3c57e43506158493dbb4449084b9ee456014b8f084a3802a2c10bf533a6&width=1200&height=800&quality=80&smart=true"
+      },
+      {
+        "title": "Adobe Firefly Becomes An AI Creative Studio With Agents",
+        "url": "https://wersm.com/adobe-firefly-ai-creative-studio-agents/",
+        "source": "wersm.com",
+        "published": "2026-11-16T02:42:36+00:00",
+        "summary": "WeRSM reports that Adobe is expanding Firefly into an AI creative studio with agents, multiple models, video editing, and automated workflows. More execution inside one system raises a different question for creators: what are you trying to make, and why? Creative direction and decisions become more important as the mechanics become easier to delegate.",
+        "keyPoints": [
+          "Firefly combines agents, multiple AI models, video editing, and automated creative workflows.",
+          "Creators still need to define the intention and make the decisions that give the output value."
+        ],
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "imageUrl": "https://wersm.com/wp-content/uploads/2026/11/nouveautes-adobe-firefly-studio-ia-1-768x432.jpg.webp"
+      },
+      {
+        "title": "Mendoza students comment on AI’s expansion in coursework and workplace",
+        "url": "https://www.ndsmcobserver.com/article/mendoza-students-comment-on-ais-expansion-in-coursework-and-workplace-20261116",
+        "source": "ndsmcobserver.com",
+        "published": "2026-11-16T18:00:00+00:00",
+        "summary": "The Observer reports on Mendoza College of Business students’ views of expanding AI use in courses and workplaces, as curricula move away from traditional technical training. Exposure to tools is only part of preparation. Students also need ways to demonstrate judgment and build a professional identity that can survive changes in the skills employers expect.",
+        "keyPoints": [
+          "Business students describe growing AI use as coursework changes.",
+          "Preparing for work requires opportunities to develop judgment, not just practice with tools."
+        ],
+        "stages": [
+          "Relaunch Yourself",
+          "Become AI Ready"
+        ],
+        "imageUrl": "https://snworksceo.imgix.net/obs/c886e548-3d24-4f55-aba5-4fb196894437.sized-1000x1000.jpg?w=800&fit=crop&ar=16%3A9&crop=faces%2Cedges"
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-15-ai-demands-new-terms-of-oversight": {
     "slug": "2026-11-15-ai-demands-new-terms-of-oversight",
     "date": "2026-11-15",
