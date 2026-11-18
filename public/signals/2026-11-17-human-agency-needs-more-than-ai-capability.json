@@ -1,0 +1,95 @@
+{
+  "slug": "2026-11-17-human-agency-needs-more-than-ai-capability",
+  "date": "2026-11-17",
+  "title": "Human Agency Needs More Than AI Capability",
+  "pattern": "AI executives’ visions of abundance, Exaforce’s personal security agents, Warsh’s economic questions, Andreessen’s argument about regulation and Kentucky’s AI proficiency agenda all point beyond raw capability. People need room to choose a purpose, institutions that support learning and clear responsibility for delegated work. This November 17 edition was restored on November 18 from sources available by November 17; an unusable video link was replaced with Kentucky’s dated public agenda.",
+  "stages": [
+    "Become AI Ready",
+    "Unhook Identity",
+    "Reclaim Value",
+    "Discover Purpose"
+  ],
+  "imageUrl": "https://assets.st-note.com/production/uploads/images/336522093/rectangle_large_type_2_96ae0d490193e6fb13bc0bbd8e3b33a0.jpg?fit=bounds&quality=85&width=1280",
+  "stories": [
+    {
+      "title": "AI leaders’ forecasts raise a question of human purpose",
+      "url": "https://note.com/hinacom/n/ne2ab5cb60843?hl=en",
+      "source": "note.com",
+      "published": "2026-11-15T03:58:00+00:00",
+      "summary": "An essay from LIGHTHOUSE compares AI executives’ predictions about employment, prosperity, health and meaning, while explicitly noting that these futures are not guaranteed. Its central human question is what people will choose to contribute if familiar work changes. The useful distinction is between greater technical capability and the social conditions that let people turn it into a meaningful life.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/336522093/rectangle_large_type_2_96ae0d490193e6fb13bc0bbd8e3b33a0.jpg?fit=bounds&quality=85&width=1280",
+      "stages": [
+        "Discover Purpose",
+        "Unhook Identity"
+      ],
+      "keyPoints": [
+        "Treat executives’ future scenarios as predictions, not promises.",
+        "Purpose and participation matter alongside material prosperity."
+      ]
+    },
+    {
+      "title": "Exaforce introduces personal agent teams for security practitioners",
+      "url": "https://www.businesswire.com/news/home/20261116741858/en/Exaforce-Launches-ExaU-AI-Agent-Team-for-Every-Security-Practitioner",
+      "source": "businesswire.com",
+      "published": "2026-11-16T01:31:00+00:00",
+      "summary": "Exaforce says its new ExaU product lets security practitioners create persistent teams of agents that remember priorities and work within the company’s existing platform. Its announcement describes approval requirements for consequential actions and an audit trail. For practitioners, the opportunity is to shift attention from isolated tasks toward directing ongoing work, without confusing delegated execution with delegated accountability.",
+      "imageUrl": "",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "ExaU is designed around a practitioner’s continuing responsibilities.",
+        "Exaforce describes approval controls and recorded actions."
+      ]
+    },
+    {
+      "title": "Federal Reserve task force examines AI’s economic tradeoffs",
+      "url": "https://finance.yahoo.com/economy/policy/article/warsh-kicks-off-first-task-force-hearing-on-how-ai-could-fuel-growth-or-disrupt-jobs-171720426.html",
+      "source": "finance.yahoo.com",
+      "published": "2026-11-16T09:17:00+00:00",
+      "summary": "Kevin Warsh opened a task-force discussion about whether AI will raise productivity and living standards or disrupt employment. The reported questions concern how large the changes could be, where they would occur and when. For people navigating the transition, this is a reminder to prepare for several possible paths rather than treat either abundance or displacement as a settled forecast.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/dbae2f363b079003df04370484bc8d10e52bb8621daccc265ad1a444ccc1a227/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-11%2Fcf66c06f-9c55-4b3f-bfc2-bf6b19382427",
+      "stages": [
+        "Unhook Identity",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Magnitude, scope and timing remain questions for investigation.",
+        "Prepare adaptable skills and options instead of betting on one forecast."
+      ]
+    },
+    {
+      "title": "Marc Andreessen argues regulation will slow job displacement",
+      "url": "https://finance.yahoo.com/economy/policy/article/marc-andreessen-says-government-regulation-will-save-jobs-from-ai--at-the-cost-of-economic-growth-214918442.html",
+      "source": "finance.yahoo.com",
+      "published": "2026-11-16T13:49:00+00:00",
+      "summary": "Marc Andreessen argues that regulation will protect jobs in some sectors from rapid AI disruption while also limiting productivity and economic growth. That is his assessment of a tradeoff, not proof that protected occupations will never change. The TGR question is how institutions can give people time and support to adapt without making protection of existing tasks the only measure of human value.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/227fd637ac22c6ec38dc9e8cf5b78f187eb0ce67d70d27fb72fe846b0a900a3c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2021-02%2Fe9c7fc80-738e-11eb-beef-6b7fa23d48e7",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Andreessen connects regulatory protection with slower economic change.",
+        "A transition strategy must consider people’s opportunities, not only preserved roles."
+      ]
+    },
+    {
+      "title": "Kentucky places AI proficiency on its workforce agenda",
+      "url": "https://cpe.ky.gov/aboutus/records/ai-task-force/agenda-2026-11-16-ai.pdf",
+      "source": "cpe.ky.gov",
+      "published": "2026-11-16T10:00:00-05:00",
+      "summary": "Kentucky’s Council on Postsecondary Education scheduled discussion and adoption of AI proficiency goals for its November 16 task-force meeting, alongside student success and experience. The published agenda establishes the planned work, not whether the goals were approved. Its significance is institutional: becoming AI ready needs shared educational expectations and practical routes for students, not simply encouragement to experiment alone.",
+      "imageUrl": "",
+      "stages": [
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "The official agenda includes AI proficiency goals and student success.",
+        "An agenda is not evidence of a completed vote or adopted policy."
+      ]
+    }
+  ],
+  "sourceStatus": "retrospective-backfill"
+}
