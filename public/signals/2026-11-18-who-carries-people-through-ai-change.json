@@ -1,0 +1,95 @@
+{
+  "slug": "2026-11-18-who-carries-people-through-ai-change",
+  "date": "2026-11-18",
+  "title": "Who Carries People Through AI Change",
+  "pattern": "Fountain and Microsoft are moving agents into the systems that coordinate work, while Partner4Work’s Rob Cherry points to the tacit expertise those systems do not simply erase. Keith Ferrazzi puts responsibility for transition on employers, and the Federal Reserve is examining sharply different economic outcomes. The shared question is who will help people turn enduring human value into new options while the structure of work changes.",
+  "stages": [
+    "Become AI Ready",
+    "Reclaim Value",
+    "Unhook Identity",
+    "Relaunch Yourself"
+  ],
+  "imageUrl": "https://media.bizj.us/view/img/13050395/cherry-rob-1*1200xx4000-2250-0-411.jpg",
+  "stories": [
+    {
+      "title": "Partner4Work highlights the human skills behind local jobs",
+      "url": "https://www.bizjournals.com/pittsburgh/news/2026/11/17/partner4work-ai-may-impact-the-local-workforce.html",
+      "source": "bizjournals.com",
+      "published": "2026-11-17T21:39:00+00:00",
+      "summary": "Partner4Work CEO Rob Cherry says AI may displace repetitive jobs while leaving a need for tacit skills, such as a mechanic diagnosing an engine by ear. The important distinction is between a task that can be automated and expertise accumulated through experience. For workers, reclaiming value starts with naming that expertise rather than assuming a changing job description erases it.",
+      "imageUrl": "https://media.bizj.us/view/img/13050395/cherry-rob-1*1200xx4000-2250-0-411.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Repetitive tasks and tacit expertise face different pressures.",
+        "Identify the judgment behind the task, not just the task itself."
+      ]
+    },
+    {
+      "title": "Fountain launches Orchestra for frontline workforce management",
+      "url": "https://venturebeat.com/orchestration/ai-agents-are-coming-to-help-hire-schedule-and-manage-frontline-workers-as-fountain-launches-orchestra",
+      "source": "venturebeat.com",
+      "published": "2026-11-17T16:51:51.289000+00:00",
+      "summary": "Fountain is introducing Orchestra to bring AI agents into hiring, scheduling and managing frontline workers. The company says it already uses more than 180 agents internally across engineering, finance and customer-facing operations. As software takes on coordination, the human question becomes who can challenge its decisions and who remains accountable for their effects on workers.",
+      "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/26JcyA7EZBhHCJjLSeV5ni/c7fd0259953b44893ffb40564d634c63/Retro_Pixel_Checkout_Fountain_Scene.png?w=800&q=75",
+      "stages": [
+        "Become AI Ready",
+        "Reclaim Value"
+      ],
+      "keyPoints": [
+        "Orchestra targets frontline hiring, scheduling and management.",
+        "Fountain reports using more than 180 agents internally."
+      ]
+    },
+    {
+      "title": "Microsoft frames enterprise AI around governed agent workplaces",
+      "url": "https://www.technologyrecord.com/article/microsoft-ignite-2026-microsoft-pushes-beyond-ai-assistants-towards-enterprise-wide-agentic-workplaces",
+      "source": "technologyrecord.com",
+      "published": "2026-11-18T03:51:00+00:00",
+      "summary": "At Ignite 2026, Satya Nadella described a workplace where employees, autonomous agents and organizational knowledge operate together across a unified Microsoft platform. His emphasis on governance and keeping humans at the center matters beyond the product roadmap. Becoming AI ready means defining which decisions people retain and how they oversee work delegated to agents, not merely giving everyone an assistant.",
+      "imageUrl": "https://www.technologyrecord.com/Portals/0/EasyDNNnews/9204/NadellaIgnite26_web.jpeg",
+      "stages": [
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Microsoft describes coordinated employees, agents and organizational knowledge.",
+        "Human oversight needs to be designed into delegated work."
+      ]
+    },
+    {
+      "title": "Keith Ferrazzi proposes a new employer promise",
+      "url": "https://www.forbes.com/sites/keithferrazzi/2026/11/17/the-new-employer-promise-preparing-workers-for-an-ai-future/",
+      "source": "forbes.com",
+      "published": "2026-11-16T21:00:00+00:00",
+      "summary": "Keith Ferrazzi argues that employers should build workers’ AI capabilities, prioritize internal mobility and help people find new careers before displacement occurs. This turns adaptation from an individual homework assignment into an organizational responsibility. A credible promise is not that every existing role will survive; it is that people receive practical opportunities to develop and apply their value as roles change.",
+      "imageUrl": "",
+      "stages": [
+        "Relaunch Yourself",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "Develop AI capabilities and internal mobility before displacement.",
+        "Career transition support should begin before a role disappears."
+      ]
+    },
+    {
+      "title": "Federal Reserve explores diverging AI economic scenarios",
+      "url": "https://finance.yahoo.com/economy/policy/articles/fed-modeling-ai-super-intelligence-183644026.html",
+      "source": "finance.yahoo.com",
+      "published": "2026-11-16T10:36:00+00:00",
+      "summary": "Federal Reserve Chair Kevin Warsh says staff are studying three possible AI futures, spanning productivity gains, higher unemployment and a correction in technology stocks. These are scenarios, not a settled prediction. For people planning their next move, the useful lesson is to build adaptable capabilities and options rather than anchor their identity or livelihood to a single forecast.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/e8252e052ff64bacb1bbc02581afeceedb00d2e1751237ea0d30a951aebd07a6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fdecrypt_157%2F50d5a1643a4e12b17059f0f45a7e350d.jpg",
+      "stages": [
+        "Unhook Identity",
+        "Become AI Ready"
+      ],
+      "keyPoints": [
+        "The Fed is examining multiple possible economic outcomes.",
+        "Scenario planning is preparation, not a prediction of inevitable job loss."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
