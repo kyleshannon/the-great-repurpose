@@ -3,6 +3,20 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-19-human-value-needs-new-working-terms",
+    "date": "2026-11-19",
+    "title": "Human Value Needs New Working Terms",
+    "pattern": "BNY’s Manchester partnership treats human-led transformation as a field to develop, while Thomas Lim argues that organizations must redesign work before training people for it. Hiyori’s reskilling perspective and the Mark Cuban career warning bring that transition down to individual choices; Shubhi Rao adds the question of how changed responsibilities should be rewarded. Together they point to new working terms: clearer purposes, practical learning and a fair account of the value people contribute alongside AI.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Discover Purpose",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/763c93ce0277dda1fa6133b6320f183623f89009d419e9f4d866739910031ae5/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsimply_wall_st__316%2F7ca8502b5f4efcc3ca3caf4d9ea6944d.jpg"
+  },
+  {
     "slug": "2026-11-18-who-carries-people-through-ai-change",
     "date": "2026-11-18",
     "title": "Who Carries People Through AI Change",
@@ -1946,6 +1960,103 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-19-human-value-needs-new-working-terms": {
+    "slug": "2026-11-19-human-value-needs-new-working-terms",
+    "date": "2026-11-19",
+    "title": "Human Value Needs New Working Terms",
+    "pattern": "BNY’s Manchester partnership treats human-led transformation as a field to develop, while Thomas Lim argues that organizations must redesign work before training people for it. Hiyori’s reskilling perspective and the Mark Cuban career warning bring that transition down to individual choices; Shubhi Rao adds the question of how changed responsibilities should be rewarded. Together they point to new working terms: clearer purposes, practical learning and a fair account of the value people contribute alongside AI.",
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Discover Purpose",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://s.yimg.com/lo/mysterio/api/763c93ce0277dda1fa6133b6320f183623f89009d419e9f4d866739910031ae5/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsimply_wall_st__316%2F7ca8502b5f4efcc3ca3caf4d9ea6944d.jpg",
+    "stories": [
+      {
+        "title": "BNY backs a chair in human-led digital transformation",
+        "url": "https://finance.yahoo.com/technology/ai/articles/could-bny-bny-shape-human-071140780.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-11-18T23:11:00+00:00",
+        "summary": "BNY has backed Professor Michelle Carter’s appointment as the inaugural BNY Chair in Human-Led Digital Transformation at the University of Manchester. The collaboration focuses on trusted, human-centered AI and the workforce skills and leadership needed in data-driven organizations. The signal is that human-led transformation deserves institutional investment, not merely a reassuring phrase attached to a technology rollout.",
+        "imageUrl": "https://s.yimg.com/lo/mysterio/api/763c93ce0277dda1fa6133b6320f183623f89009d419e9f4d866739910031ae5/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsimply_wall_st__316%2F7ca8502b5f4efcc3ca3caf4d9ea6944d.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The chair links academic work with human-centered digital transformation.",
+          "Leadership and workforce capabilities sit alongside technical adoption."
+        ]
+      },
+      {
+        "title": "A reskilling essay frames learning as a career response",
+        "url": "https://note.com/tabokiti/n/neb4e46fcccfa?hl=en",
+        "source": "note.com",
+        "published": "2026-11-17T11:19:00+00:00",
+        "summary": "A Japanese-language essay by Hiyori starts with anxiety about AI taking jobs and skills losing relevance, then frames reskilling as a way to change one’s career through renewed learning. It is a perspective on adaptation, not evidence that retraining guarantees employment. The useful human shift is to turn a vague threat into a specific next capability to explore and test.",
+        "imageUrl": "https://assets.st-note.com/production/uploads/images/337432997/rectangle_large_type_2_a7b37c594f56461a7f82a6428fb63063.png?fit=bounds&quality=85&width=1280",
+        "stages": [
+          "Discover Purpose",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Reskilling offers a practical response to uncertainty about existing skills.",
+          "Learning should connect to a career direction rather than become an end in itself."
+        ]
+      },
+      {
+        "title": "Thomas Lim argues for redesigning work before AI training",
+        "url": "https://www.forbes.com/councils/forbescoachescouncil/2026/11/19/how-to-deploy-ai-across-your-organization-redesign-the-work-then-train-the-people/",
+        "source": "forbes.com",
+        "published": "2026-11-19T04:15:00+00:00",
+        "summary": "Thomas Lim argues that adding more AI tools will not by itself create enduring organizational value. His proposed sequence is to define an AI Theory of Success, redesign the work and then prepare people for it. The implication is concrete: training makes more sense when employees understand the responsibilities, decisions and outcomes they are being equipped to handle.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/69e1207b1142c2d550f91814/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Start with the intended organizational outcome, not a tool inventory.",
+          "Connect training to redesigned work and clear responsibilities."
+        ]
+      },
+      {
+        "title": "Compensation discussions shift beyond job titles",
+        "url": "https://www.forbes.com/sites/shubhi-rao/2026/11/19/how-to-negotiate-compensation-in-the-age-of-ai/",
+        "source": "forbes.com",
+        "published": "2026-11-19T02:44:00+00:00",
+        "summary": "Shubhi Rao’s compensation article argues that job titles alone are no longer enough to frame pay as AI reshapes work. It points workers toward questions about the risk they carry and how AI-created gains are shared. For people reclaiming their value, the practical challenge is to explain their judgment and responsibility, not simply defend the hours previously needed to complete a task.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Discuss responsibility and risk alongside task execution.",
+          "Ask how the benefits of AI-enabled work are distributed."
+        ]
+      },
+      {
+        "title": "A Mark Cuban warning puts adaptability ahead of fixed career labels",
+        "url": "https://www.aol.com/articles/mark-cuban-warns-ai-learning-103000000.html",
+        "source": "aol.com",
+        "published": "2026-11-19T02:30:00+00:00",
+        "summary": "A report built around Mark Cuban’s warning that AI is learning people’s jobs identifies college majors facing pressure as work becomes easier to automate. Its framing also says AI will not replace every career and emphasizes adaptable workers. Such lists should prompt investigation rather than dictate a life choice: a degree label does not fully describe the judgment, relationships or capabilities a person can develop.",
+        "imageUrl": "https://hermes.media.static.aol.com/media/2026/11/19/1e72ecac-a075-337f-8a3c-ed296a084c36/7ef6b834-ad2f-4b0d-a587-534088649e9c.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "A list of exposed majors is not a verdict on every graduate.",
+          "Look at changing tasks and adaptable capabilities within a career."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-18-who-carries-people-through-ai-change": {
     "slug": "2026-11-18-who-carries-people-through-ai-change",
     "date": "2026-11-18",
