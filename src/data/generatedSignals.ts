@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-20-who-owns-the-work-ai-changes",
+    "date": "2026-11-20",
+    "title": "Who Owns the Work AI Changes?",
+    "pattern": "Apple is hiring to build agents that work across apps, while PNC’s data chief argues for redesigning the workflow around human judgment. Two Forbes pieces ask what disappears and what still needs an owner when employers cut roles, and Yahoo Finance’s layoff roundup shows why the reason attached to a cut is not the same as proof of replacement. Before deciding what AI has made unnecessary, map the work that remains and name who is responsible for it.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC04239.jpg?quality=90&strip=all&crop=0%2C10.628272251309%2C100%2C78.743455497382&w=1200"
+  },
+  {
     "slug": "2026-11-19-human-value-needs-new-working-terms",
     "date": "2026-11-19",
     "title": "Human Value Needs New Working Terms",
@@ -1960,6 +1973,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-20-who-owns-the-work-ai-changes": {
+    "slug": "2026-11-20-who-owns-the-work-ai-changes",
+    "date": "2026-11-20",
+    "title": "Who Owns the Work AI Changes?",
+    "pattern": "Apple is hiring to build agents that work across apps, while PNC’s data chief argues for redesigning the workflow around human judgment. Two Forbes pieces ask what disappears and what still needs an owner when employers cut roles, and Yahoo Finance’s layoff roundup shows why the reason attached to a cut is not the same as proof of replacement. Before deciding what AI has made unnecessary, map the work that remains and name who is responsible for it.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC04239.jpg?quality=90&strip=all&crop=0%2C10.628272251309%2C100%2C78.743455497382&w=1200",
+    "stories": [
+      {
+        "title": "Apple’s job listing points to agents that work across apps",
+        "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+        "source": "theverge.com",
+        "published": "2026-11-19T22:31:41+00:00",
+        "summary": "Apple’s job listing describes agents that plan and carry out multi-step work across apps, browsers and other tools. It is a hiring signal, not a promise that a product is ready. When the software can operate across several steps, a person’s contribution depends more on setting the goal, spotting wrong turns, and knowing when to step in.",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC04239.jpg?quality=90&strip=all&crop=0%2C10.628272251309%2C100%2C78.743455497382&w=1200",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The role spans teams including Siri, UI frameworks and Apple Foundation Models.",
+          "Delegating a whole sequence makes it more important to decide who checks the result."
+        ]
+      },
+      {
+        "title": "A case against making payroll savings the first test of AI",
+        "url": "https://www.forbes.com/councils/forbeshumanresourcescouncil/2026/11/18/the-ai-layoff-trap-is-bigger-than-job-loss/",
+        "source": "forbes.com",
+        "published": "2026-11-17T21:00:00+00:00",
+        "summary": "HR adviser Timothy Giardino argues that a business case built around labor savings can miss the work people were doing beneath their job descriptions. A role may contain routine tasks as well as informal coordination, exception handling and accumulated judgment. Before removing the role, a leader should know which of those responsibilities still has to be covered.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6afc8efe4b049eb1226ec242/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Reclaim Value",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "A task that can be automated is not the same thing as a role that no longer matters.",
+          "Check who will handle exceptions and maintain continuity before counting savings."
+        ]
+      },
+      {
+        "title": "Managers need specifics when leaders cite AI for cuts",
+        "url": "https://www.forbes.com/sites/cherylrobinson/2026/11/19/your-team-wants-to-know-if-ai-really-caused-the-layoffs/",
+        "source": "forbes.com",
+        "published": "2026-11-18T21:00:00+00:00",
+        "summary": "Cheryl Robinson’s Forbes piece makes the layoff conversation concrete: what work did the technology take over, and who will do what remains? Managers asked to explain a decision they did not make need those answers, not a generic AI rationale. Workers also need to know whether a change affects their role, their responsibilities, or both.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Separate tasks automated today from work the company expects to automate later.",
+          "Name the owner for work that did not disappear."
+        ]
+      },
+      {
+        "title": "U.S. layoff announcements do not all tell the same AI story",
+        "url": "https://finance.yahoo.com/technology/ai/articles/wave-u-layoffs-raises-questions-190000727.html",
+        "source": "finance.yahoo.com",
+        "published": "2026-11-18T19:00:00+00:00",
+        "summary": "A Yahoo Finance roundup distinguishes layoff announcements citing AI from cuts attributed to reorganization or economic conditions. It also notes that the figures reflect employers’ stated reasons and planned reductions, not proof that AI directly replaced each job. For someone weighing a career move, the tasks changing in their own field are a better starting point than the national headline.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "An announced reduction is not the same as a completed layoff.",
+          "An employer’s stated reason is not a direct measurement of work automated."
+        ]
+      },
+      {
+        "title": "PNC frames AI as a workflow redesign question",
+        "url": "https://www.bizjournals.com/pittsburgh/news/2026/11/19/future-of-ai-workforce-pnc.html",
+        "source": "bizjournals.com",
+        "published": "2026-11-19T12:04:00+00:00",
+        "summary": "PNC’s data chief told the Pittsburgh Business Times that the bigger opportunity is redesigning workflows, not automating one task at a time. That leaves room for people to apply expertise and judgment where those matter most. The practical question for a team is which decisions need a human owner after the order of the work changes.",
+        "imageUrl": "",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Start with the whole workflow, not a list of isolated tasks.",
+          "Choose where expertise should guide, check or override the software."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-19-human-value-needs-new-working-terms": {
     "slug": "2026-11-19-human-value-needs-new-working-terms",
     "date": "2026-11-19",

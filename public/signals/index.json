@@ -1,5 +1,18 @@
 [
   {
+    "slug": "2026-11-20-who-owns-the-work-ai-changes",
+    "date": "2026-11-20",
+    "title": "Who Owns the Work AI Changes?",
+    "pattern": "Apple is hiring to build agents that work across apps, while PNC’s data chief argues for redesigning the workflow around human judgment. Two Forbes pieces ask what disappears and what still needs an owner when employers cut roles, and Yahoo Finance’s layoff roundup shows why the reason attached to a cut is not the same as proof of replacement. Before deciding what AI has made unnecessary, map the work that remains and name who is responsible for it.",
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC04239.jpg?quality=90&strip=all&crop=0%2C10.628272251309%2C100%2C78.743455497382&w=1200"
+  },
+  {
     "slug": "2026-11-19-human-value-needs-new-working-terms",
     "date": "2026-11-19",
     "title": "Human Value Needs New Working Terms",
@@ -57,7 +70,11 @@
     "date": "2026-11-15",
     "title": "AI Demands New Terms Of Oversight",
     "pattern": "New security roles around enterprise agents, Adobe's Creative Agent and Firefly, SmallRig's discussion of authenticity, warnings about AI supervision fatigue, and a more complicated reading of tech layoffs all point to the same challenge: expanding capability does not settle who is accountable for the work. As AI moves into systems, creative practice, and career narratives, people need terms that protect judgment, sustainable attention, and a credible account of where human value remains.",
-    "stages": ["Become AI Ready", "Reclaim Value", "Unhook Identity"],
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Unhook Identity"
+    ],
     "imageUrl": "https://hackread.com/wp-content/uploads/2026/11/security-jobs-growing-around-enterprise-ai-agents.jpg"
   },
   {
@@ -65,7 +82,12 @@
     "date": "2026-11-13",
     "title": "Career Shifts Need Institutional Design",
     "pattern": "A Japanese reskilling roadmap, Fast Company's case for human-directed AI work, job-cut data, and Forbes reporting on finance teams and white-collar hiring all describe work being redesigned faster than people can navigate it alone. The human challenge is not merely to keep up with a tool: employers, educators, and leaders have to create credible pathways for learning, accountability, and renewed value as roles change.",
-    "stages": ["Unhook Identity", "Become AI Ready", "Reclaim Value", "Relaunch Yourself"],
+    "stages": [
+      "Unhook Identity",
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
     "imageUrl": "https://assets.st-note.com/production/uploads/images/335371808/rectangle_large_type_2_80d8fb2672437e5a538bef7fe685cdd3.jpeg?fit=bounds&quality=85&width=1280"
   },
   {
@@ -86,7 +108,12 @@
     "date": "2026-11-11",
     "title": "AI Changes Who Owns Career Transition",
     "pattern": "Forbes asks leaders to onboard and hold AI agents accountable, while Australian firms and NICE connect AI productivity to job cuts and leaner management. University of Phoenix is convening a conversation about staying relevant, and Adobe's creator-economy question asks who benefits as making gets cheaper. Together, these stories move career transition from a private worker problem to a shared design question: who provides the learning, authority, and fair terms people need to direct changed work?",
-    "stages": ["Unhook Identity", "Become AI Ready", "Reclaim Value", "Relaunch Yourself"],
+    "stages": [
+      "Unhook Identity",
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
     "imageUrl": "https://pic1.calcalist.co.il/picserver3/crop_images/2025/07/28/Sku6PA4Dll/Sku6PA4Dll_0_0_1000_563_0_large.jpg"
   },
   {
@@ -94,7 +121,12 @@
     "date": "2026-11-10",
     "title": "AI Demands New Value Agreements",
     "pattern": "A GRC workplace guide, a warning about widening gaps in developing economies, a care worker's reflection on physical AI, and new creator programs from Luma, Infinite Studios, and Adobe all ask who gets to shape the terms of AI-enabled work. The shared challenge is not simply learning a tool: people and institutions need clearer agreements about skill, support, credit, and dignity as AI changes what work is worth.",
-    "stages": ["Reclaim Value", "Become AI Ready", "Relaunch Yourself", "Discover Purpose"],
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
     "imageUrl": "https://www.bleepstatic.com/content/posts/2026/11/09/dont-dumb-down-your-ai.jpg"
   },
   {
@@ -102,7 +134,12 @@
     "date": "2026-11-09",
     "title": "AI Changes How Work Earns Trust",
     "pattern": "New research on AI agents coordinating inside companies, AI-accelerated recruiting, Upwork's map of less-automatable roles, a Tennessee leadership summit, and fresh productivity data all point to a shift in how work is judged. As systems absorb more screening, coordination, and routine output, people and institutions must make trust visible through accountable oversight, durable expertise, and clearer paths into changed roles.",
-    "stages": ["Become AI Ready", "Reclaim Value", "Unhook Identity", "Relaunch Yourself"],
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Unhook Identity",
+      "Relaunch Yourself"
+    ],
     "imageUrl": "https://image.cnbcfm.com/api/v1/image/108520477-1793823798855-gettyimages-2297748926-_04a0065_yahpbvob.jpeg?v=1793823822&w=1920&h=1080"
   },
   {
@@ -110,7 +147,12 @@
     "date": "2026-11-08",
     "title": "Automation Needs A Human Transition Plan",
     "pattern": "New AI agents for construction, accounting, property management, healthcare, and marketing show automation moving from demos into ordinary business workflows. Japan's debate about labor shortages, a daily-practice community's reflection on making room for agents, mortgage-lending job cuts, and a technology-leadership summit all expose the same tension: capacity gains only become progress when institutions give people a role in deciding what changes, learning the new work, and sharing its value.",
-    "stages": ["Become AI Ready", "Reclaim Value", "Relaunch Yourself", "Discover Purpose"],
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
     "imageUrl": "https://assets.st-note.com/production/uploads/images/333593146/rectangle_large_type_2_2330305223814c02d0c18aa08db06ac2.png?fit=bounds&quality=85&width=1280"
   },
   {
@@ -118,7 +160,11 @@
     "date": "2026-11-07",
     "title": "Creative Direction Makes AI Work Human",
     "pattern": "Core Studio's 24-agent filmmaking system and ShotCode's new advertising studio both put creative direction—not raw generation—at the center of AI-enabled production. Forbes' warning about productivity without learning, law schools' push for AI literacy and ethical safeguards, and the Federal Reserve's productivity-and-jobs conference make the larger task clear: people need places to practice judgment, develop craft, and shape the terms on which new capability changes work.",
-    "stages": ["Reclaim Value", "Become AI Ready", "Discover Purpose"],
+    "stages": [
+      "Reclaim Value",
+      "Become AI Ready",
+      "Discover Purpose"
+    ],
     "imageUrl": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/b83e6a1e-c080-4119-af94-c2b64c3dafb8.jpeg?resize=1200%2C630&ssl=1"
   },
   {
@@ -139,7 +185,13 @@
     "date": "2026-11-05",
     "title": "Work's Future Needs More Than Warnings",
     "pattern": "Forbes' IDC findings, Fast Company's reporting on algorithmic workforce management, Plato's simulated workplaces, a blue-collar survival guide, and warnings attributed to Anthropic's Dario Amodei all point to the same divide: AI's effects on work are being named faster than people are being prepared for them. A useful response cannot stop at predicting displacement; it must help workers build judgment, employers design accountable transitions, and communities create credible paths into changed work.",
-    "stages": ["Become AI Ready", "Relaunch Yourself", "Unhook Identity", "Reclaim Value", "Discover Purpose"],
+    "stages": [
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover Purpose"
+    ],
     "imageUrl": "https://cdn.eweek.com/igor-omilaev-FHgWFzDDAOs-unsplash.jpg"
   },
   {
@@ -147,7 +199,13 @@
     "date": "2026-11-04",
     "title": "Job Transitions Need Human Pathways",
     "pattern": "SUSE and Canva are cutting and reshaping roles as automation and AI alter their operating models, while the World Bank warns that 1.2 billion young people need stronger systems for entering an AI-shaped labor market. A separate call for AI grounded in human dignity makes the same point at a different scale: transition cannot be treated as a staffing adjustment or a technical upgrade; people need credible routes to develop judgment, direction, and belonging.",
-    "stages": ["Unhook Identity", "Relaunch Yourself", "Reclaim Value", "Become AI Ready", "Discover Purpose"],
+    "stages": [
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value",
+      "Become AI Ready",
+      "Discover Purpose"
+    ],
     "imageUrl": "https://bl-i.thgim.com/public/incoming/vrmv35/article71663871.ece/alternates/LANDSCAPE_1200/2026-11-03T235619Z_1546568892_RC2MGOAF6F3T_RTRMADP_3_CANVA-LAYOFFS.JPG"
   },
   {
@@ -246,7 +304,12 @@
     "date": "2026-10-27",
     "title": "AI Transition Demands Human Career Support",
     "pattern": "Reports of technology layoffs at Microsoft, Barclays, Oracle, Meta, and other firms put the disruption in plain view, while research on AI-assisted interview training shows that sharper answers do not automatically create confidence or jobs. Anthropic's employment findings warn that employees can become the bottleneck for fast-moving agents, and Adecco's EZRA is betting on connected human-and-AI coaching. The real test is whether organizations treat AI transition as a cost-cutting exercise or build the coaching, learning, and humane pace people need to shape their next chapter.",
-    "stages": ["Relaunch Yourself", "Become AI Ready", "Unhook Identity", "Reclaim Value"],
+    "stages": [
+      "Relaunch Yourself",
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value"
+    ],
     "imageUrl": "https://images.cnbctv18.com/uploads/2026/10/image-2026-10-28af20d68456bca57f896426804ec6cb.jpg?im=FitAndFill,width=1200,height=675"
   },
   {
@@ -254,7 +317,12 @@
     "date": "2026-10-26",
     "title": "The Human Systems Behind AI Work",
     "pattern": "The IMF's evidence of softer hiring in AI-exposed occupations, IIT Madras's call for affordable tools and reskilling, and a Fox News opinion argument for universities to teach AI capability all point to a public challenge: people cannot be expected to navigate changing work alone. Forbes's warning that fast AI only matters when organizations accept the resulting work, alongside Bloomberg's report on agent pressure in credit trading, makes the organizational half just as clear. The transition will be shaped not only by what AI can execute, but by whether employers, educators, and professions build pathways for people to exercise judgment, learn, and remain accountable.",
-    "stages": ["Become AI Ready", "Unhook Identity", "Reclaim Value", "Relaunch Yourself"],
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself"
+    ],
     "imageUrl": "https://cf-images.assettype.com/sunstar%2F2024-05%2Fcc07ad00-514a-4ae6-95fe-ec3ed8ad0b92%2FAI_Human.jpg?rect=0%2C0%2C750%2C394&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
   },
   {
@@ -262,7 +330,13 @@
     "date": "2026-10-25",
     "title": "AI Makes Human Oversight A Career Strategy",
     "pattern": "Pakistan Observer's case for agentic governance, CEOWORLD's question about unsupervised specialist agents, and TechCrunch's account of security screening all make oversight a practical design choice rather than a compliance afterthought. Barclays' AI spending and workforce cuts show the economic pressure behind that choice, while Forbes argues that students are seeking careers, not just degrees. As AI absorbs more execution, people need real authority, visible judgment, and credible pathways to remain responsible for what organizations decide and do.",
-    "stages": ["Become AI Ready", "Reclaim Value", "Relaunch Yourself", "Unhook Identity", "Discover Purpose"],
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Unhook Identity",
+      "Discover Purpose"
+    ],
     "imageUrl": "https://cdn.ceoworld.biz/wp-content/uploads/2026/10/akhil-verghese.jpg"
   },
   {
@@ -270,7 +344,13 @@
     "date": "2026-10-24",
     "title": "AI Changes The Terms Of Service",
     "pattern": "Anthropic's Claude Duet is designed to act across thousands of work apps while a CNBC look at customer service asks what happens to a difficult human job when AI enters the queue. Forbes argues that simulated empathy makes authentic connection more consequential, and reports on white-collar wages and American Express cuts show the institutional pressure behind that question. The emerging choice is not simply whether service becomes automated, but whether organizations preserve the human judgment, relationship, and economic path that make service worth receiving and worth doing.",
-    "stages": ["Reclaim Value", "Unhook Identity", "Become AI Ready", "Relaunch Yourself", "Discover Purpose"],
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Become AI Ready",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
     "imageUrl": "https://image.cnbcfm.com/api/v1/image/108451569-1792759766860-gettyimages-2214834073-ma117502.jpeg?v=1792759802&w=1920&h=1080"
   },
   {
@@ -304,7 +384,11 @@
     "date": "2026-10-21",
     "title": "AI Career Pathways Need Human Infrastructure",
     "pattern": "An IMF-backed account finds hiring demand falling in AI-exposed jobs even as new skills create openings; Forbes offers a worker-level case for showing value, and another report asks universities to pair AI tools with human judgment. Stories about developing-economy growth and deliberate change management broaden the same choice: will AI's gains become credible career pathways with learning, context, and support—or another transition people are expected to navigate alone?",
-    "stages": ["Reclaim Value", "Relaunch Yourself", "Unhook Identity"],
+    "stages": [
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Unhook Identity"
+    ],
     "imageUrl": "https://s.yimg.com/lo/mysterio/api/17daaa7ff5a8cbacc66ef8212ce5ed16e047f347a1d39dd7eb749b9b177d9614/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fforbes_contributor_845%2F4aa7a1c5e718a2d64963130eb5329a45.jpg"
   },
   {
@@ -312,7 +396,13 @@
     "date": "2026-10-20",
     "title": "AI Turns Workers Into Work Designers",
     "pattern": "Anthropic's research and employees' own accounts show people spending more time directing and checking Claude, while Forbes argues that an AI agent should be onboarded like a new hire and that creativity still needs human judgment. A separate look at AI-linked layoffs raises the harder institutional question: when work changes, will organizations give people authority, preparation, and an honest path forward—or simply call the disruption inevitable?",
-    "stages": ["Become AI Ready", "Reclaim Value", "Unhook Identity", "Relaunch Yourself", "Discover Purpose"],
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
     "imageUrl": "https://images.yourstory.com/cs/286/07f6d7f0ed8e11ed819979969b4b51e2/AINEWS-1791885014582.jpg"
   },
   {
@@ -320,7 +410,13 @@
     "date": "2026-10-19",
     "title": "AI Redefines Work's Human Terms",
     "pattern": "A staged video of an AI recruiter interviewing an AI candidate, two reflections on human value and portable skills, a report on autonomous digital workforces, and new research on the emotional cost of AI-assisted creativity all press on the same question: what remains distinctly ours when systems can perform more of the work? The answer cannot be a private scramble to look machine-like; people need work, learning, and creative cultures that make judgment, purpose, and relationships matter more.",
-    "stages": ["Unhook Identity", "Reclaim Value", "Relaunch Yourself", "Discover Purpose", "Become AI Ready"],
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Discover Purpose",
+      "Become AI Ready"
+    ],
     "imageUrl": "https://www.rte.ie/images/00253227-1600.jpg"
   },
   {
@@ -328,7 +424,11 @@
     "date": "2026-10-18",
     "title": "Work Needs A Human Safety Net",
     "pattern": "A creator's account of returning to drawing with AI, a report on Asia's changing labor demand, an October tech-layoff tally, ZDNET's wage-loss dashboard, and a hospital-bill essay all put the same human question in view: disruption is arriving in both the work people make and the work that pays for life. The tension is whether employers and public institutions will build real routes to skills, agency, and security—or leave individuals to absorb the risk alone.",
-    "stages": ["Unhook Identity", "Relaunch Yourself", "Reclaim Value"],
+    "stages": [
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value"
+    ],
     "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/5fbce8ce917d9da870dc4bb9ac11496b78c1bca8.png"
   },
   {
@@ -336,7 +436,12 @@
     "date": "2026-10-17",
     "title": "AI Pushes Work's Worth Upstream",
     "pattern": "VSCO is building tools and business support around working photographers, while Kling 4.0 makes polished visual output easier to produce. At the same time, Anthropic's reported agent workload, AI-linked layoffs, and renewed attention to skilled trades show familiar job ladders shifting underneath people. The tension is where value moves when production accelerates: people need authority to direct the work, recognize their durable expertise, and build a next chapter rather than be measured only against cheaper output.",
-    "stages": ["Unhook Identity", "Relaunch Yourself", "Reclaim Value", "Become AI Ready"],
+    "stages": [
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value",
+      "Become AI Ready"
+    ],
     "imageUrl": "https://s.yimg.com/lo/mysterio/api/1117c684a238d25e6148439059f0d022ad3f39224159b06a02f45d016db9f12c/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fnyse_video_805%2Fb23f36610d26c2dbe11a1995de2d4c9a.png"
   },
   {
@@ -344,7 +449,12 @@
     "date": "2026-10-16",
     "title": "AI's Human Costs Enter Public Negotiation",
     "pattern": "A Vietnamese business conference, a student newspaper's defense of human creativity, Federal Reserve evidence of changing hiring, Netflix's cuts, and the U.S. midterm debate all make AI's social consequences harder to treat as a distant forecast. The tension is moving into public view: organizations and citizens must decide whether AI's gains will be negotiated around meaningful work, creative dignity, and credible paths forward—or merely absorbed as losses people are expected to manage alone.",
-    "stages": ["Reclaim Value", "Unhook Identity", "Relaunch Yourself", "Discover Purpose"],
+    "stages": [
+      "Reclaim Value",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
     "imageUrl": "https://image.vietnamnews.vn/uploadvnnews/Article/2026/10/16/538306_Trinh.jpg"
   },
   {
@@ -352,7 +462,12 @@
     "date": "2026-10-15",
     "title": "Better Jobs Require Human Choices",
     "pattern": "A workplace podcast, the IMF's warning to the Philippines, and a Bank of Cyprus student forum all arrive at the same question: who will decide what AI-powered work is for? Forbes shows that women in highly exposed administrative roles face unequal transition barriers, while The Hill argues that efficiency only becomes better work when employers deliberately create room to learn, advance, and contribute.",
-    "stages": ["Unhook Identity", "Reclaim Value", "Discover Purpose", "Relaunch Yourself"],
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover Purpose",
+      "Relaunch Yourself"
+    ],
     "imageUrl": "https://bloximages.chicago2.vip.townnews.com/madison.com/content/tncms/assets/v3/editorial/e/a7/ea78a35f-8f65-5499-81b8-f12b1e0bc542/6acfc1afb6b3a.preview.png?crop=1400%2C735%2C0%2C332&resize=1200%2C630&order=crop%2Cresize"
   },
   {
@@ -360,7 +475,12 @@
     "date": "2026-10-14",
     "title": "AI Changes Jobs Before Institutions Explain Them",
     "pattern": "Forbes offers HR leaders strategies for preparing people, while 247WallSt and The Sun report Kroger's AI-linked corporate cuts; Workday and Cresta show the systems that are accelerating the change. The human tension is that organizations are asking people to adapt, supervise, and reskill even as familiar roles are being removed before a credible next place in the work can be explained.",
-    "stages": ["Become AI Ready", "Unhook Identity", "Relaunch Yourself", "Reclaim Value"],
+    "stages": [
+      "Become AI Ready",
+      "Unhook Identity",
+      "Relaunch Yourself",
+      "Reclaim Value"
+    ],
     "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6ace493c5b6f9dad27ce0967/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
   },
   {
