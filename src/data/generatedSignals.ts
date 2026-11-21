@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-21-human-agency-needs-systems-of-trust",
+    "date": "2026-11-21",
+    "title": "Human Agency Needs Systems of Trust",
+    "pattern": "A workplace researcher names the tension between automation and employees who still expect to matter, while KPMG's chief executive hears boardrooms shifting from job cuts to transformation and cyber risk. Apple is building agents that can act across a computer, PRAN-RFL is backing emerging AI creators in Bangladesh, and the European Council is asking education systems to equip students and workers. The common task is not simply gaining access to powerful tools; it is building the skills, accountability and trust that let people direct them well.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2026/11/0/0/board-meeting-ai-governance.jpg?ve=1&tl=1"
+  },
+  {
     "slug": "2026-11-20-who-owns-the-work-ai-changes",
     "date": "2026-11-20",
     "title": "Who Owns the Work AI Changes?",
@@ -1973,6 +1986,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-21-human-agency-needs-systems-of-trust": {
+    "slug": "2026-11-21-human-agency-needs-systems-of-trust",
+    "date": "2026-11-21",
+    "title": "Human Agency Needs Systems of Trust",
+    "pattern": "A workplace researcher names the tension between automation and employees who still expect to matter, while KPMG's chief executive hears boardrooms shifting from job cuts to transformation and cyber risk. Apple is building agents that can act across a computer, PRAN-RFL is backing emerging AI creators in Bangladesh, and the European Council is asking education systems to equip students and workers. The common task is not simply gaining access to powerful tools; it is building the skills, accountability and trust that let people direct them well.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2026/11/0/0/board-meeting-ai-governance.jpg?ve=1&tl=1",
+    "stories": [
+      {
+        "title": "Five tensions put AI and worker trust on the same agenda",
+        "url": "https://www.digitaljournal.com/article/qa-the-five-tensions-shaping-ais-impact-on-work/",
+        "source": "digitaljournal.com",
+        "published": "2026-11-17T22:03:10+00:00",
+        "summary": "Jennifer Jones describes a workplace contradiction: AI may take on more of today's tasks while employees do not experience themselves as disposable. The real transition question is whether leaders can pair automation with a credible account of human contribution, choice and trust.",
+        "imageUrl": "https://www.digitaljournal.com/wp-content/uploads/2026/07/20180905_135345-EDIT.jpg",
+        "stages": [
+          "Reclaim Value",
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Automation can change task ownership without settling a person's value.",
+          "Workplace trust depends on explaining the human role that remains and grows."
+        ]
+      },
+      {
+        "title": "Boardroom AI planning shifts toward transformation and cyber risk",
+        "url": "https://www.foxbusiness.com/economy/boardroom-ai-talks-turn-from-job-cuts-cyber-threats",
+        "source": "foxbusiness.com",
+        "published": "2026-11-20T07:06:00+00:00",
+        "summary": "KPMG U.S. CEO Tim Walsh says executive AI conversations are moving beyond job-cut talk toward business transformation and cyber threats. That shift raises a practical human question: who has the judgment and authority to make adoption safe, accountable and useful?",
+        "imageUrl": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2026/11/0/0/board-meeting-ai-governance.jpg?ve=1&tl=1",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AI strategy now includes operational and security decisions, not only efficiency targets.",
+          "Human oversight is a working capability that organizations need to resource."
+        ]
+      },
+      {
+        "title": "A Dhaka summit gives emerging AI creators a public platform",
+        "url": "https://www.jagonews24.com/en/biz-econ/news/98590",
+        "source": "jagonews24.com",
+        "published": "2026-11-20T16:00:00+00:00",
+        "summary": "PRAN-RFL Group supported a Dhaka summit recognizing emerging creators who use AI in their work and promoting responsible creative practice. It offers a reminder that becoming AI ready is also a cultural project: people need places to show work, learn standards and develop a point of view.",
+        "imageUrl": "",
+        "stages": [
+          "Discover Purpose",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The summit foregrounded emerging creators rather than treating AI as an abstract technology story.",
+          "Responsible use becomes more real when people can practice it in a visible community."
+        ]
+      },
+      {
+        "title": "Apple's reported agent work raises the stakes for human direction",
+        "url": "https://www.macworld.com/article/3291475/apple-job-listing-gives-away-proactive-agentic-ai-project.html",
+        "source": "macworld.com",
+        "published": "2026-11-20T06:18:00+00:00",
+        "summary": "A reported Apple job listing points to an agent able to control a computer, navigate apps and assist with work such as browsing and coding. As software acts across more steps, the valuable human contribution shifts toward setting intent, reviewing outcomes and knowing when the system should not proceed.",
+        "imageUrl": "https://www.macworld.com/wp-content/uploads/2026/09/3236879-0-48722800-1790072478-Siri-AI-on-iOS-27.jpg?quality=50&strip=all&w=1024",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The project concerns agents that can work across a computer and its applications.",
+          "Delegating a chain of tasks makes clear instructions and careful review more consequential."
+        ]
+      },
+      {
+        "title": "Europe calls for AI skills across education and work",
+        "url": "https://www.aa.com.tr/en/europe/eu-urges-member-states-to-equip-teachers-students-workers-with-ai-skills/4131206",
+        "source": "aa.com.tr",
+        "published": "2026-11-20T01:20:25.507000+00:00",
+        "summary": "The European Council is urging member states to adapt education so teachers, students and workers can respond to technological change. Skills policy matters because a transition cannot rest on individual improvisation; people need learning pathways before the work around them moves.",
+        "imageUrl": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/11/19/thumbs_b_c_bfbafef2d756b9b8a906fa2861a0ec0c.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The appeal covers education at every level as well as workers already in transition.",
+          "AI readiness needs accessible pathways, not a last-minute demand for self-reinvention."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-20-who-owns-the-work-ai-changes": {
     "slug": "2026-11-20-who-owns-the-work-ai-changes",
     "date": "2026-11-20",
