@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-22-ai-adoption-needs-shared-confidence",
+    "date": "2026-11-22",
+    "title": "AI Adoption Needs Shared Confidence",
+    "pattern": "HP's workplace research and a warning about the AI skills gap both make confidence a workforce condition, not a personal attitude. Koch is testing HappyRobot agents in human resources, while executive guidance calls on leaders to redesign operations around autonomous systems and build for a future they cannot fully predict. As AI moves from experiment to infrastructure, people need practical learning, clear governance and a credible say in how the work changes.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://www.arnnet.com.au/wp-content/uploads/2026/11/4250437-0-08365500-1795045595-Brad-Pulford.jpeg?quality=50&strip=all&w=1024"
+  },
+  {
     "slug": "2026-11-21-human-agency-needs-systems-of-trust",
     "date": "2026-11-21",
     "title": "Human Agency Needs Systems of Trust",
@@ -1986,6 +1999,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-22-ai-adoption-needs-shared-confidence": {
+    "slug": "2026-11-22-ai-adoption-needs-shared-confidence",
+    "date": "2026-11-22",
+    "title": "AI Adoption Needs Shared Confidence",
+    "pattern": "HP's workplace research and a warning about the AI skills gap both make confidence a workforce condition, not a personal attitude. Koch is testing HappyRobot agents in human resources, while executive guidance calls on leaders to redesign operations around autonomous systems and build for a future they cannot fully predict. As AI moves from experiment to infrastructure, people need practical learning, clear governance and a credible say in how the work changes.",
+    "stages": [
+      "Become AI Ready",
+      "Reclaim Value",
+      "Relaunch Yourself",
+      "Discover Purpose"
+    ],
+    "imageUrl": "https://www.arnnet.com.au/wp-content/uploads/2026/11/4250437-0-08365500-1795045595-Brad-Pulford.jpeg?quality=50&strip=all&w=1024",
+    "stories": [
+      {
+        "title": "HP urges partners to lead workforce transformation conversations",
+        "url": "https://www.arnnet.com.au/article/4250437/how-partners-can-play-bigger-role-in-workforce-transformation-hp.html",
+        "source": "arnnet.com.au",
+        "published": "2026-11-18T23:46:13+00:00",
+        "summary": "HP's Work Relationship Index finds that workers using AI are more likely to report a positive relationship with their jobs. The company argues that technology partners should connect AI investment to skills, employee experience and workplace design rather than treating it as a refresh cycle.",
+        "imageUrl": "https://www.arnnet.com.au/wp-content/uploads/2026/11/4250437-0-08365500-1795045595-Brad-Pulford.jpeg?quality=50&strip=all&w=1024",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The research connects AI use with workers' relationship to their jobs.",
+          "Workforce transformation needs conversations about skills and experience alongside technology."
+        ]
+      },
+      {
+        "title": "The AI skills gap is becoming a confidence challenge",
+        "url": "https://www.forbes.com/sites/michaeledmondson/2026/11/21/the-ai-skills-gap-is-becoming-a-crisis-of-workforce-confidence/",
+        "source": "forbes.com",
+        "published": "2026-11-20T21:00:00+00:00",
+        "summary": "A widening gap between employees' confidence and their AI readiness points to a practical transition problem. Capability assessments, ongoing learning and room to adapt can help people approach new tools as work they can grow into, rather than a test they are expected to pass alone.",
+        "imageUrl": "",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Confidence and readiness do not automatically develop together.",
+          "Continuous learning makes AI adaptation a supported process rather than a one-time demand."
+        ]
+      },
+      {
+        "title": "Koch tests AI agents for human-resources questions",
+        "url": "https://pulse2.com/koch-and-happyrobot-test-ai-agents-for-human-resources/",
+        "source": "pulse2.com",
+        "published": "2026-11-20T15:00:36+00:00",
+        "summary": "Koch is working with HappyRobot to test AI agents that could give employees and candidates faster answers while reducing repetitive human-resources work. The value of that shift depends on preserving clear human ownership for the questions, decisions and care that an agent cannot settle.",
+        "imageUrl": "https://cdn.pulse2.com/cdn/2026/11/HappyRobot-Logo.jpeg",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "The test focuses on faster answers for employees and candidates.",
+          "Automating routine HR exchanges makes human accountability more important, not less."
+        ]
+      },
+      {
+        "title": "CEO planning shifts from AI adoption to operating redesign",
+        "url": "https://www.analyticsinsight.net/artificial-intelligence/the-2027-ceo-agenda-leading-enterprises-through-autonomous-ai-transformation",
+        "source": "analyticsinsight.net",
+        "published": "2026-11-20T15:30:00+00:00",
+        "summary": "An executive agenda for autonomous AI argues that leaders must redesign operations, governance and workforce readiness together. The human issue is not whether agents can be deployed, but whether organizations give people authority, preparation and guardrails to direct systems that act with greater independence.",
+        "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-11-20%2Fm4k1lvdu%2FThe-2027-CEO-Agenda-Leading-Enterprises-Through-Autonomous-AI-Transformation.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "stages": [
+          "Become AI Ready",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "Autonomous AI changes operating design, not only the software stack.",
+          "Governance and workforce readiness are part of responsible deployment."
+        ]
+      },
+      {
+        "title": "Building for AI's future requires adaptable choices today",
+        "url": "https://www.forbes.com/councils/forbesfinancecouncil/2026/11/20/we-cant-predict-ais-future-but-we-can-build-for-it/",
+        "source": "forbes.com",
+        "published": "2026-11-20T04:00:00+00:00",
+        "summary": "A Forbes Finance Council contributor argues that no organization can know which current AI tool will matter most in five years. That uncertainty makes durable human capacities—judgment, learning and the ability to revise a plan—more valuable than a false promise of perfect prediction.",
+        "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/65d62ff3428a174cb8a1eb2d/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "stages": [
+          "Relaunch Yourself",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "Rapid technical change makes fixed tool bets less reliable.",
+          "Adaptability helps people and organizations build without pretending to know the future."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-21-human-agency-needs-systems-of-trust": {
     "slug": "2026-11-21-human-agency-needs-systems-of-trust",
     "date": "2026-11-21",
