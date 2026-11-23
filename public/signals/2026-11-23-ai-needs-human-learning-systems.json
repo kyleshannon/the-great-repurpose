@@ -1,0 +1,76 @@
+{
+  "slug": "2026-11-23-ai-needs-human-learning-systems",
+  "date": "2026-11-23",
+  "title": "AI Needs Human Learning Systems",
+  "pattern": "A Japanese workplace reflection asks why people work when AI can absorb more execution, while another argues that experienced employees should become AI teachers rather than be treated as a reskilling problem. Forbes looks ahead to workplace trends, Federal Reserve Chair Kevin Warsh weighs productivity against job risk, and Teamily imagines human-agent teams as a new social layer of the internet. Together they make learning a system-design question: people need meaningful roles, experienced guides and accountable institutions as AI changes the work around them.",
+  "stages": ["Become AI Ready", "Reclaim Value", "Discover Purpose", "Unhook Identity"],
+  "imageUrl": "https://assets.st-note.com/production/uploads/images/339266047/rectangle_large_type_2_fe0c71440109061da1d659163c721ff5.jpeg?fit=bounds&quality=85&width=1280",
+  "stories": [
+    {
+      "title": "Why People Work Changes with AI",
+      "url": "https://note.com/hidemaru1976/n/nb8291d426665?hl=en",
+      "source": "note.com",
+      "published": "2026-11-23T00:00:00+00:00",
+      "summary": "A workplace practitioner reflects on how AI can compress familiar tasks such as research, document preparation and analysis. The useful question is not only what becomes faster, but how organizations help people reconnect their work to autonomy, contribution and a reason to keep growing.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/334432406/rectangle_large_type_2_643ca11c1bb2ee8c989bbd4cc7879541.png?fit=bounds&quality=85&width=1280",
+      "stages": ["Discover Purpose", "Reclaim Value"],
+      "keyPoints": [
+        "AI is shortening time spent on information gathering, documents and analysis.",
+        "Meaningful work needs to be redesigned around autonomy and contribution, not just faster output."
+      ]
+    },
+    {
+      "title": "Three AI Workplace Trends for 2027",
+      "url": "https://www.forbes.com/sites/rachelwells/2026/11/23/3-ai-workplace-trends-to-watch-in-2027-per-new-research/",
+      "source": "forbes.com",
+      "published": "2026-11-23T02:00:00+00:00",
+      "summary": "New research framed for 2027 focuses attention on the workplace conditions behind a return on AI investment. For people inside those organizations, readiness cannot mean being handed a tool; it means having support, practice and a credible role in shaping how the tool changes the job.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready"],
+      "keyPoints": [
+        "AI return on investment depends on workplace adoption, not deployment alone.",
+        "People need practical support to turn new tools into useful work."
+      ]
+    },
+    {
+      "title": "Veterans Can Teach AI at Work",
+      "url": "https://note.com/nyochi/n/n055b8c746e96?hl=en",
+      "source": "note.com",
+      "published": "2026-11-22T17:46:00+00:00",
+      "summary": "Rather than treating experienced employees as people who simply need to catch up, this report argues they can become AI teachers. That reframing makes tacit knowledge, judgment and organizational memory assets for adoption—and gives veteran workers a meaningful role in building the next operating model.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/339266047/rectangle_large_type_2_fe0c71440109061da1d659163c721ff5.jpeg?fit=bounds&quality=85&width=1280",
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "keyPoints": [
+        "Experienced workers can help translate AI into real operational practice.",
+        "Tacit knowledge and judgment become more valuable when teams are learning new tools."
+      ]
+    },
+    {
+      "title": "Fed Weighs AI Growth and Job Risks",
+      "url": "https://ijr.com/discover/tech-2026-11-16-fed-chair-warsh-warns-ai-could-disrupt-economy-80f53347",
+      "source": "ijr.com",
+      "published": "2026-11-16T20:04:00+00:00",
+      "summary": "Federal Reserve Chair Kevin Warsh is weighing AI's potential productivity gains against job displacement and financial-market risk. The point is not to predict a single outcome, but to recognize that people need options and dignity when institutions redraw the economic terms around their work.",
+      "imageUrl": "https://ijr.com/discover/tech-2026-11-16-fed-chair-warsh-warns-ai-could-disrupt-economy-80f53347/opengraph-image-1xo4yj?25b8a90c78f68980",
+      "stages": ["Unhook Identity"],
+      "keyPoints": [
+        "AI's economic effects can include both productivity gains and labor disruption.",
+        "Job titles cannot be the only source of security or personal worth during change."
+      ]
+    },
+    {
+      "title": "Teamily Envisions Human-Agent Teams",
+      "url": "https://time.com/branded-content/apg/teamily-ai-envisions-an-open-social-and-appless-agentic-internet-powered-by-human-agent-teams/",
+      "source": "time.com",
+      "published": "2026-11-18T10:22:00+00:00",
+      "summary": "Teamily describes an AI-native messenger designed for people and agents to create and collaborate together. The proposal points beyond routine automation toward a practical question for every team: who sets direction, checks the work and remains accountable when agents participate in everyday coordination?",
+      "imageUrl": "",
+      "stages": ["Become AI Ready", "Reclaim Value"],
+      "keyPoints": [
+        "Human-agent collaboration is being designed into communication and coordination tools.",
+        "Delegating work makes human direction and accountability more important."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
