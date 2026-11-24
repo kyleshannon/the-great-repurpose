@@ -1,0 +1,81 @@
+{
+  "slug": "2026-11-24-creative-work-needs-human-terms",
+  "date": "2026-11-24",
+  "title": "Creative Work Needs Human Terms",
+  "pattern": "ASUS is pitching agentic AI as a creative partner, while Adobe MAX is connecting AI production to brand and campaign systems. A Japanese sales-engineering reflection and a creator’s call for compensation ask what human skill and authored work are worth when AI can absorb more execution; Georgia educators add that students need stronger thinking, not just more technology. Together, the stories make the real task clear: creative work needs human direction, learning and fair terms—not simply faster generation.",
+  "stages": [
+    "Reclaim Value",
+    "Become AI Ready",
+    "Relaunch Yourself",
+    "Unhook Identity"
+  ],
+  "imageUrl": "https://press.asus.com/assets/w_1200,h_630/c7827e83-b6d2-4593-b65b-8e52dd3f0560/From%20AI%20Tools%20to%20Creative%20Partners_%20How%20Agentic%20AI%20is%20Transforming%20the%20Creator%20Workflow.jpg",
+  "stories": [
+    {
+      "title": "Agentic AI Becomes a Creative Partner",
+      "url": "https://press.asus.com/blog/agentic-ai-transforming-creator-workflow-proart/",
+      "source": "press.asus.com",
+      "published": "2026-11-24T18:00:00+00:00",
+      "summary": "ASUS describes a shift from isolated AI tools toward agentic systems that can coordinate more of a creator’s workflow. That makes the creator’s role less about pushing every button and more about setting the brief, judging the output and owning the final direction.",
+      "imageUrl": "https://press.asus.com/assets/w_1200,h_630/c7827e83-b6d2-4593-b65b-8e52dd3f0560/From%20AI%20Tools%20to%20Creative%20Partners_%20How%20Agentic%20AI%20is%20Transforming%20the%20Creator%20Workflow.jpg",
+      "stages": ["Become AI Ready", "Relaunch Yourself"],
+      "keyPoints": [
+        "Agentic AI is being positioned to connect separate creative tasks into an end-to-end workflow.",
+        "Creators still need to direct the work, apply taste and remain accountable for what is made."
+      ]
+    },
+    {
+      "title": "Human Skills Set Sales Engineering Value",
+      "url": "https://note.com/genest_garage/n/n0fe69b4c16b1?hl=en",
+      "source": "note.com",
+      "published": "2026-11-20T21:26:00+00:00",
+      "summary": "A reflection on contract sales engineering connects anxiety about project gaps and compensation to the skills AI cannot simply replicate. Its useful prompt is to identify the judgment, trust and client context that make a person valuable beyond readily automated delivery.",
+      "imageUrl": "https://assets.st-note.com/production/uploads/images/338787724/rectangle_large_type_2_a0690a9006a550f8a4ec737c3feaae2e.png?fit=bounds&quality=85&width=1280",
+      "stages": ["Reclaim Value", "Unhook Identity"],
+      "keyPoints": [
+        "Project insecurity and stagnant rates make the changing basis of professional value immediate.",
+        "Judgment, relationships and context are human skills that need to be named and developed."
+      ]
+    },
+    {
+      "title": "Schools Can Use AI to Strengthen Thinking",
+      "url": "https://www.ajc.com/education/2026/11/georgia-schools-should-use-ai-to-help-students-become-stronger-thinkers/",
+      "source": "ajc.com",
+      "published": "2026-11-24T02:00:00+00:00",
+      "summary": "An argument for Georgia schools starts with weak reading and math proficiency and urges educators to use AI in service of stronger thinking. The durable goal is not student dependence on a tool, but the capacity to question, reason and learn alongside it.",
+      "imageUrl": "",
+      "stages": ["Become AI Ready"],
+      "keyPoints": [
+        "The article links AI education to existing challenges in reading and math proficiency.",
+        "AI readiness should strengthen critical thinking rather than replace the habits that build it."
+      ]
+    },
+    {
+      "title": "Adobe MAX Puts Judgment in AI Production",
+      "url": "https://www.forbes.com/sites/moorinsights/2026/11/19/adobe-max-shows-why-creative-judgment-must-guide-ai-production/",
+      "source": "forbes.com",
+      "published": "2026-11-18T21:00:00+00:00",
+      "summary": "Adobe MAX showcased AI product updates that connect creative production with brand guidance, campaign planning and performance measurement. As more production becomes assisted, the scarce contribution moves upstream: deciding what fits the audience, the brand and the moment.",
+      "imageUrl": "",
+      "stages": ["Reclaim Value"],
+      "keyPoints": [
+        "Creative AI is being tied to planning, brand guidance and performance systems.",
+        "Taste and contextual judgment matter more when producing content becomes easier."
+      ]
+    },
+    {
+      "title": "Creators Seek Fair Terms for AI Use",
+      "url": "https://note.com/it20ne/n/n5c1591fb3020?hl=en",
+      "source": "note.com",
+      "published": "2026-11-19T03:16:00+00:00",
+      "summary": "A creator welcomes technological development while worrying that AI training on creative work can erase the value of labor and authorship. The concern points to a practical next question for the creative economy: what compensation and consent make participation feel fair?",
+      "imageUrl": "https://d2l930y2yx77uc.cloudfront.net/production/social_images/db9adc4a0b2e630c52bae86fa57fa94717847860.png",
+      "stages": ["Reclaim Value", "Relaunch Yourself"],
+      "keyPoints": [
+        "Creators are asking how AI can develop without making authored work feel disposable.",
+        "Compensation and consent are part of preserving dignity in AI-enabled creative work."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
