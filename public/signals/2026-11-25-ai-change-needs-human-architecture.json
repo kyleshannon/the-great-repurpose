@@ -1,0 +1,81 @@
+{
+  "slug": "2026-11-25-ai-change-needs-human-architecture",
+  "date": "2026-11-25",
+  "title": "AI Change Needs Human Architecture",
+  "pattern": "Workforce planners are asking CIOs and CHROs to define agent permissions and human roles together, while leaders in India prepare for widespread agent adoption and Dubai educators push students toward adaptability and real-world experience. Oracle's proposed European cuts make the cost of treating transition as a headcount event visible; the launch of an AI-free creative studio shows that creators are also asserting a choice about the tools and terms of their work. The shared challenge is not simply acquiring AI capability—it is building the roles, learning pathways and boundaries that let people retain agency as systems change.",
+  "stages": [
+    "Reclaim Value",
+    "Become AI Ready",
+    "Unhook Identity",
+    "Discover Purpose"
+  ],
+  "imageUrl": "https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt576b764e30e3348b/6b05ea58deb79b4de002e716/112426_IWK_CIOandCHRO_GettyImages-2302040774.png?disable=upscale&width=1200&height=630&fit=crop",
+  "stories": [
+    {
+      "title": "How AI reshapes workforce planning and the CIO-CHRO relationship",
+      "url": "https://www.informationweek.com/it-leadership/how-ai-reshapes-workforce-planning-and-the-cio-chro-relationship",
+      "source": "informationweek.com",
+      "published": "2026-11-24T11:50:00+00:00",
+      "summary": "InformationWeek argues that technology and HR leaders need to define agent skills, permissions and human roles together as AI enters workforce planning. That turns AI adoption into an organizational-design question: people need clarity about where responsibility and judgment still sit.",
+      "imageUrl": "https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt576b764e30e3348b/6b05ea58deb79b4de002e716/112426_IWK_CIOandCHRO_GettyImages-2302040774.png?disable=upscale&width=1200&height=630&fit=crop",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "CIO and CHRO teams are being asked to plan agent capabilities and human roles together.",
+        "Permissions, judgment and accountability need deliberate ownership as work changes."
+      ]
+    },
+    {
+      "title": "AI to change 40% of job skills by 2030: Are UAE students ready for the future of work?",
+      "url": "https://www.khaleejtimes.com/uae/education/uae-students-future-of-work-ai-job-skills-careers-experts",
+      "source": "khaleejtimes.com",
+      "published": "2026-11-24T16:51:00+00:00",
+      "summary": "Dubai education experts say students will need adaptability, real-world exposure and durable human skills as AI reshapes careers. The point is larger than AI literacy: future workers need practice developing judgment, direction and confidence in changing conditions.",
+      "imageUrl": "https://imgengine.khaleejtimes.com/khaleejtimes/import/images/3f49e1e4-124d-4e03-b193-c133bfe1908f-org.png?width=1200&height=630&q=60&format=auto&ogImage=true&mode=crop&rect=71,0,1059,706",
+      "stages": ["Unhook Identity", "Reclaim Value"],
+      "keyPoints": [
+        "Education leaders are framing adaptability and human skills as career essentials.",
+        "Real-world exposure can help students build agency beyond a single job description."
+      ]
+    },
+    {
+      "title": "Indian leaders plan AI agent adoption as workplace skills shift",
+      "url": "https://www.businessworld.in/article/93-of-indian-leaders-plan-ai-agent-adoption-as-workplace-skills-shift-report-635066",
+      "source": "businessworld.in",
+      "published": "2026-11-24T17:53:00+00:00",
+      "summary": "A Businessworld report says 93 percent of Indian leaders plan to adopt AI agents while organizations face pressure to reskill employees. The transition calls for more than tool training: workers need pathways to supervise, direct and improve systems without losing a sense of their contribution.",
+      "imageUrl": "https://static.businessworld.in/artificial intelligence_20250306082413_ogImage_33.jpg",
+      "stages": ["Reclaim Value", "Become AI Ready"],
+      "keyPoints": [
+        "Leaders expect agent adoption to reshape workplace skill needs.",
+        "Reskilling has to prepare people for oversight and direction, not only execution."
+      ]
+    },
+    {
+      "title": "Oracle's proposed European cuts raise transition questions",
+      "url": "https://www.ibtimes.sg/oracle-layoffs-again-leaked-memo-reveals-1390-more-european-jobs-risk-amid-ai-push-96609",
+      "source": "ibtimes.sg",
+      "published": "2026-11-24T14:52:05+00:00",
+      "summary": "A leaked memo reportedly outlines up to 1,390 proposed Oracle job cuts in Europe, subject to local consultation, amid the company's AI push. When role structures change this quickly, institutions owe people more than a notice: they need credible routes to retain dignity, capability and choice.",
+      "imageUrl": "https://cdn.data.ibtimes.sg/en/full/100130/oracle-headquarters-redwood-shores-california.jpg?w=1200&h=630?q=60",
+      "stages": ["Unhook Identity", "Discover Purpose"],
+      "keyPoints": [
+        "The reported cuts remain proposed and subject to local consultations.",
+        "Workforce change exposes the human need for transition pathways, not just restructuring."
+      ]
+    },
+    {
+      "title": "NIVA launches an AI-free creative studio",
+      "url": "https://tech.yahoo.com/general/articles/free-ai-free-creative-studio-221000606.html",
+      "source": "tech.yahoo.com",
+      "published": "2026-11-24T14:10:00+00:00",
+      "summary": "NIVA is positioning a free browser-based creative suite without AI tools, bundling photo editing, vector work and layout. Its arrival signals that creators are not merely choosing faster automation; they are also choosing what kinds of authorship, practice and creative relationship they want to preserve.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/590745074214862b8504d5d860f50fcf83238cfba7add451ea4d66c1afbe7469/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Ftechradar_949%2F0b4a596fd569e2489a174817502cff88.jpg",
+      "stages": ["Become AI Ready", "Discover Purpose"],
+      "keyPoints": [
+        "NIVA offers a browser-based creative suite with no AI tools.",
+        "Creative agency includes choosing the tools and terms that shape authored work."
+      ]
+    }
+  ],
+  "sourceStatus": "generated"
+}
