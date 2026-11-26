@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-26-career-entry-needs-human-scaffolding",
+    "date": "2026-11-26",
+    "title": "Career Entry Needs Human Scaffolding",
+    "pattern": "Job-posting data links greater exposure to AI agents with slower growth in roles requiring up to five years of experience, while Forbes' college ranking reflects the pressure on entry-level pathways. Economic Times looks toward new AI-era careers, small-business owners are testing which agents truly help, and OCBC and NTUC LearningHub are pairing skills training with manager coaching. The tension is not whether people should adapt alone: institutions need to make the first rungs of changed work visible, practical and human-led.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/ai-exposure-jobs-overlay.webp"
+  },
+  {
     "slug": "2026-11-25-ai-change-needs-human-architecture",
     "date": "2026-11-25",
     "title": "AI Change Needs Human Architecture",
@@ -2038,6 +2051,100 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-26-career-entry-needs-human-scaffolding": {
+    "slug": "2026-11-26-career-entry-needs-human-scaffolding",
+    "date": "2026-11-26",
+    "title": "Career Entry Needs Human Scaffolding",
+    "pattern": "Job-posting data links greater exposure to AI agents with slower growth in roles requiring up to five years of experience, while Forbes' college ranking reflects the pressure on entry-level pathways. Economic Times looks toward new AI-era careers, small-business owners are testing which agents truly help, and OCBC and NTUC LearningHub are pairing skills training with manager coaching. The tension is not whether people should adapt alone: institutions need to make the first rungs of changed work visible, practical and human-led.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/ai-exposure-jobs-overlay.webp",
+    "stories": [
+      {
+        "title": "AI agents are reshaping the job market and less-experienced workers are feeling it first",
+        "url": "https://cryptoslate.com/ai-agents-are-reshaping-the-job-market-and-less-experienced-workers-are-feeling-it-first/",
+        "source": "cryptoslate.com",
+        "published": "2026-11-25T16:40:10+00:00",
+        "summary": "CryptoSlate reports that greater exposure to AI agents was associated with 4.87 percent lower job-posting growth for roles requiring up to five years of experience. That makes the entry-level question concrete: people need opportunities to develop judgment and responsibility while the routine work that once taught them changes.",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/ai-exposure-jobs-overlay.webp",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Greater AI-agent exposure was associated with slower job-posting growth for less-experienced roles.",
+          "Changed entry paths make practical opportunities to build judgment more important."
+        ]
+      },
+      {
+        "title": "AI and the Future of Careers: Emerging Job Opportunities and Skills to Build for 2030",
+        "url": "https://hr.economictimes.indiatimes.com/blog/ai-and-the-future-of-careers-emerging-job-opportunities-and-skills-to-build-for-2030/136181794",
+        "source": "hr.economictimes.indiatimes.com",
+        "published": "2026-11-25T16:00:00+00:00",
+        "summary": "Economic Times examines emerging career opportunities and the skills people may need as AI reshapes the job market through 2030. A useful career response begins by separating a person's value from a familiar job wrapper, then building capabilities that can travel into new work.",
+        "imageUrl": "https://etimg.etb2bimg.com/thumb/msid-136181794,imgsize-57056,width-1200,height=627,overlay-ethr,resizemode-75/blog/ai-and-the-future-of-careers-emerging-job-opportunities-and-skills-to-build-for-2030.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AI is reshaping both career opportunities and the skills associated with them.",
+          "Career planning needs a durable account of value beyond one current role."
+        ]
+      },
+      {
+        "title": "Do AI Agents Really Work for Small Businesses? 5 Lessons From Reddit",
+        "url": "https://www.tmcnet.com/topics/articles/2026/11/25/464467-ai-agents-really-work-small-businesses-5-lessons.htm",
+        "source": "tmcnet.com",
+        "published": "2026-11-24T15:59:00+00:00",
+        "summary": "TMCnet gathers five lessons from Reddit about whether AI agents deliver for small businesses amid claims that they can run more of an operation. The human task is discernment: owners and teams still need to test promises, direct the tools and decide which work is worth delegating.",
+        "imageUrl": "https://images.tmcnet.com/tmc/misc/articles/image/2026-nov/4897751488-call-center-1015274_960_720.jpg",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "Small-business owners are assessing whether agent promises hold up in practice.",
+          "Useful adoption requires people to test, direct and evaluate delegated work."
+        ]
+      },
+      {
+        "title": "The Top 25 Colleges For Getting A High-Paying Job",
+        "url": "https://www.forbes.com/sites/lisachambers/2026/11/26/the-top-25-colleges-for-getting-a-high-paying-job/",
+        "source": "forbes.com",
+        "published": "2026-11-26T03:30:00+00:00",
+        "summary": "Forbes ranks 25 colleges whose graduates earn the most, placing the results against tight entry-level employment and the spread of AI. The ranking is a reminder that credentials alone cannot carry a transition; new workers need real pathways to experience, contribution and choice.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity"
+        ],
+        "keyPoints": [
+          "Entry-level employment is tight as AI spreads into more work.",
+          "Career pathways need to offer more than a credential or a first title."
+        ]
+      },
+      {
+        "title": "Building skills and confidence for an AI-enabled workplace",
+        "url": "https://www.channelnewsasia.com/advertorial/building-skills-and-confidence-ai-enabled-workplace-6457426",
+        "source": "channelnewsasia.com",
+        "published": "2026-11-26T00:57:00+00:00",
+        "summary": "Channel NewsAsia describes an OCBC collaboration with NTUC LearningHub that develops managers' coaching capability while helping employees apply new skills at work. The model treats confidence as something institutions can support through practice and guidance, not a trait workers must manufacture alone.",
+        "imageUrl": "https://dam.mediacorp.sg/image/upload/s--9dD0S2By--/c_fill,g_auto,h_676,w_1200/f_auto,q_auto/v1/mediacorp/cna/image/2026/11/23/brand_studio_x_ntuc_learninghub_ocbc_advertorial_photo_1.jpg?itok=8ltdzPM5",
+        "stages": [
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "The program combines employee skill application with stronger manager coaching.",
+          "AI readiness becomes more credible when learning is supported inside the workplace."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-25-ai-change-needs-human-architecture": {
     "slug": "2026-11-25-ai-change-needs-human-architecture",
     "date": "2026-11-25",
