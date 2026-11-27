@@ -3,6 +3,19 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-27-ai-transition-needs-shared-career-infrastructure",
+    "date": "2026-11-27",
+    "title": "AI Transition Needs Shared Career Infrastructure",
+    "pattern": "SAP's planned cuts, Tamil Nadu's weaker campus placements and JPMorgan's estimate of 24 million at-risk knowledge-worker jobs show career entry and role security being redrawn together. As AgentLocker maps thousands of tools competing for payroll and workers report little employer reskilling, the human tension is whether institutions will build credible paths into changed work or leave people to absorb the transition alone.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://www.cio.com/wp-content/uploads/2026/10/4240684-0-39886800-1793125339-shutterstock_2423167951.jpg?quality=50&strip=all&w=1024"
+  },
+  {
     "slug": "2026-11-26-career-entry-needs-human-scaffolding",
     "date": "2026-11-26",
     "title": "Career Entry Needs Human Scaffolding",
@@ -2051,6 +2064,102 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-27-ai-transition-needs-shared-career-infrastructure": {
+    "slug": "2026-11-27-ai-transition-needs-shared-career-infrastructure",
+    "date": "2026-11-27",
+    "title": "AI Transition Needs Shared Career Infrastructure",
+    "pattern": "SAP's planned cuts, Tamil Nadu's weaker campus placements and JPMorgan's estimate of 24 million at-risk knowledge-worker jobs show career entry and role security being redrawn together. As AgentLocker maps thousands of tools competing for payroll and workers report little employer reskilling, the human tension is whether institutions will build credible paths into changed work or leave people to absorb the transition alone.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://www.cio.com/wp-content/uploads/2026/10/4240684-0-39886800-1793125339-shutterstock_2423167951.jpg?quality=50&strip=all&w=1024",
+    "stories": [
+      {
+        "title": "Why SAP's Second 10,000-Job Overhaul Matters to CIOs",
+        "url": "https://www.cio.com/article/4253973/why-saps-second-10000-job-overhaul-in-two-years-matters-to-cios.html",
+        "source": "cio.com",
+        "published": "2026-11-26T22:22:00+00:00",
+        "summary": "CIO reports that SAP is weighing another 10,000 job cuts after a 2024 restructuring meant to retrain workers for AI-era growth. Analysts frame the new round as a cost decision in an AI-first model, making the human question stark: people need durable value beyond a role whose wrapper can change twice in two years.",
+        "imageUrl": "https://www.cio.com/wp-content/uploads/2026/10/4240684-0-39886800-1793125339-shutterstock_2423167951.jpg?quality=50&strip=all&w=1024",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "SAP is considering another 10,000-job overhaul after its 2024 restructuring.",
+          "Rapid role redesign makes durable human value more important than a single job wrapper."
+        ]
+      },
+      {
+        "title": "Thousands of AI Tools Compete for US Payroll",
+        "url": "https://markets.businessinsider.com/news/stocks/agentlocker-study-4-746-ai-tools-now-compete-for-3-trillion-in-annual-us-payroll-1036805254",
+        "source": "markets.businessinsider.com",
+        "published": "2026-11-26T22:37:00+00:00",
+        "summary": "AgentLocker maps 4,746 AI products against US labor data and finds 62 percent of the software market pursuing just three job categories. The report turns abstract automation talk into a design challenge: workers and leaders need the judgment to decide which tools genuinely improve work, and who remains accountable when they do.",
+        "imageUrl": "https://ml.globenewswire.com/Resource/Download/a8d32c8e-74b4-44a6-8932-0115442694c1/agentlocker-study-4-746-ai-tools-now-compete-for-3-trillion-in-annual-us-payroll.png",
+        "stages": [
+          "Become AI Ready",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "The study maps 4,746 AI products against US employment data.",
+          "Tool adoption still requires human direction, evaluation and accountability."
+        ]
+      },
+      {
+        "title": "Campus Placements Fall as IT Hiring Changes",
+        "url": "https://www.moneycontrol.com/education/ai-impact-on-jobs-campus-placements-decline-by-up-to-20-as-it-companies-cut-entry-level-hiring-skilled-freshers-still-command-higher-salaries-article-14090430.html",
+        "source": "moneycontrol.com",
+        "published": "2026-11-27T03:25:00+00:00",
+        "summary": "Moneycontrol reports campus placements at Tamil Nadu engineering colleges have declined by up to 20 percent as AI changes IT hiring, even while specialized freshers can command higher salaries. The divergence matters: a new generation needs clearer ways to gain real capability and contribution, not just a narrower contest for familiar entry roles.",
+        "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/11/20261127112440_ai-impacts.png",
+        "stages": [
+          "Unhook Identity",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Campus placements in the reported colleges have declined by up to 20 percent.",
+          "Specialized skills can still create opportunity as entry routes change."
+        ]
+      },
+      {
+        "title": "Skills Gap Widens as Employers Lag on Reskilling",
+        "url": "https://www.hcamag.com/ca/specialization/learning-development/skills-gap-widens-as-41-of-workers-say-employers-arent-reskilling-report/598987",
+        "source": "hcamag.com",
+        "published": "2026-11-26T11:17:03+00:00",
+        "summary": "Human Resources Director reports that 41 percent of workers say their employers are not reskilling them, alongside a call for investment in fundamental human skills. That gap is not a private motivation problem. Organizations that introduce new technology also need to create practice, coaching and credible routes for people to build portable value.",
+        "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/036/0363_639313066101492211.png",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "Forty-one percent of surveyed workers say their employers are not reskilling them.",
+          "Human skills and supported practice are part of meaningful AI readiness."
+        ]
+      },
+      {
+        "title": "24 Million Knowledge-Worker Jobs at Risk from AI",
+        "url": "https://www.firstpost.com/business/24-million-jobs-at-risk-from-ai-which-workers-could-be-hit-hardest-and-why-14063028.html",
+        "source": "firstpost.com",
+        "published": "2026-11-26T23:11:00+00:00",
+        "summary": "Firstpost cites a JPMorgan Wealth Management estimate that AI could put nearly 24 million knowledge-worker jobs at risk over the next five years. The useful response is not to turn a forecast into fatalism; it is to help people identify the judgment, relationships and purpose they can carry into work that is being redesigned.",
+        "imageUrl": "",
+        "stages": [
+          "Unhook Identity",
+          "Discover Purpose"
+        ],
+        "keyPoints": [
+          "The cited estimate puts nearly 24 million knowledge-worker jobs at risk over five years.",
+          "Career resilience begins by separating human worth from a threatened role."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-26-career-entry-needs-human-scaffolding": {
     "slug": "2026-11-26-career-entry-needs-human-scaffolding",
     "date": "2026-11-26",
