@@ -3,6 +3,20 @@
 
 export const bundledSignalIndex = [
   {
+    "slug": "2026-11-28-ai-changes-the-terms-of-work",
+    "date": "2026-11-28",
+    "title": "AI Changes The Terms Of Work",
+    "pattern": "Allstate's reported AI-driven cuts, Bay Area graduates facing a changed hiring process, and calls to move workers from AI anxiety to agency reveal that the transition is already shaping who gets in and who stays in. As CFOs try to distinguish AI spending from redesigned work and Carew Papritz asks what work is for, the human task is to make new terms legible, fair and purposeful rather than simply faster.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover Purpose",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-11-28%2F96x1nhhg%2FFrom-AI-Anxiety-to-AI-Agency-Building-a-Workforce-That-Can-Work-with-Intelligent-Systems.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+  },
+  {
     "slug": "2026-11-27-ai-transition-needs-shared-career-infrastructure",
     "date": "2026-11-27",
     "title": "AI Transition Needs Shared Career Infrastructure",
@@ -2064,6 +2078,103 @@ export const bundledSignalIndex = [
 ] as const;
 
 export const bundledSignalsBySlug = {
+  "2026-11-28-ai-changes-the-terms-of-work": {
+    "slug": "2026-11-28-ai-changes-the-terms-of-work",
+    "date": "2026-11-28",
+    "title": "AI Changes The Terms Of Work",
+    "pattern": "Allstate's reported AI-driven cuts, Bay Area graduates facing a changed hiring process, and calls to move workers from AI anxiety to agency reveal that the transition is already shaping who gets in and who stays in. As CFOs try to distinguish AI spending from redesigned work and Carew Papritz asks what work is for, the human task is to make new terms legible, fair and purposeful rather than simply faster.",
+    "stages": [
+      "Unhook Identity",
+      "Reclaim Value",
+      "Discover Purpose",
+      "Become AI Ready",
+      "Relaunch Yourself"
+    ],
+    "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-11-28%2F96x1nhhg%2FFrom-AI-Anxiety-to-AI-Agency-Building-a-Workforce-That-Can-Work-with-Intelligent-Systems.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+    "stories": [
+      {
+        "title": "From AI Anxiety to AI Agency",
+        "url": "https://www.analyticsinsight.net/artificial-intelligence/from-ai-anxiety-to-ai-agency-building-a-workforce-that-can-work-with-intelligent-systems",
+        "source": "analyticsinsight.net",
+        "published": "2026-11-27T22:33:00+00:00",
+        "summary": "Analytics Insight argues that the urgent question is no longer whether AI will replace work, but whether people are prepared to work alongside intelligent systems. That reframes readiness as agency: workers need practice, confidence and a role in shaping how AI enters their work rather than being treated as a problem to absorb.",
+        "imageUrl": "https://media.assettype.com/analyticsinsight%2F2026-11-28%2F96x1nhhg%2FFrom-AI-Anxiety-to-AI-Agency-Building-a-Workforce-That-Can-Work-with-Intelligent-Systems.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "stages": [
+          "Become AI Ready",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "Workforce readiness is becoming as important as the technology itself.",
+          "Agency grows when people can learn and shape AI-enabled work."
+        ]
+      },
+      {
+        "title": "Allstate Job Cuts Reportedly Follow AI Push",
+        "url": "https://hoodline.com/2026/11/allstate-faces-potential-job-cuts-amid-ai-push/",
+        "source": "hoodline.com",
+        "published": "2026-11-27T13:37:30+00:00",
+        "summary": "Hoodline reports that Allstate may cut thousands of jobs as it expands AI use in claims work. Whether or not every reported detail materializes, the story makes the transition concrete: organizations need to pair automation choices with credible paths that protect dignity, preserve judgment and help people move into changed roles.",
+        "imageUrl": "https://img.hoodline.com/2026/11/allstate-faces-potential-job-cuts-amid-ai-push.webp",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "AI adoption in claims work is being discussed alongside potential workforce reductions.",
+          "A role change demands more than a productivity explanation; it needs a transition path."
+        ]
+      },
+      {
+        "title": "Bay Area Graduates Navigate AI-Shaped Hiring",
+        "url": "https://www.sfgate.com/news/bayarea/article/edsource-as-ai-reshapes-hiring-process-recent-22551612.php",
+        "source": "sfgate.com",
+        "published": "2026-11-26T10:48:03+00:00",
+        "summary": "SFGATE follows Bay Area college graduates who are using AI to search and apply while confronting a job market reshaped by the same technology. Their experience shows why career entry cannot become an automated queue: early-career people still need human signals of potential, coaching and ways to show the value they can bring.",
+        "imageUrl": "https://s.hdnux.com/photos/01/66/03/20/30946322/3/rawImage.jpg",
+        "stages": [
+          "Unhook Identity",
+          "Relaunch Yourself"
+        ],
+        "keyPoints": [
+          "New graduates are using AI tools while navigating a more uncertain hiring process.",
+          "Career entry needs pathways that recognize promise beyond automated screening."
+        ]
+      },
+      {
+        "title": "Work, Workflows and Workforce in AI ROI",
+        "url": "https://www.unite.ai/cfo-ai-spending-roi-framework/",
+        "source": "unite.ai",
+        "published": "2026-11-27T17:15:56+00:00",
+        "summary": "Unite.AI argues that CFOs cannot assess AI spending by collapsing individual assistance, workflow redesign and workforce change into one number. That distinction matters because a return calculation can hide who gains discretion, whose work is redesigned and what accountability remains human.",
+        "imageUrl": "https://www.unite.ai/wp-content/uploads/2026/11/81a8dc6d-c8f9-4521-a744-66684af52a21.png",
+        "stages": [
+          "Reclaim Value",
+          "Become AI Ready"
+        ],
+        "keyPoints": [
+          "AI ROI differs across individual work, workflows and the workforce.",
+          "Good measurement should surface human responsibility, not erase it."
+        ]
+      },
+      {
+        "title": "Carew Papritz Asks What Work Is For",
+        "url": "https://www.financialcontent.com/article/prlog-2026-11-24-carew-papritz-takes-on-ai-and-the-question-of-human-purpose-in-connecticut-examiner-op-ed",
+        "source": "financialcontent.com",
+        "published": "2026-11-24T14:58:00+00:00",
+        "summary": "A release about Carew Papritz's Connecticut Examiner op-ed brings the question beneath automation into view: when AI changes not only tasks but the reasons people work, purpose cannot be treated as an afterthought. The durable response is to reconnect capability to contribution, relationships and the problems worth serving.",
+        "imageUrl": "",
+        "stages": [
+          "Discover Purpose",
+          "Reclaim Value"
+        ],
+        "keyPoints": [
+          "AI disruption raises questions about meaning as well as employment.",
+          "Purpose helps turn changed capability into contribution."
+        ]
+      }
+    ],
+    "sourceStatus": "generated"
+  },
   "2026-11-27-ai-transition-needs-shared-career-infrastructure": {
     "slug": "2026-11-27-ai-transition-needs-shared-career-infrastructure",
     "date": "2026-11-27",
